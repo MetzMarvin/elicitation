@@ -1,0 +1,25 @@
+<!-- example 1: the extensionElements XML of one AI Agent service task -->
+<camunda:inputParameter name="agentName">InvoiceExtractor</camunda:inputParameter>
+<camunda:inputParameter name="instruction">Extract the invoice as JSON: {"invoiceNumber": string, "total": number, "currency": string, "dueDate": string}. Use null for unknown fields.</camunda:inputParameter>
+<camunda:inputParameter name="message">${invoiceText}</camunda:inputParameter>
+<camunda:outputParameter name="invoiceJson">${output}</camunda:outputParameter>
+
+<!-- example 2: the extensionElements XML of one AI Agent service task -->
+<camunda:inputParameter name="agentName">McpAgent</camunda:inputParameter>
+<camunda:inputParameter name="message">${userMessage}</camunda:inputParameter>
+<camunda:inputParameter name="mcpServers">[{"name": "engine", "url": "http://localhost:8080/mcp"}]</camunda:inputParameter>
+<camunda:outputParameter name="agentOutput">${output}</camunda:outputParameter>
+<camunda:outputParameter name="agentOutput_aiMeta">${outputAiMeta}</camunda:outputParameter>
+
+<!-- example 3: the extensionElements XML of one AI Agent service task -->
+<camunda:inputParameter name="agentName">Orchestrator</camunda:inputParameter>
+<camunda:inputParameter name="toolClasses">org.cibseven.connect.ai.agent.impl.ProcessStarterTool</camunda:inputParameter>
+<camunda:inputParameter name="message">Start the process "process-as-a-tool" and read its output variables whose names start with "out_".</camunda:inputParameter>
+<camunda:outputParameter name="agentOutput">${output}</camunda:outputParameter>
+
+<!-- example 4: the extensionElements XML of one AI Agent service task -->
+<camunda:inputParameter name="useChatMemory">${true}</camunda:inputParameter>
+<camunda:inputParameter name="memoryId">${execution.getVariable('memoryId')}</camunda:inputParameter>
+<camunda:inputParameter name="message">${feedback}</camunda:inputParameter>
+<camunda:outputParameter name="agentOutput">${output}</camunda:outputParameter>
+<camunda:outputParameter name="memoryId">${memoryId}</camunda:outputParameter>

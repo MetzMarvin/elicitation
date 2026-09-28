@@ -1,0 +1,149 @@
+sheets: figs2_0643_0742.png, figs2_0754_0893.png, figs2_0894_1021.png
+cells: 144
+### figs2_0643_0742.png
+  643.1  aiflag=0  alts=Camunda Cloud 1.3.0-alpha3 Released
+  644.1  aiflag=0  alts=(none)
+  647.1  aiflag=0  alts=How to Overcome a Legacy Mindset
+  649.1  aiflag=0  alts=create new alert
+  651.1  aiflag=0  alts=Camunda Cloud 1.3.0 Released
+  652.1  aiflag=0  alts=Testing Processes for Camunda Platform 8 and Zeebe
+  653.1  aiflag=0  alts=Securing Zeebe’s gRPC Communication
+  654.1  aiflag=0  alts=Camunda Platform Runtime 7.17-alpha3 Released
+  656.1  aiflag=0  alts=2022 Automation Trends, Questions and Answers
+  657.1  aiflag=0  alts=Q&A: How Can I Upgrade Spring Boot Maven Dependencies for the Enterprise Edition?
+  660.1  aiflag=0  alts=How to Migrate Your Camunda Modeler Plugins to Work with Camunda Modeler 5.0
+  663.1  aiflag=0  alts=Camunda Platform Runtime 7.17.0-alpha4 Released
+  664.1  aiflag=0  alts=Camunda Cloud 1.4.0-alpha1 Released
+  665.1  aiflag=0  alts=Ensuring Continuous Support of AngularJS in Camunda Platform 7.17
+  667.1  aiflag=0  alts=How to Build and Grow a Developer Champion Program
+  668.1  aiflag=0  alts=(none)
+  669.1  aiflag=0  alts=(none)
+  670.1  aiflag=0  alts=(none)
+  671.1  aiflag=0  alts=Introducing a New Modeler for Camunda Platform 8
+  672.1  aiflag=0  alts=Responding to the Russian Invasion of Ukraine
+  673.1  aiflag=0  alts=(none)
+  674.1  aiflag=0  alts=Camunda Community Summit 2022: Dedicated to Developers
+  675.1  aiflag=0  alts=Camunda Cloud 1.4.0-alpha2 Released
+  676.1  aiflag=0  alts=Managing Camunda Cloud in a (Nut)shell
+  678.1  aiflag=0  alts=Why Goldman Sachs Built a Brand New Platform on Camunda Platform 8
+  679.1  aiflag=0  alts=Why Aren’t There Legacy App Stores?
+  681.1  aiflag=0  alts=A New Domain Name for Camunda Artifactory
+  683.1  aiflag=0  alts=Advanced Test Practices For Helm Charts
+  684.1  aiflag=0  alts=What is a “Camunda Champion?”
+  687.1  aiflag=0  alts=(none)
+  688.1  aiflag=0  alts=Camunda Platform 8 for Camunda Platform 7 Users – What You Need to Know
+  690.1  aiflag=0  alts=Enterprise Architect – What Makes it the Best Job?
+  697.1  aiflag=0  alts=html5 parts in camunda platform
+  698.1  aiflag=0  alts=QA Infrastructure Improvements
+  700.1  aiflag=0  alts=Bernd Rücker presenting
+  704.1  aiflag=0  alts=community event directions poster
+  708.1  aiflag=0  alts=Cowboy Dueling game
+  709.1  aiflag=0  alts=camunda Cockpit with a plugin
+  716.1  aiflag=0  alts=reception fusion prague
+  718.1  aiflag=0  alts=application authorizations screen
+  723.1  aiflag=0  alts=An invalid form
+  726.1  aiflag=0  alts=man eating pork
+  732.1  aiflag=0  alts=screenshot showing the plugin in Cockpit
+  735.1  aiflag=0  alts=Camunda Optimize 3.8.0 Released
+  737.1  aiflag=0  alts=Camunda Event T-shirt
+  739.1  aiflag=0  alts=Defining views in Cockpit
+  740.1  aiflag=0  alts=sql statement log report
+  742.1  aiflag=0  alts=Camunda Platform development Team
+### figs2_0754_0893.png
+  754.1  aiflag=0  alts=Grails and Camunda Logos
+  756.1  aiflag=0  alts=Intermediate Message Catch Event
+  759.1  aiflag=0  alts=Java Enterprise Edition Logo
+  765.1  aiflag=0  alts=book nerd
+  768.1  aiflag=0  alts=Skeleton of new tasklist
+  771.1  aiflag=0  alts=Asynchronous Continuations BEFORE and AFTER an activity
+  772.1  aiflag=0  alts=run and to debug tests directly in the IDE
+  775.1  aiflag=0  alts=Example of a Credit Application Case modeled in CMMN
+  780.1  aiflag=0  alts=Filtered tasklist with an embedded form
+  781.1  aiflag=0  alts=team working on laptops outdoors
+  784.1  aiflag=0  alts=community day audience
+  786.1  aiflag=0  alts=assign approver in tasklist with filters
+  793.1  aiflag=0  alts=Deployment Plugin
+  794.1  aiflag=0  alts=Example Modeler
+  798.1  aiflag=0  alts=valentin fixing issues
+  799.1  aiflag=0  alts=new input dialog for adding and editing the paramter details
+  804.1  aiflag=0  alts=documentation and test on the same page
+  808.1  aiflag=0  alts=#CamundaSummit Unconference: Cast Your Vote
+  812.1  aiflag=0  alts=Ancud IT presenting
+  819.1  aiflag=0  alts=Camunda Platform 8 – A 10-Year Journey
+  824.1  aiflag=0  alts=Editing DMN table screencast
+  833.1  aiflag=0  alts=Audience listening to Robert Parker
+  839.1  aiflag=0  alts=Code Studio: A Hands-on Guided Tour of Camunda Platform 8
+  843.1  aiflag=0  alts=Camunda Modeler Screenshot
+  845.1  aiflag=0  alts=Change Job Priority in Cockpit.
+  847.1  aiflag=0  alts=One of the evaluated decision tables.
+  849.1  aiflag=0  alts=Example Dish Decision Table
+  850.1  aiflag=0  alts=Reporting in cockpit
+  851.1  aiflag=0  alts=Example DMN table
+  852.1  aiflag=0  alts=html report
+  854.1  aiflag=0  alts=cockpit migration
+  855.1  aiflag=0  alts=Hand tool screencast
+  856.1  aiflag=0  alts=Screenshot of Camunda cockpit dashboard
+  858.1  aiflag=0  alts=Camunda Modeler Screenshot
+  859.1  aiflag=0  alts=Join us in the new Forum
+  860.1  aiflag=0  alts=Screenshot of new Camunda tasklist UI
+  862.1  aiflag=0  alts=New Camunda Cockpit Dashboard
+  863.1  aiflag=0  alts=Camunda Modeler Screenshot
+  865.1  aiflag=0  alts=Camunda Modeler Element Templates Screenshot
+  869.1  aiflag=0  alts=Camunda Modeler
+  871.1  aiflag=0  alts=Tasks Dashboard
+  872.1  aiflag=0  alts=Camunda Modeler Screenshot
+  878.1  aiflag=0  alts=Camunda Modeler Screenshot
+  884.1  aiflag=0  alts=Camunda Modeler Call Activity Element Templates Screenshot
+  889.1  aiflag=0  alts=Activated Human Task
+  890.1  aiflag=0  alts=CMIS File Preview
+  891.1  aiflag=0  alts=Batch operation dashboard
+  893.1  aiflag=0  alts=Raspberrry Pi and the LED matrix
+### figs2_0894_1021.png
+  894.1  aiflag=0  alts=(none)
+  895.1  aiflag=0  alts=Create a literal expression
+  897.1  aiflag=0  alts=task_1u1y1q1 general settings
+  901.1  aiflag=0  alts=Do not block job executor threads
+  903.1  aiflag=0  alts=Converting implementation type 'Java Class' input to select from text
+  909.1  aiflag=0  alts=Camunda Cockpit Batch Monitoring
+  913.1  aiflag=0  alts=Camunda Cockpit Batch Operations
+  914.1  aiflag=0  alts=History time to live
+  916.1  aiflag=0  alts=(none)
+  918.1  aiflag=0  alts=Failure scenarios of remote workers
+  922.1  aiflag=0  alts=#CamundaSummit: Unconference Agenda Announced
+  923.1  aiflag=0  alts=Screenshot of the new date picker
+  924.1  aiflag=0  alts=Screenshot of https://camundabpm.userecho.com
+  925.1  aiflag=0  alts=Cleanup Data Metrics
+  926.1  aiflag=0  alts=Connector Templating Support
+  933.1  aiflag=0  alts=Rocket emoji
+  934.1  aiflag=0  alts=Jimmy speaking at Camunda community day
+  935.1  aiflag=0  alts=The new DMN modeling experience
+  936.1  aiflag=0  alts=report creation
+  938.1  aiflag=0  alts=Custom Query Domain Example
+  940.1  aiflag=0  alts=Editing made simple
+  941.1  aiflag=0  alts=Screenshot of arranging a heatmap in the dashboard
+  942.1  aiflag=0  alts=Long polling to 'Fetch and Lock' External Tasks
+  948.1  aiflag=0  alts=Editing input expression script
+  949.1  aiflag=0  alts=Complex expressions can be hidden behind labels
+  950.1  aiflag=0  alts=Demo of Target Duration Comparison
+  953.1  aiflag=0  alts=Large decision table with the new dmn-js
+  955.1  aiflag=0  alts=4 Tips for Making the Most of Camunda Community Summit
+  956.1  aiflag=0  alts=DMN decision table inputs can be removed
+  959.1  aiflag=0  alts=scenario of the Camunda Platform and Optimize with all data in db
+  964.1  aiflag=0  alts=Data Stores can now be modeled between participants/pools
+  968.1  aiflag=0  alts=Jump to Tasklist link Screenshot
+  972.1  aiflag=0  alts=Asynchronous check box in the confirm modification window
+  973.1  aiflag=0  alts=Community Conversations: Uwe Koch, HDI Insurance
+  983.1  aiflag=0  alts=dark mode in Optimize Dashboard
+  988.1  aiflag=0  alts=History cleanup across hierarchies
+  989.1  aiflag=0  alts=Context pad and popup menu always accessible
+  990.1  aiflag=0  alts=Screenshot of analysis page UI
+  991.1  aiflag=0  alts=Limit precision in number reports
+  992.1  aiflag=0  alts=mobile data plan score decision table
+  1000.1  aiflag=0  alts=DMN Raw Data Report Links
+  1003.1  aiflag=0  alts=a team working together at hackday
+  1007.1  aiflag=0  alts=Screenshot of the cokckpit variable history view
+  1008.1  aiflag=0  alts=Screenshot of the Recalculation Dialog in Cockpit
+  1016.1  aiflag=0  alts=camunda on pivotal cloud foundry
+  1018.1  aiflag=0  alts=Variable Filter View
+  1020.1  aiflag=0  alts=Incomplete data warning
+  1021.1  aiflag=0  alts=Flow Node Display Configuration Overlay

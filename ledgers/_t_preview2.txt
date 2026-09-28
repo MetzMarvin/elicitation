@@ -1,0 +1,383 @@
+Counter({('EXCLUDE', 'E0-no-artefact'): 754, ('UNCERTAIN', ''): 330, ('EXCLUDE', 'E2-no-ai-element'): 195, ('EXCLUDE', 'E1-not-bpmn'): 104, ('INCLUDE', ''): 51, ('BLOCKED', None): 4})
+INCLUDE/UNCERTAIN already carrying a record: 2
+would need a record - mechanical: 357
+      11 UNCERTAIN Planning Your Camunda Proof of Concept | Camunda
+      12 UNCERTAIN Kickstarting digital transformation | Camunda
+      15 UNCERTAIN Start Modeling Faster with the New Simplified Modeling C
+      28 UNCERTAIN Thinking Outside The Microservice Box: Diversity of Endp
+      29 UNCERTAIN Hidden Threats of RPA Technical Debt You Might Have Over
+      30 UNCERTAIN Lessons Learned when Migrating from Camunda 7 to Camunda
+      31 UNCERTAIN Incident.io Daily Statistics with Camunda | Camunda
+      36 UNCERTAIN How Cardinal Health is Using Workflow Orchestration to T
+      37 UNCERTAIN Camunda Migration Methodology | Camunda
+      40 UNCERTAIN Camunda BPM Runtime 7.14.0 Released | Camunda
+      41 UNCERTAIN Licensing Update for Camunda 8 Self-Managed | Camunda
+      42 UNCERTAIN Tips & Tricks to make the most of CamundaCon LIVE 2020.2
+      44 UNCERTAIN Leveraging AI and ML with Camunda for Enhanced Business 
+      46 UNCERTAIN Camunda 8.5 Release is Here | Camunda
+      49 UNCERTAIN What is AI Automation and Its Benefits | Camunda
+      53 UNCERTAIN How to Design an End-to-End Business Process | Camunda
+      60 UNCERTAIN Orchestrating Chaos: How Process Orchestration Tames Mic
+      70 UNCERTAIN Cawemo Enterprise 1.4 Released | Camunda
+      73 INCLUDE   Accessing Machine Learning Models with Camunda’s Hugging
+      74 UNCERTAIN Camunda 8 Certification Launch | Camunda
+      77 UNCERTAIN Simplify the Management of Process Assets and Deployment
+      78 UNCERTAIN Camunda BPM Telemetry: Community FAQ | Camunda
+      80 UNCERTAIN Advance Your Career by Contributing to Open Source Proje
+      85 UNCERTAIN BPMN Is Brilliant, Actually | Camunda
+      86 UNCERTAIN Automation Reinvented | Camunda
+      88 UNCERTAIN Vandebron's Journey From Automation Challenges to Succes
+      90 UNCERTAIN Thinking Outside the Microservice Box: End-to-End Soluti
+      91 UNCERTAIN Camunda BPM Runtime 7.15.0-alpha1 Released | Camunda
+      92 UNCERTAIN Testing Entire Process Paths | Camunda
+      94 UNCERTAIN What is a Process Instance? | Camunda
+     104 UNCERTAIN Everything You Need to Know about CamundaCon 2024 New Yo
+     105 UNCERTAIN How Decision Modeling and AI Help with Risk Assessment |
+     106 UNCERTAIN From Monolith to Microservices Using Camunda | Camunda
+     115 UNCERTAIN DevRel “Dream Team”—How we Empower Camunda Users | Camun
+     116 UNCERTAIN What is a Business Rules Engine: Benefits and Use Cases 
+     117 UNCERTAIN Why BPMN Interchange Is So Important | Camunda
+     124 UNCERTAIN Scaling Workflow Engines at Intuit with Camunda 8 and Ze
+     129 UNCERTAIN Camunda Optimize 3.3.0-alpha1 Released | Camunda
+     132 UNCERTAIN Getting Change on Track: Deutsche Bahn's Camunda Transfo
+     134 UNCERTAIN Increasing Efficiency and Simplicity at AXA Insurance wi
+     135 UNCERTAIN How Process Orchestration Can Combat Outdated and Legacy
+     136 UNCERTAIN Hof University: Creating a Better World with Camunda | C
+     137 UNCERTAIN Camunda Alpha Release September 2024 | Camunda
+     142 UNCERTAIN Camunda BPM Runtime 7.15.0-alpha2 Released | Camunda
+     143 UNCERTAIN Blueprints are Better Than Ever in Camunda Marketplace |
+     146 UNCERTAIN Designing an Architecture for Smooth Migration from Camu
+     147 UNCERTAIN 1&1 Discusses Their First Steps with Camunda 8 | Camunda
+     149 UNCERTAIN Process Orchestration is a Tool in Your Enterprise Archi
+     157 UNCERTAIN Why Vandebron Migrated to Camunda for Process Orchestrat
+     158 UNCERTAIN Meet Mary Thengvall, Director of Developer Relations at 
+     159 UNCERTAIN Deutsche Telekom Harnesses Camunda for Market Agility an
+     162 UNCERTAIN Creating an Automation Squad: Angle Finance Talks Low-Co
+     163 UNCERTAIN Hacktoberfest Retro | Camunda
+     167 UNCERTAIN Unveiling the Mysteries of Europa: NASA's Europa Clipper
+     170 UNCERTAIN Should data be embedded in business processes? It depend
+     171 UNCERTAIN Why We Developed a Camunda SAP Integration Solution | Ca
+     176 UNCERTAIN Speeding Up RPA through Behavioural Observation | Camund
+     178 UNCERTAIN Harnessing Data-Driven Insights: The UK General Register
+     185 UNCERTAIN Camunda Alpha Release for November 2024 | Camunda
+     187 UNCERTAIN Rapid Deployment in Agile Enterprises with Camunda | Cam
+     197 UNCERTAIN Meet Adam Urban, Senior Software Engineer, Full Stack at
+     205 UNCERTAIN Putting AI Prompt Engineering Into Practice | Camunda
+     210 UNCERTAIN Performance Tuning in Camunda 8 | Camunda
+     216 UNCERTAIN Revolutionizing Health Insurance Underwriting: Harnessin
+     223 UNCERTAIN The Camunda Holiday Reading List 2020 | Camunda
+     232 UNCERTAIN One Exporter to Rule Them All: Exploring Camunda Exporte
+     233 UNCERTAIN Camunda’s One Model Approach to Process Orchestration | 
+     249 UNCERTAIN Test Your Processes With JUnit 5 | Camunda
+     251 UNCERTAIN Meet Andrea, Sania, Jennifer, Marija, Hüsna and Christin
+     263 UNCERTAIN Letters to Santa - Automating Joy to the World, At Scale
+     271 UNCERTAIN Camunda Community Review 2020 | Camunda
+     272 INCLUDE   Camunda 8.7 Release is Here | Camunda
+     275 UNCERTAIN Announcing Camunda for Common Good | Camunda
+     277 UNCERTAIN Creating and Testing Custom Exporters Using Camunda 8 Ru
+     283 UNCERTAIN Cawemo Enterprise (On-Premises) 1.5 Released | Camunda
+     285 UNCERTAIN Camunda Modeler 4.5 Released | Camunda
+     299 INCLUDE   Guide to Adding a Tool for an AI Agent | Camunda
+     301 UNCERTAIN Meet Belén, Joe, and Matteo from Camunda’s ADR Team | Ca
+     302 INCLUDE   The Benefits of Using Camunda Compared to Traditional IT
+     304 UNCERTAIN Welcome to the Camunda Community Summit 2021 | Camunda
+     305 UNCERTAIN Solving the RPA Challenge with Camunda | Camunda
+     307 INCLUDE   Camunda Alpha Release for June 2025 | Camunda
+     311 INCLUDE   Ensuring Responsible AI at Scale: Camunda’s Role in Gove
+     312 UNCERTAIN Pride at Camunda: Living Out Loud, Together | Camunda
+     321 INCLUDE   Unleashing SAP Data with Camunda's Agentic AI: A New Era
+     324 INCLUDE   AI agent or Rule-based DMN? Choosing the Right Abstracti
+     326 UNCERTAIN Inside Product & Engineering at Camunda: Meet Lena Schön
+     327 UNCERTAIN Testing DMN Tables Automatically | Camunda
+     336 INCLUDE   Orchestrating Intelligence: Accelerating Decisions with 
+     338 INCLUDE   The Power of Camunda Copilots | Camunda
+     340 INCLUDE   Build Once, Deploy Everywhere: Reuse Element & Connector
+     348 INCLUDE   Camunda and the Model Context Protocol: A Practical Over
+     349 UNCERTAIN Camunda Optimize 3.4.0-alpha1 Released | Camunda
+     351 UNCERTAIN Camunda's New Partner Program | Camunda
+     353 UNCERTAIN Community Questions: Camunda Web Apps | Camunda
+     354 UNCERTAIN Camunda at NASA: Perseverance prepares to land on Mars |
+     355 UNCERTAIN Be careful with console.log when using React.StrictMode 
+     356 UNCERTAIN Announcing the Camunda Certified Associate | Camunda
+     360 INCLUDE   Build an AI Process Agent with Camunda: Orchestrating Pe
+     362 INCLUDE   Enterprise-Grade Agentic Automation Is Here | Camunda
+     369 UNCERTAIN Camunda Promises a Partner-friendly Business Strategy | 
+     372 UNCERTAIN Introducing the Camunda Community Hub | Camunda
+     375 INCLUDE   Agentic Orchestration in Action: How Camunda and AWS Tra
+     377 UNCERTAIN Inside Go-To-Market at Camunda: Meet Beatriz Teixeira, M
+     381 INCLUDE   Designing AI Agents in Camunda: The AI Agent Task Connec
+     385 INCLUDE   Designing AI Agents in Camunda: The AI Agent Task Connec
+     398 INCLUDE   Migrate Your Agentic Processes Without Disruption Using 
+     400 INCLUDE   Guardrails and Best Practices for Agentic Orchestration 
+     403 UNCERTAIN Announcing Zeebe 0.9.0 | Camunda
+     404 UNCERTAIN What’s New In Zeebe - May 2018 Edition | Camunda
+     405 UNCERTAIN Announcing Zeebe 0.10.0 | Camunda
+     408 UNCERTAIN Announcing Zeebe 0.11.0 | Camunda
+     412 UNCERTAIN BPMN and Microservices Orchestration, Part 2 of 2 | Camu
+     415 UNCERTAIN Results of The 2018 Microservices Orchestration Survey |
+     422 UNCERTAIN Event-Driven Orchestration: Working with Messages in Zee
+     426 INCLUDE   Scale Agentic Automation with A2A, MCP, and Enhanced Con
+     434 UNCERTAIN ‘Introducing Operate’ Webinar Recording | Camunda
+     439 UNCERTAIN Data Pipeline Orchestration With Zeebe | Camunda
+     440 UNCERTAIN Real World BPMN with Zeebe and Minecraft | Camunda
+     442 UNCERTAIN Announcing the June 2019 Zeebe and Operate Releases | Ca
+     445 INCLUDE   Bringing Local LLMs to Camunda 8: Orchestrating AI Agent
+     449 UNCERTAIN Coming in Zeebe 0.21: Long-polling workers | Camunda
+     451 UNCERTAIN Podcast: Zeebe and Rust | Camunda
+     452 UNCERTAIN Scaling Zeebe Horizontally: A Simple Benchmark | Camunda
+     457 UNCERTAIN Announcing Camunda Cloud | Camunda
+     459 UNCERTAIN Zeebe and Kubernetes: Introducing Mauricio Salatino | Ca
+     461 UNCERTAIN Getting Started: Orchestrate ServiceNow with Camunda | C
+     464 UNCERTAIN Zeebe and IoT: Node-RED | Camunda
+     467 UNCERTAIN Getting Started with Zeebe on Kubernetes with Spring Boo
+     483 UNCERTAIN Announcing Zeebe Node Client 0.23 | Camunda
+     487 UNCERTAIN Announcing Zeebe 0.24.1 & Operate 0.24.2 | Camunda
+     488 UNCERTAIN Helm Secret Management Changes in Camunda 8.9 | Camunda
+     494 UNCERTAIN Orchestrating Microservices with Zeebe | Camunda
+     496 INCLUDE   A Look Back at the Camunda 2026 Kickoff Hackathon | Camu
+     501 UNCERTAIN Retaining Community Knowledge on the Slack Free Tier | C
+     502 UNCERTAIN Announcing Zeebe and Operate 0.26 | Camunda
+     504 INCLUDE   Designing A2A Orchestration with Camunda: The Foundation
+     511 INCLUDE   Getting Fast Feedback with Camunda Task Tester | Camunda
+     512 UNCERTAIN Operate with Confidence with Camunda 8.9-alpha5 | Camund
+     513 UNCERTAIN Camunda 8 Helm Chart Update and the Future of Bitnami Su
+     515 UNCERTAIN Women's History Month at Camunda, Part 1: Meet Lynette Y
+     516 UNCERTAIN Women's History Month at Camunda, Part 2: Meet Sara Lola
+     517 INCLUDE   Meet c8ctl, the CLI that Makes Camunda 8 Feel Like Home 
+     520 UNCERTAIN The Zeebe Community Welcomes Camunda Cloud! | Camunda
+     521 INCLUDE   Why BPMN (Still) Matters—Especially in the Age of AI | C
+     522 UNCERTAIN Swagger API access with Camunda Platform | Camunda
+     524 INCLUDE   Camunda 8.9: Your Fastest Path to Agentic Orchestration 
+     531 UNCERTAIN Test Drive Your Customer Support (CS) Transformation: An
+     532 UNCERTAIN Announcing Zeebe, Operate and Tasklist 1.0.0-alpha1 | Ca
+     535 UNCERTAIN Running a Camunda Meetup Group: Vienna | Camunda
+     540 UNCERTAIN Six Tips for building a global Meetup Organizers Program
+     542 UNCERTAIN Countdown to the Camunda Community Summit | Camunda
+     543 UNCERTAIN Camunda Platform Runtime 7.15.0 Released | Camunda
+     545 UNCERTAIN Camunda Modeler 4.7 Released | Camunda
+     546 UNCERTAIN Cawemo Enterprise (On-Premises) 1.6 Released | Camunda
+     548 UNCERTAIN Camunda Platform 7.15 Released | Camunda
+     550 UNCERTAIN The Journey from Camunda BPM to Camunda Platform | Camun
+     551 UNCERTAIN Camunda Cloud Console Go Client Library | Camunda
+     553 UNCERTAIN A Can’t-Miss Opportunity for Camunda Developers | Camund
+     554 UNCERTAIN Calling All Camunda Champions | Camunda
+     556 UNCERTAIN Camunda Platform Runtime 7.16.0-alpha1 Released | Camund
+     557 UNCERTAIN Introducing Camunda Cloud – Process Automation as a Serv
+     560 UNCERTAIN Camunda Cloud: Podcast Edition | Camunda
+     561 UNCERTAIN Why You’re Struggling with Your BPM Suite | Camunda
+     562 UNCERTAIN What You Should Know About Using Camunda Run in Producti
+     563 UNCERTAIN Camunda Cloud Zeebe K8s Operator | Camunda
+     567 UNCERTAIN Improving the Camunda Optimize Report Builder Experience
+     568 UNCERTAIN Modeling with Camunda: The Podcast | Camunda
+     569 UNCERTAIN Camunda Platform Runtime 7.16.0-alpha2 Released | Camund
+     570 UNCERTAIN Camunda Optimize 3.5.0-alpha2 Released | Camunda
+     571 INCLUDE   Intelligent Process Automation with Camunda and Amazon C
+     572 UNCERTAIN Camunda Cloud 1.1.0-alpha1 Released | Camunda
+     573 UNCERTAIN Welcome, Camunda Champions | Camunda
+     574 UNCERTAIN Your Camunda Cloud Questions Answered | Camunda
+     577 UNCERTAIN Jyske Bank: From Emails to Automation | Camunda
+     580 UNCERTAIN Camunda Modeler 4.9 Released | Camunda
+     581 UNCERTAIN Camunda Platform Runtime 7.16.0-alpha3 Released | Camund
+     583 UNCERTAIN Camunda Optimize 3.5.0 Released | Camunda
+     587 UNCERTAIN CamundaCon 2021: Get with the Program | Camunda
+     589 UNCERTAIN A Compelling ROI Case for Camunda | Camunda
+     591 UNCERTAIN Camunda Platform Runtime 7.16.0-alpha4 Released | Camund
+     592 UNCERTAIN Camunda Cloud 1.2.0-alpha1 Released | Camunda
+     593 UNCERTAIN Camunda Optimize 3.6.0-alpha1 Released | Camunda
+     594 UNCERTAIN Releasing Camunda Platform Community Helm Chart | Camund
+     595 UNCERTAIN CamundaCon 2021 Keynotes Revealed: Angie Jones & Hannah 
+     599 UNCERTAIN The Art of Gradual Digital Transformation | Camunda
+     600 UNCERTAIN Join the Fun - Hacktoberfest 2021 | Camunda
+     601 UNCERTAIN Podcast: Meet the Camundi - Rin Oliver | Camunda
+     602 UNCERTAIN Camunda Modeler 4.10 Released | Camunda
+     603 UNCERTAIN Automation: A Recipe for Disruption | Camunda
+     605 UNCERTAIN Camunda Cloud 1.2.0-alpha2 Released | Camunda
+     607 UNCERTAIN Camunda Optimize 3.6.0-alpha2 Released | Camunda
+     608 UNCERTAIN CamundaCon 2021: Know Before You Go | Camunda
+     609 UNCERTAIN Camunda Platform Runtime 7.16.0-alpha5 Released | Camund
+     610 UNCERTAIN 3 Reasons Why You Can’t Miss CamundaCon 2021 | Camunda
+     611 UNCERTAIN Nexus to Artifactory - An Infrastructural Digest | Camun
+     613 UNCERTAIN Q&A: The One with the Failing Delegate Class | Camunda
+     615 UNCERTAIN Do You Need a Chief Automation Officer? | Camunda
+     616 UNCERTAIN Digital Transformation: Evolution or Revolution? | Camun
+     619 UNCERTAIN Cawemo Enterprise (On-Premises) 1.8.0 Released | Camunda
+     624 UNCERTAIN The Ultimate Guide to Solving Bottlenecks with Camunda: 
+     625 UNCERTAIN Migrating from Monolith to Microservices | Camunda
+     627 UNCERTAIN Camunda Platform 7.16 Webinar Recap | Camunda
+     629 UNCERTAIN Q&A: The One with the Non-existent Variable | Camunda
+     632 UNCERTAIN Camunda Optimize 3.7.0-alpha1 Released | Camunda
+     633 UNCERTAIN Camunda Cloud 1.3.0-alpha1 Released | Camunda
+     634 UNCERTAIN More Amazing Camunda Champions Loading... | Camunda
+     636 UNCERTAIN Q&A: The One with the SSO Implementation in Camunda | Ca
+     637 UNCERTAIN How Developing Java Apps is Easier with a Process Engine
+     639 UNCERTAIN The Secret Behind the IT Transformation of Covéa Insuran
+     640 UNCERTAIN The Camunda Holiday Reading List 2021 | Camunda
+     641 UNCERTAIN Camunda Automation Platform 7.17.0-alpha2 Released | Cam
+     642 UNCERTAIN Behind the Scenes: BT Media and Broadcast Builds A Stron
+     682 UNCERTAIN Camunda Modeler 5.0.0 Released | Camunda
+     685 UNCERTAIN Camunda Automation Platform 7.17.0 Released | Camunda
+     732 UNCERTAIN Monitor collaborating executable BPMN 2.0 processes in c
+     771 UNCERTAIN Advanced Asynchronous Continuations in camunda BPM | Cam
+     962 UNCERTAIN Let's Face it, BPMN and DMN Rock! | Camunda
+     980 UNCERTAIN Introducing Embedded Forms Generator | Camunda
+    1022 UNCERTAIN Class Not Found? There’s a simple solution | Camunda
+    1029 UNCERTAIN Getting Started with Camunda Platform 8’s GraphQL API | 
+    1030 UNCERTAIN How to Anonymize Task Worker Data | Camunda
+    1033 UNCERTAIN Innovative Problems For Elegant Solutions: CamundaCon 20
+    1034 UNCERTAIN The Zeebe Story | Camunda
+    1036 UNCERTAIN viadee Process Application Validator (vPAV) | Camunda
+    1038 UNCERTAIN Camunda BPM 7.12.0-alpha3 Released | Camunda
+    1039 UNCERTAIN Camunda hackday projects 2019: Getting Started and Exter
+    1044 UNCERTAIN Camunda Optimize 2.6.0-alpha2 Released | Camunda
+    1046 UNCERTAIN Keycloak Identity Provider Extension Released | Camunda
+    1051 UNCERTAIN CamundaCon 2019 - Agility, Innovation and BPMN | Camunda
+    1053 UNCERTAIN Camunda Automation Platform 7.18.0-alpha1 Released | Cam
+    1056 UNCERTAIN Camunda Modeler 3.4 Released | Camunda
+    1058 UNCERTAIN How to (not) become a Digital Enterprise | Camunda
+    1059 UNCERTAIN The Job Executor: What Is Going on in My Process Engine?
+    1060 UNCERTAIN Prioritizing Customer-Focused Innovation | Camunda
+    1062 UNCERTAIN Bringing Technology to the Heart of your Company | Camun
+    1065 UNCERTAIN Camunda Modeler 3.5 Released | Camunda
+    1067 UNCERTAIN Camunda Optimize 2.7.0-alpha2 Released | Camunda
+    1068 UNCERTAIN Cawemo Release: Visual Diagram Comparisons and More | Ca
+    1069 UNCERTAIN Mary Thengvall joins Camunda | Camunda
+    1070 UNCERTAIN Put Executives in Charge who care about Long-Term Succes
+    1072 UNCERTAIN Announcing Camunda Optimize 2.7.0 | Camunda
+    1076 UNCERTAIN Camunda BPM 7.13.0-alpha1 Released | Camunda
+    1079 UNCERTAIN Introducing Camunda's Freshly Updated Look | Camunda
+    1081 UNCERTAIN Supporting You Around the Globe | Camunda
+    1082 UNCERTAIN Camunda BPM 7.13.0-alpha2 Released | Camunda
+    1083 UNCERTAIN Camunda Modeler 3.7 Released | Camunda
+    1087 UNCERTAIN Welcome to CamundaCon New York | Camunda
+    1091 UNCERTAIN CamundaCon Live - meet Cox Automotive | Camunda
+    1092 UNCERTAIN Connect Virtually with the Camunda Community at CamundaC
+    1095 UNCERTAIN Migrating processes from other vendors to Camunda | Camu
+    1098 UNCERTAIN Camunda Optimize 3.9.0-alpha1 Released | Camunda
+    1099 UNCERTAIN Microservices Workflow Automation: Who Owns Your Process
+    1104 UNCERTAIN Camunda Modeler 4.0.0-alpha.2 Released | Camunda
+    1105 UNCERTAIN Camunda Optimize 3.1.0-alpha1 Released | Camunda
+    1107 UNCERTAIN CamundaCon Live - Meet Ontario Teachers’ Pension Plan | 
+    1109 UNCERTAIN CamundaCon Live - Tips and Tricks to Make Most of Your E
+    1110 UNCERTAIN Camunda’s COVID-19 Response | Camunda
+    1113 UNCERTAIN Developer Relations at Camunda: Who, What, Where, Why, a
+    1116 UNCERTAIN Introducing the Camunda Cloud Early Access Program | Cam
+    1117 UNCERTAIN Migrating process BPMN from IBM BPM to Camunda | Camunda
+    1118 UNCERTAIN Process Migration Using BPMN Part 1 | Camunda
+    1123 UNCERTAIN Microservices Webinar Camunda Best Practices Questions |
+    1125 UNCERTAIN Camunda Modeler 4.0.0-alpha.3 Released | Camunda
+    1132 UNCERTAIN How we ran a successful virtual conference for > 6500 at
+    1139 UNCERTAIN Camunda Modeler 4.0.0 Released | Camunda
+    1140 UNCERTAIN Camunda Release Highlights | Camunda
+    1142 UNCERTAIN Getting Involved in Community Events This Summer | Camun
+    1148 UNCERTAIN Q&A: The One Where a JSON Request is Sent While Calling 
+    1151 UNCERTAIN Announcing CamundaCon Live 2020.2 -- October 8-9 | Camun
+    1152 UNCERTAIN The Power of Partners: How Camunda’s Partners are Making
+    1154 UNCERTAIN How Open is Camunda Platform 8? | Camunda
+    1155 UNCERTAIN What to do When You Can’t Quickly Migrate to Camunda 8 |
+    1158 UNCERTAIN Improved Support After Our Artifactory Migration | Camun
+    1159 UNCERTAIN Community Conversations: Jean Robert Alves, Agi | Camund
+    1165 UNCERTAIN Modeling a Bill's Journey through the U.S. House of Repr
+    1166 UNCERTAIN How to Achieve Geo-redundancy with Zeebe | Camunda
+    1169 UNCERTAIN Camunda Desktop Modeler 5.1 Released | Camunda
+    1174 UNCERTAIN Camunda Automation Platform 7.18.0-alpha4 Released | Cam
+    1175 UNCERTAIN Camunda Optimize 3.9.0 alpha3 Released | Camunda
+    1178 UNCERTAIN 3 ways to involve your community to improve your program
+    1179 UNCERTAIN BPMN and DMN Modeler for Atlassian Confluence | Camunda
+    1181 UNCERTAIN The CAM project in JIRA is moving to GitHub | Camunda
+    1186 UNCERTAIN Camunda BPM Release Cadence Update | Camunda
+    1187 UNCERTAIN Are you the next Camunda Champion? | Camunda
+    1188 UNCERTAIN Increase your resilience with new regions in Camunda Pla
+    1190 UNCERTAIN FEEL more confident transforming data | Camunda
+    1192 UNCERTAIN Zbchaos — A new fault injection tool for Zeebe | Camunda
+    1193 UNCERTAIN Monitoring Camunda Platform 7 with Prometheus | Camunda
+    1196 UNCERTAIN Using FEEL with Camunda 8 | Camunda
+    1198 UNCERTAIN Securing Camunda 8 self-managed cluster and applications
+    1200 UNCERTAIN Camunda Platform 7.18 Released - What’s New | Camunda
+    1201 UNCERTAIN CamundaCon 2022: Q&A with Bernd and Daniel | Camunda
+    1203 UNCERTAIN Camunda Wins Three PeerSpot 2022 Peer Awards | Camunda
+    1205 UNCERTAIN How to build a Camunda 8 Connector | Camunda
+    1207 UNCERTAIN Join user experience research and share your feedback wi
+    1213 UNCERTAIN Camunda Platform 8 for .NET Developers | Camunda
+    1215 UNCERTAIN Boosting your microservice architecture with message bro
+    1216 UNCERTAIN Hacktoberfest 2022 recap | Camunda
+    1217 UNCERTAIN Camunda Desktop Modeler 5.6 released | Camunda
+    1220 UNCERTAIN How do you create and grow a Center of Excellence? | Cam
+    1221 UNCERTAIN Contributing to Camunda’s Connector ecosystem | Camunda
+    1222 UNCERTAIN Bulletproofing Zeebe against concurrency bugs | Camunda
+    1225 UNCERTAIN Camunda Optimize 3.10.0-alpha3 released | Camunda
+    1230 UNCERTAIN How Atlassian uses Camunda within their hyperautomation 
+    1231 UNCERTAIN Orchestration vs Choreography | Camunda
+    1232 UNCERTAIN Top Benefits of Microservices and Key Use Cases | Camund
+    1233 UNCERTAIN Camunda Automation Platform 7.19.0-alpha3 Released | Cam
+    1234 UNCERTAIN Camunda Optimize 3.10.0-alpha4 Released | Camunda
+    1239 UNCERTAIN How We Took the Camunda Meet-up Program to the Next Leve
+    1241 UNCERTAIN Camunda Optimize 3.10.0-alpha5 Released | Camunda
+    1242 UNCERTAIN Camunda Automation Platform 7.19.0-alpha4 Released | Cam
+    1244 UNCERTAIN RPA + BPMN = True End-to-End Business Process Orchestrat
+    1246 UNCERTAIN Test as You Go: Rapid Process Development and Continuous
+    1247 UNCERTAIN Camunda's Vision for Low-Code | Camunda
+    1248 UNCERTAIN 5 Signs Your Business Processes Are Not Human-Centric | 
+    1251 UNCERTAIN Camunda Desktop Modeler 5.10 Released | Camunda
+    1255 UNCERTAIN From Project to Program: Scaling Camunda Adoption in You
+    1259 UNCERTAIN Start a Camunda Platform 8 Process via REST with Webhook
+    1262 UNCERTAIN From Draft to Perfection: Creating Effective Forms for H
+    1264 UNCERTAIN Camunda Receives SOC 2 Type 2 Certification | Camunda
+    1267 UNCERTAIN Git push to deploy to Camunda Cloud | Camunda
+    1268 UNCERTAIN Migrating Processes from Pega to Camunda: A Step-by-Step
+    1269 UNCERTAIN REST vs GraphQL vs gRPC: Which API is Right for Your Pro
+    1270 UNCERTAIN Scaling Camunda Adoption in Your Company - Phases of Ado
+    1277 UNCERTAIN Camunda Optimize 3.11.0-alpha2 Released | Camunda
+    1286 UNCERTAIN Automatically Keep Documentation Screenshots Up to Date 
+    1287 UNCERTAIN Camunda Platform Alpha Release July 2023 | Camunda
+    1292 UNCERTAIN The Camunda 8 Connector for Carbon-Aware Process Executi
+    1301 UNCERTAIN Camunda’s Evolution: An Open, Distributed Platform | Cam
+    1302 UNCERTAIN Drinking Our Champagne: Chaos Experiments with Zeebe aga
+    1303 UNCERTAIN Microservice vs API: How Are They Different? | Camunda
+    1304 UNCERTAIN New Frontend Plugin System for Cockpit starting with Cam
+    1305 UNCERTAIN Camunda Modeler 4.1 Released | Camunda
+    1306 UNCERTAIN Save Your Connector as a Reusable Template | Camunda
+    1316 UNCERTAIN Camunda Community Podcast Recap: Inbound and Outbound Co
+    1323 UNCERTAIN Top 6 Benefits of Event-Driven Business Process Orchestr
+    1331 UNCERTAIN Camunda Optimize 3.2.0-alpha1 Released | Camunda
+    1332 UNCERTAIN The Inner Workings of Hot Backups in Zeebe | Camunda
+    1334 UNCERTAIN From Project to Program: Establishing a Center of Excell
+    1336 UNCERTAIN Bridge the Gap Between Salesforce and Core Business Proc
+    1341 UNCERTAIN Start Your Camunda Process from an External Form | Camun
+    1343 UNCERTAIN Using Play When You Have Connectors in Your Process | Ca
+    1345 UNCERTAIN DevEx at Camunda Turns 3! | Camunda
+    1353 UNCERTAIN Announcing Hacktoberfest 2020 | Camunda
+    1355 UNCERTAIN 39 pieces of unsolicited advice for Software Engineering
+    1357 UNCERTAIN From Project to Program: Building your Rockstar project 
+    1358 UNCERTAIN How CMMN never lived up to its potential. | Camunda
+    1363 UNCERTAIN Future-Proofing Payments with Process Orchestration | Ca
+    1366 UNCERTAIN Navigating Technical Transactions with Camunda 8 and Spr
+    1371 UNCERTAIN Short-term Gain, Long-term Pain: RPA’s Rising Popularity
+    1388 UNCERTAIN Come One, Come All and Join Us for CamundaCon 2024 Berli
+    1392 INCLUDE   Key Principles in Designing Agents for Production – Part
+    1393 INCLUDE   Key Principles in Designing Agents for Production – Part
+    1409 UNCERTAIN Camunda 8 Helm Chart Update on Helm 4 | Camunda
+    1428 UNCERTAIN Optimizing a Process for Target KPIs with AI: A Job Anal
+    1433 UNCERTAIN How to Test an AI Agent That Never Does the Same Thing T
+would need a record - hand-ruled: 22
+       9 INCLUDE   How Artificial Intelligence can Enhance Your Business Pr
+      18 INCLUDE   From Insights to Action: Harnessing Camunda Optimize for
+      98 INCLUDE   Predictive Models in Customer Onboarding Risk | Camunda
+     110 INCLUDE   bpmn.ai: Orchestrate AI Services in Business Processes |
+     130 INCLUDE   Automate Customer Inquiry Routing with Camunda’s Process
+     131 UNCERTAIN Artificial Intelligence (AI) Agents: What You Need to Kn
+     152 INCLUDE   Beer Suggestions with DMN and AI | Camunda
+     182 INCLUDE   Transforming Telecom: Unleashing the Power of Process Or
+     227 UNCERTAIN Why AI Agents Need Orchestration | Camunda
+     248 INCLUDE   Building Your First AI Agent in Camunda | Camunda
+     270 INCLUDE   Camunda Releases Agentic Orchestration for the Enterpris
+     288 INCLUDE   Building Trustworthy AI Agents: How Camunda Aligns with 
+     292 INCLUDE   Intelligent by Design: A Step-by-Step Guide to AI Task A
+    1263 INCLUDE   Facilitating Human Workflow Orchestration with Generativ
+    1340 INCLUDE   Claims Processing Automation in Insurance: A Complete Gu
+    1376 INCLUDE   Creating Engaging Trivia Experiences: A Developer's Pers
+    1390 UNCERTAIN Key Principles in Designing Agents for Production – Part
+    1399 INCLUDE   Can AI Design an Enterprise Process as Well as a Human? 
+    1405 INCLUDE   Where AI Really Creates Value and Where It Doesn't | Cam
+    1410 INCLUDE   Why Bolting LangChain onto a Workflow Engine Backfires a
+    1413 INCLUDE   From Weeks to Days: What Camunda's AI Skills Actually Sa
+    1434 INCLUDE   Three Ways Camunda Speaks MCP (And Why the Direction Mat

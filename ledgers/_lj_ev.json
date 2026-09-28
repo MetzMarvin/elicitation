@@ -1,0 +1,1202 @@
+[
+ {
+  "n": 1,
+  "url": "https://docs.loyjoy.com/bpmn/",
+  "h1": "BPMN 2.0 Reference",
+  "ev": "LoyJoy is based on the BPMN 2.0 modeling standard and implements a BPMN 2.0 process engine.",
+  "strict": 0,
+  "len": 1852
+ },
+ {
+  "n": 2,
+  "url": "https://docs.loyjoy.com/bpmn/control_flow/",
+  "h1": "BPMN 2.0 Control Flow",
+  "ev": "",
+  "strict": 0,
+  "len": 43
+ },
+ {
+  "n": 3,
+  "url": "https://docs.loyjoy.com/bpmn/control_flow/Loop/",
+  "h1": "Loop",
+  "ev": "To repeat a certain part of a process, you can use the loop.",
+  "strict": 0,
+  "len": 459
+ },
+ {
+  "n": 4,
+  "url": "https://docs.loyjoy.com/bpmn/events/",
+  "h1": "BPMN 2.0 Events",
+  "ev": "Add BPMN start and BPMN end events to your flow.",
+  "strict": 0,
+  "len": 80
+ },
+ {
+  "n": 5,
+  "url": "https://docs.loyjoy.com/bpmn/events/endEvent/",
+  "h1": "End Event",
+  "ev": "Insert this event to end the chat flow.",
+  "strict": 0,
+  "len": 236
+ },
+ {
+  "n": 6,
+  "url": "https://docs.loyjoy.com/bpmn/events/intermediateCatchEvent_timer/",
+  "h1": "Wait Event",
+  "ev": "Use this if you want to have a waiting time before the next message appears in the chat window.",
+  "strict": 0,
+  "len": 281
+ },
+ {
+  "n": 7,
+  "url": "https://docs.loyjoy.com/bpmn/events/startEvent_message/",
+  "h1": "Message Start Event",
+  "ev": "The message start event is a type of start event that is triggered by the receipt of a message.",
+  "strict": 1,
+  "len": 716
+ },
+ {
+  "n": 8,
+  "url": "https://docs.loyjoy.com/bpmn/events/startEvent_timer/",
+  "h1": "Timer event",
+  "ev": "Start your chat history on a day of your choice and adjust the time zone if necessary.",
+  "strict": 0,
+  "len": 1316
+ },
+ {
+  "n": 9,
+  "url": "https://docs.loyjoy.com/bpmn/events/startEvent/",
+  "h1": "Start event",
+  "ev": "The start event is the first event in a process.",
+  "strict": 0,
+  "len": 138
+ },
+ {
+  "n": 10,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/",
+  "h1": "BPMN Process Modules",
+  "ev": "Each module encapsulates predefined logic, from \"ask for first name\" to \"AI Agent with tool calling\".",
+  "strict": 3,
+  "len": 1130
+ },
+ {
+  "n": 11,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/advent_calendar_door/",
+  "h1": "Advent Calendar Door Module",
+  "ev": "Let customers open a new door every day in a Christmas advent calendar countdown.",
+  "strict": 0,
+  "len": 263
+ },
+ {
+  "n": 12,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/ai_agent/",
+  "h1": "AI Agent",
+  "ev": "Overview The AI Agent module is LoyJoy's new component for building AI-driven conversational experiences.",
+  "strict": 56,
+  "len": 19911
+ },
+ {
+  "n": 13,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/ai_knowledge_followup/",
+  "h1": "AI Followup",
+  "ev": "Please only use the AI Agent module instead.",
+  "strict": 12,
+  "len": 1028
+ },
+ {
+  "n": 14,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/ai_knowledge/",
+  "h1": "AI Knowledge",
+  "ev": "This module is not deprecated, however limited to answering customer questions based on a static knowledge database, which is queried once per question.",
+  "strict": 47,
+  "len": 9562
+ },
+ {
+  "n": 15,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/ai_prompt/",
+  "h1": "AI Prompt",
+  "ev": "This module is supposed to be used inside the normal chat flow.",
+  "strict": 9,
+  "len": 1606
+ },
+ {
+  "n": 16,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/ai_recommender/",
+  "h1": "AI Recommender",
+  "ev": "Please only use the AI Agent module instead.",
+  "strict": 3,
+  "len": 637
+ },
+ {
+  "n": 17,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/ai_smalltalk/",
+  "h1": "AI Smalltalk",
+  "ev": "Please only use the AI Agent module instead.",
+  "strict": 5,
+  "len": 422
+ },
+ {
+  "n": 18,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/animation/",
+  "h1": "Animation Module",
+  "ev": "Introduction Animations will lighten up any agent and are a real joy factor of the LoyJoy Platform.",
+  "strict": 0,
+  "len": 2097
+ },
+ {
+  "n": 19,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/api_client/",
+  "h1": "API Client",
+  "ev": "Introduction Make use of the API client module whenever you want to send collected data from LoyJoy to your service, pull data from your service",
+  "strict": 0,
+  "len": 9558
+ },
+ {
+  "n": 20,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/api_client/mappings/",
+  "h1": "Mappings",
+  "ev": "Mappings allow either to send data such as process variables from LoyJoy to an external API, or to extract data from an external API and",
+  "strict": 0,
+  "len": 4475
+ },
+ {
+  "n": 21,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/api_client/timeouts/",
+  "h1": "Timeouts",
+  "ev": "Process modules with API calls such as the API client process module and the Webservice process module have a timeout of approximately 20 seconds.",
+  "strict": 0,
+  "len": 2454
+ },
+ {
+  "n": 22,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/appointment/",
+  "h1": "Appointment Scheduler Module",
+  "ev": "Introduction The Appointment Scheduler Module is convenient to allow customers to book appointments directly in the chat.",
+  "strict": 0,
+  "len": 2824
+ },
+ {
+  "n": 23,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/articles/",
+  "h1": "Article Gallery Module",
+  "ev": "Introduction The Article Gallery module allows you to showcase up to 5 articles within the chat, displayed in a list format.",
+  "strict": 0,
+  "len": 1155
+ },
+ {
+  "n": 24,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/audio_recorder/",
+  "h1": "Voice Recorder Module",
+  "ev": "Introduction Unlike the Audio module, where audio files can be played, Audio Recording gives customers the option to leave a voice message in the chat.",
+  "strict": 0,
+  "len": 911
+ },
+ {
+  "n": 25,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/audio/",
+  "h1": "Voice Message Module",
+  "ev": "Lighten up your chat agent by adding media in the form of audio.",
+  "strict": 0,
+  "len": 1077
+ },
+ {
+  "n": 26,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/auth0/",
+  "h1": "Auth0 Module",
+  "ev": "This module allows customers to authenticate in the chat using an Auth0 user account based on OAuth 2.0.",
+  "strict": 0,
+  "len": 1599
+ },
+ {
+  "n": 27,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/beiersdorf/",
+  "h1": "Beiersdorf Module",
+  "ev": "Integrate Beiersdorf API into your process.",
+  "strict": 0,
+  "len": 92
+ },
+ {
+  "n": 28,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/big_query/",
+  "h1": "BigQuery Module",
+  "ev": "Google BigQuery is a cloud-based big data analytics web service for processing very large read-only data sets.",
+  "strict": 0,
+  "len": 4256
+ },
+ {
+  "n": 29,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/birthdate/",
+  "h1": "Birthdate Module",
+  "ev": "Introduction Ask for your customer's birthday and save this date if necessary.",
+  "strict": 0,
+  "len": 924
+ },
+ {
+  "n": 30,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/brevo/",
+  "h1": "Brevo Module",
+  "ev": "Brevo is an application designed to help you manage and optimize your email marketing campaigns.",
+  "strict": 0,
+  "len": 1636
+ },
+ {
+  "n": 31,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/campaign_monitor/",
+  "h1": "Campaign Monitor Module",
+  "ev": "Campaign Monitor is an application designed to help you manage and optimize your email marketing campaigns.",
+  "strict": 0,
+  "len": 1158
+ },
+ {
+  "n": 32,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/clever_reach/",
+  "h1": "CleverReach Module",
+  "ev": "This module allows you to insert subscriptions directly into your CleverReach database, ensuring that your email marketing lists are always up-to-date.",
+  "strict": 0,
+  "len": 2458
+ },
+ {
+  "n": 33,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/clipboard/",
+  "h1": "Clipboard Module",
+  "ev": "Introduction Display a text message that can be copied to the clipboard.",
+  "strict": 0,
+  "len": 355
+ },
+ {
+  "n": 34,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/code/",
+  "h1": "Code Entry Module",
+  "ev": "Introduction Your customers can enter codes to participate in a giveaway or loyality program.",
+  "strict": 0,
+  "len": 961
+ },
+ {
+  "n": 35,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/conversion/",
+  "h1": "Conversion Module",
+  "ev": "Introduction Create custom KPIs and track the conversion rate of your agent in the LoyJoy analytics and in the weekly analytics report via email.",
+  "strict": 0,
+  "len": 637
+ },
+ {
+  "n": 36,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/coupon_code/",
+  "h1": "Coupon Code Module",
+  "ev": "Introduction Provide customers with a coupon code with discounts or promotional offers on your products or services.",
+  "strict": 0,
+  "len": 2682
+ },
+ {
+  "n": 37,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/csat_survey/",
+  "h1": "CSAT Survey Module",
+  "ev": "Introduction Measure the Customer Satisfaction Score (CSAT) directly inside the chat.",
+  "strict": 0,
+  "len": 2611
+ },
+ {
+  "n": 38,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/data_collection/",
+  "h1": "Questionnaire Module",
+  "ev": "With this full-blown questionnaire solution you can ask for single choice, multiple choice, prioritize, IBAN, phone numbers, sliders, drop-down, addresses (with Google Maps connection), file",
+  "strict": 0,
+  "len": 15444
+ },
+ {
+  "n": 39,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/dmn/",
+  "h1": "Decision Table Module",
+  "ev": "Introduction Define a decision table based on decision rules to read and write BPMN process variables at once.",
+  "strict": 0,
+  "len": 5965
+ },
+ {
+  "n": 40,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/email_edit/",
+  "h1": "Edit Email Address Module",
+  "ev": "Introduction Allow your customers to edit their email address in the chat.",
+  "strict": 0,
+  "len": 538
+ },
+ {
+  "n": 41,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/email/",
+  "h1": "Email Module",
+  "ev": "Introduction Ask your customers for their email address.",
+  "strict": 0,
+  "len": 901
+ },
+ {
+  "n": 42,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/email/email_templates/",
+  "h1": "How to Add Email HTML Templates in LoyJoy",
+  "ev": "What This Solution Will Do for You There are multiple points where you can configure email templates in LoyJoy.",
+  "strict": 0,
+  "len": 1394
+ },
+ {
+  "n": 43,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/event/",
+  "h1": "Event Module",
+  "ev": "Introduction Trigger an event with the name of your choice.",
+  "strict": 0,
+  "len": 1416
+ },
+ {
+  "n": 44,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/external_link/",
+  "h1": "External Link Module",
+  "ev": "Introduction Direct your customers to an external website with a link, seamlessly integrating additional resources and information into your chat interface without disrupting the user",
+  "strict": 0,
+  "len": 1789
+ },
+ {
+  "n": 45,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/firstname/",
+  "h1": "First Name Module",
+  "ev": "Introduction Ask your customer for their first name.",
+  "strict": 0,
+  "len": 822
+ },
+ {
+  "n": 46,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/form/",
+  "h1": "Form Module",
+  "ev": "Introduction Offer a customizable form to your customers.",
+  "strict": 2,
+  "len": 1440
+ },
+ {
+  "n": 47,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/gender/",
+  "h1": "Gender Module",
+  "ev": "Introduction Ask your customer for their gender.",
+  "strict": 0,
+  "len": 849
+ },
+ {
+  "n": 48,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/goodbye/",
+  "h1": "Goodbye Module",
+  "ev": "Introduction This module allows you to craft a personalized, professional goodbye message that leaves a positive lasting impression on your customers.",
+  "strict": 0,
+  "len": 602
+ },
+ {
+  "n": 49,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/handover/",
+  "h1": "Handover via Email Module",
+  "ev": "Introduction Let customers get in touch with your team via email.",
+  "strict": 0,
+  "len": 1091
+ },
+ {
+  "n": 50,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/hubspot/",
+  "h1": "Hubspot Module",
+  "ev": "The HubSpot module in LoyJoy supports creating new contacts or updating existing ones in HubSpot.",
+  "strict": 0,
+  "len": 1172
+ },
+ {
+  "n": 51,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/image/",
+  "h1": "Image Gallery Module",
+  "ev": "Introduction The Image Gallery module allows you to add up to five images that customers can swipe through.",
+  "strict": 0,
+  "len": 1291
+ },
+ {
+  "n": 52,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/inxmail/",
+  "h1": "Inxmail Module",
+  "ev": "Introduction The Inxmail module facilitates subscribing or unsubscribing customers from an Inxmail mailing list, streamlining your email marketing efforts.",
+  "strict": 0,
+  "len": 770
+ },
+ {
+  "n": 53,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/javascript/",
+  "h1": "JavaScript Module",
+  "ev": "Introduction The JavaScript module allows you to define and execute arbitrary JavaScript code in the user's browser.",
+  "strict": 0,
+  "len": 1794
+ },
+ {
+  "n": 54,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/jump_auto/",
+  "h1": "Automatic Jump Module",
+  "ev": "Introduction Jump into another process step or into a different agent, use this to create whole customer journeys.",
+  "strict": 0,
+  "len": 758
+ },
+ {
+  "n": 55,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/jump_decision/",
+  "h1": "Decision Jump Module",
+  "ev": "Introduction The Decision Jump module allows customers to navigate dynamically within an agent, either by jumping into a specific process step or transitioning into another",
+  "strict": 0,
+  "len": 2883
+ },
+ {
+  "n": 56,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/jump_return/",
+  "h1": "Return Jump Module",
+  "ev": "Introduction The Return Jump module enhances the modularity of your agents by allowing users to jump to another agent and automatically return to the original",
+  "strict": 0,
+  "len": 1653
+ },
+ {
+  "n": 57,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/keycloak/",
+  "h1": "Keycloak Module",
+  "ev": "Introduction This module enables customers to authenticate in the chat using their Keycloak account through OAuth 2.0.",
+  "strict": 0,
+  "len": 1207
+ },
+ {
+  "n": 58,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/lastname/",
+  "h1": "Last Name Module",
+  "ev": "Introduction Ask your customer for their last name.",
+  "strict": 0,
+  "len": 816
+ },
+ {
+  "n": 59,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/list/",
+  "h1": "List Module",
+  "ev": "Introduction Display a list in the chat.",
+  "strict": 0,
+  "len": 1531
+ },
+ {
+  "n": 60,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/live/",
+  "h1": "Live Chat Module",
+  "ev": "Introduction The live chat feature allows users to interact directly with an agent and receive real-time support and assistance.",
+  "strict": 0,
+  "len": 3633
+ },
+ {
+  "n": 61,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/locale/",
+  "h1": "Language Selection Module",
+  "ev": "Introduction If your agent supports multiple languages, this module allows customers to select their preferred language, providing a more personalized agent.",
+  "strict": 0,
+  "len": 1414
+ },
+ {
+  "n": 62,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/lottie/",
+  "h1": "Lottie Module",
+  "ev": "Introduction Upload a Lottie animation, which should be rendered in the chat window.",
+  "strict": 0,
+  "len": 2336
+ },
+ {
+  "n": 63,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/loyalty_referral/",
+  "h1": "Loyalty Referral Module",
+  "ev": "Introduction The Loyalty Referral Module allows customers to earn loyalty points when someone they referred signs up via a referral link.",
+  "strict": 0,
+  "len": 1768
+ },
+ {
+  "n": 64,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/loyalty_sharing/",
+  "h1": "Loyalty Sharing Module",
+  "ev": "Introduction The Loyalty Sharing Module is similar to the Share Link Module but with the added functionality of awarding loyalty points for referrals.",
+  "strict": 0,
+  "len": 1961
+ },
+ {
+  "n": 65,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/loyalty/",
+  "h1": "Loyalty Points Module",
+  "ev": "Introduction The Loyalty Module allows you to add a loyalty program to your chat agents, where customers can earn points for actions within the chat",
+  "strict": 0,
+  "len": 2154
+ },
+ {
+  "n": 66,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/mail/",
+  "h1": "Send Email Module",
+  "ev": "Introduction The Send Mail Module enables you to effortlessly send emails to a list of predefined recipients and/or the current customer.",
+  "strict": 0,
+  "len": 3026
+ },
+ {
+  "n": 67,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/mailchimp/",
+  "h1": "Mailchimp Module",
+  "ev": "Introduction The Mailchimp Module allows you to add a member to an audience in Mailchimp directly from your chat agent.",
+  "strict": 0,
+  "len": 1730
+ },
+ {
+  "n": 68,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/main_prize/",
+  "h1": "Main Prize Module",
+  "ev": "Introduction Use this module to display a main prize for raffles or advent calendars.",
+  "strict": 0,
+  "len": 349
+ },
+ {
+  "n": 69,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/message/",
+  "h1": "Simple Message Module",
+  "ev": "Introduction The Simple Message module allows you to send a plain chat message, with an optional image.",
+  "strict": 0,
+  "len": 1092
+ },
+ {
+  "n": 70,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/microsoft_entra_id/",
+  "h1": "Microsoft Entra ID Module",
+  "ev": "Introduction This module enables customers to authenticate in the LoyJoy chat agent using their Microsoft Entra ID (formerly known as Azure Active Directory) account through",
+  "strict": 0,
+  "len": 1574
+ },
+ {
+  "n": 71,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/mini_program/",
+  "h1": "Mini Program Module",
+  "ev": "Introduction The Mini Program Module enables you to embed any existing web application or website directly within the chat.",
+  "strict": 0,
+  "len": 1752
+ },
+ {
+  "n": 72,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/name/",
+  "h1": "Name Module",
+  "ev": "Introduction Ask your customer for their name.",
+  "strict": 0,
+  "len": 688
+ },
+ {
+  "n": 73,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/newsletter_opt_in/",
+  "h1": "Newsletter Opt-In Module",
+  "ev": "Introduction The Newsletter Opt-In Module allows you to ask customers for their consent to receive newsletters.",
+  "strict": 0,
+  "len": 3750
+ },
+ {
+  "n": 74,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/notification/",
+  "h1": "Notification Module",
+  "ev": "Introduction Trigger an immediate notification to your customer.",
+  "strict": 0,
+  "len": 313
+ },
+ {
+  "n": 75,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/nps_survey/",
+  "h1": "NPS Survey Module",
+  "ev": "Introduction Ask for the Net Promoter Score.",
+  "strict": 0,
+  "len": 1719
+ },
+ {
+  "n": 76,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/one_trust/",
+  "h1": "OneTrust Module",
+  "ev": "The OneTrust Module integrates with the OneTrust system to either retrieve the status of a consent receipt or create/update a consent receipt for a customer.",
+  "strict": 0,
+  "len": 1803
+ },
+ {
+  "n": 77,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/opening_hours/",
+  "h1": "Opening Hours Module",
+  "ev": "Introduction Enter your opening hours to execute time based logic.",
+  "strict": 0,
+  "len": 1817
+ },
+ {
+  "n": 78,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/optimizely/",
+  "h1": "Optimizely Module",
+  "ev": "Introduction The Optimizely Module allows you to exchange data with Optimizely by adding, updating, or removing recipients from a recipient list, as well as checking",
+  "strict": 0,
+  "len": 1863
+ },
+ {
+  "n": 79,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/participation/",
+  "h1": "Giveaway Participation Module",
+  "ev": "Introduction The Giveaway Participation Module allows you to engage your customers by letting them participate in raffles, competitions, ...",
+  "strict": 0,
+  "len": 4612
+ },
+ {
+  "n": 80,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/password/",
+  "h1": "Password Module",
+  "ev": "Introduction Let your customer enter a password in the chat.",
+  "strict": 0,
+  "len": 136
+ },
+ {
+  "n": 81,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/pattern_split_ai/",
+  "h1": "AI Gateway",
+  "ev": "This gateway is not deprecated, however the AI Agent module is the recommended approach for new use cases, as it is more powerful and flexible",
+  "strict": 14,
+  "len": 2265
+ },
+ {
+  "n": 82,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/pattern_split_decision/",
+  "h1": "Decision Gateway",
+  "ev": "Ask a question and create a separate path in the process model for each possible answer.",
+  "strict": 0,
+  "len": 193
+ },
+ {
+  "n": 83,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/pattern_split/",
+  "h1": "Gateway",
+  "ev": "A BPMN gateway is used to create a split in the process model, leading into different branches.",
+  "strict": 0,
+  "len": 500
+ },
+ {
+  "n": 84,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/pdf/",
+  "h1": "PDF Module",
+  "ev": "Introduction With the PDF module you can generate a PDF document based on a HTML template or writable PDF and let your customer download the",
+  "strict": 0,
+  "len": 1688
+ },
+ {
+  "n": 85,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/personal_data_intro/",
+  "h1": "Personal Data Intro Module",
+  "ev": "Introduction With a personal data intro you can ask for permission before collecting personal data.",
+  "strict": 0,
+  "len": 738
+ },
+ {
+  "n": 86,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/personal_data_outro/",
+  "h1": "Personal Data Outro Module",
+  "ev": "Introduction Use this optionally after collecting personal data.",
+  "strict": 0,
+  "len": 592
+ },
+ {
+  "n": 87,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/phone/",
+  "h1": "Phone Number Module",
+  "ev": "Introduction Ask customers for their phone number.",
+  "strict": 0,
+  "len": 801
+ },
+ {
+  "n": 88,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/places/",
+  "h1": "Places Module",
+  "ev": "Introduction Let the user enter an address and calculate the distances to a set of destinations.",
+  "strict": 0,
+  "len": 1780
+ },
+ {
+  "n": 89,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/places/api_keys/",
+  "h1": "Google Maps Platform API Keys",
+  "ev": "To create a Google Maps Platform API key for the LoyJoy Places module, you need to have a Google Cloud Platform account.",
+  "strict": 0,
+  "len": 1096
+ },
+ {
+  "n": 90,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/poll/",
+  "h1": "Poll Module",
+  "ev": "Introduction The Poll Module is a powerful tool that enables users to participate in polls and surveys and see the results in real time.",
+  "strict": 0,
+  "len": 1552
+ },
+ {
+  "n": 91,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/postal_address/",
+  "h1": "Postal Address Module",
+  "ev": "Introduction Ask for a postal address and store it in your CRM.",
+  "strict": 0,
+  "len": 731
+ },
+ {
+  "n": 92,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/prizes/",
+  "h1": "Prizes Gallery Module",
+  "ev": "Introduction Display multiple prizes for raffles or sweepstakes.",
+  "strict": 0,
+  "len": 1056
+ },
+ {
+  "n": 93,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/pro_campaign/",
+  "h1": "ProCampaign Module",
+  "ev": "ProCampaign Cookie You can listen for ProCampaign cookies on your Website by adding an API key in the top right corner of the process module.",
+  "strict": 0,
+  "len": 246
+ },
+ {
+  "n": 94,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/proceed/",
+  "h1": "Proceed Question Module",
+  "ev": "Introduction The Proceed Question Module prompts customers to decide if they want to continue with the chat.",
+  "strict": 0,
+  "len": 1430
+ },
+ {
+  "n": 95,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/process_instance_create/",
+  "h1": "Create Process Instance Module",
+  "ev": "Introduction Use this if customers should be able to go through the same agent several times.",
+  "strict": 0,
+  "len": 303
+ },
+ {
+  "n": 96,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/product_feed/",
+  "h1": "Product Feed Module",
+  "ev": "Introduction Present the products of your external data feed to customers.",
+  "strict": 0,
+  "len": 3529
+ },
+ {
+  "n": 97,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/product_feed/connectors/",
+  "h1": "Connectors",
+  "ev": "LoyJoy provides the option to establish a connection with your external data source (such as Google Sheets) through connectors, allowing you to use this data",
+  "strict": 0,
+  "len": 3087
+ },
+ {
+  "n": 98,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/product_feed/connectors/database/",
+  "h1": "Database Connector",
+  "ev": "As an alternative to any external data source, you can use the database connector that connects to LoyJoy's database to store and retrieve products for",
+  "strict": 0,
+  "len": 414
+ },
+ {
+  "n": 99,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/product_feed/connectors/google_sheets/",
+  "h1": "Google Sheets",
+  "ev": "LoyJoy offers the possibility to link your Google Sheets data using a google sheet conector.",
+  "strict": 0,
+  "len": 742
+ },
+ {
+  "n": 100,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/product_feed/connectors/json_api/",
+  "h1": "JSON Api",
+  "ev": "To create a JSON connector, it is recommended to use a hyperscaler such as Google Cloud or Amazon Web Services (AWS).",
+  "strict": 0,
+  "len": 909
+ },
+ {
+  "n": 101,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/product_feed/tag_recommender/",
+  "h1": "Using the Tag Recommender",
+  "ev": "The tag recommender feature provides customers with the most relevant product listings, enhancing their shopping agent.",
+  "strict": 0,
+  "len": 2587
+ },
+ {
+  "n": 102,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/products/",
+  "h1": "Product Gallery Module",
+  "ev": "Introduction Present your products to customers in a variety of ways.",
+  "strict": 0,
+  "len": 4287
+ },
+ {
+  "n": 103,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/profiling_opt_in/",
+  "h1": "Profiling Opt-In Module",
+  "ev": "Introduction This module allows customers to opt-in for profiling, either through a single opt-in or a GDPR-compliant double opt-in.",
+  "strict": 0,
+  "len": 2888
+ },
+ {
+  "n": 104,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/pub_sub/",
+  "h1": "Google Pub/Sub Module",
+  "ev": "Introduction Google Pub/Sub is a messaging service for exchanging event data among applications and services.",
+  "strict": 0,
+  "len": 2133
+ },
+ {
+  "n": 105,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/quiz/",
+  "h1": "Quiz Module",
+  "ev": "Introduction Let customers play a fun quiz, add animations to make it really joyful.",
+  "strict": 0,
+  "len": 1211
+ },
+ {
+  "n": 106,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/rapidmail/",
+  "h1": "Rapidmail Module",
+  "ev": "Introduction The Rapidmail Module allows you to add a recipient to a recipient list in Rapidmail.",
+  "strict": 0,
+  "len": 1132
+ },
+ {
+  "n": 107,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/reach_five/",
+  "h1": "ReachFive Module",
+  "ev": "This module allows customers to authenticate in the chat with an user account from ReachFive based on OAuth 2.0.",
+  "strict": 0,
+  "len": 1163
+ },
+ {
+  "n": 108,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/redemptions/",
+  "h1": "Loyalty Redemption Module",
+  "ev": "Introduction The Loyalty Redemption Module allows customers to redeem loyalty points by storing their redemptions in a dedicated table.",
+  "strict": 0,
+  "len": 1763
+ },
+ {
+  "n": 109,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/region/",
+  "h1": "Region Module",
+  "ev": "Introduction You can make regions available for selection and exclude certain regions from using the agent.",
+  "strict": 0,
+  "len": 564
+ },
+ {
+  "n": 110,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/reminder_opt_in/",
+  "h1": "Reminder Opt-In Module",
+  "ev": "Introduction This module allows you to obtain customer consent to send reminders, such as appointment notifications or new advent calendar doors, in a GDPR-compliant way.",
+  "strict": 0,
+  "len": 3276
+ },
+ {
+  "n": 111,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/reminder/",
+  "h1": "Reminder Notification Module",
+  "ev": "Introduction Schedule a reminder notification to your customer at a certain point in time.",
+  "strict": 0,
+  "len": 673
+ },
+ {
+  "n": 112,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/reset/",
+  "h1": "Session Reset Module",
+  "ev": "Introduction The Session Reset Module allows you to reset parts of the process session as needed, effectively managing the customer's session and chat histories.",
+  "strict": 0,
+  "len": 1475
+ },
+ {
+  "n": 113,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/restart/",
+  "h1": "Restart Module",
+  "ev": "Introduction The Restart Module allows you to restart the chatflow, so the chat begins anew from the start of the process flow.",
+  "strict": 0,
+  "len": 867
+ },
+ {
+  "n": 114,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/rewards/",
+  "h1": "Loyalty Rewards Module",
+  "ev": "Introduction The LoyJoy Rewards Module allows you to display and manage multiple rewards within your chat agent, enabling customers to view and potentially redeem rewards",
+  "strict": 0,
+  "len": 2578
+ },
+ {
+  "n": 115,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/router_push/",
+  "h1": "Jump to Home View Module",
+  "ev": "Introduction If a home view is configured this process module jumps to it.",
+  "strict": 0,
+  "len": 395
+ },
+ {
+  "n": 116,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/salesforce_interaction_studio/",
+  "h1": "Salesforce Interaction Studio Module",
+  "ev": "Introduction The Salesforce Interaction Studio Module allows you to send customer interaction data to Salesforce Interaction Studio, a real-time personalization and interaction management platform.",
+  "strict": 0,
+  "len": 1017
+ },
+ {
+  "n": 117,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/salesforce_marketing_cloud/",
+  "h1": "Salesforce Marketing Cloud Module",
+  "ev": "Introduction The Salesforce Marketing Cloud Module allows you to send data to Salesforce Marketing Cloud for various purposes, including ensuring a contact exists, logging interaction",
+  "strict": 0,
+  "len": 2305
+ },
+ {
+  "n": 118,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/salesforce/",
+  "h1": "Salesforce Service Cloud Module",
+  "ev": "Introduction The Salesforce Service Cloud Module integrates Salesforce Service Cloud (SFSC) into your chat process, enabling you to transfer data seamlessly between LoyJoy and SFSC.",
+  "strict": 0,
+  "len": 4517
+ },
+ {
+  "n": 119,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/scanner/",
+  "h1": "Scanner Module",
+  "ev": "Introduction The Scanner module enables your customers to scan QR codes or barcodes using their device's camera or manually enter the code if they prefer.",
+  "strict": 0,
+  "len": 1608
+ },
+ {
+  "n": 120,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/scanner/scanner/",
+  "h1": "How to Set up a Barcode Scanner Process",
+  "ev": "What This Solution Will Do for You In this article we explain how to set up a process where users can scan a product's barcode",
+  "strict": 0,
+  "len": 1968
+ },
+ {
+  "n": 121,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/scondoo/",
+  "h1": "Scondoo Cashback Module",
+  "ev": "Introduction Add a cashback feature to your process by integrating with our partner Scondoo.",
+  "strict": 0,
+  "len": 1380
+ },
+ {
+  "n": 122,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/search/",
+  "h1": "Search Module",
+  "ev": "Introduction The Search module enables your customers to explore various agents by searching for specific keywords.",
+  "strict": 0,
+  "len": 1379
+ },
+ {
+  "n": 123,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/sftp/",
+  "h1": "SFTP Module",
+  "ev": "Introduction The SFTP process module allows you to connect LoyJoy to external SFTP servers, enabling automated file transfers.",
+  "strict": 0,
+  "len": 1028
+ },
+ {
+  "n": 124,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/share_image/",
+  "h1": "Share Image Module",
+  "ev": "Introduction Let your customers share an image from the chat to their friends.",
+  "strict": 0,
+  "len": 365
+ },
+ {
+  "n": 125,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/share_link/",
+  "h1": "Share Link Module",
+  "ev": "Introduction The Share Link module enables your customers to share the agent on social media or via email with their friends.",
+  "strict": 0,
+  "len": 1612
+ },
+ {
+  "n": 126,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/sign_in/",
+  "h1": "Sign In Module",
+  "ev": "Introduction The Sign In module (German Anmeldung-Modul) allows to verify customer email addresses.",
+  "strict": 0,
+  "len": 3504
+ },
+ {
+  "n": 127,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/signal/",
+  "h1": "Signal Module",
+  "ev": "Introduction The Signal Module in workflow automation systems is a crucial component that triggers execution based on incoming signals.",
+  "strict": 0,
+  "len": 1677
+ },
+ {
+  "n": 128,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/sikom/",
+  "h1": "Sikom Module",
+  "ev": "Introduction Integrate Sikom AgentOne into your process.",
+  "strict": 0,
+  "len": 1493
+ },
+ {
+  "n": 129,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/sms_opt_in/",
+  "h1": "SMS Opt-In Module",
+  "ev": "Introduction This module enables customers to provide opt-in consent for SMS notifications in a GDPR-compliant manner.",
+  "strict": 0,
+  "len": 1798
+ },
+ {
+  "n": 130,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/snapshot/",
+  "h1": "Snapshot Module",
+  "ev": "Introduction The Snapshot module allows customers to take a picture using their device's camera or upload an image.",
+  "strict": 1,
+  "len": 2622
+ },
+ {
+  "n": 131,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/stop/",
+  "h1": "Stop Module",
+  "ev": "Introduction The Stop Module ends the chat flow directly.",
+  "strict": 0,
+  "len": 294
+ },
+ {
+  "n": 132,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/tag_preference/",
+  "h1": "Tag Preferences Module",
+  "ev": "Introduction Customers can have tags such as fashion, which express interests a customer can have.",
+  "strict": 0,
+  "len": 388
+ },
+ {
+  "n": 133,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/tag/",
+  "h1": "Tag Module",
+  "ev": "Introduction The Tag Module utilizes tags for diverse purposes, from customer segmentation to optimizing product recommendations.",
+  "strict": 0,
+  "len": 1109
+ },
+ {
+  "n": 134,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/talkevent/",
+  "h1": "Talkevent Module",
+  "ev": "Features Agent Availability Check: This module checks the availability of agents in Talkevent via the Talkevent /availability API.",
+  "strict": 0,
+  "len": 1034
+ },
+ {
+  "n": 135,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/terms/",
+  "h1": "Terms of Participation Module",
+  "ev": "Introduction This module allows you to ask customers for their agreement to specific terms.",
+  "strict": 0,
+  "len": 1376
+ },
+ {
+  "n": 136,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/variable_delete/",
+  "h1": "Delete Variable Module",
+  "ev": "Introduction Delete one or multiple variables in the process.",
+  "strict": 0,
+  "len": 296
+ },
+ {
+  "n": 137,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/variable/",
+  "h1": "Add Variable Module",
+  "ev": "Introduction Set one or multiple variables in the process.",
+  "strict": 0,
+  "len": 1645
+ },
+ {
+  "n": 138,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/video/",
+  "h1": "Video Gallery Module",
+  "ev": "Introduction The Video Gallery module allows you to add up to five videos to your chat, which will play directly in the chat window.",
+  "strict": 0,
+  "len": 1726
+ },
+ {
+  "n": 139,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/web_component/",
+  "h1": "Web Component Module",
+  "ev": "Introduction Display a web component within the chat, allowing for interactive elements and custom features.",
+  "strict": 0,
+  "len": 3246
+ },
+ {
+  "n": 140,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/web_push_opt_in/",
+  "h1": "Web Push Opt-In Module",
+  "ev": "Introduction Collect consents for Web push notifications to send personalized Web push notifications to your customers in a GDPR-compliant way.",
+  "strict": 0,
+  "len": 1923
+ },
+ {
+  "n": 141,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/web_service/",
+  "h1": "Web Service Module",
+  "ev": "Introduction The WebService process module enables connecting LoyJoy to external APIs.",
+  "strict": 0,
+  "len": 2104
+ },
+ {
+  "n": 142,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/web_service/azure_function_and_blob_storage/",
+  "h1": "Write Variables to Azure Blob Storage",
+  "ev": "If you want to connect the process module WebService with an Azure Function, please contact LoyJoy customer success so that this code briefly can be",
+  "strict": 0,
+  "len": 1711
+ },
+ {
+  "n": 143,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/web_service/google_cloud_function_and_storage/",
+  "h1": "Write Variables to Google Cloud Storage",
+  "ev": "index.js const functions = require('@google-cloud/functions-framework') const { Storage } = require('@google-cloud/storage') functions.http('endpoint', async (req, res) => { const { authorization } = req.headers // set",
+  "strict": 0,
+  "len": 1104
+ },
+ {
+  "n": 144,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/web_service/server/",
+  "h1": "Server for Web Service Module",
+  "ev": "Use serverless functions such as a Google Cloud Function to process data from your agent and feed the results back into it.",
+  "strict": 0,
+  "len": 4678
+ },
+ {
+  "n": 145,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/welcome/",
+  "h1": "Welcome Module",
+  "ev": "Introduction You may wonder what is the difference between the Simple Message and the Welcome module, when at first glance they both can display a",
+  "strict": 0,
+  "len": 1615
+ },
+ {
+  "n": 146,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/win/",
+  "h1": "Instant Drawing Module",
+  "ev": "Introduction Sometimes you want to tell your customers immediately if they have won a prize.",
+  "strict": 0,
+  "len": 2917
+ },
+ {
+  "n": 147,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/workato/",
+  "h1": "Workato",
+  "ev": "Introduction This module allows to send data from LoyJoy to Workato.",
+  "strict": 0,
+  "len": 2641
+ },
+ {
+  "n": 148,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/yotpo/",
+  "h1": "Yotpo Review Module",
+  "ev": "Introduction Integrate Yotpo into the process to collect product reviews with Yotpo.",
+  "strict": 0,
+  "len": 1173
+ },
+ {
+  "n": 149,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/zapier/",
+  "h1": "Zapier Module",
+  "ev": "Introduction This module allows to send data from LoyJoy to Zapier.",
+  "strict": 0,
+  "len": 3892
+ },
+ {
+  "n": 150,
+  "url": "https://docs.loyjoy.com/bpmn/subprocesses/zoho/",
+  "h1": "Zoho Module",
+  "ev": "Introduction This module allows to send data from LoyJoy to Zoho Campaigns.",
+  "strict": 0,
+  "len": 1127
+ }
+]

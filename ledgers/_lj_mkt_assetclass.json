@@ -1,0 +1,1017 @@
+{
+ "process-orchestration": {
+  "kind": "canvas",
+  "ai": true,
+  "note": "LoyJoy editor canvas: start event -> \"#1 AI Agent\" -> exclusive gateway -> \"Branch 1/2/3\" -> \"#2 GPT Knowledge\", \"#3 GPT follow-up question\", \"#4 GPT Smalltalk\" -> \"#4 Automatic jump\" -> end event",
+  "ai_note": "module boxes \"#1 AI Agent\", \"#2 GPT Knowledge\", \"#3 GPT follow-up question\", \"#4 GPT Smalltalk\" are steps of the drawn process"
+ },
+ "no-code-bpmn": {
+  "kind": "canvas",
+  "ai": true,
+  "note": "LoyJoy editor canvas: start event -> \"#1 Welcoming\" -> (editor cursor dragging) \"#2 AI Agent\" -> exclusive gateway",
+  "ai_note": "\"#2 AI Agent\" is a module box being placed into the drawn flow"
+ },
+ "pnzCkrHyJcEsiYAymYALH5bLo": {
+  "kind": "canvas",
+  "ai": false,
+  "note": "LoyJoy editor canvas: exclusive gateways -> \"#2 Questionnaire\" (property question \"Your questionnaire\") -> \"#3 Simple message\" (offer house insurance) / \"#4 Simple message\" (offer apartment insurance) -> \"#5\" and a dashed \"Drop module\" step"
+ },
+ "nsMCLD6Dh2HSqlVKmj30hPwNrk": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy-notation process figure read at native resolution: X-diamond gateways with flows labelled \"condition 1\", \"condition 2\", \"condition 3\", module boxes \"#2 Questionnaire\", \"#3 Simple message\" (\"Here is your home insurance\"), \"#4 Simple message\" (\"Here is your apartment insurance\"), a dashed \"Drop module\" box and small green flag annotations; no AI/GPT step anywhere in the diagram",
+  "confidence": "high"
+ },
+ "gpt20": {
+  "kind": "canvas",
+  "ai": true,
+  "note": "photo of a laptop whose screen shows a process: start event -> \"#11 GPT-Gateway\" -> exclusive gateway -> \"Pfad 1/2/3\" -> \"#12 GPT-Wissen\", \"#13 GPT-Folgefrage\", \"#15 GPT-Smalltalk\"; the headline reads \"LoyJoyGPT 2.0\"",
+  "ai_note": "the drawn process steps are named \"#11 GPT-Gateway\", \"#12 GPT-Wissen\", \"#13 GPT-Folgefrage\", \"#15 GPT-Smalltalk\""
+ },
+ "produkt_finder_gpt": {
+  "kind": "canvas",
+  "ai": true,
+  "note": "LoyJoy editor screenshot: \"#1 Single message\" -> \"#2 Decision table\" -> \"#3 Add variable\" -> \"#4 Questionnaire\" -> \"#5 Add variable\" -> \"#6 GPT Prompt\" -> \"#7 Product list\" -> \"#8 GPT prompt\" -> \"#9 Single message\", with a \"GPT Knowledge\" annotation",
+  "ai_note": "the drawn steps \"#6 GPT Prompt\" and \"#8 GPT prompt\" call a GPT model inside the process"
+ },
+ "bpmn_de": {
+  "kind": "canvas",
+  "ai": true,
+  "note": "screenshot of the LoyJoy editor palette: the \"control flow\" section lists \"Loop\" and \"Decision gateway\" and beneath it the entry \"GPT gateway\"",
+  "ai_note": "the palette entry \"GPT gateway\" is a process module that can be placed in the flow"
+ },
+ "bpmn_en": {
+  "kind": "canvas",
+  "ai": true,
+  "note": "English twin of the LoyJoy editor palette screenshot: the \"control flow\" section lists \"Loop\" and \"Decision gateway\" and beneath it the entry \"GPT gateway\"",
+  "ai_note": "the palette entry \"GPT gateway\" is a process module that can be placed in the flow"
+ },
+ "knowledge_base_de": {
+  "kind": "arch",
+  "ai": true,
+  "note": "concept illustration \"Wie LoyJoy's Knowledge Base funktioniert\": folder/API/crawling icons -> database cylinder \"Knowledge Base\" -> \"Suche in Knowledge Base\" -> robot icon \"GPT Antwort\" and a document \"Relevanter Kontext\", joined by curved arrows",
+  "ai_note": "the box \"GPT Antwort\" and a robot icon are stages of the illustrated knowledge flow"
+ },
+ "knowledge_base_en": {
+  "kind": "arch",
+  "ai": true,
+  "note": "English twin of the \"How LoyJoy's Knowledge Base works\" concept illustration (upload/API/crawl -> knowledge base -> GPT answer)"
+ },
+ "mcp-two-directions-de": {
+  "kind": "arch",
+  "ai": true,
+  "note": "hub diagram: \"LoyJoy MCP\" circle between Claude / ChatGPT / Gemini on the left and Analytics / \"Prozesse\" / \"Wissensdatenbank\" on the right, labelled \"Bidirektional\"",
+  "ai_note": "the model-vendor boxes \"Claude\", \"ChatGPT\" and \"Gemini\" are connected to the LoyJoy MCP hub"
+ },
+ "mcp-two-directions-en": {
+  "kind": "arch",
+  "ai": true,
+  "note": "English twin of the LoyJoy MCP hub diagram (Claude / ChatGPT / Gemini <-> LoyJoy MCP <-> analytics, processes, knowledge base)"
+ },
+ "phonebot-visual": {
+  "kind": "arch",
+  "ai": true,
+  "note": "hub illustration: centre \"AI Agent\" badge, spokes to \"Phonebot\", \"Chatbot\", \"Analytics\", \"Data Protection\", and an icon row \"BPMN / AI / MCP / Search / Database / Files / API / Automation\" under \"Logic & Data\"",
+  "ai_note": "the centre badge reads \"AI Agent\" and the capability row contains an \"AI\" tile"
+ },
+ "phonebot_info_de": {
+  "kind": "arch",
+  "ai": true,
+  "note": "channel diagram: centre \"AI\" sphere (\"LoyJoy AI-Agent (Vereintes Gehirn) - Wissen, Logik, BPMN\"), spokes to \"VOICE-KANAL (Phonebot)\", \"WEB-KANAL (Chatbot)\", \"MEDIEN-WECHSEL\", \"WISSEN & TOOLS\" with \"Generative KI\" and \"MCP-Tools\" tiles",
+  "ai_note": "the centre reads \"AI\" / \"LoyJoy AI-Agent\" and the tool tiles read \"Generative KI\""
+ },
+ "conversational-ai-customer-service": {
+  "kind": "arch",
+  "ai": true,
+  "note": "illustration: a woman writes on a phone -> a smiling robot avatar -> five capability tiles (book, person, document, gear, check) -> a routing node -> a human service agent at a laptop",
+  "ai_note": "the chatbot/robot avatar is the hub of the illustrated conversation flow"
+ },
+ "conversational-ai-shopping": {
+  "kind": "arch",
+  "ai": true,
+  "note": "illustration: a woman writes on a phone -> a smiling robot orb -> product tiles (search, comparison, basket, delivery, service) with dotted connectors",
+  "ai_note": "the chatbot orb handles the shopping steps"
+ },
+ "blog-loyjoy-mcp-claude-cockpit-hero-de": {
+  "kind": "arch",
+  "ai": true,
+  "note": "two panels \"Claude desktop app\" <-> \"MCP\" <-> \"LoyJoy dashboard\" with double-headed arrows, metrics \"Sessions 48.210\", \"Fallabschluss 87 %\"",
+  "ai_note": "the \"Claude desktop app\" box and the MCP node are the AI side of the depicted data path"
+ },
+ "blog-loyjoy-mcp-claude-cockpit-hero-en": {
+  "kind": "arch",
+  "ai": true,
+  "note": "English twin: \"Claude desktop app\" <-> \"MCP\" <-> \"LoyJoy dashboard\" with the OpenAI mark on the assistant panel"
+ },
+ "product_finder_agentic_de": {
+  "kind": "art",
+  "ai": false,
+  "note": "title slide \"Produkt-Finder mit Agentic AI (MCP)\": a comic illustration of a man at a screen reading \"PRODUCT FINDER\""
+ },
+ "release_de": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "drawn steps \"#2 GPT-Gateway\", \"#3 GPT-Wissen\", \"#7 GPT-Folgefrage\"",
+  "note": "process canvas titled \"IT Security Agent\": numbered module boxes with an X-diamond gateway and GPT modules as placed steps, flow top to bottom",
+  "confidence": "high"
+ },
+ "reranking": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "drawn steps \"#2 GPT gateway\", \"#3 GPT Knowledge\", \"#4 GPT follow up question\", \"#6 GPT Smalltalk\"",
+  "note": "process canvas titled \"My GPT experience\": numbered module boxes with branch labels and GPT modules as placed steps",
+  "confidence": "high"
+ },
+ "mcp_postbild2": {
+  "kind": "canvas-palette-ai",
+  "ai": false,
+  "ai_note": "",
+  "note": "process canvas \"GPT Feedback\" with steps #7 Simple message, #8 Decision gateway, #9 Phone number, #10 Email, #11 Appointment scheduler, #12 Live chat, #13 Simple message, #14 Send email, #15 API client - no AI module placed; the editor's module palette beside the canvas lists the GPT family (\"GPT Knowledge\", \"GPT Prompt\", \"GPT Recommender\", \"GPT Smalltalk\")",
+  "confidence": "high"
+ },
+ "agentic_de": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "drawn step \"#2 Agentic AI\"",
+  "note": "process canvas: numbered module boxes with \"#2 Agentic AI\" as a placed step",
+  "confidence": "high"
+ },
+ "agentic_en": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "drawn step \"#2 Agentic AI\"",
+  "note": "process canvas: numbered module boxes with \"#2 Agentic AI\" as a placed step",
+  "confidence": "high"
+ },
+ "agentic_release": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "drawn step \"#2 Agentic AI\"",
+  "note": "process canvas: numbered module boxes with \"#2 Agentic AI\" as a placed step",
+  "confidence": "high"
+ },
+ "Blog_Screenshoot_ai-modelle_ausw_C3_A4hlen1": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "boxes \"#1 Security Agent\", \"#2 GPT gateway\", \"#3 GPT Knowledge\", \"#9 GPT follow-up question\"; panel \"GPT instructions\"",
+  "note": "LoyJoy editor: canvas nodes #1 Security Agent, #2 GPT gateway, #3 GPT Knowledge, #4 Decision gateway, #5 Automatic jump, #6 Simple message, #7 Live chat; model dropdown open.",
+  "confidence": "high"
+ },
+ "CkIzgRGF25kI71ehEDwpRHZm9yc": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "magazine collage: \"LoyJoy part of 50 startups changing commerce 2018/19\", \"Der Handel DIGITAL COMMERCE\" cover, team photos.",
+  "confidence": "high"
+ },
+ "JHHltqGlwpZaVbJGZf9yHk9ERAg": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "phone mockup chat start screen: \"Hello, bike friends!\", buttons \"Explore bikes\" and \"Newsletter\".",
+  "confidence": "high"
+ },
+ "agentic-ai": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "logo wordmark \"AI Agent\"",
+  "note": "brand logo image: white infinity symbol and \"AI Agent\" wordmark on abstract colourful background; no process content.",
+  "confidence": "high"
+ },
+ "agentic-retrieval-datei-tools-de": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "docs panel \"DATEIEN\" listing tool entries \"Datei lesen\", \"Dateiliste\", \"Dateisuche\", \"Vom Kunden hochgeladene Dateien lesen\".",
+  "confidence": "high"
+ },
+ "agentic-retrieval-document": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "stock photo: open insurance policy book in front of a laptop showing a blurred chat window.",
+  "confidence": "high"
+ },
+ "agentic-retrieval-document-en": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "stock photo: \"General Terms and Conditions\" document open beside a laptop showing a chat window.",
+  "confidence": "high"
+ },
+ "agentic-retrieval-example": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "phone chat: \"Ist mein E-Bike versichert...\", answer cites \"Quelle: AVB Hausrat, Abschnitt A §7\".",
+  "confidence": "high"
+ },
+ "agentic-retrieval-example-en": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "phone chat: e-bike theft question answered, \"Source: Household terms, Section A §7\".",
+  "confidence": "high"
+ },
+ "agentic-retrieval-file-tools-en": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "docs panel listing tools \"File read\", \"Files list\", \"Files search\", \"Read files uploaded by customer\".",
+  "confidence": "high"
+ },
+ "agentic-retrieval-rag-comparison-en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "headings \"CLASSIC RAG\" and \"AGENTIC RETRIEVAL\"",
+  "note": "comparison illustration: document set arrow speech bubble versus document with robot icon arrow check bubble.",
+  "confidence": "high"
+ },
+ "ai-agent": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "logo wordmark \"AI Agent\"",
+  "note": "brand logo image: white infinity symbol and \"AI Agent\" wordmark on abstract colourful background.",
+  "confidence": "high"
+ },
+ "ai-agent-knowledge": {
+  "kind": "arch",
+  "ai": true,
+  "ai_note": "node labelled \"MCP\"",
+  "note": "hub-and-spoke: \"LoyJoy\" centre circle surrounded by icon nodes (database, document, globes, shopping cart, cloud, webhook, MCP hexagon).",
+  "confidence": "high"
+ },
+ "ai-quality-check": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "card labelled \"AI quality check\"",
+  "note": "feature card: white box \"AI quality check\" with \"Enterprise\" badge and cursor arrow.",
+  "confidence": "high"
+ },
+ "ai-testing-automation": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "card labelled \"AI test automation\"",
+  "note": "feature illustration: box \"AI test automation\" below three linked icons (cloud upload, progress spinner, green check).",
+  "confidence": "high"
+ },
+ "ai_model_de": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "card \"KI-Modell\" with field \"GPT-5.4 Mini\"",
+  "note": "product UI card \"KI-Modell\" with model dropdown showing \"GPT-5.4 Mini\"; text recommends GPT-5.4, Claude, Mistral, Gemma 4.",
+  "confidence": "high"
+ },
+ "ai_model_en": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "card \"AI model\" with field \"GPT-5.4 Mini\"",
+  "note": "product UI card \"AI model\" with dropdown \"GPT-5.4 Mini\"; text recommends GPT-5.4, Claude, Mistral, Gemma 4.",
+  "confidence": "high"
+ },
+ "altersvorsorge-depot-chatbot-vorlage": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "template cover card: \"Versicherung\", \"Altersvorsorge-depot: Antrag & Termin\", LoyJoy logo, calendar illustration.",
+  "confidence": "high"
+ },
+ "antragsstrecke_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "template cover card: heading \"Antragsstrecke\", LoyJoy logo, illustration of person pointing at laptop.",
+  "confidence": "high"
+ },
+ "antragstrecke_versicherungen_eng_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "template cover card: \"Insurance Application Process\", LoyJoy logo, laptop illustration.",
+  "confidence": "high"
+ },
+ "bigquery_fragebogen_eng_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "template cover card: \"BigQuery for Questionnaire Variables\", illustration with \"QUESTIONNAIRE\" checklist and laptops.",
+  "confidence": "high"
+ },
+ "bigquery_fragebogen_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "template cover card: \"BigQuery für Fragebogen-Variablen\" with questionnaire checklist illustration.",
+  "confidence": "high"
+ },
+ "chat_flow": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy chat: message says data is sent \"to Zapier\", \"What is your email address?\", \"ENTER EMAIL\" form with OK button.",
+  "confidence": "high"
+ },
+ "chat_flow_feedback": {
+  "kind": "chat",
+  "ai": true,
+  "ai_note": "badge \"AI\"; answer text \"integrating AI and live agents\"",
+  "note": "chat: question \"What is LoyJoy able to do?\", long answer tagged \"AI\", then \"Did this answer help you?\" with Yes/No.",
+  "confidence": "high"
+ },
+ "chat_flow_no_feedback": {
+  "kind": "chat",
+  "ai": true,
+  "ai_note": "\"AI Agent With Feedback Question Template\", \"Generative AI will provide an answer\", badge \"AI\"",
+  "note": "chat: welcome message naming the template, question \"Who was Che Guevara?\", refusal answer tagged \"AI\", Yes/No feedback buttons.",
+  "confidence": "high"
+ },
+ "nrw-bank-impuls-ki": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "photo of three people beside a monitor showing a chat UI and bar chart; no readable AI label",
+  "confidence": "high"
+ },
+ "orchestrate": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "boxes labelled \"#3 AI Agent\", \"#4 decision gateway\"",
+  "note": "LoyJoy-style canvas: #3 AI Agent, #4 decision gateway, #5 Simple message, #7 Phone number, #8 Email, #9 Appointment scheduler, #10 Live chat, #13 API client; X-gateways, start/end circles",
+  "confidence": "high"
+ },
+ "phone-agent-test-mode": {
+  "kind": "chat",
+  "ai": true,
+  "ai_note": "editor labels \"Mein Telefon-Agent\", \"KI-Nachrichten anzeigen\"",
+  "note": "LoyJoy agent editor with modal 'Teste deinen Telefon-Agent'; German chat transcript about Altersvorsorgedepot, timestamps 12.08.2026",
+  "confidence": "high"
+ },
+ "phone_agent_de": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "chip icon labelled \"AI\"; headline \"Phone Agent: Vorlage für KI-gestützte Telefonie\"",
+  "note": "German marketing hero banner: 'Voicebot' badge, cartoon agent with headset, phone, LoyJoy logo",
+  "confidence": "high"
+ },
+ "phone_agent_en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "chip icon labelled \"AI\"; headline \"Phone Agent: Template for AI-powered Telephony\"",
+  "note": "English marketing hero banner: 'Voicebot' badge, cartoon agent with headset, phone, LoyJoy logo",
+  "confidence": "high"
+ },
+ "pick-ai-model": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "\"AI Model\" dropdown listing \"GPT-5.4\", \"GPT-4.1\", \"Gemma 4\", \"GLM-5\", \"Claude Sonnet 4.6\"",
+  "note": "'Pick Model' UI mockup with radio list; Gemma 4 row highlighted pink, cursor arrow bottom right",
+  "confidence": "high"
+ },
+ "process-engine": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "photo of hands holding a phone showing a WhatsApp-style chat; overlay text '100+ PROCESS MODULES' and five round icon buttons",
+  "confidence": "high"
+ },
+ "product_finder_agentic_en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "headline \"Product-Finder with Agentic AI (MCP)\"",
+  "note": "marketing hero banner: title on blue left, cartoon man at monitor showing 'PRODUCT FINDER' screen",
+  "confidence": "high"
+ },
+ "produkt_finder_gpt_en": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_note": "canvas nodes \"#6 GPT Prompt\", \"#8 GPT Prompt\"; annotation \"Process continues until GPT has found the right product\"",
+  "note": "LoyJoy editor 'Product Finder - GPT - P...': nodes #1 Simple message, #2 Decision table, #3 Add variable, #4 Questionnaire, #5 Add variable, #6 GPT Prompt, #7 Product feed, #8 GPT Prompt, #9 Simple message",
+  "confidence": "high"
+ },
+ "rag_de": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "quote card text \"Was ist RAG und warum ist es gerade das Top-Thema in der KI?\"",
+  "note": "infographic on polygonal grey background: DOC/image/DB icons via 'KNOWLEDGE BASE' ellipse to a vector-space hexagon, plus German quote card",
+  "confidence": "high"
+ },
+ "rag_en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "quote card text \"What is RAG and why is it the hot topic in AI right now?\"",
+  "note": "same infographic in English: DOC/image/DB icons via 'KNOWLEDGE BASE' ellipse to a vector-space hexagon, plus quote card",
+  "confidence": "high"
+ },
+ "rapidmail_flow": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "chat screenshot: 'Enjoy this awesome chat', 'What is your email address?' with 'Enter email' form and OK button; footer 'LoyJoy'",
+  "confidence": "high"
+ },
+ "rtlplus-loyjoy-agent": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "phone screenshot of community.plus.rtl.de chat about live football packages, thumbs up/down feedback, quick-reply chips",
+  "confidence": "high"
+ },
+ "ruv-ai-assistant": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "\"Emmie\", \"Ihre digitale KI-Assistenz\"",
+  "note": "phone screenshot of an assistant landing page: avatar illustration, input 'Stellen Sie hier Ihre Frage', cards 'Schaden' and 'Vertrag', ruv.de",
+  "confidence": "high"
+ },
+ "stadtwerke-phone-agent-template": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "robot icon labelled \"AI\"; headline \"Stadtwerke Phone-Agent\"",
+  "note": "marketing hero banner: cartoon woman with headset at desk, monitor showing AI robot saying 'Hallo!', utility icons (water, power, euro)",
+  "confidence": "high"
+ },
+ "trumpf-frag-trumpf-loyjoy-agent_de": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "phone screenshot, trumpf.com chat: German question on welding copper contacts, long German answer; chips 'Servicefall', 'Kontakt', 'Andere Frage'",
+  "confidence": "high"
+ },
+ "trumpf-frag-trumpf-loyjoy-agent_en": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "phone screenshot, trumpf.com chat: English question on welding copper contacts, answer on TruDisk and BrightLine Weld; chips 'Service case', 'Contact'",
+  "confidence": "high"
+ },
+ "umfrage_mit_couponcode_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "marketing hero banner 'Survey With Coupon Code': cartoon woman holding a COUPON ticket, laptop with five stars and checkmark",
+  "confidence": "high"
+ },
+ "vortrag": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "trade-show photo: two men on stage in front of blue screen 'Ein Praxisbericht der R+V' with LoyJoy logo, 'TREND ZONE' backdrop",
+  "confidence": "high"
+ },
+ "vortrag2": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "slide text \"Agentic AI an der Kundenschnittstelle\", \"Ein Praxisbericht der R+V\"",
+  "note": "stage photo: two speakers before a screen with R+V branding, avatar illustration, InsurLab Germany, 'TREND ZONE' wall",
+  "confidence": "high"
+ },
+ "wgUu0mwikbar1mRL74kI2Myx0Is": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "social card: 'DID YOU KNOW? 92% consider user-friendliness important for choosing a messenger' beside photo of phone home screen with social app icons",
+  "confidence": "high"
+ },
+ "chat_flow_youtube": {
+  "kind": "chat",
+  "ai": true,
+  "ai_note": "\"CONVERSATIONAL MARKETING AI PLATFORM\", \"ChatGPT's generative AI\"",
+  "note": "English LoyJoy chat: \"Welcome\", \"What do you want to see?\", user \"Embedded link\", link-preview card with LoyJoy description, \"Would you like to restart the experience?\"",
+  "confidence": "high"
+ },
+ "chatflow_template_de": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "German chat: broken-phone claim, \"Es tut uns leid, dass an deinem Handy ein Schaden entstanden ist\", damage-report offer, buttons \"Freitext\" and \"Klicken\"",
+  "confidence": "high"
+ },
+ "fragebogen_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "blue card titled \"Fragebogen\" with illustration of a man ticking checkbox rows on a laptop; LoyJoy logo",
+  "confidence": "high"
+ },
+ "gen_ai_en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "\"Generative AI 100% Made in Germany Now Available in LoyJoy\"",
+  "note": "photo of a laptop on a table showing primeLine/LoyJoy horse mascot image with badge \"Generative AI 100% Made in Germany Now Available in LoyJoy\"",
+  "confidence": "high"
+ },
+ "gen_ai_germany_de": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "\"Generative KI 100% Made in Germany jetzt in LoyJoy verfuegbar\"",
+  "note": "social card: two horse mascots, \"primeLine AI-SERVICES\" and LoyJoy header, badge \"Generative KI 100% Made in Germany jetzt in LoyJoy verfuegbar\"",
+  "confidence": "high"
+ },
+ "gen_ai_germany_en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "\"Generative AI 100% Made in Germany Now Available in LoyJoy\"",
+  "note": "social card: horse mascots against sky, \"primeLine AI-SERVICES\" and LoyJoy header, badge \"Generative AI 100% Made in Germany Now Available in LoyJoy\"",
+  "confidence": "high"
+ },
+ "headless-assistant": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "\"KI-Assistent\", \"Bau mir einen Agenten fuer Fragen zur Beitragsanpassung\"",
+  "note": "product UI card: \"KI-Assistent\" prompt bubble, panel \"Entwurf angelegt: Beitragsanpassung\" listing 1 Vertrag identifizieren, 2 Anpassung erklaeren, 3 Tarifwechsel anbieten, button \"Veroeffentlichen\"",
+  "confidence": "high"
+ },
+ "ki-agent-ersatzteile-maschinenbau": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "photograph: mechanic in a factory looking at his phone, tablet with technical part drawings on the bench; no readable AI label",
+  "confidence": "high"
+ },
+ "ki-agent-studienberatung": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "photograph: three students at a table with laptop, phones and notebooks in a campus library; no readable AI label",
+  "confidence": "high"
+ },
+ "ki-kundenservice-de-capterra-graphic-2": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "\"der Unternehmen, die KI-gestuetzte Kundenservice-Software einsetzen\"",
+  "note": "Capterra stat card: \"68 %\" with German sentence on AI-supported customer-service software; footnote \"Capterra Umfrage zu Customer Service Technology 2024\"",
+  "confidence": "high"
+ },
+ "knowledge_loyjoy_screenshot": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "\"GPT\" with green \"ON\", beside \"NLU OFF\"",
+  "note": "LoyJoy admin screenshot: Knowledge section, \"GPT ON / NLU OFF\" toggles, Catalogs \"My catalog / 2 articles\", Sources with SITEMAP URLs and \"Upload file\" button",
+  "confidence": "high"
+ },
+ "liveumfragen_eng_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "card \"Survey With Live Results\" with cartoon man writing at a laptop screen showing \"LIVE-UMFRAGE\" checklist rows; LoyJoy logo",
+  "confidence": "high"
+ },
+ "liveumfragen_template": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "German card \"Umfrage mit Live-Resultaten\" with cartoon man writing at a laptop screen showing \"LIVE-UMFRAGE\" checklist rows; LoyJoy logo",
+  "confidence": "high"
+ },
+ "llm_models": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "\"GPT-3.5\", \"GPT-4\", \"LLaMa\", \"Claude 3\", \"Luminous\"",
+  "note": "product dropdown menu listing GPT-3.5, GPT-4 (highlighted under the cursor), LLaMa, Claude 3, Luminous",
+  "confidence": "high"
+ },
+ "llm_prompting": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "decorative image of a glowing circuit-board brain hovering on a grey background, LoyJoy logo top right; no readable label",
+  "confidence": "high"
+ },
+ "loyalty_chat_flow_de": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "German chat: \"Mit diesem Template kannst du Loyalty-Punkte ... sammeln\", form card \"E-MAIL EINGEBEN\" with E-Mail-Adresse field and \"OK\" button",
+  "confidence": "high"
+ },
+ "loyalty_chat_flow_en": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "English chat: \"With this template you can collect loyalty points ...\", form card \"ENTER EMAIL\" with Email address field and \"OK\" button",
+  "confidence": "high"
+ },
+ "loyjoy-handelsblatt-ai-insurance": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "photograph of a man presenting on a \"Handelsblatt\" branded stage before a seated audience; no readable AI label",
+  "confidence": "high"
+ },
+ "mia-gpt-interface": {
+  "kind": "chat",
+  "ai": true,
+  "ai_note": "\"MiaGPT\", \"Siehe KI-Guidelines\", \"MiaGPT ist fuer dich da!\"",
+  "note": "German chat \"MiaGPT\" header \"Bitte keine Kundendaten eingeben\", examples cards \"Arbeitsanweisung erstellen\" and \"Text zusammenfassen\", input \"Frag Mia\"",
+  "confidence": "high"
+ },
+ "moPjB09ewTXwt6ki8rSOK1acec": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy dashboard \"Dashboard > Experience\": horizontal stepper 1 Create / 2 Design / 3 Launch, tabs Branding...Automated dialog, form \"Brand your experience\" (Name, Slogan, Greeting)",
+  "confidence": "high"
+ },
+ "new_llm": {
+  "kind": "ui",
+  "ai": true,
+  "ai_note": "\"GPT settings\", \"GPT model\", \"Anthropic Claude 3 Opus\", \"Anthropic Claude 3 Haiku\", \"Anthropic Claude 3 Sonnet\", \"ollama-llama3\"",
+  "note": "LoyJoy admin screenshot: \"GPT settings\" panel with open \"GPT model\" dropdown listing Anthropic Claude 3 Opus/Haiku/Sonnet and ollama-llama3",
+  "confidence": "high"
+ },
+ "new_llm_de": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "\"Willkommen, Claude-3 und Llama-3: LoyJoy integriert neue LLMs\"",
+  "note": "dark social card with glowing ring graphic and LoyJoy logo, German announcement \"Willkommen, Claude-3 und Llama-3: LoyJoy integriert neue LLMs\"",
+  "confidence": "high"
+ },
+ "new_llm_en": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "\"Welcome, Claude-3 and Llama-3: LoyJoy Implements New LLMs\"",
+  "note": "dark social card with glowing ring graphic and LoyJoy logo, English announcement \"Welcome, Claude-3 and Llama-3: LoyJoy Implements New LLMs\"",
+  "confidence": "high"
+ },
+ "maxresdefault_15Qz1Q": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "title card \"YOUR LOYJOY AI AGENT IN 9 MINUTES\" with a cartoon presenter",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: title card \"YOUR LOYJOY AI AGENT IN 9 MINUTES\" with a cartoon presenter",
+  "confidence": "high"
+ },
+ "maxresdefault_2nrSqj": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference photo of three people in front of the Chatbot Pop-Up banner",
+  "confidence": "high"
+ },
+ "maxresdefault_2uRg3a": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: title card \"BERND BLINDOW GRUPPE Beratungs-Chatbot by LoyJoy\" with a phone chat mockup",
+  "confidence": "high"
+ },
+ "maxresdefault_4x4jF": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference video frame, presenter on stage",
+  "confidence": "high"
+ },
+ "maxresdefault_H7oMY": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference video frame, presenter on stage",
+  "confidence": "high"
+ },
+ "maxresdefault_Z1SIts5": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference video frame, presenter on stage",
+  "confidence": "high"
+ },
+ "maxresdefault_Z9x7of": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference video frame, presenter on stage",
+  "confidence": "high"
+ },
+ "maxresdefault_ZFiuAv": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: title card \"OHNE MCP KEIN AGENTIC WEB\" with two presenters",
+  "confidence": "high"
+ },
+ "maxresdefault_ZKiHkX": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference video frame, presenter on stage",
+  "confidence": "high"
+ },
+ "maxresdefault_ZVG0Ym": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: title card \"DIPLOMA DiploBot by LoyJoy\" with a phone chat mockup",
+  "confidence": "high"
+ },
+ "maxresdefault_Zh6w4d": {
+  "kind": "art",
+  "ai": true,
+  "ai_note": "title card \"DEIN LOYJOY AI AGENT IN 9 MINUTEN\" with a cartoon presenter",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: title card \"DEIN LOYJOY AI AGENT IN 9 MINUTEN\" with a cartoon presenter",
+  "confidence": "high"
+ },
+ "maxresdefault_pXLKQ": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "YouTube video poster frame used as a card background (CSS url()) - a photo or a title card, not a process figure: conference video frame, presenter on stage",
+  "confidence": "high"
+ },
+ "stage-visual": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "stock photo of a woman speaking into a phone, used as the root page hero",
+  "confidence": "high"
+ },
+ "selfservice-poster": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "product UI screenshot of the LoyJoy admin, page header \"Mein Telefon-Agent\" with an agent tool list (\"Websuche\" tool, \"Tool hinzufuegen\"), plus a webinar presenter picture-in-picture; no process diagram",
+  "confidence": "high"
+ },
+ "0eCUs2VkNTIj5LmxrOn4gyMSvE": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "BPMN-style flow read at native resolution: rounded task boxes, X-diamond gateways, circle start event and ring end event, branch labels for a house and a rental-apartment offer; no AI/GPT step anywhere in the diagram",
+  "confidence": "high"
+ },
+ "4e0cZj6u2fh8T6rm9CvxZkOvxGQ": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy editor flow with start circle and numbered modules '#1 Decision jump 507,456', '#2 Welcoming 507,452', '#3 Return jump 507,450', '#4 Decision jump 507,448'.",
+  "confidence": "high"
+ },
+ "4uHVRy0BfKOAsqa0xutWmz6DhG0": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "Continuation of the LoyJoy flow: numbered module boxes '#5 Main prize 10,796', '#6 Prizes 429,269', '#7 Advent calendar door 429,266', '#8 Quiz 398,566' joined by arrows.",
+  "confidence": "high"
+ },
+ "5XfZDvXgtZBjh07UmmmlHTaJ0": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "Marketing funnel graphic with four stacked bars: 'Awareness', 'Consideration', 'Transaction', 'Customer Loyalty & Engagement'.",
+  "confidence": "high"
+ },
+ "6GFTi8TSSbYMWq0lBzedkN0aktI": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy flow editor: Start Flow, Bot Message: Text, Visitor Input: Text, Intent Match, Handover to Agent, End Flow; right panel 'Intent Match', 'Match intents', 'Create Rule'.",
+  "confidence": "high"
+ },
+ "6x1cYSYTClbzfia7y1CKLm4eZY": {
+  "kind": "arch",
+  "ai": true,
+  "ai_visible": true,
+  "ai_note": "box labelled \"GPT-3.5 AI\"",
+  "note": "marketing illustration of the RAG pipeline, read at native resolution: DOC/website/database -> KNOWLEDGE BASE -> embeddings -> GPT-3.5 AI -> PROMPT / KNOWLEDGE CHUNKS / HISTORY -> CONTEXT -> customer question and generated answer; no editor notation",
+  "confidence": "high"
+ },
+ "9frUuzHQljQdwLlANU2MnxsD9o": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "decorative hero image \"NEXT Distribution 2028 - Pioneering Insurance Distribution with LoyJoy\": a dotted umbrella over a circuit-board landscape with orbiting icon dots; no readable labels",
+  "confidence": "high"
+ },
+ "Blog_Screenshoot_knowledgemodul_1": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_visible": true,
+  "ai_note": "drawn steps \"#1 GPT gateway\", \"#3 GPT Knowledge\", \"#7 GPT follow up question\"",
+  "note": "editor screenshot read at native resolution: the same Security Agent process as Blog_Screenshoot_ai-modelle_ausw_C3_A4hlen1 (drawn steps #1 GPT gateway, #3 GPT Knowledge, #4 Decision gateway, #5 Simple message, #6 Live chat, #7 GPT follow up question, #8 Automatic jump) rendered dimmed behind an open \"GPT Knowledge\" configuration panel (Sources, \"Enable reranking\" = Yes, \"Maximum number of chunks\" = 24, annotated \"Integrate Sharepoint and activate web search\"); no start/end circles visible in this crop",
+  "confidence": "high"
+ },
+ "DU4C5DHb4koeit1ghhYmzFyW8Vc": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy editor notation, vertical: start circle, modules '#1 Welcoming' (Welcoming), '#2 Questionnaire' (Small talk), '#3 Decision jump' (Hobbies), thick end circle.",
+  "confidence": "high"
+ },
+ "FLUkOAXSTQd9So5hQI0F1zkKy8": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy flow with start/end circles and modules '#1 Welcoming', '#2 Email', '#3 Zapier' (selected), '#4 Goodbye'; right panel 'Zapier - Trigger a Zap in Zapier', 'Open Zapier and connect'.",
+  "confidence": "high"
+ },
+ "GMBtSAcTJvtoVVZha5VTStMsI": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy flow continuation with numbered module boxes '#13 Giveaway participation 358,424', '#14 Loyalty referral 358,402', '#15 Profiling opt-in 358,402', '#16 Personal data intro 264,890'.",
+  "confidence": "high"
+ },
+ "J1bB8QOS626olDoGFKrity1QZT8": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "Partner-logo graphic titled 'Hybrid Journeys' with three circles labelled 'Access to GenZ', the centre hub, and 'Embedded Insurance' containing insurance brand logos.",
+  "confidence": "high"
+ },
+ "KeiSggwNg2qFgZ2oJ1dDRcBPtA": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy editor flow excerpt of numbered rounded boxes joined by down arrows: #9 Birthdate (386,464), #10 Automatic jump (9), #11 ReachFive (382,183), #12 Return jump (718,651).",
+  "confidence": "high"
+ },
+ "MdZc79N5y2b1OUue7JCtS0hzVo": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy editor: canvas with start circle, #1 Welcoming, #2 Questionnaire, Ice cream/Pizza/Hamburger recommendation product galleries #3-#5, TODO annotations; German module palette on left.",
+  "confidence": "high"
+ },
+ "O8SRAqSv7J5NMU5F80qXwyI8mx4": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "Editor flow excerpt (#1 Welcoming, #2 Questionnaire, #3 Goodbye, start and bold end circles) beside two chat preview panels with 'Enjoy this awesome chat', 'How are you?'.",
+  "confidence": "low"
+ },
+ "OPQmbhB7z9IdAkUPB0Wdf7Vlk": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "Purple infographic poster '5 ESSENTIAL RULES FOR CHATBOT DIALOGUES' with five illustrated rule cards (#1 Keep it short ... #5 Offer quick replies).",
+  "confidence": "high"
+ },
+ "QV3OPwOrYtwHWhKxXQm0xdw": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_visible": true,
+  "ai_note": "marketing headline \"LoyJoy turns ChatGPT into ProcessGPT\" printed beside the editor screenshot",
+  "note": "editor screenshot read at native resolution: start event -> \"#1 Begruessung\" -> \"#2 Entscheidungs-Gateway\" (X-diamond) -> flows \"Option 1\"/\"Option 2\"/\"Option 3\" -> \"#3 Fragebogen\", \"#5 Newsletter-Opt-in\", \"#6 NPS-Befragung\" -> \"#9 Produkt-Galerie\" -> X-gateway -> end event; the module palette (Entscheidungs-Gateway, Gateway, Ende, Warten, Timer Start, Begruessung, E-Mail, Einfache Nachricht, Fragebogen) lists no AI/GPT module and no AI module is placed in the flow",
+  "confidence": "high"
+ },
+ "WOnGORIeRzvE6S4oOTP5ewbCI": {
+  "kind": "arch",
+  "ai": false,
+  "ai_note": "",
+  "note": "industry-archetype diagram read at native resolution: number badges 1-8 over labelled boxes (Digital unterstuetzte AO, Proprietaerer Omnikanalspezialist, Pure Play Online Player, Partnerexperte Makler/Exklusiv-Partner Bank, Plattformpartner, Schnittstellen-manager, Digitaler Produkt-champion, Multikanalchampion) grouped by brackets and a Digitale-Enablement axis; a typology, not a process flow",
+  "confidence": "high"
+ },
+ "WYnxC36CFkFmE1TJRQC1RfnF6rI": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy editor with YouTube play overlay; canvas: #1 Welcome, decision gateway, dashed 'Drop module' boxes, start/end circles; left sidebar items include NLU.",
+  "confidence": "high"
+ },
+ "XNkGH5Oop623e7i2I3hmMlkbYc": {
+  "kind": "chat",
+  "ai": false,
+  "ai_note": "",
+  "note": "Three phone-frame chat mockups of an Advent calendar campaign linked by red arrows, captions 'The customers are led to the Advent calendar via social media ads.'",
+  "confidence": "high"
+ },
+ "agentic-retrieval-rag-comparison": {
+  "kind": "arch",
+  "ai": false,
+  "ai_visible": true,
+  "ai_note": "panel headings \"KLASSISCHES RAG\" and \"AGENTIC RETRIEVAL\"",
+  "note": "two-panel line-art comparison read at native resolution: classic RAG (document -> puzzle-piece chunks -> one text snippet \"Ein Textausschnitt\") versus agentic retrieval (robot with a magnifier reading a whole document \"Das ganze Dokument\" -> check mark); explanatory illustration, no process notation",
+  "confidence": "high"
+ },
+ "bM41T8YTQdVwEOE37HiBvxC6UBo": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "Vertical editor flow, start circle to #1 Questionnaire (Ask for home insurance), #2 Automatic jump, #3 Automatic jump, #4 Questionnaire, #5 Simple message, #6-#8, #9 Goodbye to end circle.",
+  "confidence": "high"
+ },
+ "gxCPTH2SzNEsLnzury7zkiVZpM": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "Blue marketing funnel chart with five tapering bands: Website Visitors, Contacts, Leads, Finalists, Customers.",
+  "confidence": "high"
+ },
+ "in-chat-authentication": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "Grey icon illustration: one key icon in a white circle branching via lines to two shield icons badged with a green check and a red X.",
+  "confidence": "low"
+ },
+ "integration-layer": {
+  "kind": "arch",
+  "ai": false,
+  "ai_note": "",
+  "note": "Ring of white icon circles around the word LoyJoy over an office photo: MCP hexagon, database, document, globe, shopping cart, cloud, triangle logo.",
+  "confidence": "high"
+ },
+ "loyjoy-september2025-release": {
+  "kind": "canvas",
+  "ai": true,
+  "ai_visible": true,
+  "ai_note": "drawn step \"#3 GPT Prompt\"",
+  "note": "editor screenshot read at native resolution, agent title \"Mein Agent\": start circle -> \"#2 Questionnaire\" -> \"#3 GPT Prompt\" -> \"#4 Conversion\" -> \"#5 Simple message\" -> end circle, with a publishing dialog; the module palette beside it also lists \"GPT gateway\"",
+  "confidence": "high"
+ },
+ "mcp-tools-grid-de": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "an icon row read at native resolution: eight circular pictograms labelled Analytics, Prozesse, Wissen, CRM, Website, Suche, Dateien, Integrationen; no diagram and no AI label",
+  "confidence": "high"
+ },
+ "phonebot_info_en": {
+  "kind": "arch",
+  "ai": true,
+  "ai_visible": true,
+  "ai_note": "\"LoyJoy AI Agent (Unified Brain)\", \"AI\", \"Generative AI\"",
+  "note": "integration illustration read at native resolution: AI hub with VOICE CHANNEL (Phonebot), WEB CHANNEL (Chatbot), MEDIA SWITCH, KNOWLEDGE & TOOLS (Knowledge Base, Generative AI, MCP Tools) and a TRUST & INFRASTRUCTURE band; component blocks, not a process model",
+  "confidence": "high"
+ },
+ "rag_loyjoy": {
+  "kind": "arch",
+  "ai": true,
+  "ai_visible": true,
+  "ai_note": "boxes \"CHATGPT AI\", \"PROMPT\", \"KNOWLEDGE CHUNKS\", \"HISTORY\", \"CONTEXT\"",
+  "note": "marketing illustration of the RAG pipeline, read at native resolution: documents/website/database -> embeddings -> CHATGPT AI -> customer question -> generated answer, with red 1/2/3 step badges; no editor notation, no events or gateways",
+  "confidence": "high"
+ },
+ "release_01_2026_de": {
+  "kind": "arch",
+  "ai": true,
+  "ai_note": "AI; AGENTIC-POWER; KI Telefonie & Themenmodellierung",
+  "note": "German hub around an AI circle: AGENTIC-POWER (MCP), NEUE WERKZEUGE, PLATTFORM-UPDATES @LOYJOY, ANALYTICS & ENTERPRISE, SINGLE SIGN-ON (SSO)",
+  "confidence": "high"
+ },
+ "release_01_2026_en": {
+  "kind": "arch",
+  "ai": true,
+  "ai_note": "AI; AGENTIC-POWER; AI telephony & topic modeling",
+  "note": "English hub around an AI circle: AGENTIC-POWER (MCP), New Tools, PLATTFORM-UPDATES @LOYJOY, ANALYTICS & ENTERPRISE, SINGLE SIGN-ON (SSO)",
+  "confidence": "high"
+ },
+ "release_notes_15_08_2024": {
+  "kind": "canvas-palette-ai",
+  "ai": false,
+  "ai_visible": true,
+  "ai_note": "module palette entry labelled \"GPT-Gateway\" (dimmed) beside the canvas",
+  "note": "editor screenshot read at native resolution: start circle -> \"#1 Einfache Nachricht\" -> \"#2 Fragebogen\" -> \"#3 E-Mail\" -> \"#4 API-Call\" -> \"#5 Semantische Suche (via Cloud)\" -> end, beside a questionnaire preview (\"Welche Rasse hat Ihr Hund?\"); no AI/GPT module is placed in the drawn process, while the editor's module palette beside it lists \"GPT-Gateway\"",
+  "confidence": "high"
+ },
+ "resolve": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "decorative icon illustration: two chat bubbles, unlabelled sparkle/stars icon, person avatar, robot arm, green tick badges",
+  "confidence": "high"
+ },
+ "security-and-compliance": {
+  "kind": "arch",
+  "ai": false,
+  "ai_visible": true,
+  "ai_note": "badge labelled \"AI Act\" (the EU regulation's name)",
+  "note": "compliance illustration read at native resolution: badges \"BFSG\", \"AI Act\", \"GDPR\", \"DORA\" above a central shield with radial connections to icons (hosting, encryption, audit); a badge set, not a process model, and \"AI Act\" names a regulation rather than an AI element",
+  "confidence": "high"
+ },
+ "smart-product-advisor": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "product card carousel: shoe photos, 'Aniks Gel-Kayano', 95 EUR, prev/next arrows, above three circular icons (chat, lightning bolt, shopping bag)",
+  "confidence": "high"
+ },
+ "tcJ1ZUe4QazkmsFCUPglQ439yzE": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "editor canvas: start circle, #1 Welcoming, #2 Email, #3 Workato, #4 Goodbye, end circle; Workato config panel 'Trigger a recipe in Workato'",
+  "confidence": "high"
+ },
+ "v9Ux4luc8iqkB2Qqa8EyQ2Or0A": {
+  "kind": "art",
+  "ai": false,
+  "ai_note": "",
+  "note": "laptop photo on a desk with zapier and LoyJoy logos; screen shows editor canvas #1 Welcoming, #2 Email, #3 Zapier, #4 Goodbye plus Zapier mapping panel",
+  "confidence": "low"
+ },
+ "xpnpoxDhmh8ZPuIb3RBBCems5Q": {
+  "kind": "ui",
+  "ai": false,
+  "ai_note": "",
+  "note": "admin 'Your experience' brand page with Process blocks list (Quiz entry, Handover, NPS survey, Shopify) beside a small Welcome/Login/Phoss chain",
+  "confidence": "high"
+ },
+ "zTlWstY02s4EfES9HdN7Lm7So": {
+  "kind": "canvas",
+  "ai": false,
+  "ai_note": "",
+  "note": "LoyJoy canvas with X-diamond gateways: #1 Questionnaire 'Ask for home insurance', #2 'Property question', #3/#4 Simple messages, Drop module, #5 Goodbye, start and end circles",
+  "confidence": "high"
+ }
+}

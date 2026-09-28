@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" namespace="https://kie.org/bpmn/_CA6FBB2C-94C7-4203-A276-B865632BA2E1" id="_D06DD55A-8851-48EB-BE9D-202DCB7124BC" name="BPMN_0377B7E2-B82A-49D8-BCD3-CECDA6ACA4A5">
+  <itemDefinition id="_9875AC1E-5A15-4F94-BD0F-373A862549AA" structureRef="String" />
+  <itemDefinition id="_55462BE5-180C-4740-AC17-B413323E394E" structureRef="Boolean" />
+  <itemDefinition id="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" structureRef="Integer" />
+  <itemDefinition id="_231CECD6-B9EF-425A-BFAB-39B9205B876B" structureRef="Double" />
+  <process id="process" name="process">
+    <property id="_768668EE-0829-4293-9353-2C956A58A676" name="aiCompleted" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>internal</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_A77F9A77-59B5-4AF3-BBFA-A7365A8333E7" name="applicantName" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_8CE1BCAA-4C72-47C1-83B9-A3303ADD6F09" name="loanAmount" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_568BA6CD-5CAF-4992-8FB0-61282946B337" name="annualIncome" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_F6CE009B-8F63-4BB2-A59C-90C7341568F1" name="monthlyExpenses" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_BC906EE1-F264-4B82-B471-B5A8790E44E9" name="employmentType" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_A0F6F107-9FEA-4CC2-ABDC-B28B41ADF86F" name="propertyAddress" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_8266E5F0-0A86-4088-955D-BCBD53F044B8" name="estimatedPropertyValue" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_8A9E7847-A8E5-4F9E-B17F-756722B32ABE" name="downPayment" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_1E51262B-C2FB-4EA7-B57D-A658B4CA4850" name="creditScore" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1">
+      <extensionElements>
+        <drools:metaData name="customTags">
+          <drools:metaValue>input</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+    </property>
+    <property id="_A59ED584-918A-42D4-BA9E-141AF02447CF" name="incomeVerified" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+    <property id="_00B0DB3A-A0EB-4172-8C6C-8202FBE7B8DE" name="employmentVerified" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+    <property id="_F6500827-9430-4C2A-8ABB-6AEED6024141" name="fraudRiskLevel" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+    <property id="_60884782-ACB0-4AD6-A615-4981358F64A4" name="propertyAppraisedValue" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+    <property id="_234F4C74-42DF-4DD7-8D0B-D7A73B238572" name="aiRecommendation" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+    <property id="_5FD53204-12F9-4CA7-9B0F-25DF069CB8FA" name="aiRiskNarrative" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+    <property id="_B2C8B11E-A540-489C-8BC5-5D31713DECD5" name="debtToIncomeRatio" itemSubjectRef="_231CECD6-B9EF-425A-BFAB-39B9205B876B" />
+    <property id="_87E516A2-1158-4051-8773-8D0BFF9DDDA0" name="loanToValueRatio" itemSubjectRef="_231CECD6-B9EF-425A-BFAB-39B9205B876B" />
+    <property id="_3432BC44-572F-4847-9507-78DCC9938C01" name="dmnDecision" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+    <property id="_E0682402-4034-42B3-B3A0-FE0C1547F716" name="dmnReason" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+    <property id="_2ED12EBB-3AC7-4859-A1FA-6FCF61317E80" name="requiresHumanReview" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+    <property id="_B4DAF1BD-B900-4B52-851F-E225EF6CCD08" name="finalDecision" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+    <property id="_16AD22DC-C214-4475-B42A-710B858B27CA" name="eligible" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+    <laneSet id="_2230C3D6-04A3-4BEA-ACB8-739BD181E33E" />
+    <startEvent id="_8454B237-48E0-469A-8BA1-71B130EF8CE4">
+      <outgoing>_4043C160-82CE-4D12-8CE2-8EF969B3A4DB</outgoing>
+    </startEvent>
+    <endEvent id="_FB47DBFA-59AF-4858-BEA0-896177B9BEEC">
+      <incoming>_8C18BEC1-F1F7-4DD4-8003-4B467DA85135</incoming>
+      <incoming>_3EB9A635-23BB-4F7D-9413-84A6F8E01878</incoming>
+      <incoming>_D5BD6C01-9810-4E0D-B7A0-7DC7D5777CB3</incoming>
+      <incoming>_E4C7C8F8-C30E-402C-9414-E22CD811E4C5</incoming>
+    </endEvent>
+    <endEvent id="_D800CD35-3B1B-476B-B1B4-D26118550E5D">
+      <incoming>_77208C9B-E25D-45CC-859C-140BC6FF7069</incoming>
+    </endEvent>
+    <exclusiveGateway id="_38954053-67B4-45AE-9724-DB0C77B6DBDD" gatewayDirection="Diverging" default="_E2291403-0827-4A47-B5B2-8F88CF1497E2">
+      <incoming>_B9139619-2A03-465A-8059-B733A9D02C10</incoming>
+      <outgoing>_35822AE0-7BFD-4F28-8344-C84CC880E6BE</outgoing>
+      <outgoing>_E2291403-0827-4A47-B5B2-8F88CF1497E2</outgoing>
+    </exclusiveGateway>
+    <exclusiveGateway id="_EFBD3B45-A276-421F-A71B-8945CBB54CDA" gatewayDirection="Diverging" default="_F66C67A9-A30B-4697-A758-7FEE1C74C69C">
+      <incoming>_A97A8F79-B190-40B2-B4E4-B820E35190E7</incoming>
+      <outgoing>_EC24E307-BCC2-47B6-9502-C1E5522C3ECD</outgoing>
+      <outgoing>_F66C67A9-A30B-4697-A758-7FEE1C74C69C</outgoing>
+    </exclusiveGateway>
+    <inclusiveGateway id="_ECF17D9D-0663-4D8A-9F18-9BC18F7CBE08" gatewayDirection="Converging">
+      <incoming>_F66C67A9-A30B-4697-A758-7FEE1C74C69C</incoming>
+      <incoming>_1C891BFB-CF07-4EE9-BCD7-306E267BEEF9</incoming>
+      <outgoing>_E4C7C8F8-C30E-402C-9414-E22CD811E4C5</outgoing>
+    </inclusiveGateway>
+    <scriptTask id="_719D2788-E450-4035-AFC6-91B648162179" name="Set Denial">
+      <incoming>_E2291403-0827-4A47-B5B2-8F88CF1497E2</incoming>
+      <outgoing>_77208C9B-E25D-45CC-859C-140BC6FF7069</outgoing>
+      <ioSpecification id="_F5958BBB-97DA-4B7F-A07D-240C7EB245B5">
+        <inputSet id="_80821B21-1337-4297-B556-EED71A917C55" />
+        <outputSet id="_2A893F80-D407-49D7-84C2-BC6BDA5CAA62" />
+      </ioSpecification>
+      <script>kcontext.setVariable(&quot;finalDecision&quot;, &quot;DENY&quot;);
+kcontext.setVariable(&quot;dmnReason&quot;, &quot;Failed basic eligibility check&quot;);
+</script>
+    </scriptTask>
+    <scriptTask id="_CDADE5B5-7F3A-40FE-AC74-915397618B52" name="Check Agreement">
+      <incoming>_C815C929-609B-4918-A619-F014BDCF8470</incoming>
+      <outgoing>_A97A8F79-B190-40B2-B4E4-B820E35190E7</outgoing>
+      <ioSpecification id="_E8C50305-D786-44FF-8855-8E055B5B69CB">
+        <inputSet id="_545C84AA-1A1C-45C5-98D5-DDB63C49630F" />
+        <outputSet id="_265D556C-9176-48DD-AE44-27FB391CC42E" />
+      </ioSpecification>
+      <script>String aiRec = (String) kcontext.getVariable(&quot;aiRecommendation&quot;);
+String dmnDec = (String) kcontext.getVariable(&quot;dmnDecision&quot;);
+boolean disagree = (aiRec != null &amp;&amp; dmnDec != null &amp;&amp; !aiRec.equals(dmnDec));
+kcontext.setVariable(&quot;requiresHumanReview&quot;, disagree);
+if (!disagree) {
+    kcontext.setVariable(&quot;finalDecision&quot;, dmnDec);
+}</script>
+    </scriptTask>
+    <userTask id="_1CC989DD-426F-4C60-A510-0B679C397504" name="HumanReview">
+      <extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue>HumanReview</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+      <incoming>_EC24E307-BCC2-47B6-9502-C1E5522C3ECD</incoming>
+      <outgoing>_D5BD6C01-9810-4E0D-B7A0-7DC7D5777CB3</outgoing>
+      <outgoing>_1C891BFB-CF07-4EE9-BCD7-306E267BEEF9</outgoing>
+      <ioSpecification id="_21F1736E-FDED-491A-9D54-DE8469AD313E">
+        <dataInput id="_ECB22DE5-A3D9-4909-891C-0D634B17DAD4" name="GroupId" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_77A08C73-1041-40E2-B6A1-14CCD72B4FA7" name="applicantName" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_C0AC98EB-FA78-4E16-A252-89343FBD528D" name="loanAmount" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_92A27F50-2B4A-4AD9-9F5A-27A55B083329" name="annualIncome" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_8341E188-EF0D-49C2-B48D-C3B9D7BADC53" name="monthlyExpenses" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_FB8612FA-1F8E-4AEE-BADA-5998CCF62392" name="employmentType" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_9DF111DF-4414-40AD-AB43-73FEB5C3678B" name="propertyAddress" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_40745FCF-210B-44E7-A0C3-E216F2A1E6F9" name="estimatedPropertyValue" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_8E44CFD8-32EC-4D15-B1E8-47D6DD99CA55" name="downPayment" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_5ACDAB40-8C1A-43FD-B351-BC690392EF5D" name="creditScore" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_6AFD8FEF-1237-4CFB-BE6D-23EF2DFF1B51" name="incomeVerified" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+        <dataInput id="_B93E00B3-19C8-4A85-8A1B-7F43BF7B6E6D" name="employmentVerified" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+        <dataInput id="_EE8F7AAC-ED7E-46BA-86AF-577FC82937DB" name="fraudRiskLevel" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_8D91EF8B-85DD-4098-B062-36B5BF625430" name="propertyAppraisedValue" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_85406712-5CB1-42F1-B640-7FABEB9907C3" name="aiRecommendation" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_5DBF847A-2341-4789-A880-92A793B05CFF" name="aiRiskNarrative" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_A45BD661-940D-4DCB-A6D9-9422659D9841" name="debtToIncomeRatio" drools:dtype="Double" itemSubjectRef="_231CECD6-B9EF-425A-BFAB-39B9205B876B" />
+        <dataInput id="_E4C77226-1BE9-46AF-9EF0-898DEBB0EF8B" name="loanToValueRatio" drools:dtype="Double" itemSubjectRef="_231CECD6-B9EF-425A-BFAB-39B9205B876B" />
+        <dataInput id="_D56FE5C9-9D66-4938-920D-CCA0CE62EB6D" name="dmnDecision" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataOutput name="finalDecision" id="_B8EB6350-A41D-410B-ABF2-3A6BB53E52DE" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <inputSet id="_DD74DDC1-1E40-4C8F-9648-B1C693452CBE">
+          <dataInputRefs>_ECB22DE5-A3D9-4909-891C-0D634B17DAD4</dataInputRefs>
+          <dataInputRefs>_77A08C73-1041-40E2-B6A1-14CCD72B4FA7</dataInputRefs>
+          <dataInputRefs>_C0AC98EB-FA78-4E16-A252-89343FBD528D</dataInputRefs>
+          <dataInputRefs>_92A27F50-2B4A-4AD9-9F5A-27A55B083329</dataInputRefs>
+          <dataInputRefs>_8341E188-EF0D-49C2-B48D-C3B9D7BADC53</dataInputRefs>
+          <dataInputRefs>_FB8612FA-1F8E-4AEE-BADA-5998CCF62392</dataInputRefs>
+          <dataInputRefs>_9DF111DF-4414-40AD-AB43-73FEB5C3678B</dataInputRefs>
+          <dataInputRefs>_40745FCF-210B-44E7-A0C3-E216F2A1E6F9</dataInputRefs>
+          <dataInputRefs>_8E44CFD8-32EC-4D15-B1E8-47D6DD99CA55</dataInputRefs>
+          <dataInputRefs>_5ACDAB40-8C1A-43FD-B351-BC690392EF5D</dataInputRefs>
+          <dataInputRefs>_6AFD8FEF-1237-4CFB-BE6D-23EF2DFF1B51</dataInputRefs>
+          <dataInputRefs>_B93E00B3-19C8-4A85-8A1B-7F43BF7B6E6D</dataInputRefs>
+          <dataInputRefs>_EE8F7AAC-ED7E-46BA-86AF-577FC82937DB</dataInputRefs>
+          <dataInputRefs>_8D91EF8B-85DD-4098-B062-36B5BF625430</dataInputRefs>
+          <dataInputRefs>_85406712-5CB1-42F1-B640-7FABEB9907C3</dataInputRefs>
+          <dataInputRefs>_5DBF847A-2341-4789-A880-92A793B05CFF</dataInputRefs>
+          <dataInputRefs>_A45BD661-940D-4DCB-A6D9-9422659D9841</dataInputRefs>
+          <dataInputRefs>_E4C77226-1BE9-46AF-9EF0-898DEBB0EF8B</dataInputRefs>
+          <dataInputRefs>_D56FE5C9-9D66-4938-920D-CCA0CE62EB6D</dataInputRefs>
+        </inputSet>
+        <outputSet id="_8F82DD3D-2683-48A8-9751-E74DDA88AEC7">
+          <dataOutputRefs>_B8EB6350-A41D-410B-ABF2-3A6BB53E52DE</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation id="_692B7BE0-24C7-4F44-8870-D66CD11C53F3">
+        <targetRef>_ECB22DE5-A3D9-4909-891C-0D634B17DAD4</targetRef>
+        <assignment id="_5E45D652-B1BA-4252-B539-3729152F5714">
+          <from id="_A7B1A073-ECB2-48C0-AB6D-501BB7FD5BC0" xsi:type="tFormalExpression">compliance</from>
+          <to id="_9BDE9363-F374-4DE8-BBB9-11257D7BB805">_ECB22DE5-A3D9-4909-891C-0D634B17DAD4</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_EC678128-BB1A-4954-ACF5-F5C6345BFEA1">
+        <sourceRef>_A77F9A77-59B5-4AF3-BBFA-A7365A8333E7</sourceRef>
+        <targetRef>_77A08C73-1041-40E2-B6A1-14CCD72B4FA7</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_0A8EAFE4-FCEB-4FD5-8747-C76B830C797A">
+        <sourceRef>_8CE1BCAA-4C72-47C1-83B9-A3303ADD6F09</sourceRef>
+        <targetRef>_C0AC98EB-FA78-4E16-A252-89343FBD528D</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_39036499-E946-4F64-A4C5-A37F54AD74C6">
+        <sourceRef>_568BA6CD-5CAF-4992-8FB0-61282946B337</sourceRef>
+        <targetRef>_92A27F50-2B4A-4AD9-9F5A-27A55B083329</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_663DD643-FE3B-4A44-84E9-91C7722888E8">
+        <sourceRef>_F6CE009B-8F63-4BB2-A59C-90C7341568F1</sourceRef>
+        <targetRef>_8341E188-EF0D-49C2-B48D-C3B9D7BADC53</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_F17356C5-FB3E-4DF0-8046-10F57083C101">
+        <sourceRef>_BC906EE1-F264-4B82-B471-B5A8790E44E9</sourceRef>
+        <targetRef>_FB8612FA-1F8E-4AEE-BADA-5998CCF62392</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_3A9ED83C-0866-4C32-81A8-22ECFBFC7D2C">
+        <sourceRef>_A0F6F107-9FEA-4CC2-ABDC-B28B41ADF86F</sourceRef>
+        <targetRef>_9DF111DF-4414-40AD-AB43-73FEB5C3678B</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_99FD7453-F19F-4950-A8EA-B3CCF241890C">
+        <sourceRef>_8266E5F0-0A86-4088-955D-BCBD53F044B8</sourceRef>
+        <targetRef>_40745FCF-210B-44E7-A0C3-E216F2A1E6F9</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_3F08F96C-8AD2-4FD1-B1BC-B0351E2225E6">
+        <sourceRef>_8A9E7847-A8E5-4F9E-B17F-756722B32ABE</sourceRef>
+        <targetRef>_8E44CFD8-32EC-4D15-B1E8-47D6DD99CA55</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_40C58628-A13A-460C-A708-43EBF0EB8B55">
+        <sourceRef>_1E51262B-C2FB-4EA7-B57D-A658B4CA4850</sourceRef>
+        <targetRef>_5ACDAB40-8C1A-43FD-B351-BC690392EF5D</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_25EC7C2D-2044-465D-80AB-FCA3A822BD00">
+        <sourceRef>_A59ED584-918A-42D4-BA9E-141AF02447CF</sourceRef>
+        <targetRef>_6AFD8FEF-1237-4CFB-BE6D-23EF2DFF1B51</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_A9359F43-24B0-4B41-8D8D-700A13391EB6">
+        <sourceRef>_00B0DB3A-A0EB-4172-8C6C-8202FBE7B8DE</sourceRef>
+        <targetRef>_B93E00B3-19C8-4A85-8A1B-7F43BF7B6E6D</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_1B35FE83-9034-4CF0-A2EA-44F86BB88546">
+        <sourceRef>_F6500827-9430-4C2A-8ABB-6AEED6024141</sourceRef>
+        <targetRef>_EE8F7AAC-ED7E-46BA-86AF-577FC82937DB</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_9B4ED77D-07ED-4352-AE12-6D1A993F8F75">
+        <sourceRef>_60884782-ACB0-4AD6-A615-4981358F64A4</sourceRef>
+        <targetRef>_8D91EF8B-85DD-4098-B062-36B5BF625430</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_46433995-0E11-49E4-805D-20D5041949B5">
+        <sourceRef>_234F4C74-42DF-4DD7-8D0B-D7A73B238572</sourceRef>
+        <targetRef>_85406712-5CB1-42F1-B640-7FABEB9907C3</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_FDA6B84E-0273-4429-BC9B-F6A6D734588A">
+        <sourceRef>_5FD53204-12F9-4CA7-9B0F-25DF069CB8FA</sourceRef>
+        <targetRef>_5DBF847A-2341-4789-A880-92A793B05CFF</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_894AC124-7D7A-4570-B26F-5523201BF86A">
+        <sourceRef>_B2C8B11E-A540-489C-8BC5-5D31713DECD5</sourceRef>
+        <targetRef>_A45BD661-940D-4DCB-A6D9-9422659D9841</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_C12699A2-1266-4F4B-902E-5A3C62333822">
+        <sourceRef>_87E516A2-1158-4051-8773-8D0BFF9DDDA0</sourceRef>
+        <targetRef>_E4C77226-1BE9-46AF-9EF0-898DEBB0EF8B</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_4967A802-FCD0-40F0-AD93-33D14F6E0594">
+        <sourceRef>_3432BC44-572F-4847-9507-78DCC9938C01</sourceRef>
+        <targetRef>_D56FE5C9-9D66-4938-920D-CCA0CE62EB6D</targetRef>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_AC2AA670-C6D4-4D11-811B-98E6B7A672E0">
+        <sourceRef>_B8EB6350-A41D-410B-ABF2-3A6BB53E52DE</sourceRef>
+        <targetRef>_B4DAF1BD-B900-4B52-851F-E225EF6CCD08</targetRef>
+      </dataOutputAssociation>
+    </userTask>
+    <businessRuleTask id="_56EF6AC2-5267-433A-BEC8-13F4C7AADA6A" name="Eligibility Check" implementation="http://www.jboss.org/drools/dmn">
+      <incoming>_4043C160-82CE-4D12-8CE2-8EF969B3A4DB</incoming>
+      <outgoing>_B9139619-2A03-465A-8059-B733A9D02C10</outgoing>
+      <ioSpecification id="_61D74AB7-15F0-443F-B479-4990F8DBCFE3">
+        <dataInput id="_282A6BF4-75B9-49D1-BEE7-B686E51B2112" name="model" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_2DFABA7C-B79A-48BC-B260-125248893C94" name="fileName" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_6C7AC61E-283F-4E67-8F77-5B7080B73617" name="namespace" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_F9EF79B3-BDF8-45AA-8E48-9E4A25F0FE4D" name="CreditScore" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_94A77BCD-CD24-4622-A70A-35F34B04E3E2" name="LoanAmount" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_7F7B6E6C-415D-45FA-9EF5-DCF60E3D8112" name="AnnualIncome" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataOutput name="Eligible" id="_92157F50-06DF-4EEE-9030-2657DAF77806" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+        <inputSet id="_0667FC50-C591-4F84-9E9D-DA15B3396151">
+          <dataInputRefs>_282A6BF4-75B9-49D1-BEE7-B686E51B2112</dataInputRefs>
+          <dataInputRefs>_2DFABA7C-B79A-48BC-B260-125248893C94</dataInputRefs>
+          <dataInputRefs>_6C7AC61E-283F-4E67-8F77-5B7080B73617</dataInputRefs>
+          <dataInputRefs>_F9EF79B3-BDF8-45AA-8E48-9E4A25F0FE4D</dataInputRefs>
+          <dataInputRefs>_94A77BCD-CD24-4622-A70A-35F34B04E3E2</dataInputRefs>
+          <dataInputRefs>_7F7B6E6C-415D-45FA-9EF5-DCF60E3D8112</dataInputRefs>
+        </inputSet>
+        <outputSet id="_AEDB26E5-5C5B-4317-8173-23A20DA0B8B0">
+          <dataOutputRefs>_92157F50-06DF-4EEE-9030-2657DAF77806</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation id="_1DB42E44-486E-4896-9E69-EEF9E1AEA3DA">
+        <targetRef>_282A6BF4-75B9-49D1-BEE7-B686E51B2112</targetRef>
+        <assignment id="_76E5FAF5-92DC-4D0A-883F-4BCC9EF57AFB">
+          <from id="_9646688A-3FFC-49C3-9642-6D3993EC472C" xsi:type="tFormalExpression">Eligible</from>
+          <to id="_E498A5E5-BDDA-495D-ABFA-4F5F04F310B7">_282A6BF4-75B9-49D1-BEE7-B686E51B2112</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_3ECC4E55-4CBF-4DF4-B055-040909811A32">
+        <targetRef>_2DFABA7C-B79A-48BC-B260-125248893C94</targetRef>
+        <assignment id="_83BD90C0-EF00-434E-B3F8-E5E3480333C8">
+          <from id="_F426B8C8-B3F5-45E3-B9ED-060562577ADB" xsi:type="tFormalExpression">eligible.dmn</from>
+          <to id="_3B50ADA9-1174-42CE-A0C3-58292386124F">_2DFABA7C-B79A-48BC-B260-125248893C94</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_0123C1F5-825A-436F-ABB0-BB71D443D5E0">
+        <targetRef>_6C7AC61E-283F-4E67-8F77-5B7080B73617</targetRef>
+        <assignment id="_6AA945F0-C3AE-4D2C-92F3-97F0E8071041">
+          <from id="_DBB7FF8C-6C8E-40A2-904D-95A472B1F392" xsi:type="tFormalExpression">https://kie.apache.org/dmn/_F3140888-6BBB-48D3-9C2C-E3E7C639C855</from>
+          <to id="_37A9A573-FC22-491E-9A6C-9065B360F54A">_6C7AC61E-283F-4E67-8F77-5B7080B73617</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_0368CA43-CE44-443F-B1FA-DF45554BC662">
+        <sourceRef>_1E51262B-C2FB-4EA7-B57D-A658B4CA4850</sourceRef>
+        <targetRef>_F9EF79B3-BDF8-45AA-8E48-9E4A25F0FE4D</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_1B751F14-1AE6-4ED0-88FA-B3245771109C">
+        <sourceRef>_8CE1BCAA-4C72-47C1-83B9-A3303ADD6F09</sourceRef>
+        <targetRef>_94A77BCD-CD24-4622-A70A-35F34B04E3E2</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_957DA3CA-0372-421E-9A18-6E7D0D79DBD1">
+        <sourceRef>_568BA6CD-5CAF-4992-8FB0-61282946B337</sourceRef>
+        <targetRef>_7F7B6E6C-415D-45FA-9EF5-DCF60E3D8112</targetRef>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_275CED0A-8A5F-4B4A-8779-D655F4E42997">
+        <sourceRef>_92157F50-06DF-4EEE-9030-2657DAF77806</sourceRef>
+        <targetRef>_16AD22DC-C214-4475-B42A-710B858B27CA</targetRef>
+      </dataOutputAssociation>
+    </businessRuleTask>
+    <businessRuleTask id="_D696CFDC-4E7A-4FE2-83AB-05D90F4D5846" name="Underwriting Decision" implementation="http://www.jboss.org/drools/dmn">
+      <incoming>_B55444E2-39FB-4ED2-8E88-717778EA890B</incoming>
+      <outgoing>_8B21082C-466D-4E9E-B60F-2E1D425C66D2</outgoing>
+      <outgoing>_C815C929-609B-4918-A619-F014BDCF8470</outgoing>
+      <ioSpecification id="_23669CA0-21B2-486B-B20D-794B03C91C0B">
+        <dataInput id="_3143E3CD-21CE-45D1-B74E-018D8FB7A7D8" name="model" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_01CD86F1-7200-4D22-89FA-A445B3C5EA15" name="fileName" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_CC935E81-B645-40EB-BA1C-B4FD77EDC58C" name="namespace" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataInput id="_DCD103B0-14BE-4F32-B705-02DF65C81640" name="annualIncome" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_1D3B9D38-152D-4EED-BF70-1248FACD71F7" name="monthlyExpenses" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_75DE96D0-96CD-4BA1-8D07-5B824F52F62C" name="loanAmount" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_DC4089B4-9826-48C9-B9AF-4348CD3B54E4" name="downPayment" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_FB4B7C9E-54D3-4B55-BAB1-6D1EE9FC2FED" name="creditScore" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_74C9AF27-10F2-4FB9-B146-365A35324AB4" name="propertyAppraisedValue" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+        <dataInput id="_BC1F4277-EF8D-48D5-ACB8-D0D83111C288" name="fraudRiskLevel" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataOutput name="dmnDecision" id="_6E33F0BE-A834-45C3-B157-33130F20AA58" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataOutput name="dmnReason" id="_0B4EA434-823C-4992-B772-07FA0603AA99" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+        <dataOutput name="Debt to Income Ratio" id="_BD6726C0-E9BD-4B65-A7CE-B5FC327667E2" drools:dtype="Double" itemSubjectRef="_231CECD6-B9EF-425A-BFAB-39B9205B876B" />
+        <dataOutput name="Loan to Value Ratio" id="_17C0435B-CC4A-4FCF-86FD-82847F1A78D0" drools:dtype="Double" itemSubjectRef="_231CECD6-B9EF-425A-BFAB-39B9205B876B" />
+        <inputSet id="_614099EF-F7F9-468A-A68C-AB7D04F10D24">
+          <dataInputRefs>_3143E3CD-21CE-45D1-B74E-018D8FB7A7D8</dataInputRefs>
+          <dataInputRefs>_01CD86F1-7200-4D22-89FA-A445B3C5EA15</dataInputRefs>
+          <dataInputRefs>_CC935E81-B645-40EB-BA1C-B4FD77EDC58C</dataInputRefs>
+          <dataInputRefs>_DCD103B0-14BE-4F32-B705-02DF65C81640</dataInputRefs>
+          <dataInputRefs>_1D3B9D38-152D-4EED-BF70-1248FACD71F7</dataInputRefs>
+          <dataInputRefs>_75DE96D0-96CD-4BA1-8D07-5B824F52F62C</dataInputRefs>
+          <dataInputRefs>_DC4089B4-9826-48C9-B9AF-4348CD3B54E4</dataInputRefs>
+          <dataInputRefs>_FB4B7C9E-54D3-4B55-BAB1-6D1EE9FC2FED</dataInputRefs>
+          <dataInputRefs>_74C9AF27-10F2-4FB9-B146-365A35324AB4</dataInputRefs>
+          <dataInputRefs>_BC1F4277-EF8D-48D5-ACB8-D0D83111C288</dataInputRefs>
+        </inputSet>
+        <outputSet id="_298611CF-5732-447B-9EDE-73EB6B636E01">
+          <dataOutputRefs>_6E33F0BE-A834-45C3-B157-33130F20AA58</dataOutputRefs>
+          <dataOutputRefs>_0B4EA434-823C-4992-B772-07FA0603AA99</dataOutputRefs>
+          <dataOutputRefs>_BD6726C0-E9BD-4B65-A7CE-B5FC327667E2</dataOutputRefs>
+          <dataOutputRefs>_17C0435B-CC4A-4FCF-86FD-82847F1A78D0</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation id="_A1A1D1E5-9A35-4718-8861-0A834C4846A1">
+        <targetRef>_3143E3CD-21CE-45D1-B74E-018D8FB7A7D8</targetRef>
+        <assignment id="_96191D55-7FF0-42F9-9682-A0740C559268">
+          <from id="_BFCD85C7-D812-4180-9D74-F1F01FE2AE44" xsi:type="tFormalExpression">underwriting-decision</from>
+          <to id="_E29E2FCB-1854-4991-B1D7-7B2AB031D8B1">_3143E3CD-21CE-45D1-B74E-018D8FB7A7D8</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_4E01F9F5-EF22-4985-A542-6F2513B54272">
+        <targetRef>_01CD86F1-7200-4D22-89FA-A445B3C5EA15</targetRef>
+        <assignment id="_2CC9C38E-D4DF-41E5-B9D1-58315C636344">
+          <from id="_A073452E-1BED-4661-9B32-BE148C305EF6" xsi:type="tFormalExpression">underwriting-decision.dmn</from>
+          <to id="_A43A9FA0-9B99-4C98-AA9F-FC052FE5932A">_01CD86F1-7200-4D22-89FA-A445B3C5EA15</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_3877E99C-A140-4F3A-826B-9DB6E2E64B83">
+        <targetRef>_CC935E81-B645-40EB-BA1C-B4FD77EDC58C</targetRef>
+        <assignment id="_7DC2BF2E-94B2-4FCE-8B36-B6FD14BAE444">
+          <from id="_2461B682-8DA9-4562-A4B6-96B254347191" xsi:type="tFormalExpression">https://kie.apache.org/dmn/_underwriting-decision</from>
+          <to id="_68C8ED3D-7DAE-4686-8ECD-25152C68FDF4">_CC935E81-B645-40EB-BA1C-B4FD77EDC58C</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation id="_D8343522-4EC1-48DB-BA0E-41D67CC1BE3F">
+        <sourceRef>_568BA6CD-5CAF-4992-8FB0-61282946B337</sourceRef>
+        <targetRef>_DCD103B0-14BE-4F32-B705-02DF65C81640</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_BD7F78D4-634A-450F-9148-CE577A1CDFA9">
+        <sourceRef>_F6CE009B-8F63-4BB2-A59C-90C7341568F1</sourceRef>
+        <targetRef>_1D3B9D38-152D-4EED-BF70-1248FACD71F7</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_5F883AA9-DB86-413B-BB0B-27C43D5E3C94">
+        <sourceRef>_8CE1BCAA-4C72-47C1-83B9-A3303ADD6F09</sourceRef>
+        <targetRef>_75DE96D0-96CD-4BA1-8D07-5B824F52F62C</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_683AB01E-8C76-493D-A50B-233A31E47E26">
+        <sourceRef>_8A9E7847-A8E5-4F9E-B17F-756722B32ABE</sourceRef>
+        <targetRef>_DC4089B4-9826-48C9-B9AF-4348CD3B54E4</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_3B16028B-9D74-4619-96FD-E383D5B90318">
+        <sourceRef>_1E51262B-C2FB-4EA7-B57D-A658B4CA4850</sourceRef>
+        <targetRef>_FB4B7C9E-54D3-4B55-BAB1-6D1EE9FC2FED</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_8B8D4257-511F-47E5-AFD4-BB2C65D8B234">
+        <sourceRef>_60884782-ACB0-4AD6-A615-4981358F64A4</sourceRef>
+        <targetRef>_74C9AF27-10F2-4FB9-B146-365A35324AB4</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_77E32755-14D1-4BC0-BB7C-1D94F4D7B821">
+        <sourceRef>_F6500827-9430-4C2A-8ABB-6AEED6024141</sourceRef>
+        <targetRef>_BC1F4277-EF8D-48D5-ACB8-D0D83111C288</targetRef>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_B16D00E1-0E0F-4A15-BF72-D52A3908D8E4">
+        <sourceRef>_6E33F0BE-A834-45C3-B157-33130F20AA58</sourceRef>
+        <targetRef>_3432BC44-572F-4847-9507-78DCC9938C01</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation id="_E3D88EDE-16AE-4ACC-973B-918AB4069273">
+        <sourceRef>_0B4EA434-823C-4992-B772-07FA0603AA99</sourceRef>
+        <targetRef>_E0682402-4034-42B3-B3A0-FE0C1547F716</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation id="_41C26D5C-4BCC-479F-A4BA-EC5F037CA488">
+        <sourceRef>_BD6726C0-E9BD-4B65-A7CE-B5FC327667E2</sourceRef>
+        <targetRef>_B2C8B11E-A540-489C-8BC5-5D31713DECD5</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation id="_4CFCEBD2-48CA-48A8-9A8A-E5B1FBAA3819">
+        <sourceRef>_17C0435B-CC4A-4FCF-86FD-82847F1A78D0</sourceRef>
+        <targetRef>_87E516A2-1158-4051-8773-8D0BFF9DDDA0</targetRef>
+      </dataOutputAssociation>
+    </businessRuleTask>
+    <adHocSubProcess id="_F86C1989-80CF-4170-AA29-9524EC4D37D8" triggeredByEvent="false" name="Loan Investigation">
+      <extensionElements>
+        <drools:metaData name="customAutoStart">
+          <drools:metaValue>false</drools:metaValue>
+        </drools:metaData>
+      </extensionElements>
+      <incoming>_169FE282-6475-44C5-BBA1-D64446A07F32</incoming>
+      <incoming>_65D18BE6-A4D9-452E-9311-7A22730A6D35</incoming>
+      <incoming>_35822AE0-7BFD-4F28-8344-C84CC880E6BE</incoming>
+      <outgoing>_8C18BEC1-F1F7-4DD4-8003-4B467DA85135</outgoing>
+      <outgoing>_3EB9A635-23BB-4F7D-9413-84A6F8E01878</outgoing>
+      <outgoing>_B55444E2-39FB-4ED2-8E88-717778EA890B</outgoing>
+      <task id="_597E1259-1738-4B1C-B363-875400A63087" drools:taskName="AletyxAI" name="Aletyx Intelligence">
+        <extensionElements>
+          <drools:metaData name="customAutoStart">
+            <drools:metaValue>true</drools:metaValue>
+          </drools:metaData>
+        </extensionElements>
+        <ioSpecification id="_1B196017-4C97-4AC9-AC99-72636C587C64">
+          <dataInput id="_81732719-21B7-4E97-ACF4-4E17ECD64848" name="HumanRequired" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_BF546996-45DB-4554-B7C2-D7DF6BF659AE" name="PreHumanRequired" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_97BB9126-000F-4B20-A200-B1BB2797AEEB" name="PostHumanRequired" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_E8E816F9-1A6E-48DB-B1D2-F356F9AE403E" name="MaxEvaluationLoops" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <inputSet id="_0877D262-0163-4E9E-86BB-E09DB719B704">
+            <dataInputRefs>_81732719-21B7-4E97-ACF4-4E17ECD64848</dataInputRefs>
+            <dataInputRefs>_BF546996-45DB-4554-B7C2-D7DF6BF659AE</dataInputRefs>
+            <dataInputRefs>_97BB9126-000F-4B20-A200-B1BB2797AEEB</dataInputRefs>
+            <dataInputRefs>_E8E816F9-1A6E-48DB-B1D2-F356F9AE403E</dataInputRefs>
+          </inputSet>
+          <outputSet id="_977EEFA2-96AE-480E-8C4E-6C8F409A0422" />
+        </ioSpecification>
+        <dataInputAssociation id="_824B1D35-6CC2-4DA9-8EF6-7528390962CE">
+          <targetRef>_81732719-21B7-4E97-ACF4-4E17ECD64848</targetRef>
+          <assignment id="_3710A08B-ECB5-46F3-A925-D64C4CB3F883">
+            <from id="_22432733-2BC6-42EF-97AB-09050B9964DD" xsi:type="tFormalExpression">&quot;&quot;</from>
+            <to id="_909FA8F4-E599-47EA-B949-613A40711A69">_81732719-21B7-4E97-ACF4-4E17ECD64848</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_D29F1CD6-E04D-4B29-80AF-F747EDE94BB0">
+          <targetRef>_BF546996-45DB-4554-B7C2-D7DF6BF659AE</targetRef>
+          <assignment id="_A9BDB61C-BFA1-492E-A1AF-D291490FDA46">
+            <from id="_1DC11F7B-57ED-4BFB-B251-9B69220FEE08" xsi:type="tFormalExpression">&quot;&quot;</from>
+            <to id="_E21D3654-3B74-47E9-A4AC-8172FEEE1B68">_BF546996-45DB-4554-B7C2-D7DF6BF659AE</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_87FA5575-8C41-422D-8764-8D27788BAB16">
+          <targetRef>_97BB9126-000F-4B20-A200-B1BB2797AEEB</targetRef>
+          <assignment id="_A02A5B3B-6997-41C7-849D-CB0E58E84950">
+            <from id="_57C0A32A-1D22-4B08-A2EA-B353BF9B8FB9" xsi:type="tFormalExpression">&quot;&quot;</from>
+            <to id="_2520F805-F399-49A3-BC91-D57D934F462F">_97BB9126-000F-4B20-A200-B1BB2797AEEB</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_D29A597B-78BB-4125-89BA-2DD73D0D8759">
+          <targetRef>_E8E816F9-1A6E-48DB-B1D2-F356F9AE403E</targetRef>
+          <assignment id="_A0858918-815F-4677-9490-4DE2BFEB2FCB">
+            <from id="_1FB9E75B-B64F-4CAA-A451-AA3C16CD08BA" xsi:type="tFormalExpression">10</from>
+            <to id="_8B9D8149-298E-4E33-A636-31BA8144E2AD">_E8E816F9-1A6E-48DB-B1D2-F356F9AE403E</to>
+          </assignment>
+        </dataInputAssociation>
+      </task>
+      <userTask id="_FEBC797D-0F30-4C78-AA6E-9813D2823DDF" name="RiskAssessment">
+        <extensionElements>
+          <drools:metaData name="customAsync">
+            <drools:metaValue>false</drools:metaValue>
+          </drools:metaData>
+          <drools:metaData name="elementname">
+            <drools:metaValue>RiskAssessment</drools:metaValue>
+          </drools:metaData>
+        </extensionElements>
+        <outgoing>_B46C319C-46E9-48A9-B711-0E83DB33B94F</outgoing>
+        <outgoing>_714B2D9A-4359-46FF-8CFB-852C1F85A35A</outgoing>
+        <ioSpecification id="_85B10564-65C4-4BDF-9B7D-F741438C44FA">
+          <dataInput id="_83D8EC25-526C-4808-84E5-B9E0577DD2FE" name="Skippable" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_C3205A02-5223-444A-B2B9-0CA5AC13289D" name="GroupId" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_B2F6BA21-5ED9-41A3-A6FF-DF7A5D4BC0D7" name="applicantName" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_28AB99A2-F252-41BA-9086-1A1E94C24578" name="loanAmount" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataInput id="_42CD8787-6210-4235-8A7A-31C50B69FF30" name="annualIncome" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataInput id="_F118DF8E-B853-4800-BB88-77494BBFF0FE" name="creditScore" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataInput id="_C107C4BC-3097-448E-BDE1-5BDF8DFD94EC" name="incomeVerified" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+          <dataInput id="_3DF18144-7434-40D5-B04D-406C363F5C65" name="employmentVerified" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+          <dataInput id="_D9DBE4A2-4043-4C63-9CD1-A218024579CE" name="fraudRiskLevel" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_C974CDAB-859E-4CF4-A364-CEE639F3D2A9" name="propertyAppraisedValue" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataOutput name="aiRecommendation" id="_802F73F9-BAFE-4D62-8050-6E5BA5A51FF4" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataOutput name="aiRiskNarrative" id="_F5702F4E-53E9-4E36-95D8-E97F3E0828BA" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <inputSet id="_AB8C407F-D645-44E9-AEBE-1E8AD4236879">
+            <dataInputRefs>_83D8EC25-526C-4808-84E5-B9E0577DD2FE</dataInputRefs>
+            <dataInputRefs>_C3205A02-5223-444A-B2B9-0CA5AC13289D</dataInputRefs>
+            <dataInputRefs>_B2F6BA21-5ED9-41A3-A6FF-DF7A5D4BC0D7</dataInputRefs>
+            <dataInputRefs>_28AB99A2-F252-41BA-9086-1A1E94C24578</dataInputRefs>
+            <dataInputRefs>_42CD8787-6210-4235-8A7A-31C50B69FF30</dataInputRefs>
+            <dataInputRefs>_F118DF8E-B853-4800-BB88-77494BBFF0FE</dataInputRefs>
+            <dataInputRefs>_C107C4BC-3097-448E-BDE1-5BDF8DFD94EC</dataInputRefs>
+            <dataInputRefs>_3DF18144-7434-40D5-B04D-406C363F5C65</dataInputRefs>
+            <dataInputRefs>_D9DBE4A2-4043-4C63-9CD1-A218024579CE</dataInputRefs>
+            <dataInputRefs>_C974CDAB-859E-4CF4-A364-CEE639F3D2A9</dataInputRefs>
+          </inputSet>
+          <outputSet id="_BCDF4BF8-CB9F-47D9-ACF0-C5982D9FE421">
+            <dataOutputRefs>_802F73F9-BAFE-4D62-8050-6E5BA5A51FF4</dataOutputRefs>
+            <dataOutputRefs>_F5702F4E-53E9-4E36-95D8-E97F3E0828BA</dataOutputRefs>
+          </outputSet>
+        </ioSpecification>
+        <dataInputAssociation id="_791054C5-E6AA-4BF9-9BF9-8CA0B1E60953">
+          <targetRef>_83D8EC25-526C-4808-84E5-B9E0577DD2FE</targetRef>
+          <assignment id="_AD91300C-1CEC-4ECE-BE7A-FB4B0AF6F346">
+            <from id="_0C020E37-1EE9-40F3-89DC-4910C16EFE0C" xsi:type="tFormalExpression">false</from>
+            <to id="_2CC97CBB-FDB5-4377-A08C-26256A953285">_83D8EC25-526C-4808-84E5-B9E0577DD2FE</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_923030D1-4E9D-4907-BFB1-076537B002C0">
+          <targetRef>_C3205A02-5223-444A-B2B9-0CA5AC13289D</targetRef>
+          <assignment id="_BA06CC09-70E9-4207-AE64-5C700E45567F">
+            <from id="_9C9237FB-A67B-48BF-A015-AB0ABAFA2330" xsi:type="tFormalExpression">compliance</from>
+            <to id="_201B9AFC-AE67-4560-B09A-E855E778BE80">_C3205A02-5223-444A-B2B9-0CA5AC13289D</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_DDFD86B8-7739-4405-8874-96A1A82FFDCC">
+          <sourceRef>_A77F9A77-59B5-4AF3-BBFA-A7365A8333E7</sourceRef>
+          <targetRef>_B2F6BA21-5ED9-41A3-A6FF-DF7A5D4BC0D7</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_E506D974-FA31-496C-B77A-8E452A6C8941">
+          <sourceRef>_8CE1BCAA-4C72-47C1-83B9-A3303ADD6F09</sourceRef>
+          <targetRef>_28AB99A2-F252-41BA-9086-1A1E94C24578</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_E1936DE6-607B-42F3-9F95-92081F463A59">
+          <sourceRef>_568BA6CD-5CAF-4992-8FB0-61282946B337</sourceRef>
+          <targetRef>_42CD8787-6210-4235-8A7A-31C50B69FF30</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_AD031D8D-7599-4860-AB14-8942CC0023F6">
+          <sourceRef>_1E51262B-C2FB-4EA7-B57D-A658B4CA4850</sourceRef>
+          <targetRef>_F118DF8E-B853-4800-BB88-77494BBFF0FE</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_52E5907F-0117-49BD-A0F8-30FB52EFB858">
+          <sourceRef>_A59ED584-918A-42D4-BA9E-141AF02447CF</sourceRef>
+          <targetRef>_C107C4BC-3097-448E-BDE1-5BDF8DFD94EC</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_40E184E2-CA1A-4975-A160-F747D5290F11">
+          <sourceRef>_00B0DB3A-A0EB-4172-8C6C-8202FBE7B8DE</sourceRef>
+          <targetRef>_3DF18144-7434-40D5-B04D-406C363F5C65</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_EE8B936D-8277-4ED3-BD30-4E70C8A3A441">
+          <sourceRef>_F6500827-9430-4C2A-8ABB-6AEED6024141</sourceRef>
+          <targetRef>_D9DBE4A2-4043-4C63-9CD1-A218024579CE</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_D3D0A2DC-5FBF-4D80-B4A5-14414F839FDA">
+          <sourceRef>_60884782-ACB0-4AD6-A615-4981358F64A4</sourceRef>
+          <targetRef>_C974CDAB-859E-4CF4-A364-CEE639F3D2A9</targetRef>
+        </dataInputAssociation>
+        <dataOutputAssociation id="_47FEADBF-A1F6-451C-8348-02DB50C45880">
+          <sourceRef>_802F73F9-BAFE-4D62-8050-6E5BA5A51FF4</sourceRef>
+          <targetRef>_234F4C74-42DF-4DD7-8D0B-D7A73B238572</targetRef>
+        </dataOutputAssociation>
+        <dataOutputAssociation id="_52D42C5B-3B3B-4D52-8541-C6FCA8EAD179">
+          <sourceRef>_F5702F4E-53E9-4E36-95D8-E97F3E0828BA</sourceRef>
+          <targetRef>_5FD53204-12F9-4CA7-9B0F-25DF069CB8FA</targetRef>
+        </dataOutputAssociation>
+      </userTask>
+      <userTask id="_63C35724-DBBA-450F-A6F2-3D0C695296AF" name="PropertyAssessment">
+        <extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue>PropertyAssessment</drools:metaValue>
+          </drools:metaData>
+        </extensionElements>
+        <ioSpecification id="_1C5AE2E2-EA7E-4C6A-8BE8-6C690D59AF47">
+          <dataInput id="_6FE63089-70AF-413A-ACEC-4355BC0E4AF3" name="GroupId" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_BF43C520-EE44-4031-800E-3200D323D3D8" name="propertyAddress" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_FE6B1659-29C2-48CC-9480-F83BD08E5A38" name="estimatedPropertyValue" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataInput id="_F249B470-8071-41F7-9E92-E36EBA2DDDE5" name="loanAmount" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataOutput name="propertyAppraisedValue" id="_C15D4B75-EAF5-43D9-BAD4-2AB5DF0858AC" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <inputSet id="_C6D7E22E-0728-446F-9833-5720EF02FF37">
+            <dataInputRefs>_6FE63089-70AF-413A-ACEC-4355BC0E4AF3</dataInputRefs>
+            <dataInputRefs>_BF43C520-EE44-4031-800E-3200D323D3D8</dataInputRefs>
+            <dataInputRefs>_FE6B1659-29C2-48CC-9480-F83BD08E5A38</dataInputRefs>
+            <dataInputRefs>_F249B470-8071-41F7-9E92-E36EBA2DDDE5</dataInputRefs>
+          </inputSet>
+          <outputSet id="_99BACA25-7CA7-4958-B3EA-63B28E242248">
+            <dataOutputRefs>_C15D4B75-EAF5-43D9-BAD4-2AB5DF0858AC</dataOutputRefs>
+          </outputSet>
+        </ioSpecification>
+        <dataInputAssociation id="_DD306D88-B18E-4F1B-B618-6AB9F463DF4A">
+          <targetRef>_6FE63089-70AF-413A-ACEC-4355BC0E4AF3</targetRef>
+          <assignment id="_C4331301-E186-4C19-9DA9-681FC5ED5B4F">
+            <from id="_B871B857-FC9A-4B53-BEF0-5434DFE1DBBF" xsi:type="tFormalExpression">compliance</from>
+            <to id="_A5096CE2-A2B3-4230-B238-AA76477888A9">_6FE63089-70AF-413A-ACEC-4355BC0E4AF3</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_62B50DD8-F1ED-425C-AA58-49348106BF48">
+          <sourceRef>_A0F6F107-9FEA-4CC2-ABDC-B28B41ADF86F</sourceRef>
+          <targetRef>_BF43C520-EE44-4031-800E-3200D323D3D8</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_903851A4-F07A-4F7B-B90E-3C332686D32E">
+          <sourceRef>_8266E5F0-0A86-4088-955D-BCBD53F044B8</sourceRef>
+          <targetRef>_FE6B1659-29C2-48CC-9480-F83BD08E5A38</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_DA1698C6-486F-4218-A3C8-8472E1D76EA0">
+          <sourceRef>_8CE1BCAA-4C72-47C1-83B9-A3303ADD6F09</sourceRef>
+          <targetRef>_F249B470-8071-41F7-9E92-E36EBA2DDDE5</targetRef>
+        </dataInputAssociation>
+        <dataOutputAssociation id="_19D3F1B9-9A60-42DE-AA2B-6D51143D83A4">
+          <sourceRef>_C15D4B75-EAF5-43D9-BAD4-2AB5DF0858AC</sourceRef>
+          <targetRef>_60884782-ACB0-4AD6-A615-4981358F64A4</targetRef>
+        </dataOutputAssociation>
+      </userTask>
+      <userTask id="_AFED2317-2293-4AA3-9CA1-766493C49AA7" name="ApplicantVerification">
+        <extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue>ApplicantVerification</drools:metaValue>
+          </drools:metaData>
+          <drools:metaData name="customAsync">
+            <drools:metaValue>false</drools:metaValue>
+          </drools:metaData>
+        </extensionElements>
+        <outgoing>_241AB315-C206-4457-B6BA-1D0A5659D35C</outgoing>
+        <ioSpecification id="_91BD784A-FC1A-4C3B-9D7A-8FB9D04BA791">
+          <dataInput id="_4908412D-E86E-4939-A033-C8D98FEA9FB3" name="GroupId" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_BA93B778-F737-484B-B81A-9F77EA679EFD" name="applicantName" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_7C65FA2D-A1CE-4896-BAF1-6F31D393819F" name="annualIncome" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataInput id="_FC7328EE-6749-408D-B6AF-1F79C6B71509" name="monthlyExpenses" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataInput id="_D6EE6B04-DD27-4A59-A4C9-39AD64D17736" name="employmentType" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <dataInput id="_F9B1454C-9D2D-4990-9A0D-87F858DCB71E" name="creditScore" drools:dtype="Integer" itemSubjectRef="_1DF17866-5386-41F7-B751-C6A65BC7CEB1" />
+          <dataOutput name="incomeVerified" id="_1F13D30B-1C3E-4CE0-8C05-B462B7E1751E" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+          <dataOutput name="employmentVerified" id="_DD604CA4-AB6D-40CB-840F-49EA14CF5959" drools:dtype="Boolean" itemSubjectRef="_55462BE5-180C-4740-AC17-B413323E394E" />
+          <dataOutput name="fraudRiskLevel" id="_C41B1C1F-6C8A-4BC6-A4F3-7BDDDE18FCF0" drools:dtype="String" itemSubjectRef="_9875AC1E-5A15-4F94-BD0F-373A862549AA" />
+          <inputSet id="_09689012-9E66-43BE-AF97-2E63A2E23219">
+            <dataInputRefs>_4908412D-E86E-4939-A033-C8D98FEA9FB3</dataInputRefs>
+            <dataInputRefs>_BA93B778-F737-484B-B81A-9F77EA679EFD</dataInputRefs>
+            <dataInputRefs>_7C65FA2D-A1CE-4896-BAF1-6F31D393819F</dataInputRefs>
+            <dataInputRefs>_FC7328EE-6749-408D-B6AF-1F79C6B71509</dataInputRefs>
+            <dataInputRefs>_D6EE6B04-DD27-4A59-A4C9-39AD64D17736</dataInputRefs>
+            <dataInputRefs>_F9B1454C-9D2D-4990-9A0D-87F858DCB71E</dataInputRefs>
+          </inputSet>
+          <outputSet id="_091EA341-5D0E-44CE-A464-A09ED8BB8EE5">
+            <dataOutputRefs>_1F13D30B-1C3E-4CE0-8C05-B462B7E1751E</dataOutputRefs>
+            <dataOutputRefs>_DD604CA4-AB6D-40CB-840F-49EA14CF5959</dataOutputRefs>
+            <dataOutputRefs>_C41B1C1F-6C8A-4BC6-A4F3-7BDDDE18FCF0</dataOutputRefs>
+          </outputSet>
+        </ioSpecification>
+        <dataInputAssociation id="_1B9CF867-FD37-47E4-8276-54187B48581B">
+          <targetRef>_4908412D-E86E-4939-A033-C8D98FEA9FB3</targetRef>
+          <assignment id="_82EC74AB-618D-4E4E-A8FD-88EA5679DD2A">
+            <from id="_7C64AFD3-EC75-4D8D-A33A-9509FF17EB30" xsi:type="tFormalExpression">compliance</from>
+            <to id="_200B9FB6-04E8-4346-8E6E-85EC9FA97F8D">_4908412D-E86E-4939-A033-C8D98FEA9FB3</to>
+          </assignment>
+        </dataInputAssociation>
+        <dataInputAssociation id="_DED1D931-EF7A-426D-AA08-582B325A7429">
+          <sourceRef>_A77F9A77-59B5-4AF3-BBFA-A7365A8333E7</sourceRef>
+          <targetRef>_BA93B778-F737-484B-B81A-9F77EA679EFD</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_95FFF194-B0D0-4B26-BC86-ACEFFDD4198C">
+          <sourceRef>_568BA6CD-5CAF-4992-8FB0-61282946B337</sourceRef>
+          <targetRef>_7C65FA2D-A1CE-4896-BAF1-6F31D393819F</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_4F07EAC4-E131-42BE-B0CD-A8CD719A4EC4">
+          <sourceRef>_F6CE009B-8F63-4BB2-A59C-90C7341568F1</sourceRef>
+          <targetRef>_FC7328EE-6749-408D-B6AF-1F79C6B71509</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_1DB98C1C-5BFB-418E-820F-CEA7479DB754">
+          <sourceRef>_BC906EE1-F264-4B82-B471-B5A8790E44E9</sourceRef>
+          <targetRef>_D6EE6B04-DD27-4A59-A4C9-39AD64D17736</targetRef>
+        </dataInputAssociation>
+        <dataInputAssociation id="_14D5C38D-865E-4A16-B6BA-3CCF37C1BA0A">
+          <sourceRef>_1E51262B-C2FB-4EA7-B57D-A658B4CA4850</sourceRef>
+          <targetRef>_F9B1454C-9D2D-4990-9A0D-87F858DCB71E</targetRef>
+        </dataInputAssociation>
+        <dataOutputAssociation id="_F75D8F3D-658D-4F3A-BDDE-09F55F9F933D">
+          <sourceRef>_1F13D30B-1C3E-4CE0-8C05-B462B7E1751E</sourceRef>
+          <targetRef>_A59ED584-918A-42D4-BA9E-141AF02447CF</targetRef>
+        </dataOutputAssociation>
+        <dataOutputAssociation id="_175D3594-64CC-49CA-BF47-E28DDB8C79DD">
+          <sourceRef>_DD604CA4-AB6D-40CB-840F-49EA14CF5959</sourceRef>
+          <targetRef>_00B0DB3A-A0EB-4172-8C6C-8202FBE7B8DE</targetRef>
+        </dataOutputAssociation>
+        <dataOutputAssociation id="_CED0C237-41E9-4BDC-9156-0A1C21A4F175">
+          <sourceRef>_C41B1C1F-6C8A-4BC6-A4F3-7BDDDE18FCF0</sourceRef>
+          <targetRef>_F6500827-9430-4C2A-8ABB-6AEED6024141</targetRef>
+        </dataOutputAssociation>
+      </userTask>
+      <completionCondition id="_946C524B-56B5-4466-A502-915BE027EA44">aiCompleted == true</completionCondition>
+    </adHocSubProcess>
+    <sequenceFlow id="_4043C160-82CE-4D12-8CE2-8EF969B3A4DB" sourceRef="_8454B237-48E0-469A-8BA1-71B130EF8CE4" targetRef="_56EF6AC2-5267-433A-BEC8-13F4C7AADA6A" />
+    <sequenceFlow id="_B9139619-2A03-465A-8059-B733A9D02C10" sourceRef="_56EF6AC2-5267-433A-BEC8-13F4C7AADA6A" targetRef="_38954053-67B4-45AE-9724-DB0C77B6DBDD" />
+    <sequenceFlow id="_35822AE0-7BFD-4F28-8344-C84CC880E6BE" sourceRef="_38954053-67B4-45AE-9724-DB0C77B6DBDD" targetRef="_F86C1989-80CF-4170-AA29-9524EC4D37D8">
+      <conditionExpression id="_6E98387D-B5D3-45CF-BE2B-5E8A4B184694">return Boolean.TRUE.equals(eligible);</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_E2291403-0827-4A47-B5B2-8F88CF1497E2" sourceRef="_38954053-67B4-45AE-9724-DB0C77B6DBDD" targetRef="_719D2788-E450-4035-AFC6-91B648162179">
+      <conditionExpression id="_9FA1B843-E20E-4F9B-81E7-7E81E79DDBD5">return Boolean.FALSE.equals(eligible);</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_77208C9B-E25D-45CC-859C-140BC6FF7069" sourceRef="_719D2788-E450-4035-AFC6-91B648162179" targetRef="_D800CD35-3B1B-476B-B1B4-D26118550E5D" />
+    <sequenceFlow id="_B55444E2-39FB-4ED2-8E88-717778EA890B" sourceRef="_F86C1989-80CF-4170-AA29-9524EC4D37D8" targetRef="_D696CFDC-4E7A-4FE2-83AB-05D90F4D5846" />
+    <sequenceFlow id="_C815C929-609B-4918-A619-F014BDCF8470" sourceRef="_D696CFDC-4E7A-4FE2-83AB-05D90F4D5846" targetRef="_CDADE5B5-7F3A-40FE-AC74-915397618B52" />
+    <sequenceFlow id="_A97A8F79-B190-40B2-B4E4-B820E35190E7" sourceRef="_CDADE5B5-7F3A-40FE-AC74-915397618B52" targetRef="_EFBD3B45-A276-421F-A71B-8945CBB54CDA" />
+    <sequenceFlow id="_EC24E307-BCC2-47B6-9502-C1E5522C3ECD" sourceRef="_EFBD3B45-A276-421F-A71B-8945CBB54CDA" targetRef="_1CC989DD-426F-4C60-A510-0B679C397504">
+      <conditionExpression id="_B0355337-3A45-41A2-A0BF-272F93239BD5">return Boolean.TRUE.equals(requiresHumanReview);</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_F66C67A9-A30B-4697-A758-7FEE1C74C69C" sourceRef="_EFBD3B45-A276-421F-A71B-8945CBB54CDA" targetRef="_ECF17D9D-0663-4D8A-9F18-9BC18F7CBE08">
+      <conditionExpression id="_5FF14D6C-A36E-4874-963A-9E89B98BDB0D">return Boolean.FALSE.equals(requiresHumanReview);</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_1C891BFB-CF07-4EE9-BCD7-306E267BEEF9" sourceRef="_1CC989DD-426F-4C60-A510-0B679C397504" targetRef="_ECF17D9D-0663-4D8A-9F18-9BC18F7CBE08" />
+    <sequenceFlow id="_E4C7C8F8-C30E-402C-9414-E22CD811E4C5" sourceRef="_ECF17D9D-0663-4D8A-9F18-9BC18F7CBE08" targetRef="_FB47DBFA-59AF-4858-BEA0-896177B9BEEC" />
+  </process>
+  <bpmndi:BPMNDiagram id="_E59FE8E3-5C59-4BCF-98B6-CF6D49FE4896">
+    <bpmndi:BPMNPlane id="_F2272699-E230-4C0C-A52E-4DA0C05D30A7">
+      <bpmndi:BPMNShape id="_AC410AEE-542E-46FE-AD0D-A09A14C3E9C5" bpmnElement="_8454B237-48E0-469A-8BA1-71B130EF8CE4">
+        <dc:Bounds x="-540" y="500" width="60" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_85296C18-1AD8-4188-B262-25C26E04A09C" bpmnElement="_F86C1989-80CF-4170-AA29-9524EC4D37D8">
+        <dc:Bounds x="40" y="380" width="620" height="300" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_AAB44D36-DB6A-4038-92FE-2D47D55D3C04" bpmnElement="_FB47DBFA-59AF-4858-BEA0-896177B9BEEC">
+        <dc:Bounds x="1540" y="500" width="60" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_1E99E7B9-DBD8-4B2A-B1CA-BD9CD034E0FD" bpmnElement="_FEBC797D-0F30-4C78-AA6E-9813D2823DDF">
+        <dc:Bounds x="460" y="540" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_D4BA7A31-7F9B-4BB4-83EC-C1564EE1B871" bpmnElement="_597E1259-1738-4B1C-B363-875400A63087">
+        <dc:Bounds x="260" y="420" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_B659203B-1909-4BCF-9682-79E37A4D5BFD" bpmnElement="_63C35724-DBBA-450F-A6F2-3D0C695296AF">
+        <dc:Bounds x="260" y="540" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_853E909E-B460-4517-AAE4-70003CD2F996" bpmnElement="_AFED2317-2293-4AA3-9CA1-766493C49AA7">
+        <dc:Bounds x="60" y="540" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_90FDF0D2-5A14-4EA4-AFDE-D7BC27197D9D" bpmnElement="_56EF6AC2-5267-433A-BEC8-13F4C7AADA6A">
+        <dc:Bounds x="-420" y="480" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_483C66B5-57F2-4BDE-8EF7-25D188B1B8E4" bpmnElement="_38954053-67B4-45AE-9724-DB0C77B6DBDD">
+        <dc:Bounds x="-140" y="500" width="60" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_96065FF7-50E6-441F-B436-5B8A5F3A17DF" bpmnElement="_D800CD35-3B1B-476B-B1B4-D26118550E5D">
+        <dc:Bounds x="-140" y="820" width="60" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_1F6C997E-C97F-4AD4-86D1-860FCAD4109E" bpmnElement="_719D2788-E450-4035-AFC6-91B648162179">
+        <dc:Bounds x="-200" y="640" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_81E7329D-7E54-4A85-BA87-883DB94003DC" bpmnElement="_D696CFDC-4E7A-4FE2-83AB-05D90F4D5846">
+        <dc:Bounds x="740" y="480" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_26E20DFD-32CD-4FCF-B0A2-F58D1131DBC9" bpmnElement="_CDADE5B5-7F3A-40FE-AC74-915397618B52">
+        <dc:Bounds x="1000" y="480" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_256743BE-55D2-4C8E-ADAF-7E45104F3D04" bpmnElement="_EFBD3B45-A276-421F-A71B-8945CBB54CDA">
+        <dc:Bounds x="1260" y="500" width="60" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_6290F41A-A0BE-4DF1-BE50-F5804DFB1E7B" bpmnElement="_1CC989DD-426F-4C60-A510-0B679C397504">
+        <dc:Bounds x="1200" y="680" width="180" height="100" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_0D7AAEF7-0044-43E3-990E-8BDD612C5CEB" bpmnElement="_ECF17D9D-0663-4D8A-9F18-9BC18F7CBE08">
+        <dc:Bounds x="1420" y="500" width="60" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_777BA6E8-37E9-4C34-83D7-70E03F4E1521-AUTO-TARGET" bpmnElement="_2C5DF03C-47A0-483D-8B03-AA7E76260534" sourceElement="_AC410AEE-542E-46FE-AD0D-A09A14C3E9C5" targetElement="_80BD74DB-E868-4C0C-8E3E-52959204DBE6">
+        <di:waypoint x="110" y="250" />
+        <di:waypoint x="330" y="250" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_5E437D13-09EC-44B7-8109-6F32DDE77EAC-AUTO-TARGET" bpmnElement="_EEA6A382-1204-4FCA-A87C-A515F3FF77C5" sourceElement="_80BD74DB-E868-4C0C-8E3E-52959204DBE6" targetElement="_E75FB3C1-9712-4D7A-91DD-32997057D7B8">
+        <di:waypoint x="330" y="250" />
+        <di:waypoint x="590" y="250" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_0BB9A59A-CFA1-4A02-84C8-86BDF0576779-AUTO-TARGET" bpmnElement="_3E3C60C1-EE4A-4086-A496-7B353D1ECC4E" sourceElement="_684E67EA-438D-4F87-AA05-095D7E039C39" targetElement="_866259E0-653B-4BC2-BF32-1818579447B6">
+        <di:waypoint x="170" y="770" />
+        <di:waypoint x="410" y="770" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_C2AC9843-2B44-4547-AFF7-67AEDD879366-AUTO-TARGET" bpmnElement="_AF42B02C-5C2C-44B6-9C55-C1E991564475" sourceElement="_80A8DE98-CCCF-4839-A4E4-4179EE0C6563" targetElement="_5351BD05-DD3B-4561-B70F-1274816EFB7A">
+        <di:waypoint x="170" y="750" />
+        <di:waypoint x="410" y="750" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_B0E0F13A-4ECE-4A00-BD0E-7568D5C4D806-AUTO-TARGET" bpmnElement="_F9CBD293-C575-4A76-BE73-7F2FD6B3587C" sourceElement="_AC410AEE-542E-46FE-AD0D-A09A14C3E9C5" targetElement="_90FDF0D2-5A14-4EA4-AFDE-D7BC27197D9D">
+        <di:waypoint x="-510" y="590" />
+        <di:waypoint x="-330" y="590" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_50FCDF89-7632-4E05-8CAE-E055BF93A97D-AUTO-SOURCE-AUTO-TARGET" bpmnElement="_4043C160-82CE-4D12-8CE2-8EF969B3A4DB" sourceElement="_AC410AEE-542E-46FE-AD0D-A09A14C3E9C5" targetElement="_90FDF0D2-5A14-4EA4-AFDE-D7BC27197D9D">
+        <di:waypoint x="-510" y="530" />
+        <di:waypoint x="-330" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_F0CBB608-058A-42FE-B759-E33357473AF7-AUTO-TARGET" bpmnElement="_ECEFCC4D-FBC6-4982-9CCB-5B21F47C6DD4" sourceElement="_90FDF0D2-5A14-4EA4-AFDE-D7BC27197D9D" targetElement="_483C66B5-57F2-4BDE-8EF7-25D188B1B8E4">
+        <di:waypoint x="-330" y="590" />
+        <di:waypoint x="-110" y="590" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_C009663A-85B7-405E-AFF0-3FAB258B7BCE-AUTO-SOURCE-AUTO-TARGET" bpmnElement="_B9139619-2A03-465A-8059-B733A9D02C10" sourceElement="_90FDF0D2-5A14-4EA4-AFDE-D7BC27197D9D" targetElement="_483C66B5-57F2-4BDE-8EF7-25D188B1B8E4">
+        <di:waypoint x="-330" y="530" />
+        <di:waypoint x="-110" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_A9DD258B-38EE-4304-A121-5288D1DC7C90-AUTO-TARGET" bpmnElement="_E5CE5958-EF02-4C0D-9323-B73E4DFBEA5A" sourceElement="_483C66B5-57F2-4BDE-8EF7-25D188B1B8E4" targetElement="_96065FF7-50E6-441F-B436-5B8A5F3A17DF">
+        <di:waypoint x="-110" y="590" />
+        <di:waypoint x="-110" y="730" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_EF646A2A-B666-47BD-A286-094E0A71800D" bpmnElement="_35822AE0-7BFD-4F28-8344-C84CC880E6BE" sourceElement="_483C66B5-57F2-4BDE-8EF7-25D188B1B8E4" targetElement="_85296C18-1AD8-4188-B262-25C26E04A09C">
+        <di:waypoint x="-110" y="530" />
+        <di:waypoint x="40" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_3406E352-1DB3-42F4-952B-1FBD9A01F728" bpmnElement="_E2291403-0827-4A47-B5B2-8F88CF1497E2" sourceElement="_483C66B5-57F2-4BDE-8EF7-25D188B1B8E4" targetElement="_1F6C997E-C97F-4AD4-86D1-860FCAD4109E">
+        <di:waypoint x="-110" y="530" />
+        <di:waypoint x="-110" y="690" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_29EB49A2-41A6-4A4F-8644-1D460DF9DC53" bpmnElement="_77208C9B-E25D-45CC-859C-140BC6FF7069" sourceElement="_1F6C997E-C97F-4AD4-86D1-860FCAD4109E" targetElement="_96065FF7-50E6-441F-B436-5B8A5F3A17DF">
+        <di:waypoint x="-110" y="690" />
+        <di:waypoint x="-110" y="850" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_7CD7D86D-61C8-4875-9A89-5BA0891883A4" bpmnElement="_B55444E2-39FB-4ED2-8E88-717778EA890B" sourceElement="_85296C18-1AD8-4188-B262-25C26E04A09C" targetElement="_81E7329D-7E54-4A85-BA87-883DB94003DC">
+        <di:waypoint x="350" y="530" />
+        <di:waypoint x="740" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_4A73418B-D084-438C-B250-220E938C2BC5-AUTO-TARGET" bpmnElement="_8571D92C-9865-4970-9D45-406739410B6D" sourceElement="_81E7329D-7E54-4A85-BA87-883DB94003DC" targetElement="_AD802E3A-DA20-41FA-92D4-46A91868B16B">
+        <di:waypoint x="830" y="530" />
+        <di:waypoint x="1030" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_C46ABBF0-F515-42D0-B9D2-B39CF80508FF-AUTO-TARGET" bpmnElement="_BAA6FD05-6E7C-46A8-BD95-9CAF013E2DE3" sourceElement="_81E7329D-7E54-4A85-BA87-883DB94003DC" targetElement="_26E20DFD-32CD-4FCF-B0A2-F58D1131DBC9">
+        <di:waypoint x="830" y="530" />
+        <di:waypoint x="1070" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_158884FA-D0C1-4A38-B5B9-6621A94D072D-AUTO-SOURCE-AUTO-TARGET" bpmnElement="_C815C929-609B-4918-A619-F014BDCF8470" sourceElement="_81E7329D-7E54-4A85-BA87-883DB94003DC" targetElement="_26E20DFD-32CD-4FCF-B0A2-F58D1131DBC9">
+        <di:waypoint x="830" y="530" />
+        <di:waypoint x="1090" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_13A22482-4FA8-4A1D-B334-B8BF8E3A39B6-AUTO-TARGET" bpmnElement="_0E32562F-DE31-4FF5-A5A3-56B22107CC9E" sourceElement="_26E20DFD-32CD-4FCF-B0A2-F58D1131DBC9" targetElement="_256743BE-55D2-4C8E-ADAF-7E45104F3D04">
+        <di:waypoint x="1090" y="530" />
+        <di:waypoint x="1290" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_7A77152F-4688-4E91-82B0-42C123A43664-AUTO-SOURCE-AUTO-TARGET" bpmnElement="_A97A8F79-B190-40B2-B4E4-B820E35190E7" sourceElement="_26E20DFD-32CD-4FCF-B0A2-F58D1131DBC9" targetElement="_256743BE-55D2-4C8E-ADAF-7E45104F3D04">
+        <di:waypoint x="1090" y="530" />
+        <di:waypoint x="1290" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_2D56A8A2-5918-4A9E-9570-368269225189" bpmnElement="_EC24E307-BCC2-47B6-9502-C1E5522C3ECD" sourceElement="_256743BE-55D2-4C8E-ADAF-7E45104F3D04" targetElement="_6290F41A-A0BE-4DF1-BE50-F5804DFB1E7B">
+        <di:waypoint x="1290" y="530" />
+        <di:waypoint x="1290" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_59C8A538-4C2F-48C1-B8C6-E585AC4A03DE-AUTO-TARGET" bpmnElement="_38CB58A0-484F-4B89-9CAF-BAD1225332F5" sourceElement="_256743BE-55D2-4C8E-ADAF-7E45104F3D04" targetElement="_0D7AAEF7-0044-43E3-990E-8BDD612C5CEB">
+        <di:waypoint x="1290" y="530" />
+        <di:waypoint x="1450" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_AEA8960C-099C-4DF6-976E-9C3BFC2AF172-AUTO-SOURCE-AUTO-TARGET" bpmnElement="_F66C67A9-A30B-4697-A758-7FEE1C74C69C" sourceElement="_256743BE-55D2-4C8E-ADAF-7E45104F3D04" targetElement="_0D7AAEF7-0044-43E3-990E-8BDD612C5CEB">
+        <di:waypoint x="1290" y="530" />
+        <di:waypoint x="1450" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_E4B6F12F-8754-4F5B-A2E0-3626A5D6E666" bpmnElement="_1C891BFB-CF07-4EE9-BCD7-306E267BEEF9" sourceElement="_6290F41A-A0BE-4DF1-BE50-F5804DFB1E7B" targetElement="_0D7AAEF7-0044-43E3-990E-8BDD612C5CEB">
+        <di:waypoint x="1290" y="730" />
+        <di:waypoint x="1450" y="730" />
+        <di:waypoint x="1450" y="560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_C3768C93-EC8F-4AB4-B221-8115F4B1AD7E" bpmnElement="_E4C7C8F8-C30E-402C-9414-E22CD811E4C5" sourceElement="_0D7AAEF7-0044-43E3-990E-8BDD612C5CEB" targetElement="_AAB44D36-DB6A-4038-92FE-2D47D55D3C04">
+        <di:waypoint x="1450" y="530" />
+        <di:waypoint x="1570" y="530" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

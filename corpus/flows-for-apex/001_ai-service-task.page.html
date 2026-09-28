@@ -1,0 +1,900 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>AI Service Task - Flows for APEX</title>
+<meta name="description" content="Configure an AI Service Task">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Flows for APEX">
+<meta property="og:title" content="AI Service Task">
+<meta property="og:url" content="https://flowsforapex.org/latest/ai-service-task/">
+
+
+  <meta property="og:description" content="Configure an AI Service Task">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-08-18T14:56:09+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://flowsforapex.org/latest/ai-service-task/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Flows for APEX Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://flowsforapex.org/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://flowsforapex.org/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://flowsforapex.org/assets/images/favicon-16x16.png">
+<link rel="manifest" href="https://flowsforapex.org/assets/images/site.webmanifest">
+<link rel="mask-icon" href="https://flowsforapex.org/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#d85d5d">
+<style type="text/css">
+   /*Custom style for ressources page*/
+   .video-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   
+   .video-card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:32%;
+     min-width: 320px;
+     display: inline-block;
+     margin-bottom: 15px;
+     margin-right: 15px;
+   }
+   
+   .video-card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+   
+   /*Custom style for team page*/
+   .team-members {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   } 
+
+   .member-picture-container {
+      width: 200px;
+      height: 200px;
+      margin: 1rem auto 1rem auto;
+      border-radius: 50%;
+      background: #007bb6;
+      padding: 3px;
+   }
+
+   .member-picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: #ffffff 2px solid;
+   }
+
+   .member-name,
+   .member-bio,
+   .member-links
+    {
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+
+   .member-name {
+      font-weight: bold;
+   }
+
+   .member-bio {
+      font-size: smaller;
+      text-align: justify;
+      margin-bottom: 15px;
+   }
+
+   .member-links {
+      margin-top: auto;
+      margin-bottom: 10px;
+      border-top: solid 1px gray;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .member-link {
+      margin-right: 10px;
+   }
+
+   .member-card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:30%;
+     min-width: 300px;
+     margin-bottom: 7.5px;
+     margin-right: 7.5px;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .member-link > a {
+      text-decoration: none;
+      font-size: smaller;
+   }
+
+   .member-card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+
+   /*Cutom style for notice latest doc version*/
+   .notice-icon {
+      margin-right: .2rem;
+      font-size: large;
+   }
+
+   .doc-not-latest{
+      margin: 0px!important;
+   }
+</style>
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single wide">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.svg" alt="Flows for APEX"></a>
+        
+        <a class="site-title" href="/">
+          Flows for APEX
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Flows4APEXFeatures" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Flows4APEX261Features" >V26.1 New Features</a>
+            </li><li class="masthead__menu-item">
+              <a href="/latest/getting-started2" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://blog.flowquest.net" target="_blank">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources" >Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/team/" >Team</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.youtube.com/flowsforapex" target="_blank"><i class="fab fa-youtube" aria-hidden"true" style="padding-right: 5px;"></i>Youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/flowsforapex/apex-flowsforapex" target="_blank"><i class="fab fa-github" aria-hidden"true" style="padding-right: 5px;"></i>Github</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/sponsors/flowsforapex" target="_blank"><i class="fab fa-github" aria-hidden"true" style="padding-right: 5px;"></i>Become a sponsor</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      <link rel="stylesheet" href="/assets/css/bpmn.css" type="text/css" media="all">
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <a href="/latest/getting-started2/"><span class="nav__sub-title">Getting started</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/getting-started-flows-app">Getting started with the Flows for APEX app</a></li>
+            
+              <li><a href="/latest/starter-workshop/">Build your First Workflow 🆕</a></li>
+            
+              <li><a href="/latest/bpmn-tutorials/">BPMN Tutorials 🆕</a></li>
+            
+              <li><a href="/latest/bpmn-tutorials-upgraders/">BPMN Tutorials for Upgraders 🆕</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/installation/"><span class="nav__sub-title">Installation Guide</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/installation_261/">Installing v26.1 🆕</a></li>
+            
+              <li><a href="/latest/migration/">Migration 🆕</a></li>
+            
+              <li><a href="/latest/deinstallation/">Deinstallation</a></li>
+            
+              <li><a href="/latest/application-step-key-migration/">Application Step Key Migration</a></li>
+            
+              <li><a href="/latest/apex-upgrade/">Upgrading your APEX Environment</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/bpmn/"><span class="nav__sub-title">About BPMN</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/bpmn-activities/">Activities</a></li>
+            
+              <li><a href="/latest/tasks/">Tasks</a></li>
+            
+              <li><a href="/latest/apex-page-task/">APEX Page Tasks</a></li>
+            
+              <li><a href="/latest/apex-human-task/">APEX Human Tasks</a></li>
+            
+              <li><a href="/latest/apex-simple-form/">APEX Simple Forms</a></li>
+            
+              <li><a href="/latest/script-task/">PL/SQL Script Tasks</a></li>
+            
+              <li><a href="/latest/ai-service-task/" class="active">AI Service Tasks 🆕</a></li>
+            
+              <li><a href="/latest/subprocesses/">Sub Processes</a></li>
+            
+              <li><a href="/latest/adhoc-subprocesses/">Adhoc Sub Processes 🆕(EE)</a></li>
+            
+              <li><a href="/latest/callActivities/">Call Activities  </a></li>
+            
+              <li><a href="/latest/iteration-loop-intro/">Multi-Instance Activities</a></li>
+            
+              <li><a href="/latest/gateways/">Gateways</a></li>
+            
+              <li><a href="/latest/bpmn-events/">Events</a></li>
+            
+              <li><a href="/latest/start-and-stop-events/">Start and Stop Events</a></li>
+            
+              <li><a href="/latest/none-events/">Start and Generic (None) Events</a></li>
+            
+              <li><a href="/latest/timer-events/">Timer Events</a></li>
+            
+              <li><a href="/latest/error-events/">Error Events 🆕</a></li>
+            
+              <li><a href="/latest/escalation-events/">Escalation Events</a></li>
+            
+              <li><a href="/latest/message-events/">Message Events</a></li>
+            
+              <li><a href="/latest/terminate-events/">Terminate Events</a></li>
+            
+              <li><a href="/latest/link-events/">Link Events</a></li>
+            
+              <li><a href="/latest/collaborations-processes-lanes/">Diagram-level Objects 🆕</a></li>
+            
+              <li><a href="/latest/config-participant-and-process/">Configure Participants and Processes 🆕</a></li>
+            
+              <li><a href="/latest/config-lanes/">Configure Lanes</a></li>
+            
+              <li><a href="/latest/supported-bpmn/">Supported BPMN</a></li>
+            
+              <li><a href="/latest/apex-extensions-guide/">APEX Extensions Guide</a></li>
+            
+              <li><a href="/latest/apex-extensions-catalog/">APEX Extensions Catalog</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/concepts-and-features/"><span class="nav__sub-title">Flows for APEX Concepts</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/about-subflows/">About Subflows 🆕</a></li>
+            
+              <li><a href="/latest/task-reservation/">Task Reservation</a></li>
+            
+              <li><a href="/latest/process-variable/">Process Variables </a></li>
+            
+              <li><a href="/latest/task-parameters/">Task Parameters 🆕</a></li>
+            
+              <li><a href="/latest/input-parameter-layout-guide/">Input Parameter Layout Guide 🆕</a></li>
+            
+              <li><a href="/latest/variable-expression/">Variable Expressions</a></li>
+            
+              <li><a href="/latest/variable-scoping/">Process Variable Scoping </a></li>
+            
+              <li><a href="/latest/messageflow-intro/">Introduction to BPMN Message Flow and Process Collaboration 🆕</a></li>
+            
+              <li><a href="/latest/about-messageflow/">Message Flow Concepts</a></li>
+            
+              <li><a href="/latest/messageflow-messages/">Message Flow - Message Design</a></li>
+            
+              <li><a href="/latest/async-tasks-and-background-execution/">Async Tasks and Background Execution 🆕</a></li>
+            
+              <li><a href="/latest/iteration-loop-intro">Introduction to BPMN Iterations and Loops</a></li>
+            
+              <li><a href="/latest/iteration-loop-concepts">Iterations and Loops Concepts</a></li>
+            
+              <li><a href="/latest/adhoc-subprocess-concepts/">Adhoc Sub Process Concepts 🆕(EE)</a></li>
+            
+              <li><a href="/latest/ai-driven-adhoc-subprocesses/">AI-Driven Adhoc Sub Processes 🆕(EE)</a></li>
+            
+              <li><a href="/latest/about-timer-execution/">About Timers and Scheduling</a></li>
+            
+              <li><a href="/latest/model-versioning/">Model Versioning</a></li>
+            
+              <li><a href="/latest/timestamps-and-timezones/">Timestamps and Timezones </a></li>
+            
+              <li><a href="/latest/transaction-model/">Transaction Model</a></li>
+            
+              <li><a href="/latest/logging-philosophy-and-lifecycle/">Logging Philosophy and Lifecycle 🆕</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/how-tos/"><span class="nav__sub-title">Best Practice and How To... 🆕</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/get-component-group/">Set Up App for Flows for APEX 🆕</a></li>
+            
+              <li><a href="/latest/apex-task-list/">Integrate with APEX Task List 🆕</a></li>
+            
+              <li><a href="/latest/using-manual-adhoc-subprocesses/">Using Manual Adhoc Sub Processes 🆕(EE)</a></li>
+            
+              <li><a href="/latest/add-process-viewer/">Add a Process Viewer to your App 🆕</a></li>
+            
+              <li><a href="/latest/using-ce-messageflow/">Using CE MessageFlow</a></li>
+            
+              <li><a href="/latest/using-lanes-for-assignment/">Using Lanes to Assign Tasks 🆕</a></li>
+            
+              <li><a href="/latest/complex-approvals/">How to Implement Complex Approval Cycles 🆕</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/admin-guide/"><span class="nav__sub-title">Administer a Flows for APEX Instance 🆕</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/configuration/">Configuration Parameters 🆕</a></li>
+            
+              <li><a href="/latest/about-timer-execution/">Configuring Timers</a></li>
+            
+              <li><a href="/latest/suspend-resume/">Suspending and Resuming a Process 🆕</a></li>
+            
+              <li><a href="/latest/rewind/">Rewinding a Process 🆕</a></li>
+            
+              <li><a href="/latest/event-logging-and-auditing/">Event Logging and Auditing 🆕</a></li>
+            
+              <li><a href="/latest/managing-instance-logging/">Managing Instance Logging Levels 🆕</a></li>
+            
+              <li><a href="/latest/instance-archiving-purging/">Instance Archiving and Purging 🆕</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/apis/"><span class="nav__sub-title">APIs</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/latest/api/">Workflow Engine API</a></li>
+            
+              <li><a href="/latest/procvar-api/">Process Variable System API</a></li>
+            
+              <li><a href="/latest/flow-globals-api/">flow_globals Runtime Context API 🆕</a></li>
+            
+              <li><a href="/latest/rest-api/">REST API </a></li>
+            
+              <li><a href="/latest/admin-api/">Workflow Engine Admin API</a></li>
+            
+              <li><a href="/latest/apex-plugins/">Oracle APEX plug-ins 🆕</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/latest/faq/"><span class="nav__sub-title">FAQ</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/documentation/"><span class="nav__sub-title">Other Versions</span></a>
+          
+
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+
+    
+
+    <meta itemprop="headline" content="AI Service Task">
+    <meta itemprop="description" content="Configure an AI Service Task">
+    <meta itemprop="datePublished" content="2026-08-18T14:56:09+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://flowsforapex.org/latest/ai-service-task/" class="u-url" itemprop="url">AI Service Task
+</a>
+          </h1>
+          
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#configure-an-ai-service-task">Configure an AI Service Task</a><ul><li><a href="#pre-requisites">Pre-Requisites</a></li><li><a href="#configuration-of-ai-service-task-in-bpmn-diagram">Configuration of AI Service Task in BPMN Diagram</a></li><li><a href="#use-cases-for-ai-service-task">Use Cases for AI Service Task</a><ul><li><a href="#generate-process-routing--recommended-course-of-action">Generate Process Routing / Recommended Course of Action</a></li><li><a href="#generate-document">Generate Document</a></li></ul></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="configure-an-ai-service-task">Configure an AI Service Task</h1>
+
+<p>The Flows for APEX AI Service Task allows you to call Generative AI Services as a workflow step.</p>
+
+<h2 id="pre-requisites">Pre-Requisites</h2>
+
+<p>The AI Service Task is implemented using APEX AI infrastructure, so you need to define an AI Service in APEX.  See <a href="https://docs.oracle.com/en/database/oracle/apex/24.1/htmdb/managing-generative-ai-services.html">APEX documentation</a>.</p>
+
+<p>Future versions may allow direct AI connection.</p>
+
+<h2 id="configuration-of-ai-service-task-in-bpmn-diagram">Configuration of AI Service Task in BPMN Diagram</h2>
+
+<p>Add a Service Task into your BPMN diagram by adding a task ( the <span class="bpmn-icon bpmn-icon-task-none"></span> symbol).  Then, using the spanner tool <span class="bpmn-icon bpmn-icon-screw-wrench"></span>, convert the task to a Service Task ( <span class="bpmn-icon bpmn-icon-service-task"></span> ).</p>
+
+<p><strong>Name</strong>. On the Modeler properties panel, in the General section , give your task a descriptive name.</p>
+
+<p><strong>ID</strong>.  By default, this generates a random name like ‘‘Activity_0d5gtyh”.  You can change this to something more descriptive, but it should be short and not contain any spaces.</p>
+
+<p><strong>Task Type.</strong> Select <code class="language-plaintext highlighter-rouge">APEX AI Generation</code> and open the APEX Human Task section.</p>
+
+<p><img src="/assets/images/service-task-ai-config.png" alt="Screenshot 2025-08-05 at 14.43.00" style="zoom: 50%;" /></p>
+
+<p><strong>APEX AI Generation</strong></p>
+
+<p>All three of the AI settings can accept a value as:</p>
+
+<ul>
+  <li>static value - enter the value n the <strong>Expression</strong> item.</li>
+  <li>a <em>process variable</em> - enter the variable name in the <strong>Expression</strong> item.</li>
+  <li>a SQL query returning the value - enter the SQL query in the <strong>Expression</strong> item.</li>
+  <li>a PL/SQL expression returning the value - enter the PL/SQL expression in the <strong>Expression</strong> item.</li>
+  <li>a PL/SQL function body returning the value - enter the PL/SQL expression in the <strong>Expression</strong> item.</li>
+</ul>
+
+<p>Required settings are:</p>
+
+<p><strong>APEX AI Service</strong>.  This should contain the APEX static ID of your AI service, previously created in APEX Workspace Utilities. (App Builder » Workspace Utilities » Generative AI Services).</p>
+
+<p><strong>AI Temperature</strong>. AI temperature controls randomness in responses: lower values mean more predictable output; higher values increase creativity and variation.</p>
+
+<ul>
+  <li><strong>0.0:</strong> Most deterministic (almost identical output every time)</li>
+  <li><strong>~0.5:</strong> Balanced – good for general-purpose writing or code</li>
+  <li><strong>0.7+:</strong> More creative, poetic, less predictable</li>
+  <li><strong>&gt;1.0 (where supported):</strong> Risk of incoherence or hallucinations increases</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Model</strong></th>
+      <th><strong>Temperature Range</strong></th>
+      <th><strong>Notes on Behavior</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>GPT (OpenAI)</strong></td>
+      <td>0.0 – 2.0</td>
+      <td>0.7 is common default; &gt;1.0 adds significant randomness</td>
+    </tr>
+    <tr>
+      <td><strong>LLaMA / Meta</strong></td>
+      <td>0.0 – 1.0 (typical)</td>
+      <td>Similar behavior; 0.7 often used for balanced output</td>
+    </tr>
+    <tr>
+      <td><strong>Cohere</strong></td>
+      <td>0.0 – 1.0</td>
+      <td>Docs recommend 0.3–0.9; 0.5 for general use</td>
+    </tr>
+    <tr>
+      <td><strong>Claude (Anthropic)</strong></td>
+      <td>0.0 – 1.0</td>
+      <td>0.7 is default; lower for stability, higher for creativity</td>
+    </tr>
+    <tr>
+      <td><strong>Mistral / Mixtral</strong></td>
+      <td>0.0 – 1.0</td>
+      <td>Follows same convention; may appear slightly more “creative” per temp</td>
+    </tr>
+    <tr>
+      <td><strong>Google Gemini (former Bard)</strong></td>
+      <td>0.0 – 1.0</td>
+      <td>Internally tuned but follows similar temp behavior when exposed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>AI Prompt:</strong> This variable should contain your complete prompt to be submitted to the AI service.  Typically you will assemble this from several components, including one or more of the following:</p>
+
+<ul>
+  <li><strong>System prompt</strong> - telling the LLM what it should be doing and establishing any required guardrails.</li>
+  <li><strong>RAG Content</strong> - relevant data from the database that you need to give the LLM to perform its task.</li>
+  <li><strong>Process Data</strong> - data about the process subject, etc.</li>
+</ul>
+
+<p>Typically you can assemble these into a prompt in either a <code class="language-plaintext highlighter-rouge">BEFORE TASK</code> variable expression defined in this step, or in the step using a defined type of PL/SQL Expression or function body.</p>
+
+<p><strong>Result Variable</strong> The LLM results will be returned into the process variable named here.  Your system prompt could include instructions to the LLM to return the output in a specific format, for example, as a colon-separated list of values, as free text, or as a JSON document with some pre-defined format.  (e.g., <em>“Respond only with a valid JSON object.”</em>).</p>
+
+<h2 id="use-cases-for-ai-service-task">Use Cases for AI Service Task</h2>
+
+<h3 id="generate-process-routing--recommended-course-of-action">Generate Process Routing / Recommended Course of Action</h3>
+
+<p>In some applications, you can use GenAI to recommend a course of action in your process.  This can then be combined with a BPMN Gateway to direct process flow.  This could be used to create some level of <strong>Agentic AI</strong> application.</p>
+
+<p>For example, we have a scenario where we are going to pass information about a taxpayer to an AI agent, who has been instructed in their system prompt that they are an expert on determining taxpayer fraud.  The complete prompt includes instructions plus taxpayer info, and the response is requested as a list of recommended next actions in a format that we can use to drive an Inclusive Gateway.</p>
+
+<p>Here’s the BPMN model (simplified for the example).</p>
+
+<p><img src="/assets/images/ai-service-task-tax-example-diagram.png" alt="Screenshot 2025-08-05 at 16.02.16" /></p>
+
+<p>The AI prompt being used is:</p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are an expert in assessing whether a taxpayer is correctly declaring their income and expenses, and in detecting potential tax evaders or tax frauds. Using the taxpayer information below, respond with JSON using one or more of the following labels, separated by colons in field result:
+
+- ok (no suspicion)
+- email (request more information)
+- human (flag for human review)
+- fraud (confirmed fraud based on inconsistencies)
+
+And add an additional field called rationale into the JSON with the reason for the labels. Only return the plain JSON object without any extra decoration.
+here is an example of the return:
+{ "result": "human:email", "rationale": "The expenses seem to outweigh the declared income." }
+Here is a taxpayer info:  
+{
+ "name" : "John Doe", 
+  "age": 33,
+  "occupation": "Consultant",
+  "annual_salary": 90000,
+  "declared_income": 25000,
+  "major_purchases": ["Luxury SUV", "Vacation home"]
+}
+</code></pre></div></div>
+
+<p>The AI Service Task returns a JSON into a process variable <code class="language-plaintext highlighter-rouge">OUTCOME</code></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w"> 
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"human:email"</span><span class="p">,</span><span class="w"> 
+  </span><span class="nl">"rationale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Declared income is significantly lower than the occupation's typical salary and major purchases suggest higher income."</span><span class="w"> 
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Our <code class="language-plaintext highlighter-rouge">result</code> is then used to control the Inclusive gateway, choosing paths <code class="language-plaintext highlighter-rouge">HUMAN</code> and <code class="language-plaintext highlighter-rouge">EMAIL</code></p>
+
+<p>For a task like this, we will set the <em>temperature</em> to a low value - try 0 or close to that.</p>
+
+<h3 id="generate-document">Generate Document</h3>
+
+<p>An AI Service Task combined can be used to generate a document.  Combining this with a Send Mail Service task, we could then send this document to its recipient, or route it first for checking and approval, and then sending by email.</p>
+
+<p>Let’s use our taxpayer example from above, and look at the <code class="language-plaintext highlighter-rouge">EMAIL</code> course of action.  In this case we can make another call to the GenAI service,  giving it instructions that it is a tax agent requesting additional information from a taxpayer, asking it to generate an email requesting more info, and providing it with the taxpayer information, and the rationale for suspecting the tax return might be inaccurate.</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are part of a fraud detection workflow. Earlier we have you information about a taxpaper which was: 
+
+Here is a taxpayer info: { "name" : "John Doe", "age": 33, "occupation": "Consultant", "annual_salary": 90000, "declared_income": 25000, "major_purchases": ["Luxury SUV", "Vacation home"] } 
+
+Your rationale for requiring more information is the rationale item in below data: 
+  {"result": "human:email", 
+  "rationale": "Declared income is significantly lower than the occupation's typical salary and major purchases suggest higher income." }
+  
+Please generate a detailed email to this taxpayer asking for clarification about his situation, asking for details of items that you think are suspicious. Return the email text.
+</code></pre></div></div>
+
+<p>This time we will use a temperature value that is a little higher - say 0.5.</p>
+
+<p>Our response is:</p>
+<pre><code class="language-txt">Subject: Request for Clarification Regarding Your Tax Filing 
+
+Dear Mr. Doe, 
+
+I hope this email finds you well. As part of our routine review process, we are conducting an assessment of the tax declarations and financial activities of various taxpayers. We have reviewed your recent tax filing and would like to seek some clarification regarding certain aspects of your declared financial information.
+
+While we appreciate your timely submission, there are a few items that require additional information to ensure everything is accurately represented and compliant with current tax regulations. These items mainly pertain to the significant difference observed between your annual salary and your declared income, as well as certain major purchases.
+
+1. **Declared Income vs. Annual Salary:**
+  - You have declared an income of $25,000, whereas your occupation and reported annual salary as a Consultant is listed as $90,000. Kindly provide clarification on this discrepancy. It would be helpful if you could furnish supporting documents or an explanation for any deductions, non-taxable income, or other relevant factors that may have contributed to this difference.
+
+2. **Major Purchases:**
+  - It has come to our attention that you have made substantial purchases, including a Luxury SUV and a Vacation Home. Given the disparity between your declared income and these significant purchases, we require documentation or an explanation on how these were financed. This may include loan agreements, savings or investment withdrawals, or any other pertinent records.
+
+3. **Additional Income Sources:**
+  - If there are any additional sources of income or financial support that have not been previously declared, please provide details and relevant documentation for these. This will help us gain a clearer understanding of your financial situation and ensure accurate records.
+
+We understand that these matters can be complex, and we are here to assist you through this process. Please provide the requested information by [insert deadline, e.g., two weeks from the date of this email] to prevent any further action or delay in processing your file.
+
+Your cooperation is greatly appreciated. Should you have any questions or require further assistance, please feel free to contact our office at [insert contact information]. We are more than happy to help clarify our requests or assist in gathering the required information.
+
+Thank you for your attention to this matter and your prompt response.
+
+Warm regards,
+
+[Your Full Name]  
+[Your Position]  
+[Your Company's Name]  
+[Contact Information]
+</code></pre>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-08-18T14:56:09+00:00">August 18, 2026</time></p>
+
+
+      </footer>
+
+      
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/latest/script-task/" class="pagination--pager" title="Creating a Script Task">Previous</a>
+    
+    
+      <a href="/latest/subprocesses/" class="pagination--pager" title="Sub Processes">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://flowsforapex.org">Flows for APEX</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ9P49L61X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DZ9P49L61X', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

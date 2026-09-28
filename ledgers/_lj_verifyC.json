@@ -1,0 +1,149 @@
+{
+  "nrw-bank-impuls-ki": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "photo of three people beside a monitor showing a chat UI and bar chart; no readable AI label",
+    "confidence": "high"
+  },
+  "orchestrate": {
+    "kind": "canvas",
+    "ai": true,
+    "ai_note": "boxes labelled \"#3 AI Agent\", \"#4 decision gateway\"",
+    "note": "LoyJoy-style canvas: #3 AI Agent, #4 decision gateway, #5 Simple message, #7 Phone number, #8 Email, #9 Appointment scheduler, #10 Live chat, #13 API client; X-gateways, start/end circles",
+    "confidence": "high"
+  },
+  "phone-agent-test-mode": {
+    "kind": "chat",
+    "ai": true,
+    "ai_note": "editor labels \"Mein Telefon-Agent\", \"KI-Nachrichten anzeigen\"",
+    "note": "LoyJoy agent editor with modal 'Teste deinen Telefon-Agent'; German chat transcript about Altersvorsorgedepot, timestamps 12.08.2026",
+    "confidence": "high"
+  },
+  "phone_agent_de": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "chip icon labelled \"AI\"; headline \"Phone Agent: Vorlage für KI-gestützte Telefonie\"",
+    "note": "German marketing hero banner: 'Voicebot' badge, cartoon agent with headset, phone, LoyJoy logo",
+    "confidence": "high"
+  },
+  "phone_agent_en": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "chip icon labelled \"AI\"; headline \"Phone Agent: Template for AI-powered Telephony\"",
+    "note": "English marketing hero banner: 'Voicebot' badge, cartoon agent with headset, phone, LoyJoy logo",
+    "confidence": "high"
+  },
+  "pick-ai-model": {
+    "kind": "ui",
+    "ai": true,
+    "ai_note": "\"AI Model\" dropdown listing \"GPT-5.4\", \"GPT-4.1\", \"Gemma 4\", \"GLM-5\", \"Claude Sonnet 4.6\"",
+    "note": "'Pick Model' UI mockup with radio list; Gemma 4 row highlighted pink, cursor arrow bottom right",
+    "confidence": "high"
+  },
+  "process-engine": {
+    "kind": "chat",
+    "ai": false,
+    "ai_note": "",
+    "note": "photo of hands holding a phone showing a WhatsApp-style chat; overlay text '100+ PROCESS MODULES' and five round icon buttons",
+    "confidence": "high"
+  },
+  "product_finder_agentic_en": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "headline \"Product-Finder with Agentic AI (MCP)\"",
+    "note": "marketing hero banner: title on blue left, cartoon man at monitor showing 'PRODUCT FINDER' screen",
+    "confidence": "high"
+  },
+  "produkt_finder_gpt_en": {
+    "kind": "canvas",
+    "ai": true,
+    "ai_note": "canvas nodes \"#6 GPT Prompt\", \"#8 GPT Prompt\"; annotation \"Process continues until GPT has found the right product\"",
+    "note": "LoyJoy editor 'Product Finder - GPT - P...': nodes #1 Simple message, #2 Decision table, #3 Add variable, #4 Questionnaire, #5 Add variable, #6 GPT Prompt, #7 Product feed, #8 GPT Prompt, #9 Simple message",
+    "confidence": "high"
+  },
+  "rag_de": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "quote card text \"Was ist RAG und warum ist es gerade das Top-Thema in der KI?\"",
+    "note": "infographic on polygonal grey background: DOC/image/DB icons via 'KNOWLEDGE BASE' ellipse to a vector-space hexagon, plus German quote card",
+    "confidence": "high"
+  },
+  "rag_en": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "quote card text \"What is RAG and why is it the hot topic in AI right now?\"",
+    "note": "same infographic in English: DOC/image/DB icons via 'KNOWLEDGE BASE' ellipse to a vector-space hexagon, plus quote card",
+    "confidence": "high"
+  },
+  "rapidmail_flow": {
+    "kind": "chat",
+    "ai": false,
+    "ai_note": "",
+    "note": "chat screenshot: 'Enjoy this awesome chat', 'What is your email address?' with 'Enter email' form and OK button; footer 'LoyJoy'",
+    "confidence": "high"
+  },
+  "rtlplus-loyjoy-agent": {
+    "kind": "chat",
+    "ai": false,
+    "ai_note": "",
+    "note": "phone screenshot of community.plus.rtl.de chat about live football packages, thumbs up/down feedback, quick-reply chips",
+    "confidence": "high"
+  },
+  "ruv-ai-assistant": {
+    "kind": "ui",
+    "ai": true,
+    "ai_note": "\"Emmie\", \"Ihre digitale KI-Assistenz\"",
+    "note": "phone screenshot of an assistant landing page: avatar illustration, input 'Stellen Sie hier Ihre Frage', cards 'Schaden' and 'Vertrag', ruv.de",
+    "confidence": "high"
+  },
+  "stadtwerke-phone-agent-template": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "robot icon labelled \"AI\"; headline \"Stadtwerke Phone-Agent\"",
+    "note": "marketing hero banner: cartoon woman with headset at desk, monitor showing AI robot saying 'Hallo!', utility icons (water, power, euro)",
+    "confidence": "high"
+  },
+  "trumpf-frag-trumpf-loyjoy-agent_de": {
+    "kind": "chat",
+    "ai": false,
+    "ai_note": "",
+    "note": "phone screenshot, trumpf.com chat: German question on welding copper contacts, long German answer; chips 'Servicefall', 'Kontakt', 'Andere Frage'",
+    "confidence": "high"
+  },
+  "trumpf-frag-trumpf-loyjoy-agent_en": {
+    "kind": "chat",
+    "ai": false,
+    "ai_note": "",
+    "note": "phone screenshot, trumpf.com chat: English question on welding copper contacts, answer on TruDisk and BrightLine Weld; chips 'Service case', 'Contact'",
+    "confidence": "high"
+  },
+  "umfrage_mit_couponcode_template": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "marketing hero banner 'Survey With Coupon Code': cartoon woman holding a COUPON ticket, laptop with five stars and checkmark",
+    "confidence": "high"
+  },
+  "vortrag": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "trade-show photo: two men on stage in front of blue screen 'Ein Praxisbericht der R+V' with LoyJoy logo, 'TREND ZONE' backdrop",
+    "confidence": "high"
+  },
+  "vortrag2": {
+    "kind": "art",
+    "ai": true,
+    "ai_note": "slide text \"Agentic AI an der Kundenschnittstelle\", \"Ein Praxisbericht der R+V\"",
+    "note": "stage photo: two speakers before a screen with R+V branding, avatar illustration, InsurLab Germany, 'TREND ZONE' wall",
+    "confidence": "high"
+  },
+  "wgUu0mwikbar1mRL74kI2Myx0Is": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "social card: 'DID YOU KNOW? 92% consider user-friendliness important for choosing a messenger' beside photo of phone home screen with social app icons",
+    "confidence": "high"
+  }
+}

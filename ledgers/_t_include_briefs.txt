@@ -1,0 +1,1119 @@
+=== POST 9 ===
+url: https://camunda.com/blog/2024/02/how-artificial-intelligence-can-enhance-business-process/
+title: How Artificial Intelligence can Enhance Your Business Process | Camunda
+page text: 15738 characters; AI/LLM term hits: 83
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x282  alt='Process-optimization-ai'
+      src=https://cdn.sanity.io/images/12wkat9h/development/88c31442f82fb6b9b43a5dfbe6d1939b4a6e7f86-1200x282.png
+      visual pass: class=unclear ai_visible=unclear note=small boxes and arrows over blue bars; unreadable
+  figure 2: 1190x702  alt='Connectors-ai'
+      src=https://cdn.sanity.io/images/12wkat9h/development/26b6b60addd60df04e3d110187f2b7c96c636876-1190x702.png
+      visual pass: class=bpmn ai_visible=unclear note=modeller canvas, tasks plus right panel; labels unreadable
+  other figures on the page (alt texts only):
+      1200x608 'Interpreting-data-ai'
+      841x489 'Creating-variables-ai'
+      918x304 'Building-forms-ai'
+      681x377 'Building-forms-ai-2'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS OpenAI connector] In the example below, the OpenAI Connector is being used to generate a targeted and specific email to a customer providing a status update.
+  [AI-IN-PROCESS OpenAI connector] For more on this, check out another great example of using the OpenAI Connector to facilitate human workflows .
+  [AI-AROUND-PROCESS Modeler suggestions] Using historical process modeling information, recommendations around best practices, model design, and suggestions to build compliant processes can be made with AI. In fact, predictive autocompletion of models based can also be made based on historical models with similar tasks and branches. With a
+  [AI-AROUND-PROCESS AI for documentation] Camunda Docs AI Taking the Developer Experience to a New Level [blog]
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  How can AI and automation help you improve your business processes? Learn how AI can effectively enable process orchestration.
+  AI has become very important in many aspects of business, but it stands out when it comes to improving process orchestration . This can be seen in ways to reduce errors, optimize cycle times, and improve accuracy in our processes. Using AI, we can automate additional processes to keep the business r
+  Providing holistic views to improve decision making
+  Each of these types of AI can be helpful in improving your business and enhancing your business processes. You can get an overview about each one and how to apply them in our Practical Guide to Leveraging AI Automation in Your Process Orchestration Workflows.
+  Let’s assume that you receive a significant number of incoming customer requests on a daily basis—some that require human interaction and some that do not. This is a great place to implement artificial intelligence to streamline how these incoming requests are handled. By passing the request to an A
+  In the simple BPMN example below, you can see a service task that accesses an AI engine to read a customer request and make a determination as to the nature of that request so it is properly routed.
+  AI can make a difference in this assessment by reviewing all the gathered information to guide you to an insightful decision based on the parameters outlined by the company as well as the minimum requirements for acceptance. Taking the inclusion of AI into consideration when implementing your busine
+  These traditionally manual tasks could be automated with the use of AI and then added to your invoice processing, insurance claims , and approval process to streamline processing as well as minimize errors.
+  Artificial intelligence is a wonderful tool to help decipher requests and use its knowledge database to provide guidance and recommendations. This is no different when it comes to process orchestration and where AI can help.
+  Building business processes can be complex and AI can minimize this complexity with providing guidance and assistance along the way. With AI, a process developer can get insight into what might be the appropriate next component in the process or which gateway to use when building a process and why i
+  This assistance or guidance is not just limited to building processes, but can be more definable business process assets that are part of the overall process model. This can include assets like connector recommendations or creations, user interfaces (UI) for human tasks, documentation, and more. In 
+  With business processes, there are often scripting tasks that perform various tasks or integrations in the process instance. With assistance from AI, process designers can receive direction for building these scripts and the best use of process variables. For example, generating a simple script thro
+  How Camunda embraces AI for process orchestration
+  Camunda Forms provides AI Form generation , which allows users to build forms up to ten times faster from a simple prompt in under a minute. By entering simple and natural language into the provided prompt, forms are created in business context that properly describe the use case.
+  Camunda provides out of the box Connectors, including one for Open AI . Using this Connector within your process models allows you to incorporate AI into any business process. For example, passing a combination of process variables and natural language to the OpenAI prompt allows the creation of tex
+  For example, if you are reviewing buying behavior within a particular geographic region, you may want to incorporate demographic data, weather patterns, population, annual salaries, etc. as well as ordering information and processing captured by your process model. Having all the information in an M
+  Facilitating Human Workflow Orchestration with Generative AI [blog]
+
+=== POST 18 ===
+url: https://camunda.com/blog/2024/02/insights-to-action-camunda-optimize-effective-development/
+title: From Insights to Action: Harnessing Camunda Optimize for Effective Development | Camunda
+page text: 6101 characters; AI/LLM term hits: 8
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x450  alt='Trivia-task-analysis-optimize'
+      src=https://cdn.sanity.io/images/12wkat9h/development/c0dcd3ec69005d566378753db666a2fab9e3ce04-1200x450.png
+      visual pass: class=bpmn ai_visible=no note=workflow with green highlights; labels unreadable
+  figure 2: 1200x555  alt='Trivia-categories-optimize'
+      src=https://cdn.sanity.io/images/12wkat9h/development/26a6da2ab016e0d46021524227da765ccaa5987e-1200x555.png
+      visual pass: class=chart ai_visible=no note=pie chart in side panel
+  other figures on the page (alt texts only):
+      1200x508 'Trivia-branch-analysis-optimize'
+      1200x441 'Trivia-timespent-optimize'
+      1200x391 'Trivia-bottlenecks-optimize'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS AI-bound task] Looking at our trivia game example, the heatmap can display the average time each trivia game spends at a specific task, in this case getting a hint from OpenAI. However, if this task was attached to a specific piece of code, developers can easily identify where there may be issues, like a bug in th
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+
+=== POST 59 ===
+url: https://camunda.com/blog/2024/05/what-is-business-process-modeling/
+title: What is Business Process Modeling? | Camunda
+page text: 17220 characters; AI/LLM term hits: 15
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x615  alt='Key BPMN symbols used in business process modeling, including Event (Circle), Activity (Rectangle), Gateway (Diamond) and Flow (Arrow).'
+      src=https://cdn.sanity.io/images/12wkat9h/development/5308790beb79d67787d319f4072d1910d893d9f4-1200x615.png
+      visual pass: class=bpmn ai_visible=no note=labelled 'Activity', 'Gateway', 'Event', 'Sequence Flow'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS OpenAI connector] There is a native OpenAI Connector you can use while building your process models that let you take full advantage of ChatGPT and other OpenAI text models.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  By employing standardized symbols and notations, such as BPMN , process models can communicate complex procedures effectively. These visual diagrams serve as a common language, eliminating ambiguity and fostering a clear understanding among stakeholders.
+  To create these diagrams, begin by gathering detailed information about current processes through observation, interviews, and document analysis. Then analyze this information to identify the essential elements you need to include in the model.
+  As you create the diagram, it becomes a tool for examining the process from different angles. You can zoom in to look at individual tasks and their requirements or zoom out to see the broader impact on the workflow.
+  Clarity: A well-designed process model illuminates the way work is done within an organization. It removes assumptions and guesswork, providing a factual and holistic view of a process.
+  Efficiency: With a clear process model, you can identify waste, such as unnecessary steps, bottlenecks, or duplications. It allows for the fine-tuning of processes to minimize costs and maximize output.
+  Communication: A visual model acts as a focal point for discussion and collaboration. It helps bridge gaps between different departments and facilitates a common understanding of how to tackle business challenges.
+  By investing in BPM, a company lays down the tracks for a train that’s bound for better performance, clearer communication, and a culture of continuous improvement. Whether it’s scaling up operations, integrating new technology, or simply refining current practices, BPM is an invaluable tool in the 
+  Defining the elements of a business process model
+  First, break down the components of a process model, such as activities, events, gateways, and flows.
+  Activities: These are the fundamental tasks or units of work within the process. Visually represented as rectangles or rounded rectangles in business process modeling notation (BPMN) , activities can be as straightforward as sending an email or as complex as completing a customer onboarding process.
+  Events: Events are points in the process that signify when something happens, such as the start, an intermediate occurrence, or the end of a process. They are depicted as circles in BPMN and can significantly influence the flow of the process.
+  Gateways: Serving as decision points within a process, gateways determine branching and merging paths, guiding the process flow based on certain conditions or rules. They are represented as diamonds and help manage the complexity of operational decisions.
+  Make sure to describe the role of participants/actors, resources, inputs, and outputs in a model.
+  The clarity and effectiveness of a business process model hinge on the use of a standardized modeling notation, such as BPMN. This standardized language provides an array of graphical elements that are universally recognized, allowing for a consistent and precise representation of business processes
+  BPMN, in particular, is designed to be understandable by all business stakeholders, creating a collaborative bridge between technical and nontechnical users. Its significance lies in its ability to foster clear communication, eliminate ambiguities, and provide a solid foundation for process analysis
+  This is the cornerstone of an effective business process model—a clear, comprehensive representation of how a business functions, enabling continuous optimization and alignment with strategic goals.
+  Not all business process models are created equal (although you can use the same tool for all of them). Different types of models serve various purposes, from conveying the big picture to enabling precise operational changes.
+  While they might not contain detailed data or analysis, they serve as an excellent tool for sharing knowledge and creating a shared understanding of a process.
+
+=== POST 73 ===
+url: https://camunda.com/blog/2024/05/accessing-machine-learning-models-with-camunda-s-hugging-face-connector-for-business-improvement/
+title: Accessing Machine Learning Models with Camunda’s Hugging Face Connector for Business Improvement | Camunda
+page text: 10865 characters; AI/LLM term hits: 9
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 624x216  alt='Model for routing top-ranked emotion to correct customer success team'
+      src=https://cdn.sanity.io/images/12wkat9h/development/7b0bc47e0ae5734904ff66867d136a3e849748c0-624x216.png?w=624
+      visual pass: class=bpmn ai_visible=no note=task chain, diamond gateway with X
+  figure 2: 545x170  alt='Running process with fictitious negative customer comment'
+      src=https://cdn.sanity.io/images/12wkat9h/development/aa0f2308d3da235aefd63c109f7085964f5ccbf4-545x170.png?w=545
+      visual pass: class=screenshot ai_visible=no note='Enter Customer Comment' dialog with Send button
+  other figures on the page (alt texts only):
+      623x352 'Viewing instance history with top emotions and associated confidence scores'
+      573x347 'Reviewing and ranking top emotions from a customer comment'
+      623x298 'Viewing the instance history for a negative customer comment'
+      261x685 'Authentication for Hugging Face API key'
+      268x621 'Customer comment field'
+      623x261 'Form for reviewing top emotions from customer comment'
+      621x194 'Form for customer comment and associated sentiment and confidence level'
+      579x187 'Viewing form results from negative comment'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS Hugging Face connector] Accessing Machine Learning Models with Camunda’s Hugging Face Connector for Business Improvement
+  [AI-IN-PROCESS Hugging Face connector] Accessing Machine Learning Models with Camunda’s Hugging Face Connector for Business Improvement
+  [AI-IN-PROCESS Hugging Face connector] The first human task has a form for entering a customer comment—this would most likely be fed from another system, but manually enter it in this case. The task after the Hugging Face Connector will have a form for displaying the Connector’s results, or you can view these using Operate .
+  [AI-IN-PROCESS Hugging Face connector] For your Hugging Face Connector, this customerComment is passed to a Hugging Face model for finding emotions ( https://huggingface.co/SamLowe/roberta-base-go_emotions ). You’re extracting the top three (3) emotions and confidence scores from the response and storing those in commentEmotion# and comm
+  [AI-AROUND-PROCESS Modeler suggestions] With this new Hugging Face Connector , you have tons of models at your disposal. Be sure to check out our AI-powered suggestions to take advantage of other Connectors.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  This post will discuss using different machine learning models from the Hugging Face community to showcase the new Hugging Face AI Connector .
+  Prerequisites: To run this Connector, you must have an API key for Hugging Face. You can review our documentation for Hugging Face for where to obtain this key.
+  What if you could automatically route customer inquiries to the proper department by sending the email content to a model so it can predict the subject or department based on that text?
+  Review the top three (3) emotions conveyed in a message or comment with a confidence score from the ML model for that emotion.
+  First, you will want to create a BPMN process. For this example, you’ll need a main process with a start and end event with two user tasks around a Connector call to Hugging Face. Something like the one shown below will work.
+  Now, you’ve created a simple form to type in a message for the Enter Customer Comment user task.
+  Hint: Don’t forget to set up your Connector Secret for your Hugging Face API key.
+  What is a Confidence Score? A Confidence Score is a value ranging from 0 to 1, indicating the likelihood that a machine learning model is accurate. The higher the score, the more confident the model is that it is providing the proper prediction.
+  Reviewing the results of the Hugging Face model in Operate , you can see the top three emotions and associated confidence scores.
+  Try different statements to see how the model analyzes them and the associated confidence scores.
+  Based on the outcome of the ML model, the comment information will be routed to the appropriate customer success team. The highest-ranked sentiment and the confidence score will determine that routing.
+  } The three branches use the sentiment and the confidence score returned from the Connector to determine which action needs to be taken. Require that the confidence score be greater than 0.55 so you can feel comfortable that the sentiment is accurate. You can define the routing flows as follows:
+  Reviewing the results of the Hugging Face model in Operate , you can see the sentiment for this comment, which is classified as negative, and the associated score. You can also see that the proper routing was taken based on the score and sentiment.
+  Try different statements to see how the model analyzes them and the associated sentiments and confidence scores.
+  As with the emotions example, this provides insight into how a customer might perceive your organization and allows you to receive an alert and take prompt action. By routing the information (you would include data like the contact for the customer and account—or even link to the customer record in 
+  So, think of the possibilities of operationalizing AI and ML models into your organization through your processes. You might create a model that finds specific product names and keywords and then routes customer inquiries or support tickets to the correct department without human interaction. You co
+  Learn more about how Camunda can help you with your process diagram development needs with a free trial . Camunda is a powerful and flexible process orchestration platform that can help you automate your processes and drive lasting value.
+
+=== POST 98 ===
+url: https://camunda.com/blog/2024/06/predictive-models-in-customer-onboarding-risk/
+title: Predictive Models in Customer Onboarding Risk | Camunda
+page text: 7350 characters; AI/LLM term hits: 37
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1024x333  alt=''
+      src=https://cdn.sanity.io/images/12wkat9h/development/46263ad2d8e3cf856a780fa4a23b6c5ca2cab3a0-1024x333.png
+      visual pass: class=bpmn ai_visible=no note=coloured task boxes with arrows; labels unreadable
+  figure 2: 282x296  alt=''
+      src=https://cdn.sanity.io/images/12wkat9h/development/138841874273b8531a1c240890f82f66e3c09531-282x296.png
+      visual pass: class=bpmn ai_visible=no note=blue/green task boxes, red circled 'B' marker
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS Hugging Face connector] After this, a machine learning model runs using our Hugging Face Connector that will take the following inputs:
+  [AI-IN-PROCESS Hugging Face connector] Accessing Machine Learning Models with Camunda’s Hugging Face Connector for Business Improvement
+  [AI-AROUND-PROCESS Camunda Copilot] AI-Powered Suggestions with Camunda Copilot
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Detection of anomalies : With machine learning models trained on historical fraud data, you can analyze various patterns in the data provided by prospective customers to detect any unusual behavior that may indicate fraudulent activity. When found, you can confirm that your models are continuously l
+  In this example, a REST Connector returns the credit score for the applicant along with the DTI ratio based on the credit information obtained.
+  For example, the Hugging Face model can run a Python program that uses the scikit-learn package. Using the LogisticRegression and predict functions, the model can predict the probability of the risk class for the applicant. Based on the model configuration and response, the output of this BPMN compo
+  The model can estimate the probability of each risk class for the applicant.
+  This is a simple example of how AI and ML can help to enhance your risk management for customer onboarding. You can see something similar to this in action in this Tutorial: Financial Risk Analysis with DMN, AI, and BPMN video.
+  What are Business Orchestration and Automation Technologies
+
+=== POST 110 ===
+url: https://camunda.com/blog/2020/11/bpmn-ai-process-patterns-to-orchestrate-your-ai-services-in-business-processes/
+title: bpmn.ai: Orchestrate AI Services in Business Processes | Camunda
+page text: 26232 characters; AI/LLM term hits: 59
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 2400x1837  alt='bpmn.ai: Process Patterns to Orchestrate your AI Services in Business Processes'
+      src=https://cdn.sanity.io/images/12wkat9h/development/e462f1730ed2e2bcacbbd2e8cf109bf580a6933f-2400x1837.jpg
+      visual pass: class=photo ai_visible=no note=robotic arm photo; alt mentions bpmn.ai
+  figure 2: 2163x666  alt='Process Choice'
+      src=https://cdn.sanity.io/images/12wkat9h/development/be1b0acb153ec12ddf584283883dd113ef0488a1-2163x666.png
+      visual pass: class=bpmn ai_visible=no note=green task boxes with gateway diamond
+  other figures on the page (alt texts only):
+      2163x861 'Drift Detection'
+      2163x696 'Controlled Confidence'
+      2163x657 'GDPR Consent'
+      2163x636 'Anomaly Detection First'
+      1773x756 'DMN as runtime'
+      2163x606 'Ensemble'
+      1686x666 'Anomaly Detection last'
+      2064x537 'Decision Support - AI first'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS AI gateway/decision] Companies that already use a workflow engine (such as Camunda ) have a head start on AI use cases. Consider it from this perspective: Introducing AI-based ideas into fully manual processes is much harder than doing the same in a controlled environment with defined data flows. A few integration patte
+  [AI-IN-PROCESS AI gateway/decision] In our projects, we found the following list of patterns useful. On the one hand, they serve as a means of communication between Data Scientists and Process Owners or Process Automation Specialists. On the other hand, they can be used as a checklist of ideas to consider when you bring AI-based decis
+  [AI-IN-PROCESS AI gateway/decision] An example: In input management an AI classifies incoming business documents and forwards them to the responsible processes. The machine learning model to accomplish this will learn from the history of manual classifications and try to classify them in the same way. Every machine learning needs a ta
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  bpmn.ai: Process Patterns to Orchestrate your AI Services in Business Processes
+  bpmn.ai: Process Patterns to Orchestrate your AI Services in Business Processes
+  The journey through an AI project often only begins with a successful proof of concept. There is still little consensus regarding the orchestration of AI services. Tool support and methodological discussions often culminate with the provision of machine learning pipelines (e.g. through Kubeflow ) an
+  bpmn.ai: Process Patterns to Orchestrate your AI Services in Business Processes Group 1: Getting Started Process data collection – Just Look, Don’t Touch!
+  Group 4: Multi-Model Patterns Anomaly Decision Safeguard
+  However, simplicity, explainability, and determinism are obvious design goals – according to common sense and also explicitly on the part of regulators such as the Recommendations of the German Data Protection Conference (in german) since 2019. For decision automation purposes, that rely on tabular 
+  One way to maximize simplicity would be to use a rule-based or decision-tree based approach instead. Often, their results can be translated into DMN decision tables with little frictional loss. DMN tables are not only traceable but can also be modified as needed. In addition, there is no need for sp
+  The AI does not make its own decision here, but it can stop decisions of others (people and systems) if they look “strange”. The introduction is therefore easier to argue, but may offer fewer savings than optimizations. The keynote of anomaly detection is that an AI model learns what constitutes – o
+  The use of process engines is an investment in flexibility – changes can be made in a coordinated manner without the need for complex release processes. In this way, an XOR gateway can be used to control automation levels.
+  Consider an AI component for a classification decision such as “Does this insurance claim have to be examined by an expert?” . Besides the decision itself, the AI component indicates how confident it is with its own decision (Confidence). This is usually given in the value range 0.0 to 1.0, where 1.
+  Minimum confidence = 100% – this would be equivalent to a test or pilot operation. The AI component operates live on the real data, but will never make a decision autonomously because the 100% threshold is never reached. Even human clerks would have a residual uncertainty, but do not quantify it.
+  Minimum confidence = 0.00% – The AI always decides autonomously, even if uncertainties are clear. Often, this is not a reasonable configuration. You will only want to use this configuration in low-stakes situations such as ad targeting.
+  In this pattern, a machine learning component is always called before a human decision. It then passes on its results (including confidence estimations and ideally a justification for the result) to support the manual decision. This is particularly useful when an additional method of explainable AI 
+  In the best case, a human-machine-four-eyes principle is created that improves the overall level of decision quality and consistency across several decision-makers and thus promotes fairness in the sense of equal treatment. Also, decisions can be made more efficiently and thereby more frequently, if
+  ⚠️ These kinds of systems call for ethical considerations despite their focus on human decision making. Clerks will have to justify deviations from the “standard”. This creates an incentive not to do so, for example in the Austrian AMS decision model . From an ethical point of view, this would degen
+  One approach to handle the problems of the “AI-first” decision support pattern is to turn it around: Human decisions are required first, then the new decision (or a set of recent decisions) is reflected upon using machine learning technologies.
+  Suppose you have a number of decision-makers that randomly receive decision-making tasks. An interesting twist for this case is to take the human decision for granted and try to predict the decision-maker. If this fails or just leads to low confidence predictions, all is well – if it works, it is wo
+  Here the machine learning component never influences individual decisions but only serves as quality control for human decision making in the business process. This is appropriate for high stakes decisions that are susceptible to bias: Loan approval, fraud detection, HR decisions , etc.
+
+=== POST 130 ===
+url: https://camunda.com/blog/2024/08/automate-customer-inquiry-routing-with-camunda-process-blueprints/
+title: Automate Customer Inquiry Routing with Camunda’s Process Blueprint and Azure OpenAI | Camunda
+page text: 7583 characters; AI/LLM term hits: 49
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 624x393  alt='Clicking a task shows a Details pop-up'
+      src=https://cdn.sanity.io/images/12wkat9h/development/b01e85fbc0a7f26f6f9443fbd9ed0139ce5ede35-624x393.png
+      visual pass: class=screenshot ai_visible=no note='Details' pop-up over process canvas
+  figure 2: 623x346  alt='Process notes showing route going through feedback and back to sales department'
+      src=https://cdn.sanity.io/images/12wkat9h/development/50ce1c4867f169d4cf03f160d0487d29058cd1d5-623x346.png
+      visual pass: class=bpmn ai_visible=no note=tasks with notes; labels unreadable
+  other figures on the page (alt texts only):
+      624x401 'Refining a blueprint search with filters'
+      553x386 'Adding a feedback response, reading "This individual wants to know if there is a set number of units required for purchase in order to receive a volume discount and what that value is."'
+      623x342 'Operate shows the route of the inquiry moving to Sales'
+      621x322 "Viewing the blueprint in Camunda's Web Modeler"
+      511x358 'Selecting a response to a customer inquiry'
+      622x273 'A BPMN workflow diagram for determining correct route for customer inquiry'
+      258x547 'Pop-up window showing System message and Chat history for the Payload'
+      261x525 'Properties form showing optional fields for the OpenAI outbound connector'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS OpenAI connector] In this post, we’ll use one of those blueprints to showcase our new Azure OpenAI Connector.
+  [AI-IN-PROCESS AI-bound task] Prerequisites: If you want to run this Connector, you must have an API key for Azure OpenAI. Review the documentation for Azure OpenAI for how to obtain that key.
+  [AI-IN-PROCESS OpenAI connector] Under Intelligent Routing with AI , select Use Blueprint , which uses the Azure OpenAI Connector.
+  [AI-IN-PROCESS OpenAI connector] Take a look at the process and see what it does before you run it. In Modeler, you see that the first human task is providing a customer inquiry that will be routed using the results of the OpenAI Connector. You can select this step and click the link icon to display what this form looks like for th
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Automate Customer Inquiry Routing with Camunda’s Process Blueprint and Azure OpenAI
+  Automate Customer Inquiry Routing with Camunda’s Process Blueprint and Azure OpenAI
+  How to automate customer routing with Azure OpenAI
+  As you’ve probably heard, AI can be a powerful tool for enhancing your business processes. This use case uses AI to determine the correct routing for a customer inquiry. You can see the BPMN for this process below.
+  An example prompt is provided in the form. As you can see, if you review the form JSON configuration, the text field Customer message is stored in the process variable noted by customer_inquiry .
+  Most likely, this prompt would come from an SMS text message or an email, or this could also be our Contact Us page for asking questions on our website.
+  You must also define a Temperature that controls the randomness of the model’s output. For this example, select a temperature of 1 , which is the midrange temperature. The lower the temperature, the less random and more deterministic the model will perform. A higher temperature makes the model’s out
+  ] Now that you’ve given OpenAI some chat prompts and responses, you need to define the prompt content to send to the Connector in your process and the resulting expression that will provide the route determined by OpenAI.
+  The prompt being sent to OpenAI for route determination is entered as:
+  Copy If is defined(feedback) then feedback else customer_inquiry So, the prompt uses customer_inquiry if the feedback process variable is not yet defined. If you look forward in the process, once initially routed, there is an option to route back with additional feedback which will populate the feed
+  You can provide feedback and send this through OpenAI again, reroute to another department, or resolve the item.
+
+=== POST 131 ===
+url: https://camunda.com/blog/2024/08/ai-agents-what-you-need-to-know/
+title: Artificial Intelligence (AI) Agents: What You Need to Know | Camunda
+page text: 9307 characters; AI/LLM term hits: 191
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 667x239  alt='Kyc-bpmn-camunda'
+      src=https://cdn.sanity.io/images/12wkat9h/development/2c6100022594b1c49a993e2eeb8de840106f2a86-667x239.png
+      visual pass: class=bpmn ai_visible=no note=task boxes with arrow to large box
+  figure 2: 1200x401  alt='Intelligent-routing-ai-camunda'
+      src=https://cdn.sanity.io/images/12wkat9h/development/d080984ee11585dfae408f4de7be01a7dcaa6d86-1200x401.png
+      visual pass: class=bpmn ai_visible=unclear note=coloured task boxes in chain; labels unreadable
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS Hugging Face connector] Accessing Machine Learning Models with Camunda’s Hugging Face Connector for Business Improvement
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Business Insights , Getting Started , Process Orchestration
+  Wondering what an AI agent is, and how you can use AI to improve your business processes? Read on for a definition, examples, use cases and more.
+  What is an AI agent? What should I know about them?
+  You might see the terms “AI Agent,” “Agentive Process Automation,” “Artificial Intelligence Agent,” or even some other term. What does it all mean?
+  An AI agent is a software program that autonomously gathers data and carries out tasks using this information, independently or on behalf of another system or person. These agents can perform a variety of functions, such as:
+  An AI agent analyzes the data it collects to predict the optimal outcome, allowing it to make informed decisions that align with predefined goals.
+  Another example might be in healthcare. Let’s assume that you have models trained to find the signs of specific diseases by looking at images from ultrasounds or scans. Using an AI agent, scans from a new patient can be reviewed by the model and a summary of the findings can be provided for the doct
+  You might see an AI agent that analyzes a patient’s history, illnesses, symptoms, and even hereditary diseases to provide some initial insight for the physicians in treatment plans or possible diagnoses for the patient.
+  Even your smart home devices are AI agents. All AI agents help make decisions, provide information, and take action based on the data they have collected to help in that decision-making.
+  With the right AI agents, you can improve the customer user experience, improve your decision-making, reduce costs, increase productivity, automate repetitive tasks, error reduction, and scalability.
+  With the addition of AI to your business , you can also gather significant insights into your business by identifying patterns and trends. These insights can help support strategic planning initiatives, support decision-making, and provide predictive analytics. These things are further enhanced beca
+  An AI agent simplifies and automates more complex tasks or processes. They are designed to take inputs, make decisions, and then take actions to meet the goals outlined for the agent.
+  Determine the goal of the agent You will want to determine the goal of the agent. For example, is the AI agent intended to return a credit score, provide a list of possible locations, or possibly trigger a fraud investigation? Once you know the designed goal of the agent, you can begin to focus on t
+  Determine how the AI agent will obtain information to accomplish this goal Many AI agents take input from various sources and media types including images, scanned documents, electronic documents, audio, etc. Part of implementing the AI agent includes determining the input sources and how the AI age
+  Define how the AI agent will implement the task(s) using the information provided Now you need to define how the information provided will be used to return the desired result. This may include accessing rules or machine learning models. Using these predetermined options for decision-making, you can
+  Determine if feedback is required Consider allowing your AI agent to provide learning feedback in addition to acting on data and providing a result. This is very useful when you’re taking advantage of machine learning models as you want to be sure that the model can continuously learn and adapt resp
+  AI agents are just programs that run autonomously to complete a specific task or set of tasks using AI. So, an AI agent might be as simple as the program written for your smart device that provides a weather report when you ask “What’s my weather today?” Alternatively, it might be a decision-making 
+  The biggest thing to remember is that AI agents run autonomously and are often used to automate previously tedious or human tasks that may be slow or menial so that you can streamline your process and let your staff focus on more business-critical work.
+
+=== POST 152 ===
+url: https://camunda.com/blog/2024/09/beer-suggestions-dmn-ai/
+title: Beer Suggestions with DMN and AI | Camunda
+page text: 5172 characters; AI/LLM term hits: 8
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x788  alt='Deploy-process'
+      src=https://cdn.sanity.io/images/12wkat9h/development/21cf482c1b78545d20f7c69460f819e7ae5e56ff-1200x788.png
+      visual pass: class=screenshot ai_visible=no note='How do you like your beer?' form with Submit
+  figure 2: 1200x564  alt='Monitor-process'
+      src=https://cdn.sanity.io/images/12wkat9h/development/c777d2dac2ba79413276b033c799d7ad4bfd7fbb-1200x564.png
+      visual pass: class=bpmn ai_visible=no note=row of task boxes; labels unreadable
+  other figures on the page (alt texts only):
+      1200x923 'Beer-recommendation-frontend'
+      1200x665 'Image1'
+      1200x627 'A DRD with options for deciding which beer to recommend'
+      1200x563 'Beer-suggestions-email'
+      1047x552 'Beer-rules'
+      1200x278 'Bpmn-beer-recommendations-camunda'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS OpenAI connector] If the DMN table did manage to find a beer for you, I use the OpenAI Connector to ask ChatGPT to suggest places to find nearby beers in that style. If not, you can trust ChatGPT to suggest an alternative. ????
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  If this table works the way it should, then you should have one or more beer styles that would suit your preferences. But there’s also the possibility that nothing matches at all! Or, you might know you should drink a stout, but have no idea which ones you can get your hands on! These issues and mor
+  Adding this DMN table to a BPMN model lets us expand the scope of this invaluable process by letting us integrate other systems and also address different responses depending on the results. In this case, I wanted to add a bunch more features.
+  In both cases, then an email is sent using the SendGrid Connector with the suggested beverage.
+
+=== POST 182 ===
+url: https://camunda.com/blog/2024/11/transforming-telecom-unleashing-the-power-of-ai/
+title: Transforming Telecom: Unleashing the Power of Process Orchestration and AI | Camunda
+page text: 17137 characters; AI/LLM term hits: 75
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1024x535  alt='Transforming Telecom: Unleashing the Power of Process Orchestration and AI'
+      src=https://cdn.sanity.io/images/12wkat9h/development/c7d5ab8f8171d5d27a34ea448b979bab7904fce7-1024x535.png
+      visual pass: class=card ai_visible=no note=title card 'Transforming Telecom ... and AI', chip graphic
+  figure 2: 623x225  alt='Process model showing opportunities for AI integration'
+      src=https://cdn.sanity.io/images/12wkat9h/development/08db7aa3786698fb5f12caf9e422e3a5ed1b8d08-623x225.png
+      visual pass: class=bpmn ai_visible=no note=process with coloured highlights; labels unreadable
+  other figures on the page (alt texts only):
+      621x161 'Assistive AI helps review changes'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS call to an LLM] The filing process can invoke AI agents that can take the rate and line changes as input to locate all the affected tariffs and even note the changes that need to be made to assist the editor when making tariff modifications.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Transforming Telecom: Unleashing the Power of Process Orchestration and AI
+  Combine AI with process orchestration to leverage data in workflows that span multiple telecom systems for better predictions.
+  Transforming Telecom: Unleashing the Power of Process Orchestration and AI
+  Process orchestration is the foundation for this orchestration, enabling insights to flow across complex workflows, driving operational efficiency, delivering exceptional customer experiences, and accelerating innovation. This blog looks at several areas where AI can improve and streamline operation
+  AI and process orchestration in telecommunications
+  Combining process orchestration and AI can reshape and even revolutionize telecom operations . By utilizing these technologies together, providers can manage and simplify complex operations, improve agility, and introduce innovative service solutions.
+  Telecom providers can benefit from process orchestration to coordinate disparate systems, automating the complex, end-to-end processes of activating and provisioning services for their customers. Service provisioning spans several systems and departments, such as order management, billing, and netwo
+  Workflow automation With AI-powered process orchestration , telecoms can automate the entire service provisioning process, minimizing the need for manual involvement. This includes activating new services, managing resources, and configuring network components. This injection of AI helps reduce oper
+  Error reduction Integrating AI with process orchestration enables standardization of workflows, ensuring consistency and minimizing errors in the service provisioning process. AI-powered orchestration can quickly identify and resolve potential errors, preventing configuration issues or service disru
+  Faster service activation AI and process orchestration can integrate to create processes that review and analyze data and historical patterns to predict possible bottlenecks and identify potential failures in service provisioning. This combined approach enables telecom providers to provide faster se
+  When the technician is assigned, there is an opportunity to review what is in inventory before scheduling to ensure all the required parts are ready. This is not indicated in the image above but could be handled in the subprocess around Provide Services .
+  As you can see, AI and process orchestration integration simplifies service provisioning in telecommunications, making it more efficient, scalable, and responsive to customer needs. This results in faster, more reliable service delivery and enhanced customer satisfaction.
+  Integrating process orchestration and artificial intelligence enhances the overall experience for telecom consumers by streamlining the customer feedback process. Examples of this include real-time updates on requests, personalized interactions, and self-service options.
+  Real-time tracking and updates Customers can submit orders for service changes, additions, and more which will initiate a request process. With AI, visibility across the fulfillment process is improved by providing real-time updates and tracking of the order status. This includes any potential delay
+  Improved customer interaction In addition to streamlining service provisioning for customers, AI integrated with process orchestration can improve customer interaction in other ways. AI-powered interfaces allow customers to independently activate or adjust services, improving the user experience whi
+  Automation for faster results Using AI and process orchestration, common customer issues can be resolved automatically, reducing resolution times and enhancing the customer experience. AI can help to uncover common issues as well as offer resolution automatically.
+  AI integration with process orchestration enhances the customer experience in telecommunications by enabling real-time tracking and updates, improving interactions through personalized engagement, and automating processes for faster results. Additionally, AI’s ability to analyze customer behavior he
+  By combining AI with process orchestration, telecom companies can effectively address service demands through automated workload management and optimized resource allocation for scalable operations. It also enhances maintenance by predicting potential issues and streamlining repair workflows, reduci
+
+=== POST 227 ===
+url: https://camunda.com/blog/2025/02/why-ai-agents-needs-orchestration/
+title: Why AI Agents Need Orchestration | Camunda
+page text: 11779 characters; AI/LLM term hits: 127
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x627  alt='Feature image'
+      src=https://cdn.sanity.io/images/12wkat9h/development/3c5e443295bea0cf3d5768488e7ee3bc95b3d824-1200x627.png
+      visual pass: class=card ai_visible=no note='Why AI Agents Need Orchestration' card, robot icons
+  figure 2: 1024x471  alt='Screenshot'
+      src=https://cdn.sanity.io/images/12wkat9h/development/e2605d1fa4545f62672e3cff836dc61d69550917-1024x471.png
+      visual pass: class=bpmn ai_visible=no note=process tasks and boundary event; unreadable
+  other figures on the page (alt texts only):
+      1024x445 'Screenshot'
+      1024x410 'Screenshot'
+      588x374 'AI agent responses are usually opaque and offer little reasoning'
+      630x159 'Incorrect FEEL response from Gemini'
+      534x88 'Answer from properly trained AI'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS call to an LLM] This response is a pack of lies. So instead I ask an AI agent which I know has been trained specifically and exclusively on Camunda’s technical documentation. The response is quite different and also quite correct.
+  [AI-IN-PROCESS ad-hoc sub-process] BPMN has a construct called an ad-hoc subprocess in which a small part of the process decision-making can be handed over to a human or agent. This could be used to give an AI a limited amount of freedom about what action is best.
+  [AI-IN-PROCESS ad-hoc sub-process] We’re excited to debut AI-enabled ad-hoc subprocesses and much more in our coming releases, so stay tuned. You can learn more about how you can already take advantage of AI-enabled process orchestration with Camunda here .
+  [AI-AROUND-PROCESS Camunda Copilot] I’m usually confident that Camunda’s own AI copilot and assistants will give me the correct information. It not only generates the expression, it also runs the expression with the given data to make sure it works. Though the consequences aren’t so drastic. I know FEEL pretty well, so I’m going to be
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Business Insights , Engineering Excellence , Agentic Orchestration
+  Help your AI make better choices and complete more complex tasks with agentic orchestration.
+  Most people I know have already integrated some AI into their work in some great ways. I build proof of concepts with Camunda reasonably often and use Gemini or ChatGPT to generate test data or JSON objects—it’s very handy. This could be expanded into an AI agent by suggesting that it generate the d
+  Those actions are always minor of course and it’s for good reason—it’s easy to deploy an AI agent if the worst it’s going to do is feed junk data into a PoC. The AI itself isn’t required to take any action or make any decisions that might have real consequences; if a human makes the decision to use 
+  For now, it’s safer to keep a distance from consequential decision-making and the erratic and sometimes flawed output of AI agents. This more or less rules out utilizing the full potential of AI agents—because at best you want them in production systems making decisions and taking consequential acti
+  As I mentioned, I use several AI tools daily. Not because I want to, but because no single AI tool can accurately answer the diversity of my queries. For example, I mentioned how I use Gemini to create JSON objects. I was building a small coffee order process and needed an object containing many ord
+  In this scenario, I’m essentially working as an orchestrator of AI agents. I’m making decisions to use a specific agent based on two main factors.
+  This is what’s blocking the effectiveness of true end-to-end agentic processes . I don’t know if I can trust a given agent enough to decide something and then take action that might have real consequences. This is why people are okay with asking AI to summarize a text but not to purchase flowers for
+  We’ve all experienced looking at the result from an AI model and asked ourselves, “Why?” The biggest reason to distrust AI agents is that, in most cases, you’ll never be able to get a good answer to why a result was given. In situations where you require some kind of audit of decision-making or stri
+  There is a nice solution to this though— chain of thought . This is where the AI is clear about how the problem was broken down and subsequently lays out its thought process step by step. The clear hole in this solution is that someone is needed to look over the chain of thought, and here is where w
+  Orchestration can link together services in a way that sends a query to multiple agents. When both have returned with their answer and chain of thought, a third agent can act as a judge to determine how accurate the result is.
+  Building this with an orchestrator like Camunda that uses BPMN would be pretty easy.
+  Once trust is established, it’s not hard to imagine that you’d start to consider actions that should be taken. Let’s imagine that a Camunda customer has created a support ticket because they’re also having trouble getting the first element in an array. A Camunda support person could see that and thi
+  In that case, we just need to make some adjustments to the model.
+  In this model, we’ve introduced the action of accessing the ticketing system to find the relevant ticket and then updating the ticket with a trustworthy answer. Because of how we’ve designed the process, we would only do this in cases where we have a very high degree of trust. If we don’t, the infor
+  Providing independent, narrowly trained agents and then adding robust, auditable decision-making and orchestration around how and why they’re called upon will initially help users trust results and suggestions more. Beyond that, it will give architects and software designers the confidence to build 
+  An orchestrator like Camunda is essential for achieving that step because it already specializes in integrating systems and lets designers tightly control how and why those systems are accessed. Another great advantage is far better auditability. Combining the data generated from stepping through th
+  In the case above I’ve added a way for an AI agent to choose to ask for more information about the request if it needs to—it might do this multiple times before eventually deciding to post a response to the ticket, but the key thing is that if the agent knows it would benefit from more information i
+
+=== POST 230 ===
+url: https://camunda.com/blog/2025/02/camunda-alpha-release-february-2025/
+title: Camunda Alpha Releases for February 2025 | Camunda
+page text: 9821 characters; AI/LLM term hits: 4
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x1171  alt='Camunda-bpmn-copilot'
+      src=https://cdn.sanity.io/images/12wkat9h/development/4ce563e1412de7682615e028db0d557faf09eb48-1200x1171.png
+      visual pass: class=screenshot ai_visible=unclear note='Camunda Modeler / Camunda 8 (BPMN)' UI; labels unreadable
+  figure 2: 1200x877  alt='Camunda-process-landscape-2'
+      src=https://cdn.sanity.io/images/12wkat9h/development/0bdbe1273391b755f487a5663f12e89fc24e2d2d-1200x877.png
+      visual pass: class=bpmn ai_visible=no note=process landscape with boxes; unreadable
+  other figures on the page (alt texts only):
+      1200x653 'Camunda-product-house'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS ad-hoc sub-process] The new Camunda version supports a new BPMN element: the ad-hoc subprocess . In BPMN, an ad-hoc subprocess is a collection of tasks that can be executed flexibly at any time, without predefined connections to other parts of the process.
+  [AI-IN-PROCESS ad-hoc sub-process] With our Desktop Modeler release, we have also added support for ad-hoc subprocesses. Please see Ad-hoc subprocesses under Web Modeler for more information.
+  [AI-AROUND-PROCESS Camunda Copilot] Thanks to Camunda’s integrated BPMN Copilot for SaaS, anybody can go from 0 to 80% of a process diagram in minutes. Users can generate process diagrams from natural language descriptions. The simple interface means that even BPMN novices can make meaningful, accurate diagrams. And BPMN Copilot also 
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  integrating Identity into the orchestration cluster,
+  We introduced a new format for our monthly release blog a few months ago. As a reminder, this format organizes the blog using the following product house, with E2E Process Orchestration at the foundation and our product components represented by the building bricks. We have organized our components 
+  The Web Modeler now offers a formal review process for changes made in a process. Building off the process application, visual diffing and versioning functionality, a user can submit a version of a process application for review. If approved, the entire process app version is marked as reviewed.
+  This new kind of subprocess allows more flexible process flows with a compact visual representation. It is the first step towards dynamic processes and execution of ad-hoc activities.
+  Our MVP process landscape solution addresses challenges around determining the relationship between collections of BPMN processes and reuse of processes by providing a comprehensive, hierarchical view of all related processes.
+  The following connector updates are available with both releases this month.
+  The REST connector now supports the return of multiple values of the same header. In certain situations, an upstream server might return multiple values for a single header; for example, in the Set-Cookie header. In this case, the REST connector now returns the list of values inside the header map:
+  The ConnectorInputException is now handled by the ConnectorJobHandler leading to a failed job without retries (or a technical error). This allows connector developers to raise errors without retrying them. So, when a ConnectorInputException is thrown from the outbound connector code, developers can 
+
+=== POST 248 ===
+url: https://camunda.com/blog/2025/02/building-ai-agent-camunda/
+title: Building Your First AI Agent in Camunda | Camunda
+page text: 26918 characters; AI/LLM term hits: 121
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 2053x815  alt='A BPMN model of an AI agent in an ad-hob sub-process using Camunda.'
+      src=https://cdn.sanity.io/images/12wkat9h/development/dd1f8095b7998f49a9b3d409902bce91605b6da5-2053x815.gif
+      visual pass: class=bpmn ai_visible=unclear note=dashed ad-hoc sub-process container; labels unreadable
+  figure 2: 1738x798  alt='Model-fraudfound'
+      src=https://cdn.sanity.io/images/12wkat9h/development/40f75b1bffd6495746a08f4224e77d05ce1daf3a-1738x798.png
+      visual pass: class=bpmn ai_visible=unclear note=dashed-container model; labels unreadable
+  other figures on the page (alt texts only):
+      1940x566 'Create-new-process-application'
+      1386x764 'Info'
+      1999x452 'Tax-form-2'
+      1472x601 'Ai-model-bpmn-start'
+      1200x627 'Feature image'
+      1999x373 'Create-new-project'
+      976x714 'Create-new-process-application-2'
+      900x764 'Ad-hoc-sub-process-camunda-6'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS ad-hoc sub-process] Within BPMN , there is a construct called an ad-hoc subprocess . An ad-hoc subprocess in BPMN is a type of subprocess where tasks do not follow a predefined sequence flow. Instead, tasks within the subprocess can be executed in any order, repeatedly, or skipped entirely, based on the needs of the pr
+  [AI-IN-PROCESS ad-hoc sub-process] In Camunda, this workflow pattern enables the injection of non-deterministic behavior into otherwise deterministic processes as ad-hoc subprocesses: the ad-hoc subprocess serves as a container where the exact sequence and occurrence of tasks are not pre-defined but rather determined at runtime by le
+  [AI-IN-PROCESS ad-hoc sub-process] An AI agent is an automation within Camunda that leverages ad-hoc subprocesses to perform one or more tasks with non-deterministic behavior. AI agents can:
+  [AI-IN-PROCESS ad-hoc sub-process] The process begins when a form is filled in by a user who wants to submit information for their tax return. An OpenAI bot checks the data provided for any indication of fraud. The AI bot will determine which tasks, from a list of tasks, to perform for this set of criteria. The appropriate tasks with
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Follow this step-by-step guide (with video) to use agentic ai and start developing agentic process orchestration with Camunda today.
+  Note: This step-by-step guide takes advantage of agentic AI features and capabilities in Camunda 8.7. Please see our latest step-by-step AI Agent Guide to implement a similar process using Camunda 8.8 alpha functionality.
+  Building your first agentic artificial intelligence (AI) process is easier than you think. Our intention in this post is to provide you with step-by-step instructions to create that first process using agentic process orchestration with Camunda. If you’re new to Camunda, you can get started for free
+  This is the implementation path for Camunda’s support for AI agents , as it allows portions of the decision-making to be handed over to an agent for processing. That processing can include human tasks as well. This approach provides the AI agent some freedom, with constraints, about what actions sho
+  For a better understanding of Camunda’s terminology, we have provided our definition of an AI agent below:
+  Make autonomous decisions about task execution
+  AI agents represent the practical implementation of agentic process orchestration within the Camunda ecosystem, combining the flexibility of AI with the reliability of traditional process automation.
+  Our example model for this process is a fraud detection process when submitting tax forms.
+  A few assumptions are made for those individuals who will be using this step-by-step guide to create their first agentic AI process . These are outlined in this section.
+  In order to take advantage of the latest and greatest functionality provided by Camunda, you will need to have a Camunda 8.7.x cluster or higher available for use. You will be using Web Modeler and Forms to create your model and human task interface, and then Play and Task List when executing the pr
+  Web Modeler – the ability to create elements in BPMN and connect elements together properly, link forms, and update properties for connectors.
+  Play – the ability to step through a model from Modeler.
+  Separating sensitive information from the process model is a best practice. Since we will be using a few connectors in this model, you will need to create the appropriate connector secrets within your cluster. You can follow the instructions provided in our documentation .
+  If you do not have existing accounts for the connectors that will be used, you can create a SendGrid account and an OpenAI account. You will then need to get an API key for each service which will be used in the Camunda Console to create your secrets.
+  The secrets will be referenced in your model using {{secrets.yourSecretHere}} where yourSecretHere represents the name of your connector secret..
+  The first step is to create a process application for your process model and any other associated assets. Create a new project using the blue button at the top right of your Modeler environment.
+  Enter the name for your project. In this case we have used “Agentic Fraud Detection” as shown below.
+  The next step is to build your process model in BPMN and the appropriate forms for any human tasks. We will be building the model represented below.
+
+=== POST 257 ===
+url: https://camunda.com/blog/2025/03/camunda-alpha-release-march-2025/
+title: Camunda Alpha Releases for March 2025 | Camunda
+page text: 9302 characters; AI/LLM term hits: 4
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x877  alt='Web-modeler-landscape-visualization'
+      src=https://cdn.sanity.io/images/12wkat9h/development/0bdbe1273391b755f487a5663f12e89fc24e2d2d-1200x877.png
+      visual pass: class=bpmn ai_visible=no note=small process in modeler; labels unreadable
+  figure 2: 1200x653  alt='Product-house'
+      src=https://cdn.sanity.io/images/12wkat9h/development/886c38badcf600c6dc91f03db1bc09acdbc23af4-1200x653.png
+      visual pass: class=other-diagram ai_visible=yes note=product house: 'AI' roof, 'E2E Process Orchestration'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS ad-hoc sub-process] With this alpha, we have improved our validation of Camunda 8 ad-hoc sub-processes. In addition, customers can now provide their own documentation URLs for validation rules via the core infrastructure provided by linter plug-ins. The modeler picks up these URLs and displays them for error reports.
+  [AI-IN-PROCESS ad-hoc sub-process] With this alpha release, we have added support for ad-hoc sub-processes into Optimize and worked on various bug fixes.
+  [AI-AROUND-PROCESS Camunda Copilot] BPMN to text with Copilot (SaaS only)
+  [AI-AROUND-PROCESS Camunda Copilot] Documentation is tedious to create, and difficult to maintain with rapid iterations. With this alpha release of Camunda Copilot, you can not only generate BPMN diagrams, but Camunda now offers support to generate text from the BPMN diagram.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  We introduced a new format for our monthly release blog a few months ago. As a reminder, this format organizes the blog using the following product house, with E2E Process Orchestration at the foundation and our product components represented by the building bricks. We have organized our components 
+  Project landscape visualization makes it possible to visualize the end-to-end process through a hierarchical view of all related processes, enabling better decision-making and strategic alignment. This feature is released for SaaS and Self-Managed.
+  You can now create diagrams for Camunda 8.8. We also added support for an updating user task listener.
+  For our 8.8.0-alpha2 release, we have introduced Orchestration Identity’s first end-to-end journey with basic authorization only.
+  Our SendGrid connector now supports document attachments.
+  Our Google Drive connector now supports document upload and downloa d .
+  Documents can now be used with our Textract connector.
+  You can now add attachments to Slack using our Slack REST connector.
+  You can configure the proxy using environment variables or system properties, which will then be used by the REST connector.
+  Powered by AWS Textract and LLM technologies, Intelligent document processing (IDP) helps you integrate automated document processing by extracting desired data fields and using them later into your end-to-end processes.
+  RPA tasks are now available within BPMN diagrams for automation.
+
+=== POST 270 ===
+url: https://camunda.com/blog/2025/04/camunda-87-agentic-orchestration-for-enterprise/
+title: Camunda Releases Agentic Orchestration for the Enterprise | Camunda
+page text: 11934 characters; AI/LLM term hits: 119
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 2275x1149  alt='trip-planner-bpmn-copilot-camunda'
+      src=https://cdn.sanity.io/images/12wkat9h/development/1450d9ca1db62e90dfe9c5fdeda3469a3961839f-2275x1149.gif
+      visual pass: class=screenshot ai_visible=no note='Rugby Travel Planner' with rows of text
+  figure 2: 1448x735  alt='Ai-agent-ad-hoc-sub-process-camunda'
+      src=https://cdn.sanity.io/images/12wkat9h/development/c3b22953db84475ed9a07f3b4825d7ef3649be6e-1448x735.png
+      visual pass: class=bpmn ai_visible=unclear note=pink-bordered sub-process with tasks; labels unreadable
+  other figures on the page (alt texts only):
+      2275x1149 'IDPInvoice-camunda'
+      1600x803 'Screenshot'
+      1200x627 'Feature image'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS ad-hoc sub-process] We’re excited to announce the general availability of new agentic process orchestration capabilities to model, deploy and manage AI agents seamlessly into your end-to-end processes. We’re also debuting new AI-enabled capabilities, including agents powered by BPMN ad-hoc sub-processes, for dynamic, i
+  [AI-IN-PROCESS ad-hoc sub-process] Build your first AI agent leveraging BPMN ad-hoc sub-processes with this step-by-step guide.
+  [AI-IN-PROCESS ad-hoc sub-process] The introduction of ad-hoc sub-processes to Camunda (released in 8.7) allows tasks to be activated dynamically, removing requirements for modeling task sequence, task order or task completion; this is all handled in runtime by the ad-hoc sub-process logic. By utilizing BPMN ad-hoc sub-processes, AI 
+  [AI-IN-PROCESS ad-hoc sub-process] Enable tasks to be activated dynamically, removing the need to define the task sequence beforehand with ad-hoc sub-processes
+  [AI-AROUND-PROCESS Camunda Copilot] Go from 0 to process diagram in seconds with Camunda Copilot
+  [AI-AROUND-PROCESS Camunda Copilot] We’re excited to announce the general availability of new agentic process orchestration capabilities to model, deploy and manage AI agents seamlessly into your end-to-end processes. We’re also debuting new AI-enabled capabilities, including agents powered by BPMN ad-hoc sub-processes, for dynamic, i
+  [AI-AROUND-PROCESS Camunda Copilot] Go from 0 to process diagram in seconds with Camunda Copilot
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Business Insights , Releases , Agentic Orchestration
+  Camunda Releases Agentic Orchestration for the Enterprise
+  Camunda Releases Agentic Orchestration for the Enterprise
+  Quickly dive into our new agentic orchestration, AI-powered and task automation capabilities:
+  Build better AI agents leveraging BPMN standards
+  See the “Agentic Orchestration for the Enterprise” webinar replay and learn more
+  The current reality is that many organizations are struggling to move beyond isolated AI use cases, leading to fragmented solutions delivering only marginal benefits. According to Camunda’s 2025 State of Process Orchestration and Automation Report , 84% of IT and business leaders are looking to add 
+  The key to unlocking AI’s full potential is going beyond isolated applications and operationalizing AI within a holistic, composable enterprise architecture—one that seamlessly integrates AI with people, systems, and devices. Process Orchestration and Automation (PO&A) is that essential, intelligent
+  Camunda’s process orchestration and automation enables organizations to operationalize AI with both flexibility and control by blending both deterministic and non-deterministic orchestration . This balance ensures compliance and standardization where needed while introducing AI-powered personalizati
+  Camunda allows you to blend deterministic orchestration (via BPMN) with non-deterministic orchestration (via agents) so you can implement as much or as little AI as you want within guardrails.
+  Camunda’s composable architecture means you’re never locked into a single AI or automation technology. Our flexible, full-stack process orchestration platform enables end-to-end automation across people, systems, devices, and AI, driving efficiency, agility, and innovation at scale, and now, with th
+  Build better AI agents leveraging BPMN standards
+  Camunda’s new agentic process orchestration capability empowers organizations to model, deploy and manage AI agents seamlessly into your end-to-end processes. Combining deterministic (orchestration logic that’s defined at design time) and non-deterministic (orchestration logic is determined at runti
+  Get started building AI agents and using agentic process orchestration with Camunda.
+  Comprehensive orchestration with composable task automation
+  Shifting from isolated applications to a holistic, composable enterprise architecture that integrates AI alongside people, systems, and devices will operationalize AI and drive intelligent automation across end-to-end business processes. This shift is critical for organizations to realize the full p
+  Leverage the power of large language models (LLM) to automate and simplify how complex documents are handled with Camunda’s seamlessly integrated Intelligent Document Processing (IDP) solution. With an intuitive, user-friendly interface, you can effortlessly configure, test, and optimize data extrac
+  With Camunda’s IDP solution, you can easily digitize non-machine-readable documents and convert them into structured data, making them accessible and actionable for AI-driven automation and decision-making. Benefit from seamless integration into your end-to-end process orchestration efforts and effo
+
+=== POST 288 ===
+url: https://camunda.com/blog/2025/05/ai-agent-design-patterns-in-camunda/
+title: Building Trustworthy AI Agents: How Camunda Aligns with Industry Best Practices | Camunda
+page text: 8928 characters; AI/LLM term hits: 126
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 624x320  alt='AI agent inserted into BPMN diagram for process visibility'
+      src=https://cdn.sanity.io/images/12wkat9h/development/26affd282c9938fdce05ef3293d42d96fdc77ffc-624x320.png
+      visual pass: class=bpmn ai_visible=unclear note=blue-bordered group in model; labels unreadable
+  figure 2: 1200x627  alt='Feature image'
+      src=https://cdn.sanity.io/images/12wkat9h/development/2aefb18f2d1cae4b08d6b38c702aedb992ae2ed0-1200x627.png
+      visual pass: class=card ai_visible=unclear note='Building Trustworthy AI Agents' card with small diagram
+  other figures on the page (alt texts only):
+      624x243 'AI agents working together with their separate tasks'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS Anthropic/Claude] The rapid evolution of AI agents has triggered an industry-wide focus on design patterns that ensure reliability, safety, and scalability. Two major players— OpenAI and Anthropic —have each published detailed guidance on building effective AI agents. Camunda’s own approach to agentic orchestration s
+  [AI-IN-PROCESS Anthropic/Claude] Let’s take a look at how Camunda’s AI agent implementation aligns with the recommendations from OpenAI and Anthropic, and why this matters for enterprise success.
+  [AI-IN-PROCESS Anthropic/Claude] Both Anthropic and OpenAI stress the importance of defining clear task boundaries for agents. According to Anthropic’s recommendations , ambiguity in agent responsibilities often leads to unpredictable behavior and systemic errors. OpenAI similarly highlights that agents should have narrowly scoped 
+  [AI-IN-PROCESS Anthropic/Claude] OpenAI’s guide highlights the benefits of agents that are designed with specialized, narrow scopes, which can then be composed into larger systems for more complex tasks. Anthropic echoes this, suggesting that mega-agents often become unwieldy and hard to trust.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  At Camunda, we address this by orchestrating agents through BPMN workflows. Each agent’s task is represented as a discrete service task with well-defined inputs and expected outputs. For example, in our example agent implementation , an email is sent only after a Generate Email Inquiry task complete
+  By visualizing these handoffs in BPMN diagrams, stakeholders across technical and nontechnical domains can easily understand the agent responsibilities, audit workflows, and troubleshoot when necessary.
+  Camunda’s architecture embraces this philosophy through microservices-style orchestration. Each AI agent within Camunda focuses on mastering a single task—for instance, information retrieval, natural language generation, decision support, or classification. These specialized agents can then be strun
+  In an insurance claims process, Camunda orchestrates a Document Extraction agent to pull key fields, a Fraud Detection agent to assess risk, and a Claims Decision agent to recommend next steps. Each agent operates independently yet collaboratively, enhancing system resilience and allowing incrementa
+  Monitoring, error handling, and human-in-the-loop
+  Camunda is particularly strong in this area thanks to our suite of tools like Operate , Optimize , and Tasklist . Here’s how we achieve enterprise-grade monitoring and human-in-the-loop design:
+  Error boundaries and fallbacks: BPMN error events and boundary timers allow processes to anticipate common failures (like timeouts or bad data) and take corrective actions, such as retrying, skipping, or escalating to a human operator.
+  In a future release—the 8.8 release scheduled for October—Camunda is taking this one step further by connecting these features directly to the agent. Failed tasks will automatically trigger the agent to reevaluate the prompt, allowing the agent to respond dynamically as the environment changes. Oper
+  Camunda’s approach to process design aligns perfectly with this recommendation. Our BPMN models are built around modularity, enabling teams to:
+  OpenAI’s guide makes it clear: trustworthy AI systems must provide explainable decision pathways. Stakeholders need to understand why an agent acted a certain way, especially when decisions have legal, ethical, or financial consequences.
+  Camunda’s BPMN-driven orchestration inherently provides this transparency. Every agent interaction, every decision point, and every data handoff is visually modeled and logged. Teams can:
+  Trace the complete lineage of a decision from input to output
+  Centralized orchestration provides guardrails
+  Today, AI agents do not yet exhibit the level of trustworthiness, transparency, or security required to make a fully autonomous swarm of agents safe for enterprise contexts. In decentralized models, agents independently delegate tasks to one another, which can lead to a lack of oversight, unpredicta
+  For now, Camunda strongly supports centralized or manager patterns. With this approach, a single orchestrator (in Camunda’s case, the BPMN engine) manages when, why, and how agents act. This centralized orchestration ensures:
+  Our philosophy is simple: while the future may hold promise for decentralized agent ecosystems, today’s enterprises need reliability, explainability, and control. Centralized orchestration, powered by Camunda, offers the safest and most effective path forward that you can utilize immediately, withou
+  Enterprise-grade agentic orchestration is here!
+  Want to learn more? Dive into our latest release announcement or check out our guide on building your first AI agent .
+
+=== POST 292 ===
+url: https://camunda.com/blog/2025/05/step-by-step-guide-ai-task-agents-camunda/
+title: Intelligent by Design: A Step-by-Step Guide to AI Task Agents in Camunda | Camunda
+page text: 37578 characters; AI/LLM term hits: 261
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1192x591  alt='Sub-process-2'
+      src=https://cdn.sanity.io/images/12wkat9h/development/6e3003e3c74d7773bb91ce047dd5070bdb9e041a-1192x591.png
+      visual pass: class=bpmn ai_visible=no note=task chain with sub-process; labels unreadable
+  figure 2: 1200x526  alt='Sub-process'
+      src=https://cdn.sanity.io/images/12wkat9h/development/7bcfd44f4d93ebd5a3df820e193c414e5b03d8bd-1200x526.png
+      visual pass: class=bpmn ai_visible=no note=process with red-highlighted element; unreadable
+  other figures on the page (alt texts only):
+      1200x821 'Camunda-operate-check-details-again'
+      1200x742 'Camunda-operate-check-again'
+      1200x721 'Camunda-operate-check-details'
+      1200x683 'Start-event'
+      1200x627 'Feature image'
+      1200x510 'Camunda-operate-check'
+      1200x472 'Camunda-operate-execution-count'
+      1124x468 'Form'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS AI Task Agent] Intelligent by Design: A Step-by-Step Guide to AI Task Agents in Camunda
+  [AI-IN-PROCESS AI Task Agent] Intelligent by Design: A Step-by-Step Guide to AI Task Agents in Camunda
+  [AI-IN-PROCESS ad-hoc sub-process] Camunda has taken a systemic, future-ready approach for agentic AI by building on the proven foundation of BPMN . At the core of this approach is our use of the BPMN ad-hoc sub-process construct, which allows for tasks to be executed in any order, skipped, or repeated—all determined dynamically at r
+  [AI-IN-PROCESS ad-hoc sub-process] This pattern is instrumental in introducing dynamic (non-deterministic) behavior into otherwise deterministic process models . Within Camunda, the ad-hoc sub-process becomes the agent’s decision workspace—a flexible execution container where large language models (LLMs) can assess available actions 
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  In this step-by-step guide (with video), you’ll learn about the latest ways to use agentic ai and take advantage of agentic orchestration with Camunda today.
+  Note: This step-by-step guide takes advantage of agentic AI features and capabilities in an earlier alpha version of Camunda 8.8. Please see our latest step-by-step AI Agent Guide to implement a similar process using newer Camunda 8.8 alpha functionality.
+  Camunda is pleased to announce new features and functionality related to how we offer agentic AI. With this post, we provide detailed step-by-step instructions to use Camunda’s AI Agent to take advantage of agentic orchestration with Camunda.
+  Ready to try yourself? Build a working example in minutes with our AI Agent Chat Quick Start Blueprint.
+  We’ve extended this capability with the introduction of the AI Agent Outbound connector ( example blueprint of usage ) and the Embeddings Vector Database connector ( example blueprint of usage ). Together, they enable full-spectrum agentic orchestration, where workflows seamlessly combine determinis
+  This represents our next phase of AI Agent support and we intend to continue adding richer features and capabilities.
+  To power next-generation automation, Camunda embraces structured orchestration patterns. Camunda’s approach ensures your AI orchestration remains adaptive, goal-oriented, and seamlessly interoperable across complex, distributed systems.
+  As part of this evolution, Camunda has integrated Retrieval-Augmented Generation (RAG) into its orchestration fabric. RAG enables agents to retrieve relevant external knowledge—such as historical case data or domain-specific content—and use that context to generate more informed and accurate decisio
+  Camunda supports this with our new Embeddings Vector Database Outbound connector—a modular component that integrates RAG with long-term memory systems. This connector supports a variety of vector databases, including both Amazon Managed OpenSearch (used in this exercise) and Elasticsearch.
+  With this setup, agents can inject knowledge into their decision-making loops by retrieving semantically relevant data at runtime. This same mechanism can also be used to update and evolve the knowledge base, enabling self-learning behaviors through continuous feedback.
+  Before we step through an exercise, let’s review a quick explanation about how these new components and Camunda’s approach will be used in this example and in your agentic AI orchestration.
+  Our example model for this process is the Message Delivery Service as shown below.
+  The tasks that can be performed are located in the ah-hoc sub-process and are:
+  Request additional information (Ask an Expert) with a User Task and corresponding form.
+  Let’s take a little deeper dive on the components of the BPMN process before jumping in to build and execute it.
+  A few assumptions are made for those who will be using this step-by-step guide to implement your first an agentic AI process with Camunda’s new agentic AI features. These are outlined in this section.
+  In order to take advantage of the latest and greatest functionality provided by Camunda, you will need to have a Camunda 8.8-alpha4 cluster or higher available for use. You will be using Web Modeler and Forms to create your model and human task interface, and then Tasklist when executing the process
+  Web Modeler – the ability to create elements in BPMN and connect elements together properly, link forms, and update properties for connectors.
+
+=== POST 1263 ===
+url: https://camunda.com/blog/2023/05/human-workflow-orchestration-generative-ai-openai/
+title: Facilitating Human Workflow Orchestration with Generative AI | Camunda
+page text: 6758 characters; AI/LLM term hits: 52
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1200x474  alt='A BPMN diagram showing the evaluation process for the Community Market.'
+      src=https://cdn.sanity.io/images/12wkat9h/development/48044e1bd65762d54906118d7f57fdf8a99c5afc-1200x474.png
+      visual pass: class=bpmn ai_visible=unclear note=BPMN with tasks and gateways; labels unreadable
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS AI-bound task] With the launch of ChatGPT , everyone is talking about generative AI and what it could mean for businesses, so during a recent Hackathon, Camunda engineers built a Connector for OpenAI . The Connector is an easy way to start experimenting with ways to use ChatGPT and OpenAI’s Moderation API in your 
+  [AI-IN-PROCESS OpenAI connector] I started thinking about ways to use the OpenAI Connector, and I was inspired by my local Community Market, which just started its annual season. The Community Market is an outdoor market that’s held every Saturday morning from April through November. Vendors at the market sell a variety of products
+  [AI-IN-PROCESS OpenAI connector] Connectors are available in Camunda Platform 8, so if you’d like to start experimenting with the OpenAI Connector or any of our other built-in Connectors, create a free account today! And if you want to learn more about the architecture of Connectors, be sure to catch the replay of the 2023 Camunda 
+  [AI-AROUND-PROCESS AI-generated content] BPMN is an excellent tool for combining generative AI and human work because it allows you to combine flows where a task is executed by an AI tool with flows where a decision is made by a person. BPMN also makes it easy to enforce the requirement that AI-generated text is reviewed and validated by a
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Facilitating Human Workflow Orchestration with Generative AI
+  Facilitating Human Workflow Orchestration with Generative AI
+  Wondering how you could use generative AI for human workflow orchestration? Check out this example to learn how generative AI tools like ChatGPT could be used to make human-centric processes easier.
+  There are certain types of products that are not allowed at the market, such as alcohol, so the process uses a decision table to automatically reject vendors that want to sell these products. ChatGPT writes a rejection email based on the output of the decision table.
+  If the application doesn’t contain keywords that indicate unwanted products, a team member reviews the email and decides whether to approve or reject the application. If a decision is not made within 14 days, the team lead is notified via Slack so they can accelerate the decision.
+  If the application is approved, the process uses ChatGPT to write a description for the Community Market website, which a team member will review for accuracy. In parallel, the process uses the new Google Maps Connector to validate that the applicant’s business address exists. Finally, the applicant
+  This process leverages the OpenAI , Slack , Google Maps , and SendGrid Connectors, all of which are available out of the box in Camunda Platform 8.
+  The vendor evaluation process is ultimately a human workflow . The non-profit organization that manages the Community Market wants the final decision about whether to accept or reject a vendor’s application to be made by a person. But this example shows a few ways that a generative AI tool such as C
+  By default, OpenAI does not use data submitted via their API to train or improve their models . However, sending sensitive data over the internet to a tool such as ChatGPT carries some risk. In real-world processes, consider avoiding submitting personally identifiable information (PII) and private b
+  Adding BPMN logic to handle incorrect or missing business addresses
+  Using the OpenAI Moderation API to screen for inappropriate or harassing emails
+  Adding the Google Drive Connector to automatically create a folder where the non-profit team and the vendor can share documents
+
+=== POST 1340 ===
+url: https://camunda.com/blog/2023/10/claims-processing-automation-insurance-complete-guide/
+title: Claims Processing Automation in Insurance: A Complete Guide | Camunda
+page text: 9694 characters; AI/LLM term hits: 2
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 961x372  alt='Auto-claim-adjuster-tasks-bpmn-camunda'
+      src=https://cdn.sanity.io/images/12wkat9h/development/fabf6dd077e5679f5571fa195e51d2ca3d9b2af9-961x372.png
+      visual pass: class=bpmn ai_visible=unclear note=small model: task boxes with arrows; labels unreadable
+  figure 2: 1200x231  alt='Auto-claim-process-bpmn-diagram-basic'
+      src=https://cdn.sanity.io/images/12wkat9h/development/06376d9a5221c11b927636a9296d85019bbc2702-1200x231.png?w=1200
+      visual pass: class=bpmn ai_visible=unclear note=horizontal process, orange/blue tasks, arrows
+  other figures on the page (alt texts only):
+      739x751 'Image5'
+      1200x225 'Image3'
+      271x765 'Camunda-rest-connector'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS OpenAI connector] In this subprocess, an adjuster estimate form is generated using the Camunda Google Drive Connector with variables from the process to provide the adjuster with a template to use while performing the estimate. Camunda provides an out-of-the-box OpenAI Connector which is used to compose an email to t
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  With Camunda and process orchestration, insurance organizations can scale processes to any level. Learn how and enable claims processing automation today.
+  With Camunda powering your process orchestration , insurance organizations can create processes that can scale to any level, offering a distributed architecture designed for high transaction throughput. Camunda supports long running, end-to-end workflows using open-standard BPMN diagrams, allowing b
+  Once you have a solid understanding of the existing process, it is important to map out the claim process with the involved business units. Most organizations start simple and then continue to enhance the process to incorporate additional enhancements to your orchestration.
+  This process, represented in Camunda Modeler , shows user tasks in yellow, subprocesses in blue and Connector tasks in green. This diagram illustrates the involvement of the following:
+  Well-orchestrated automated insurance claims processing
+  Let’s dissect this process and how it orchestrates the automobile claim process as implemented with this Camunda process diagram.
+  The process accesses the Policy Administration System using a REST Connector to confirm that the policy exists in the system. Based on the response, the claim process will be initiated as shown in the top branch, or it will require manual verification in the Claims Department to confirm the policy i
+  Using Camunda’s UiPath RPA Connector , a new claim number is generated in the mainframe Claims Management System. In order to properly manage claim cases, Camunda tightly integrates all systems involved in the claims process to provide a holistic view of the customer, the policy and the claim at all
+  In this media age, customers want to opt into status notifications. For this implementation, the process takes advantage of the reuse of subprocesses to provide those notifications as shown by the “notify” blue tasks in the model. The insured is notified throughout the process using both Camunda’s S
+  Using business rules implemented with Decision Model and Notation (DMN) the correct adjuster is selected based on the vehicle and geographical location of the claimant. The adjuster tasks are provided in another subprocess.
+  Simultaneously, a Slack message is made using an out-of-the-box Slack Connector . The adjuster accesses a form that provides a link to the adjuster estimate template created and provides a location to enter the final estimate figure and any specific comments using a human task.
+  Camunda provides the ability to save Connectors as templates so that the required fields are pre-populated to minimize the need to recreate them each time a configured Connector is utilized within a process.
+  When these branches merge, payment is sent through the Accounting Payment System to the claimant which is implemented as a service task —showing just another method that Camunda offers to integrate systems in your process.
+  Finally, the Claims Management System is updated with the final results of the claim making sure that all systems are properly orchestrated to manage the claim case.
+  With a competitive insurance market, organizations must provide a quick and elevated response to claims for customer retention. With a well-orchestrated process, including different messaging options to keep claimants informed, claims can be processed more efficiently and faster. This not only impro
+  Try process orchestration and automate insurance claims today
+  Learn more about how process orchestration can help make your insurance organization run more efficiently and reduce costs, and get started with a free trial today.
+  Process orchestration for insurance Start a free trial of Camunda
+
+=== POST 1376 ===
+url: https://camunda.com/blog/2024/01/creating-engaging-trivia-experiences-developers-perspective/
+title: Creating Engaging Trivia Experiences: A Developer's Perspective | Camunda
+page text: 5607 characters; AI/LLM term hits: 9
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1999x716  alt='Trivia-question-final-bpmn-model'
+      src=https://cdn.sanity.io/images/12wkat9h/development/632eefae74340bdcfef84999ed2b9b6df2ced2aa-1999x716.png
+      visual pass: class=screenshot ai_visible=no note=dark UI; process diagram with panels
+  figure 2: 1982x697  alt='Trivia-question-final-bpmn-model-optimize'
+      src=https://cdn.sanity.io/images/12wkat9h/development/212788d774bed7e31af16f577bfe5eb9dba0fc6d-1982x697.jpg
+      visual pass: class=bpmn ai_visible=unclear note=green-highlighted tasks and arrows
+  other figures on the page (alt texts only):
+      1883x635 'Basic-trivia-bpmn-model-plus-openai'
+      1999x559 'Basic-trivia-bpmn-model'
+      1200x627 'Creating Engaging Trivia Experiences: A Developer’s Perspective'
+      1032x547 'Trivia-question-form-translation'
+      997x458 'Trivia-question-form-hint'
+      1081x393 'Trivia-question-form-translated'
+      781x530 'Trivia-question-bpmn-model'
+      1012x373 'Trivia-result'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS call to an LLM] One of the first things someone pointed out was that manually checking the answer was annoying. Initially, I did this because people might misspell the answer or it might be close enough to be considered a correct answer. Either way, it was going to be hard to automate that. However, I gave it some 
+  [AI-IN-PROCESS OpenAI connector] I used the OpenAI connector and added the prompt:
+  [AI-IN-PROCESS call to an LLM] The hint was done in the same way—if a user needed a hint, they’d just tick the box and I would ask ChatGPT for a hint to the answer of the question. I also asked that emojis be included.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  I arrived with a very basic model that I had actually built at another conference.
+  A user is asked to enter a category for the trivia question. Then, a REST Connector is used to query a service that returns a question and its answer. The user then sees the question, types in their answer, and it will show the user both the answer they gave and the answer that was provided by the s
+  What’s also quite interesting is how this ended up looking from a BPMN perspective:
+  The model is built so people can ask for multiple hints or have it translated into different languages; only when they get bored or want to guess the answer does the process proceed to the most exciting part of any trivia game—finding out if you’re winning!
+  I continued to add smaller features as the conference went on, including a timer to make sure people answered faster, and generating some words of encouragement for folks who lost the game. In the end, the model looked like this:
+
+=== POST 1390 ===
+url: https://camunda.com/blog/2026/05/key-principles-in-designing-agents-for-production-part-1/
+title: Key Principles in Designing Agents for Production – Part I | Camunda
+page text: 4927 characters; AI/LLM term hits: 30
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1836x780  alt='Fig 3 – Agentic and deterministic orchestration combined in a single end-to-end process'
+      src=https://cdn.sanity.io/images/12wkat9h/development/6bcf8176a83ccd5f5436ff06311b576b80406e89-1836x780.png
+      visual pass: class=bpmn ai_visible=unclear note=rounded tasks with icons and arrows; labels unreadable
+  figure 2: 1408x768  alt='Camunda agent architecture: LLM as decision-maker, Zeebe as executor'
+      src=https://cdn.sanity.io/images/12wkat9h/development/dc8422a876b8e7b1d331347af97f5f0b38d682b4-1408x768.png
+      visual pass: class=other-diagram ai_visible=yes note="Process Agent"; LLM Reasoning, Zeebe, brain
+  other figures on the page (alt texts only):
+      1383x730 'Fig 2 – Dynamic orchestration: invoice dispute resolution with agentic tasks'
+      1791x541 'Fig 1 – Deterministic orchestration: invoice approval BPMN process'
+      1200x627 'Key Principles in Designing Agents for Production – hero image'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Take a look at our journey toward designing and building agentic orchestration at Camunda.
+  Camunda released the first iteration of agentic orchestration in early 2025 and, since then, we've worked with over 130 customers to explore the potential of this technology. This led to more than 30 working prototypes aimed at production, spanning different industries, use cases, and requirements. 
+  An end-to-end business process will contain two categories of orchestration. Most common are the aspects of the process that are predictable and repeatable: deterministic orchestration.
+  Here, you can easily describe the state transitions from one point to the next and therefore model those expected transitions in BPMN with tasks, gateways, and events. This is probably what you think about when you think about a business process. An invoice needs to be approved and there are specifi
+  The second category is the unpredictable and variable: dynamic orchestration. These aspects of a process often have too high a variety of potential outcomes and/or inputs, such that modeling them can either be impossible or impractical.
+  In the past, this category would be solved with case management. This aims to give visibility into the execution but is often unable to add any value in automation or efficiency, because case management requires a human user to move the process forward, make decisions, and understand the context. Th
+  Invoice dispute resolution is a good example of where agentic orchestration can help. Details of a dispute can vary greatly, and how those disputes are resolved can be unpredictable. So instead of attempting to model the steps involved, you simply model the tasks and flows that may be required and t
+  Agentic orchestration blends the dynamic use cases with deterministic ones so that you have a complete process spanning both methods of orchestration end to end. It's still part of the same process engine. When thinking about how this works in reality, it's best to imagine these two aspects of proce
+  Agents are first-class citizens in the Camunda ecosystem; they benefit entirely from the existing feature set of Camunda's engine. They also slot into the fundamentals of what Camunda is solving: a transparent, reliable end-to-end process orchestrator. In this ecosystem, the agent is intended to be 
+  Because a process agent is an extension of the process engine's responsibilities, there are specific design principles that should be adhered to in order to ensure reliable and maintainable execution. By designing the agent in BPMN, the agent itself is scoped as a subprocess—specifically an ad hoc s
+  It's very important to understand that each agent orchestrator built in Camunda has two participating actors working together to make the process run:
+  The LLM focuses entirely on the reasoning related to how the process should proceed and gives the orders, determining which tools need to be executed to move closer to solving the goal.
+  The Camunda engine (Zeebe) is responsible for the execution of those orders, running the tools and returning the results to the LLM.
+  Coming up next in this blog post series, I'll be exploring in detail the best practices for designing agents, how tool calls should be designed and implemented, and once all that is up and running, how to guardrail your agents.
+
+=== POST 1392 ===
+url: https://camunda.com/blog/2026/06/key-principles-in-designing-agents-for-production-part-3/
+title: Key Principles in Designing Agents for Production – Part III | Camunda
+page text: 7597 characters; AI/LLM term hits: 51
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 903x923  alt="Overview of tool options available within a Camunda agent's ad hoc subprocess"
+      src=https://cdn.sanity.io/images/12wkat9h/development/580599f0c60ddb06862067824e2be94eca8767d2-903x923.png
+      visual pass: class=bpmn ai_visible=unclear note=small box/flow diagram on page; labels unreadable
+  figure 2: 1200x627  alt='Key Principles in Designing Agents for Production Part III – hero image'
+      src=https://cdn.sanity.io/images/12wkat9h/development/b0e49931f04683770585920ba645c0fa96ef556e-1200x627.png
+      visual pass: class=card ai_visible=no note="Key Principles ... Part III: Agent Tooling"
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS call to an LLM] Once a tool finishes being executed, the process engine wraps up and passes the value of the "toolCallResult" variable to the LLM. What this means is an opportunity to catch the output of the tool and parse that in order to find only the pieces that are relevant to helping the LLM solve its goal. It
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Understand exactly how to design and implement an agent's tools for a full picture of Camunda agentic design.
+  When building an Agent in Camunda, the LLM configuration is intended to be independent of the configuration of individual tools. This means that there should be no dependencies at the configuration level between the LLM and any specific tool. This is because at run time the engine itself will gather
+  The idea behind this is that the LLM's own configuration may have something like, "Make sure you communicate any status change to the customer," while the tool set available could have one that says, "Use this tool in order to send an email to a customer," and another that says, "Use this tool to se
+  So when configuring tools themselves, it should always be enough to simply explain what the tool really does rather than explain anything about why the tool should be used.
+  When building an Agent in Camunda, you might conflate the idea that an agent tool = a BPMN task. While that is sometimes the case, a task is only a subset of the options available as agent tools. They can be a series of tasks, subprocesses, or even events to be triggered or waited for. The options a
+  The illustration below showcases some of the options that you should be aware of. (Note: the dash-dot line here is only to illustrate the scope of a given tool and it's not required for the agent to run)
+  Any given tool, when added to the ad hoc subprocess (and therefore the agent's context), needs up to three different configurations. That's true no matter what the tool does or how the tool is built. Those three configurations are as follows:
+  Element Documentation: This could be considered an addition to the system prompt, but instead of defining concepts at a high level, it's a low-level natural language description of what the tool is used for and any pertinent requirements or restrictions for its use.
+  It can be as simple as "Use this tool in order to send a communication to the client," or depending on the requirements could also include prerequisites: "Use this tool in order to send an email to the client. Ensure the customer data has been validated before using this tool and all communication p
+  Agent Input: The vast majority of tools in the agent's context will require some kind of input when called upon. In some cases, a tool will require that an agent add some specific data itself (e.g., search criteria). If you've been paying attention — this means that the agent has either found some d
+  Because we're talking about a process here, there are two buckets of data we need to think about: the global process scope and a subset of that, the agent context. The process instance will always have access to all data known by the process, while the agent context only knows what you decided to te
+  But once you've established that the agent is indeed required in order to populate the input of the tool, you need to understand the FEEL function fromAI(). This is just a way of telling the agent how to create the variable that's needed. For example, a tool needs the name of the customer:
+  Copy fromAI(toolCall.customerName, "this is the name of the customer you're searching for") But this function can be far more useful because it is also a great place to put safeguards, restrictions, and requirements. When an agent reads the element documentation and decides on a tool to use, it also
+  Tool Output: It's easy to take for granted that when a tool finishes you can simply dump the result of the tool back to the LLM by putting it in a variable called "toolCallResult." What can often be forgotten are the details of how that variable is returned, because this can give you a lot of power 
+  This feature is particularly useful when dealing with sensitive data that you may not want passed to the LLM. Let's say you're doing a customer search: you enter the customer's name, and what the LLM needs is just the customer number — but lo and behold, the result of the tool is actually a whole bu
+
+=== POST 1393 ===
+url: https://camunda.com/blog/2026/06/key-principles-in-designing-agents-for-production-part-4/
+title: Key Principles in Designing Agents for Production – Part IV | Camunda
+page text: 5202 characters; AI/LLM term hits: 41
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1677x892  alt='Timing and event restriction patterns using BPMN timer and signal events'
+      src=https://cdn.sanity.io/images/12wkat9h/development/447494f6efd88ed463acbb7a00e75ce0a3905705-1677x892.png
+      visual pass: class=bpmn ai_visible=unclear note=tasks and flows with annotation text; unreadable
+  figure 2: 1120x586  alt='Tool gatekeeping pattern: human task placed before an action task within a tool flow'
+      src=https://cdn.sanity.io/images/12wkat9h/development/85c8f98769add2c0f02d221466aac0aa70504a95-1120x586.png
+      visual pass: class=bpmn ai_visible=unclear note=pink/purple task boxes with arrows
+  other figures on the page (alt texts only):
+      1200x627 'Key Principles in Designing Agents for Production Part IV – hero image'
+      1135x430 'Agent success evaluation pattern: optimal, suboptimal, and acceptable outcome flows'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS call to an LLM] You can take advantage of this when it comes to protecting important systems from weird LLM behavior while still technically giving the LLM the ability to use such tools. In most cases, this is where you'd put a human user in front of the action task — ensuring that all attempts to trigger the actio
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Learn how to protect your Camunda agents in production with BPMN-based guardrails, tool gatekeeping, agent success evaluation, and timing restrictions.
+  Sure, it might be able to update a customer record when needed, but what are the consequences of it making an update when it shouldn't? You need to be able to identify the parts of the agent you've designed where the consequences of poor decision-making could result in permanent repercussions and ad
+  We've already talked about how you can add certain restrictions or procedures as part of configuring the LLM or the tools, but that is not the only way you can ensure a safer execution. Using BPMN patterns is an ironclad way to prevent a lapse in judgment by the agent causing issues within the syste
+  While everything you place inside the ad hoc subprocess is a tool that the agent can execute, it's important to remember that it can only start tools from the beginning of a flow. This means that if you connect two or more tasks together, it's still one single tool, but it can only be initiated from
+  An agent has no real understanding of time. A problem that takes 20 iterations by the LLM might only last 10 minutes, but another problem that is only on its 2nd iteration could have been running for days. The LLM itself has no concept of this — but the process engine does, and because of this you c
+  Camunda uniquely builds long-running agents, and this means that things that affect what the agent is working on could happen while a request is in flight. Using non-interrupting events, you can trigger an agent to update its context if it's dealing with stale data, or perhaps the job it's working o
+  For instance, as we learned in the system prompt section, it's really important to explain to an agent how it should properly fail. One great way of doing that is by letting it trigger an event that cancels itself, like an escalation event.
+
+=== POST 1399 ===
+url: https://camunda.com/blog/2026/08/can-ai-design-an-enterprise-process-as-well-as-a-human/
+title: Can AI Design an Enterprise Process as Well as a Human? | Camunda
+page text: 12916 characters; AI/LLM term hits: 83
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 2048x801  alt='Example of a diagram by a human'
+      src=https://cdn.sanity.io/images/12wkat9h/development/18f7210636a0dd0bf5f877ad1ec263f3dba0856e-2048x801.png
+      visual pass: class=bpmn ai_visible=unclear note=purple rounded tasks, connectors, callout
+  figure 2: 1491x905  alt='Prompt for creating a process'
+      src=https://cdn.sanity.io/images/12wkat9h/development/53b7b344a4b678e05987c70874382da8cd2f9649-1491x905.png
+      visual pass: class=screenshot ai_visible=no note=rendered letter text "Evening, Marita"
+  other figures on the page (alt texts only):
+      1901x704 'Form generated by AI'
+      1907x692 'DMN generated by AI'
+      2048x558 'Resulted BPMN by AI'
+      1452x736 'Claude setup from CMD'
+      1070x994 'Observe while running a skill'
+      2048x518 'BPMN designed by a human'
+      2048x444 'BPMN diagram generated by AI'
+      1196x396 'Uploaded skills in Claude'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS Anthropic/Claude] I used Camunda's published open-source AI Skills with Claude to evaluate the underlying ProcessOS concept on my own process models. After running this experiment, I came to a different conclusion. In my experience, the quality of the result depends much more on how well the AI agent is designed, how
+  [AI-IN-PROCESS Anthropic/Claude] I wanted to test this myself. I took Camunda's open-source AI skills, compatible with Claude Code, the Claude desktop app, Cursor, GitHub Copilot, and other AI agents, and two processes I had already designed by hand before this experiment:
+  [AI-IN-PROCESS ad-hoc sub-process] Both are built on the same principle: the agent reasons inside an ad-hoc sub-process, while everything around it stays deterministic and controlled—auditable end to end.
+  [AI-IN-PROCESS Anthropic/Claude] To keep the experiment clean, I ran Claude from the command line, locally on my machine, instead of the usual chat interface. I cloned the camunda/skills repo and gave it a simple brief:
+  [AI-AROUND-PROCESS AI Skills (coding assistance)] A practical look at where AI skills accelerate process orchestration and where human judgment still matters: I gave Camunda’s open AI skills two processes I had already designed by hand, then compared the architecture, trade-offs, and results.
+  [AI-AROUND-PROCESS AI Skills (coding assistance)] I used Camunda's published open-source AI Skills with Claude to evaluate the underlying ProcessOS concept on my own process models. After running this experiment, I came to a different conclusion. In my experience, the quality of the result depends much more on how well the AI agent is designed, how
+  [AI-AROUND-PROCESS Camunda Copilot] I wanted to test this myself. I took Camunda's open-source AI skills, compatible with Claude Code, the Claude desktop app, Cursor, GitHub Copilot, and other AI agents, and two processes I had already designed by hand before this experiment:
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  After 10 minutes and 5 seconds, I had three files: a BPMN process, a DMN decision table, and a form for human review.
+  Number of tasks inside the agent (7 vs. 4). In my version, I broke the steps into more granular units: a separate step for "check warehouse quota," a separate one for "get carrier SLA," and so on. The skill merged some of these into broader tool calls. Both approaches work: more tools mean more obse
+  Explicit reject path. My manual version had no separate branch for when the agent can't find a suitable alternative. The skill added one on its own—an objective improvement, since it caught an edge case I missed on my first pass. But adding the branch isn't the same as deciding where it should lead:
+  Scenario: A customer is about to travel. The AI agent analyzes the trip and prepares a personalized offer while ensuring it complies with business rules.
+  AI agent analyzes the trip, predicts acceptance, and generates the best offer.
+  What came out: 17 minutes, a complete agentic workflow
+  After 17 minutes, almost twice as long as the first test, but the diagram is also almost twice as complex—the skill returned a finished BPMN diagram right in the chat. I watched the whole process: the agent reading the uploaded skills, designing the process structure, writing the BPMN XML, validatin
+  The logic: the agent can signal "I need a human" at any point during its run, without waiting for all internal steps to finish. If risk becomes obvious as early as the "Check risk and limits" step, there's no point burning two more LLM calls on "Generate Offer" and "Predict Acceptance"—architectural
+  The skill instead placed a plain exclusive gateway after the agent finishes—meaning the agent runs through all its steps first, and only then does a separate check to see whether the risk score came back high.
+  Both approaches work and are both architecturally sound—this isn't a mistake by the skill, just a different trade-off. A check-after-the-fact is simpler to model, simpler to test, and simpler to explain in an audit: one single decision point, instead of an agent that can "interrupt itself" at an arb
+  And deciding what matters more here: faster agent reaction and LLM savings, or audit simplicity and predictability for the compliance team, is a call only a human can make, someone who understands both sides of the trade-off and knows this particular business's priorities.
+  Taking a process from structurally correct to actually right for the business is still work for someone who understands both the business process and the modeling tool it's built with.
+  Turning a modeling skill built up over years of manual work into something coded, reusable, and instantly reproducible is a real step forward for process orchestration as a field.
+
+=== POST 1405 ===
+url: https://camunda.com/blog/2026/09/where-ai-really-creates-value-and-where-it-doesnt/
+title: Where AI Really Creates Value and Where It Doesn't | Camunda
+page text: 11779 characters; AI/LLM term hits: 83
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 2046x612  alt='Process using multiple mechanisms'
+      src=https://cdn.sanity.io/images/12wkat9h/development/f89ae1ed4fb408e3d6a3eae69af0fcf9f3475504-2046x612.png
+      visual pass: class=bpmn ai_visible=unclear note=tasks and gateways with arrows; unreadable
+  figure 2: 634x606  alt='The building blocks of orchestration: APIs, Scripts, Connectors, Human tasks, DMN, AI'
+      src=https://cdn.sanity.io/images/12wkat9h/development/382c81f7208403df0d93cb5fdc1f76e804a437fe-634x606.png
+      visual pass: class=other-diagram ai_visible=unclear note=coloured block/hexagon diagram; unreadable
+  other figures on the page (alt texts only):
+      1280x199 'Timeline from 2023 to 2025'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS AI-bound task] Its job is to pick the best-fitting mechanism for each step of a process: DMN, API, Connector, User Task, or AI Agent.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  LLMs have become easier to access, model quality keeps improving, and new AI features show up almost every month. Against that backdrop, the question of “can we” naturally stops being the main one.
+  For process orchestration, this difference matters a lot.
+  The job of orchestration isn't to use AI as often as possible. Its job is to pick, for every step of a process, whichever mechanism creates the most value for the business.
+  Need to sort a document into a category? Use an LLM.
+  Need to figure out what a request is about? Use an LLM.
+  Pic.2- The building blocks orchestration chooses from—AI is only one of them
+  That's exactly why AI isn't a competitor to, say, DMN, and it isn't a replacement for an API. It's just one more tool for the architect.
+  Good architecture uses the strengths of every tool
+  If needed, an AI agent asks follow-up questions and pulls all the information together.
+  The customer is notified of the claim decision.
+  Pic.3- Four mechanisms in one process, each one handles its own part of the decision.
+  This kind of hybrid approach is exactly what lets you use each tool's strengths, while still keeping the whole decision logic clear and under control.
+  Orchestration ties all these mechanisms together into one process that can be managed and governed.
+  Someone now needs to manage prompts, check answer quality, track model versions, build monitoring, run regression tests, keep things observable, and meet security and compliance requirements.
+  So the cost of AI isn't the cost of a single call to a model. It's the cost of owning the whole AI component — and, more importantly for whoever is responsible for it in production, the cost of how manageable and explainable it still is a year from now.
+  Every step in a process has a cost. But that cost isn't just about building it. Every architecture decision is an investment. And every use of AI has to justify the extra complexity it brings.
+  There's no such thing as free AI. Even if the model itself is free, the organization starts paying for complexity instead.
+  Because the goal of process orchestration isn't to maximize how much AI you use. Its goal is to maximize the business value of the process.
+
+=== POST 1410 ===
+url: https://camunda.com/blog/2026/07/why-bolting-langchain-onto-a-workflow-engine-backfires-at-scale/
+title: Why Bolting LangChain onto a Workflow Engine Backfires at Scale | Camunda
+page text: 29597 characters; AI/LLM term hits: 215
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1725x976  alt='Inner and outer orchestration in a loan origination process. The orange frame shows outer orchestration: BPMN coordinates the end-to-end journey. The blue frame, nested inside the agent, shows inner orchestration: every tool invocation flows through the engine before it executes'
+      src=https://cdn.sanity.io/images/12wkat9h/development/1af8295853ceb08fe31ef32af4fe2ffde62deecf-1725x976.png
+      visual pass: class=bpmn ai_visible=unclear note=lanes with orange task boxes and gateways
+  figure 2: 1500x766  alt="A loan support agent in Camunda Modeler. The ad-hoc subprocess (purple star) is the agent's reasoning space. The boxes inside are its tools—real BPMN activities the LLM can invoke. The system prompt is visible in the properties panel, nothing is hidden."
+      src=https://cdn.sanity.io/images/12wkat9h/development/aeb8861d3c15eba80cd8c1c99f5c5850f8dfb86d-1500x766.png
+      visual pass: class=screenshot ai_visible=no note=modeler UI; diagram with side panels
+  other figures on the page (alt texts only):
+      1444x701 'Processes designed around human limitations look completely different when redesigned around AI capabilities.'
+      1427x688 'Bolt-on means requests; integrated means enforced at execution.'
+      1444x558 'In a bolt-on architecture, reconstructing what happened in a single case means correlating logs across three separate systems. At enterprise scale, that cost compounds with every agent added.'
+      1234x614 'A workflow engine calling an agent framework calling an LLM'
+      1376x301 'The boundary between deterministic and agentic work is never where you first draw it. On a single platform, moving it is a model edit. In a bolt-on architecture, it is a migration project—which is why most teams leave it where it started.'
+      563x639 'Blot-on: Agent context lost on every back and forth'
+      520x547 'Integrated: Agent context lives in the process instance'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS call to an LLM] The bolt-on architecture: a workflow engine calling an agent framework calling an LLM.
+  [AI-IN-PROCESS ad-hoc sub-process] If that's still abstract, here's how it actually works in Camunda. The agent is a BPMN ad-hoc subprocess , a standard BPMN construct that contains activities which can be executed in any order, repeated, or skipped, rather than in a predefined sequence. You configure the subprocess as an AI agent by
+  [AI-IN-PROCESS ad-hoc sub-process] A loan support agent in Camunda Modeler. The ad-hoc subprocess (purple star) is the agent's reasoning space. The boxes inside are its tools—real BPMN activities the LLM can invoke. The system prompt is visible in the properties panel, nothing is hidden.
+  [AI-IN-PROCESS ad-hoc sub-process] The agent is the ad-hoc subprocess (the purple star). It's the reasoning space.
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Most of these organizations already have workflow automation in place. Sometimes Camunda, sometimes something else, often multiple things in the same organization. So the quick-fix architecture is obvious: take the existing workflow engine and bolt AI onto it. In essence, that means calling agents a
+  Context lives in the agent framework and gets lost on every back and forth. When agents need to talk to humans or wait for events, you either return to the workflow engine and lose the agent's context on every round-trip, or you rebuild durable state, timers, versioning, and operational tooling insi
+  Tool governance is scattered across systems. The bolt-on architecture already has two different ways tools get invoked: in the workflow layer, calls are explicit BPMN activities you can see and govern; in the agent layer, the LLM decides dynamically which tool to call and with what arguments. Could 
+  The audit trail spans multiple systems. Logs are scattered across at least three systems: the workflow engine, LangChain, and the LLM itself. Reconstructing what actually happened in a given case means correlating across all three.
+  You end up using AI in an existing process instead of rethinking the process. The biggest wins usually come from redesigning a process around the new AI capabilities from scratch, not from dropping an agent into a step of a process that was designed for a world without those capabilities. That redes
+  The boundary between deterministic and agentic work needs to move easily, and bolt-on architectures make that expensive. As you learn more about a process, you'll want to convert agentic steps into deterministic rules, or the reverse. On a single platform, that is simply a model edit, and the techno
+  Before going further, I need to introduce a concept which is important to all those questions. When you introduce agents into enterprise processes, orchestration is needed at two distinct levels. We call them outer and inner orchestration.
+  Outer orchestration is what most people think of first. BPMN coordinates the end-to-end business journey, from initial request to final outcome, across enterprise systems, agents, and people. Agents participate in this flow, but they don't get to change its shape.
+  Inner orchestration is the one that tends to be missed. Here, BPMN defines the operating procedures between an agent's reasoning and its tools . Every tool invocation flows through explicit orchestration, so you can enforce guardrails, inject human review when needed, or adjust autonomy levels witho
+  Together, these two patterns are what we call agentic BPMN : outer orchestration coordinating the journey, inner orchestration governing the agent, both on the same engine, in the same model. It's covered in much more depth in the book I'm currently writing, Agentic Orchestration , which is availabl
+  Inner and outer orchestration in a loan origination process. The orange frame shows outer orchestration: BPMN coordinates the end-to-end journey. The blue frame, nested inside the agent, shows inner orchestration: every tool invocation flows through the engine before it executes.
+  The activities inside the subprocess become the agent's tools: each one is a real BPMN activity with a name and a description that the LLM uses to decide which tool to call. When the agent runs, the LLM picks the tools and the workflow engine executes them, with the durability, governance, and audit
+  The system prompt is plain text, visible right in the modeler. Nothing hidden behind the scenes.
+  The tools are the boxes inside: preconfigured BPMN activities the agent can invoke, such as asking the customer, querying a knowledge base, consulting a loan specialist, loading available products, calculating repayments and affordability, or kicking off a full consumer loan application as its own s
+  Inside the subprocess, the LLM reasons over these tools and decides what to invoke and in what order. Outside it, the process is deterministic. The agent reasons, the tools act, and the process orchestrates both.
+  One thing worth emphasizing, because it shapes a lot of what follows: when both patterns live on the same engine, you can move the boundary between deterministic and agentic behavior easily, on the same model, without rebuilding anything. We come back to this throughout the post, since it's how you 
+  Beyond that, LangChain offers useful scaffolding: prompt templating, chain composition, standardized patterns for tool calling, and ecosystem integrations. It implements common agent loop patterns so you don't have to. And it has momentum. Engineers know it, examples exist, and that matters.
+  We're not going to pretend none of that is useful. We are going to argue that if your goal is running agents in production at enterprise scale, LangChain sitting between your workflow engine and your LLM is the wrong place to put the orchestration responsibility. A lot of what you think you need Lan
+
+=== POST 1413 ===
+url: https://camunda.com/blog/2026/08/from-weeks-to-days-what-camundas-ai-skills-actually-saved-me/
+title: From Weeks to Days: What Camunda's AI Skills Actually Saved Me | Camunda
+page text: 11371 characters; AI/LLM term hits: 84
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1354x1061  alt='An HTML portal that starts Camunda process instances upon submission'
+      src=https://cdn.sanity.io/images/12wkat9h/development/30fbbe19485d22831cc7ab3a3f4da36c1f8498d9-1354x1061.png
+      visual pass: class=screenshot ai_visible=no note=portal form/table with orange button
+  figure 2: 2048x596  alt='The resulting policy change process'
+      src=https://cdn.sanity.io/images/12wkat9h/development/a0bf9ad0ac0802e1d81b6796a8f277a2fa3596af-2048x596.png
+      visual pass: class=bpmn ai_visible=unclear note=pink/purple task boxes with arrows
+  other figures on the page (alt texts only):
+      1637x1026 'AI Agent Token Metrics with Optimize'
+      1544x1020 'AI Agent Tool Optimize dashboard showing tool calls made by agents'
+      1417x688 'HTML portal for risk and AI operations for token usage and costs'
+      1817x498 'A DMN decision table for deciding on risk'
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS Anthropic/Claude] Two weeks ago, I needed to build an end-to-end full Policy Change for automobile insurance process with AI agents. My deadline was pretty tight, so I thought, “What if I can use Claude Code to get this done quickly?”
+  [AI-IN-PROCESS Anthropic/Claude] I'd done something similar before on a much smaller scale before. An AI agent with a couple tools. It worked, but it was time consuming with quite a bit of back and forth to get things correct. I had to explain BPMN, FEEL, DMN, give links to documentation, and more to obtain what I needed. In that c
+  [AI-IN-PROCESS Anthropic/Claude] But this time, I decided to try something different. I took advantage of Camunda’s AI Skills with Claude Code and it completely changed the experience. I want to walk through what that changed for me using the real process that was built.
+  [AI-IN-PROCESS Anthropic/Claude] These skills aren't a Camunda-only trick baked into one vendor's assistant. They work with Claude Code , Cursor , GitHub Copilot , Codex , Gemini CLI , and any other compatible AI coding agent. You already picked a coding assistant. You don't have to switch it to work with Camunda skills.
+  [AI-AROUND-PROCESS AI Skills (coding assistance)] From Weeks to Days: What Camunda's AI Skills Actually Saved Me
+  [AI-AROUND-PROCESS AI Skills (coding assistance)] A first-hand account of building a real Camunda 8 process with the official AI Skills, and exactly which skill fixed which problem, from gateway conditions to agent tool wiring.
+  [AI-AROUND-PROCESS AI Skills (coding assistance)] From Weeks to Days: What Camunda's AI Skills Actually Saved Me
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Agentic Orchestration , Engineering Excellence
+  So, why do AI tools fall short when it comes to “building something real”? You need to have a process model that’s structurally correct (for Camunda, in BPMN), decisions that route the right way under the right conditions (using DMN and FEEL with Camunda) and resolve for any inputs. Then, if you are
+  Camunda is the enterprise platform for agentic orchestration. We orchestrate agents, people, and systems across end-to-end business processes. Organizations are deploying AI agents at a record pace, but 85% lack the process maturity to coordinate them safely at scale ( State of Agentic Orchestration
+  BPMN is the open standard for modeling a business process as a diagram.
+  But the problem is that without domain knowledge already available in your AI tool, every session starts from zero. You paste in doc links. If your routing logic is wrong, you fix it. If the model doesn’t learn, you fix it again. This week alone, you fixed the same routing error three times. You're 
+  camunda-bpmn — create and edit BPMN 2.0 process models
+  camunda-ai-agents — construct agents inside a BPMN process
+  Each skill is scoped, so your AI agent applies the right knowledge at the right moment instead of dumping everything it knows on you.
+  Flagging an expert (human-in-the-loop) when unsure of steps to take
+  Based on the changes, binds the policy and tracks to a second AI agent to build a path for upselling new offerings
+  The process itself took shape in Modeler exactly the way I described it: submit a change, route by risk, land on a review step before anything's applied. The agent can call a human gate tool when it needs expert input before proceeding. That's orchestration from the inside.
+  Part of the routing runs on a real decision table (DMN), not buried logic. By taking in risk scores, motor vehicle lookup results, comprehensive loss underwriting exchange results, and additional criteria, a decision risk is determined using business rules.
+  AI Agent Tool Optimize dashboard showing tool calls made by agents
+  Because fixing the process was the exception when using the Camunda Skills, I wasn't spending my hours fixing gateway conditions or debugging agent tool calls. That time was well spent elsewhere. I was able to build the following:
+  Yes, I did build this process and all its features for a demonstration, but nothing about it is demo-only. What makes a gateway condition correct under deadline pressure is the same thing that makes it correct running in production for a thousand instances a day. What makes an AI agent's tool wiring
+  The skills didn't know or care whether I was building a demo or something that ran in production. They applied the same BPMN, DMN, FEEL, and agent rules either way. That's the point. The skills enable development acceleration. If you can accelerate your development, weeks of build time turn into day
+  Start with something you already understand. A process you'd normally model yourself is the best test, because you'll know immediately if the output is right.
+  Camunda has spent years making process orchestration something you can trust at enterprise scale. Now your AI coding agent gets to build on that same foundation, correctly, from the first prompt.
+
+=== POST 1434 ===
+url: https://camunda.com/blog/2026/08/three-ways-camunda-speaks-mcp-and-why-the-direction-matters/
+title: Three Ways Camunda Speaks MCP (And Why the Direction Matters) | Camunda
+page text: 8714 characters; AI/LLM term hits: 37
+model links (.bpmn/.dmn/.cmmn) found on the page: none
+
+--- FIGURES (in the order the record may capture them: figure 1 is the one the
+    visual pass judged, and the one to capture unless it is unreadable) ---
+  figure 1: 1416x937  alt='Diagram showing Camunda cluster with three doorways for working with MCP'
+      src=https://cdn.sanity.io/images/12wkat9h/development/b23fc74bd5958c61c2673f836b790c3ccfa78f1a-1416x937.png
+      visual pass: class=other-diagram ai_visible=unclear note=boxes: Tasklist, Zeebe Cluster, Operate, Identity
+  figure 2: 1291x731  alt='Human in the loop pattern'
+      src=https://cdn.sanity.io/images/12wkat9h/development/48dbe621dc08791278061a186746c34edb5fd315-1291x731.png
+      visual pass: class=bpmn ai_visible=unclear note=pool with tasks, gateways, green annotation boxes
+
+--- THE LINES THE AI JUDGEMENT RESTED ON (verbatim from the saved page) ---
+  [AI-IN-PROCESS AI Agent connector] This pattern is Camunda as an MCP client . It lives inside the AI Agent connector's ad-hoc sub-process model. You give an LLM-backed agent a set of tools to choose from, and one (or several) of those tools can be an MCP Client connector pointing at any external MCP server—a filesystem, a search inde
+  [AI-IN-PROCESS AI Agent connector] In the demo video : Handle Flight Disruption wraps an AI Agent connector in an ad-hoc sub-process with two MCP tools available to it: find_alternate_flights on a flight-status MCP server, and find_overnight_hotel on a hotel MCP server. The agent gets the disrupted flight and decides what it needs. S
+  [AI-IN-PROCESS ad-hoc sub-process] The architecturally interesting bit is exactly that: Camunda doesn't hide "which tool did the agent pick" inside a black box. It's modeled as a BPMN ad-hoc sub-process, a set of tools the agent selects from at runtime, so tool selection is a visible, auditable part of the process rather than a hidde
+  [AI-IN-PROCESS MCP/A2A connector] For more information, please see our documentation: MCP Client · MCP Client connector · MCP Remote Client connector
+
+--- FURTHER PAGE TEXT THAT NAMES THE PROCESS ELEMENTS ---
+  Agentic Orchestration , Process Orchestration , Releases
+  Note: This blog assumes that you are familiar with Camunda, BPMN, and connectors.
+  Model Context Protocol gets pitched as one thing: a standard way to connect an AI model to tools. That framing is fine until you try to place a process orchestration platform, like Camunda, inside it, because Camunda doesn't sit on one side of that connection. It sits on all three.
+  The useful question isn't "does Camunda support MCP?" It's who is asking whom . Depending on the answer, you get a completely different architecture, a different set of use cases, and a different mental model for what "AI agent" even means inside an enterprise process.
+  For cases where an agent's actions need a checkpoint, there's also a human-in-the-loop pattern: an intermediate event can gate an MCP tool call behind a confirmation step before it executes. In the demo, that gate sits in front of anything that actually commits the traveler to a new booking—the agen
+  Now let’s flip the direction. This pattern is Camunda as an MCP server , specifically the Orchestration Cluster itself exposing an MCP endpoint. It's not a bolt-on integration; it's built into the cluster, on by default in Camunda 8 Run and Docker Compose, and available on SaaS clusters running vers
+  The third pattern is the newest, and arguably the biggest shift. Instead of exposing Camunda's operational data, this pattern exposes a business capability , a specific process, as a callable MCP tool.
+  Apply the new MCP start event element template to a BPMN message start event, fill in a name, a description of what it does, its required inputs, and optional guidance on when (and when not) to use it. Deploy, and the Processes MCP Server picks it up automatically—no external documentation, no custo
+  In the demo: the Rebook Trip process carries an MCP start event configured as the tool rebook_trip —"Rebooks a traveler onto an alternate flight after a disruption," with travelerId and originalFlightNumber as required inputs. I deploy it, then run a small external script that has never heard of Cam
+  Note the shape of that: fire-and-track, not request/response. The tool call starts work and hands you a receipt, which matters if you're building an agent that expects a synchronous answer.
+  The result is that your inventory of deployed processes becomes a library of capabilities any agent framework—Camunda's own or someone else's—can discover and invoke. "Rebook the trip." "Run KYC check." "Start onboarding." Whatever your business already models as a process becomes something an LLM c
+  Look back at the previous architecture diagram: three doors, one cluster. The rebooking agent's outbound tool calls, ops asking about stuck cases, and an external framework invoking rebook_trip all land in the same process model, the same audit trail, the same governance. Nothing about the demo requ
+  That's the common thread. Camunda treats "which tool got called" and "what did the agent decide" as structured, modeled, auditable events rather than something that happens inside an opaque prompt—whichever direction the connection runs.

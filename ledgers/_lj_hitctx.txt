@@ -1,0 +1,35 @@
+--- n=3 /bpmn/control_flow/Loop/ nh=1
+    process variable "loyaty_balance" Participations Conditioning with the function "Number of participations of the customer in all agents"
+--- n=5 /bpmn/events/endEvent/ nh=1
+    PMN 2.0 EventsEnd EventEnd Event Insert this event to end the chat flow. Like the start event, an end event is predefined in each agent. However, it may be useful to indicate an end in other places (especially for multiple branches).
+--- n=28 /bpmn/subprocesses/big_query/ nh=5
+    gQuery in real-time for further processing and analysis. This allows you to build complex dashboards and data pipelines from your agent data. How to Use the Module Step 1: Create a dataset in BigQuery In your Google Cloud project, start by creating a
+    be opened with any text editor. You will need the contents of this file in the next step. Step 5: Add the BigQuery Module to your Agent Either add the BigQuery module to your LoyJoy agent or use one of the templates from the LoyJoy Template Store. In
+--- n=34 /bpmn/subprocesses/code/ nh=1
+    a giveaway or loyality program. Typical Use Cases Distribute winning codes to your customers, which can then be entered into the agent How to Use the Module Integration For this process module, the customer's email address must be known, e.g. you can
+--- n=54 /bpmn/subprocesses/jump_auto/ nh=6
+    MN ModulesAutomatic Jump ModuleOn this pageAutomatic Jump Module Introduction Jump into another process step or into a different agent, use this to create whole customer journeys. Typical Use Cases Helpful for navigation purposes within agents or pro
+     or into a different agent, use this to create whole customer journeys. Typical Use Cases Helpful for navigation purposes within agents or processes. Most times it is used with a condition at the module. How to Use the Module Choose agent Jump into a
+--- n=64 /bpmn/subprocesses/loyalty_sharing/ nh=6
+     similar to the Share Link Module but with the added functionality of awarding loyalty points for referrals. When users share the agent, they can earn loyalty points if their friends sign up using the shared link. How It Works Share Agent: Users shar
+    als. When users share the agent, they can earn loyalty points if their friends sign up using the shared link. How It Works Share Agent: Users share the chat agent through various platforms. Referral Points: If a friend signs up using the shared link,
+--- n=66 /bpmn/subprocesses/mail/ nh=1
+    rstname}", the customers will be addressed with their first name in the email. This personal touch not only enhances the customer agent but also creates a more engaging and interactive communication with your users. Add an email attachment Enhance yo
+--- n=102 /bpmn/subprocesses/products/ nh=9
+    r customers to buy your product by embedding a link behind the “Buy now” button. Typical Use Cases Useful to integrate into your agent to show your products or services. Multiple products will be shown in a gallery slider. Use this module to present 
+    ers to all products equally. Continue by adding a picture according to the px size you have picked above. Remember that we do not recommend your pictures be no larger than 500 KB in order to ensure a quick loading. Input fields Fill in the fields you
+--- n=133 /bpmn/subprocesses/tag/ nh=4
+     pageTag Module Introduction The Tag Module utilizes tags for diverse purposes, from customer segmentation to optimizing product recommendations. Typical Use Cases Customer Segmentation: Use tags like fashion for targeted marketing and personalized a
+     product recommendations. Typical Use Cases Customer Segmentation: Use tags like fashion for targeted marketing and personalized agents. Recommendations: Strategically place tags in branches to track preferences for efficient product recommendations 
+--- n=147 /bpmn/subprocesses/workato/ nh=3
+    ta to Workato and Workato will send the data to the other system. How to Use the Module Step 1: Add Workato Process Module to an Agent To use the Workato process module you need to add it to an Agent. You can add the process module to the Agent by dr
+    ocess Module to an Agent To use the Workato process module you need to add it to an Agent. You can add the process module to the Agent by dragging it from the palette onto the canvas. Open the process module and add one or more mappings. Each mapping
+--- n=149 /bpmn/subprocesses/zapier/ nh=3
+     data to Zapier and Zapier will send the data to the other system. How to Use the Module Step 1: Add Zapier Process Module to an Agent To use the Zapier process module you need to add it to an agent. You can add the process module to the agent by dra
+    rocess Module to an Agent To use the Zapier process module you need to add it to an agent. You can add the process module to the agent by dragging it from the palette onto the canvas. Open the process module and add one or more mappings. Each mapping
+--- n=122 /bpmn/subprocesses/search/ nh=6
+    BPMN ModulesSearch ModuleOn this pageSearch Module Introduction The Search module enables your customers to explore various agents by searching for specific keywords. This enhances the user agent by allowing them to find content and interactions that
+    d interactions that are most relevant to their interests. Typical Use Cases Personalized Interactions: Allow customers to choose agents based on topics that interest them, creating a more personalized and engaging interaction. Content Discovery: Help
+--- n=39 /bpmn/subprocesses/dmn/ nh=3
+    ou are building a product finder. Select 'process specific' for 'Variable scope' if you want the variable to be used only in this agent and 'process independent' if you want the variable to be usable in other agents as well. As a next step, add a new
+    ' if you want the variable to be used only in this agent and 'process independent' if you want the variable to be usable in other agents as well. As a next step, add a new rule. With this, you determine the combinations of your questionnaire. For exa

@@ -1,0 +1,69 @@
+1	#1 0eCUs2VkNTIj5LmxrOn4gyMSvE	PROCESS	standard BPMN 2.0: tasks, X-gateways, start/end circles, house/rental-apartment branch labels
+21	#21 4e0cZj6u2fh8T6rm9CvxZkOvxGQ	PROCESS	numbered module boxes #1-#4 stacked vertically, start circle, arrows down
+26	#26 4uHVRy0BfKOAsqa0xutWmz6DhG0	PROCESS	numbered module boxes #5-#8 stacked vertically with arrows
+31	#31 5XfZDvXgtZBjh07UmmmlHTaJ0	PROCESS?	marketing funnel trapezoid layers Awareness, Consideration, Transaction, Loyalty
+38	#38 6GFTi8TSSbYMWq0lBzedkN0aktI	PROCESS?	form-builder screen with small chain of connected boxes and loop-back
+41	#41 6x1cYSYTClbzfia7y1CKLm4eZY	PROCESS	RAG flow: Knowledge Base, GPT-3.5 AI, Prompt, Chunks, Context boxes with arrows
+54	#54 9frUuzHQljQdwLlANU2MnxsD9o	ARCH	ring of partner/tech logos around central Loyjoy distribution graphic
+63	#63 Blog_Screenshoot_ai-modelle_ausw_C3_A4hlen1	PROCESS?	GPT-knowledge config panel over faint flow-node layout, red callouts
+64	#64 Blog_Screenshoot_knowledgemodul_1	PROCESS?	knowledge-module config over faint flow-node layout, red annotation boxes
+81	#81 DU4C5DHb4koeit1ghhYmzFyW8Vc	PROCESS	numbered module boxes #1-#3, start/end circles, small branch labels
+91	#91 FLUkOAXSTQd9So5hQI0F1zkKy8	PROCESS	flow editor #1 Welcoming, #2 Email, #3 Zapier, #4 Goodbye plus Zapier panel
+96	#96 GMBtSAcTJvtoVVZha5VTStMsI	PROCESS	numbered module boxes #13-#16 stacked with arrows
+123	#123 J1bB8QOS626olDoGFKrity1QZT8	ARCH	"Hybrid Journeys": three circles of partner logos, Access to GenZ, Embedded Insurance
+131	#131 KeiSggwNg2qFgZ2oJ1dDRcBPtA	PROCESS	numbered module boxes #9-#12 stacked with arrows
+140	#140 MdZc79N5y2b1OUue7JCtS0hzVo	PROCESS	flow editor #1-#5 boxes with loop-back and modules sidebar
+148	#148 O8SRAqSv7J5NMU5F80qXwyI8mx4	PROCESS	numbered boxes #1-#3 with start/end circles next to chat preview
+149	#149 OPQmbhB7z9IdAkUPB0Wdf7Vlk	PROCESS?	"5 essential rules for chatbot dialogues" numbered card-grid infographic
+158	#158 QV3OPwOrYtwHWhKxXQm0xdw	PROCESS	ProcessGPT panel containing small BPMN-like flow with boxes and gateway
+185	#185 WOnGORIeRzvE6S4oOTP5ewbCI	PROCESS?	archetype framework: numbered boxes in rows joined by brackets and connectors
+188	#188 WYnxC36CFkFmE1TJRQC1RfnF6rI	PROCESS	YouTube frame over flow editor with #1/#2 boxes and gateway
+193	#193 XNkGH5Oop623e7i2I3hmMlkbYc	PROCESS?	three campaign screenshots joined by drawn arrows, captioned steps
+230	#230 agentic-retrieval-rag-comparison	PROCESS?	RAG vs Agentic Retrieval schematic: documents to snippet/document with arrows
+231	#231 agentic-retrieval-rag-comparison-en	PROCESS?	English RAG vs Agentic Retrieval schematic, documents joined by arrows
+232	#232 agentic_de	PROCESS	flow editor #1 Begruessung to #2 Agentic AI boxes with circles plus config panel
+233	#233 agentic_en	PROCESS	English flow editor #1 Welcoming to #2 Agentic AI boxes with circles
+234	#234 agentic_release	PROCESS	flow editor #1/#2 boxes with circles plus product chat preview
+236	#236 ai-agent-knowledge	ARCH	Loyjoy hub with spoke circles of integration icons (database, MCP, cart, cloud)
+284	#284 bM41T8YTQdVwEOE37HiBvxC6UBo	PROCESS	tall vertical flowchart of numbered module boxes, start and end circles
+301	#301 blog-loyjoy-mcp-claude-cockpit-hero-de	ARCH	integration diagram: Claude desktop app, MCP, LoyJoy dashboard boxes with arrows
+302	#302 blog-loyjoy-mcp-claude-cockpit-hero-en	ARCH	English Claude desktop app, MCP, LoyJoy dashboard integration boxes with arrows
+307	#307 bpmn_de	PROCESS	BPMN 2.0 flow editor screenshot, "BPMN 2.0 Modellierung" annotation, gateways
+308	#308 bpmn_en	PROCESS	English BPMN 2.0 modelling flow editor screenshot, gateways and branch arrows
+343	#343 conversational-ai-customer-service	ARCH	customer-service illustration: bot hub with connected icon component nodes
+344	#344 conversational-ai-shopping	ARCH	shopping illustration: bot hub with connected cart/search icon component nodes
+432	#432 gxCPTH2SzNEsLnzury7zkiVZpM	PROCESS?	funnel layers Website Visitors, Contacts, Leads, Finalists, Customers
+464	#464 in-chat-authentication	PROCESS?	key icon branching by lines to two shield icons with check and cross
+468	#468 integration-layer	ARCH	"integration layer": Loyjoy centre with ring of circular integration icons
+496	#496 knowledge_base_de	PROCESS	Knowledge Base flow: upload/crawling, database, search, answer with arrows
+497	#497 knowledge_base_en	PROCESS	English Knowledge Base flow diagram with arrows from upload to answer
+531	#531 loyjoy-september2025-release	PROCESS	flow editor #1 Questionnaire, #2 GPT prompt, #3 Condition, #4 Single message
+546	#546 mcp-tools-grid-de	ARCH	row of labelled integration component icons: Analytics, Prozesse, Wissen, CRM, Website
+548	#548 mcp-two-directions-de	ARCH	LoyJoy MCP hub between Claude/ChatGPT/Gemini and Prozesse/Analytics/Wissensdatenbank boxes
+549	#549 mcp-two-directions-en	ARCH	English LoyJoy MCP hub with Claude, ChatGPT, Gemini, Processes, Knowledge Base boxes
+551	#551 mcp_postbild2	PROCESS	flow editor #1-#11 boxes with gateways, branches and config sidebar
+592	#592 no-code-bpmn	PROCESS	BPMN-style #1 Welcoming and #2 AI Agent boxes flowing into X gateway
+594	#594 nsMCLD6Dh2HSqlVKmj30hPwNrk	PROCESS	exclusive-gateway diamond with condition 1, condition 2, condition 3 branches
+604	#604 orchestrate	PROCESS	photo with overlay flow of boxes, gateways and branches
+617	#617 phonebot-visual	ARCH	phonebot AI Agent hub with Phonebot, Chatbot, Analytics, Data Protection component boxes
+620	#620 phonebot_info_de	ARCH	AI hub with voice channel, web channel, media switch, knowledge component boxes
+621	#621 phonebot_info_en	ARCH	English AI hub with voice channel, web channel, knowledge and tools boxes
+625	#625 pnzCkrHyJcEsiYAymYALH5bLo	PROCESS	BPMN-style questionnaire through gateways to simple messages and goodbye
+631	#631 process-orchestration	PROCESS	#1 AI Agent into gateway, branches to #2 GPT Knowledge, #3 follow-up, #4 Smalltalk
+636	#636 produkt_finder_gpt	PROCESS?	flow editor with chain of connected numbered boxes plus annotation callouts
+637	#637 produkt_finder_gpt_en	PROCESS?	English flow editor chain of connected numbered boxes with callouts
+660	#660 rag_loyjoy	PROCESS	RAG flow: Knowledge Base, embeddings, ChatGPT AI, prompt, chunks, generated answer
+664	#664 release_01_2026_de	ARCH	AI hub with five surrounding feature component boxes (Agentic Power, SSO, Analytics)
+665	#665 release_01_2026_en	ARCH	English AI hub with five feature component boxes around it
+666	#666 release_de	PROCESS	flow editor with GPT-Wissen, GPT-Fragensteller branches and gateways plus sources panel
+668	#668 release_notes_15_08_2024	PROCESS	flow editor chain of numbered boxes with start/end circles plus chat preview
+670	#670 reranking	PROCESS	flow editor GPT-Onboarding via gateways to GPT-Wissen and GPT-Fragen branches
+671	#671 resolve	PROCESS?	icon nodes joined by lines: chat, AI sparkle, avatar and robot with check
+694	#694 security-and-compliance	ARCH	BFSG, AI Act, GDPR, DORA badges above central shield with radiating lines
+701	#701 smart-product-advisor	PROCESS?	product cards in a row joined by arrows, icon chain above
+726	#726 tcJ1ZUe4QazkmsFCUPglQ439yzE	PROCESS	flow editor #1 Welcoming, #2 Email, #3 Workato, #4 Goodbye plus Workato panel
+758	#758 v9Ux4luc8iqkB2Qqa8EyQ2Or0A	PROCESS	laptop showing Loyjoy flow editor with connected module boxes on screen
+816	#816 xpnpoxDhmh8ZPuIb3RBBCems5Q	PROCESS	experience editor flow: Rueckruf, Beginn, welcome message, Frage connected boxes
+825	#825 zTlWstY02s4EfES9HdN7Lm7So	PROCESS	BPMN-style flow #1-#5 with gateways, Drop module and start/end circles
+END PROCESS 50
+END ARCH 16

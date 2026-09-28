@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:quantum="http://quantumbpm.com/schema/quantum/bpmn/1.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="support_agent_definitions" name="support-agent-1781368484"
+                  targetNamespace="http://bpmn.io/schema/bpmn"
+                  exporter="QuantumBPMN Modeler">
+  <bpmn:process id="support-agent" name="Support Agent" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_ticket" name="Ticket arrives">
+      <bpmn:outgoing>Flow_start_classify</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Task_classify" name="Classify ticket">
+      <bpmn:extensionElements>
+        <quantum:taskDefinition type="classify-ticket" retries="3" />
+        <quantum:ioMapping>
+          <quantum:input source="subject" target="subject" />
+          <quantum:input source="body" target="body" />
+          <quantum:output source="{category: category, urgency: urgency, confidence: agentConfidence}" target="classification" />
+        </quantum:ioMapping>
+      </bpmn:extensionElements>
+<bpmn:incoming>Flow_start_classify</bpmn:incoming>
+      <bpmn:outgoing>Flow_classify_route</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:businessRuleTask id="Task_route" name="Route Support Ticket">
+      <bpmn:extensionElements>
+        <quantum:calledDecision decisionId="route-support-ticket" resultVariable="routing" bindingType="latest" />
+        <quantum:ioMapping>
+          <quantum:input source="classification.category" target="category" />
+          <quantum:input source="classification.urgency" target="urgency" />
+          <quantum:input source="classification.confidence" target="agentConfidence" />
+        </quantum:ioMapping>
+      </bpmn:extensionElements>
+<bpmn:incoming>Flow_classify_route</bpmn:incoming>
+      <bpmn:outgoing>Flow_route_gateway</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:exclusiveGateway id="Gateway_route" name="Auto-resolvable?" default="Flow_human">
+      <bpmn:incoming>Flow_route_gateway</bpmn:incoming>
+      <bpmn:outgoing>Flow_auto</bpmn:outgoing>
+      <bpmn:outgoing>Flow_human</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:adHocSubProcess id="AdHoc_resolve" name="Resolve">
+      <bpmn:extensionElements>
+        <quantum:adHoc activeElementsCollection="[&quot;Task_agent_plan&quot;]" />
+        <quantum:ioMapping>
+          <quantum:output source="{reply: draft, recorded: recorded}" target="resolution" />
+        </quantum:ioMapping>
+      </bpmn:extensionElements>
+      <bpmn:completionCondition xsi:type="bpmn:tFormalExpression">resolved = true</bpmn:completionCondition>
+      <bpmn:serviceTask id="Task_agent_plan" name="Agent: plan &amp; act">
+        <bpmn:extensionElements>
+          <quantum:taskDefinition type="agent-plan" retries="3" />
+          <quantum:ioMapping>
+            <quantum:input source="subject" target="subject" />
+            <quantum:input source="body" target="body" />
+            <quantum:input source="classification" target="classification" />
+          </quantum:ioMapping>
+        </bpmn:extensionElements>
+<bpmn:outgoing>AgentPlan_Finalize</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Task_lookup_order" name="Look up order">
+        <bpmn:extensionElements>
+          <quantum:taskDefinition type="lookup-order" retries="3" />
+          <quantum:ioMapping>
+            <quantum:input source="ticketId" target="ticketId" />
+            <quantum:input source="subject" target="subject" />
+          </quantum:ioMapping>
+        </bpmn:extensionElements>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Task_search_kb" name="Search knowledge base">
+        <bpmn:extensionElements>
+          <quantum:taskDefinition type="search-knowledge-base" retries="3" />
+          <quantum:ioMapping>
+            <quantum:input source="classification.category" target="category" />
+            <quantum:input source="subject" target="subject" />
+          </quantum:ioMapping>
+        </bpmn:extensionElements>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Task_draft_reply" name="Draft reply">
+        <bpmn:extensionElements>
+          <quantum:taskDefinition type="draft-reply" retries="3" />
+          <quantum:ioMapping>
+            <quantum:input source="order" target="order" />
+            <quantum:input source="subject" target="subject" />
+          </quantum:ioMapping>
+        </bpmn:extensionElements>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Task_finalize" name="Validate &amp; record resolution">
+        <bpmn:extensionElements>
+          <quantum:taskDefinition type="finalize-resolution" retries="3" />
+          <quantum:ioMapping>
+            <quantum:input source="draft" target="draft" />
+          </quantum:ioMapping>
+        </bpmn:extensionElements>
+<bpmn:incoming>AgentPlan_Finalize</bpmn:incoming>
+      </bpmn:serviceTask>
+      <bpmn:sequenceFlow id="AgentPlan_Finalize" sourceRef="Task_agent_plan" targetRef="Task_finalize" />
+<bpmn:incoming>Flow_auto</bpmn:incoming>
+      <bpmn:outgoing>Flow_adhoc_send</bpmn:outgoing>
+    </bpmn:adHocSubProcess>
+    <bpmn:userTask id="Task_review" name="Review &amp; approve">
+      <bpmn:extensionElements>
+        <quantum:assignmentDefinition candidateGroups="support" />
+      </bpmn:extensionElements>
+<bpmn:incoming>Flow_human</bpmn:incoming>
+      <bpmn:outgoing>Flow_review_send</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:boundaryEvent id="Boundary_sla" name="SLA breached" attachedToRef="Task_review">
+            <bpmn:timerEventDefinition>
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">PT8H</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+      <bpmn:outgoing>Flow_sla_escalated</bpmn:outgoing>
+    </bpmn:boundaryEvent>
+    <bpmn:serviceTask id="Task_send_reply" name="Send reply">
+      <bpmn:extensionElements>
+        <quantum:taskDefinition type="send-reply" retries="3" />
+        <quantum:ioMapping>
+          <quantum:input source="resolution" target="resolution" />
+        </quantum:ioMapping>
+      </bpmn:extensionElements>
+<bpmn:incoming>Flow_adhoc_send</bpmn:incoming>
+      <bpmn:incoming>Flow_review_send</bpmn:incoming>
+      <bpmn:outgoing>Flow_send_end</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="EndEvent_done" name="Done">
+      <bpmn:incoming>Flow_send_end</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="EndEvent_escalated" name="Escalated">
+      <bpmn:incoming>Flow_sla_escalated</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_start_classify" sourceRef="StartEvent_ticket" targetRef="Task_classify" />
+    <bpmn:sequenceFlow id="Flow_classify_route" sourceRef="Task_classify" targetRef="Task_route" />
+    <bpmn:sequenceFlow id="Flow_route_gateway" sourceRef="Task_route" targetRef="Gateway_route" />
+    <bpmn:sequenceFlow id="Flow_auto" sourceRef="Gateway_route" targetRef="AdHoc_resolve">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">routing = &quot;AUTO&quot;</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_human" sourceRef="Gateway_route" targetRef="Task_review" />
+    <bpmn:sequenceFlow id="Flow_adhoc_send" sourceRef="AdHoc_resolve" targetRef="Task_send_reply" />
+    <bpmn:sequenceFlow id="Flow_review_send" sourceRef="Task_review" targetRef="Task_send_reply" />
+    <bpmn:sequenceFlow id="Flow_send_end" sourceRef="Task_send_reply" targetRef="EndEvent_done" />
+    <bpmn:sequenceFlow id="Flow_sla_escalated" sourceRef="Boundary_sla" targetRef="EndEvent_escalated" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="support-agent">
+
+      <bpmndi:BPMNShape id="StartEvent_ticket_di" bpmnElement="StartEvent_ticket">
+        <dc:Bounds x="182" y="242" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_classify_di" bpmnElement="Task_classify">
+        <dc:Bounds x="270" y="220" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_route_di" bpmnElement="Task_route">
+        <dc:Bounds x="430" y="220" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_route_di" bpmnElement="Gateway_route">
+        <dc:Bounds x="575" y="235" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="AdHoc_resolve_di" bpmnElement="AdHoc_resolve" isExpanded="true" quantum:expandedWidth="400" quantum:expandedHeight="260">
+        <dc:Bounds x="700" y="10" width="400" height="260" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_agent_plan_di" bpmnElement="Task_agent_plan">
+        <dc:Bounds x="730" y="30" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_lookup_order_di" bpmnElement="Task_lookup_order">
+        <dc:Bounds x="730" y="150" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_search_kb_di" bpmnElement="Task_search_kb">
+        <dc:Bounds x="850" y="150" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_draft_reply_di" bpmnElement="Task_draft_reply">
+        <dc:Bounds x="970" y="150" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_finalize_di" bpmnElement="Task_finalize">
+        <dc:Bounds x="970" y="30" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_review_di" bpmnElement="Task_review">
+        <dc:Bounds x="670" y="360" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Boundary_sla_di" bpmnElement="Boundary_sla">
+        <dc:Bounds x="752" y="422" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_send_reply_di" bpmnElement="Task_send_reply">
+        <dc:Bounds x="1170" y="220" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_done_di" bpmnElement="EndEvent_done">
+        <dc:Bounds x="1342" y="242" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_escalated_di" bpmnElement="EndEvent_escalated">
+        <dc:Bounds x="862" y="482" width="36" height="36" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNEdge id="AgentPlan_Finalize_di" bpmnElement="AgentPlan_Finalize">
+        <di:waypoint x="780" y="70" />
+        <di:waypoint x="1020" y="70" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_start_classify_di" bpmnElement="Flow_start_classify">
+        <di:waypoint x="200" y="260" />
+        <di:waypoint x="320" y="260" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_classify_route_di" bpmnElement="Flow_classify_route">
+        <di:waypoint x="320" y="260" />
+        <di:waypoint x="480" y="260" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_route_gateway_di" bpmnElement="Flow_route_gateway">
+        <di:waypoint x="480" y="260" />
+        <di:waypoint x="600" y="260" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_auto_di" bpmnElement="Flow_auto">
+        <di:waypoint x="600" y="260" />
+        <di:waypoint x="900" y="140" />
+        <quantum:connectionHandles sourceHandle="top-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_human_di" bpmnElement="Flow_human">
+        <di:waypoint x="600" y="260" />
+        <di:waypoint x="720" y="400" />
+        <quantum:connectionHandles sourceHandle="bottom-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_adhoc_send_di" bpmnElement="Flow_adhoc_send">
+        <di:waypoint x="900" y="140" />
+        <di:waypoint x="1220" y="260" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="top-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_review_send_di" bpmnElement="Flow_review_send">
+        <di:waypoint x="720" y="400" />
+        <di:waypoint x="1220" y="260" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="bottom-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_send_end_di" bpmnElement="Flow_send_end">
+        <di:waypoint x="1220" y="260" />
+        <di:waypoint x="1360" y="260" />
+        <quantum:connectionHandles sourceHandle="right-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_sla_escalated_di" bpmnElement="Flow_sla_escalated">
+        <di:waypoint x="770" y="440" />
+        <di:waypoint x="880" y="500" />
+        <quantum:connectionHandles sourceHandle="bottom-source" targetHandle="left-target" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

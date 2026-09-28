@@ -1,0 +1,613 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Adding AI to Adhoc Sub Processes and Agentic Runtime - Flowquest</title>
+<meta name="description" content="How Flows for APEX 26.1 adds recommendation, hybrid, and autonomous AI control modes to Adhoc Sub Processes.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Flowquest">
+<meta property="og:title" content="Adding AI to Adhoc Sub Processes and Agentic Runtime">
+<meta property="og:url" content="https://flowquest.net/adhoc-subprocesses-ai-agents/">
+
+
+  <meta property="og:description" content="How Flows for APEX 26.1 adds recommendation, hybrid, and autonomous AI control modes to Adhoc Sub Processes.">
+
+
+
+  <meta property="og:image" content="https://flowquest.net/assets/images/261-autonomous-ahsp-definition.png">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://flowquest.net/adhoc-subprocesses-ai-agents/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Flowquest Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://flowquest.net/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://flowquest.net/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://flowquest.net/assets/images/favicon-16x16.png">
+<link rel="manifest" href="https://flowquest.net/assets/images/site.webmanifest">
+<link rel="mask-icon" href="https://flowquest.net/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#d85d5d">
+<style type="text/css">
+   /*Custom style for ressources page*/
+   .video-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   
+   .video-card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:32%;
+     min-width: 320px;
+     display: inline-block;
+     margin-bottom: 15px;
+     margin-right: 15px;
+   }
+   
+   .video-card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+   
+   /*Custom style for team page*/
+   .team-members {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   } 
+
+   .member-picture-container {
+      width: 200px;
+      height: 200px;
+      margin: 1rem auto 1rem auto;
+      border-radius: 50%;
+      background: #007bb6;
+      padding: 3px;
+   }
+
+   .member-picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: #ffffff 2px solid;
+   }
+
+   .member-name,
+   .member-bio,
+   .member-links
+    {
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+
+   .member-name {
+      font-weight: bold;
+   }
+
+   .member-bio {
+      font-size: smaller;
+      text-align: justify;
+      margin-bottom: 15px;
+   }
+
+   .member-links {
+      margin-top: auto;
+      margin-bottom: 10px;
+      border-top: solid 1px gray;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .member-link {
+      margin-right: 10px;
+   }
+
+   .member-card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:30%;
+     min-width: 300px;
+     margin-bottom: 7.5px;
+     margin-right: 7.5px;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .member-link > a {
+      text-decoration: none;
+      font-size: smaller;
+   }
+
+   .member-card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+
+   /*Cutom style for notice latest doc version*/
+   .notice-icon {
+      margin-right: .2rem;
+      font-size: large;
+   }
+
+   .doc-not-latest{
+      margin: 0px!important;
+   }
+
+   /*Custom style for feature row icon*/
+   .feature__wrapper.feature__wrapper__icon img {
+      width: 64px;
+      height: auto;
+   }
+   /* custom style for footer */
+   .footer-container {
+      padding-top: 5px;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+   .footer-container > div {
+      width: 33%;
+      margin: 10px;
+      margin-bottom: 2px;
+      padding: 5px;
+
+   }
+   .footer-address-text {
+      line-height: 1.2;
+   }
+   .footer-x-small {
+      font-size: 12px;
+   }  
+   .footer-logo {
+      width: 120px;
+      height: auto;
+      padding-top: 30px;
+   }
+   /* custom style for pricing */
+   .pricing-container {
+      padding-top: 5px;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+   }
+   .pricing-container > div {
+      width: 50%;
+      margin: 10 em;
+      margin-bottom: 2px;
+      padding: 10%;
+   }
+   .pricing ul {
+      list-style: none;
+      padding-left: 0;
+   }
+   .pricing li {
+      position: relative;
+      padding-left: 1.5em; /*preserve space for tick*/
+   }
+   .pricing li::before {
+      color: #066d5b;
+      content: "✔ ";
+      position: absolute;
+      left: 0;
+      width: 1em;
+      height: 1em;
+   }
+   @media (max-width: 500px) {
+      #pricing .footer-container > .edition {
+         width: 100%;
+      }
+      #footer .footer-container {
+         flex-direction:column;
+      }
+      #footer .footer-container div:not(.footer-logo) {
+         width: 100%;
+      }
+   }
+
+   @media (min-width: 501px) and (max-width: 1024px) {
+      #pricing .footer-container > .edition {
+         width: 50%;
+      }
+   }
+   
+</style>
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/flowquest-logo-color-bg.svg" alt="Flowquest"></a>
+        
+        <a class="site-title" href="/">
+          Flowquest
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Flows for APEX Enterprise Edition</a>
+            </li><li class="masthead__menu-item">
+              <a href="/flows4apex" >Flows for APEX</a>
+            </li><li class="masthead__menu-item">
+              <a href="/news" >News</a>
+            </li><li class="masthead__menu-item">
+              <a href="/releases" >Releases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/documentation" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://blog.flowquest.net" target="_blank">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources" >Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/customer-portal" >Customer Portal</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.youtube.com/flowsforapex" target="_blank"><i class="fab fa-youtube" aria-hidden"true" style="padding-right: 5px;"></i>Youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/install-doc-ee-251" >Installation</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #102532; background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/assets/images/261-autonomous-ahsp-definition.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Adding AI to Adhoc Sub Processes and Agentic Runtime
+
+        
+      </h1>
+      
+        <p class="page__lead">How Flows for APEX 26.1 adds recommendation, hybrid, and autonomous AI control modes to Adhoc Sub Processes.
+</p>
+      
+      
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+<div id="main" role="main">
+  
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+
+    
+
+    <meta itemprop="headline" content="Adding AI to Adhoc Sub Processes and Agentic Runtime">
+    <meta itemprop="description" content="How Flows for APEX 26.1 adds recommendation, hybrid, and autonomous AI control modes to Adhoc Sub Processes.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#recommendation-mode">Recommendation Mode</a></li><li><a href="#business-capabilities-provided">Business Capabilities Provided</a></li><li><a href="#why-flows-for-apex">Why Flows for APEX</a></li><li><a href="#best-fit-use-cases">Best-Fit Use Cases</a></li><li><a href="#edition-notes">Edition Notes</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>While manually controlled Adhoc Sub Processes already provide strong support for knowledge-worker workflows, Flows for APEX 26.1 also adds powerful capabilities to use modern AI engines to control the Adhoc Sub Process.</p>
+
+<p>AI support can be provided at 3 levels of control:</p>
+
+<ul>
+  <li><strong>Recommendations</strong>, where the sub process is performed by a human user, but at any point the user can ask for a recommended next course of action from AI. The recommendation can be accepted or dismissed, optionally capturing the reason for dismissal for model tuning.</li>
+  <li><strong>Hybrid</strong>, where the user lets AI recommend and execute the next steps.</li>
+  <li><strong>Fully Autonomous</strong>, where AI is in control of the adhoc sub process and it executes fully autonomously.</li>
+</ul>
+
+<p>Configuring an adhoc sub process for AI support is simple, and requires a text definition of the subprocess objective. The AI engine can be connected via the built-in APEX AI package, or using the United Codes AI package, allowing a full range of modern models to be used even on older APEX versions like APEX 24.1.</p>
+
+<p><img src="https://flowquest.net/assets/images/261-autonomous-ahsp-definition.png" alt="Defining Autonomous Adhoc Sub Processes" title="Defining Autonomous Adhoc Sub Processes" /></p>
+
+<p>At run time, Flows for APEX pulls together the sub process objective, details of currently available activities to start, a summary of currently running and already completed activities, and the current values of selected process variables so that the AI engine can understand the current situation and recommend or execute accordingly.</p>
+
+<p>When running autonomously, the Flows for APEX engine manages how often and when the AI agent is called, to ensure efficiency and prevent wasted AI token spend. This includes managing the number of turns that the AI agent gets at any time point and triggering event, the overall number of turns, and the waiting time before another turn can occur if a running activity has not yet completed.</p>
+
+<h2 id="recommendation-mode">Recommendation Mode</h2>
+
+<p>Not all applications are able to go to autonomous operation, or are comfortable yet to go fully autonomous. Flows for APEX handles these concerns through several mechanisms:</p>
+
+<ul>
+  <li>Automating processes through a BPMN framework provides guardrails so that organisations only allow AI to perform known BPMN-defined activities, while still preserving the strong control and auditability present in Flows for APEX.</li>
+  <li>A BPMN adhoc sub process can contain human user tasks, human approval tasks, and deterministic BPMN Business Rules Tasks, so an autonomous adhoc sub process can be subject to control from non-AI tasks at critical control points.</li>
+  <li>All AI-engine calls in Flows for APEX return a human readable rationale or explanation from the AI engine to justify its decision making process. These rationales can be exposed in the application for users, and can also be included in process logging and in the instance logging archive document.</li>
+  <li>While gaining confidence in AI, or in regulated environments where a human has to make critical process decisions, an adhoc sub process can be run in recommendation mode.</li>
+</ul>
+
+<p><img src="https://flowquest.net/assets/images/261-ahsp-recommendation-app.png" alt="Recommendation Mode" title="Recommendation Mode" /></p>
+
+<h2 id="business-capabilities-provided">Business Capabilities Provided</h2>
+
+<p>AI-assisted and agentic execution allows organizations to introduce AI into workflow incrementally rather than through an all-or-nothing architectural jump.</p>
+
+<p>This supports:</p>
+
+<ul>
+  <li>decision support for knowledge workers in live process contexts</li>
+  <li>gradual progression from recommendation to hybrid execution to autonomy</li>
+  <li>AI use within BPMN-defined operational guardrails</li>
+  <li>rationale capture and review for sensitive or regulated processes</li>
+</ul>
+
+<h2 id="why-flows-for-apex">Why Flows for APEX</h2>
+
+<p>Standalone agents can be powerful, but they often operate without a formal process frame. Flows for APEX places AI inside BPMN-defined boundaries so the agent can only act within the process design and available runtime state.</p>
+
+<p>It is possible to add AI services to many applications, but Flows for APEX provides a more coherent orchestration pattern for combining AI decisions with BPMN activities, human approvals, runtime auditability, and controlled autonomy.</p>
+
+<p>Generic automation tools may emphasize AI flexibility over process governance. Flows for APEX is aimed at teams who want AI adoption without losing workflow explainability, operational control, or Oracle APEX alignment.</p>
+
+<h2 id="best-fit-use-cases">Best-Fit Use Cases</h2>
+
+<ul>
+  <li>AI-assisted operational reviews and investigations</li>
+  <li>complex case work where the best next action depends on context</li>
+  <li>semi-autonomous business processes that still require human checkpoints</li>
+  <li>regulated or high-trust environments where rationale and control matter</li>
+</ul>
+
+<h2 id="edition-notes">Edition Notes</h2>
+
+<p>AI-assisted and agentic Adhoc Sub Process execution is an Enterprise Edition capability introduced in v26.1.</p>
+
+<hr />
+
+<p>For foundational concepts and manual runtime behavior, see <a href="/adhoc-subprocesses-basics/">Adhoc Sub Processes: Basics and Manual Runtime</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <footer>
+    <div class="footer-container">
+        <div >
+            <div class="footer-logo">
+                <a href="https://www.flowquest.net"><img src="https://flowquest.net/assets/images/flowquest-logo-color-bg.svg" alt="Flowquest"/></a>
+            </div>
+        
+        </div>
+        <div class="footer-address-text">
+            <p><b>Flowquest Limited</b><br>
+                Kemp House<br>
+                160 City Road<br>
+                LONDON<br>
+                EC1V 2NX</p>
+            <p><b>Flowquest Pte Ltd</b><br>
+                10 Anson Road<br>
+                #33-10 Suite C International Plaza<br>
+                SINGAPORE<br>
+                079903</p>
+        </div>
+            <div >
+                <p><b>Follow Us</b></p>
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/company/flowquest-limited" target="_blank"><span
+                            class="fab fa-linkedin"></span> LinkedIn</a></li>
+                    <li><a href="https://bsky.app/profile/rallen2010.bsky.social" target="_blank"><span
+                            class="fab fa-bluesky"></span> BlueSky</a></li>
+                </ul>
+                <p><b>Contact Us</b></p>
+                <ul class="social-icons">
+                    <li><a href="mailto:info@flowquest.net" style="color:#696a79;"><span class="fas fa-envelope"></span> info@flowquest.net</a></li>
+                    <li><a href="https://cal.com/rallen2010/15min" target="_blank" rel="noopener noreferrer" style="color:#696a79;"><span class="fas fa-video"></span> Introductory 15 min Zoom call</a></li>
+                </ul>
+            </div>
+    </div>
+</footer>
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://flowquest.net">Flowquest</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLSTC8TR6K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLSTC8TR6K', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

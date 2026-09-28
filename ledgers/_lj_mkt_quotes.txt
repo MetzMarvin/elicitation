@@ -1,0 +1,60 @@
+=== 314 len=15416
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen Die Plattform f
+  * Self-Service-Einfachheit: Ihre Fachabteilung baut AI Agents visuell oder im Dialog mit ihrem KI-Assistenten. Die Agents lösen Kundenanliegen per Chat und Telefon fallab
+  * und Funktionen zur Unterstützung Ihrer DSGVO- und AI-Act-Anforderungen. Die 3-Layer-Plattform für Agentic AI Was ist LoyJoy? AI Agents (Handeln) Generative KI bea
+  * n Unternehmensdaten. Standardmäßig läuft das Chat-LLM Gemma 4 auf LoyJoy-eigener Hardware im Rechenzentrum Münster. Ab Enterprise wählbar: GPT (Azure Irland), Clau
+=== 734 len=13893
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo Conversational Agentic AI Platform Enterprise platf
+  * elf-service simplicity: your business team builds AI Agents visually or in conversation with its AI assistant. Agents resolve customer requests end to end through chat
+  * ng and features designed to support your GDPR and AI Act requirements. The 3-layer platform for Agentic AI What is LoyJoy? AI Agents (Act) Generative AI answers q
+  * s with your enterprise data. By default, the chat LLM Gemma 4 runs on LoyJoy s own hardware in our Münster data center. From Enterprise, choose GPT (Azure Ireland)
+=== 317 len=3888
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen Conversational
+  * .0 Prozessautomatisierung nahtlos mit agentischer KI. Diese einzigartige Kombination aus sicherer, skalierbarer Prozessausführung und eigenständig agierenden AI A
+  * ngsmerkmal von LoyJoy am Markt für Conversational AI. BPMN 2.0-Standard LoyJoy basiert auf dem Modellierungsstandard BPMN 2.0 und nutzt den Standard Business Proc
+  * d PDF Wie BPMN-Prozessautomatisierung und Agentic AI in einer kompletten Antragsstrecke zusammenspielen, zeigt die Vorlage Altersvorsorge-Depot Chat-Agent : Wisse
+=== 737 len=3539
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo Conversational Platform BPMN 2.0 Process Automation
+  * connects BPMN 2.0 process automation with agentic AI. This unique combination of secure, scalable process execution and autonomously acting AI agents is unparalle
+  * xample of how BPMN process automation and Agentic AI work together in a full application flow, see the pension depot chat agent template : knowledge-based advice,
+  * drop in the LoyJoy Manager, or create and edit an AI Agent from your assistant through LoyJoy Headless . The executed process definition, permissions and controlled pub
+=== 102 len=2210
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen BPMN 🚀 Unser ne
+  * is zum Alter dieses Beitrags: Die Entwicklung bei KI im Allgemeinen und bei der LoyJoy Platform im Speziellen schreitet rasant voran. Die Informationen dieses Blo
+75 MISSING
+=== 117 len=5843
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen BPMN Überarbeit
+  * is zum Alter dieses Beitrags: Die Entwicklung bei KI im Allgemeinen und bei der LoyJoy Platform im Speziellen schreitet rasant voran. Die Informationen dieses Blo
+=== 138 len=4036
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen BPMN Was ist ei
+  * is zum Alter dieses Beitrags: Die Entwicklung bei KI im Allgemeinen und bei der LoyJoy Platform im Speziellen schreitet rasant voran. Die Informationen dieses Blo
+  * gen soll. Hier könnte uns Jonathan, unser Head of AI Engineering, weiterhelfen. Beginnen wir mit den Buchstaben B-P-M-N. Es steht für Business Process Modeling No
+  * auf dem BPMN-Standard (Jonathan Schmitz, Head of AI Engineering) ‍ Vielen Dank für die Erklärung! Langsam machen wir Fortschritte - wir lernen etwas über diesen
+=== 339 len=3778
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen AI Agent mit Fe
+  * mit Qualitätssicherung und Handover Beschreibung AI Agent mit Feedback und Handover: Vorlage für Qualitäts-KI mit Feedback-Abfrage und nahtlosem Handover an menschlich
+  * ve Demo Template hinzufügen Highlights Highlights KI-gesteuerte Antworten Integrierte Qualitätssicherung Intelligente Handover-Logik Die Vorlage erweitert einen w
+  * Was ist im Template enthalten? Vorkonfigurierter AI Agent mit Anbindung an die LoyJoy-Wissensdatenbank Feedback-Frage („War das hilfreich?”) mit konfigurierbaren Auslö
+=== 759 len=3599
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo AI agent with feedback question: template with qual
+  * with feedback and handover: template for quality AI with feedback queries and seamless handover to human employees. Live Demo Add Template Highlights Highlights
+  * over logic The template extends a knowledge-based AI agent with a quality assurance layer. The agent answers questions using the configured knowledge sources and
+  * hat is included in the template? A pre-configured AI agent connected to the LoyJoy knowledge base A feedback question (“Was this helpful?”) with configurable trig
+=== 364 len=3807
+  * u: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen Antragsstrecke
+=== 784 len=3659
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo Insurance application flow: chatbot template for hi
+=== 497 len=2851
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo BPMN LoyJoy Now Features a BPMN Process Engine to A
+  * ots • July 17, 2019 Note on the age of this post: AI in general and the LoyJoy Platform in particular are evolving rapidly. The information in this blog post may
+  * now an integral part of the LoyJoy Conversational AI Cloud. Starting today, our new process editor empowers brands to customize the existing LoyJoy chatbot module
+=== 524 len=1870
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo BPMN 🚀 Our New Release Makes BPMN Process Automatio
+  * September 29, 2022 Note on the age of this post: AI in general and the LoyJoy Platform in particular are evolving rapidly. The information in this blog post may
+=== 538 len=5074
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo BPMN Reworking LoyJoy’s BPMN Process Editor • Septe
+=== 559 len=3542
+  * ild, analyse and improve AI Agents in Claude, ChatGPT Work and OpenWork. See how it works → Sign in Book a demo BPMN What Is a Conversational Platform and How Does
+  * • February 22, 2022 Note on the age of this post: AI in general and the LoyJoy Platform in particular are evolving rapidly. The information in this blog post may
+  * supposed to tell me. Here, Jonathan, our Head of AI Engineering could help us out. Let’s start with the letters B-P-M-N. It stands for Business Process Modeling
+  * d on the BPMN standard (Jonathan Schmitz, Head of AI Engineering) ‍ Thank you so much for the explanation! Slowly we are making progress- learning about this diff

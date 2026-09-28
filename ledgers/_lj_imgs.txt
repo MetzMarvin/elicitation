@@ -1,0 +1,211 @@
+/bpmn/control_flow/Loop/	loop-7702a5ab6e98e79cf984fb50fe5d003f.png|Loop
+/bpmn/control_flow/Loop/	loyalty-6a78ffff6f438b9245b3b2c213b60ed1.png|Loyalty
+/bpmn/control_flow/Loop/	participations-36cff0ae754b23643eb27d5a5d12f171.png|participations
+/bpmn/events/endEvent/	StartEndEvent-7f13064b6f29431c21a181510b70605d.png|StartEndEvent
+/bpmn/events/intermediateCatchEvent_timer/	intermediateCatchEvent_timer-067a985b7c982d420e019cdbdedd6bfe.png|Wait
+/bpmn/events/startEvent_message/	icon-3fbd025d1bc97f795bb79c1843123196.png|Start
+/bpmn/events/startEvent_timer/	IuAhQMJ4gNBKBEIIkDAhdOhHBDwESBgPEFqJQAgBEiaEDv2IgIcACeMBQisRCCHwHxA2gEzT635CAAAAAElFTkSuQmCC|icon
+/bpmn/events/startEvent_timer/	setting-8c488ec1eeda70a148734dca0f9aa69f.png|setting
+/bpmn/events/startEvent_timer/	TimerPreview-edd00d8bd13c76a4d457621156da1816.gif|TimerPreview
+/bpmn/events/startEvent_timer/	advCalStart-d615ee840c7db2cfbb3d726efea79697.png|advCalStart
+/bpmn/events/startEvent_timer/	advCalSetting-a3589e410e89f1edd38b3a4f867c8921.png|advCalSetting
+/bpmn/events/startEvent/	icon-97c6ae08c2bea0efda9f80e1dec81f98.png|Start
+/bpmn/subprocesses/advent_calendar_door/	advent_calendar_door_demo-bd9ddbd3e582d2990302483691cee1dc.png|advent_calendar_door_demo
+/bpmn/subprocesses/ai_agent/	question_count-0e45f844491184ea192ab9054a9e37e7.png|question_count
+/bpmn/subprocesses/ai_knowledge/	flow-d72616acefe1b01a75a5ea0d85282b2e.png|flow
+/bpmn/subprocesses/ai_prompt/	ai_prompt_json_mapping-dadf7e7699921f498fc4e55d3ec28e4b.png|AI Prompt module mapping configuration showing a target variable, source field, and description for extracting the sender name from an email.
+/bpmn/subprocesses/api_client/	api_client1-44fa839cbec68716d268b9b0d9df3082.png|grafik
+/bpmn/subprocesses/api_client/	api_client2-9a00fdacc665615a9baff7bd8b8aa9eb.png|grafik
+/bpmn/subprocesses/api_client/	image1-46924eb18ac57106afede60ce8051cf9.png|Image1
+/bpmn/subprocesses/api_client/	overview-45ac234b91ccdbc8170816742ba49254.png|Api client overview
+/bpmn/subprocesses/api_client/	image2-c0e0a0ba710fb58641d0d0bed06782fd.png|Image2
+/bpmn/subprocesses/api_client/	api_client_log_debug-7266a8dd61ec4fbc1154533a7e8e6e3e.png|Log debug
+/bpmn/subprocesses/api_client/mappings/	image1-9c96369f71493361b94fc8bd34a0de03.png|Image1
+/bpmn/subprocesses/api_client/mappings/	image2-2765ba48918e60f96ab96354c4583a75.png|Image2
+/bpmn/subprocesses/api_client/mappings/	image3-f938b992d69902d556899609426344c5.png|Image3
+/bpmn/subprocesses/api_client/mappings/	image11-6aed0a839795a38306863fdfd3eb685d.png|Image11
+/bpmn/subprocesses/api_client/mappings/	image12-3457a097cab15143129385ae885a8eb8.png|Image12
+/bpmn/subprocesses/api_client/mappings/	image13-8dd6e0e82fc6a6682f201d48a68d8238.png|Image13
+/bpmn/subprocesses/appointment/	appointment_demo-c2b128eb741418c73cb3d66b763842f3.png|appointment_demo
+/bpmn/subprocesses/appointment/	appointment_scheduler_add_empty-673c0cd72df1af4ce39fab836de3ed51.png|appointment_scheduler_add_empty
+/bpmn/subprocesses/appointment/	appointment_scheduler_add_timeslot-5caabe929410dac05d6c980a9d0efa1a.png|appointment_scheduler_add_timeslot
+/bpmn/subprocesses/articles/	article_gallery_chat-25849566d2ca3add1a481d5e2019d0ea.png|article_gallery_chat
+/bpmn/subprocesses/articles/	article_gallery_detailed-9f86996549449c17ed09373f5976a884.png|article_gallery_detailed
+/bpmn/subprocesses/audio_recorder/	audio_recorder_demo-48a5d4e959841e9c2a1e5102c7e77fa6.png|audio_recorder_demo
+/bpmn/subprocesses/audio_recorder/	audio_recorder_customers-d1e1d4a071dae7d1bd1737609a25a31d.png|audio_recorder_customers
+/bpmn/subprocesses/audio_recorder/	audio_recorder_history-453f0155a11a6eb733690aa28720e8be.png|audio_recorder_history
+/bpmn/subprocesses/audio/	audio_demo-1c076d1e9915d3c63cdcaa0c45896e88.png|audio_demo
+/bpmn/subprocesses/big_query/	create_dataset-c3b919d5082a10d1abd76e416641e5fe.png|Create Dataset
+/bpmn/subprocesses/big_query/	create_customers-79542803b403b9db1ea1ea72b0879952.png|Create Customers
+/bpmn/subprocesses/big_query/	create_variables-628cd59039f4da8ac8ebfc446e8c5ac0.png|Create Variables
+/bpmn/subprocesses/big_query/	schema_customers-90a808e20d0909d4f5dac65004d59a4f.png|Customers Schema
+/bpmn/subprocesses/big_query/	schema_variables-b6ecb77ba44d143851148c38e0f2231f.png|Variables Schema
+/bpmn/subprocesses/big_query/	service_account_step_1-8f4c6577c9e25375f1792c6b1a807ffb.png|Service Account Step 1
+/bpmn/subprocesses/birthdate/	birthday_demo-9688980920ec06abd131c181d2f35328.png|birthday_demo
+/bpmn/subprocesses/birthdate/	birthday_history-210d743698e596e205751a49c83f0003.png|birthday_history
+/bpmn/subprocesses/clever_reach/	clever_reach_recipients-cf72a8d8c26c3a33549ffde59ace56d0.png|clever_reach_recipients
+/bpmn/subprocesses/clever_reach/	clever_reach_credentials-1a0dc3c93f4b024cae307c01affb3a7c.png|clever_reach_credentials
+/bpmn/subprocesses/clipboard/	clipboard_demo-3aba18ef81bdfce927afbcd083ae0c67.png|clipboard_demo
+/bpmn/subprocesses/code/	code_upload-f4087934ba0011d82b1b80d6318eaf89.png|code_upload
+/bpmn/subprocesses/code/	code_entry_settings-81fe5e02fb4af21511655c5c14118689.png|code_entry_settings_demo
+/bpmn/subprocesses/code/	code_entry_loyalty-9e208a75414e36c619ee398c92eac2b7.png|code_entry_loyalty
+/bpmn/subprocesses/code/	code_upload-f4087934ba0011d82b1b80d6318eaf89.png|code_upload
+/bpmn/subprocesses/conversion/	conversion_add-d11c703924cc20f4bac1591d04eea936.png|conversion add
+/bpmn/subprocesses/coupon_code/	coupon_code_example_qr-af7bfed19f0e776ca8632637b30f7ce2.png|qr_code
+/bpmn/subprocesses/coupon_code/	coupon_code_example_128-91e6cf9f0a8751f1e4a36fabf9ac43b7.png|128_code
+/bpmn/subprocesses/csat_survey/	csat_survey_demo-fef579d0d1de1423aef1b870d50af73e.png|csat_survey_demo
+/bpmn/subprocesses/data_collection/	intro-d74e5a0b7b595aef0fa5a9998e6f23b1.gif|questionnaire
+/bpmn/subprocesses/data_collection/	path-b259731df066b947cdbce871a64bd7db.gif|questionnaire path
+/bpmn/subprocesses/data_collection/	title-8bd519cefe7210dedb3a131fb0502a4c.gif|questionnaire title
+/bpmn/subprocesses/data_collection/	data_collection_animation-e9ef3255bc3f60d1aebe0d79a74ae866.png|data_collection_animation_demo
+/bpmn/subprocesses/data_collection/	data_collection_placeholder-b095102b252c99ff9f1bada367fa30af.png|data_collection_placeholder_demo
+/bpmn/subprocesses/data_collection/	settings-9829589fa3be2c82f44ab1a287d68077.png|Settings
+/bpmn/subprocesses/dmn/	dmn_example-405898ce55bed7ad673aa3a7a13196be.png|dmn_example_demo
+/bpmn/subprocesses/dmn/	dmn_colour_example-27df2d69a79b2e35986a082ffbe609d4.png|dmn_colour_example_demo
+/bpmn/subprocesses/dmn/	unnamed-2974af5bae8f28e5b4844446590c7dec.png|Start
+/bpmn/subprocesses/dmn/	answer1-3b5784c01d9a75302269ea6c435904ca.png|Question
+/bpmn/subprocesses/dmn/	answer2-582ef59c2b21a864af99bd6b3c893357.png|Question
+/bpmn/subprocesses/dmn/	answer3-4440158910d486f68679ecc7c6df5709.png|Question
+/bpmn/subprocesses/email_edit/	email_edit_example-17ceecd18f237a9b5ff58d6705d9af1f.png|email_edit_example_demo
+/bpmn/subprocesses/email/	email_enter_example-bb5d67da3283107bc5fea14ff7733bda.png|email_enter_example_demo
+/bpmn/subprocesses/email/	email_terms_example-e68d9cffd80154dec941d11c13ffd889.png|email_terms_example_demo
+/bpmn/subprocesses/external_link/	external_link_webview_example-2ff64b74ad3f03c2b99e7d05c715a9bf.png|external_link_webview_example_demo
+/bpmn/subprocesses/external_link/	external_link_optin-045f1f985b9cfa1325ba4cda213af7c6.png|external_link_optin_demo
+/bpmn/subprocesses/external_link/	external_link_description_title-404d3a612be7d79bc3f36aa5160b4c6c.png|external_link_description_title_demo
+/bpmn/subprocesses/firstname/	firstname_example-b0434841d8e60cf48a17c770aca58ebe.png|firstname_example_demo
+/bpmn/subprocesses/gender/	gender_example-59b88190ea8f7adf6d3f9e3c360b6093.png|gender_example_demo
+/bpmn/subprocesses/goodbye/	goodbye_example-77e339a6050001abc4037de035518f70.png|goodbye_example_demo
+/bpmn/subprocesses/handover/	intro-b9ab3a8ba5a815205b07b5045133a35d.gif|Handover
+/bpmn/subprocesses/handover/	handover_standard_template-9e7a345444f21c1197c42c66e243c0e9.png|handover_standard_template
+/bpmn/subprocesses/hubspot/	create_app-802be871a47c8366bf0ac455e493d338.png|create_app
+/bpmn/subprocesses/hubspot/	scope-e885581c5a1208684212320256ad5fb6.png|scope
+/bpmn/subprocesses/hubspot/	contacts-df5d0e5075d320ce20f78631fa7d6892.png|contacts
+/bpmn/subprocesses/hubspot/	properties-11549e1d08b1786007d84504b76aa403.png|properties
+/bpmn/subprocesses/image/	image_gallery_example-d592e687350997f9cbff5fcdc28f7dfd.png|image_gallery_example_demo
+/bpmn/subprocesses/inxmail/	inxmail1-da7ea0db9d727e97158ce045bd40c3a9.png|grafik
+/bpmn/subprocesses/inxmail/	inxmail2-10e1fb1024bbf11a4464a8c7bb1119db.png|grafik
+/bpmn/subprocesses/inxmail/	inxmail3-65b8bb44f535455888b4083988400f89.png|grafik
+/bpmn/subprocesses/jump_auto/	chat_flow-5c6dcc48c504f6f35a8c9e403d67e1a3.png|jump_chat_flow
+/bpmn/subprocesses/jump_auto/	how_to_set_jump-99beb5dc74d313fd93ace1fee10fba1e.png|jump_how_to_set
+/bpmn/subprocesses/jump_auto/	jump_auto_example-c1ffb4972f8c5eb92d8972d74d86a2c9.png|jump_decision_auto_example_demo
+/bpmn/subprocesses/jump_return/	jump_return_grafik-4819ba435ffd936c63753ac4d66a4e3f.jpeg|jump_return_grafik
+/bpmn/subprocesses/jump_return/	jump_return_example-66a331de829e2659d5fed34b9b7292a5.png|jump_return_example_demo
+/bpmn/subprocesses/lastname/	lastname_example-002ba8c1c143adb955d68ca4a85aee83.png|lastname_example_demo
+/bpmn/subprocesses/list/	list_example-b2861c02d6c46ab5e62af07efcfa87e3.png|list_example_demo
+/bpmn/subprocesses/list/	list_compact-32d1cbe003059c03263911b404306e73.png|list_compact_demo
+/bpmn/subprocesses/list/	list_large-715133ae2a95e363ab4deab3c5bd8a0e.png|list_large_demo
+/bpmn/subprocesses/live/	live_chat_asynchron-0ccd6f922d15546dd21dc4717909df47.png|live_chat_asynchron
+/bpmn/subprocesses/live/	live_chat_email-2520a0b4e2b5f1f7343091e510ff8e15.png|live_chat_email
+/bpmn/subprocesses/live/	live_chat_persistent-85b702b459c6a46ecda9f5e18272d395.png|live_chat_persistent
+/bpmn/subprocesses/locale/	locale_languages_example-d95ddb3b96a0b7abc59982e6917ca904.png|locale_languages_example_demo
+/bpmn/subprocesses/locale/	locale_languages_tab-b12688e4183cb99e9af8b15aae2bb345.png|locale_languages_tab_demo
+/bpmn/subprocesses/lottie/	lottie_animation-4548425eccae6dabc2d635c13b5510a8.gif|lottie_animation
+/bpmn/subprocesses/loyalty_sharing/	loyalty_sharing_desktop-a39215d44557f8b33d28d5a203972a8e.png|loyalty_sharing_desktop
+/bpmn/subprocesses/loyalty_sharing/	loyalty_sharing_mobile-618ce0e87706fdcd3419ec9a52d5efc2.png|loyalty_sharing_mobile
+/bpmn/subprocesses/loyalty_sharing/	loyalty_sharing_share-996a7c87df6d48847d46cfd5e14d5fae.png|loyalty_sharing_share
+/bpmn/subprocesses/loyalty_sharing/	loyalty_sharing_referral-0797c1a629f38f09c455999c7b24aeec.png|loyalty_sharing_referral
+/bpmn/subprocesses/loyalty/	weweCZAACWQi8P+TmqCfrkeSQgAAAABJRU5ErkJggg==|display_coins
+/bpmn/subprocesses/mail/	Send_Mail_1-80510abac14369c2ae6aad078d4f3ec2.gif|Recipients, brand name and subject
+/bpmn/subprocesses/mail/	Send_Mail_2_own_mail_server-e5d08b25b552ad178d0fdd6ff615d366.gif|Include own emai server
+/bpmn/subprocesses/message/	simple_message_text-da2d2a61d7b2fbbdd658a81ccae7e281.png|simple_message_text
+/bpmn/subprocesses/name/	name_example-6537149302afabfa220ab636a279f827.png|name_example_demo
+/bpmn/subprocesses/newsletter_opt_in/	newsletter_opt_in_tag-b2d94b4f7a0d251ab81ffc8b39b98af3.png|newsletter_opt_in_tag
+/bpmn/subprocesses/newsletter_opt_in/	newsletter_opt_in_data-ffe165b21e838905ea52a663d1391e5a.png|newsletter_opt_in_data
+/bpmn/subprocesses/newsletter_opt_in/	add_html-2c30fba24ca3592a3a7fd8995336f256.png|add_html
+/bpmn/subprocesses/newsletter_opt_in/	html_code-d36a44ed2d6a6f39223855fb5987ddbf.png|html_code
+/bpmn/subprocesses/newsletter_opt_in/	confirmation-a9772c199bed46821e9d3a284952e92b.png|confirmation
+/bpmn/subprocesses/nps_survey/	nps_survey_demo-09aa21e50b62c2350afebb3a3866af93.png|nps_survey_demo
+/bpmn/subprocesses/opening_hours/	opening_hours_configuration_example-e5b400f7a18791fbd3d7985e69f44f38.png|opening_hours_configuration_example
+/bpmn/subprocesses/opening_hours/	opening_hours_timezone-edd710dd0a843540f56668ea137a4113.png|opening_hours_timezone
+/bpmn/subprocesses/optimizely/	optimizely_basic-72b86eba229049ae60c5643240b790be.png|optimizely_basic
+/bpmn/subprocesses/optimizely/	optimizely_mappings-b7ab84b0705ffacda4f674d1bd01f1e9.png|optimizely_mappings
+/bpmn/subprocesses/participation/	participation_timezone-7092ba86527506c0446ab1afb431a935.png|participation_timezone
+/bpmn/subprocesses/participation/	participations_switch-18b69747dc3edb9ec111f696a05b0b74.png|participations_switch
+/bpmn/subprocesses/participation/	participations_example-3ab0bad9daef8ed8e5a640f5710eb814.png|participations_example
+/bpmn/subprocesses/participation/	participations_drawn_example-58bcb27acf251ede197aac179dcb3900.png|participations_drawn_example
+/bpmn/subprocesses/participation/	giveaway_participation_data-c8a0e271320eb56a05381db9aa2dacc6.png|giveaway_participation_data
+/bpmn/subprocesses/password/	password_demo-1654d38bbb9e3b6845062fcef507315c.png|password_demo
+/bpmn/subprocesses/pattern_split/	pattern_split-edffaca03a4a530a7799e58ef8008e2f.png|pattern_split
+/bpmn/subprocesses/places/	places-a5fd4a1bc42b225ee33dfb1ba9a33ff3.png|Places example chat screenshot
+/bpmn/subprocesses/places/	sheet_example-6ec5f6d0ce4dca7c499506f5bbe68c28.png|Example sheet
+/bpmn/subprocesses/places/api_keys/	api_list-a2f77df090fd1946756c327eae5a2e4f.png|API list
+/bpmn/subprocesses/places/api_keys/	create_server_api_key-ac9bf3db58576f4372becb90ad2d1d32.png|Create Server API key
+/bpmn/subprocesses/places/api_keys/	restrict_server_api_key-2d855c3fc8308dd4f0e29d097d391de2.png|Restrict Server API key
+/bpmn/subprocesses/places/api_keys/	create_browser_api_key-ac9bf3db58576f4372becb90ad2d1d32.png|Create Browser API key
+/bpmn/subprocesses/places/api_keys/	restrict_browser_api_key-a1d55e8f65111e994ab577cc97369bf2.png|Restrict Browser API key
+/bpmn/subprocesses/places/api_keys/	api_keys_list-aad333f9c340d735f5bb67f160c48552.png|API keys list
+/bpmn/subprocesses/poll/	poll-6efb155880516536cf574a6d5fdf20e5.png|Chat conversation showing a live poll question with real-time results displayed as percentage bars for each answer option.
+/bpmn/subprocesses/poll/	poll_settings-9f72c8fc4a9e0d57a2783147d0ed5b98.png|BPMN process editor showing the Poll module connected after a Questionnaire module, with dropdowns to select which questionnaire questions to display as poll results.
+/bpmn/subprocesses/prizes/	prizes_gallery_time-204f6aa696ad1ff9e1815dbf4d641ab0.png|prizes_gallery_time
+/bpmn/subprocesses/proceed/	sFrCpBFQAk4astyPwBd3+egj9kmV7EWA9qGd9AvJ2dtGqZZMTRCpIpjD8fWjnNnbeJCvfpQze9snXSVTDThdSOZgOnxxt9U5DdUckWVth9mBdtEvImdZw4RQHNWAQwA115Lko4+deww1W7zC2h2Ra5hkorzsduAdG9h81eyQiRbY83kqAe95zLMyR3ZH8N2xwSOnmK9mhPGwRlZWPAsKZd4W5zxMwlazjh0u1o9vZkGb7KkiKAHvKaRzKB+eluPrC7wAnKfWeA2i90mwHKpO1hWVR7F5sQ7vduDxYp5wu6B5g6wrpxYofASUgMPHWHNQBBQBRcAXAV2E84VFHRUBRUARCB8BJeDwMdYcFAFFQBHwRUAJ2BcWdVQEFAFFIHwElIDDx1hzUAQUAUXAFwElYF9Y1FERUAQUgfARUAIOH2PNQRFQBBQBXwT+C++Co+L6aa+XAAAAAElFTkSuQmCC|proceed_demo
+/bpmn/subprocesses/product_feed/	sheet_example-6d78145ae84ebe068925cfb00c271bdb.png|Example sheet
+/bpmn/subprocesses/product_feed/	connectors2-76a2f995f90fdd377da557d23fd9ac6d.png|Connectors
+/bpmn/subprocesses/product_feed/connectors/google_sheets/	sheet_id_url-860f7d593da1415066a7fe4b238df943.png|Google Sheets URL with the Sheet ID portion between /d/ and /edit highlighted.
+/bpmn/subprocesses/product_feed/tag_recommender/	Tag_2-1962d46e3fbfab0d4bb9764e5f6b5019.gif|Recommender Step 1
+/bpmn/subprocesses/product_feed/tag_recommender/	Tag_1-0747f1e989e39a0fd113ea4d7a70f205.gif|Recommender Step 2
+/bpmn/subprocesses/products/	intro-17d5ece193cec1d6d69fef491c3b50d1.gif|Product Example
+/bpmn/subprocesses/products/	image_orientation_small-b90859553f8413d769212bb35a11131f.png|Product Image Example
+/bpmn/subprocesses/products/	product_name-e152f0d9539191b3f559f44752189a47.png|Product Input Field Example
+/bpmn/subprocesses/products/	product_topline-98b0a0fc45f250b362172d2db0bcd70f.png|Product Input Topline Example
+/bpmn/subprocesses/products/	price-e258ef92e7fc4f55fefef550aecc3bf6.png|Product Price Example
+/bpmn/subprocesses/products/	button-75616e6107fb78dfde28192194a71706.png|Product Button Example
+/bpmn/subprocesses/profiling_opt_in/	profiling_opt_in_demo-c30cbb13e2286da3c6df1c64bad18593.png|profiling_opt_in_demo
+/bpmn/subprocesses/profiling_opt_in/	profiling_opt_in_data-045b3ba011c23810e0ad4b9342a81b2c.png|profiling_opt_in_data
+/bpmn/subprocesses/quiz/	quiz_add-a30204d6753793697daa62fc377e41ec.gif|Add Quiz
+/bpmn/subprocesses/quiz/	quiz_question-e28cbdcde05730456b03a68938cace08.png|Add Question
+/bpmn/subprocesses/quiz/	quiz_answer-19f26e0775cb2fa4525af8cf883d677f.png|Add Answer
+/bpmn/subprocesses/rapidmail/	recpipient_list-06d5940a7b8b5a6a7a96759967675765.png|Rapidmail Recipient List ID
+/bpmn/subprocesses/region/	region_not_permitted_demo-6eadfd0862ec04a36364ab82971db677.png|region_not_permitted_demo
+/bpmn/subprocesses/region/	region_permitted_demo-d637964679e704a870afa8b7c32a0318.png|region_permitted_demo
+/bpmn/subprocesses/reminder_opt_in/	reminder_opt_in_data-59d501d3a66e0cb8d386b05f38182204.png|reminder_opt_in_data
+/bpmn/subprocesses/reminder_opt_in/	add_html-493c0dac8f3c214e0b798c65664e0253.png|add_html
+/bpmn/subprocesses/reminder_opt_in/	html_code-d36a44ed2d6a6f39223855fb5987ddbf.png|html_code
+/bpmn/subprocesses/reminder_opt_in/	confirmation-a9772c199bed46821e9d3a284952e92b.png|confirmation
+/bpmn/subprocesses/reset/	session_reset_variables_history-725b4b60d445b44122f98820f8b6ea4a.png|session_reset_variables_history
+/bpmn/subprocesses/restart/	restart_question-825aafd98c26a1cfe6b55100ff8c1568.png|restart_question
+/bpmn/subprocesses/rewards/	rewards_display_example-2ecbccf44e16ec1eb0f0483560b8c9a1.png|rewards_display_example
+/bpmn/subprocesses/rewards/	rewards_button_example-c8f48cd53321a4546869e97059c63fa8.png|rewards_button_example
+/bpmn/subprocesses/rewards/	rewards_setup_example-9060e13f4e7532660842ce998584ab39.png|rewards_setup_example
+/bpmn/subprocesses/router_push/	router_push-f0c66ce5b1f02b082dd27773a8a89f38.png|router push
+/bpmn/subprocesses/salesforce/	sF1-aaa6274d97bdd3c0617cac28cfee043e.png|grafik
+/bpmn/subprocesses/salesforce/	sfsc_wtc1-30b72036c7731b28967ceb159c561206.png|sfsc_wtc1
+/bpmn/subprocesses/salesforce/	sF2-8fa4176a23d09ba6549a8364c04faf83.png|grafik
+/bpmn/subprocesses/salesforce/	sF3-83c25a73904ed20343fc74b774f89e19.png|grafik
+/bpmn/subprocesses/salesforce/	sF6-d333018073ccb1e3cf369712822d208b.png|grafik
+/bpmn/subprocesses/salesforce/	sF8-1b1a90f89cc74d5fec0c70a68286a884.png|grafik
+/bpmn/subprocesses/scanner/	scanner-1aca914310eec9f4b53b4396e81a0894.png|scanner
+/bpmn/subprocesses/scanner/	w8XF0mLXJMr6AAAAABJRU5ErkJggg==|scanner_skip
+/bpmn/subprocesses/search/	Search1-b27a2d051d4d762c84918ed47479763a.gif|search_example1
+/bpmn/subprocesses/search/	Search2-8c35f8317a65dba85b8706249949a93a.gif|search_example2
+/bpmn/subprocesses/search/	Search_output-7bdde3094342c827df063df98fcef140.png|search_output
+/bpmn/subprocesses/share_image/	share_image_demo-77a3ef782379579dab121d541194cd06.png|share_image_demo
+/bpmn/subprocesses/share_link/	share_link_demo-faa12d181ed418ecfb5471cfbe141cc4.png|share_link_demo
+/bpmn/subprocesses/sign_in/	sign_in-994077348a802b0712e3b1008c258aa0.png|sign_in
+/bpmn/subprocesses/sign_in/	sign_in_code_email-570da5ccc9564596f5c02aaadfd37175.png|sign_in_code_email
+/bpmn/subprocesses/sign_in/	sign_in_terms-8653fef39754490165a3d8c64e753e0e.png|sign_in_terms
+/bpmn/subprocesses/signal/	signal_example-39a720dbbe07e8c03c04d2a0d4fb0954.png|signal_example
+/bpmn/subprocesses/signal/	signal_settings_example-55844e762b786ce5e50354ad2668ab1d.png|signal_settings_example
+/bpmn/subprocesses/tag/	Tag_example-e54b2202ba79876ea58b5b1c5f8c74a0.gif|Tag example
+/bpmn/subprocesses/terms/	terms_of_praticipation_demo-7df3afba14de0dcedff97a8feb0d33d8.png|terms_of_participation_demo
+/bpmn/subprocesses/terms/	terms_of_praticipation_example-0ba9998ca79791e41d3f98dbb22e82eb.png|terms_of_participation_example
+/bpmn/subprocesses/video/	video_gallery_demo-d5ea60ea2a8d46df37952b96ef32f411.png|video_gallery_demo
+/bpmn/subprocesses/web_component/	web_component1-0f6a2d66741921984bcb143ea39b2388.png|grafik
+/bpmn/subprocesses/web_component/	web_component2-51e2e6af85c0784b3a9019767c968576.png|grafik
+/bpmn/subprocesses/web_component/	web_component3-ea7f8561fc8a648332df4a13ae98f383.png|grafik
+/bpmn/subprocesses/web_service/server/	allow_unauthenticated-0405cdf5c237aad55210a19780c17fca.png|Allow unauthenticated
+/bpmn/subprocesses/web_service/server/	entry_point-923effb127bb31ddaeb592a623a650bc.png|Entry point
+/bpmn/subprocesses/web_service/server/	web_service-143871953fee5bdc899a9c0d169356f9.png|Web service module config
+/bpmn/subprocesses/welcome/	welcoming_demo-74f26adbdb88d64c7f5e36c0cba24856.png|welcoming_demo
+/bpmn/subprocesses/win/	instant_drawing_data-672fd7907c2e8a7dd3d948afd0813df0.png|instant_drawing_data
+/bpmn/subprocesses/workato/	process_module-ec06e105c506b9fae99f14c6d36dda64.png|Workato Process Module
+/bpmn/subprocesses/workato/	create_recipe-4033951717b16ba6c02313fe83e38552.png|Create Recipe in  Workato
+/bpmn/subprocesses/workato/	api_token-3b18ccbdb30488297e54bbe4bc4c8ccd.png|Api Token Key LoyJoy
+/bpmn/subprocesses/workato/	recipe_trigger-1a0751ac61b0b03d206cd0ae791e85ef.png|Recipe trigger Workato
+/bpmn/subprocesses/workato/	select_module-dc0d9680f76f8b2566b2f4ade973d2a1.png|Select Workato Module
+/bpmn/subprocesses/workato/	log-c86c908f0f92308a36fe47d4c8e98041.png|Log
+/bpmn/subprocesses/zapier/	process_module-f6c1e6286e2b17d9f995cffc7c70f872.png|Zapier Process Module
+/bpmn/subprocesses/zapier/	create_zap_button-c7cb03a8267c1ff89aaee712b646c6be.png|Create Zap
+/bpmn/subprocesses/zapier/	trigger_select_loyjoy-b4be755043ef3efcd75ce604e1c3eca3.png|Select LoyJoy Trigger
+/bpmn/subprocesses/zapier/	trigger_select_event-3e47c2ab359b680d3b6eef0e29e12527.png|Select LoyJoy Trigger Event
+/bpmn/subprocesses/zapier/	trigger_sign_in-10e1b67efde47a257951293ce24c5c4e.png|Sign In LoyJoy
+/bpmn/subprocesses/zapier/	app_sign_in-999cc421450ce79d4313e6bde98397ee.png|App Key LoyJoy

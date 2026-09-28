@@ -1,0 +1,17 @@
+==85 imgs
+  <img src="/img/loyjoy.svg" alt="LoyJoy Logo" class="themedComponent_mlkZ themedComponent--light_NVdE">
+  <img src="/img/loyjoy.svg" alt="LoyJoy Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU">
+  <img decoding="async" loading="lazy" alt="Central AI Agent" src="/assets/images/central_ai-4404a904af074d5e7c69ab9ffd796d4e.png" title="Central AI Agent Configuration in LoyJoy Backend" width="912" height="1472" class="img_ev3q">
+  <img decoding="async" loading="lazy" alt="Other Agent" src="/assets/images/other_agent-f845926abe005899b9e3ddb6bad50055.png" title="Other Agent Configuration in LoyJoy Backend" width="574" height="1020" class="img_ev3q">
+==85 h1/h2
+  Centralized AI Handling
+  1. Create a Central AI Agent​
+  2. Configure Other Agents to use the Central AI Agent​
+==85 text around gateway
+==83 h1
+  How to Build an AI Agent
+==83 AI sentences
+  * Skip to main content On this page How to Build an AI Agent In the LoyJoy manager backend, you can have several starting points to create a new agent.
+==75 h1 + first 600
+  H1 LoyJoy Now Features a BPMN Process Engine to Automate Processes With Chatbots
+   Neu: LoyJoy Headless AI Agents jetzt in Claude, ChatGPT Work und OpenWork bauen, auswerten und verbessern. So funktioniert es → Einloggen Demo buchen BPMN LoyJoy Now Features a BPMN Process Engine to Automate Processes With Chatbots • 17. Juli 2019 Hinweis zum Alter dieses Beitrags: Die Entwicklung bei KI im Allgemeinen und bei der LoyJoy Platform im Speziellen schreitet rasant voran. Die Informationen dieses Blog-Posts sind möglicherweise nicht mehr auf dem neuesten Stand. We are happy to release LoyJoy 2.0 offering companies to flexibly design, build and publish chatbot-powered business processes on websites, portals, Facebook and Instagram. BPMN 2.0 is the global gold standard for profes

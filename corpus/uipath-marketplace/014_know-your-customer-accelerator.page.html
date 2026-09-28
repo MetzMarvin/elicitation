@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en" hx-ext="head-support" hx-head="merge">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Know Your Customer | UiPath Marketplace</title>
+  <meta name="description" content="The contents of this solution can be seen as a technical blueprint, a starting point for a complete Know Your Customer Processing Automation, that is meant t..." />
+
+  
+  
+  <meta name="keywords" content="RPA Marketplace, RPA components for sale, Buy RPA tools, Sell RPA components, RPA software marketplace, Marketplace for RPA Tools, Buy UiPath Components, Automation components for sale, RPA toolkits online, Best RPA marketplace" />
+  
+
+  
+  <meta name="google-site-verification" content="EYiUCxJ8VJhd_FXCqwZgWfrg2TaBhl79TQ-q5gaqfKI" />
+
+  
+  
+
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="UiPath Marketplace" />
+  <meta property="og:title" content="Know Your Customer" />
+  <meta property="og:description" content="The contents of this solution can be seen as a technical blueprint, a starting point for a complete Know Your Customer Processing Automation, that is meant to be modified, refactored and customized." />
+  <meta property="og:url" content="https://marketplace.uipath.com/listings/know-your-customer" />
+  <meta property="og:image" content="/static/favicons/public/android-chrome-192x192.png" />
+
+  
+  <link rel="canonical" href="https://marketplace.uipath.com/listings/know-your-customer" />
+
+  
+  
+  
+
+  
+  <link rel="icon" type="image/x-icon" href="/static/favicons/public/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/public/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/public/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/favicons/public/apple-icon-120x120.png" />
+  <link rel="mask-icon" href="/static/favicons/public/safari-pinned-tab.svg" color="#0067df" />
+
+  
+  <link rel="stylesheet" href="/css/tokens.css?v=26.9.16-release-13409602.1" />
+  <link rel="stylesheet" href="/css/mui.css?v=26.9.16-release-13409602.1" />
+  <link rel="stylesheet" href="/css/components.css?v=26.9.16-release-13409602.1" />
+  <link rel="stylesheet" href="/css/web-public.css?v=26.9.16-release-13409602.1" />
+
+  
+  
+  <script id="mp-ai-sdk" type="text/javascript" src="/vendor/applicationinsights-web.min.js?v=26.9.16-release-13409602.1"></script>
+  
+
+  
+  
+
+  
+  
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Marketplace",
+      "item": "https://marketplace.uipath.com\/"
+    }
+    ,
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Accelerators",
+      "item": "https://marketplace.uipath.com\/products\/accelerators"
+    }
+    ,
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Accelerator",
+      "item": "https://marketplace.uipath.com\/products\/accelerators"
+    }
+    ,
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Know Your Customer",
+      "item": "https://marketplace.uipath.com"
+    }
+    
+  ]
+}
+</script>
+
+
+
+  
+
+
+<script id="gtm-init">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PLLP8P');</script>
+
+
+</head>
+<body class="apollo-design light" hx-boost="true" hx-target="#mp-page" hx-select="#mp-page" hx-swap="outerHTML show:window:top">
+  
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLLP8P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+  
+  <div id="mp-progress" class="mp-progress"></div>
+
+  
+<header class="MuiPaper-root MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky mp-nav" data-testid="Nav">
+  <div class="MuiToolbar-root MuiToolbar-regular mp-nav-toolbar">
+
+    
+    <div class="mp-nav-hamburger">
+      <button type="button" aria-label="Toggle navigation" class="mp-nav-hamburger-btn">
+        <span class="mp-hamburger-bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+
+    
+    <a href="/" class="mp-nav-logo-link">
+      <img
+        src="/static/images/logos/marketplace-logo.svg"
+        height="28"
+        alt="Uipath Marketplace"
+        data-testid="Nav-logo"
+        class="mp-nav-logo mp-nav-logo--light" />
+      <img
+        src="/static/images/logos/marketplace-logo-dark.svg"
+        height="28"
+        alt="Uipath Marketplace"
+        aria-hidden="true"
+        class="mp-nav-logo mp-nav-logo--dark" />
+    </a>
+
+    
+    <div class="mp-nav-center">
+      <div class="mp-nav-mobile-hidden mp-nav-search-box" id="nav-search-box">
+        
+
+<form class="mp-search" data-search
+      data-search-api="/api/gateway/search/v1/suggestions"
+      data-search-target="/search"
+      data-trending-label="Trending"
+      action="/search" method="get" role="search">
+  <div class="mp-search-wrap mp-search-wrap--medium">
+    <span class="mp-search-icon" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    </span>
+    <input
+      type="text"
+      name="query"
+      id="nav-search-autocomplete"
+      class="mp-search-input"
+      data-testid="AutocompleteBar_Input"
+      placeholder="Search Marketplace"
+      autocomplete="off"
+      spellcheck="false"
+      role="combobox"
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-controls="nav-search-autocomplete-listbox"
+      aria-haspopup="listbox" />
+    <button type="submit" class="mp-search-submit" data-testid="SearchBar_SearchButton" aria-label="Search" tabindex="-1">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+    </button>
+    <div class="mp-search-dropdown" data-search-dropdown hidden>
+      <ul class="mp-search-results" data-search-results id="nav-search-autocomplete-listbox" role="listbox"></ul>
+      <div class="mp-search-empty" data-search-empty hidden>No results</div>
+    </div>
+    <div class="mp-sr-only" aria-live="polite" data-search-live></div>
+  </div>
+</form>
+
+      </div>
+    </div>
+
+    
+    <div class="mp-nav-actions">
+      <div class="mp-nav-actions-mobile-hidden">
+        
+        <div data-testid="NavBottomLeft" class="mp-nav-bottom-left"></div>
+      </div>
+      <div class="mp-nav-login-wrapper">
+        <button type="button" data-theme-toggle data-testid="NavThemeToggle" aria-label="Switch to dark theme" aria-pressed="false" class="MuiButtonBase-root MuiIconButton-root mp-nav-theme-toggle">
+          <svg class="mp-theme-icon mp-theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg class="mp-theme-icon mp-theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button type="button" data-testid="NavLoginButton" class="MuiButton-root MuiButton-text mp-nav-login-btn" onclick="location.href='/auth/login?returnTo='+encodeURIComponent(window.location.pathname+window.location.search)">
+          Sign in | Sign up
+        </button>
+        <a class="mp-nav-login-mobile" href="/auth/login" onclick="this.href='/auth/login?returnTo='+encodeURIComponent(window.location.pathname+window.location.search)" hx-boost="false">
+          <img src="/static/images/icons/user_avatar.svg" alt="Sign in" width="24" height="24" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mp-nav-mobile-hidden">
+    <div class="mp-nav-secondary">
+      <div class="mp-listing-menus">
+        <div class="mp-listing-item" data-testid="ProductMenu">
+          <div data-testid="LinkMenu" data-nav-match="products" class="mp-link-menu">
+            <button type="button" class="mp-link-menu-anchor" aria-expanded="false" aria-haspopup="true" data-nav-dropdown-toggle>
+              <span class="mp-link-menu-text">Products</span>
+              <span class="mp-link-menu-chevron" aria-hidden="true">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="mp-link-menu-dropdown" data-testid="NavIconHoverDropdown" role="menu">
+              <a href="/products/studio" data-testid="studio_link" class="mp-dropdown-item">Studio</a>
+              <a href="/products/studio-web" data-testid="studio_web_link" class="mp-dropdown-item">Studio Web</a>
+              <a href="/products/studiox" data-testid="studiox_link" class="mp-dropdown-item">StudioX</a>
+              <a href="/products/automation-ops" data-testid="automation_ops_link" class="mp-dropdown-item">Automation Ops</a>
+              <a href="/products/document-understanding" data-testid="document_understanding_link" class="mp-dropdown-item">Document Understanding</a>
+              <a href="/products/assistant" data-testid="assistant_link" class="mp-dropdown-item">Assistant</a>
+              <a href="/products/process-mining" data-testid="process_mining_link" class="mp-dropdown-item">Process Mining</a>
+              <a href="/products/apps" data-testid="uipath_apps_link" class="mp-dropdown-item">Apps</a>
+              <a href="/products/integration-service" data-testid="integration_services_link" class="mp-dropdown-item">Integration Service</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mp-listing-item" data-testid="AcceleratorsMenu">
+          <div data-testid="LinkMenu" data-nav-match="/products/accelerators" class="mp-link-menu">
+            <a href="/products/accelerators" class="mp-link-menu-anchor mp-link-menu-anchor--plain">
+              <span class="mp-link-menu-text">Accelerators</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mp-listing-item" data-testid="GenAiLibraryMenu">
+          <div data-testid="LinkMenu" data-nav-match="/products/gen-ai" class="mp-link-menu">
+            <a href="/products/gen-ai" class="mp-link-menu-anchor mp-link-menu-anchor--plain">
+              <span class="mp-link-menu-text">Agent Catalog</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mp-listing-item" data-testid="ExploreMenu">
+          <div data-testid="LinkMenu" data-nav-match="/applications,/integrations" class="mp-link-menu">
+            <button type="button" class="mp-link-menu-anchor" aria-expanded="false" aria-haspopup="true" data-nav-dropdown-toggle>
+              <span class="mp-link-menu-text">Explore</span>
+              <span class="mp-link-menu-chevron" aria-hidden="true">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="mp-link-menu-dropdown" data-testid="NavIconHoverDropdown" role="menu">
+              <a href="/applications" data-testid="applications_link" class="mp-dropdown-item" role="menuitem">Applications</a>
+              <a href="/integrations" data-testid="integrations_link" class="mp-dropdown-item" role="menuitem">Integrations</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mp-listing-item" data-testid="BusinessSolutionsMenu">
+          <div data-testid="LinkMenu" data-nav-match="/products/partner-solutions" class="mp-link-menu">
+            <a href="/products/partner-solutions" class="mp-link-menu-anchor mp-link-menu-anchor--plain">
+              <span class="mp-link-menu-text">Partner Solutions</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mp-listing-item" data-testid="ProfessionalServicesMenu">
+          <div data-testid="LinkMenu" data-nav-match="/products/professional-services" class="mp-link-menu">
+            <a href="/products/professional-services" class="mp-link-menu-anchor mp-link-menu-anchor--plain">
+              <span class="mp-link-menu-text">Professional Services</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mp-listing-item" data-testid="CollectionsMenu">
+          <div data-testid="LinkMenu" data-nav-match="/collections" class="mp-link-menu">
+            <a href="/collections" class="mp-link-menu-anchor mp-link-menu-anchor--plain">
+              <span class="mp-link-menu-text">Collections</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="mp-mobile-menu" data-mobile-menu aria-hidden="true">
+  <div class="mp-mobile-menu-header">
+    <a href="/" class="mp-mobile-menu-logo">
+      <img src="/static/images/logos/marketplace-logo.svg" height="24" alt="UiPath Marketplace" class="mp-nav-logo--light" />
+      <img src="/static/images/logos/marketplace-logo-dark.svg" height="24" alt="UiPath Marketplace" aria-hidden="true" class="mp-nav-logo--dark" />
+    </a>
+    <button type="button" class="mp-mobile-menu-close" data-mobile-menu-close aria-label="Close menu">&times;</button>
+  </div>
+
+  <nav class="mp-mobile-menu-nav" aria-label="Mobile navigation">
+
+    
+    <div class="mp-mobile-nav-group">
+      <button class="mp-mobile-nav-btn" data-mobile-accordion aria-expanded="false">
+        Products
+        <svg class="mp-mobile-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="mp-mobile-nav-sub" hidden>
+        <a href="/products/studio" class="mp-mobile-nav-sub-link">Studio</a>
+        <a href="/products/studio-web" class="mp-mobile-nav-sub-link">Studio Web</a>
+        <a href="/products/studiox" class="mp-mobile-nav-sub-link">StudioX</a>
+        <a href="/products/automation-ops" class="mp-mobile-nav-sub-link">Automation Ops</a>
+        <a href="/products/document-understanding" class="mp-mobile-nav-sub-link">Document Understanding</a>
+        <a href="/products/assistant" class="mp-mobile-nav-sub-link">Assistant</a>
+        <a href="/products/process-mining" class="mp-mobile-nav-sub-link">Process Mining</a>
+        <a href="/products/apps" class="mp-mobile-nav-sub-link">Apps</a>
+        <a href="/products/integration-service" class="mp-mobile-nav-sub-link">Integration Service</a>
+      </div>
+    </div>
+
+    <a href="/products/accelerators" class="mp-mobile-nav-link">Accelerators</a>
+    <a href="/products/gen-ai" class="mp-mobile-nav-link">Agent Catalog</a>
+
+    
+    <div class="mp-mobile-nav-group">
+      <button class="mp-mobile-nav-btn" data-mobile-accordion aria-expanded="false">
+        Explore
+        <svg class="mp-mobile-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="mp-mobile-nav-sub" hidden>
+        <a href="/applications" class="mp-mobile-nav-sub-link">Applications</a>
+        <a href="/integrations" class="mp-mobile-nav-sub-link">Integrations</a>
+      </div>
+    </div>
+
+    <a href="/products/partner-solutions" class="mp-mobile-nav-link">Partner Solutions</a>
+    <a href="/products/professional-services" class="mp-mobile-nav-link">Professional Services</a>
+    <a href="/collections" class="mp-mobile-nav-link">Collections</a>
+  </nav>
+
+  <div class="mp-mobile-menu-footer">
+    <a href="/auth/login" onclick="this.href='/auth/login?returnTo='+encodeURIComponent(window.location.pathname+window.location.search)" class="mp-btn mp-btn-primary" style="width:100%;justify-content:center;" hx-boost="false">
+      Sign in | Sign up
+    </a>
+  </div>
+</div>
+<div class="mp-mobile-menu-backdrop" data-mobile-menu-backdrop aria-hidden="true"></div>
+
+  <main id="mp-page" class="mp-main" data-path="/listings/know-your-customer">
+    
+<div class="mp-listing" data-testid="ComponentProfilePage" data-gtm-component data-gtm-name="Know Your Customer" data-gtm-slug="know-your-customer" data-gtm-company="UiPath" data-gtm-id="4087" data-gtm-target="DownloadableContent" data-gtm-type-id="17" data-gtm-owner-id="160557" data-gtm-company-id="2" data-gtm-paid="false" data-gtm-version="1.0.1" data-gtm-product-id="" data-gtm-product="Accelerator">
+  
+
+<nav class="mp-breadcrumbs" aria-label="Breadcrumb" data-testid="Breadcrumbs">
+  <ol class="mp-breadcrumbs-list">
+    
+    <li class="mp-breadcrumbs-item">
+      
+        
+        <a href="/" class="mp-breadcrumbs-link" data-testid="BreadcrumbLink">Marketplace</a>
+        
+        <span class="mp-breadcrumbs-sep" aria-hidden="true"><img src="/static/images/icons/arrow-small-right.svg" alt="" /></span>
+      
+    </li>
+    
+    <li class="mp-breadcrumbs-item">
+      
+        
+        <a href="/products/accelerators" class="mp-breadcrumbs-link" data-testid="BreadcrumbLink">Accelerators</a>
+        
+        <span class="mp-breadcrumbs-sep" aria-hidden="true"><img src="/static/images/icons/arrow-small-right.svg" alt="" /></span>
+      
+    </li>
+    
+    <li class="mp-breadcrumbs-item">
+      
+        
+        <a href="/products/accelerators" class="mp-breadcrumbs-link" data-testid="BreadcrumbLink">Accelerator</a>
+        
+        <span class="mp-breadcrumbs-sep" aria-hidden="true"><img src="/static/images/icons/arrow-small-right.svg" alt="" /></span>
+      
+    </li>
+    
+    <li class="mp-breadcrumbs-item">
+      
+        <span class="mp-breadcrumbs-current" aria-current="page" data-testid="BreadcrumbCurrent">Know Your Customer</span>
+      
+    </li>
+    
+  </ol>
+</nav>
+
+
+  
+
+
+
+
+
+<div class="mp-listing-header">
+  <div class="mp-listing-header-left">
+    <img src="/static/images/icons/components/accelerator.svg" alt="" class="mp-listing-icon" width="80" height="80" />
+    <div class="mp-listing-header-info">
+      
+      <div class="mp-listing-name-row">
+        <h1 class="mp-listing-name" data-testid="ComponentProfileRightSection_componentName">Know Your Customer</h1>
+        
+        
+      </div>
+      
+      
+      <p class="mp-listing-vendor">
+        by UiPath
+      </p>
+      
+      <div class="mp-listing-meta-row">
+        
+        <span class="mp-listing-stars" role="img" aria-label="Rating: 0.0 out of 5">
+          
+          <span class="mp-star mp-star--empty" aria-hidden="true">&#9733;</span><span class="mp-star mp-star--empty" aria-hidden="true">&#9733;</span><span class="mp-star mp-star--empty" aria-hidden="true">&#9733;</span><span class="mp-star mp-star--empty" aria-hidden="true">&#9733;</span><span class="mp-star mp-star--empty" aria-hidden="true">&#9733;</span>
+          
+        </span>
+        <span class="mp-listing-meta-sep">|</span>
+        
+        <span class="mp-listing-meta-type">Accelerator</span>
+        
+        
+        <span class="mp-listing-meta-sep">|</span>
+        <span class="mp-listing-meta-stat" title="Downloads">
+          <img src="/static/images/icons/download.svg" alt="" width="16" height="16" class="mp-listing-meta-icon" />
+          <strong>&lt;100</strong>
+        </span>
+        
+      </div>
+    </div>
+  </div>
+  <div class="mp-listing-header-actions">
+    <button data-login-modal-trigger class="mp-btn mp-btn-primary mp-btn--signin">
+      Sign in / Sign up
+    </button>
+  </div>
+</div>
+
+  
+<nav class="mp-tabs" aria-label="Component sections">
+  <a href="/listings/know-your-customer" class="mp-tab mp-tab--active" data-testid="tab_Overview">
+    Overview
+  </a>
+  
+  <a href="/listings/know-your-customer/versions" class="mp-tab" data-testid="tab_Versions">
+    Versions
+  </a>
+  
+  <a href="/listings/know-your-customer/reviews" class="mp-tab" data-testid="tab_Reviews">
+    Reviews
+  </a>
+  <a href="/listings/know-your-customer/questions" class="mp-tab" data-testid="tab_Questions">
+    Q&amp;A
+  </a>
+</nav>
+
+
+  <div class="mp-listing-content">
+    <div class="mp-listing-main">
+
+      
+      
+      <section class="mp-listing-section">
+        <div class="mp-accel-benefits">
+          <div class="mp-accel-benefit mp-accel-benefit--title">
+            <span class="mp-accel-benefit-label">Benefits</span>
+          </div>
+          
+          <div class="mp-accel-benefits-divider"></div>
+          <div class="mp-accel-benefit">
+            <div class="mp-accel-benefit-metric">
+              
+              <span class="mp-accel-benefit-value">240</span>
+              <span class="mp-accel-benefit-unit">hours</span>
+              
+            </div>
+            <span class="mp-accel-benefit-name">Reduced development time*</span>
+          </div>
+          
+          <div class="mp-accel-benefits-divider"></div>
+          <div class="mp-accel-benefit">
+            <div class="mp-accel-benefit-metric">
+              
+              <span class="mp-accel-benefit-value">85%</span>
+              
+            </div>
+            <span class="mp-accel-benefit-name">Optimized productivity</span>
+          </div>
+          
+          <div class="mp-accel-benefits-divider"></div>
+          <div class="mp-accel-benefit">
+            <div class="mp-accel-benefit-metric">
+              
+              <span class="mp-accel-benefit-value">80%</span>
+              
+            </div>
+            <span class="mp-accel-benefit-name">Enhanced accuracy</span>
+          </div>
+          
+        </div>
+      </section>
+      
+
+      
+      
+      <section class="mp-listing-section mp-listing-section--media">
+        <div class="mp-media-carousel" data-carousel data-testid="MediaCarousel">
+          <button class="mp-carousel-btn mp-carousel-btn--prev" data-carousel-prev aria-label="back button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="mp-media-track" data-carousel-track>
+            
+            
+            <div class="mp-media-item">
+              <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/68090bf2-268c-4bec-a3da-1271dbdd2047.png" alt="" class="mp-media-img" loading="lazy" />
+            </div>
+            
+            
+            
+            <div class="mp-media-item">
+              <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/0db60b45-1182-497a-a854-b0abdaad8c5a.png" alt="" class="mp-media-img" loading="lazy" />
+            </div>
+            
+            
+            
+            <div class="mp-media-item">
+              <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/4ad0b184-f9e0-4b76-8f57-aaddb2072f63.png" alt="" class="mp-media-img" loading="lazy" />
+            </div>
+            
+            
+            
+            <div class="mp-media-item">
+              <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/46b29d82-8fad-47d4-a6c8-d0ee83d070ad.png" alt="" class="mp-media-img" loading="lazy" />
+            </div>
+            
+            
+          </div>
+          <button class="mp-carousel-btn mp-carousel-btn--next" data-carousel-next aria-label="next button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </section>
+      
+
+      
+
+      
+      
+      <section class="mp-listing-section">
+        <h2 class="mp-listing-section-title">Summary</h2>
+        <p class="mp-listing-summary" data-testid="Summary">The contents of this solution can be seen as a technical blueprint, a starting point for a complete Know Your Customer Processing Automation, that is meant to be modified, refactored and customized.</p>
+      </section>
+      
+
+      
+      
+      <section class="mp-listing-section">
+        <h2 class="mp-listing-section-title" data-testid="Overview">Overview</h2>
+        <div class="mp-listing-description"><p>This package is a Solution Accelerator that can be used as a starting point for <strong>Know Your Customer Processing</strong>. Know Your Customer Processing is a mandatory process of identifying and verifying a client’s identity through submitted documents. </p>
+<p>This process uses Out-of-the-box Pre-trained ML Package Models for Passports, ID Cards, Utility Bills, Bank Statements, and 4056T Forms as defined in <a href="https://docs.uipath.com/document-understanding/automation-cloud/latest/user-guide/out-of-the-box-pre-trained-ml-packages" rel="nofollow noopener" target="_blank">documentation located here</a>. For specific taxonomy and extracted fields, please refer to the documentation. </p>
+<p>The Solution Accelerator uses the public endpoints defined in documentation. If further fields are needed or you would rather not use the public end point, the OOTB model can be <a href="https://docs.uipath.com/ai-center/standalone/2021.10/user-guide/out-of-the-box-packages" rel="nofollow noopener" target="_blank">deployed in AI Center and then trained using a process defined in documentation here</a>.</p>
+</div>
+      </section>
+      
+
+      
+      
+      <section class="mp-listing-section">
+        <h2 class="mp-listing-section-title" data-testid="Benefits">Features</h2>
+        <div class="mp-listing-description"><ol>
+<li>Retrieving KYC Documents from a Data Source (like an email inbox, a network drive, or a third-party application).</li>
+<li>Digitize KYC Documents, classify, extract document details, running business rule validations.</li>
+<li>Process document validations.</li>
+</ol>
+</div>
+      </section>
+      
+
+      
+      
+
+      
+      
+      <section class="mp-listing-section">
+        <h2 class="mp-listing-section-title">Additional Information</h2>
+        <div class="mp-addinfo-grid">
+          
+          <div class="mp-addinfo-col">
+            <h3 class="mp-addinfo-label" data-testid="container_Dependencies">Dependencies</h3>
+            <div class="mp-addinfo-text"><p>UiPath.Excel.Activities: 2.16.1 UiPath.SolutionAccelerators.Reusables.ServiceNow: 1.1.0 UiPath.Form.Activities: 2.0.3 UiPath.System.Activities 22.4.5 UiPath.Persistence.Activities: 1.4.2</p>
+</div>
+          </div>
+          
+          
+          <div class="mp-addinfo-col">
+            
+            
+            <div class="mp-addinfo-item">
+              <h3 class="mp-addinfo-label" data-testid="container_ProgrammingLanguage">Code Language</h3>
+              <p class="mp-addinfo-text">Visual Basic</p>
+            </div>
+            
+            
+            
+            <div class="mp-addinfo-item">
+              <h3 class="mp-addinfo-label" data-testid="container_Runtime">Runtime</h3>
+              <p class="mp-addinfo-text">Windows (.Net 5.0 or higher)</p>
+            </div>
+            
+            
+            
+          </div>
+          
+        </div>
+        <hr class="mp-addinfo-separator" />
+        
+        <p class="mp-accel-benefits-note">
+          * Learn more about how the benefits are calculated. Click
+          <a href="https://docs.uipath.com/marketplace/automation-cloud/latest/user-guide/solution-accelerators-benefits" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+        
+      </section>
+      
+
+      
+
+      
+      
+
+    </div>
+
+    
+<aside class="mp-listing-sidebar">
+
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">Publisher</h3>
+    <p class="mp-sidebar-value">UiPath</p>
+    <a href="/organizations/uipath" class="mp-sidebar-link">Visit publisher&#39;s page</a>
+    
+    <p class="mp-sidebar-badge">
+      <img src="/static/images/icons/trusted-source.svg" alt="" width="18" height="18" />
+      <span>Trusted Source</span>
+    </p>
+    
+  </div>
+  
+
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">License &amp; Privacy</h3>
+    
+    <a href="https://www.uipath.com/assets/downloads/mssa" class="mp-sidebar-link" target="_blank" rel="noopener noreferrer">License Agreement</a>
+    
+    <button type="button" class="mp-sidebar-link-btn" data-privacy-toggle>Privacy Terms</button>
+    <div class="mp-privacy-panel" data-privacy-panel hidden>
+      <p class="mp-privacy-text">The publisher states that this listing does not process any personal information</p>
+    </div>
+  </div>
+  
+
+  
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">Technical</h3>
+
+    
+    
+    <div class="mp-sidebar-field">
+      <span class="mp-sidebar-label">Version</span>
+      <span class="mp-sidebar-data">1.0.1</span>
+    </div>
+    
+
+    
+    
+    <div class="mp-sidebar-field">
+      <span class="mp-sidebar-label">Updated</span>
+      <span class="mp-sidebar-data">March 14, 2024</span>
+    </div>
+    
+
+    
+    
+    <div class="mp-sidebar-field">
+      <span class="mp-sidebar-label">Works with</span>
+      <span class="mp-sidebar-data">Studio: 22.4&#43;</span>
+    </div>
+    
+
+    
+    
+    <div class="mp-sidebar-field">
+      
+      <span class="mp-sidebar-label">Certification</span>
+      <div class="mp-cert-wrap">
+        <span class="mp-cert-badge">
+          <img src="/static/images/icons/certification/gold.svg" alt="" width="20" height="22" />
+          Gold Certified
+        </span>
+        
+        <div class="mp-cert-popover">
+          <strong>Gold Certified</strong>
+          
+          <p>This certification means it respects Silver requirements plus:</p>
+          <ul>
+            <li>Malware analysis +</li>
+            <li>Vulnerabilities in 3rd party dependencies</li>
+            <li>Static code analysis</li>
+            <li>Dynamic code analysis</li>
+            <li>Pen-testing</li>
+          </ul>
+          
+          <a href="https://docs.uipath.com/marketplace/docs/certification-program-overview" class="mp-cert-learn-more" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">Tags</h3>
+    <div class="mp-sidebar-tags">
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=compliance" class="mp-sidebar-tag">compliance</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=reporting" class="mp-sidebar-tag">reporting</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=kyc" class="mp-sidebar-tag">kyc</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=template" class="mp-sidebar-tag">template</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=document" class="mp-sidebar-tag">document</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=aml" class="mp-sidebar-tag">aml</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=know-your-customer" class="mp-sidebar-tag">know-your-customer</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=bank-statement" class="mp-sidebar-tag">bank-statement</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Legal" class="mp-sidebar-tag">Legal</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Identity" class="mp-sidebar-tag">Identity</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=%23Understanding" class="mp-sidebar-tag">#Understanding</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=AI%20Center" class="mp-sidebar-tag">AI Center</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=DU%20Model" class="mp-sidebar-tag">DU Model</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=AI%20Model" class="mp-sidebar-tag">AI Model</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Utility%20Bills" class="mp-sidebar-tag">Utility Bills</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=enterprise" class="mp-sidebar-tag">enterprise</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Trained%20Model" class="mp-sidebar-tag">Trained Model</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=OOTB%20Model" class="mp-sidebar-tag">OOTB Model</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Regulations" class="mp-sidebar-tag">Regulations</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Anti%20Money%20Launder" class="mp-sidebar-tag">Anti Money Launder</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Laws" class="mp-sidebar-tag">Laws</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Verify" class="mp-sidebar-tag">Verify</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=Passports" class="mp-sidebar-tag">Passports</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=ID%20Cards" class="mp-sidebar-tag">ID Cards</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=4056C" class="mp-sidebar-tag">4056C</a>
+        
+      
+        
+        <a href="/products/accelerators?versions.tags.tag.tag_name=4056T" class="mp-sidebar-tag">4056T</a>
+        
+      
+    </div>
+  </div>
+  
+
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">Application</h3>
+    <div class="mp-sidebar-apps">
+      
+      <a href="/products/accelerators?versions.used_apps.tag_name=UiPath%20Studio" class="mp-sidebar-app" title="UiPath Studio">
+        
+        <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="UiPath Studio" height="20" class="mp-sidebar-app-icon" />
+        
+      </a>
+      
+      <a href="/products/accelerators?versions.used_apps.tag_name=UiPath%20Robot" class="mp-sidebar-app" title="UiPath Robot">
+        
+        <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="UiPath Robot" height="20" class="mp-sidebar-app-icon" />
+        
+      </a>
+      
+      <a href="/products/accelerators?versions.used_apps.tag_name=UiPath%20Orchestrator" class="mp-sidebar-app" title="UiPath Orchestrator">
+        
+        <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="UiPath Orchestrator" height="20" class="mp-sidebar-app-icon" />
+        
+      </a>
+      
+      <a href="/products/accelerators?versions.used_apps.tag_name=UiPath%20Document%20Understanding" class="mp-sidebar-app" title="UiPath Document Understanding">
+        
+        <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-document-understanding.png" alt="UiPath Document Understanding" height="20" class="mp-sidebar-app-icon" />
+        
+      </a>
+      
+      <a href="/products/accelerators?versions.used_apps.tag_name=UiPath%20AI%20Center" class="mp-sidebar-app" title="UiPath AI Center">
+        
+        <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-ai-center.png" alt="UiPath AI Center" height="20" class="mp-sidebar-app-icon" />
+        
+      </a>
+      
+      <a href="/products/accelerators?versions.used_apps.tag_name=UiPath%20Action%20Center" class="mp-sidebar-app" title="UiPath Action Center">
+        
+        <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-action-center.png" alt="UiPath Action Center" height="20" class="mp-sidebar-app-icon" />
+        
+      </a>
+      
+    </div>
+  </div>
+  
+
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">Support</h3>
+    
+      
+      <p class="mp-sidebar-support-row"><span class="mp-sidebar-label">Link: </span>
+        <a href="https://marketplace.uipath.com/contact-us" class="mp-sidebar-link" target="_blank" rel="noopener noreferrer">https://marketplace.uipath.com/contact-us</a></p>
+      
+      
+      <p class="mp-sidebar-support-row"><span class="mp-sidebar-label">Email: </span>
+        <a href="mailto:solution-accelerators-support@uipath.com" class="mp-sidebar-link">solution-accelerators-support@uipath.com</a></p>
+      
+      
+      
+      <p class="mp-sidebar-value">Support on Demand is available only to UiPath Enterprise customers. To access this type of support, you need to have an active UiPath license. More details are available here: https://docs.uipath.com/marketplace/automation-cloud/latest/user-guide/support-on-demand. Note: Marketplace Support On Demand is not subject to a response SLA, but one should expect a response within two business days. </p>
+      
+    
+  </div>
+  
+
+  
+  
+  <div class="mp-sidebar-block">
+    <h3 class="mp-sidebar-heading">Resources</h3>
+    
+      
+      <a href="" class="mp-sidebar-link" target="_blank" rel="noopener noreferrer">Know Your Customer Processing Solution Accelerator - Overview.docx</a>
+      
+    
+  </div>
+  
+
+</aside>
+
+  </div>
+
+  
+  
+  <hr class="mp-listing-full-divider" />
+  <div data-testid="listing_results">
+  
+
+<section class="mp-section">
+  <div class="mp-section-header">
+    <h2 class="mp-listing-section-title">Similar Listings</h2>
+    
+  </div>
+  <div class="mp-carousel" data-carousel>
+    <button class="mp-carousel-btn mp-carousel-btn--prev" data-carousel-prev aria-label="Previous" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <div class="mp-carousel-track" data-carousel-track>
+      
+        
+
+
+
+
+
+<a href="/listings/know-your-customer-ai" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="know-your-customer-ai" data-name="Know Your Customer AI" data-company="UiPath" data-type="Solution">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/solution.svg" alt="Know Your Customer AI" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Solution</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Know Your Customer AI">Know Your Customer AI</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Lead Request">
+        <img src="/static/images/icons/enquiries.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">KYC 1 automatizes the onboarding and monitoring process of KYC for financial institutions by using reliable, independent source documents and data about the clients registered in UK and France</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+      
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/customer-verification-and-onboarding" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="customer-verification-and-onboarding" data-name="Customer Verification and Onboarding" data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Customer Verification and Onboarding" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Customer Verification and Onboarding">Customer Verification and Onboarding</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">This is a Solution Accelerator developed specifically for Customer Verification and Onboarding automations in SAP, where vendors are checked against OFAC and USPS systems.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/document-examination-and-review" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="document-examination-and-review" data-name="Trade Finance Documents - Data Extraction" data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Trade Finance Documents - Data Extraction" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Trade Finance Documents - Data Extraction">Trade Finance Documents - Data Extraction</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">Automate the Trade Finance process of extracting the required data points from various document types after a Trade Finance transaction.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/official-travel-document-passports" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="official-travel-document-passports" data-name="Official Travel Document - Passports" data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Official Travel Document - Passports" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Official Travel Document - Passports">Official Travel Document - Passports</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">This accelerator is an out-of-the-box ML model for seamless processing, retrieval, and validation of Passports.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/identity-document-cards-and-driver-licenses" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="identity-document-cards-and-driver-licenses" data-name="Identity Document Cards and Driver Licenses" data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Identity Document Cards and Driver Licenses" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Identity Document Cards and Driver Licenses">Identity Document Cards and Driver Licenses</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">This accelerator is an out-of-the-box ML model for seamless processing, retrieval, and validation of ID Cards.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/document-collection-and-processing" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="document-collection-and-processing" data-name="Trade Finance – Create Letters of Credit " data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Trade Finance – Create Letters of Credit " class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Trade Finance – Create Letters of Credit ">Trade Finance – Create Letters of Credit </h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">Automate the Trade Finance process of creating Letters of Credit based on information a client provides to the Bank.  </p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/docextract-ai-intelligent-document-classifier" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="docextract-ai-intelligent-document-classifier" data-name="DocExtract AI – Intelligent Document Classifier" data-company="4th-IR AG" data-type="Partner Solution">
+  <div class="mp-component-card-header">
+    
+      <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/44efb4e0-892d-4a3c-83be-e111d6a325b1.png" alt="DocExtract AI – Intelligent Document Classifier" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Partner Solution</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="DocExtract AI – Intelligent Document Classifier">DocExtract AI – Intelligent Document Classifier</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="4th-IR AG">by 4th-IR AG</span>
+    
+    
+  </div>
+
+  <p class="mp-component-card-desc">DocExtract AI automates the classification and extraction of KYC/KYB business documents, reducing manual effort and enhancing compliance accuracy for financial institutions and regulators.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="BusinessSolution certified">
+          <img src="/static/images/icons/certification/businesssolution.svg" alt="BusinessSolution" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-assistant.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-apps.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Paid
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/in-d-kyc-id-document-classification-extraction-and-validation" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="in-d-kyc-id-document-classification-extraction-and-validation" data-name="IN-D KYC - ID Document Classification, Extraction &amp; Validation" data-company="IN-D AI" data-type="Snippet">
+  <div class="mp-component-card-header">
+    
+      <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/f8a95246-09e7-4607-8bbf-f4aa230aa927.png" alt="IN-D KYC - ID Document Classification, Extraction &amp; Validation" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Snippet</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="IN-D KYC - ID Document Classification, Extraction &amp; Validation">IN-D KYC - ID Document Classification, Extraction &amp; Validation</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="IN-D AI">by IN-D AI</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">Classify ID documents, and extract useful attributes smartly leveraging on the power of AI. Works with most of the officially valid documents for vetting your customers making your onboarding fraud-proof and build trust.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/in-d.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/process-mining-for-customer-onboarding" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="process-mining-for-customer-onboarding" data-name="Process Mining for Customer Onboarding" data-company="Verdant Data" data-type="Partner Solution">
+  <div class="mp-component-card-header">
+    
+      <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/user_images/6fc2561c-acfb-4e64-bac9-55c0733e47dc.png" alt="Process Mining for Customer Onboarding" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Partner Solution</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Process Mining for Customer Onboarding">Process Mining for Customer Onboarding</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="Verdant Data">by Verdant Data</span>
+    
+    
+  </div>
+
+  <p class="mp-component-card-desc">Enhance the client onboarding by identifying bottlenecks and accelerating KYC and account setup.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="BusinessSolution certified">
+          <img src="/static/images/icons/certification/businesssolution.svg" alt="BusinessSolution" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/salesforce.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/microsoft-dynamics-365.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Paid
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/bank-statements" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="bank-statements" data-name="Bank Statements " data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Bank Statements " class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Bank Statements ">Bank Statements </h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">This accelerator is an out-of-the-box ML model for seamless processing, retrieval, and validation of Bank Statements.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/tax-return-form-4506t-and-4506c" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="tax-return-form-4506t-and-4506c" data-name="Tax Return Form 4506T and 4506C" data-company="UiPath" data-type="Accelerator">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/accelerator.svg" alt="Tax Return Form 4506T and 4506C" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Accelerator</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="Tax Return Form 4506T and 4506C">Tax Return Form 4506T and 4506C</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="UiPath">by UiPath</span>
+    
+    
+      <span class="mp-component-card-stat" title="Downloads">
+        <img src="/static/images/icons/download.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">This accelerator is an out-of-the-box ML model for seamless processing, retrieval, and validation of IRS Form 4056-T and 4506-C.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+        <span class="mp-component-badge" data-testid="ComponentBadge" aria-label="Gold certified">
+          <img src="/static/images/icons/certification/gold.svg" alt="Gold" width="20" height="22" />
+        </span>
+      
+      
+        <span class="mp-component-card-divider" aria-hidden="true"></span>
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-studio.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-robot.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/uipath-orchestrator.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+        
+
+
+
+
+
+<a href="/listings/uipath-kyc-ultimate-beneficial-owner-accelerator" class="mp-component-card MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded MuiCard-root" data-testid="ComponentCard" data-slug="uipath-kyc-ultimate-beneficial-owner-accelerator" data-name="UiPath KYC (Ultimate Beneficial Owner) Accelerator" data-company="Internal Labs" data-type="Solution">
+  <div class="mp-component-card-header">
+    
+      <img src="/static/images/icons/components/solution.svg" alt="UiPath KYC (Ultimate Beneficial Owner) Accelerator" class="mp-component-card-icon" loading="lazy" width="64" height="64" />
+    
+    <div class="mp-component-card-chips">
+      <span class="mp-component-type-chip">Solution</span>
+      
+    </div>
+  </div>
+
+  <h3 class="mp-component-card-name" title="UiPath KYC (Ultimate Beneficial Owner) Accelerator">UiPath KYC (Ultimate Beneficial Owner) Accelerator</h3>
+
+  <div class="mp-component-card-meta">
+    
+      <span class="mp-component-card-author" title="Internal Labs">by Internal Labs</span>
+    
+    
+      <span class="mp-component-card-stat" title="Lead Request">
+        <img src="/static/images/icons/enquiries.svg" alt="" width="16" height="16" />
+        <span class="mp-component-card-stat-count">&lt;100</span>
+      </span>
+    
+  </div>
+
+  <p class="mp-component-card-desc">Accelerator extracts ultimate beneficial owners from SEC Def 14A (Proxy documents), runs these list of owners through sanctions screening and politically exposed person (PEP) checks.</p>
+
+  <div class="mp-component-card-footer">
+    <div class="mp-component-card-footer-left">
+      
+      
+      
+        <div class="mp-component-card-apps">
+          
+            <img src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/images/app_images/microsoft-excel.png" alt="" class="mp-component-card-app-icon" loading="lazy" width="20" height="20" />
+          
+        </div>
+      
+    </div>
+    <span class="mp-component-card-price">
+      Free
+    </span>
+  </div>
+</a>
+
+      
+    </div>
+    <button class="mp-carousel-btn mp-carousel-btn--next" data-carousel-next aria-label="Next">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+  </div>
+</section>
+
+  </div>
+  
+
+  
+
+<div class="mp-modal-backdrop" data-login-modal hidden
+     role="dialog" aria-modal="true"
+     aria-labelledby="mp-login-modal-title">
+  <div class="mp-modal" role="document">
+    <button class="mp-modal-close" type="button"
+            data-login-modal-close
+            aria-label="Close">&times;</button>
+    <h2 class="mp-modal-title" id="mp-login-modal-title">
+      Ooops! You’re not signed in
+    </h2>
+    <p class="mp-modal-body">To complete the action you’ll need to sign in or register.</p>
+    <div class="mp-modal-actions">
+      <a href="/auth/login?returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false" class="mp-modal-btn mp-modal-btn--secondary">
+        Register
+      </a>
+      <a href="/auth/login?returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false" class="mp-modal-btn mp-modal-btn--primary">
+        Sign in
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </main>
+  
+<footer class="mp-footer-outer-wrapper" data-testid="footer-container">
+  <div class="mp-footer-outer-container">
+    <div class="mp-footer-inner-container">
+      
+      <div class="mp-footer-column">
+        <div class="mp-footer-list">
+          <p class="MuiTypography-root mp-footer-list-header">Help</p>
+          <a href="https://forum.uipath.com" target="_blank" rel="noopener noreferrer" title="UiPath Forum" class="mp-footer-link">UiPath Forum</a>
+          <a href="/contact-us" class="mp-footer-link">Contact Us</a>
+          <a href="https://docs.uipath.com/marketplace/docs/faq" target="_blank" rel="noopener noreferrer" title="FAQs" class="mp-footer-link">FAQs</a>
+          <a href="/sitemap" class="mp-footer-link">Sitemap</a>
+        </div>
+      </div>
+
+      
+      <div class="mp-footer-column">
+        <div class="mp-footer-list">
+          <p class="MuiTypography-root mp-footer-list-header">How To</p>
+          <a href="https://trello.com/b/MVzJuwEM/uipath-marketplace-automation-ideas-board" target="_blank" rel="noopener noreferrer" title="Automation Ideas Board" class="mp-footer-link">Automation Ideas Board</a>
+          <a href="https://docs.uipath.com/marketplace/docs/introduction" target="_blank" rel="noopener noreferrer" title="Become a Publisher" class="mp-footer-link">Become a Publisher</a>
+          <a href="https://docs.uipath.com/marketplace/docs/publishing-guidelines-how-to-submit" target="_blank" rel="noopener noreferrer" title="Publish a Quality Listing" class="mp-footer-link">Publish a Quality Listing</a>
+          <a href="https://docs.uipath.com/marketplace/docs/certification-program-overview" target="_blank" rel="noopener noreferrer" title="Certify Your Listing" class="mp-footer-link">Certify Your Listing</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="mp-bottom-footer">
+      <div class="mp-bottom-footer-top">
+        <img src="/static/images/logos/footer-logo.svg" height="32" alt="UiPath Logo" class="mp-bottom-footer-logo" />
+
+        <div class="mp-bottom-footer-social">
+          <a href="https://www.linkedin.com/company/uipath/" target="_blank" rel="noopener noreferrer" class="mp-bottom-footer-social-link">
+            <img src="/static/images/logos/linkedin-footer.svg" alt="linkedin" />
+          </a>
+          <a href="https://www.facebook.com/UiPath" target="_blank" rel="noopener noreferrer" class="mp-bottom-footer-social-link">
+            <img src="/static/images/logos/facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://twitter.com/uipath" target="_blank" rel="noopener noreferrer" class="mp-bottom-footer-social-link">
+            <img src="/static/images/logos/twitter.svg" alt="twitter" />
+          </a>
+          <a href="https://www.youtube.com/user/uipath" target="_blank" rel="noopener noreferrer" class="mp-bottom-footer-social-link">
+            <img src="/static/images/logos/you-tube.svg" alt="youtube" />
+          </a>
+          <a href="https://www.uipath.com/blog/rss.xml" target="_blank" rel="noopener noreferrer" class="mp-bottom-footer-social-link">
+            <img src="/static/images/logos/rss.svg" alt="blog" />
+          </a>
+          <a href="https://www.uipath.com/developers/slack-community" target="_blank" rel="noopener noreferrer" class="mp-bottom-footer-social-link">
+            <img src="/static/images/logos/slack.svg" alt="slack" />
+          </a>
+        </div>
+
+        
+        <div class="mp-lang-selector" id="mp-lang-selector">
+          <button class="mp-lang-selector-btn" aria-haspopup="listbox" aria-expanded="false" data-lang-toggle>
+            <span>English</span>
+          </button>
+          <ul class="mp-lang-selector-dropdown" role="listbox" hidden>
+            
+            <li role="option" aria-selected="true">
+              <a href="/set-locale?locale=en&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check">✓</span>
+                English
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=de&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Deutsch
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=es&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Español
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=es-MX&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Español (México)
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=fr&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Français
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=ja&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                日本語
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=ko&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                한국어
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=pt&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Português
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=pt-BR&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Português (Brasil)
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=ro&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Română
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=tr&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                Türkçe
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=zh-CN&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                中文(简体)
+              </a>
+            </li>
+            
+            <li role="option" aria-selected="false">
+              <a href="/set-locale?locale=zh-TW&returnTo=%2Flistings%2Fknow-your-customer" hx-boost="false">
+                <span class="mp-lang-check"></span>
+                中文(繁體)
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="mp-bottom-footer-links mp-bottom-footer-links--desktop">
+        <a href="https://www.uipath.com/legal/terms-of-use" target="_blank" rel="noopener noreferrer" title="Terms &amp; Conditions" class="mp-bottom-footer-link">Terms &amp; Conditions</a>
+        <div class="mp-bottom-footer-dot" aria-hidden="true"></div>
+        <a href="https://www.uipath.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" title="Privacy Policy" class="mp-bottom-footer-link">Privacy Policy</a>
+        <div class="mp-bottom-footer-dot" aria-hidden="true"></div>
+        <a href="https://www.uipath.com/legal/cookies-policy" target="_blank" rel="noopener noreferrer" title="Cookies Policy" class="mp-bottom-footer-link">Cookies Policy</a>
+        <div class="mp-bottom-footer-dot" aria-hidden="true"></div>
+        <a href="https://www.uipath.com" target="_blank" rel="noopener noreferrer" title="© 2005–2025 UiPath. All rights reserved." class="mp-bottom-footer-link">© 2005–2025 UiPath. All rights reserved.</a>
+      </div>
+
+      
+      <div class="mp-bottom-footer-links mp-bottom-footer-links--mobile">
+        <a href="https://www.uipath.com" target="_blank" rel="noopener noreferrer" title="© 2005–2025 UiPath. All rights reserved." class="mp-bottom-footer-link mp-bottom-footer-link--faded">© 2005–2025 UiPath. All rights reserved.</a>
+        <a href="https://www.uipath.com/legal/terms-of-use" target="_blank" rel="noopener noreferrer" title="Terms &amp; Conditions" class="mp-bottom-footer-link">Terms &amp; Conditions</a>
+        <a href="https://www.uipath.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" title="Privacy Policy" class="mp-bottom-footer-link">Privacy Policy</a>
+        <a href="https://www.uipath.com/legal/cookies-policy" target="_blank" rel="noopener noreferrer" title="Cookies Policy" class="mp-bottom-footer-link">Cookies Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  <script src="/vendor/htmx.min.js?v=26.9.16-release-13409602.1"></script>
+  <script src="/vendor/htmx-head-support.js?v=26.9.16-release-13409602.1"></script>
+
+  <script>window.__AI_CONN_STRING__ = "InstrumentationKey=06d1bfc7-3122-4725-8690-39b7bfcf380c;IngestionEndpoint=https:\/\/northeurope-0.in.applicationinsights.azure.com\/;LiveEndpoint=https:\/\/northeurope.livediagnostics.monitor.azure.com\/;ApplicationId=563aab38-8f3b-42c6-8447-31dcfaa2a29f";</script>
+  <script src="/js/interactions.js?v=26.9.16-release-13409602.1" defer></script>
+  <script src="/js/analytics.js?v=26.9.16-release-13409602.1" defer></script>
+</body>
+</html>

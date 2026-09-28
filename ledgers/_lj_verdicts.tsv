@@ -1,0 +1,151 @@
+n	path	n_img	classes	aiimgs	nh	proposal
+1	/bpmn/	0	{}		3	E0
+2	/bpmn/control_flow/	0	{}		0	E0
+3	/bpmn/control_flow/Loop/	3	{"bpmn-canvas":1,"config-panel":2}		1	E2
+4	/bpmn/events/	0	{}		0	E0
+5	/bpmn/events/endEvent/	1	{"bpmn-canvas":1}		1	E2
+6	/bpmn/events/intermediateCatchEvent_timer/	1	{"editor-canvas+panel":1}		0	E2
+7	/bpmn/events/startEvent_message/	1	{"editor-canvas+panel":1}	icon.png=YES: "GPT gateway", "GPT Knowledge", "#6	1	INCLUDE
+8	/bpmn/events/startEvent_timer/	5	{"config-panel":2,"other":1,"bpmn-canvas":1}		0	E2
+9	/bpmn/events/startEvent/	1	{"other":1}		0	E0-ui
+10	/bpmn/subprocesses/	0	{}		1	E0
+11	/bpmn/subprocesses/advent_calendar_door/	1	{"chat-ui":1}		0	E1-chatui
+12	/bpmn/subprocesses/ai_agent/	1	{"editor-canvas+panel":1}	question_count.png=YES: "#2 AI Agent"	96	INCLUDE
+13	/bpmn/subprocesses/ai_knowledge_followup/	0	{}		7	E0
+14	/bpmn/subprocesses/ai_knowledge/	1	{"bpmn-canvas":1}	flow.png=YES: "#2 GPT Knowledge"	42	INCLUDE
+15	/bpmn/subprocesses/ai_prompt/	1	{"config-panel":1}		6	E0-ui
+16	/bpmn/subprocesses/ai_recommender/	0	{}		4	E0
+17	/bpmn/subprocesses/ai_smalltalk/	0	{}		2	E0
+18	/bpmn/subprocesses/animation/	0	{}		6	E0
+19	/bpmn/subprocesses/api_client/	11	{"config-panel":7,"editor-canvas+panel":1,"table-or-code":3}		0	E2
+20	/bpmn/subprocesses/api_client/mappings/	8	{"config-panel":8}		0	E0-ui
+21	/bpmn/subprocesses/api_client/timeouts/	0	{}		1	E0
+22	/bpmn/subprocesses/appointment/	3	{"chat-ui":1,"config-panel":2}		0	E1-chatui
+23	/bpmn/subprocesses/articles/	2	{"chat-ui":1,"other":1}		0	E1-chatui
+24	/bpmn/subprocesses/audio_recorder/	3	{"chat-ui":1,"table-or-code":1,"other":1}		0	E1-chatui
+25	/bpmn/subprocesses/audio/	1	{"chat-ui":1}		4	E1-chatui
+26	/bpmn/subprocesses/auth0/	0	{}		1	E0
+27	/bpmn/subprocesses/beiersdorf/	0	{}		0	E0
+28	/bpmn/subprocesses/big_query/	15	{"other":2,"config-panel":6,"table-or-code":5,"editor-canvas+panel":2}		5	E2
+29	/bpmn/subprocesses/birthdate/	2	{"chat-ui":1,"config-panel":1}		0	E1-chatui
+30	/bpmn/subprocesses/brevo/	0	{}		0	E0
+31	/bpmn/subprocesses/campaign_monitor/	0	{}		1	E0
+32	/bpmn/subprocesses/clever_reach/	2	{"config-panel":2}		0	E0-ui
+33	/bpmn/subprocesses/clipboard/	1	{"chat-ui":1}		0	E1-chatui
+34	/bpmn/subprocesses/code/	3	{"table-or-code":1,"bpmn-canvas":1,"config-panel":1}		1	E2
+35	/bpmn/subprocesses/conversion/	1	{"editor-canvas+panel":1}	conversion_add.png=YES: "Track the conversion rate of your 	3	INCLUDE
+36	/bpmn/subprocesses/coupon_code/	2	{"chat-ui":2}		0	E1-chatui
+37	/bpmn/subprocesses/csat_survey/	1	{"chat-ui":1}		1	E1-chatui
+38	/bpmn/subprocesses/data_collection/	48	{"config-panel":17,"chat-ui":31}		4	E1-chatui
+39	/bpmn/subprocesses/dmn/	18	{"table-or-code":9,"chat-ui":3,"config-panel":6}		3	E1-chatui
+40	/bpmn/subprocesses/email_edit/	1	{"chat-ui":1}		0	E1-chatui
+41	/bpmn/subprocesses/email/	2	{"chat-ui":2}		0	E1-chatui
+42	/bpmn/subprocesses/email/email_templates/	0	{}		0	E0
+43	/bpmn/subprocesses/event/	0	{}		0	E0
+44	/bpmn/subprocesses/external_link/	3	{"other":2,"icon-or-graphic":1}		1	E0-ui
+45	/bpmn/subprocesses/firstname/	1	{"chat-ui":1}		0	E1-chatui
+46	/bpmn/subprocesses/form/	0	{}		2	E0
+47	/bpmn/subprocesses/gender/	1	{"chat-ui":1}		0	E1-chatui
+48	/bpmn/subprocesses/goodbye/	1	{"chat-ui":1}		0	E1-chatui
+49	/bpmn/subprocesses/handover/	2	{"other":2}		0	E0-ui
+50	/bpmn/subprocesses/hubspot/	4	{"config-panel":3,"table-or-code":1}		0	E0-ui
+51	/bpmn/subprocesses/image/	1	{"icon-or-graphic":1}		2	E0-ui
+52	/bpmn/subprocesses/inxmail/	3	{"config-panel":3}		0	E0-ui
+53	/bpmn/subprocesses/javascript/	0	{}		1	E0
+54	/bpmn/subprocesses/jump_auto/	3	{"bpmn-canvas":1,"config-panel":1,"chat-ui":1}		6	E2
+55	/bpmn/subprocesses/jump_decision/	0	{}		19	E0
+56	/bpmn/subprocesses/jump_return/	2	{"editor-canvas+panel":1,"chat-ui":1}	jump_return_grafik.jpeg=YES: "Knowledge" (editor nav tab)	13	INCLUDE
+57	/bpmn/subprocesses/keycloak/	0	{}		1	E0
+58	/bpmn/subprocesses/lastname/	1	{"chat-ui":1}		0	E1-chatui
+59	/bpmn/subprocesses/list/	3	{"chat-ui":3}		2	E1-chatui
+60	/bpmn/subprocesses/live/	3	{"editor-canvas+panel":3}	live_chat_asynchron.png=YES: "Wissen" (nav tab), "Agenten sind o;live_chat_email.png=YES: "Wissen" (nav tab);live_chat_persistent.png=YES: "Knowledge" (nav tab)	21	INCLUDE
+61	/bpmn/subprocesses/locale/	2	{"chat-ui":1,"config-panel":1}	locale_languages_tab.png=YES: "Knowledge" (left nav item)	4	E1-chatui
+62	/bpmn/subprocesses/lottie/	1	{"chat-ui":1}		0	E1-chatui
+63	/bpmn/subprocesses/loyalty_referral/	0	{}		0	E0
+64	/bpmn/subprocesses/loyalty_sharing/	4	{"chat-ui":2,"bpmn-canvas":2}		6	E2
+65	/bpmn/subprocesses/loyalty/	1	{}		3	E0-ui
+66	/bpmn/subprocesses/mail/	2	{"config-panel":1,"editor-canvas+panel":1}		1	E2
+67	/bpmn/subprocesses/mailchimp/	0	{}		1	E0
+68	/bpmn/subprocesses/main_prize/	0	{}		0	E0
+69	/bpmn/subprocesses/message/	1	{"config-panel":1}		0	E0-ui
+70	/bpmn/subprocesses/microsoft_entra_id/	0	{}		2	E0
+71	/bpmn/subprocesses/mini_program/	0	{}		4	E0
+72	/bpmn/subprocesses/name/	1	{"chat-ui":1}		0	E1-chatui
+73	/bpmn/subprocesses/newsletter_opt_in/	5	{"table-or-code":3,"editor-canvas+panel":1,"chat-ui":1}	newsletter_opt_in_data.png=YES: "Knowledge" (left nav item);add_html.png=YES: "Knowledge" (nav tab)	1	INCLUDE
+74	/bpmn/subprocesses/notification/	0	{}		0	E0
+75	/bpmn/subprocesses/nps_survey/	1	{"chat-ui":1}		3	E1-chatui
+76	/bpmn/subprocesses/one_trust/	0	{}		0	E0
+77	/bpmn/subprocesses/opening_hours/	2	{"config-panel":2}		2	E0-ui
+78	/bpmn/subprocesses/optimizely/	2	{"config-panel":2}		0	E0-ui
+79	/bpmn/subprocesses/participation/	5	{"config-panel":1,"table-or-code":3}	giveaway_participation_data.png=YES: "Knowledge" (left nav item)	2	E0-ui
+80	/bpmn/subprocesses/password/	1	{}		0	E0-ui
+81	/bpmn/subprocesses/pattern_split_ai/	0	{}		10	E0
+82	/bpmn/subprocesses/pattern_split_decision/	0	{}		0	E0
+83	/bpmn/subprocesses/pattern_split/	1	{}		0	E0-ui
+84	/bpmn/subprocesses/pdf/	0	{}		1	E0
+85	/bpmn/subprocesses/personal_data_intro/	0	{}		0	E0
+86	/bpmn/subprocesses/personal_data_outro/	0	{}		0	E0
+87	/bpmn/subprocesses/phone/	0	{}		0	E0
+88	/bpmn/subprocesses/places/	2	{}		1	E0-ui
+89	/bpmn/subprocesses/places/api_keys/	7	{}		0	E0-ui
+90	/bpmn/subprocesses/poll/	2	{}		1	E0-ui
+91	/bpmn/subprocesses/postal_address/	0	{}		1	E0
+92	/bpmn/subprocesses/prizes/	1	{}		0	E0-ui
+93	/bpmn/subprocesses/pro_campaign/	0	{}		0	E0
+94	/bpmn/subprocesses/proceed/	1	{}		1	E0-ui
+95	/bpmn/subprocesses/process_instance_create/	0	{}		1	E0
+96	/bpmn/subprocesses/product_feed/	2	{}		4	E0-ui
+97	/bpmn/subprocesses/product_feed/connectors/	0	{}		0	E0
+98	/bpmn/subprocesses/product_feed/connectors/database/	0	{}		0	E0
+99	/bpmn/subprocesses/product_feed/connectors/google_sheets/	1	{}		0	E0-ui
+100	/bpmn/subprocesses/product_feed/connectors/json_api/	0	{}		2	E0
+101	/bpmn/subprocesses/product_feed/tag_recommender/	2	{}		9	E0-ui
+102	/bpmn/subprocesses/products/	10	{"editor-canvas+panel":1,"config-panel":1,"other":4}		9	E2
+103	/bpmn/subprocesses/profiling_opt_in/	2	{"chat-ui":1,"table-or-code":1}	profiling_opt_in_data.png="Knowledge"	0	E1-chatui
+104	/bpmn/subprocesses/pub_sub/	0	{}		2	E0
+105	/bpmn/subprocesses/quiz/	3	{"editor-canvas+panel":1,"config-panel":2}		0	E2
+106	/bpmn/subprocesses/rapidmail/	1	{}		0	E0-ui
+107	/bpmn/subprocesses/reach_five/	0	{}		1	E0
+108	/bpmn/subprocesses/redemptions/	0	{}		0	E0
+109	/bpmn/subprocesses/region/	2	{}		2	E0-ui
+110	/bpmn/subprocesses/reminder_opt_in/	4	{}		1	E0-ui
+111	/bpmn/subprocesses/reminder/	0	{}		0	E0
+112	/bpmn/subprocesses/reset/	1	{}		6	E0-ui
+113	/bpmn/subprocesses/restart/	1	{}		0	E0-ui
+114	/bpmn/subprocesses/rewards/	3	{}		1	E0-ui
+115	/bpmn/subprocesses/router_push/	1	{}		0	E0-ui
+116	/bpmn/subprocesses/salesforce_interaction_studio/	0	{}		0	E0
+117	/bpmn/subprocesses/salesforce_marketing_cloud/	0	{}		0	E0
+118	/bpmn/subprocesses/salesforce/	6	{"config-panel":2,"table-or-code":1,"chat-ui":1}		0	E1-chatui
+119	/bpmn/subprocesses/scanner/	2	{"chat-ui":1}		0	E1-chatui
+120	/bpmn/subprocesses/scanner/scanner/	0	{}		0	E0
+121	/bpmn/subprocesses/scondoo/	0	{}		0	E0
+122	/bpmn/subprocesses/search/	3	{"config-panel":2,"chat-ui":1}	Search1.gif=YES: "GPT ON", "Smart Search ON", "NLU O;Search2.gif=YES: "Article URL (Can be displayed as s	6	E1-chatui
+123	/bpmn/subprocesses/sftp/	0	{}		1	E0
+124	/bpmn/subprocesses/share_image/	1	{"chat-ui":1}		0	E1-chatui
+125	/bpmn/subprocesses/share_link/	1	{"chat-ui":1}		5	E1-chatui
+126	/bpmn/subprocesses/sign_in/	3	{"chat-ui":2,"other":1}		0	E1-chatui
+127	/bpmn/subprocesses/signal/	2	{"bpmn-canvas":1,"config-panel":1}		0	E2
+128	/bpmn/subprocesses/sikom/	0	{}		6	E0
+129	/bpmn/subprocesses/sms_opt_in/	0	{}		0	E0
+130	/bpmn/subprocesses/snapshot/	0	{}		1	E0
+131	/bpmn/subprocesses/stop/	0	{}		1	E0
+132	/bpmn/subprocesses/tag_preference/	0	{}		0	E0
+133	/bpmn/subprocesses/tag/	1	{"editor-canvas+panel":1}		4	E2
+134	/bpmn/subprocesses/talkevent/	0	{}		3	E0
+135	/bpmn/subprocesses/terms/	2	{"chat-ui":1,"config-panel":1}		1	E1-chatui
+136	/bpmn/subprocesses/variable_delete/	0	{}		0	E0
+137	/bpmn/subprocesses/variable/	0	{}		1	E0
+138	/bpmn/subprocesses/video/	1	{"chat-ui":1}		2	E1-chatui
+139	/bpmn/subprocesses/web_component/	3	{"config-panel":2,"table-or-code":1}		0	E0-ui
+140	/bpmn/subprocesses/web_push_opt_in/	0	{}		1	E0
+141	/bpmn/subprocesses/web_service/	0	{}		2	E0
+142	/bpmn/subprocesses/web_service/azure_function_and_blob_storage/	0	{}		0	E0
+143	/bpmn/subprocesses/web_service/google_cloud_function_and_storage/	0	{}		0	E0
+144	/bpmn/subprocesses/web_service/server/	3	{"config-panel":2,"table-or-code":1}		7	E0-ui
+145	/bpmn/subprocesses/welcome/	1	{"chat-ui":1}		2	E1-chatui
+146	/bpmn/subprocesses/win/	1	{"table-or-code":1}	instant_drawing_data.png=YES: "Knowledge" (left nav item)	2	E0-ui
+147	/bpmn/subprocesses/workato/	7	{"editor-canvas+panel":5,"other":1,"table-or-code":1}	api_token.png=YES: "Knowledge" (left nav item)	3	E2
+148	/bpmn/subprocesses/yotpo/	0	{}		0	E0
+149	/bpmn/subprocesses/zapier/	11	{"editor-canvas+panel":2,"other":2,"config-panel":6}		3	E2
+150	/bpmn/subprocesses/zoho/	0	{}		1	E0

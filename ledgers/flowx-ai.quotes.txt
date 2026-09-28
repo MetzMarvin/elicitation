@@ -1,0 +1,4 @@
+# Every double-quoted span in the 945 rows' evidence and note fields, checked against
+# the page that row judges (span_check in _fx_build.py; whitespace and curly/straight
+# quotes normalised). Single-quoted text quotes another named source and is not checked.
+# failures: 0

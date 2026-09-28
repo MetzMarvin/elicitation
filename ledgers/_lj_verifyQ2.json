@@ -1,0 +1,93 @@
+{
+  "KeiSggwNg2qFgZ2oJ1dDRcBPtA": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy editor flow excerpt of numbered rounded boxes joined by down arrows: #9 Birthdate (386,464), #10 Automatic jump (9), #11 ReachFive (382,183), #12 Return jump (718,651).",
+    "confidence": "high"
+  },
+  "MdZc79N5y2b1OUue7JCtS0hzVo": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy editor: canvas with start circle, #1 Welcoming, #2 Questionnaire, Ice cream/Pizza/Hamburger recommendation product galleries #3-#5, TODO annotations; German module palette on left.",
+    "confidence": "high"
+  },
+  "O8SRAqSv7J5NMU5F80qXwyI8mx4": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "Editor flow excerpt (#1 Welcoming, #2 Questionnaire, #3 Goodbye, start and bold end circles) beside two chat preview panels with 'Enjoy this awesome chat', 'How are you?'.",
+    "confidence": "low"
+  },
+  "OPQmbhB7z9IdAkUPB0Wdf7Vlk": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "Purple infographic poster '5 ESSENTIAL RULES FOR CHATBOT DIALOGUES' with five illustrated rule cards (#1 Keep it short ... #5 Offer quick replies).",
+    "confidence": "high"
+  },
+  "QV3OPwOrYtwHWhKxXQm0xdw": {
+    "kind": "canvas",
+    "ai": true,
+    "ai_note": "LoyJoy turns ChatGPT into ProcessGPT",
+    "note": "Title card 'LoyJoy turns ChatGPT into ProcessGPT' beside editor canvas: #1 Begruessung, #2 Entscheidungs-Gateway, X-diamonds, Option 1/2/3, #3 Fragebogen, #5 Newsletter-Opt-in, #6 NPS-Befragung, #4 Produkt-Galerie.",
+    "confidence": "high"
+  },
+  "WOnGORIeRzvE6S4oOTP5ewbCI": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "German taxonomy slide: Vertriebswege list beside numbered boxes 1-8 labelled Stand-alone-Archetypen, Kombinatorische Archetypen, Digitales Enablement, joined by bracket lines.",
+    "confidence": "low"
+  },
+  "WYnxC36CFkFmE1TJRQC1RfnF6rI": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy editor with YouTube play overlay; canvas: #1 Welcome, decision gateway, dashed 'Drop module' boxes, start/end circles; left sidebar items include NLU.",
+    "confidence": "high"
+  },
+  "XNkGH5Oop623e7i2I3hmMlkbYc": {
+    "kind": "chat",
+    "ai": false,
+    "ai_note": "",
+    "note": "Three phone-frame chat mockups of an Advent calendar campaign linked by red arrows, captions 'The customers are led to the Advent calendar via social media ads.'",
+    "confidence": "high"
+  },
+  "agentic-retrieval-rag-comparison": {
+    "kind": "arch",
+    "ai": true,
+    "ai_note": "AGENTIC RETRIEVAL",
+    "note": "Two-panel concept illustration: KLASSISCHES RAG (puzzle pieces to 'Ein Textausschnitt') versus AGENTIC RETRIEVAL (robot with magnifier to 'Das ganze Dokument').",
+    "confidence": "low"
+  },
+  "bM41T8YTQdVwEOE37HiBvxC6UBo": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "Vertical editor flow, start circle to #1 Questionnaire (Ask for home insurance), #2 Automatic jump, #3 Automatic jump, #4 Questionnaire, #5 Simple message, #6-#8, #9 Goodbye to end circle.",
+    "confidence": "high"
+  },
+  "gxCPTH2SzNEsLnzury7zkiVZpM": {
+    "kind": "ui",
+    "ai": false,
+    "ai_note": "",
+    "note": "Blue marketing funnel chart with five tapering bands: Website Visitors, Contacts, Leads, Finalists, Customers.",
+    "confidence": "high"
+  },
+  "in-chat-authentication": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "Grey icon illustration: one key icon in a white circle branching via lines to two shield icons badged with a green check and a red X.",
+    "confidence": "low"
+  },
+  "integration-layer": {
+    "kind": "arch",
+    "ai": false,
+    "ai_note": "",
+    "note": "Ring of white icon circles around the word LoyJoy over an office photo: MCP hexagon, database, document, globe, shopping cart, cloud, triangle logo.",
+    "confidence": "high"
+  }
+}

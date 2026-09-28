@@ -1,0 +1,15 @@
+{
+  "_comment": "Operator-owned. Workers must never edit this file. A source listed here may exceed the 10% judgement-exclusion ceiling up to max_exclusions rows, because the operator accepted the documented self-audit.",
+  "ibm-developer-watsonx": {
+    "max_exclusions": 256,
+    "population": 1983,
+    "accepted": "2026-09-26",
+    "ruling": "operator accepted 12.9% (256/1983) after elicitation-3a's documented step-3 self-audit (14 flips); the excess is drawn architecture/component diagrams on an AI-saturated site, see OPERATOR-TODO P11"
+  },
+  "camunda-docs-blog": {
+    "max_exclusions": 152,
+    "population": 1439,
+    "accepted": "2026-09-27",
+    "ruling": "operator accepted 10.6% (152/1439) as is: 126 drawn non-BPMN diagrams naming their notation + 26 E2 quoting the dismissed mention; see OPERATOR-TODO P13"
+  }
+}

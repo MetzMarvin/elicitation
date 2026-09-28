@@ -1,0 +1,20 @@
+=== INCLUDE (rescued) 7
+  272 Camunda 8.7 Release is Here | Camunda                      | process canvas with side panel
+  338 The Power of Camunda Copilots | Camunda                    | Modeler canvas with single start event selected
+  340 Build Once, Deploy Everywhere: Reuse Element & Connector T | Operate view; "Request Joke"/"Display Joke" tasks; joke variables
+  398 Migrate Your Agentic Processes Without Disruption Using Pr | Operate view; sub-process and variable labels unreadable
+  445 Bringing Local LLMs to Camunda 8: Orchestrating AI Agents  | Operate; "AI Agent" ad-hoc sub-process; agent/toolCallResults variables
+  496 A Look Back at the Camunda 2026 Kickoff Hackathon | Camund | Modeler; "AWS Bedrock outbound connector" task, Invoke Model
+  511 Getting Fast Feedback with Camunda Task Tester | Camunda   | Modeler; coloured process; labels unreadable
+=== UNCERTAIN (rescued) 11
+   46 Camunda 8.5 Release is Here | Camunda                      | task assignment report with process diagram inset
+  185 Camunda Alpha Release for November 2024 | Camunda          | Operate UI with process diagram and list
+  277 Creating and Testing Custom Exporters Using Camunda 8 Run  | Desktop Modeler UI with process canvas
+  512 Operate with Confidence with Camunda 8.9-alpha5 | Camunda  | Modeler project file listing with BPMN and DMN diagrams
+  531 Test Drive Your Customer Support (CS) Transformation: An A | Operate; process instance, instance history, variables unreadable
+  570 Camunda Optimize 3.5.0-alpha2 Released | Camunda           | Optimize heatmap report over process lanes
+  583 Camunda Optimize 3.5.0 Released | Camunda                  | Optimize "Multi Process Report" bar chart of user tasks
+  624 The Ultimate Guide to Solving Bottlenecks with Camunda: Pa | Optimize user task heatmap report
+  685 Camunda Automation Platform 7.17.0 Released | Camunda      | Modeler; collapsed subprocess navigation, properties
+  732 Monitor collaborating executable BPMN 2.0 processes in coc | Cockpit plugin tab with a BPMN diagram; node labels too small to read
+ 1287 Camunda Platform Alpha Release July 2023 | Camunda         | Modeler UI; BPMN canvas and side panel

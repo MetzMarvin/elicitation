@@ -1,0 +1,20 @@
+=== n=7 https://docs.loyjoy.com/bpmn/events/startEvent_message/
+  title: 
+  h1: Message Start Event
+  p: BPMN 2.0 EventsMessage Start EventMessage Start Event
+  p: The message start event is a type of start event that is triggered by the receipt of a message. It indicates that the process will begin when a user message entered in the footer is received. The message start event is typically followed by an AI Agent module that processes the user's message and ge
+=== n=12 https://docs.loyjoy.com/bpmn/subprocesses/ai_agent/
+  title: 
+  h1: AI Agent
+  p: BPMN ModulesAI AgentOn this pageAI Agent
+Overview
+The AI Agent module is LoyJoy's new component for building AI-driven conversational experiences. It allows an AI to understand user intent and use a set of tools to respond to requests and complete tasks. The agent can operate iteratively, meaning it
+  p: This module replaces the older AI Gateway, AI Knowledge, AI Prompt, AI Smalltalk and AI Recommender modules. It combines the functionality of all those modules into a single, more capable module. If your existing chats use the old modules, we recommend migrating them to the new AI Agent module.
+=== n=14 https://docs.loyjoy.com/bpmn/subprocesses/ai_knowledge/
+  title: 
+  h1: AI Knowledge
+  p: BPMN ModulesAI KnowledgeOn this pageAI Knowledge
+This module is not deprecated, however limited to answering customer questions based on a static knowledge database, which is queried once per question. This implements the classical Retrieval Augmented Generation (RAG) approach.
+  p: For new use cases, please consider using the newer AI Agent module instead, which is more powerful due to its ability to call the knowledge database multiple times per question, and to call additional tools such as web search, product search, and more. This is necessary for more complex use cases an
+n=102 MISSING
+n=122 MISSING

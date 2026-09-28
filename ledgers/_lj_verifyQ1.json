@@ -1,0 +1,86 @@
+{
+  "0eCUs2VkNTIj5LmxrOn4gyMSvE": {
+    "kind": "bpmn",
+    "ai": false,
+    "ai_note": "",
+    "note": "Monochrome process model: start circle, tasks 'Ask if the customer has an home insurance', 'Ask for insurance property', 'Offer home insurance for house', 'Offer home insurance for rental apartment', X-diamond gateways, branch labels 'own house'/'rental apartment', end event.",
+    "confidence": "low"
+  },
+  "4e0cZj6u2fh8T6rm9CvxZkOvxGQ": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy editor flow with start circle and numbered modules '#1 Decision jump 507,456', '#2 Welcoming 507,452', '#3 Return jump 507,450', '#4 Decision jump 507,448'.",
+    "confidence": "high"
+  },
+  "4uHVRy0BfKOAsqa0xutWmz6DhG0": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "Continuation of the LoyJoy flow: numbered module boxes '#5 Main prize 10,796', '#6 Prizes 429,269', '#7 Advent calendar door 429,266', '#8 Quiz 398,566' joined by arrows.",
+    "confidence": "high"
+  },
+  "5XfZDvXgtZBjh07UmmmlHTaJ0": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "Marketing funnel graphic with four stacked bars: 'Awareness', 'Consideration', 'Transaction', 'Customer Loyalty & Engagement'.",
+    "confidence": "high"
+  },
+  "6GFTi8TSSbYMWq0lBzedkN0aktI": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy flow editor: Start Flow, Bot Message: Text, Visitor Input: Text, Intent Match, Handover to Agent, End Flow; right panel 'Intent Match', 'Match intents', 'Create Rule'.",
+    "confidence": "high"
+  },
+  "6x1cYSYTClbzfia7y1CKLm4eZY": {
+    "kind": "arch",
+    "ai": true,
+    "ai_note": "GPT-3.5 AI, PROMPT, KNOWLEDGE CHUNKS, HISTORY, CONTEXT",
+    "note": "RAG pipeline illustration: DOC sources into KNOWLEDGE BASE, then GPT-3.5 AI with PROMPT/KNOWLEDGE CHUNKS/HISTORY/CONTEXT, CUSTOMER QUESTION in, GENERATED ANSWER out.",
+    "confidence": "high"
+  },
+  "9frUuzHQljQdwLlANU2MnxsD9o": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "Decorative title card: 'NEXT Distribution 2028 Insights: Pioneering Insurance Distribution with LoyJoy', dark background with a ring of icons and the LoyJoy logo.",
+    "confidence": "high"
+  },
+  "Blog_Screenshoot_knowledgemodul_1": {
+    "kind": "ui",
+    "ai": true,
+    "ai_note": "GPT Knowledge",
+    "note": "LoyJoy admin panel 'GPT Knowledge' with 'Sources', 'Show sources', 'Maximum number of chunks', 'Choose number of knowledge chunks'; a faded flow with '#1 GPT answer' behind it.",
+    "confidence": "high"
+  },
+  "DU4C5DHb4koeit1ghhYmzFyW8Vc": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy editor notation, vertical: start circle, modules '#1 Welcoming' (Welcoming), '#2 Questionnaire' (Small talk), '#3 Decision jump' (Hobbies), thick end circle.",
+    "confidence": "high"
+  },
+  "FLUkOAXSTQd9So5hQI0F1zkKy8": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy flow with start/end circles and modules '#1 Welcoming', '#2 Email', '#3 Zapier' (selected), '#4 Goodbye'; right panel 'Zapier - Trigger a Zap in Zapier', 'Open Zapier and connect'.",
+    "confidence": "high"
+  },
+  "GMBtSAcTJvtoVVZha5VTStMsI": {
+    "kind": "canvas",
+    "ai": false,
+    "ai_note": "",
+    "note": "LoyJoy flow continuation with numbered module boxes '#13 Giveaway participation 358,424', '#14 Loyalty referral 358,402', '#15 Profiling opt-in 358,402', '#16 Personal data intro 264,890'.",
+    "confidence": "high"
+  },
+  "J1bB8QOS626olDoGFKrity1QZT8": {
+    "kind": "art",
+    "ai": false,
+    "ai_note": "",
+    "note": "Partner-logo graphic titled 'Hybrid Journeys' with three circles labelled 'Access to GenZ', the centre hub, and 'Embedded Insurance' containing insurance brand logos.",
+    "confidence": "high"
+  }
+}

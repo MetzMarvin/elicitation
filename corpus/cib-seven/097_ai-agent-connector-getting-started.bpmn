@@ -1,0 +1,17 @@
+<bpmn:serviceTask id="Task_Summarize" name="Summarize feedback"
+ camunda:modelerTemplate="org.cibseven.connect.ai.agent"
+ camunda:modelerTemplateVersion="1"
+ implementation="##WebService">
+ <bpmn:extensionElements>
+ <camunda:connector>
+ <camunda:inputOutput>
+ <camunda:inputParameter name="agentName">Summarizer</camunda:inputParameter>
+ <camunda:inputParameter name="message">Summarize: ${feedbackText}</camunda:inputParameter>
+ <camunda:inputParameter name="instruction">Summarize the core concern in 10 words or less.</camunda:inputParameter>
+ <camunda:inputParameter name="apiKey">${apiKey}</camunda:inputParameter>
+ <camunda:outputParameter name="summaryResult">${output}</camunda:outputParameter>
+ </camunda:inputOutput>
+ <camunda:connectorId>cibseven-ai-agent</camunda:connectorId>
+ </camunda:connector>
+ </bpmn:extensionElements>
+</bpmn:serviceTask>

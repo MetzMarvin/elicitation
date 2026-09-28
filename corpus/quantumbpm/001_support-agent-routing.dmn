@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Routing guardrail for the "support-agent" BPMN process.
+
+  Turns the classifier agent's fuzzy output (category, urgency, confidence)
+  into a deterministic routing decision the BPMN exclusive gateway branches on:
+  "AUTO"  -> the agent may resolve the ticket autonomously
+  "HUMAN" -> a person must review before anything leaves the building
+
+  Hit policy is FIRST: rules are evaluated top-to-bottom and the first match
+  wins, so the "escalate to a human" rules deliberately sit above the
+  "let the agent handle it" rule.
+-->
+<definitions namespace="https://quantumbpm.com/examples/support-agent"
+             name="support_agent_routing" id="support_agent_routing"
+             xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/">
+    <decision name="Route Support Ticket" id="route-support-ticket">
+        <variable typeRef="string" name="routing"/>
+        <informationRequirement id="req_category">
+            <requiredInput href="#input_category"/>
+        </informationRequirement>
+        <informationRequirement id="req_urgency">
+            <requiredInput href="#input_urgency"/>
+        </informationRequirement>
+        <informationRequirement id="req_confidence">
+            <requiredInput href="#input_confidence"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="FIRST">
+            <input id="in_category" label="Category">
+                <inputExpression typeRef="string">
+                    <text>category</text>
+                </inputExpression>
+            </input>
+            <input id="in_urgency" label="Urgency">
+                <inputExpression typeRef="string">
+                    <text>urgency</text>
+                </inputExpression>
+            </input>
+            <input id="in_confidence" label="Agent Confidence">
+                <inputExpression typeRef="number">
+                    <text>agentConfidence</text>
+                </inputExpression>
+            </input>
+            <output id="out_routing" label="Routing" name="routing" typeRef="string"/>
+
+            <!-- Anything high-urgency always gets a human, regardless of category. -->
+            <rule id="rule_high_urgency">
+                <inputEntry id="rhu_cat"><text>-</text></inputEntry>
+                <inputEntry id="rhu_urg"><text>"high"</text></inputEntry>
+                <inputEntry id="rhu_conf"><text>-</text></inputEntry>
+                <outputEntry id="rhu_out"><text>"HUMAN"</text></outputEntry>
+            </rule>
+            <!-- Billing touches money: always a human. -->
+            <rule id="rule_billing">
+                <inputEntry id="rb_cat"><text>"billing"</text></inputEntry>
+                <inputEntry id="rb_urg"><text>-</text></inputEntry>
+                <inputEntry id="rb_conf"><text>-</text></inputEntry>
+                <outputEntry id="rb_out"><text>"HUMAN"</text></outputEntry>
+            </rule>
+            <!-- The agent itself wasn't sure: hand it over. -->
+            <rule id="rule_low_confidence">
+                <inputEntry id="rlc_cat"><text>-</text></inputEntry>
+                <inputEntry id="rlc_urg"><text>-</text></inputEntry>
+                <inputEntry id="rlc_conf"><text>&lt; 0.7</text></inputEntry>
+                <outputEntry id="rlc_out"><text>"HUMAN"</text></outputEntry>
+            </rule>
+            <!-- Known, low-stakes categories with a confident agent: auto-resolve. -->
+            <rule id="rule_auto">
+                <inputEntry id="ra_cat"><text>"password_reset", "order_status", "shipping"</text></inputEntry>
+                <inputEntry id="ra_urg"><text>"low", "medium"</text></inputEntry>
+                <inputEntry id="ra_conf"><text>&gt;= 0.7</text></inputEntry>
+                <outputEntry id="ra_out"><text>"AUTO"</text></outputEntry>
+            </rule>
+            <!-- Default: when in doubt, a human decides. -->
+            <rule id="rule_fallback">
+                <inputEntry id="rf_cat"><text>-</text></inputEntry>
+                <inputEntry id="rf_urg"><text>-</text></inputEntry>
+                <inputEntry id="rf_conf"><text>-</text></inputEntry>
+                <outputEntry id="rf_out"><text>"HUMAN"</text></outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <inputData name="category" id="input_category">
+        <variable typeRef="string" name="category"/>
+    </inputData>
+    <inputData name="urgency" id="input_urgency">
+        <variable typeRef="string" name="urgency"/>
+    </inputData>
+    <inputData name="agentConfidence" id="input_confidence">
+        <variable typeRef="number" name="agentConfidence"/>
+    </inputData>
+</definitions>

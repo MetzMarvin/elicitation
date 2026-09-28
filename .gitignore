@@ -1,0 +1,24 @@
+/.claude
+/.mcp.json
+/README.md
+/SETUP.md
+
+# --- raw crawl archives: multi-GB and re-downloadable. corpus/ records CITE these
+#     as archive locations, but the evidence itself is copied into corpus/. ---
+*.raw/
+_*_raw/
+ledgers/loyjoy.marketing/
+
+# --- per-source scratch working dirs (screenshots, crops, contact sheets).
+#     ~1.3 GB. _report kept: it is the provenance for report.md. ---
+ledgers/_*/
+!ledgers/_report/
+
+# --- python bytecode / crash dumps ---
+__pycache__/
+*.pyc
+*.stackdump
+
+# --- downloaded binaries and archives (incl. two 100 MB vsix_*.vsix/.zip) ---
+*.vsix
+*.zip

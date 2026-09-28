@@ -1,0 +1,4634 @@
+[
+ {
+  "p": "/bpmn/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 3,
+  "hits": [
+   " approval process. LoyJoy is based on BPMN and extends it using a standardized BPMN extension mechanism, ensuring that all LoyJoy agents are in fact standardized BPMN process models. The BPMN specification is maintained by the Object Management Group (OMG), which also with the Unified Modeling Language (UML) maintains ",
+   "lly execute BPMN process modules with a BPMN process engine. LoyJoy implements such a BPMN process engine. When you create a chat agent in LoyJoy Manager, you actually create a BPMN process model, which is extended with LoyJoy-specific process module semantics. When you add a process module to your chat agent, effectiv",
+   "a BPMN process model, which is extended with LoyJoy-specific process module semantics. When you add a process module to your chat agent, effectively you create a BPMN subprocess in the BPMN process model, and add LoyJoy-specific attributes to the subprocess. E.g. in case of the Email process module, you specify in this"
+  ],
+  "len": 1852
+ },
+ {
+  "p": "/bpmn/control_flow/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 42
+ },
+ {
+  "p": "/bpmn/control_flow/Loop/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "bpmn-canvas": 1,
+   "config-panel": 2
+  },
+  "imgs": [
+   {
+    "n": "loop.png",
+    "w": 566,
+    "h": 1192,
+    "class": "bpmn-canvas",
+    "desc": "LoyJoy diagram: start circle -> \"#1 Welcoming\" -> \"#2 Simple message\" -> gateway, loop-back arrow -> dashed \"Drop module\" -> gateway \"IF\"",
+    "ai": "none"
+   },
+   {
+    "n": "loyalty.png",
+    "w": 1894,
+    "h": 888,
+    "class": "config-panel",
+    "desc": "\"Conditions\" dialog: Execute if process variable \"loyalty_balance\" is equal to fixed value 10; \"Add condition\"",
+    "ai": "none"
+   },
+   {
+    "n": "participations.png",
+    "w": 1510,
+    "h": 702,
+    "class": "config-panel",
+    "desc": "\"Conditions\" dialog: Execute if Function \"Number of participa...\" is greater than or ec... 1; \"Add condition\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "process variable \"loyaty_balance\" Participations​ Conditioning with the function \"Number of participations of the customer in all agents\""
+  ],
+  "len": 458
+ },
+ {
+  "p": "/bpmn/events/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 79
+ },
+ {
+  "p": "/bpmn/events/endEvent/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "bpmn-canvas": 1
+  },
+  "imgs": [
+   {
+    "n": "StartEndEvent.png",
+    "w": 790,
+    "h": 1382,
+    "class": "bpmn-canvas",
+    "desc": "Diagram: circle \"Start event\" -> \"#1 Welcoming\" -> gateway -> \"IF\" \"#2 Simple message\" / \"IF\" \"#3 Email\" -> two \"End event\" circles",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "PMN 2.0 EventsEnd EventEnd Event Insert this event to end the chat flow. Like the start event, an end event is predefined in each agent. However, it may be useful to indicate an end in other places (especially for multiple branches)."
+  ],
+  "len": 234
+ },
+ {
+  "p": "/bpmn/events/intermediateCatchEvent_timer/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "intermediateCatchEvent_timer.png",
+    "w": 2122,
+    "h": 1074,
+    "class": "editor-canvas+panel",
+    "desc": "Editor canvas: start -> \"#1 Welcoming\" -> timer catch event (selected) -> \"#2 Goodbye\" -> end; right panel \"Wait\" with hours/minutes/seconds",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 279
+ },
+ {
+  "p": "/bpmn/events/startEvent_message/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "icon.png",
+    "w": 940,
+    "h": 367,
+    "class": "editor-canvas+panel",
+    "desc": "Editor with magnifier on the envelope message-start icon; canvas \"#3 GPT gateway\", \"#4 GPT Knowledge\", \"#6 GPT Follow-up question\", \"#8 GPT Smalltalk\"; panel \"Message start\"",
+    "ai": "YES: \"GPT gateway\", \"GPT Knowledge\", \"#6 GPT Follow-up question\", \"#8 GPT Smalltalk\""
+   }
+  ],
+  "ai": [
+   {
+    "img": "icon.png",
+    "label": "YES: \"GPT gateway\", \"GPT Knowledge\", \"#6 GPT Follow-up question\", \"#8 GPT Smalltalk\"",
+    "desc": "Editor with magnifier on the envelope message-start icon; canvas \"#3 GPT gateway\", \"#4 GPT Knowledge\", \"#6 GPT Follow-up question\", \"#8 GPT Smalltalk\"; panel \"Message start\""
+   }
+  ],
+  "nh": 1,
+  "hits": [
+   "the process will begin when a user message entered in the footer is received. The message start event is typically followed by an AI Agent module that processes the user's message and generates a response. infoHaving a message start event in your process ensures that the chat footer (input area) is activated and visibl"
+  ],
+  "len": 712
+ },
+ {
+  "p": "/bpmn/events/startEvent_timer/",
+  "n_img": 5,
+  "unmatched": [
+   "IuAhQMJ4gNBKBEIIkDAhdOhHBDwESBgPEFqJQAgBEiaEDv2IgIcACeMBQisRCCHwHxA2gEzT635CAAAAAElFTkSuQmCC"
+  ],
+  "classes": {
+   "config-panel": 2,
+   "other": 1,
+   "bpmn-canvas": 1
+  },
+  "imgs": [
+   {
+    "n": "setting.png",
+    "w": 1070,
+    "h": 598,
+    "class": "config-panel",
+    "desc": "Timer settings: Once/Repeating, Between \"start\" and \"end (optional)\" in time zone UTC+/-0; highlighted \"timer is repeated 0 times.\"",
+    "ai": "none"
+   },
+   {
+    "n": "TimerPreview.gif",
+    "w": 456,
+    "h": 588,
+    "class": "other",
+    "desc": "Cropped editor/gif frame: \"Show chat\", \"Hide annotations\", \"Preview\", lane \"Main Phase\", module \"Message after December 24th\" with \"#19 Simple message\" and bubble \"We wish you a magical Christm... See you soon\"",
+    "ai": "none"
+   },
+   {
+    "n": "advCalStart.png",
+    "w": 690,
+    "h": 502,
+    "class": "bpmn-canvas",
+    "desc": "Partial BPMN canvas: start circle -> gateway -> \"IF\" -> dashed \"Drop module\" -> timer circle event, with outgoing arrows",
+    "ai": "none"
+   },
+   {
+    "n": "advCalSetting.png",
+    "w": 1234,
+    "h": 846,
+    "class": "config-panel",
+    "desc": "\"How often should the timer be active?\" Once/Repeating; Between 12/01/2022 00:00 and end (optional) in time zone Europe/Berlin; repeated -1 infinitely often; R-1/2022-12-01T00:00:00/PTDAY",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1317
+ },
+ {
+  "p": "/bpmn/events/startEvent/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "other": 1
+  },
+  "imgs": [
+   {
+    "n": "icon.png",
+    "w": 940,
+    "h": 199,
+    "class": "other",
+    "desc": "LoyJoy editor screenshot with a magnifier callout on the plain circle start-event icon over \"#1 Welcoming\"; Modules sidebar, Preview button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 136
+ },
+ {
+  "p": "/bpmn/subprocesses/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   " modules that you drag and drop into the Process Editor. Each module encapsulates predefined logic, from \"ask for first name\" to \"AI Agent with tool calling\". Clusters​ AI: AI Agent for tool calling, knowledge, web search, MCP Service: Live Chat, Handover via Email, Appointment Scheduler Sales / Commerce: Product Feed,"
+  ],
+  "len": 1131
+ },
+ {
+  "p": "/bpmn/subprocesses/advent_calendar_door/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "advent_calendar_door_demo.png",
+    "w": 757,
+    "h": 1187,
+    "class": "chat-ui",
+    "desc": "Demo chat window: \"Are you ready to open the door?\" with \"Yes\" button, \"Send your message ...\" input, LoyJoy footer",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 260
+ },
+ {
+  "p": "/bpmn/subprocesses/ai_agent/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "question_count.png",
+    "w": 1210,
+    "h": 730,
+    "class": "editor-canvas+panel",
+    "desc": "Canvas: message start -> \"#2 AI Agent\" -> \"#3 Add variables\" (selected) -> end; panel \"question_count\", Process variable \"question\", source increment, value 1",
+    "ai": "YES: \"#2 AI Agent\""
+   }
+  ],
+  "ai": [
+   {
+    "img": "question_count.png",
+    "label": "YES: \"#2 AI Agent\"",
+    "desc": "Canvas: message start -> \"#2 AI Agent\" -> \"#3 Add variables\" (selected) -> end; panel \"question_count\", Process variable \"question\", source increment, value 1"
+   }
+  ],
+  "nh": 96,
+  "hits": [
+   "BPMN ModulesAI AgentOn this pageAI Agent Overview​ The AI Agent module is LoyJoy's new component for building AI-driven conversational experiences. It allows an AI to understand user intent and use a set of tools to respond t",
+   "BPMN ModulesAI AgentOn this pageAI Agent Overview​ The AI Agent module is LoyJoy's new component for building AI-driven conversational experiences. It allows an AI to understand user intent and use a set of tools to respond to requests and complete tasks. The agent can operate iteratively, meaning i",
+   "onal experiences. It allows an AI to understand user intent and use a set of tools to respond to requests and complete tasks. The agent can operate iteratively, meaning it can call multiple tools in sequence (e.g., search a knowledge base, then read a full document, then search the web) before formulating a final answe"
+  ],
+  "len": 19948
+ },
+ {
+  "p": "/bpmn/subprocesses/ai_knowledge_followup/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 7,
+  "hits": [
+   "BPMN ModulesAI FollowupOn this pageAI Followup This module is deprecated. Please only use the AI Agent module instead. Introduction​ AI Knowledge is a module that allows you to answer your customer’s questions using AI. However, to create a decent context to answer the question, the ",
+   "use the AI Agent module instead. Introduction​ AI Knowledge is a module that allows you to answer your customer’s questions using AI. However, to create a decent context to answer the question, the question needs to be atomic, hence not referencing any previous questions. Consider the following dialog between a human a",
+   "e question needs to be atomic, hence not referencing any previous questions. Consider the following dialog between a human and an AI assistant: Human: What is the weather like today? AI: It is sunny. Human: What about tomorrow? To answer the second question, the AI needs to know that the second question is a follow-up "
+  ],
+  "len": 1026
+ },
+ {
+  "p": "/bpmn/subprocesses/ai_knowledge/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "bpmn-canvas": 1
+  },
+  "imgs": [
+   {
+    "n": "flow.png",
+    "w": 338,
+    "h": 390,
+    "class": "bpmn-canvas",
+    "desc": "Small diagram: message start event -> \"#2 GPT Knowledge\" -> end event",
+    "ai": "YES: \"#2 GPT Knowledge\""
+   }
+  ],
+  "ai": [
+   {
+    "img": "flow.png",
+    "label": "YES: \"#2 GPT Knowledge\"",
+    "desc": "Small diagram: message start event -> \"#2 GPT Knowledge\" -> end event"
+   }
+  ],
+  "nh": 42,
+  "hits": [
+   ". This implements the classical Retrieval Augmented Generation (RAG) approach. For new use cases, please consider using the newer AI Agent module instead, which is more powerful due to its ability to call the knowledge database multiple times per question, and to call additional tools such as web search, product search",
+   "duct search, and more. This is necessary for more complex use cases and possible sinnce middle of 2025 with the advent of agentic AI / AI agents. Introduction​ Answer your customer’s questions using Large Langague Models. The LLM will consider the sources you provide via Knowledge. Optionally, you can integrate an exte",
+   "f 2025 with the advent of agentic AI / AI agents. Introduction​ Answer your customer’s questions using Large Langague Models. The LLM will consider the sources you provide via Knowledge. Optionally, you can integrate an external Retrieval Augmented Generation (RAG) pipeline with Microsoft Azure AI Search (e.g. to conne"
+  ],
+  "len": 9585
+ },
+ {
+  "p": "/bpmn/subprocesses/ai_prompt/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "ai_prompt_json_mapping.png",
+    "w": 1070,
+    "h": 792,
+    "class": "config-panel",
+    "desc": "Mapping form \"sender_name\": Target variable in LoyJoy \"sender\"; Source field \"sender_name\"; Description \"The Name of the sender of the email\"; Add mapping",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 6,
+  "hits": [
+   " Inside the system message and user message you can use LoyJoy variables as well as expressions. The response is generated by the AI model based on the system message and user message. The output is stored in a variable of your choice or returned as the bot message. The prompt can be adapted to your needs by prompting ",
+   "le of your choice or returned as the bot message. The prompt can be adapted to your needs by prompting techniques. Use Cases​ The AI prompt module is very flexible can be used in various use cases. Here are some examples: Generate a JSON string to query an API based on user input Generate a SQL query based on user inpu",
+   "re are some examples: Generate a JSON string to query an API based on user input Generate a SQL query based on user input Use the AI model to make a decision based on user input Response format​ Normally, AI models generate text responses. However, you can also force the AI model to produce a JSON response. This is hel"
+  ],
+  "len": 1602
+ },
+ {
+  "p": "/bpmn/subprocesses/ai_recommender/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 4,
+  "hits": [
+   "BPMN ModulesAI RecommenderOn this pageAI Recommender This module is deprecated. Please only use the AI Agent module instead. Introduction​ This module takes a user message and generates an appropriate prod",
+   "BPMN ModulesAI RecommenderOn this pageAI Recommender This module is deprecated. Please only use the AI Agent module instead. Introduction​ This module takes a user message and generates an appropriate product recommendation based on it. To make this recommendation, it searches the product ",
+   " Please only use the AI Agent module instead. Introduction​ This module takes a user message and generates an appropriate product recommendation based on it. To make this recommendation, it searches the product database using SQL queries. The module is designed to be used after the message start event, not inside the c"
+  ],
+  "len": 635
+ },
+ {
+  "p": "/bpmn/subprocesses/ai_smalltalk/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "BPMN ModulesAI SmalltalkOn this pageAI Smalltalk This module is deprecated. Please only use the AI Agent module instead. Introduction​ This module aims to respond to small talk requests. In contrast to the AI Knowledge module, the AI Smalltalk module is not based on a knowledge base. I",
+   "Please only use the AI Agent module instead. Introduction​ This module aims to respond to small talk requests. In contrast to the AI Knowledge module, the AI Smalltalk module is not based on a knowledge base. Instead, it generates responses based on the prompt and the system message, which can be adapted to your needs "
+  ],
+  "len": 420
+ },
+ {
+  "p": "/bpmn/subprocesses/animation/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 6,
+  "hits": [
+   "BPMN ModulesAnimation ModuleOn this pageAnimation Module Introduction​ Animations will lighten up any agent and are a real joy factor of the LoyJoy Platform. They are played as background animation within the chat UI (User Interface). There are several great animations included into LoyJoy y",
+   "fferent animations depending on how the customer chooses to answer a question. They are also a lot of fun to use for your festive agents such as advent calendars, easter bots or sporting events. In short, the purposeful use of gamification elements like animations can enhance any agent. We have Animations from the foll",
+   " calendars, easter bots or sporting events. In short, the purposeful use of gamification elements like animations can enhance any agent. We have Animations from the following categories: Easter Hopping bunny Tripping bunny Easter eggs Christmas Santa jumping Christmas balls Candy cane Christmas trees Gingerbread man Ch"
+  ],
+  "len": 2098
+ },
+ {
+  "p": "/bpmn/subprocesses/api_client/",
+  "n_img": 11,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 7,
+   "editor-canvas+panel": 1,
+   "table-or-code": 3
+  },
+  "imgs": [
+   {
+    "n": "api_client1.png",
+    "w": 1118,
+    "h": 808,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"product_price\", Source JSON pointer \"/price/amount\", Source expression in JSON empty",
+    "ai": "none"
+   },
+   {
+    "n": "api_client2.png",
+    "w": 1118,
+    "h": 808,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"api_subscribe_status\", Source JSON pointer \"/status\", Source expression empty",
+    "ai": "none"
+   },
+   {
+    "n": "image1.png",
+    "w": 1342,
+    "h": 1236,
+    "class": "config-panel",
+    "desc": "\"Request to external API\": Authorization \"Bearer\", masked Token, Request HTTP method \"POST\", URL \"https://example.com/some_endpoint\", Cookie keys mycookie1/mycookie2",
+    "ai": "none"
+   },
+   {
+    "n": "overview.png",
+    "w": 600,
+    "h": 384,
+    "class": "editor-canvas+panel",
+    "desc": "Video/browser screenshot: canvas \"#1 First name\", \"#2 Last name\", \"#3 Questionnaire\", \"#4 API client\"; left JSON viewer; right \"API client\" panel with Payload {\"firstname\": \"$(firstname)\", \"lastname\": \"$(lastname)\", \"colour\": \"blue\", \"source\": \"loyjoy\"}",
+    "ai": "none"
+   },
+   {
+    "n": "image2.png",
+    "w": 1326,
+    "h": 440,
+    "class": "config-panel",
+    "desc": "Tabs \"Header 1\" and \"Add header\"; empty Key field; Value dropdown placeholder \"Which value?\"",
+    "ai": "none"
+   },
+   {
+    "n": "api_client_log_debug.png",
+    "w": 820,
+    "h": 476,
+    "class": "config-panel",
+    "desc": "\"API client\" panel: \"Send request to external API... URL parameters or POST payload and save data from the response as variables.\"; Authorization \"Select mode\"",
+    "ai": "none"
+   },
+   {
+    "n": "api_client_log.png",
+    "w": 1174,
+    "h": 340,
+    "class": "config-panel",
+    "desc": "\"Runtime log\" dialog: \"Automatic deletion 7 days after creation\", toggle \"Debug for 60 minutes\", \"Refresh\", \"No entries present\"",
+    "ai": "none"
+   },
+   {
+    "n": "api_client_debug_log_example.png",
+    "w": 890,
+    "h": 306,
+    "class": "table-or-code",
+    "desc": "Log line: debug 200 GET https://jsonplaceholder.typicode.com/todos/1, body \"userId\": 1, \"id\": 1, \"title\": \"delectus aut autem\", \"completed\": false",
+    "ai": "none"
+   },
+   {
+    "n": "api_client_debug_log_error_example.png",
+    "w": 880,
+    "h": 158,
+    "class": "table-or-code",
+    "desc": "Log line: warn 08/03/2023, 12:00:46 PM ApiClientImpl c7f5002bd9b5cd052a5219d5d3db8a55; \"404 GET https://jsonplaceholder.typicode.com/todos/1\"; \"{}\"",
+    "ai": "none"
+   },
+   {
+    "n": "api_client_debug_log_error_example2.png",
+    "w": 1160,
+    "h": 308,
+    "class": "table-or-code",
+    "desc": "Log line: warn 415 POST https://api.restful-api.dev/objects with JSON error text \"415 Unsupported Media Type... Content-Type header which is not equal to application/json\"",
+    "ai": "none"
+   },
+   {
+    "n": "api_client3.png",
+    "w": 1054,
+    "h": 618,
+    "class": "config-panel",
+    "desc": "HTTP header entry: Key \"Content-Type\", Value \"application/json\", Delete button, \"Add HTTP header\", \"1 entry\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 9569
+ },
+ {
+  "p": "/bpmn/subprocesses/api_client/mappings/",
+  "n_img": 8,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 8
+  },
+  "imgs": [
+   {
+    "n": "image1.png",
+    "w": 982,
+    "h": 632,
+    "class": "config-panel",
+    "desc": "\"Add mapping (out)\": \"/first_name\"; Source: Expression in LoyJoy \"firstname\"; Target: JSON pointer \"/first_name\"",
+    "ai": "none"
+   },
+   {
+    "n": "image2.png",
+    "w": 1066,
+    "h": 638,
+    "class": "config-panel",
+    "desc": "\"Add mapping (out)\": \"/store_address/street\"; Source: Expression in LoyJoy \"street\"; Target: JSON pointer \"/store_address/street\"",
+    "ai": "none"
+   },
+   {
+    "n": "image3.png",
+    "w": 1064,
+    "h": 632,
+    "class": "config-panel",
+    "desc": "\"Add mapping (out)\": \"/addresses[0]/street\"; Source: Expression in LoyJoy \"street\"; Target: JSON pointer \"/addresses[0]/street\"",
+    "ai": "none"
+   },
+   {
+    "n": "image11.png",
+    "w": 1198,
+    "h": 804,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"consultant\", Source JSON pointer \"/personal_consultant\"",
+    "ai": "none"
+   },
+   {
+    "n": "image12.png",
+    "w": 1196,
+    "h": 804,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"city\", Source JSON pointer \"/store_address/city\"",
+    "ai": "none"
+   },
+   {
+    "n": "image13.png",
+    "w": 1194,
+    "h": 804,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"keysArray\", Source expression \"objectKeys(root.store_address)\"",
+    "ai": "none"
+   },
+   {
+    "n": "image14.png",
+    "w": 1200,
+    "h": 632,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"city\", Source XPath expression \"/response/store_address/city\"",
+    "ai": "none"
+   },
+   {
+    "n": "image15.png",
+    "w": 1204,
+    "h": 634,
+    "class": "config-panel",
+    "desc": "Mapping 1: Target variable \"lat\", Source XPath expression \"/response/store_address/coordinates/@lat\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 4472
+ },
+ {
+  "p": "/bpmn/subprocesses/api_client/timeouts/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   " would extend the timeout duration, the chat would be blocked for this time, showing a typing indicator. This would be a bad user agent and heavily influence conversion rates. Also, please take into consideration that one chat message could trigger multiple process modules with API calls, which would sum up. For the wo"
+  ],
+  "len": 2453
+ },
+ {
+  "p": "/bpmn/subprocesses/appointment/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "config-panel": 2
+  },
+  "imgs": [
+   {
+    "n": "appointment_demo.png",
+    "w": 650,
+    "h": 330,
+    "class": "chat-ui",
+    "desc": "Chat preview: \"Please pick a date.\" with reply buttons \"Thursday, December 2, 2021\", \"Thursday, December 9, 2021\", \"Thursday, December 16, 2021\", \"More...\"",
+    "ai": "none"
+   },
+   {
+    "n": "appointment_scheduler_add_empty.png",
+    "w": 1108,
+    "h": 468,
+    "class": "config-panel",
+    "desc": "\"Time slots\" panel: \"Add time slot\"; \"How far in advance must an appointment be booked at least?\" 120 minutes",
+    "ai": "none"
+   },
+   {
+    "n": "appointment_scheduler_add_timeslot.png",
+    "w": 1134,
+    "h": 486,
+    "class": "config-panel",
+    "desc": "\"Time slots\" panel: row \"Daily\" at 11:18 for 20 minutes with gear/delete icons; \"Add time slot\"; 120 minutes",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 2831
+ },
+ {
+  "p": "/bpmn/subprocesses/articles/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "other": 1
+  },
+  "imgs": [
+   {
+    "n": "article_gallery_chat.png",
+    "w": 362,
+    "h": 335,
+    "class": "chat-ui",
+    "desc": "In-chat product list rows: \"Example Product One\", \"Example Product Two\", \"No Picture Product\", lorem ipsum teaser text",
+    "ai": "none"
+   },
+   {
+    "n": "article_gallery_detailed.png",
+    "w": 362,
+    "h": 652,
+    "class": "other",
+    "desc": "Article detail card: LoyJoy wordmark, \"Example Product One\", long lorem ipsum body text, round close (x) button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1158
+ },
+ {
+  "p": "/bpmn/subprocesses/audio_recorder/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "table-or-code": 1,
+   "other": 1
+  },
+  "imgs": [
+   {
+    "n": "audio_recorder_demo.png",
+    "w": 756,
+    "h": 1172,
+    "class": "chat-ui",
+    "desc": "Chat window: \"Record an audio message to get started\" with mic emoji, blue audio bubble 00:03, \"The audio message was received.\", mic send button",
+    "ai": "none"
+   },
+   {
+    "n": "audio_recorder_customers.png",
+    "w": 1742,
+    "h": 698,
+    "class": "table-or-code",
+    "desc": "Admin \"Customers\" screen: sidebar (Analytics, Customers, Bots, NLU, Push, Live), tabs Customers/GDPR log, \"Email address\" search, table Email/Created at with test@test123.com 11/30/2021, 10:19 AM",
+    "ai": "none"
+   },
+   {
+    "n": "audio_recorder_history.png",
+    "w": 660,
+    "h": 1280,
+    "class": "other",
+    "desc": "Customer detail: tabs Master data/History/GDPR log; timeline entries language_iso_6391 \"en\", Account created IP address, referrer, browser (user agent), \"Uploaded audio message\" with \"Play audio\" button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 914
+ },
+ {
+  "p": "/bpmn/subprocesses/audio/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "audio_demo.png",
+    "w": 710,
+    "h": 230,
+    "class": "chat-ui",
+    "desc": "Two grey chat audio-message bubbles, each with play icon and duration \"00:42\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 4,
+  "hits": [
+   "BPMN ModulesVoice Message ModuleOn this pageVoice Message Module Introduction​ Who doesn't love audio? Lighten up your chat agent by adding media in the form of audio. Add up to five voice messages or music files to your chat. Typical Use Cases​ Possible applications can be service requests as well as raffles. Fo",
+   "d voice messages will be displayed in the chat for users to play. Ensure your audio files are clear and concise for the best user agent. Useful Tips​ If you want to add more than five audio files to your chat, simply insert another Voice Message module into your agent. Be mindful that not all users may be able to play ",
+   "nt. Useful Tips​ If you want to add more than five audio files to your chat, simply insert another Voice Message module into your agent. Be mindful that not all users may be able to play sound on their devices. Some users may agent sound restrictions or could be playing other music/sounds simultaneously, which will be "
+  ],
+  "len": 1080
+ },
+ {
+  "p": "/bpmn/subprocesses/auth0/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "se Cases​ Use this module to authenticate users securely in the chat through Auth0, retrieve user information, and customize user agents based on their profile data. How to Use the Module​ Configure Redirect URIs: Set up the following redirect URIs in your Auth0 application settings: https://app-stable.loyjoy.com/auth/"
+  ],
+  "len": 1599
+ },
+ {
+  "p": "/bpmn/subprocesses/beiersdorf/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 90
+ },
+ {
+  "p": "/bpmn/subprocesses/big_query/",
+  "n_img": 15,
+  "unmatched": [],
+  "classes": {
+   "other": 2,
+   "config-panel": 6,
+   "table-or-code": 5,
+   "editor-canvas+panel": 2
+  },
+  "imgs": [
+   {
+    "n": "create_dataset.png",
+    "w": 2624,
+    "h": 1592,
+    "class": "other",
+    "desc": "Google Cloud BigQuery console screen with Explorer context menu open (Create dataset / Refresh contents / Change my default code region); left nav BigQuery Studio, Data transfers, Scheduled queries, Datasets, Monitoring",
+    "ai": "none"
+   },
+   {
+    "n": "create_customers.png",
+    "w": 2146,
+    "h": 1558,
+    "class": "config-panel",
+    "desc": "BigQuery \"Create table\" form: Source \"Empty table\"; Destination dataset \"loyjoy_dataset\", table \"customers\"; Schema fields email, firstname, lastname (STRING)",
+    "ai": "none"
+   },
+   {
+    "n": "create_variables.png",
+    "w": 1916,
+    "h": 1628,
+    "class": "config-panel",
+    "desc": "BigQuery \"Create table\" form: Source \"Empty table\"; dataset \"analytics\", table \"variables\"; Schema device_id, id, key, value, process_id, created_at (DATETIME), email, question, answer",
+    "ai": "none"
+   },
+   {
+    "n": "schema_customers.png",
+    "w": 1600,
+    "h": 804,
+    "class": "table-or-code",
+    "desc": "BigQuery console SCHEMA tab for table \"customers\"; field rows email/firstname/lastname, type STRING, mode NULLABLE; EDIT SCHEMA button",
+    "ai": "none"
+   },
+   {
+    "n": "schema_variables.png",
+    "w": 1620,
+    "h": 1168,
+    "class": "table-or-code",
+    "desc": "BigQuery console SCHEMA tab for table \"variables\"; fields device_id, id, key, value, process_id, created_at, email, question, answer",
+    "ai": "none"
+   },
+   {
+    "n": "service_account_step_1.png",
+    "w": 1580,
+    "h": 354,
+    "class": "other",
+    "desc": "Google Cloud \"Service accounts\" page header: CREATE SERVICE ACCOUNT, DELETE, MANAGE ACCESS, REFRESH buttons plus explanatory prose",
+    "ai": "none"
+   },
+   {
+    "n": "service_account_step_2.png",
+    "w": 1092,
+    "h": 880,
+    "class": "config-panel",
+    "desc": "\"Create service account\" step 1 form: Service account name, Service account ID \"loyjoy-bigquery\", description, CREATE AND CONTINUE",
+    "ai": "none"
+   },
+   {
+    "n": "service_account_step_3.png",
+    "w": 1060,
+    "h": 958,
+    "class": "config-panel",
+    "desc": "\"Create service account\" step 2: role dropdown set to \"BigQuery Data Editor\", ADD ANOTHER ROLE, ADD IAM CONDITION, CONTINUE",
+    "ai": "none"
+   },
+   {
+    "n": "service_account_step_4.png",
+    "w": 2854,
+    "h": 464,
+    "class": "table-or-code",
+    "desc": "Service account list table (Email, Status, Name, Key ID, OAuth 2 Client ID) for loyjoy-bigquery@...iam.gserviceaccount.com with open Actions menu (Manage keys etc.)",
+    "ai": "none"
+   },
+   {
+    "n": "service_account_step_5.png",
+    "w": 1002,
+    "h": 684,
+    "class": "config-panel",
+    "desc": "\"Keys\" section of a service account with security warning and open ADD KEY dropdown offering \"Create new key\" / \"Upload existing key\"",
+    "ai": "none"
+   },
+   {
+    "n": "service_account_step_6.png",
+    "w": 1166,
+    "h": 818,
+    "class": "config-panel",
+    "desc": "\"Create private key for loyjoy-bigquery@...\" dialog: Key type radio JSON (Recommended) / P12, CANCEL and CREATE",
+    "ai": "none"
+   },
+   {
+    "n": "module_customers.png",
+    "w": 1856,
+    "h": 1458,
+    "class": "editor-canvas+panel",
+    "desc": "Canvas: start -> \"#1 Welcoming\" -> \"#2 Email\" -> \"#3 First name\" -> \"#4 Last name\" -> \"#5 Google BigQuery\" (annotation \"Send the customer data to BigQuery\"); panel Google BigQuery, dataset loyjoy_dataset, table customers, Row attributes email",
+    "ai": "none"
+   },
+   {
+    "n": "module_variables.png",
+    "w": 1852,
+    "h": 1436,
+    "class": "editor-canvas+panel",
+    "desc": "Canvas: \"#2 Questionnaire\" -> \"#3 Goodbye\" -> end, and \"#4 Signal\" -> \"#5 Google BigQuery\" -> end; panel Google BigQuery, dataset loyjoy_dataset, table variables, Row attributes device_id (source deviceId)",
+    "ai": "none"
+   },
+   {
+    "n": "test_customers.png",
+    "w": 1516,
+    "h": 600,
+    "class": "table-or-code",
+    "desc": "BigQuery query editor \"SELECT * FROM loyjoy_dataset.customers LIMIT 1000\" with RESULTS grid row 1 john.doe@example.org / John / Doe",
+    "ai": "none"
+   },
+   {
+    "n": "test_variables.png",
+    "w": 1552,
+    "h": 648,
+    "class": "table-or-code",
+    "desc": "BigQuery query editor \"SELECT * FROM loyjoy_dataset.variables LIMIT 1000\" with RESULTS grid row key \"meaning_of_life\", value 42",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 5,
+  "hits": [
+   "gQuery in real-time for further processing and analysis. This allows you to build complex dashboards and data pipelines from your agent data. How to Use the Module​ Step 1: Create a dataset in BigQuery​ In your Google Cloud project, start by creating a new dataset in BigQuery. Provide a name for the dataset such as loy",
+   "be opened with any text editor. You will need the contents of this file in the next step. Step 5: Add the BigQuery Module to your Agent​ Either add the BigQuery module to your LoyJoy agent or use one of the templates from the LoyJoy Template Store. In the LoyJoy Template Store, you can find templates for saving custome",
+   " of those templates to your tenant. Step 6: Configure the BigQuery Module​ The BigQuery module needs to know which data from your agent should be saved in BigQuery. This is done by defining field mappings. In case of the customers table, the field mappings would map the email, first name and last name to the correspond"
+  ],
+  "len": 4262
+ },
+ {
+  "p": "/bpmn/subprocesses/birthdate/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "birthday_demo.png",
+    "w": 662,
+    "h": 448,
+    "class": "chat-ui",
+    "desc": "LoyJoy chat preview: bot bubble \"Please tell me your birthday so that I can congratulate you\", day/month/year dropdowns and OK button",
+    "ai": "none"
+   },
+   {
+    "n": "birthday_history.png",
+    "w": 752,
+    "h": 888,
+    "class": "config-panel",
+    "desc": "\"Customer\" profile panel with tabs Master data / History / GDPR log; timeline entries birthdate 1996-04-03, language_iso_6391 \"en\", Account created IP address",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 928
+ },
+ {
+  "p": "/bpmn/subprocesses/brevo/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1636
+ },
+ {
+  "p": "/bpmn/subprocesses/campaign_monitor/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "ur email marketing list. Updating existing subscriber information. Managing email marketing campaigns seamlessly within your chat agent. How to Use the Module​ Email Input: Ensure you have the user's email address by using an Email module or Sign-in module earlier in your chat process. List ID: Obtain your List ID by f"
+  ],
+  "len": 1157
+ },
+ {
+  "p": "/bpmn/subprocesses/clever_reach/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2
+  },
+  "imgs": [
+   {
+    "n": "clever_reach_recipients.png",
+    "w": 974,
+    "h": 366,
+    "class": "config-panel",
+    "desc": "CleverReach OAuth \"Scopes\" selection with checkboxes Recipients (checked), Reports, Forms, Flows, Emails, SSL; Cancel / Save",
+    "ai": "none"
+   },
+   {
+    "n": "clever_reach_credentials.png",
+    "w": 1032,
+    "h": 1242,
+    "class": "config-panel",
+    "desc": "\"Create OAuth2 app\" modal, tab \"OAuth2 App Data\": masked Client ID and Client Secret, warning not to pass on the secret, Authorize URL / Token URL for rest.cleverreach.com",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 2462
+ },
+ {
+  "p": "/bpmn/subprocesses/clipboard/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "clipboard_demo.png",
+    "w": 628,
+    "h": 352,
+    "class": "chat-ui",
+    "desc": "LoyJoy chat preview with three bubbles \"Clipboard intro\", \"Copy this\" + blue Copy button, \"Clipboard outro\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 357
+ },
+ {
+  "p": "/bpmn/subprocesses/code/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "table-or-code": 1,
+   "bpmn-canvas": 1,
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "code_upload.png",
+    "w": 1262,
+    "h": 1166,
+    "class": "table-or-code",
+    "desc": "Code-management screen: Select codes file / Upload file / Download codes file / Delete all codes, CSV field instructions, table of examplecode7/3/17/6/1/18 with Points, Win, Redeemed at",
+    "ai": "none"
+   },
+   {
+    "n": "code_entry_settings.png",
+    "w": 764,
+    "h": 588,
+    "class": "bpmn-canvas",
+    "desc": "LoyJoy process editor canvas fragment: two rounded activity boxes \"#4 Code entry\" and \"#5 Loyalty points\" joined by downward arrows",
+    "ai": "none"
+   },
+   {
+    "n": "code_entry_loyalty.png",
+    "w": 1224,
+    "h": 204,
+    "class": "config-panel",
+    "desc": "Module settings fragment: \"How many points to give?\" numeric stepper and \"Or should a code be checked?\" toggle switched on",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "a giveaway or loyality program. Typical Use Cases​ Distribute winning codes to your customers, which can then be entered into the agent How to Use the Module​ Integration​ For this process module, the customer's email address must be known, e.g. you can place a process module Email module or Sign-in module at the top o"
+  ],
+  "len": 966
+ },
+ {
+  "p": "/bpmn/subprocesses/conversion/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "conversion_add.png",
+    "w": 3596,
+    "h": 962,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor: left canvas chain \"#1 Welcoming\" -> \"#2 Conversion\" -> \"#3 Goodbye\" (start/end circles), right panel \"Conversion\" with \"Name of conversion\" field",
+    "ai": "YES: \"Track the conversion rate of your agent in the LoyJoy analytics and in the weekly analytics report via email.\""
+   }
+  ],
+  "ai": [
+   {
+    "img": "conversion_add.png",
+    "label": "YES: \"Track the conversion rate of your agent in the LoyJoy analytics and in the weekly analytics report via email.\"",
+    "desc": "LoyJoy editor: left canvas chain \"#1 Welcoming\" -> \"#2 Conversion\" -> \"#3 Goodbye\" (start/end circles), right panel \"Conversion\" with \"Name of conversion\" field"
+   }
+  ],
+  "nh": 3,
+  "hits": [
+   "BPMN ModulesConversion ModuleOn this pageConversion Module Introduction​ Create custom KPIs and track the conversion rate of your agent in the LoyJoy analytics and in the weekly analytics report via email. The process module triggers the event \"conversion\" that is emitted via LoyJoy JavaScript API. How to use the conve",
+   "ed via LoyJoy JavaScript API. How to use the conversion module​ 1. Add the module​ Start by adding your conversion module to your agent and create a name for your conversion. 2. Track your conversion​ Whenever a users are passing the conversion module, your conversion increments. You can find your conversion in your ag",
+   " conversion​ Whenever a users are passing the conversion module, your conversion increments. You can find your conversion in your agent analytics and in your tenant-wide analytics."
+  ],
+  "len": 638
+ },
+ {
+  "p": "/bpmn/subprocesses/coupon_code/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 2
+  },
+  "imgs": [
+   {
+    "n": "coupon_code_example_qr.png",
+    "w": 582,
+    "h": 492,
+    "class": "chat-ui",
+    "desc": "Chat preview bubbles \"Here is your coupon code!\" and \"EXAMPLE_COUPON_CODE_1\" followed by a rendered QR code",
+    "ai": "none"
+   },
+   {
+    "n": "coupon_code_example_128.png",
+    "w": 582,
+    "h": 498,
+    "class": "chat-ui",
+    "desc": "Chat preview bubbles \"Here is your coupon code!\" and \"EXAMPLE_COUPON_CODE_1\" followed by a rendered barcode of the same code",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 2692
+ },
+ {
+  "p": "/bpmn/subprocesses/csat_survey/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "csat_survey_demo.png",
+    "w": 756,
+    "h": 1412,
+    "class": "chat-ui",
+    "desc": "Chat preview: \"Wie zufrieden bist du mit deiner Erfahrung?\" with rating card \"Deine Bewertung\", five emoji faces and OK; LoyJoy branding",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "l texts such as placeholders and confirmations. See Stats and Download Results​ To access the results, visit the analytics of the agent. Click on the \"Drill-down\" tab (\"Details\" tab in German). Find the CSAT module and click on it. You can see the average CSAT score, the number of participations, and the distribution a"
+  ],
+  "len": 2620
+ },
+ {
+  "p": "/bpmn/subprocesses/data_collection/",
+  "n_img": 48,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 17,
+   "chat-ui": 31
+  },
+  "imgs": [
+   {
+    "n": "intro.gif",
+    "w": 556,
+    "h": 482,
+    "class": "config-panel",
+    "desc": "Questionnaire settings: \"Collect data from your customers with a questionnaire and save the answers as process variables at the experience.\", \"Add question\", \"Other texts\"",
+    "ai": "none"
+   },
+   {
+    "n": "path.gif",
+    "w": 618,
+    "h": 434,
+    "class": "config-panel",
+    "desc": "Question 1 settings: \"Question type\" \"Dropdown sele.\", \"Input validation\" tab, \"API URL (Select2 format)\", \"https://www.example.org/answer-options\", \"Deine Frage\"",
+    "ai": "none"
+   },
+   {
+    "n": "title.gif",
+    "w": 624,
+    "h": 430,
+    "class": "config-panel",
+    "desc": "\"Settings\" dialog: \"Process variable\" \"Choose a variable\", \"Variable store\" \"Server (Database)\", \"Variable scope\" \"process-specific\", \"Show skip button\", \"Initial answer\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_animation.png",
+    "w": 656,
+    "h": 628,
+    "class": "chat-ui",
+    "desc": "Chat preview with maple-leaf background animation: \"Please select your favourite food\", user bubble \"Pizza\", \"A little message.\", typing indicator dots",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_placeholder.png",
+    "w": 656,
+    "h": 368,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your favourite food?\" with text field showing \"This is the customised text\" and OK button",
+    "ai": "none"
+   },
+   {
+    "n": "settings.png",
+    "w": 2210,
+    "h": 860,
+    "class": "config-panel",
+    "desc": "Branding settings: tabs Dialog/Branding/Languages/Publish, \"Conversation\", \"Bot message\", \"User message\", \"Pick a main color\" #0b2559, \"Chat speed\" Normal",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_ask_again.png",
+    "w": 528,
+    "h": 404,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Your answer was:\" / \"1234\" / \"Would you like to change that?\" with Yes and No buttons",
+    "ai": "none"
+   },
+   {
+    "n": "skip.png",
+    "w": 728,
+    "h": 506,
+    "class": "config-panel",
+    "desc": "Questionnaire panel: Question \"What is your favourite food?\", \"React to an answer\", \"Add answer\", answers Pizza, Pasta, \"Other texts\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_editing_later.png",
+    "w": 656,
+    "h": 732,
+    "class": "chat-ui",
+    "desc": "Chat preview \"What is your favourite food?\" with radio list Food/Pizza/Burger/Pasta/Kebab (Kebab selected), \"Would you like to change that?\" button, \"A little message.\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_accordion.png",
+    "w": 666,
+    "h": 866,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Which one do you like the most?\" with accordion radio list of Lorem ipsum options and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_address_query.png",
+    "w": 726,
+    "h": 888,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Where do you live?\" with address autocomplete list (Münster, Germany / Munster, France / Munster, IN, USA / Münsterplatz, Basel, Switzerland) and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_categorical_slider.png",
+    "w": 656,
+    "h": 384,
+    "class": "chat-ui",
+    "desc": "Chat preview \"How are you?\" with categorical slider labelled \"excellent\" and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_date_input.png",
+    "w": 656,
+    "h": 368,
+    "class": "chat-ui",
+    "desc": "Chat preview \"What date do we have tomorrow?\" with Day / Month / Year dropdowns and OK",
+    "ai": "none"
+   },
+   {
+    "n": "date_input.png",
+    "w": 1004,
+    "h": 588,
+    "class": "config-panel",
+    "desc": "Question 2 \"Constraints\": \"Min. date\", \"Min. date variable\", \"dd.mm.yyyy\", \"or\", \"Choose a variable\", \"Max. date\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_dropdown_select.png",
+    "w": 656,
+    "h": 368,
+    "class": "chat-ui",
+    "desc": "Chat preview \"What day do we have tomorrow?\" with open dropdown list \"Pick an option\" / Monday / Tuesday / Wednesday",
+    "ai": "none"
+   },
+   {
+    "n": "select2.png",
+    "w": 1045,
+    "h": 617,
+    "class": "config-panel",
+    "desc": "Questionnaire question panel: \"Question 1\", \"Question type\" = \"Accordion\", \"Intro\" field, \"Add question\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_combobox_example.png",
+    "w": 687,
+    "h": 851,
+    "class": "chat-ui",
+    "desc": "German chat preview \"Welche Rasse hat Ihr Hund?\" with searchable dropdown (Französische Bulldogge, Chihuahua, Labrador Retriever, Mischling) and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_combobox_settings.png",
+    "w": 1718,
+    "h": 656,
+    "class": "config-panel",
+    "desc": "\"Settings\" panel: Process variable \"test\", Variable scope \"process-specific\", editing of existing values, Show skip button Yes/No, Enable later editing Yes, Randomize order No, \"Make dropdown searchable (Combobox)\" Yes highlighted",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_email.png",
+    "w": 658,
+    "h": 372,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please put in your email address\" with email input field and OK",
+    "ai": "none"
+   },
+   {
+    "n": "email_input.png",
+    "w": 996,
+    "h": 550,
+    "class": "config-panel",
+    "desc": "Question 1 \"Input validation\": \"Regular expression checking the answer\" = \"\\S.*\", \"Hint for correct input\", \"en\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_file_upload.png",
+    "w": 658,
+    "h": 410,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please upload the file\" with \"Select file\" upload control and OK",
+    "ai": "none"
+   },
+   {
+    "n": "file.png",
+    "w": 988,
+    "h": 752,
+    "class": "config-panel",
+    "desc": "Question 1 \"Constraints\": \"Media type\" dropdown open showing \"*/*\", application/pdf, application/zip, audio/mpeg, image/*",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_gallery_image_select.png",
+    "w": 658,
+    "h": 764,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please choose your favorite company\" with image-select card showing LoyJoy logo, \"Title: LoyJoy\", \"Description: LoyJoy GmbH\", Select button",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_horizontal_slider.png",
+    "w": 658,
+    "h": 542,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please choose your favorite day\" with horizontally scrollable Select cards Monday / Tuesday / Wednesday and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_iban.png",
+    "w": 646,
+    "h": 418,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please enter your IBAN here:\" with IBAN text input and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_iban_regexp.png",
+    "w": 732,
+    "h": 198,
+    "class": "config-panel",
+    "desc": "\"Check input\" panel: \"Regular expression checking the input\" field containing [A-Z]{2}\\d{2} ?\\d{4} ?\\d{4} ?\\d{4} ?\\d{4} ?[\\d]{0,2}",
+    "ai": "none"
+   },
+   {
+    "n": "icon_category.png",
+    "w": 674,
+    "h": 514,
+    "class": "chat-ui",
+    "desc": "Bubble \"Where do you like to vacation the most?\", slider labelled \"Beach\", OK button",
+    "ai": "none"
+   },
+   {
+    "n": "icon_multiple.png",
+    "w": 674,
+    "h": 548,
+    "class": "chat-ui",
+    "desc": "Bubble \"Choose your interests\" with icon tiles Football, Volleyball, Swimming and OK button",
+    "ai": "none"
+   },
+   {
+    "n": "icon_single.png",
+    "w": 730,
+    "h": 602,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your favorite Food?\" with icon tiles Pizza, Burger, Fish, plus reply bubble \"Delicious!\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_image_upload.png",
+    "w": 646,
+    "h": 366,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please upload your picture here\" with a camera-icon upload button and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_multiple_choice.png",
+    "w": 646,
+    "h": 768,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please pick one or more days\" with checkbox list Monday..Sunday and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_multiple_choice_range.png",
+    "w": 442,
+    "h": 366,
+    "class": "config-panel",
+    "desc": "\"Selection limit\" dropdown open showing Unlimited / Exact / Range",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_nps_range.png",
+    "w": 648,
+    "h": 384,
+    "class": "chat-ui",
+    "desc": "Chat preview \"How do you feel at the moment?\" with green range slider and smiley emoji, OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_numerical.png",
+    "w": 648,
+    "h": 358,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please enter a number below\" with number input (spinner) and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_numerical_settings.png",
+    "w": 542,
+    "h": 598,
+    "class": "config-panel",
+    "desc": "Settings fields: Numerical type \"Integer\", Min. value, Max. value, Initial value",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_numerical_slider.png",
+    "w": 650,
+    "h": 340,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please enter a number\" with slider showing value 5 and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_numerical_slider_settings.png",
+    "w": 698,
+    "h": 748,
+    "class": "config-panel",
+    "desc": "Settings fields: Numerical type \"Integer\", Min. value, Max. value, Initial value, and \"Disable teasing\" toggle switched on",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_order_prioritize.png",
+    "w": 644,
+    "h": 944,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Please order your favourite food:\" / \"Please order exactly 3.\" with rankable list 3 Pizza, 2 Burger, (empty) Pasta, 1 Kebab, \"3/3\", OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_order_prioritize_settings.png",
+    "w": 656,
+    "h": 374,
+    "class": "config-panel",
+    "desc": "\"Selection limit\" dropdown set to \"Exact\" with open options Complete / Exact / Range",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_phone_number.png",
+    "w": 646,
+    "h": 374,
+    "class": "chat-ui",
+    "desc": "Chat bubble \"Please enter your phone number\" with phone field placeholder \"+1 123 456789\" and OK button",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_phone_number_settings.png",
+    "w": 676,
+    "h": 530,
+    "class": "config-panel",
+    "desc": "\"Check input\" panel: \"Regular expression checking the input\", \"Hint for correct input\", \"Placeholder for phone number\", \"+1 123 456789\", lang \"en\"",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_quick_reply.png",
+    "w": 650,
+    "h": 266,
+    "class": "chat-ui",
+    "desc": "Bubble \"Please choose your favourite food\" with quick-reply buttons Pizza, Burger, Pasta, Kebab",
+    "ai": "none"
+   },
+   {
+    "n": "quick_reply.gif",
+    "w": 720,
+    "h": 372,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your favourite pizza topping?\" with \"Enter text\" field, OK and Skip buttons",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_rating.png",
+    "w": 650,
+    "h": 416,
+    "class": "chat-ui",
+    "desc": "Bubble \"Please choose your favourite food\" with five heart rating icons and OK button",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_single_choice.png",
+    "w": 650,
+    "h": 558,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your favourite food?\" with radio options Pizza, Burger, Pasta, Kebab and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_text_input.png",
+    "w": 650,
+    "h": 366,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your favourite food?\" with single-line input placeholder \"Enter text\" and OK",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_text_input_settings.png",
+    "w": 650,
+    "h": 524,
+    "class": "config-panel",
+    "desc": "\"Check input\" panel: regex field, \"Hint for correct input\", \"Number of rows\" field",
+    "ai": "none"
+   },
+   {
+    "n": "data_collection_text_input_rows.png",
+    "w": 650,
+    "h": 466,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your favourite food?\" with multi-line textarea \"Enter text\" and OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 4,
+  "hits": [
+   "lways be asked again. Show current value and offer to ask again​ If the variable of the current question already has a value, the agent displays the current value and offers to ask again. Show \"Skip” Button​ If activated, a \"Skip\"-option is added to the answer. Value of the \"Skip\" variable: If the customer clicks on th",
+   "d the data from the database. To do this, go to the Data tab on the left. Select the Variables tab at the top and the select your agent underneath the header Export variables. Click on CSV export variables and you will be able to find question and answers in the columns question and answer, respectively. The question a",
+   "out the NPS (Net Promoter Score) survey module for more features. Typical Use case If you want to find out the NPS score for your agent or company, use this questionnaire. Useful tips The NPS range consists of emojis or of numbers. To switch between the two, go to settings ⚙️. Numerical input​ How to use Ask your custo"
+  ],
+  "len": 15484
+ },
+ {
+  "p": "/bpmn/subprocesses/dmn/",
+  "n_img": 18,
+  "unmatched": [],
+  "classes": {
+   "table-or-code": 9,
+   "chat-ui": 3,
+   "config-panel": 6
+  },
+  "imgs": [
+   {
+    "n": "dmn_example.png",
+    "w": 1076,
+    "h": 496,
+    "class": "table-or-code",
+    "desc": "Decision table with columns \"app\" and result; rows = \"true\" -> \"1\", = \"false\" -> \"2\", \"Add rule\"",
+    "ai": "none"
+   },
+   {
+    "n": "dmn_colour_example.png",
+    "w": 1402,
+    "h": 840,
+    "class": "table-or-code",
+    "desc": "Decision table Rules/Input +/Output + with question_1, question_2, question_3, evaluation, rules = \"red\", \"green\", \"yellow\", Add rule",
+    "ai": "none"
+   },
+   {
+    "n": "unnamed.png",
+    "w": 208,
+    "h": 512,
+    "class": "chat-ui",
+    "desc": "Editor module list: #1 Questionnaire, #2 Decision table, #3-#5 Simple message bot-text previews (Swimming/Cycling/Jogging)",
+    "ai": "none"
+   },
+   {
+    "n": "answer1.png",
+    "w": 217,
+    "h": 512,
+    "class": "config-panel",
+    "desc": "Question 3 \"Quick reply\": \"Do you want to do sports with your friends or alone?\", Answer 1 \"Friends\", Answer 2 \"Alone\"",
+    "ai": "none"
+   },
+   {
+    "n": "answer2.png",
+    "w": 212,
+    "h": 512,
+    "class": "config-panel",
+    "desc": "Question \"Is it important for you to be fast?\" with Answer 1 \"Of course!\", Answer 2 \"It would be nice!\", Answer 3 \"No, everything's relaxed\"",
+    "ai": "none"
+   },
+   {
+    "n": "answer3.png",
+    "w": 218,
+    "h": 512,
+    "class": "config-panel",
+    "desc": "Question 1 \"Quick reply\": \"Do you like it warmer or cooler when you are doing sports?\" Answer 1 \"Warmer\", Answer 2 \"Cooler\"",
+    "ai": "none"
+   },
+   {
+    "n": "input.png",
+    "w": 512,
+    "h": 185,
+    "class": "config-panel",
+    "desc": "Module list #1 Questionnaire, #2 Decision table, #3 Simple message; Decision table with \"Input +\" circled and \"Add an input\"",
+    "ai": "none"
+   },
+   {
+    "n": "output.png",
+    "w": 512,
+    "h": 185,
+    "class": "config-panel",
+    "desc": "Module list #1 Questionnaire, #2 Decision table, #3 Simple message; Decision table with \"Output +\" circled, \"Add an output\", \"Add rule\"",
+    "ai": "none"
+   },
+   {
+    "n": "rules.png",
+    "w": 512,
+    "h": 375,
+    "class": "table-or-code",
+    "desc": "Decision table with input \"weather\" circled and popup \"Process variable: weather\", \"Move left\", \"Move right\", \"Delete input\"",
+    "ai": "none"
+   },
+   {
+    "n": "output_2.png",
+    "w": 1920,
+    "h": 1080,
+    "class": "table-or-code",
+    "desc": "Decision table with output \"hobby\" circled and popup \"Key: hobby\", \"Variable store\" \"Browser (Cooki\", \"Variable scope\", \"Delete output\"",
+    "ai": "none"
+   },
+   {
+    "n": "addRules.png",
+    "w": 512,
+    "h": 196,
+    "class": "table-or-code",
+    "desc": "Decision table header: \"Rules\", \"Input +\", \"Output +\", row F with weather, speed, society, hobby and \"Add rule\"",
+    "ai": "none"
+   },
+   {
+    "n": "rules2.png",
+    "w": 512,
+    "h": 285,
+    "class": "table-or-code",
+    "desc": "Decision table rule 1 \"= cooler\" with dropdown open \"is equal to\" / \"Fixed value\" / \"cooler\"",
+    "ai": "none"
+   },
+   {
+    "n": "rulesReady.png",
+    "w": 512,
+    "h": 273,
+    "class": "table-or-code",
+    "desc": "Decision table F row (weather, speed, society, hobby) with rule 1 \"= cooler, = faster, = friends\" and \"Add rule\"",
+    "ai": "none"
+   },
+   {
+    "n": "fixedValueOutput.png",
+    "w": 512,
+    "h": 247,
+    "class": "table-or-code",
+    "desc": "Decision table F row weather/speed/society/hobby, rule 1 \"= cooler, = faster, = friends, bicycle\", dropdown \"Fixed value: bicycle\"",
+    "ai": "none"
+   },
+   {
+    "n": "ready.png",
+    "w": 512,
+    "h": 311,
+    "class": "table-or-code",
+    "desc": "Decision table rules 1-3: cooler/faster/friends->bicycle, warmer/fast/alone->swimming, cooler/fast/friends->jogging",
+    "ai": "none"
+   },
+   {
+    "n": "conditionModules.png",
+    "w": 276,
+    "h": 512,
+    "class": "chat-ui",
+    "desc": "Editor tiles #3-#5 \"Simple message\" with bot texts \"You should definitely go swimming / ride your bike / go jogging\", labels Swimming, Cycling, Jogging",
+    "ai": "none"
+   },
+   {
+    "n": "conditionReady.png",
+    "w": 512,
+    "h": 192,
+    "class": "config-panel",
+    "desc": "\"Process module conditions\": \"Execute, if\" Process variable \"hobby\" \"is equal to\" Fixed value \"swimming\", \"Add condition\"",
+    "ai": "none"
+   },
+   {
+    "n": "end.png",
+    "w": 273,
+    "h": 512,
+    "class": "chat-ui",
+    "desc": "Chat preview \"Which hobby suits best?\" with bot/user bubbles ending \"You should definitely ride your bike!\", \"Send your message ...\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 3,
+  "hits": [
+   "ou are building a product finder. Select 'process specific' for 'Variable scope' if you want the variable to be used only in this agent and 'process independent' if you want the variable to be usable in other agents as well. As a next step, add a new rule. With this, you determine the combinations of your questionnaire",
+   "' if you want the variable to be used only in this agent and 'process independent' if you want the variable to be usable in other agents as well. As a next step, add a new rule. With this, you determine the combinations of your questionnaire. For example, if you have three outputs: jogging, cycling, and swimming, add a",
+   "his combination is clicked, the customer will get “bicycle” as a result. You need to rule every possibility because otherwise the agent does not know what to send. In that case, there would be no output. tipIf you do not set an “Input”, the row will always match. You can use this as an “else” or “otherwise” row that ca"
+  ],
+  "len": 5973
+ },
+ {
+  "p": "/bpmn/subprocesses/email_edit/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "email_edit_example.png",
+    "w": 644,
+    "h": 684,
+    "class": "chat-ui",
+    "desc": "Bubbles \"What's your new email address?\", \"john.doe@test.test\", \"I sent you a confirmation email. Please enter the code contained in that email.\", \"Enter code\", OK",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 539
+ },
+ {
+  "p": "/bpmn/subprocesses/email/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 2
+  },
+  "imgs": [
+   {
+    "n": "email_enter_example.png",
+    "w": 644,
+    "h": 430,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your email address?\" with \"Enter email\" field placeholder \"Email address\" and OK button",
+    "ai": "none"
+   },
+   {
+    "n": "email_terms_example.png",
+    "w": 640,
+    "h": 434,
+    "class": "chat-ui",
+    "desc": "\"Enter email\" form with checkbox \"Do you accept the terms of participation?\" and OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 904
+ },
+ {
+  "p": "/bpmn/subprocesses/email/email_templates/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1394
+ },
+ {
+  "p": "/bpmn/subprocesses/event/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1414
+ },
+ {
+  "p": "/bpmn/subprocesses/external_link/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "other": 2,
+   "icon-or-graphic": 1
+  },
+  "imgs": [
+   {
+    "n": "external_link_webview_example.png",
+    "w": 690,
+    "h": 1370,
+    "class": "other",
+    "desc": "In-app webview of \"Example Domain\" (\"This domain is for use in illustrative examples in documents.\") with X close buttons",
+    "ai": "none"
+   },
+   {
+    "n": "external_link_optin.png",
+    "w": 654,
+    "h": 424,
+    "class": "other",
+    "desc": "Consent notice: To watch the Video \"Me at the zoo\" you have to accept the terms by clicking the play-button below! with YouTube play icon",
+    "ai": "none"
+   },
+   {
+    "n": "external_link_description_title.png",
+    "w": 654,
+    "h": 522,
+    "class": "icon-or-graphic",
+    "desc": "Marketing banner photo \"Delighted customers, astonishing results.\" with LoyJoy logo; below, link preview card \"Title / Description / www.loyjoy.com\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "ite with a link, seamlessly integrating additional resources and information into your chat interface without disrupting the user agent. Typical Use Cases​ Link external content directly in the chat and customize the appearance in the External Link process module. How to Use the Module​ Link​ Link URL​ Add here the URL"
+  ],
+  "len": 1798
+ },
+ {
+  "p": "/bpmn/subprocesses/firstname/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "firstname_example.png",
+    "w": 654,
+    "h": 364,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your first name?\" with input placeholder \"Enter first name\" and OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 826
+ },
+ {
+  "p": "/bpmn/subprocesses/form/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   " field by entering a source. Next, add a label to guide your customers on what to enter. Fill a description of the form field for AI autocomplete suggestions and validation​ You can fill a description for each form field in natural language. The description will be used for autocomplete suggestions and validation using",
+   "scription for each form field in natural language. The description will be used for autocomplete suggestions and validation using AI. For example, if you ask for the customer's favorite animal, you can fill the description with \"The field should contain the name of an animal like dog, cat or any other animal.\". This wi"
+  ],
+  "len": 1442
+ },
+ {
+  "p": "/bpmn/subprocesses/gender/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "gender_example.png",
+    "w": 654,
+    "h": 328,
+    "class": "chat-ui",
+    "desc": "Chat bubbles \"Are you [emoji] or [emoji]?\", user reply \"Diverse\", bot reply \"OK, noticed.\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 854
+ },
+ {
+  "p": "/bpmn/subprocesses/goodbye/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "goodbye_example.png",
+    "w": 654,
+    "h": 110,
+    "class": "chat-ui",
+    "desc": "Greeting bubble \"Good bye\" with smiling emoji in a message widget",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 603
+ },
+ {
+  "p": "/bpmn/subprocesses/handover/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "other": 2
+  },
+  "imgs": [
+   {
+    "n": "intro.gif",
+    "w": 352,
+    "h": 764,
+    "class": "other",
+    "desc": "Mobile page sites.loyjoy.com, blank, blue chat launcher bubble bottom right; \"Please enter your imprint\" (GIF frame)",
+    "ai": "none"
+   },
+   {
+    "n": "handover_standard_template.png",
+    "w": 1232,
+    "h": 908,
+    "class": "other",
+    "desc": "Handover email page: \"Hello, you have received a request from a customer in the experience \"Demo Experience\"!\" + masked @loyjoy.com question",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1095
+ },
+ {
+  "p": "/bpmn/subprocesses/hubspot/",
+  "n_img": 4,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 3,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "create_app.png",
+    "w": 1924,
+    "h": 846,
+    "class": "config-panel",
+    "desc": "HubSpot Settings > Private Apps, app \"Lonely-Tent\", API usage 1/250,000 calls, \"Create a private app\"",
+    "ai": "none"
+   },
+   {
+    "n": "scope.png",
+    "w": 3812,
+    "h": 1994,
+    "class": "config-panel",
+    "desc": "HubSpot app \"Deep-Pillow\" Scopes tab; selected scope crm.objects.contacts.write",
+    "ai": "none"
+   },
+   {
+    "n": "contacts.png",
+    "w": 3824,
+    "h": 984,
+    "class": "table-or-code",
+    "desc": "HubSpot Contacts list, 3 records (Sebastian Deisel, Brian Halligan, Maria Johnson); Actions menu open",
+    "ai": "none"
+   },
+   {
+    "n": "properties.png",
+    "w": 1106,
+    "h": 1012,
+    "class": "config-panel",
+    "desc": "Property list email/firstname/lastname; Key \"lastname\", Value dropdown \"Process variable\" = lastname",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1169
+ },
+ {
+  "p": "/bpmn/subprocesses/image/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "icon-or-graphic": 1
+  },
+  "imgs": [
+   {
+    "n": "image_gallery_example.png",
+    "w": 662,
+    "h": 468,
+    "class": "icon-or-graphic",
+    "desc": "Image carousel showing infinity logo illustration, \"Title\", prev/next arrows, dots",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "he images will be displayed in a slider format within the chat. On smartphones, users can swipe through the images for a seamless agent. Clicking on an image will display it in a larger view. Recommendation​ We recommend using PNG-type images for the best quality and compatibility. Considerations for Extensive Use Case",
+   "sers can swipe through the images for a seamless agent. Clicking on an image will display it in a larger view. Recommendation​ We recommend using PNG-type images for the best quality and compatibility. Considerations for Extensive Use Cases​ For more comprehensive scenarios, such as displaying detailed information abou"
+  ],
+  "len": 1295
+ },
+ {
+  "p": "/bpmn/subprocesses/inxmail/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 3
+  },
+  "imgs": [
+   {
+    "n": "inxmail1.png",
+    "w": 1410,
+    "h": 754,
+    "class": "config-panel",
+    "desc": "Inxmail credentials form: Customer ExampleCustomer, Client ID, API secret (masked), List ID 5",
+    "ai": "none"
+   },
+   {
+    "n": "inxmail2.png",
+    "w": 1366,
+    "h": 236,
+    "class": "config-panel",
+    "desc": "Dropdown \"What kind of data do you want to send to Inxmail\" set to Subscribe",
+    "ai": "none"
+   },
+   {
+    "n": "inxmail3.png",
+    "w": 1372,
+    "h": 718,
+    "class": "config-panel",
+    "desc": "\"Mapping 1\" tab: Source expression in LoyJoy = Process variable preference; Target field = attributes.preference",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 772
+ },
+ {
+  "p": "/bpmn/subprocesses/javascript/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "be sent unencrypted. Typical Use Cases​ This module is useful for performing logical tasks using stored variables within the chat agent. How to Use the Module​ How to write variables from JavaScript​ To write variables from JavaScript, define a function named evalFunction that returns an array of objects with key and v"
+  ],
+  "len": 1791
+ },
+ {
+  "p": "/bpmn/subprocesses/jump_auto/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "bpmn-canvas": 1,
+   "config-panel": 1,
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "chat_flow.png",
+    "w": 500,
+    "h": 1126,
+    "class": "bpmn-canvas",
+    "desc": "Vertical chain \"#1 Welcoming\" > \"#2 Automatic jump\" > \"#3 Simple message\" > \"#4 Simple message\" (IF badge); notes \"We jump into this Module\"",
+    "ai": "none"
+   },
+   {
+    "n": "how_to_set_jump.png",
+    "w": 1170,
+    "h": 452,
+    "class": "config-panel",
+    "desc": "\"Automatic jump\" panel: \"Jump to another process module or into another experience.\"; target \"#4 Simple message\"",
+    "ai": "none"
+   },
+   {
+    "n": "jump_auto_example.png",
+    "w": 646,
+    "h": 294,
+    "class": "chat-ui",
+    "desc": "Chat preview bubble \"After this message the chatbot automatically jumps into a new experience.\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 6,
+  "hits": [
+   "MN ModulesAutomatic Jump ModuleOn this pageAutomatic Jump Module Introduction​ Jump into another process step or into a different agent, use this to create whole customer journeys. Typical Use Cases​ Helpful for navigation purposes within agents or processes. Most times it is used with a condition at the module. How to",
+   " or into a different agent, use this to create whole customer journeys. Typical Use Cases​ Helpful for navigation purposes within agents or processes. Most times it is used with a condition at the module. How to Use the Module​ Choose agent​ Jump into another agent to connect different agents. Choose sub process​ Jump ",
+   "vigation purposes within agents or processes. Most times it is used with a condition at the module. How to Use the Module​ Choose agent​ Jump into another agent to connect different agents. Choose sub process​ Jump to process brick in this agent. Jumping​ Jumping between agents/processes does not discard any given info"
+  ],
+  "len": 762
+ },
+ {
+  "p": "/bpmn/subprocesses/jump_decision/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 19,
+  "hits": [
+   " ModuleOn this pageDecision Jump Module Introduction​ The Decision Jump module allows customers to navigate dynamically within an agent, either by jumping into a specific process step or transitioning into another agent. You can configure up to seven jump options, enabling versatile and responsive interactions. Typical",
+   "s customers to navigate dynamically within an agent, either by jumping into a specific process step or transitioning into another agent. You can configure up to seven jump options, enabling versatile and responsive interactions. Typical Use Cases​ The Decision Jump module is ideal for scenarios where you want to: Provi",
+   "s​ The Decision Jump module is ideal for scenarios where you want to: Provide users with quick replies to guide them to different agents based on their preferences. Allow users to skip or proceed to specific steps within a process, enhancing the flow and relevance of interactions. Customize the user journey by offering"
+  ],
+  "len": 2887
+ },
+ {
+  "p": "/bpmn/subprocesses/jump_return/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1,
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "jump_return_grafik.jpeg",
+    "w": 2082,
+    "h": 1408,
+    "class": "editor-canvas+panel",
+    "desc": "Two editor windows: canvas \"#1 Simple message/#2 Return jump/#3 Simple message\" + \"Return jump\" panel, target \"return jump 2\"",
+    "ai": "YES: \"Knowledge\" (editor nav tab)"
+   },
+   {
+    "n": "jump_return_example.png",
+    "w": 646,
+    "h": 382,
+    "class": "chat-ui",
+    "desc": "Three bubbles: \"...automatically jumps into a new experience.\", \"Message in the other experience\", \"Back in the first experience\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [
+   {
+    "img": "jump_return_grafik.jpeg",
+    "label": "YES: \"Knowledge\" (editor nav tab)",
+    "desc": "Two editor windows: canvas \"#1 Simple message/#2 Return jump/#3 Simple message\" + \"Return jump\" panel, target \"return jump 2\""
+   }
+  ],
+  "nh": 13,
+  "hits": [
+   "BPMN ModulesReturn Jump ModuleOn this pageReturn Jump Module Introduction​ The Return Jump module enhances the modularity of your agents by allowing users to jump to another agent and automatically return to the original agent upon completion. This enables the reuse of specific agent flows across multiple agents, strea",
+   "module enhances the modularity of your agents by allowing users to jump to another agent and automatically return to the original agent upon completion. This enables the reuse of specific agent flows across multiple agents, streamlining user interactions and improving efficiency. How to Use the Module​ Configuring the ",
+   "nt and automatically return to the original agent upon completion. This enables the reuse of specific agent flows across multiple agents, streamlining user interactions and improving efficiency. How to Use the Module​ Configuring the Return Jump Module Insert the Module: Place the Return Jump module at the point in you"
+  ],
+  "len": 1653
+ },
+ {
+  "p": "/bpmn/subprocesses/keycloak/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "l Use Cases​ Use this module to securely authenticate users in the chat, retrieve user details from Keycloak, and tailor the chat agent based on their profile information. How to Use the Module​ Configure Redirect URIs: Add the following redirect URIs to your Keycloak settings: https://app-stable.loyjoy.com/auth/oauth2"
+  ],
+  "len": 1208
+ },
+ {
+  "p": "/bpmn/subprocesses/lastname/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "lastname_example.png",
+    "w": 646,
+    "h": 362,
+    "class": "chat-ui",
+    "desc": "Bubble \"And what is your last name?\" + form with \"Enter last name\" field and blue OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 820
+ },
+ {
+  "p": "/bpmn/subprocesses/list/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 3
+  },
+  "imgs": [
+   {
+    "n": "list_example.png",
+    "w": 646,
+    "h": 520,
+    "class": "chat-ui",
+    "desc": "Bubble \"Intro\" + list card \"List title (optional)\" with Element1/Element2 Title + Subtitle",
+    "ai": "none"
+   },
+   {
+    "n": "list_compact.png",
+    "w": 646,
+    "h": 712,
+    "class": "chat-ui",
+    "desc": "List card \"List title (optional)\" with Element1/2/3 Title + Subtitle rows and thumbnails",
+    "ai": "none"
+   },
+   {
+    "n": "list_large.png",
+    "w": 646,
+    "h": 702,
+    "class": "chat-ui",
+    "desc": "Large list card with image header \"List title (optional)\", Element1/2/3 Title + Subtitle",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "st, list_element_1, list_element_2 and so on, and to use that variable selected_list_element in later BPMN process modules of the agent, e.g. in BPMN process conditions. Jumps​ You can configure that each list element should jump to a different agent or process module. This is achieved by selecting a jump target for th",
+   "modules of the agent, e.g. in BPMN process conditions. Jumps​ You can configure that each list element should jump to a different agent or process module. This is achieved by selecting a jump target for the list element. Conditions​ You can configure for each list element individually that it should only be shown to th"
+  ],
+  "len": 1537
+ },
+ {
+  "p": "/bpmn/subprocesses/live/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 3
+  },
+  "imgs": [
+   {
+    "n": "live_chat_asynchron.png",
+    "w": 940,
+    "h": 550,
+    "class": "editor-canvas+panel",
+    "desc": "DE editor canvas \"#1 Begruessung/#2 Live-Chat/#3 Verabschiedung\" + panel \"Asynchron chatten\", \"Agenten sind online\"",
+    "ai": "YES: \"Wissen\" (nav tab), \"Agenten sind online\", \"Keine Agenten online\" (human support agents)"
+   },
+   {
+    "n": "live_chat_email.png",
+    "w": 940,
+    "h": 550,
+    "class": "editor-canvas+panel",
+    "desc": "DE editor canvas \"#1 Begruessung/#2 Live-Chat/#3 Verabschiedung\" + panel \"Live chat\": ask for email address, quick replies",
+    "ai": "YES: \"Wissen\" (nav tab)"
+   },
+   {
+    "n": "live_chat_persistent.png",
+    "w": 940,
+    "h": 550,
+    "class": "editor-canvas+panel",
+    "desc": "EN editor canvas \"#1 Welcome/#2 Live chat/#3 Goodbye\" + panel \"Persistent quick replies\" with 3 jump options",
+    "ai": "YES: \"Knowledge\" (nav tab)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "live_chat_asynchron.png",
+    "label": "YES: \"Wissen\" (nav tab), \"Agenten sind online\", \"Keine Agenten online\" (human support agents)",
+    "desc": "DE editor canvas \"#1 Begruessung/#2 Live-Chat/#3 Verabschiedung\" + panel \"Asynchron chatten\", \"Agenten sind online\""
+   },
+   {
+    "img": "live_chat_email.png",
+    "label": "YES: \"Wissen\" (nav tab)",
+    "desc": "DE editor canvas \"#1 Begruessung/#2 Live-Chat/#3 Verabschiedung\" + panel \"Live chat\": ask for email address, quick replies"
+   },
+   {
+    "img": "live_chat_persistent.png",
+    "label": "YES: \"Knowledge\" (nav tab)",
+    "desc": "EN editor canvas \"#1 Welcome/#2 Live chat/#3 Goodbye\" + panel \"Persistent quick replies\" with 3 jump options"
+   }
+  ],
+  "nh": 21,
+  "hits": [
+   "ModulesLive Chat ModuleOn this pageLive Chat Module Introduction​ The live chat feature allows users to interact directly with an agent and receive real-time support and assistance. If no customer service agent is online (e.g. outside opening hours), users can leave an email address to be notified when an agent is back",
+   "chat feature allows users to interact directly with an agent and receive real-time support and assistance. If no customer service agent is online (e.g. outside opening hours), users can leave an email address to be notified when an agent is back online and responds. Read also Live-Chat Introduction, Setup-Guide and Gui",
+   "nce. If no customer service agent is online (e.g. outside opening hours), users can leave an email address to be notified when an agent is back online and responds. Read also Live-Chat Introduction, Setup-Guide and Guide for agents. Or Check out our FAQ site 🚀 Typical Use Cases​ Real-Time Product Consultation Customer"
+  ],
+  "len": 3640
+ },
+ {
+  "p": "/bpmn/subprocesses/locale/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "locale_languages_example.png",
+    "w": 652,
+    "h": 204,
+    "class": "chat-ui",
+    "desc": "Bubble \"Please select your language.\" + buttons Deutsch, English, Chinese",
+    "ai": "none"
+   },
+   {
+    "n": "locale_languages_tab.png",
+    "w": 1614,
+    "h": 790,
+    "class": "config-panel",
+    "desc": "\"Select languages for your experience\" grid (English selected); left nav includes Knowledge",
+    "ai": "YES: \"Knowledge\" (left nav item)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "locale_languages_tab.png",
+    "label": "YES: \"Knowledge\" (left nav item)",
+    "desc": "\"Select languages for your experience\" grid (English selected); left nav includes Knowledge"
+   }
+  ],
+  "nh": 4,
+  "hits": [
+   "BPMN ModulesLanguage Selection ModuleOn this pageLanguage Selection Module Introduction​ If your agent supports multiple languages, this module allows customers to select their preferred language, providing a more personalized agent. Typical Use Cases​ With this module, users can conven",
+   "agent supports multiple languages, this module allows customers to select their preferred language, providing a more personalized agent. Typical Use Cases​ With this module, users can conveniently choose their language, ensuring content and interactions are accessible and understandable. Below is an example of a multi-",
+   "ge, ensuring content and interactions are accessible and understandable. Below is an example of a multi-language selection in the agent interface: How to Use the Module​ 1. Setting Up Available Languages​ To offer language options, go to the \"Languages\" tab in your agent settings. Here, you can add the languages availa"
+  ],
+  "len": 1415
+ },
+ {
+  "p": "/bpmn/subprocesses/lottie/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "lottie_animation.gif",
+    "w": 304,
+    "h": 576,
+    "class": "chat-ui",
+    "desc": "GIF frame: chat preview bubble \"Do you want to continue?\" with dark OK button and mouse cursor",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 2334
+ },
+ {
+  "p": "/bpmn/subprocesses/loyalty_referral/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1773
+ },
+ {
+  "p": "/bpmn/subprocesses/loyalty_sharing/",
+  "n_img": 4,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 2,
+   "bpmn-canvas": 2
+  },
+  "imgs": [
+   {
+    "n": "loyalty_sharing_desktop.png",
+    "w": 484,
+    "h": 210,
+    "class": "chat-ui",
+    "desc": "Bubble \"Recommend me to your friends to get more loyalty points\" + 4 share icons (Facebook, X, WhatsApp, Mail)",
+    "ai": "none"
+   },
+   {
+    "n": "loyalty_sharing_mobile.png",
+    "w": 484,
+    "h": 182,
+    "class": "chat-ui",
+    "desc": "Same bubble \"Recommend me to your friends...\" + 5 share icons (Facebook, X, WhatsApp, Mail, share)",
+    "ai": "none"
+   },
+   {
+    "n": "loyalty_sharing_share.png",
+    "w": 522,
+    "h": 548,
+    "class": "bpmn-canvas",
+    "desc": "Partial BPMN fragment: \"#1 Sign in\" > \"#2 Loyalty sharing\", arrows in and out",
+    "ai": "none"
+   },
+   {
+    "n": "loyalty_sharing_referral.png",
+    "w": 522,
+    "h": 548,
+    "class": "bpmn-canvas",
+    "desc": "Partial BPMN fragment: \"#1 Sign in\" > \"#2 Loyalty referral\" (database icon), arrows in and out",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 6,
+  "hits": [
+   " similar to the Share Link Module but with the added functionality of awarding loyalty points for referrals. When users share the agent, they can earn loyalty points if their friends sign up using the shared link. How It Works​ Share Agent: Users share the chat agent through various platforms. Referral Points: If a fri",
+   "als. When users share the agent, they can earn loyalty points if their friends sign up using the shared link. How It Works​ Share Agent: Users share the chat agent through various platforms. Referral Points: If a friend signs up using the shared link, the referring user earns loyalty points. This process is linked with",
+   "Natively: Opens a context menu with additional sharing options Typical Use Cases​ Referral Programs: Encourage users to share the agent with friends, rewarding them for successful referrals. Expanding Reach: Boost engagement by motivating users to promote the chat to their social networks. How to Use the Module​ URL an"
+  ],
+  "len": 1967
+ },
+ {
+  "p": "/bpmn/subprocesses/loyalty/",
+  "n_img": 1,
+  "unmatched": [
+   "weweCZAACWQi8P+TmqCfrkeSQgAAAABJRU5ErkJggg=="
+  ],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 3,
+  "hits": [
+   " Points ModuleOn this pageLoyalty Points Module Introduction​ The Loyalty Module allows you to add a loyalty program to your chat agents, where customers can earn points for actions within the chat or external applications via API. Typical Use Cases​ Customers can accumulate loyalty points for specific interactions, wh",
+   " rewards by storing them in the redemptions table. Check it out here. Loyalty Referral: Lets customers earn points by sharing the agent with friends, using a token in shared links for verification. Check it out here. Loyalty Rewards: Offers rewards that customers can redeem using their loyalty points. Check it out here",
+   "wards that customers can redeem using their loyalty points. Check it out here. Loyalty Sharing: Encourages customers to share the agent on social media, granting points as an incentive. Check it out here. Process-Specific Variables​ This module generates variables that are accessible throughout the current process. The"
+  ],
+  "len": 2161
+ },
+ {
+  "p": "/bpmn/subprocesses/mail/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 1,
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "Send_Mail_1.gif",
+    "w": 578,
+    "h": 464,
+    "class": "config-panel",
+    "desc": "Email settings: \"Send to currently logged in customer\" Yes/No, SMTP From/Reply-To, \"Subject of the email\" de/en",
+    "ai": "none"
+   },
+   {
+    "n": "Send_Mail_2_own_mail_server.gif",
+    "w": 626,
+    "h": 428,
+    "class": "editor-canvas+panel",
+    "desc": "Canvas \"#4 First name/#5 Last name/#6 Send email/#7 Goodbye\" + \"Send email\" panel (sender, reply address, subject, HTML)",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "rstname}\", the customers will be addressed with their first name in the email. This personal touch not only enhances the customer agent but also creates a more engaging and interactive communication with your users. Add an email attachment​ Enhance your emails by attaching files. You can either upload static attachment"
+  ],
+  "len": 3032
+ },
+ {
+  "p": "/bpmn/subprocesses/mailchimp/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "ailchimp Module Introduction​ The Mailchimp Module allows you to add a member to an audience in Mailchimp directly from your chat agent. How To Use The Module​ API Key & DC​ To authenticate with Mailchimp, create an API key in Mailchimp and input it along with your data center (e.g. us1) into the module settings. You c"
+  ],
+  "len": 1733
+ },
+ {
+  "p": "/bpmn/subprocesses/main_prize/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 350
+ },
+ {
+  "p": "/bpmn/subprocesses/message/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "simple_message_text.png",
+    "w": 1130,
+    "h": 342,
+    "class": "config-panel",
+    "desc": "\"Message\" text editor panel, language row \"en\", emoji/link/variable icons, image upload tile 1200 x 630 px",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1093
+ },
+ {
+  "p": "/bpmn/subprocesses/microsoft_entra_id/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "tra ID ModuleOn this pageMicrosoft Entra ID Module Introduction​ This module enables customers to authenticate in the LoyJoy chat agent using their Microsoft Entra ID (formerly known as Azure Active Directory) account through OAuth 2.0. Typical Use Cases​ Use this module to securely authenticate users in the chat, retr",
+   "s​ Use this module to securely authenticate users in the chat, retrieve user details from Microsoft Entra ID, and tailor the chat agent based on their profile information. How to Use the Module​ Configure Redirect URIs: Add the following redirect URIs to your Microsoft Entra ID application settings: https://app-stable."
+  ],
+  "len": 1575
+ },
+ {
+  "p": "/bpmn/subprocesses/mini_program/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 4,
+  "hits": [
+   "BPMN ModulesMini Program ModuleOn this pageMini Program Module Introduction​ The Mini Program Module enables you to embed any existing web application or website directly within the chat. It also allows data exchange between the ag",
+   "e enables you to embed any existing web application or website directly within the chat. It also allows data exchange between the agent and the embedded application via API. Typical Use Cases​ Use this module to link customers to a web application within the chat for providing specialized information or services. How t",
+   " the mini program button or optionally an image to represent the CTA. JavaScript Integration​ Mini programs can interact with the agent by setting process variables and closing the mini program through JavaScript. For example: parent.postMessage({ action: 'setVariables', variables: { somekey: 'value' }, continue: false"
+  ],
+  "len": 1758
+ },
+ {
+  "p": "/bpmn/subprocesses/name/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "name_example.png",
+    "w": 722,
+    "h": 516,
+    "class": "chat-ui",
+    "desc": "Bubble \"What is your name?\" + form with Firstname/Lastname inputs and dark OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 691
+ },
+ {
+  "p": "/bpmn/subprocesses/newsletter_opt_in/",
+  "n_img": 5,
+  "unmatched": [],
+  "classes": {
+   "table-or-code": 3,
+   "editor-canvas+panel": 1,
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "newsletter_opt_in_tag.png",
+    "w": 1620,
+    "h": 302,
+    "class": "table-or-code",
+    "desc": "Table E-Mail/Typ/Zustimmung: linus.poeppelmann@loyjoy.com, consent_single_opt_in_newsletter..., Ja",
+    "ai": "none"
+   },
+   {
+    "n": "newsletter_opt_in_data.png",
+    "w": 2788,
+    "h": 860,
+    "class": "table-or-code",
+    "desc": "Data > Consents table: 2 rows \"Newsletter single-opt-in\", Yes; tabs Variables/Consents/Giveaways/Loyalty/Runtime log",
+    "ai": "YES: \"Knowledge\" (left nav item)"
+   },
+   {
+    "n": "add_html.png",
+    "w": 2674,
+    "h": 1398,
+    "class": "editor-canvas+panel",
+    "desc": "Canvas \"#1 Newsletter opt-in\" + panel \"Newsletter opt-in\" (double opt-in mail texts; HTML template field highlighted)",
+    "ai": "YES: \"Knowledge\" (nav tab)"
+   },
+   {
+    "n": "html_code.png",
+    "w": 1999,
+    "h": 649,
+    "class": "table-or-code",
+    "desc": "Split view \"Visual Editor\" (German newsletter text) and \"HTML-Editor\" with table markup incl. tchibo newsletter link",
+    "ai": "none"
+   },
+   {
+    "n": "confirmation.png",
+    "w": 2064,
+    "h": 378,
+    "class": "chat-ui",
+    "desc": "Single bubble \"Thank you, I saved your selection.\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [
+   {
+    "img": "newsletter_opt_in_data.png",
+    "label": "YES: \"Knowledge\" (left nav item)",
+    "desc": "Data > Consents table: 2 rows \"Newsletter single-opt-in\", Yes; tabs Variables/Consents/Giveaways/Loyalty/Runtime log"
+   },
+   {
+    "img": "add_html.png",
+    "label": "YES: \"Knowledge\" (nav tab)",
+    "desc": "Canvas \"#1 Newsletter opt-in\" + panel \"Newsletter opt-in\" (double opt-in mail texts; HTML template field highlighted)"
+   }
+  ],
+  "nh": 1,
+  "hits": [
+   "ial for completing the DOI (Double Opt-In) process. To ensure everything is set up correctly, have a look and test it within your agent. If successful, you should receive the following response: Alternatively, you can replace the URL with one that you prefer to use. Simply paste it into the redirect section above the H"
+  ],
+  "len": 3758
+ },
+ {
+  "p": "/bpmn/subprocesses/notification/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 311
+ },
+ {
+  "p": "/bpmn/subprocesses/nps_survey/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "nps_survey_demo.png",
+    "w": 746,
+    "h": 1172,
+    "class": "chat-ui",
+    "desc": "Messenger preview: \"How likely is it that you would recommend our service...?\", \"Your rating\" slider, OK",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 3,
+  "hits": [
+   "oter Score. NPS is a market research metric that asks respondents a survey question to rate the likelihood that respondents would recommend a company, product, or a service to a friend or colleague. Then, a second question asks the reason for the first answer. Typical Use Cases​ How to Use the Module​ Question​ This fe",
+   "texts​ Choose the wording of e.g. placeholders. See Stats and Download Results​ To access the results, visit the analytics of the agent. Click on the \"Drill-down\" tab (Details tab in German). Find the NPS module and click on it. You can see the NPS score and the distribution of the results. You will also see a button t",
+   "n automatically be deleted. Useful Tips​ Keep the question concise and easy to understand. Maintain the essence of \"likelihood to recommend\" in your phrasing. Consider your specific product/service when framing the question. Ensure the question is relevant at the point in the customer journey where it's asked. Process-"
+  ],
+  "len": 1725
+ },
+ {
+  "p": "/bpmn/subprocesses/one_trust/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1805
+ },
+ {
+  "p": "/bpmn/subprocesses/opening_hours/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2
+  },
+  "imgs": [
+   {
+    "n": "opening_hours_configuration_example.png",
+    "w": 497,
+    "h": 176,
+    "class": "config-panel",
+    "desc": "\"Configure your opening hours\": Mo - Fr 08:00-16:00, Saturday 08:00-11:00, Saturday 12:00-14:00",
+    "ai": "none"
+   },
+   {
+    "n": "opening_hours_timezone.png",
+    "w": 540,
+    "h": 129,
+    "class": "config-panel",
+    "desc": "\"Opening hours\" header + timezone tooltip with Europe/Berlin dropdown; mentions variable ${opening_hours_open}",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "n two ways: 1. Jump if Open/Closed​ Based on whether the business is open or closed, you can redirect the user to a subprocess or agent. 2. Using the opening_hours_open Variable​ The opening_hours_open variable can be evaluated within chat module conditions, such as displaying certain messages or modules based on wheth",
+   "d. Time Zone​ Ensure that you select the correct timezone to accurately calculate your opening hours. This ensures that customers agent the correct timing based on your actual hours of operation. Process-Specific Variables​ This module generates variables that are accessible throughout the current process. They are onl"
+  ],
+  "len": 1824
+ },
+ {
+  "p": "/bpmn/subprocesses/optimizely/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2
+  },
+  "imgs": [
+   {
+    "n": "optimizely_basic.png",
+    "w": 1132,
+    "h": 528,
+    "class": "config-panel",
+    "desc": "Optimizely credentials: Client ID, Basic authorization (masked), \"Enter username and password\" button",
+    "ai": "none"
+   },
+   {
+    "n": "optimizely_mappings.png",
+    "w": 1264,
+    "h": 500,
+    "class": "config-panel",
+    "desc": "Mapping \"data.whatsapp\": Quelle Expression in LoyJoy (Var phone); Ziel field data.whatsapp",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1861
+ },
+ {
+  "p": "/bpmn/subprocesses/participation/",
+  "n_img": 5,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2,
+   "table-or-code": 3
+  },
+  "imgs": [
+   {
+    "n": "participation_timezone.png",
+    "w": 1130,
+    "h": 310,
+    "class": "config-panel",
+    "desc": "\"Giveaway participation\" module header + timezone tooltip with Europe/Berlin dropdown",
+    "ai": "none"
+   },
+   {
+    "n": "participations_switch.png",
+    "w": 662,
+    "h": 243,
+    "class": "config-panel",
+    "desc": "\"Giveaway 1\" settings section with the sentence \"Are your customers allowed to p...\" and \"the interval in which they are allo...\", an \"Once\" field, and an open date-picker dropdown with \"Start date\" (yyyy-mm-dd) and \"End date\" (dd.mm.yyyy)",
+    "ai": "none"
+   },
+   {
+    "n": "participations_example.png",
+    "w": 1073,
+    "h": 553,
+    "class": "table-or-code",
+    "desc": "\"Participations\" table with 3 rows example_customer_1..3@loyjoy.com, CSV export, \"Last 3\"",
+    "ai": "none"
+   },
+   {
+    "n": "participations_drawn_example.png",
+    "w": 1073,
+    "h": 389,
+    "class": "table-or-code",
+    "desc": "\"Drawn participations\" table, example_customer_1@loyjoy.com, buttons Draw participation / CSV export",
+    "ai": "none"
+   },
+   {
+    "n": "giveaway_participation_data.png",
+    "w": 2520,
+    "h": 842,
+    "class": "table-or-code",
+    "desc": "Data > Giveaways: \"Giveaway 1\" drawn participations table (Email, Firstname, Lastname, Street, Zipcode, ...)",
+    "ai": "YES: \"Knowledge\" (left nav item)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "giveaway_participation_data.png",
+    "label": "YES: \"Knowledge\" (left nav item)",
+    "desc": "Data > Giveaways: \"Giveaway 1\" drawn participations table (Email, Firstname, Lastname, Street, Zipcode, ...)"
+   }
+  ],
+  "nh": 2,
+  "hits": [
+   " 12-04 instead of 2022-12-04 to have the giveaway be active every year on the 4th of December. This can be helpful if you copy an agent for the next year. To do this, you must toggle the display of the start and end date using the switch button. Sign in or email​ This module requires the email address of the participan",
+   "wing winners and deleting participants, and can be accessed under Data -> Giveaways -> Manage giveaways. Here, you can select the agent to display and manage all related giveaways. Variables​ When a participation occurs, the participation variable is created. This variable contains a timestamp (epoch milliseconds) of t"
+  ],
+  "len": 4618
+ },
+ {
+  "p": "/bpmn/subprocesses/password/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "password_demo.png",
+    "w": 754,
+    "h": 1166,
+    "class": "chat-ui",
+    "desc": "Chat widget showing bubble \"Please enter a password to continue.\", an \"Enter password\" input with blue \"OK\" button, \"Send your message ...\" composer and LoyJoy footer",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 135
+ },
+ {
+  "p": "/bpmn/subprocesses/pattern_split_ai/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 10,
+  "hits": [
+   "BPMN ModulesAI GatewayOn this pageAI Gateway This gateway is not deprecated, however the AI Agent module is the recommended approach for new use cases, as it is more powerful and flexible and has lower latency due to its ability to call multiple tools and knowledge sources per q",
+   "nd flexible and has lower latency due to its ability to call multiple tools and knowledge sources per question. Introduction​ The AI decides which path a customer inquiry that is entered in the chat is routed to (respond to a knowledge request, answer a follow-up question or react to small talk). This module requires a",
+   "quires a Message Start event to work. It will not work with the regular start event. How to use the module​ Automatically add the AI gateway to your Agent​ In your agent, head over to the Knowledge tab. Activate the input field by clicking \"Yes\" below \"Should the text input field be shown?\". A button \"Activate AI\" will"
+  ],
+  "len": 2268
+ },
+ {
+  "p": "/bpmn/subprocesses/pattern_split_decision/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 191
+ },
+ {
+  "p": "/bpmn/subprocesses/pattern_split/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "bpmn-canvas": 1
+  },
+  "imgs": [
+   {
+    "n": "pattern_split.png",
+    "w": 712,
+    "h": 916,
+    "class": "bpmn-canvas",
+    "desc": "Plain black-and-white process diagram: start circle, box \"#1 Welcoming\", exclusive gateway diamond marked X, two branches with small \"IF\" tags leading to \"#2 Simple message\" and \"#3 Simple message\", converging on a second X gateway",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 498
+ },
+ {
+  "p": "/bpmn/subprocesses/pdf/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "cremented (undefined1, undefined2, etc.). Useful Tips​ The module becomes even more useful if you work with variables inside your agent. Then it is possible to create PDF files with unique user data on the go."
+  ],
+  "len": 1691
+ },
+ {
+  "p": "/bpmn/subprocesses/personal_data_intro/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 741
+ },
+ {
+  "p": "/bpmn/subprocesses/personal_data_outro/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 592
+ },
+ {
+  "p": "/bpmn/subprocesses/phone/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 805
+ },
+ {
+  "p": "/bpmn/subprocesses/places/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "places.png",
+    "w": 732,
+    "h": 1282,
+    "class": "chat-ui",
+    "desc": "Chat widget with \"Address\" field containing \"Mendelstraße 11, Münster\", bubble \"Here are the closest locations\", a Google map with pins, and result rows \"Pension Schmidt (3.1 km)\", \"Türkisches Museum (3.8 km)\", \"Skaters Palace (6.3 km)\"",
+    "ai": "none"
+   },
+   {
+    "n": "sheet_example.png",
+    "w": 1754,
+    "h": 550,
+    "class": "table-or-code",
+    "desc": "Google Sheets document \"Example\" with header row name, address, latitude, longitude and one data row \"Botanischer Garten der Westfälischen Wilhelms-Universität Münster\", \"Schlossgarten 5, 48149 Münster\", 51.963571, 7.609807",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   " destinations, the latitude and longitude of each destination is required. Typical Use Cases​ Places offer a great addition to an agent, where for example, a product finder is used. You can display your products within the chat and can then show the retailers offering your products. How to Use the Module​ Google Sheets"
+  ],
+  "len": 1782
+ },
+ {
+  "p": "/bpmn/subprocesses/places/api_keys/",
+  "n_img": 7,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 6,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "api_list.png",
+    "w": 2250,
+    "h": 1520,
+    "class": "config-panel",
+    "desc": "Google Maps Platform \"APIs & Services\" catalogue of API cards (Geocoding API, Geolocation API, Maps JavaScript API, Places API, Places API (New), Time Zone API, Directions API, Distance Matrix API) each with ENABLE or red-boxed DISABLE control and \"PLACES\" tag",
+    "ai": "none"
+   },
+   {
+    "n": "create_server_api_key.png",
+    "w": 2232,
+    "h": 492,
+    "class": "config-panel",
+    "desc": "Google Cloud Credentials screen with the \"CREATE CREDENTIALS\" dropdown open showing \"API key\", \"OAuth client ID\" and \"Service account\" options with their descriptions, visually identical to the browser-key screenshot",
+    "ai": "none"
+   },
+   {
+    "n": "restrict_server_api_key.png",
+    "w": 1680,
+    "h": 1248,
+    "class": "config-panel",
+    "desc": "Google Cloud \"Edit API key\" screen for \"Places API server key\": \"API restrictions\" with \"Restrict key\" selected, \"3 APIs\" dropdown and red-boxed \"Selected APIs: Distance Matrix API, Geocoding API, Places API\"",
+    "ai": "none"
+   },
+   {
+    "n": "create_browser_api_key.png",
+    "w": 2232,
+    "h": 492,
+    "class": "config-panel",
+    "desc": "Google Cloud Credentials screen with the \"CREATE CREDENTIALS\" dropdown open showing \"API key\", \"OAuth client ID\" and \"Service account\" options with their descriptions",
+    "ai": "none"
+   },
+   {
+    "n": "restrict_browser_api_key.png",
+    "w": 1670,
+    "h": 1182,
+    "class": "config-panel",
+    "desc": "Google Cloud \"Edit API key\" screen for \"Places API browser key\": \"Key restrictions\", \"API restrictions\" with \"Restrict key\" selected, \"1 API\" dropdown and red-boxed \"Selected APIs: Maps Static API\"",
+    "ai": "none"
+   },
+   {
+    "n": "api_keys_list.png",
+    "w": 2082,
+    "h": 594,
+    "class": "table-or-code",
+    "desc": "Google Cloud \"APIs & Services > Credentials\" screen with \"API Keys\" table listing \"Places API browser key\" and \"Places API server key\", both created \"Feb 28, 2022\", with Restrictions \"Maps Static API\" and \"3 APIs\"",
+    "ai": "none"
+   },
+   {
+    "n": "places.png",
+    "w": 1122,
+    "h": 556,
+    "class": "config-panel",
+    "desc": "LoyJoy \"Places\" settings screen with two masked value fields labelled \"Google Places server API key\" and \"Google Places browser API key\", each with a reveal eye icon",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1093
+ },
+ {
+  "p": "/bpmn/subprocesses/poll/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "poll.png",
+    "w": 750,
+    "h": 1280,
+    "class": "chat-ui",
+    "desc": "Chat poll preview: bubble \"Is A.I. able to make the world a better place?\", user reply button \"Absolutely!\", and a result card showing bars for \"Absolutely!\" 3 and \"No way!\" 1 with a green \"Live\" dot",
+    "ai": "\"Is A.I. able to make the world a better place?\" (poll question text, not a feature label)"
+   },
+   {
+    "n": "poll_settings.png",
+    "w": 2658,
+    "h": 824,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy process editor: small canvas with start circle, \"#1 Questionnaire\", selected \"#2 Poll\" and end circle, beside a right-hand \"Poll\" properties panel with Question 1 dropdown set to \"#1.1 Is A.I. able to make the world a better place?\" and empty Question 2 / Question 3 selects",
+    "ai": "\"#1.1 Is A.I. able to make the world a better place?\" (dropdown value, not a feature label)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "poll.png",
+    "label": "\"Is A.I. able to make the world a better place?\" (poll question text, not a feature label)",
+    "desc": "Chat poll preview: bubble \"Is A.I. able to make the world a better place?\", user reply button \"Absolutely!\", and a result card showing bars for \"Absolutely!\" 3 and \"No way!\" 1 with a green \"Live\" dot"
+   },
+   {
+    "img": "poll_settings.png",
+    "label": "\"#1.1 Is A.I. able to make the world a better place?\" (dropdown value, not a feature label)",
+    "desc": "LoyJoy process editor: small canvas with start circle, \"#1 Questionnaire\", selected \"#2 Poll\" and end circle, beside a right-hand \"Poll\" properties panel with Question 1 dropdown set to \"#1.1 Is A.I. able to make the world a better place?\" and empty Question 2 / Question 3 selects"
+   }
+  ],
+  "nh": 1,
+  "hits": [
+   " with your audience. How to Use the Module​ To use the Poll Module, first make sure to incorporate a questionnaire module in your agent to let customers answer questions. You can use any question type that answers the question in a single choice manner, such as quick reply, categorical, or single choice. Next, referenc"
+  ],
+  "len": 1552
+ },
+ {
+  "p": "/bpmn/subprocesses/postal_address/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "s are required for certain application forms, where you have to enter your address. Just insert the module postal address to your agent and save the input as a variable. How to Use the Module​ Intro​ Add an intro to introduce before asking for a postal address. Other texts​ Choose placeholder for the form. Sign in​ The"
+  ],
+  "len": 735
+ },
+ {
+  "p": "/bpmn/subprocesses/prizes/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "prizes_gallery_time.png",
+    "w": 1166,
+    "h": 372,
+    "class": "config-panel",
+    "desc": "Prize editor section with \"Add prize\" button, collapsible row \"Your first prize\", red-circled calendar icon and trash icon, and form fields \"Name\" (value \"Your first prize\") and \"Description\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1059
+ },
+ {
+  "p": "/bpmn/subprocesses/pro_campaign/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 244
+ },
+ {
+  "p": "/bpmn/subprocesses/proceed/",
+  "n_img": 1,
+  "unmatched": [
+   "sFrCpBFQAk4astyPwBd3+egj9kmV7EWA9qGd9AvJ2dtGqZZMTRCpIpjD8fWjnNnbeJCvfpQze9snXSVTDThdSOZgOnxxt9U5DdUckWVth9mBdtEvImdZw4RQHNWAQwA115Lko4+deww1W7zC2h2Ra5hkorzsduAdG9h81eyQiRbY83kqAe95zLMyR3ZH8N2xwSOnmK9mhPGwRlZWPAsKZd4W5zxMwlazjh0u1o9vZkGb7KkiKAHvKaRzKB+eluPrC7wAnKfWeA2i90mwHKpO1hWVR7F5sQ7vduDxYp5wu6B5g6wrpxYofASUgMPHWHNQBBQBRcAXAV2E84VFHRUBRUARCB8BJeDwMdYcFAFFQBHwRUAJ2BcWdVQEFAFFIHwElIDDx1hzUAQUAUXAFwElYF9Y1FERUAQUgfARUAIOH2PNQRFQBBQBXwT+C++Co+L6aa+XAAAAAElFTkSuQmCC"
+  ],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "hoose between the provided template text or enter your own text to prompt the user. Example Usage​ Consider a scenario where your agent provides a series of tips or instructions. To ensure the user is ready to proceed and not overloaded with information, you can use the Proceed Question module to ask if they would like"
+  ],
+  "len": 1431
+ },
+ {
+  "p": "/bpmn/subprocesses/process_instance_create/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "stance ModuleOn this pageCreate Process Instance Module Introduction​ Use this if customers should be able to go through the same agent several times. For tech experts, this creates a new namespace. Only works with process-specific variables, not with process-independent."
+  ],
+  "len": 301
+ },
+ {
+  "p": "/bpmn/subprocesses/product_feed/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "table-or-code": 1,
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "sheet_example.png",
+    "w": 1062,
+    "h": 155,
+    "class": "table-or-code",
+    "desc": "Google Sheets product feed with columns title, header, description, tags, price, image_url and rows such as \"Handcreme\", \"Fußcreme für Diabetiker\", \"Fußcreme für samtweiche Füße\", prices 12,50 € to 14,50 €",
+    "ai": "none"
+   },
+   {
+    "n": "connectors2.png",
+    "w": 2938,
+    "h": 1435,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor \"The best chat ever\": Process tab with canvas \"#1 Welcoming\" - selected \"#2 Product feed\" - \"#3 Goodbye\", right panel \"Product feed > Connect your data > Add connector > Connector 1\" with blue-boxed \"SQL query\" textarea containing SELECT * FROM products WHERE category = 'shoes'; ; left sidebar shows Analytics, Data, Templates, Agents, Knowledge, Products, Live",
+    "ai": "\"Agents\" (left-sidebar nav item), \"Knowledge\" (left-sidebar nav item and top nav tab)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "connectors2.png",
+    "label": "\"Agents\" (left-sidebar nav item), \"Knowledge\" (left-sidebar nav item and top nav tab)",
+    "desc": "LoyJoy editor \"The best chat ever\": Process tab with canvas \"#1 Welcoming\" - selected \"#2 Product feed\" - \"#3 Goodbye\", right panel \"Product feed > Connect your data > Add connector > Connector 1\" with blue-boxed \"SQL query\" textarea containing SELECT * FROM products WHERE category = 'shoes'; ; left sidebar shows Analytics, Data, Templates, Agents, Knowledge, Products, Live"
+   }
+  ],
+  "nh": 4,
+  "hits": [
+   "atch your customer's preferences, as determined by a preceding chat flow. The module's key advantage lies in its integration of a recommender, which automatically pulls content from various connectors. This continuous update ensures that your customers receive the most up-to-date and relevant product listings. How to U",
+   "PI. Then, the products can be displayed in the chat. To control, which products are shown, there are two primary options: the tag recommender and SQL-based filters in the connectors. The tag recommender is a simple way to filter products based on tags assigned to the customer during the chat flow. For most use-cases yo",
+   " website for product purchase. While the \"description,\" \"price,\" \"image_url,\" and \"url\" fields are not mandatory, they are highly recommended for an optimal user agent. See here for an example Google Sheet. As described, the first row is expected to hold the column names. Using Database and JSON Connectors​ For Databas"
+  ],
+  "len": 3535
+ },
+ {
+  "p": "/bpmn/subprocesses/product_feed/connectors/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 3114
+ },
+ {
+  "p": "/bpmn/subprocesses/product_feed/connectors/database/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 410
+ },
+ {
+  "p": "/bpmn/subprocesses/product_feed/connectors/google_sheets/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "sheet_id_url.png",
+    "w": 1430,
+    "h": 72,
+    "class": "table-or-code",
+    "desc": "A single highlighted URL string on white background: the docs.google.com/spreadsheets/d/... edit link with the spreadsheet ID portion highlighted in pink",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 738
+ },
+ {
+  "p": "/bpmn/subprocesses/product_feed/connectors/json_api/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "BPMN ModulesProduct Feed ModuleConnectorsJSON ApiJSON Api To create a JSON connector, it is recommended to use a hyperscaler such as Google Cloud or Amazon Web Services (AWS). Please consider the following code snippet of a Google Cloud Function that retrieves a feed of products to",
+   "nippet of a Google Cloud Function that retrieves a feed of products to be used in the Product Feed module. For persistence, it is recommended to use a managed database, such as Google Datastore. const functions = require('@google-cloud/functions-framework')functions.http('productFeed', (req, res) => { const products = "
+  ],
+  "len": 903
+ },
+ {
+  "p": "/bpmn/subprocesses/product_feed/tag_recommender/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 2
+  },
+  "imgs": [
+   {
+    "n": "Tag_2.gif",
+    "w": 688,
+    "h": 390,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor (GIF, first frame): same Modules palette and \"#1 Decision gateway\" with Red / Blue branches, but branches lead to \"#2 Tag\" and \"#3 Tag\" boxes then \"#4 Product feed\"",
+    "ai": "\"Knowledge\" (top nav tab)"
+   },
+   {
+    "n": "Tag_1.gif",
+    "w": 688,
+    "h": 390,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor (GIF, first frame): left \"Modules\" palette with control flow (Loop, Decision gateway, Gateway), events (End, Wait, Timer start) and essential module buttons, canvas with \"#1 Decision gateway\", X gateway branching \"Red\" / \"Blue\" into two \"Drop module\" boxes then \"#2 Product feed\"; tabs Dialog, Branding, Languages, Knowledge, Publish, Texts, Assets",
+    "ai": "\"Knowledge\" (top nav tab)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "Tag_2.gif",
+    "label": "\"Knowledge\" (top nav tab)",
+    "desc": "LoyJoy editor (GIF, first frame): same Modules palette and \"#1 Decision gateway\" with Red / Blue branches, but branches lead to \"#2 Tag\" and \"#3 Tag\" boxes then \"#4 Product feed\""
+   },
+   {
+    "img": "Tag_1.gif",
+    "label": "\"Knowledge\" (top nav tab)",
+    "desc": "LoyJoy editor (GIF, first frame): left \"Modules\" palette with control flow (Loop, Decision gateway, Gateway), events (End, Wait, Timer start) and essential module buttons, canvas with \"#1 Decision gateway\", X gateway branching \"Red\" / \"Blue\" into two \"Drop module\" boxes then \"#2 Product feed\"; tabs Dialog, Branding, Languages, Knowledge, Publish, Texts, Assets"
+   }
+  ],
+  "nh": 9,
+  "hits": [
+   "BPMN ModulesProduct Feed ModuleUsing the Tag RecommenderOn this pageUsing the Tag Recommender The tag recommender feature provides customers with the most relevant product listings, enhancing their shopping agent. infoThe tag recommend",
+   " Tag Recommender The tag recommender feature provides customers with the most relevant product listings, enhancing their shopping agent. infoThe tag recommender is less powerful than SQL-based filtering and should only be used for simple use cases. For more complex filtering, we recommend using SQL-based filters in the",
+   "ecommender is less powerful than SQL-based filtering and should only be used for simple use cases. For more complex filtering, we recommend using SQL-based filters in the connectors. Enabling the Tag Recommender​ To activate the tag recommender, follow these steps: Navigate to the Product Feed Module. Scroll to the top"
+  ],
+  "len": 2563
+ },
+ {
+  "p": "/bpmn/subprocesses/products/",
+  "n_img": 10,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 3,
+   "config-panel": 1,
+   "other": 4,
+   "chat-ui": 2
+  },
+  "imgs": [
+   {
+    "n": "intro.gif",
+    "w": 718,
+    "h": 374,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy process editor: left \"Modules\" palette with searchable module buttons (Automatic jump, Clipboard, Decision jump, Email, Goodbye, NPS survey, Proceed question, Product gallery, Questionnaire, Restart, Return jump, Share link, Sign in, Simple message, Stop, Welcoming) beside a canvas holding a start circle and a dashed \"Drop module\" placeholder box.",
+    "ai": "none"
+   },
+   {
+    "n": "image_orientation_small.png",
+    "w": 300,
+    "h": 265,
+    "class": "config-panel",
+    "desc": "Selection dialog titled \"Select image orientation\" with three radio option cards labelled \"Landscape 1200x630px\", \"Portrait 1080x1920px\" and \"Square 1080x1080px\".",
+    "ai": "none"
+   },
+   {
+    "n": "product_name.png",
+    "w": 250,
+    "h": 246,
+    "class": "other",
+    "desc": "Rendered product card for \"Translucent Setting Powder\" with an external-link icon beside the name and the description \"This is a lightweight and easy to apply setting powder for the ultimate finish.\"",
+    "ai": "none"
+   },
+   {
+    "n": "product_topline.png",
+    "w": 250,
+    "h": 352,
+    "class": "other",
+    "desc": "Rendered product card for \"Translucent Setting Powder\" with topline \"For Flawless Skin\", a collapse chevron and expanded text \"Our ingredients include: Skin Conditioning Powder, Blurring Powder, Vitamin C\".",
+    "ai": "none"
+   },
+   {
+    "n": "price.png",
+    "w": 250,
+    "h": 314,
+    "class": "other",
+    "desc": "Rendered product card for \"Translucent Setting Powder\" showing struck-through price \"24,99€\" replaced by \"19,99€ Tax incl.\" and a short description.",
+    "ai": "none"
+   },
+   {
+    "n": "button.png",
+    "w": 250,
+    "h": 350,
+    "class": "chat-ui",
+    "desc": "Rendered product card identical to the background variant: image, \"For Flawless Skin\", \"Translucent Setting Powder\", \"24,99 € 19,99 € Tax incl.\", description text and a dark \"Buy now\" button",
+    "ai": "none"
+   },
+   {
+    "n": "background.png",
+    "w": 250,
+    "h": 350,
+    "class": "chat-ui",
+    "desc": "Rendered product card for a makeup powder: image, \"For Flawless Skin\", \"Translucent Setting Powder\", \"24,99 € 19,99 € Tax incl.\", description text and a dark \"Buy now\" button",
+    "ai": "none"
+   },
+   {
+    "n": "rating.png",
+    "w": 250,
+    "h": 374,
+    "class": "other",
+    "desc": "Rendered product card for \"Translucent Setting Powder\" with price \"24,99€ 19,99€ Tax incl.\", five stars with count \"(24)\" and a dark \"Buy now\" button.",
+    "ai": "none"
+   },
+   {
+    "n": "Recommender_1.gif",
+    "w": 710,
+    "h": 378,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor (GIF, first frame): canvas \"#1 Decision gateway\" branching Red / Blue into two \"Drop module\" boxes then \"#2 Product gallery\", right panel \"Decision gateway\" with Question \"Which color do you like more?\", Branch 1 Answer \"Red\", Branch 2 Answer \"Blue\" and \"Add branch\"",
+    "ai": "none"
+   },
+   {
+    "n": "Recommender_2.gif",
+    "w": 672,
+    "h": 398,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor (GIF, first frame): canvas \"#1 Decision gateway\" with Red / Blue branches to \"#2 Tag\" and \"#3 Tag\" then selected \"#4 Product gallery\", right panel \"Product gallery\" with \"Select image orientation\" (Landscape, Portrait, Square) and a \"Recommender\" section with Off / Filter / Smart buttons, \"Display all available products\" and \"Max. number of products to display\" 12",
+    "ai": "\"Recommender\", \"Smart\" (Recommender mode buttons next to \"Off\" and \"Filter\")"
+   }
+  ],
+  "ai": [
+   {
+    "img": "Recommender_2.gif",
+    "label": "\"Recommender\", \"Smart\" (Recommender mode buttons next to \"Off\" and \"Filter\")",
+    "desc": "LoyJoy editor (GIF, first frame): canvas \"#1 Decision gateway\" with Red / Blue branches to \"#2 Tag\" and \"#3 Tag\" then selected \"#4 Product gallery\", right panel \"Product gallery\" with \"Select image orientation\" (Landscape, Portrait, Square) and a \"Recommender\" section with Off / Filter / Smart buttons, \"Display all available products\" and \"Max. number of products to display\" 12"
+   }
+  ],
+  "nh": 9,
+  "hits": [
+   "r customers to buy your product by embedding a link behind the “Buy now” button. Typical Use Cases​ Useful to integrate into your agent to show your products or services. Multiple products will be shown in a gallery slider. Use this module to present personalized product offerings as e.g. skin care routines with your p",
+   "ers to all products equally. Continue by adding a picture according to the px size you have picked above. Remember that we do not recommend your pictures be no larger than 500 KB in order to ensure a quick loading. Input fields​ Fill in the fields you think are important. Let’s start with essential input fields such as",
+   "on for the customer to “Buy now”. The button is also able to set a variable in case you want to use the product selection in your agent's flow later on. Background​ Add a background image or choose a color that will be shown in the background.If you add an image and a color for your gradient, only the gradient will be "
+  ],
+  "len": 4301
+ },
+ {
+  "p": "/bpmn/subprocesses/profiling_opt_in/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "profiling_opt_in_demo.png",
+    "w": 754,
+    "h": 1174,
+    "class": "chat-ui",
+    "desc": "LoyJoy chat window with an \"Enter email\" form field (placeholder help@loyjoy.com), messages \"I would like to get know you better 😊\", \"May I save your personal data in order to address you personally? ...\", a blue \"Yes\" button and \"Thank you.\".",
+    "ai": "none"
+   },
+   {
+    "n": "profiling_opt_in_data.png",
+    "w": 2672,
+    "h": 844,
+    "class": "table-or-code",
+    "desc": "Analytics \"Data\" view with tabs Variables / Consents / Giveaways / Instant win / Codes / Loyalty / Files / Runtime log, a consent table (Email, Type, Consent, IP address, Created at) and sidebar entries Data, Experiences, Knowledge, Push, Live.",
+    "ai": "\"Knowledge\""
+   }
+  ],
+  "ai": [
+   {
+    "img": "profiling_opt_in_data.png",
+    "label": "\"Knowledge\"",
+    "desc": "Analytics \"Data\" view with tabs Variables / Consents / Giveaways / Instant win / Codes / Loyalty / Files / Runtime log, a consent table (Email, Type, Consent, IP address, Created at) and sidebar entries Data, Experiences, Knowledge, Push, Live."
+   }
+  ],
+  "nh": 0,
+  "hits": [],
+  "len": 2893
+ },
+ {
+  "p": "/bpmn/subprocesses/pub_sub/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   " manage event-driven communication in your cloud infrastructure. With the Google Pub/Sub module in LoyJoy, you can integrate your agent with Google Pub/Sub to publish data in real-time for further processing and analysis. How to Use the Module​ Integration​ To successfully establish the connection to Google Pub/Sub, yo",
+   "d: lottery_entry Additional Information​ Source Expression: This is used to declare what information will be transmitted from the agent to google. Target Field: This is the field in the Pub/Sub message where the data will be written. Useful Tips​ Message Format: Ensure that your message format in Pub/Sub aligns with th"
+  ],
+  "len": 2136
+ },
+ {
+  "p": "/bpmn/subprocesses/quiz/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1,
+   "config-panel": 2
+  },
+  "imgs": [
+   {
+    "n": "quiz_add.gif",
+    "w": 724,
+    "h": 370,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy process editor with the Modules palette filtered by \"quiz\" showing an \"activation\"/\"Quiz\" module, next to a canvas with a start circle and a dashed \"Drop module\" box.",
+    "ai": "none"
+   },
+   {
+    "n": "quiz_question.png",
+    "w": 1010,
+    "h": 794,
+    "class": "config-panel",
+    "desc": "Quiz question editor with \"Add question\" button, \"Quiz question intro\" text \"How chill are you?😎😱 Can you answer the following question?🧐\" (en) plus image, and \"Quiz question\" field \"In which country is the coldest city in the world?\".",
+    "ai": "none"
+   },
+   {
+    "n": "quiz_answer.png",
+    "w": 1010,
+    "h": 812,
+    "class": "config-panel",
+    "desc": "Answer settings dialog for quiz answer \"Russia\" with \"Incorrect answer\" Yes/No, \"Trigger fairy dust\" Yes/No and \"Add an animation to excite your customers\" set to \"Snowflakes by day\".",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1215
+ },
+ {
+  "p": "/bpmn/subprocesses/rapidmail/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "other": 1
+  },
+  "imgs": [
+   {
+    "n": "recpipient_list.png",
+    "w": 1624,
+    "h": 202,
+    "class": "other",
+    "desc": "Browser address-bar crop showing the URL \"https://my.rapidmail.de/recipient/list.html?recipientlist_id=1234&status=active&pagesize=25&page=1\" (recipientlist_id red-boxed) above the beginning of the rapidmail page.",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1132
+ },
+ {
+  "p": "/bpmn/subprocesses/reach_five/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "se Cases​ Use this module to authenticate users in the chat, access their ReachFive profile information, and personalize the chat agent accordingly. How to Use the Module​ Configure Redirect URIs: Add the following redirect URIs to your ReachFive settings: https://app-stable.loyjoy.com/auth/oauth2/callback https://app-"
+  ],
+  "len": 1163
+ },
+ {
+  "p": "/bpmn/subprocesses/redemptions/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1767
+ },
+ {
+  "p": "/bpmn/subprocesses/region/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 2
+  },
+  "imgs": [
+   {
+    "n": "region_not_permitted_demo.png",
+    "w": 754,
+    "h": 1174,
+    "class": "chat-ui",
+    "desc": "LoyJoy chat window: \"What country are you from? 🌍\", user answer \"Switzerland\", reply \"Unfortunately, this chat is not available in your region\".",
+    "ai": "none"
+   },
+   {
+    "n": "region_permitted_demo.png",
+    "w": 756,
+    "h": 1176,
+    "class": "chat-ui",
+    "desc": "LoyJoy chat window: \"What country are you from? 🌍\", user answer \"German\", reply \"All right, let's move on then\".",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "leOn this pageRegion Module Introduction​ You can make regions available for selection and exclude certain regions from using the agent. Typical Use Cases​ How to Use the Module​ Add region​ Add as many regions as you want to. Set at every region if it is permitted to use the agent. Process-Specific Variables​ This mod",
+   "e Cases​ How to Use the Module​ Add region​ Add as many regions as you want to. Set at every region if it is permitted to use the agent. Process-Specific Variables​ This module generates variables that are accessible throughout the current process. They are only valid for this specific process and may evolve with platf"
+  ],
+  "len": 566
+ },
+ {
+  "p": "/bpmn/subprocesses/reminder_opt_in/",
+  "n_img": 4,
+  "unmatched": [
+   "html_code.png",
+   "confirmation.png"
+  ],
+  "classes": {
+   "table-or-code": 1,
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "reminder_opt_in_data.png",
+    "w": 2662,
+    "h": 994,
+    "class": "table-or-code",
+    "desc": "LoyJoy Analytics \"Data\" view, \"Consents\" tab, consent table (Email, Type, Consent, IP address) listing rows \"consent_double_opt_in_reminder_1237da43_a7fb_4a51_a416_f5cc02e2e767\", \"Automatic deletion 180 days after creation\"; sidebar Data, Experiences, Knowledge, Push, Live.",
+    "ai": "\"Knowledge\""
+   },
+   {
+    "n": "add_html.png",
+    "w": 2064,
+    "h": 1104,
+    "class": "editor-canvas+panel",
+    "desc": "Reminder-Opt-In process editor: vertical chain of boxes \"#1 Reminder-Opt-In\", \"#2 SMS-Opt-In\", \"#3 Web-Push-Opt-In\", \"#4 Notification\", \"#5 Reminder\" under a start circle, beside a properties panel with \"Einleitungstext der Double-Opt-In-E-Mail\", \"Abschlusstext ...\", \"URL für Weiterleitung nach Opt-In\", \"Weiterleitungs-Timeout\", \"HTML-Template für die Double-Opt-In-E-Mail\" with \"Vorschau\" button and \"Double-Opt-In-E-Mail verschicken\" Ja/Nein.",
+    "ai": "none"
+   }
+  ],
+  "ai": [
+   {
+    "img": "reminder_opt_in_data.png",
+    "label": "\"Knowledge\"",
+    "desc": "LoyJoy Analytics \"Data\" view, \"Consents\" tab, consent table (Email, Type, Consent, IP address) listing rows \"consent_double_opt_in_reminder_1237da43_a7fb_4a51_a416_f5cc02e2e767\", \"Automatic deletion 180 days after creation\"; sidebar Data, Experiences, Knowledge, Push, Live."
+   }
+  ],
+  "nh": 1,
+  "hits": [
+   "ial for completing the DOI (Double Opt-In) process. To ensure everything is set up correctly, have a look and test it within your agent. If successful, you should receive the following response: Alternatively, you can replace the URL with one that you prefer to use. Simply paste it into the redirect section above the H"
+  ],
+  "len": 3283
+ },
+ {
+  "p": "/bpmn/subprocesses/reminder/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 674
+ },
+ {
+  "p": "/bpmn/subprocesses/reset/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "session_reset_variables_history.png",
+    "w": 972,
+    "h": 271,
+    "class": "config-panel",
+    "desc": "Two settings blocks \"Reset session and variables in all experiences\" Yes/No and \"Reset chat history in all experiences\" / \"Reset chat history in this experience\" both set to No.",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 6,
+  "hits": [
+   "and chat histories. This module is essential for ensuring that user sessions can be cleanly restarted, preserving a seamless user agent. How to Use the Module​ Reset Options​ Reset session and variables in all agents: This action logs out the customer and drops all session variables. It's useful for starting a new sess",
+   " be cleanly restarted, preserving a seamless user agent. How to Use the Module​ Reset Options​ Reset session and variables in all agents: This action logs out the customer and drops all session variables. It's useful for starting a new session from scratch. Reset the chat history in all agents: This clears the chat his",
+   " the customer and drops all session variables. It's useful for starting a new session from scratch. Reset the chat history in all agents: This clears the chat history across all agents, including the current one. This is helpful for removing old conversation data. Reset the chat history in this agent: This only clears "
+  ],
+  "len": 1476
+ },
+ {
+  "p": "/bpmn/subprocesses/restart/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "restart_question.png",
+    "w": 660,
+    "h": 206,
+    "class": "chat-ui",
+    "desc": "Chat message bubble reading \"Would you like to restart the experience?\" with a dark blue pill button \"Yes\".",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 867
+ },
+ {
+  "p": "/bpmn/subprocesses/rewards/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "other": 2,
+   "bpmn-canvas": 1
+  },
+  "imgs": [
+   {
+    "n": "rewards_display_example.png",
+    "w": 704,
+    "h": 652,
+    "class": "other",
+    "desc": "Reward card carousel item headed with the black \"LoyJoy\" wordmark, text \"LoyJoy Reward\" and \"You need 150 points in total for this reward.\" with a collapse chevron and two carousel dots below.",
+    "ai": "none"
+   },
+   {
+    "n": "rewards_button_example.png",
+    "w": 704,
+    "h": 748,
+    "class": "other",
+    "desc": "Reward card carousel item headed with the black \"LoyJoy\" wordmark, text \"LoyJoy Reward\" and \"You need 77 points in total for this reward.\", a collapse chevron and a dark \"Redeem now\" button, two carousel dots below.",
+    "ai": "none"
+   },
+   {
+    "n": "rewards_setup_example.png",
+    "w": 704,
+    "h": 920,
+    "class": "bpmn-canvas",
+    "desc": "Exported flow diagram of rounded-rectangle nodes connected by downward arrows: \"#2 Loyalty rewards\", \"#3 Stop\", an X-marked gateway splitting via \"IF\" badges with orange counters into three branches \"#4/#6/#8 Loyalty redemption\" each followed by \"#5/#7/#9 Simple message\", rejoining at a second X gateway and ending in an end circle.",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "Loyalty Rewards Module Introduction​ The LoyJoy Rewards Module allows you to display and manage multiple rewards within your chat agent, enabling customers to view and potentially redeem rewards based on their accumulated loyalty points. Typical Use Cases​ Display Available Rewards: Show customers the rewards they can "
+  ],
+  "len": 2581
+ },
+ {
+  "p": "/bpmn/subprocesses/router_push/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "router_push.png",
+    "w": 884,
+    "h": 702,
+    "class": "editor-canvas+panel",
+    "desc": "Process-editor canvas at node level showing module cards \"#1 Proceed question\" with a rendered chat bubble \"Do you want to continue?\" and an \"OK\" button, and \"#2 Jump to home view\" with a \"Jump to home view\" label, each with duplicate/copy and menu icons.",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 395
+ },
+ {
+  "p": "/bpmn/subprocesses/salesforce_interaction_studio/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1018
+ },
+ {
+  "p": "/bpmn/subprocesses/salesforce_marketing_cloud/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 2305
+ },
+ {
+  "p": "/bpmn/subprocesses/salesforce/",
+  "n_img": 6,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 4,
+   "table-or-code": 1,
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "sF1.png",
+    "w": 1608,
+    "h": 932,
+    "class": "config-panel",
+    "desc": "Salesforce mapping settings form \"Email\" with \"Quell-Expression in LoyJoy\" = customer_email (green \"Var\" badge), \"Ziel-Objekt, in das geschrieben werden soll\" = Contact, \"Ziel-Feld, in das geschrieben werden soll\" = Email, and \"Feld verwenden, um zu prüfen, ob ein Record vorhanden ist...\" Ja/Nein.",
+    "ai": "none"
+   },
+   {
+    "n": "sfsc_wtc1.png",
+    "w": 1310,
+    "h": 416,
+    "class": "config-panel",
+    "desc": "Dropdown \"What kind of data do you want to send to or read from Salesforce Service Cloud?\" with options SOObject (write), SOObject (read), Chat",
+    "ai": "none"
+   },
+   {
+    "n": "sF2.png",
+    "w": 2654,
+    "h": 1558,
+    "class": "config-panel",
+    "desc": "Salesforce \"API (Enable OAuth Settings)\" page with Callback URL https://app-cloud.loyjoy.com/auth/oauth2/salesforce_service_cloud/callback and an \"Available OAuth Scopes\" picker listing \"Access Analytics REST API Charts Geodata resources (eclair_api)\", \"Access Einstein GPT services (einstein_gpt_api)\", \"Access Lightning applications (lightning)\" etc., with \"Selected OAuth Scopes\" on the right.",
+    "ai": "\"Access Einstein GPT services (einstein_gpt_api)\""
+   },
+   {
+    "n": "sF3.png",
+    "w": 700,
+    "h": 412,
+    "class": "table-or-code",
+    "desc": "Salesforce connected-app OAuth screen: \"Connected App Name LoyJoyTest\", \"Consumer Details\", Consumer Key / Consumer Secret with Copy buttons",
+    "ai": "none"
+   },
+   {
+    "n": "sF6.png",
+    "w": 1544,
+    "h": 706,
+    "class": "config-panel",
+    "desc": "\"Authorization\" form: Client ID field, Secret field, Deployment domain \"loyjoytest\", Status \"Not authorized\", blue Authorize button, \"How to authorize?\"",
+    "ai": "none"
+   },
+   {
+    "n": "sF8.png",
+    "w": 638,
+    "h": 1620,
+    "class": "chat-ui",
+    "desc": "Chat transcript: \"#1 Sign in\" (\"What's your email address?\" / max@example.org), \"#2 First name\", \"#3 Last name\", \"#4 Salesforce Service Cloud\" with \"Salesforce\" card",
+    "ai": "none"
+   }
+  ],
+  "ai": [
+   {
+    "img": "sF2.png",
+    "label": "\"Access Einstein GPT services (einstein_gpt_api)\"",
+    "desc": "Salesforce \"API (Enable OAuth Settings)\" page with Callback URL https://app-cloud.loyjoy.com/auth/oauth2/salesforce_service_cloud/callback and an \"Available OAuth Scopes\" picker listing \"Access Analytics REST API Charts Geodata resources (eclair_api)\", \"Access Einstein GPT services (einstein_gpt_api)\", \"Access Lightning applications (lightning)\" etc., with \"Selected OAuth Scopes\" on the right."
+   }
+  ],
+  "nh": 0,
+  "hits": [],
+  "len": 4523
+ },
+ {
+  "p": "/bpmn/subprocesses/scanner/",
+  "n_img": 2,
+  "unmatched": [
+   "w8XF0mLXJMr6AAAAABJRU5ErkJggg=="
+  ],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "scanner.png",
+    "w": 345,
+    "h": 207,
+    "class": "chat-ui",
+    "desc": "Chat bubble \"Just scan a code to get started\" above a Code input with scan icon and an OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1613
+ },
+ {
+  "p": "/bpmn/subprocesses/scanner/scanner/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1963
+ },
+ {
+  "p": "/bpmn/subprocesses/scondoo/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1381
+ },
+ {
+  "p": "/bpmn/subprocesses/search/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2,
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "Search1.gif",
+    "w": 706,
+    "h": 380,
+    "class": "config-panel",
+    "desc": "LoyJoy admin Knowledge page: tabs Knowledge/Messages/Settings, \"Smart Search ON\", \"GPT ON\", \"NLU OFF\", Catalogs \"Mein Katalog\" 0 articles, Sources URL + Add source/Upload file",
+    "ai": "YES: \"GPT ON\", \"Smart Search ON\", \"NLU OFF\", \"Knowledge\""
+   },
+   {
+    "n": "Search2.gif",
+    "w": 706,
+    "h": 380,
+    "class": "config-panel",
+    "desc": "Knowledge catalog article editor: Name \"LoyJoy Demo\", \"Article URL (Can be displayed as source by GPT)\", Link with an experience, German, Title, Article, Synonymns, List in search results Yes/No",
+    "ai": "YES: \"Article URL (Can be displayed as source by GPT)\""
+   },
+   {
+    "n": "Search_output.png",
+    "w": 596,
+    "h": 516,
+    "class": "chat-ui",
+    "desc": "In-chat Search widget: bubble \"Start your search now.\", \"Search\" field containing \"LoyJoy\", result \"LoyJoy Demo / Find more information\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [
+   {
+    "img": "Search1.gif",
+    "label": "YES: \"GPT ON\", \"Smart Search ON\", \"NLU OFF\", \"Knowledge\"",
+    "desc": "LoyJoy admin Knowledge page: tabs Knowledge/Messages/Settings, \"Smart Search ON\", \"GPT ON\", \"NLU OFF\", Catalogs \"Mein Katalog\" 0 articles, Sources URL + Add source/Upload file"
+   },
+   {
+    "img": "Search2.gif",
+    "label": "YES: \"Article URL (Can be displayed as source by GPT)\"",
+    "desc": "Knowledge catalog article editor: Name \"LoyJoy Demo\", \"Article URL (Can be displayed as source by GPT)\", Link with an experience, German, Title, Article, Synonymns, List in search results Yes/No"
+   }
+  ],
+  "nh": 6,
+  "hits": [
+   "BPMN ModulesSearch ModuleOn this pageSearch Module Introduction​ The Search module enables your customers to explore various agents by searching for specific keywords. This enhances the user agent by allowing them to find content and interactions that are most relevant to their interests. Typical Use Cases​ Person",
+   "d interactions that are most relevant to their interests. Typical Use Cases​ Personalized Interactions: Allow customers to choose agents based on topics that interest them, creating a more personalized and engaging interaction. Content Discovery: Help customers discover relevant content quickly and efficiently, improvi",
+   "ngaging interaction. Content Discovery: Help customers discover relevant content quickly and efficiently, improving their overall agent and satisfaction. How to Use the Module​ To make agents accessible through search, connect them to catalog articles in the knowledge section: Navigate to “Knowledge” > “Catalogs” > “Ad"
+  ],
+  "len": 1382
+ },
+ {
+  "p": "/bpmn/subprocesses/sftp/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "he password associated with the username for accessing the SFTP server. Send Variables: Decide whether to send variables from all agents or only the current one."
+  ],
+  "len": 1029
+ },
+ {
+  "p": "/bpmn/subprocesses/share_image/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "share_image_demo.png",
+    "w": 748,
+    "h": 1166,
+    "class": "chat-ui",
+    "desc": "Chat: \"Share the image with your friends\", photo of a church, \"Share image\" button, \"Download the image and then share it\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 365
+ },
+ {
+  "p": "/bpmn/subprocesses/share_link/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "share_link_demo.png",
+    "w": 748,
+    "h": 1174,
+    "class": "chat-ui",
+    "desc": "Chat: \"Recommend me to your friends\" with Facebook, Twitter, WhatsApp and e-mail share icons",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 5,
+  "hits": [
+   "PMN ModulesShare Link ModuleOn this pageShare Link Module Introduction​ The Share Link module enables your customers to share the agent on social media or via email with their friends. This feature helps increase engagement and reach by allowing users to easily promote your chat. The following buttons will appear: Shar",
+   "nd thus will only appear via the \"Share native\" button on smartphones. Typical Use Cases​ Promotion: Encourage users to share the agent with their social network, boosting visibility and engagement. Event Invitations: Share event-related agents to invite friends and family. For referral programs, please use the Loyalty",
+   "ge users to share the agent with their social network, boosting visibility and engagement. Event Invitations: Share event-related agents to invite friends and family. For referral programs, please use the Loyalty sharing module, which is specifically designed for that purpose. How to Use the Module​ URL​ Add the URL of"
+  ],
+  "len": 1615
+ },
+ {
+  "p": "/bpmn/subprocesses/sign_in/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 2,
+   "other": 1
+  },
+  "imgs": [
+   {
+    "n": "sign_in.png",
+    "w": 684,
+    "h": 962,
+    "class": "chat-ui",
+    "desc": "Chat sign-in form: \"Enter email\" field, then \"Confirm email address ... emailed you a new 6-digit code. Enter the code here.\" plus Code field",
+    "ai": "none"
+   },
+   {
+    "n": "sign_in_code_email.png",
+    "w": 774,
+    "h": 601,
+    "class": "other",
+    "desc": "E-mail client view of a message from noreply@loyjoymail.com: \"Welcome!\" and \"519451 is your code\"",
+    "ai": "none"
+   },
+   {
+    "n": "sign_in_terms.png",
+    "w": 346,
+    "h": 240,
+    "class": "chat-ui",
+    "desc": "Chat form: \"Enter email\" with Email address field, checkbox \"Do you accept the terms of participation?\", OK button",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 3511
+ },
+ {
+  "p": "/bpmn/subprocesses/signal/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "bpmn-canvas": 1,
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "signal_example.png",
+    "w": 244,
+    "h": 990,
+    "class": "bpmn-canvas",
+    "desc": "Vertical process chain of boxes with arrows: \"#1 Sign in\", \"#2 Newsletter opt-in\" (database icon), \"#3 Stop\", \"#4 Signal\", \"#5 Simple message\"",
+    "ai": "none"
+   },
+   {
+    "n": "signal_settings_example.png",
+    "w": 1126,
+    "h": 232,
+    "class": "config-panel",
+    "desc": "Signal settings panel: \"On which signal are you listening?\" with dropdown value \"newsletter_double_opt_in\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1677
+ },
+ {
+  "p": "/bpmn/subprocesses/sikom/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 6,
+  "hits": [
+   "BPMN ModulesSikom ModuleOn this pageSikom Module Introduction​ Integrate Sikom AgentOne into your process. Features​ Agent Availability Check: This module checks the availability of agents in Sikom via the Sikom /webcallback/Availability API. If an agent is available, the process variable sikom_agent_avail",
+   "ent Availability Check: This module checks the availability of agents in Sikom via the Sikom /webcallback/Availability API. If an agent is available, the process variable sikom_agent_available is set to true. Callback URL: Additionally an URL to the current conversation in the LoyJoy Live Chat is sent to the /webcallba",
+   "itionally an URL to the current conversation in the LoyJoy Live Chat is sent to the /webcallback/Callback Sikom API. This enables agents to enter the current conversation in LoyJoy Live Chat directly from Sikom. Requirements​ Webcallback URL and Service ID: You will need the Webcallback URL and the corresponding servic"
+  ],
+  "len": 1495
+ },
+ {
+  "p": "/bpmn/subprocesses/sms_opt_in/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1800
+ },
+ {
+  "p": "/bpmn/subprocesses/snapshot/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "le allows customers to take a picture using their device's camera or upload an image. This module also supports image recognition AI to identify the content of the picture, with hundreds of categories available (e.g., for receipt uploads). How to Use the Module​ Guiding the Customer​ Instructions: Tell your customer to"
+  ],
+  "len": 2625
+ },
+ {
+  "p": "/bpmn/subprocesses/stop/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   " Stop Module ends the chat flow directly. Make sure that there are no dead ends. Give the customer the opportunity to stay in the agent with a decision jump or say goodbye. Agents after the stop can be reached by means of jumps."
+  ],
+  "len": 292
+ },
+ {
+  "p": "/bpmn/subprocesses/tag_preference/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 386
+ },
+ {
+  "p": "/bpmn/subprocesses/tag/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 1
+  },
+  "imgs": [
+   {
+    "n": "Tag_example.gif",
+    "w": 710,
+    "h": 378,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy process editor: \"#1 Decision gateway\", two gateway diamonds, two \"Drop module\" boxes, labels \"Red\"/\"Blue\", \"#2 Product gallery\"; right panel \"Decision gateway\" with Question and Branch 1 / Branch 2",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 4,
+  "hits": [
+   " pageTag Module Introduction​ The Tag Module utilizes tags for diverse purposes, from customer segmentation to optimizing product recommendations. Typical Use Cases​ Customer Segmentation: Use tags like fashion for targeted marketing and personalized agents. Recommendations: Strategically place tags in branches to trac",
+   " product recommendations. Typical Use Cases​ Customer Segmentation: Use tags like fashion for targeted marketing and personalized agents. Recommendations: Strategically place tags in branches to track preferences for efficient product recommendations in combination with other modules such as product gallery or product ",
+   "rketing and personalized agents. Recommendations: Strategically place tags in branches to track preferences for efficient product recommendations in combination with other modules such as product gallery or product feed. How to Use the Module​ Adding Tags in Chatflow: Integrate the Tag Module after relevant branches. E"
+  ],
+  "len": 1110
+ },
+ {
+  "p": "/bpmn/subprocesses/talkevent/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 3,
+  "hits": [
+   "BPMN ModulesTalkevent ModuleOn this pageTalkevent Module Introduction​ Integrate Talkevent into your process. Features​ Agent Availability Check: This module checks the availability of agents in Talkevent via the Talkevent /availability API. If an agent is available, the process variable talkevent_agent_avail",
+   "​ Agent Availability Check: This module checks the availability of agents in Talkevent via the Talkevent /availability API. If an agent is available, the process variable talkevent_agent_available is set to true. Requirements​ Talkevent URL: You will need the Talkevent URL, which must be provided directly by Talkevent.",
+   "cation with Talkevent for access. How to Use the Module​ Configure the Talkevent URL: Enter the URL provided by Talkevent. Verify Agent Availability: The module will automatically check if an agent is available and set the talkevent_agent_available variable accordingly. Process-Specific Variables​ This module generates"
+  ],
+  "len": 1036
+ },
+ {
+  "p": "/bpmn/subprocesses/terms/",
+  "n_img": 2,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1,
+   "config-panel": 1
+  },
+  "imgs": [
+   {
+    "n": "terms_of_praticipation_demo.png",
+    "w": 740,
+    "h": 1214,
+    "class": "chat-ui",
+    "desc": "Chat: \"Do you accept the terms of participation?\", answer \"No\", \"Are you sure? You have to accept the terms to continue.\", YES / NO buttons",
+    "ai": "none"
+   },
+   {
+    "n": "terms_of_praticipation_example.png",
+    "w": 736,
+    "h": 1214,
+    "class": "config-panel",
+    "desc": "Chat privacy bubble (\"...please accept our privacy policy\" YES/NO) above the \"Terms of participation\" settings panel with text and \"Link to your terms\" URL field",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "ers for their agreement to specific terms. You can design a chat flow around this agreement to ensure compliance and enhance user agent. Typical Use Cases​ Use this module to require customers to agree to terms for participation in raffles, promotions, or other activities. For scenarios like newsletter sign-ups or remi"
+  ],
+  "len": 1377
+ },
+ {
+  "p": "/bpmn/subprocesses/variable_delete/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 295
+ },
+ {
+  "p": "/bpmn/subprocesses/variable/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "Module Introduction​ Set one or multiple variables in the process. Typical Use Cases​ Variables are useful to design personalized agents. A good addition for application forms or invoices would be the PDF module, which allows you to create individual PDF files using the previously saved variables. How to Use the Module"
+  ],
+  "len": 1646
+ },
+ {
+  "p": "/bpmn/subprocesses/video/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "video_gallery_demo.png",
+    "w": 746,
+    "h": 524,
+    "class": "chat-ui",
+    "desc": "Chat: \"Have a look at our video!\" with a video player card showing the LoyJoy logo and pagination dots",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "o format. How to Use the Module​ Upload video​ Upload the videos you want to show your customers. Ensure the file size and format recommendations are followed for the best performance. Preview image​ Add an image that will be shown as a preview (1200x630 px) before the video starts. This image acts as a thumbnail and c",
+   "mple of a WebVTT text: WEBVTT100:00:00.500 --> 00:00:02.000This is the first caption text200:00:02.500 --> 00:00:04.300Enjoy this agent For more information on creating WebVTT files, check out the WebVTT specification. Display and Navigation​ Play Video: The video will start playing with a click on it. Video Slider: Us"
+  ],
+  "len": 1723
+ },
+ {
+  "p": "/bpmn/subprocesses/web_component/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "web_component1.png",
+    "w": 1170,
+    "h": 802,
+    "class": "config-panel",
+    "desc": "Web component settings: \"HTML tag of Web component\" = image-upload, \"Wait at Web component\" Yes/No, \"Add parameter\" guid Key/Value abc1234",
+    "ai": "none"
+   },
+   {
+    "n": "web_component2.png",
+    "w": 1102,
+    "h": 168,
+    "class": "config-panel",
+    "desc": "Single toggle \"Wait at Web component\" set to Yes",
+    "ai": "none"
+   },
+   {
+    "n": "web_component3.png",
+    "w": 1058,
+    "h": 400,
+    "class": "table-or-code",
+    "desc": "Code listing: \"Web components can write process variables via JavaScript: this.dispatchEvent(new CustomEvent('variables', ...)\" and created variable somekey_8c2ce606_d02e_497f_941f_70fc54fb398d",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 3245
+ },
+ {
+  "p": "/bpmn/subprocesses/web_push_opt_in/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   "ad, only Chrome, Edge and Firefox support Web push subscriptions. Chrome sets push notifications to off by default on desktop. We recommend to use Google Chrome on desktop (not on mobile) for repeated testing. Service Worker File: The hosting website must provide the file service-worker.js from tab Publish at the webpa"
+  ],
+  "len": 1924
+ },
+ {
+  "p": "/bpmn/subprocesses/web_service/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "s: { \"process_definition_id\": ..., \"process_instance_id\": ..., \"params\": { \"referrer\": \"http://example.org/referring_page\", \"user-agent\": \"Mozilla/1.0N (Windows)\", ... }, \"variables\": { \"email\": \"john.smith@example.org\", \"firstname\": \"John\", \"gender\": \"male\", \"lastname\": \"Smith\", \"nps_score\": \"10\", ... }} The params an",
+   "ms primarily are generated by the webbrowser. The variables are primarily generated by the process modules you have put into your agent (process-independent variables, process-specific variables). HTTP response that your REST API can return optionally​ The WebService REST API endpoint has to respond after a few seconds"
+  ],
+  "len": 2106
+ },
+ {
+  "p": "/bpmn/subprocesses/web_service/azure_function_and_blob_storage/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1704
+ },
+ {
+  "p": "/bpmn/subprocesses/web_service/google_cloud_function_and_storage/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1098
+ },
+ {
+  "p": "/bpmn/subprocesses/web_service/server/",
+  "n_img": 3,
+  "unmatched": [],
+  "classes": {
+   "config-panel": 2,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "allow_unauthenticated.png",
+    "w": 1151,
+    "h": 954,
+    "class": "config-panel",
+    "desc": "Google Cloud Function Trigger config: Trigger type HTTP, URL, Authentication \"Allow unauthenticated invocations\", SAVE / CANCEL",
+    "ai": "none"
+   },
+   {
+    "n": "entry_point.png",
+    "w": 1806,
+    "h": 574,
+    "class": "table-or-code",
+    "desc": "Google Cloud Functions inline editor: Runtime Node.js 16, Source code Inline Editor, index.js / package.json, JS listing with functions.http('exampleFunction', ...)",
+    "ai": "none"
+   },
+   {
+    "n": "web_service.png",
+    "w": 1488,
+    "h": 772,
+    "class": "config-panel",
+    "desc": "\"Connect external Web service\": URL of Web service (cloudfunctions.net/exampleFunction) and \"HTTP authorization header\" containing a Bearer token",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 7,
+  "hits": [
+   "oduleOn this pageServer for Web Service Module Use serverless functions such as a Google Cloud Function to process data from your agent and feed the results back into it. Why should I use a Google Cloud Function?​ A Google Cloud Function provides a safe execution environment to run arbitrary code. It also gives you acc",
+   " module config // req.body.variables - variables of the process instance / customer // req.body.process_definition_id - ID of the agent / BPMN process the request comes from // req.body.process_instance_id const vars = req && req.body ? req.body.variables : null; if (!vars || !vars.length || !vars.width) { res.sendStat",
+   "'area': area } } }; res.setHeader('Content-type', 'application/json'); res.send(response); } }}); The example code checks for the agent variables length and width and multiplies their values. It returns the result as the variable area to be used in the further execution of the agent. You also have to put this code into"
+  ],
+  "len": 4673
+ },
+ {
+  "p": "/bpmn/subprocesses/welcome/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "chat-ui": 1
+  },
+  "imgs": [
+   {
+    "n": "welcoming_demo.png",
+    "w": 756,
+    "h": 1174,
+    "class": "chat-ui",
+    "desc": "Chat window with a single bubble \"Enjoy this awesome chat\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 2,
+  "hits": [
+   "n choose to greet new or returning customers differently. Typical Use Cases​ This module can be seen as the starting point of any agent. Greet your customers the way you like before moving on to the more specific part of your agent. How to Use the Module​ New customers​ Add a message that will be sent when the customer",
+   "seen as the starting point of any agent. Greet your customers the way you like before moving on to the more specific part of your agent. How to Use the Module​ New customers​ Add a message that will be sent when the customer is not signed in. Returning customers without name​ Add a message that will be sent when the cu"
+  ],
+  "len": 1620
+ },
+ {
+  "p": "/bpmn/subprocesses/win/",
+  "n_img": 1,
+  "unmatched": [],
+  "classes": {
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "instant_drawing_data.png",
+    "w": 2546,
+    "h": 980,
+    "class": "table-or-code",
+    "desc": "LoyJoy Data > Giveaways > Manage instant wins table: columns Email, Firstname, Lastname, Street, House number, Zipcode, Locality, Country, Phone, Created at; CSV export",
+    "ai": "YES: \"Knowledge\" (left nav item)"
+   }
+  ],
+  "ai": [
+   {
+    "img": "instant_drawing_data.png",
+    "label": "YES: \"Knowledge\" (left nav item)",
+    "desc": "LoyJoy Data > Giveaways > Manage instant wins table: columns Email, Firstname, Lastname, Street, House number, Zipcode, Locality, Country, Phone, Created at; CSV export"
+   }
+  ],
+  "nh": 2,
+  "hits": [
+   "” module beforehand. Animation: You can add an animation that plays when the customer wins or is drawn as a winner, enhancing the agent with a fun visual. Probability Example​ The module allows the setting of probabilities. With a probability of 0.1%, the expected value for 1,000 participants would be 1 winner. For lar",
+   " probability of 0.1%, the expected value for 1,000 participants would be 1 winner. For larger campaigns or valuable prizes, it is recommended to keep the probabilities below 0.1% to ensure a fair and controlled prize distribution. You can set the win rate between 0% and 100%, but using smaller values such as 0.001% pro"
+  ],
+  "len": 2920
+ },
+ {
+  "p": "/bpmn/subprocesses/workato/",
+  "n_img": 7,
+  "unmatched": [],
+  "classes": {
+   "editor-canvas+panel": 5,
+   "other": 1,
+   "table-or-code": 1
+  },
+  "imgs": [
+   {
+    "n": "process_module.png",
+    "w": 1754,
+    "h": 1242,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy canvas \"#1 Welcoming\" -> \"#2 Email\" -> \"#3 Workato\" -> \"#4 Goodbye\"; right panel \"Workato / Trigger a recipe in Workato\", Add mapping email",
+    "ai": "none"
+   },
+   {
+    "n": "create_recipe.png",
+    "w": 2658,
+    "h": 1316,
+    "class": "other",
+    "desc": "Workato project page: \"Create\" dropdown (Recipe, Connection, Folder) and empty-state \"Organize assets in folders\" with Create folder button",
+    "ai": "none"
+   },
+   {
+    "n": "api_token.png",
+    "w": 2548,
+    "h": 1030,
+    "class": "table-or-code",
+    "desc": "LoyJoy tenant settings, API tab: \"Access token\" text and \"Add API bearer token\" button",
+    "ai": "YES: \"Knowledge\" (left nav item)"
+   },
+   {
+    "n": "recipe_trigger.png",
+    "w": 2302,
+    "h": 1108,
+    "class": "editor-canvas+panel",
+    "desc": "Workato recipe with TRIGGER \"1 Workato Process Module in LoyJoy Real-time\"; right panel \"Connect to LoyJoy\" with Connection name and Api key fields, Connect button",
+    "ai": "none"
+   },
+   {
+    "n": "select_module.png",
+    "w": 2280,
+    "h": 926,
+    "class": "editor-canvas+panel",
+    "desc": "Workato recipe trigger step plus Setup panel: \"Module *\" dropdown with value \"My Awesome Experience > #3 Workato\"",
+    "ai": "none"
+   },
+   {
+    "n": "log.png",
+    "w": 2278,
+    "h": 1644,
+    "class": "editor-canvas+panel",
+    "desc": "Workato recipe canvas: TRIGGER \"1 Workato Process Module in LoyJoy Real-time\" then \"2 Log message to Job report\"; Setup panel with Recipe data, Properties, datapill \"Email\"",
+    "ai": "none"
+   },
+   {
+    "n": "test.png",
+    "w": 3662,
+    "h": 1924,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy editor with module palette (Decision gateway, Gateway, Loop, End, Wait, Timer start, ... Question) and canvas \"#1 Welcoming\" plus chat preview; right: Workato Jobs list \"LoyJoy: workato process module: Email=test@loyjoy.com\"",
+    "ai": "none"
+   }
+  ],
+  "ai": [
+   {
+    "img": "api_token.png",
+    "label": "YES: \"Knowledge\" (left nav item)",
+    "desc": "LoyJoy tenant settings, API tab: \"Access token\" text and \"Add API bearer token\" button"
+   }
+  ],
+  "nh": 3,
+  "hits": [
+   "ta to Workato and Workato will send the data to the other system. How to Use the Module​ Step 1: Add Workato Process Module to an Agent​ To use the Workato process module you need to add it to an Agent. You can add the process module to the Agent by dragging it from the palette onto the canvas. Open the process module ",
+   "ocess Module to an Agent​ To use the Workato process module you need to add it to an Agent. You can add the process module to the Agent by dragging it from the palette onto the canvas. Open the process module and add one or more mappings. Each mapping describes that a variable or expression result should be sent to a v",
+   "e and exit your recipe in the upper right corner. To test your recipe click on Start recipe on the following screen and test your Agent in the LoyJoy Cloud. If your job does not appear in the list refresh the Workato page."
+  ],
+  "len": 2649
+ },
+ {
+  "p": "/bpmn/subprocesses/yotpo/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 0,
+  "hits": [],
+  "len": 1173
+ },
+ {
+  "p": "/bpmn/subprocesses/zapier/",
+  "n_img": 11,
+  "unmatched": [
+   "api_token.png"
+  ],
+  "classes": {
+   "editor-canvas+panel": 2,
+   "other": 2,
+   "config-panel": 6
+  },
+  "imgs": [
+   {
+    "n": "process_module.png",
+    "w": 1766,
+    "h": 1620,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy canvas \"#1 Welcoming\" -> \"#2 Email\" -> \"#3 Zapier\" -> \"#4 Goodbye\"; panel \"connected with one Zap\", mappings email (Var) and processId (Fun), \"Source expression in LoyJoy\"",
+    "ai": "none"
+   },
+   {
+    "n": "create_zap_button.png",
+    "w": 1338,
+    "h": 666,
+    "class": "other",
+    "desc": "Zapier home: \"+ Create Zap\" button and sidebar Dashboard / Zaps / Transfers with \"Search Zaps and folders\" and Private folders",
+    "ai": "none"
+   },
+   {
+    "n": "trigger_select_loyjoy.png",
+    "w": 1812,
+    "h": 620,
+    "class": "config-panel",
+    "desc": "Zapier app picker: search field \"LoyJoy\", result \"LoyJoy (1.0.0) By Invite\"; side panel \"Built-in tools\" with Tables Beta",
+    "ai": "none"
+   },
+   {
+    "n": "trigger_select_event.png",
+    "w": 1814,
+    "h": 1192,
+    "class": "config-panel",
+    "desc": "Zapier trigger setup: \"App & event\" with LoyJoy (1.0.0), Event \"Zapier Process Module\" and hint \"Triggers when a Zapier Process Module is visited in LoyJoy.\"",
+    "ai": "none"
+   },
+   {
+    "n": "trigger_sign_in.png",
+    "w": 1804,
+    "h": 976,
+    "class": "config-panel",
+    "desc": "Zapier Account step: \"Connect LoyJoy (1.0.0)\" with Sign in button, greyed \"Add account to continue\"",
+    "ai": "none"
+   },
+   {
+    "n": "app_sign_in.png",
+    "w": 976,
+    "h": 552,
+    "class": "config-panel",
+    "desc": "\"Allow Zapier to access your LoyJoy (1.0.0) Account?\" with required API-Bearer-Token field, \"Yes, Continue to LoyJoy (1.0.0)\" and Cancel",
+    "ai": "none"
+   },
+   {
+    "n": "trigger_select_process_module.png",
+    "w": 1820,
+    "h": 1384,
+    "class": "config-panel",
+    "desc": "Zapier \"Process Module\" dropdown overlay: tabs Process Module / Custom, Search field, option \"Zapier > Zapier Process Module 8dfbc0f4-41ae-4c27-970b-cdf0b6e3c460\"",
+    "ai": "none"
+   },
+   {
+    "n": "trigger_test.png",
+    "w": 1806,
+    "h": 1198,
+    "class": "config-panel",
+    "desc": "Zapier Test step: \"We found records in your LoyJoy (1.0.0) account...\" with record \"Mapping A\" showing processId and email",
+    "ai": "none"
+   },
+   {
+    "n": "action.png",
+    "w": 1808,
+    "h": 728,
+    "class": "other",
+    "desc": "Zapier Zap editor step layout: white \"Trigger 1. Zapier Process Module in LoyJoy (1.0.0)\" card over dark \"2. Action\" block, below \"Search...\" and \"Built-in tools\"",
+    "ai": "none"
+   },
+   {
+    "n": "debug.png",
+    "w": 2092,
+    "h": 1214,
+    "class": "editor-canvas+panel",
+    "desc": "LoyJoy canvas \"#1 Welcoming\" -> \"#2 Email\" -> \"#3 Zapier\" -> \"#4 Goodbye\"; right panel \"Zapier / Trigger a Zap in Zapier\", \"not connected with any Zap\", mappings email and processId",
+    "ai": "none"
+   }
+  ],
+  "ai": [],
+  "nh": 3,
+  "hits": [
+   " data to Zapier and Zapier will send the data to the other system. How to Use the Module​ Step 1: Add Zapier Process Module to an Agent​ To use the Zapier process module you need to add it to an agent. You can add the process module to the agent by dragging it from the palette onto the canvas. Open the process module a",
+   "rocess Module to an Agent​ To use the Zapier process module you need to add it to an agent. You can add the process module to the agent by dragging it from the palette onto the canvas. Open the process module and add one or more mappings. Each mapping describes that a variable or expression result should be sent to a v",
+   "ck on \"Continue\" to continue. Finalize the configuration of the Zap in Zapier. Step 4: Test the Zap in LoyJoy​ In LoyJoy open the Agent and test the chat. The Zap will be triggered when the process module is visited in the chat. You can check the Zap history in Zapier to see if the Zap was triggered and if data was ret"
+  ],
+  "len": 3894
+ },
+ {
+  "p": "/bpmn/subprocesses/zoho/",
+  "n_img": 0,
+  "unmatched": [],
+  "classes": {},
+  "imgs": [],
+  "ai": [],
+  "nh": 1,
+  "hits": [
+   " subscribes the customer's email address to the configured mailing list. How to Use the Module​ You simply add the module to your agent flow and the configure the following parameters: Client ID & Client Secret: Create these by creating a new self client in Zoho API Console. API & Token URL: These are the URLs to retri"
+  ],
+  "len": 1126
+ }
+]

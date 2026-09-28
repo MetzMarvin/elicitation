@@ -1,0 +1,818 @@
+{
+ "aletyx": {
+  "population": 497,
+  "rows": 497,
+  "verdicts": {
+   "EXCLUDE": 494,
+   "INCLUDE": 1,
+   "UNCERTAIN": 2
+  },
+  "codes": {
+   "E0-no-artefact": 416,
+   "E3-duplicate": 5,
+   "E1-not-bpmn": 50,
+   "E2-no-ai-element": 23
+  },
+  "modes": {
+   "script": 455,
+   "agent-text": 42
+  },
+  "judgement_exclusions": 39,
+  "records": 3,
+  "rulings": 2,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "image": 474,
+   "contact-sheet": 81,
+   "model-xml": 42,
+   "other": 137,
+   "page": 374,
+   "script": 13,
+   "record": 3
+  },
+  "bytes": 555894605
+ },
+ "atamya": {
+  "population": 496,
+  "rows": 496,
+  "verdicts": {
+   "EXCLUDE": 484,
+   "UNCERTAIN": 3,
+   "INCLUDE": 9
+  },
+  "codes": {
+   "E0-no-artefact": 464,
+   "E3-duplicate": 4,
+   "E1-not-bpmn": 14,
+   "E2-no-ai-element": 2
+  },
+  "modes": {
+   "script": 468,
+   "agent-text": 28
+  },
+  "judgement_exclusions": 16,
+  "records": 12,
+  "rulings": 3,
+  "visual_checks": 1,
+  "vp_entries": 0,
+  "disk": {
+   "other": 12,
+   "record": 12,
+   "image": 21
+  },
+  "bytes": 3656124
+ },
+ "bizagi": {
+  "population": 2225,
+  "rows": 2225,
+  "verdicts": {
+   "EXCLUDE": 2212,
+   "UNCERTAIN": 7,
+   "INCLUDE": 2,
+   "BLOCKED": 4
+  },
+  "codes": {
+   "E2-no-ai-element": 273,
+   "E0-no-artefact": 1868,
+   "E1-not-bpmn": 66,
+   "E3-duplicate": 5
+  },
+  "modes": {
+   "script": 1937,
+   "agent-text": 64,
+   "agent-visual-sheet": 220,
+   "blocked": 4
+  },
+  "judgement_exclusions": 55,
+  "records": 9,
+  "rulings": 7,
+  "visual_checks": 2,
+  "vp_entries": 0,
+  "disk": {
+   "record": 9,
+   "image": 13,
+   "other": 9
+  },
+  "bytes": 1620672
+ },
+ "bonitasoft": {
+  "population": 936,
+  "rows": 936,
+  "verdicts": {
+   "EXCLUDE": 920,
+   "UNCERTAIN": 14,
+   "INCLUDE": 2
+  },
+  "codes": {
+   "E1-not-bpmn": 40,
+   "E0-no-artefact": 778,
+   "E2-no-ai-element": 96,
+   "E3-duplicate": 6
+  },
+  "modes": {
+   "agent-visual-native": 222,
+   "script": 701,
+   "agent-visual-sheet": 11,
+   "agent-text": 2
+  },
+  "judgement_exclusions": 87,
+  "records": 16,
+  "rulings": 14,
+  "visual_checks": 1,
+  "vp_entries": 0,
+  "disk": {
+   "other": 2,
+   "record": 16,
+   "image": 16
+  },
+  "bytes": 3139549
+ },
+ "camunda-docs-blog": {
+  "population": 1439,
+  "rows": 1439,
+  "verdicts": {
+   "EXCLUDE": 1371,
+   "INCLUDE": 56,
+   "UNCERTAIN": 8,
+   "BLOCKED": 4
+  },
+  "codes": {
+   "E0-no-artefact": 956,
+   "E2-no-ai-element": 279,
+   "E1-not-bpmn": 136
+  },
+  "modes": {
+   "agent-visual-sheet": 981,
+   "script": 344,
+   "agent-visual-native": 110,
+   "blocked": 4
+  },
+  "judgement_exclusions": 152,
+  "records": 64,
+  "rulings": 8,
+  "visual_checks": 8,
+  "vp_entries": 110,
+  "disk": {
+   "model-xml": 19,
+   "other": 142,
+   "page": 1596,
+   "image": 1564,
+   "contact-sheet": 10,
+   "script": 7,
+   "record": 64
+  },
+  "bytes": 512160010
+ },
+ "camunda-marketplace": {
+  "population": 255,
+  "rows": 255,
+  "verdicts": {
+   "EXCLUDE": 180,
+   "UNCERTAIN": 23,
+   "INCLUDE": 52
+  },
+  "codes": {
+   "E1-not-bpmn": 10,
+   "E0-no-artefact": 9,
+   "E2-no-ai-element": 159,
+   "E3-duplicate": 2
+  },
+  "modes": {
+   "agent-visual-native": 240,
+   "agent-text": 7,
+   "script": 8
+  },
+  "judgement_exclusions": 17,
+  "records": 75,
+  "rulings": 24,
+  "visual_checks": 12,
+  "vp_entries": 0,
+  "disk": {
+   "other": 1054,
+   "script": 25,
+   "page": 6,
+   "image": 1066,
+   "contact-sheet": 1,
+   "model-xml": 76,
+   "record": 75
+  },
+  "bytes": 123766448
+ },
+ "cib-seven": {
+  "population": 591,
+  "rows": 591,
+  "verdicts": {
+   "EXCLUDE": 582,
+   "UNCERTAIN": 3,
+   "INCLUDE": 6
+  },
+  "codes": {
+   "E0-no-artefact": 383,
+   "E1-not-bpmn": 104,
+   "E2-no-ai-element": 83,
+   "E3-duplicate": 12
+  },
+  "modes": {
+   "script": 560,
+   "agent-text": 31
+  },
+  "judgement_exclusions": 22,
+  "records": 9,
+  "rulings": 3,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "other": 26,
+   "model-xml": 7,
+   "image": 549,
+   "contact-sheet": 26,
+   "record": 9
+  },
+  "bytes": 122274835
+ },
+ "citeck-ecos": {
+  "population": 994,
+  "rows": 994,
+  "verdicts": {
+   "EXCLUDE": 987,
+   "UNCERTAIN": 6,
+   "INCLUDE": 1
+  },
+  "codes": {
+   "E0-no-artefact": 914,
+   "E2-no-ai-element": 64,
+   "E1-not-bpmn": 7,
+   "E3-duplicate": 2
+  },
+  "modes": {
+   "script": 973,
+   "agent-text": 16,
+   "agent-visual-native": 5
+  },
+  "judgement_exclusions": 14,
+  "records": 7,
+  "rulings": 3,
+  "visual_checks": 5,
+  "vp_entries": 0,
+  "disk": {
+   "other": 4,
+   "image": 783,
+   "model-xml": 2,
+   "record": 7
+  },
+  "bytes": 25717004
+ },
+ "creatio": {
+  "population": 2194,
+  "rows": 2194,
+  "verdicts": {
+   "EXCLUDE": 2188,
+   "INCLUDE": 2,
+   "UNCERTAIN": 4
+  },
+  "codes": {
+   "E0-no-artefact": 1272,
+   "E1-not-bpmn": 593,
+   "E2-no-ai-element": 323
+  },
+  "modes": {
+   "script": 1947,
+   "agent-visual-sheet": 64,
+   "agent-visual-native": 169,
+   "agent-text": 14
+  },
+  "judgement_exclusions": 153,
+  "records": 6,
+  "rulings": 4,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "record": 6,
+   "image": 11
+  },
+  "bytes": 460801
+ },
+ "firestart": {
+  "population": 494,
+  "rows": 494,
+  "verdicts": {
+   "EXCLUDE": 302,
+   "INCLUDE": 13,
+   "UNCERTAIN": 179
+  },
+  "codes": {
+   "E2-no-ai-element": 6,
+   "E0-no-artefact": 249,
+   "E1-not-bpmn": 6,
+   "E3-duplicate": 41
+  },
+  "modes": {
+   "agent-visual-native": 43,
+   "script": 277,
+   "agent-text": 174
+  },
+  "judgement_exclusions": 12,
+  "records": 192,
+  "rulings": 179,
+  "visual_checks": 6,
+  "vp_entries": 0,
+  "disk": {
+   "script": 20,
+   "contact-sheet": 3,
+   "other": 137,
+   "image": 604,
+   "model-xml": 1,
+   "page": 482,
+   "record": 192
+  },
+  "bytes": 63240171
+ },
+ "flowable": {
+  "population": 1361,
+  "rows": 1361,
+  "verdicts": {
+   "INCLUDE": 3,
+   "EXCLUDE": 1347,
+   "UNCERTAIN": 11
+  },
+  "codes": {
+   "E0-no-artefact": 1116,
+   "E1-not-bpmn": 175,
+   "E2-no-ai-element": 54,
+   "E3-duplicate": 2
+  },
+  "modes": {
+   "agent-visual-native": 252,
+   "script": 1095,
+   "agent-text": 14
+  },
+  "judgement_exclusions": 92,
+  "records": 14,
+  "rulings": 11,
+  "visual_checks": 1,
+  "vp_entries": 252,
+  "disk": {
+   "page": 267,
+   "other": 2679,
+   "contact-sheet": 195,
+   "image": 2845,
+   "script": 10,
+   "model-xml": 5,
+   "record": 14
+  },
+  "bytes": 853287333
+ },
+ "flows-for-apex": {
+  "population": 362,
+  "rows": 362,
+  "verdicts": {
+   "EXCLUDE": 350,
+   "UNCERTAIN": 8,
+   "INCLUDE": 4
+  },
+  "codes": {
+   "E2-no-ai-element": 246,
+   "E0-no-artefact": 91,
+   "E1-not-bpmn": 3,
+   "E3-duplicate": 10
+  },
+  "modes": {
+   "script": 334,
+   "agent-text": 25,
+   "agent-visual-native": 3
+  },
+  "judgement_exclusions": 13,
+  "records": 12,
+  "rulings": 8,
+  "visual_checks": 1,
+  "vp_entries": 0,
+  "disk": {
+   "image": 9,
+   "record": 12,
+   "other": 3,
+   "model-xml": 6
+  },
+  "bytes": 2052487
+ },
+ "flowx-ai": {
+  "population": 945,
+  "rows": 945,
+  "verdicts": {
+   "EXCLUDE": 935,
+   "UNCERTAIN": 10
+  },
+  "codes": {
+   "E0-no-artefact": 372,
+   "E2-no-ai-element": 397,
+   "E1-not-bpmn": 165,
+   "E3-duplicate": 1
+  },
+  "modes": {
+   "script": 720,
+   "agent-visual-sheet": 177,
+   "agent-visual-native": 27,
+   "agent-text": 21
+  },
+  "judgement_exclusions": 85,
+  "records": 10,
+  "rulings": 10,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "other": 14,
+   "page": 1450,
+   "contact-sheet": 138,
+   "image": 1404,
+   "model-xml": 1,
+   "record": 10
+  },
+  "bytes": 627932878
+ },
+ "frends-docs": {
+  "population": 942,
+  "rows": 942,
+  "verdicts": {
+   "EXCLUDE": 929,
+   "INCLUDE": 13
+  },
+  "codes": {
+   "E0-no-artefact": 539,
+   "E1-not-bpmn": 7,
+   "E2-no-ai-element": 141,
+   "E3-duplicate": 242
+  },
+  "modes": {
+   "script": 903,
+   "agent-visual-native": 19,
+   "agent-visual-sheet": 11,
+   "agent-text": 9
+  },
+  "judgement_exclusions": 17,
+  "records": 13,
+  "rulings": 1,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "script": 17,
+   "other": 53,
+   "contact-sheet": 7,
+   "image": 1031,
+   "page": 938,
+   "model-xml": 12,
+   "record": 13
+  },
+  "bytes": 330514205
+ },
+ "ibm-bamoe": {
+  "population": 137,
+  "rows": 137,
+  "verdicts": {
+   "EXCLUDE": 128,
+   "UNCERTAIN": 2,
+   "INCLUDE": 7
+  },
+  "codes": {
+   "E0-no-artefact": 104,
+   "E1-not-bpmn": 15,
+   "E2-no-ai-element": 9
+  },
+  "modes": {
+   "script": 81,
+   "agent-visual-sheet": 39,
+   "agent-visual-native": 17
+  },
+  "judgement_exclusions": 9,
+  "records": 9,
+  "rulings": 3,
+  "visual_checks": 1,
+  "vp_entries": 0,
+  "disk": {
+   "record": 9,
+   "image": 11
+  },
+  "bytes": 2439197
+ },
+ "ibm-developer-watsonx": {
+  "population": 1983,
+  "rows": 1983,
+  "verdicts": {
+   "EXCLUDE": 1936,
+   "UNCERTAIN": 46,
+   "INCLUDE": 1
+  },
+  "codes": {
+   "E0-no-artefact": 1668,
+   "E1-not-bpmn": 254,
+   "E3-duplicate": 14
+  },
+  "modes": {
+   "script": 1508,
+   "agent-visual-sheet": 230,
+   "agent-visual-native": 232,
+   "agent-text": 13
+  },
+  "judgement_exclusions": 256,
+  "records": 47,
+  "rulings": 47,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "script": 24,
+   "other": 670,
+   "contact-sheet": 105,
+   "image": 2424,
+   "model-xml": 4,
+   "page": 79,
+   "record": 47
+  },
+  "bytes": 688083788
+ },
+ "ifs-cloud-docs": {
+  "population": 49,
+  "rows": 49,
+  "verdicts": {
+   "EXCLUDE": 47,
+   "UNCERTAIN": 1,
+   "INCLUDE": 1
+  },
+  "codes": {
+   "E0-no-artefact": 15,
+   "E2-no-ai-element": 26,
+   "E1-not-bpmn": 6
+  },
+  "modes": {
+   "script": 42,
+   "agent-text": 3,
+   "agent-visual-native": 4
+  },
+  "judgement_exclusions": 2,
+  "records": 2,
+  "rulings": 1,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "page": 3,
+   "image": 8,
+   "model-xml": 7,
+   "record": 2,
+   "other": 1
+  },
+  "bytes": 2632861
+ },
+ "loyjoy": {
+  "population": 1114,
+  "rows": 1114,
+  "verdicts": {
+   "EXCLUDE": 1093,
+   "INCLUDE": 13,
+   "UNCERTAIN": 8
+  },
+  "codes": {
+   "E0-no-artefact": 843,
+   "E2-no-ai-element": 40,
+   "E1-not-bpmn": 195,
+   "E3-duplicate": 15
+  },
+  "modes": {
+   "script": 263,
+   "agent-text": 25,
+   "agent-visual-native": 175,
+   "agent-visual-sheet": 651
+  },
+  "judgement_exclusions": 46,
+  "records": 21,
+  "rulings": 7,
+  "visual_checks": 1,
+  "vp_entries": 0,
+  "disk": {
+   "image": 2127,
+   "other": 7,
+   "page": 272,
+   "contact-sheet": 21,
+   "record": 21
+  },
+  "bytes": 295405583
+ },
+ "newgen": {
+  "population": 800,
+  "rows": 800,
+  "verdicts": {
+   "EXCLUDE": 796,
+   "INCLUDE": 3,
+   "UNCERTAIN": 1
+  },
+  "codes": {
+   "E0-no-artefact": 786,
+   "E1-not-bpmn": 10
+  },
+  "modes": {
+   "script": 781,
+   "agent-text": 12,
+   "agent-visual-native": 7
+  },
+  "judgement_exclusions": 10,
+  "records": 4,
+  "rulings": 1,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "other": 7,
+   "image": 1215,
+   "contact-sheet": 2,
+   "page": 138,
+   "record": 4
+  },
+  "bytes": 205613737
+ },
+ "oracle-oic": {
+  "population": 823,
+  "rows": 823,
+  "verdicts": {
+   "EXCLUDE": 821,
+   "INCLUDE": 1,
+   "UNCERTAIN": 1
+  },
+  "codes": {
+   "E2-no-ai-element": 44,
+   "E0-no-artefact": 670,
+   "E1-not-bpmn": 107
+  },
+  "modes": {
+   "script": 785,
+   "agent-visual-native": 34,
+   "agent-text": 3,
+   "agent-visual-sheet": 1
+  },
+  "judgement_exclusions": 17,
+  "records": 2,
+  "rulings": 1,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "page": 31,
+   "image": 35,
+   "record": 2,
+   "other": 2
+  },
+  "bytes": 13609245
+ },
+ "processmaker": {
+  "population": 716,
+  "rows": 716,
+  "verdicts": {
+   "EXCLUDE": 710,
+   "UNCERTAIN": 6
+  },
+  "codes": {
+   "E0-no-artefact": 615,
+   "E2-no-ai-element": 73,
+   "E1-not-bpmn": 22
+  },
+  "modes": {
+   "agent-visual-native": 136,
+   "script": 580
+  },
+  "judgement_exclusions": 19,
+  "records": 6,
+  "rulings": 6,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "page": 752,
+   "other": 13,
+   "image": 1701,
+   "model-xml": 2,
+   "contact-sheet": 1,
+   "record": 6
+  },
+  "bytes": 122590365
+ },
+ "quantumbpm": {
+  "population": 100,
+  "rows": 100,
+  "verdicts": {
+   "EXCLUDE": 98,
+   "INCLUDE": 2
+  },
+  "codes": {
+   "E2-no-ai-element": 13,
+   "E0-no-artefact": 79,
+   "E1-not-bpmn": 6
+  },
+  "modes": {
+   "agent-text": 9,
+   "script": 91
+  },
+  "judgement_exclusions": 7,
+  "records": 2,
+  "rulings": 0,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "page": 2,
+   "image": 4,
+   "record": 2,
+   "other": 2,
+   "model-xml": 2
+  },
+  "bytes": 799915
+ },
+ "scheer-pas": {
+  "population": 1333,
+  "rows": 1333,
+  "verdicts": {
+   "EXCLUDE": 1328,
+   "INCLUDE": 1,
+   "UNCERTAIN": 4
+  },
+  "codes": {
+   "E1-not-bpmn": 103,
+   "E0-no-artefact": 1188,
+   "E2-no-ai-element": 37
+  },
+  "modes": {
+   "agent-visual-native": 25,
+   "script": 1268,
+   "agent-text": 32,
+   "agent-visual-sheet": 8
+  },
+  "judgement_exclusions": 60,
+  "records": 5,
+  "rulings": 4,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "record": 5,
+   "image": 8
+  },
+  "bytes": 985496
+ },
+ "trisotech": {
+  "population": 1622,
+  "rows": 1622,
+  "verdicts": {
+   "EXCLUDE": 1586,
+   "INCLUDE": 8,
+   "UNCERTAIN": 28
+  },
+  "codes": {
+   "E0-no-artefact": 937,
+   "E2-no-ai-element": 610,
+   "E1-not-bpmn": 38,
+   "E3-duplicate": 1
+  },
+  "modes": {
+   "agent-visual-native": 132,
+   "script": 1488,
+   "agent-text": 2
+  },
+  "judgement_exclusions": 53,
+  "records": 36,
+  "rulings": 5,
+  "visual_checks": 25,
+  "vp_entries": 0,
+  "disk": {
+   "other": 54,
+   "model-xml": 1,
+   "image": 7268,
+   "contact-sheet": 224,
+   "page": 902,
+   "record": 36
+  },
+  "bytes": 1088306569
+ },
+ "uipath-maestro-docs": {
+  "population": 323,
+  "rows": 323,
+  "verdicts": {
+   "EXCLUDE": 309,
+   "UNCERTAIN": 6,
+   "INCLUDE": 8
+  },
+  "codes": {
+   "E1-not-bpmn": 73,
+   "E0-no-artefact": 127,
+   "E2-no-ai-element": 24,
+   "E3-duplicate": 85
+  },
+  "modes": {
+   "script": 286,
+   "agent-text": 37
+  },
+  "judgement_exclusions": 23,
+  "records": 14,
+  "rulings": 6,
+  "visual_checks": 0,
+  "vp_entries": 0,
+  "disk": {
+   "page": 3,
+   "image": 270,
+   "other": 11,
+   "model-xml": 7,
+   "contact-sheet": 30,
+   "record": 14
+  },
+  "bytes": 56264742
+ }
+}

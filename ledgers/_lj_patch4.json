@@ -1,0 +1,18 @@
+{
+ "release_notes_15_08_2024": {"kind": "canvas-palette-ai", "ai": false, "ai_visible": true,
+  "ai_note": "module palette entry labelled \"GPT-Gateway\" (dimmed) beside the canvas",
+  "note": "editor screenshot read at native resolution: start circle -> \"#1 Einfache Nachricht\" -> \"#2 Fragebogen\" -> \"#3 E-Mail\" -> \"#4 API-Call\" -> \"#5 Semantische Suche (via Cloud)\" -> end, beside a questionnaire preview (\"Welche Rasse hat Ihr Hund?\"); no AI/GPT module is placed in the drawn process, while the editor's module palette beside it lists \"GPT-Gateway\"",
+  "confidence": "high"},
+ "security-and-compliance": {"kind": "arch", "ai": false, "ai_visible": true,
+  "ai_note": "badge labelled \"AI Act\" (the EU regulation's name)",
+  "note": "compliance illustration read at native resolution: badges \"BFSG\", \"AI Act\", \"GDPR\", \"DORA\" above a central shield with radial connections to icons (hosting, encryption, audit); a badge set, not a process model, and \"AI Act\" names a regulation rather than an AI element",
+  "confidence": "high"},
+ "mcp-tools-grid-de": {"kind": "art", "ai": false,
+  "ai_note": "",
+  "note": "an icon row read at native resolution: eight circular pictograms labelled Analytics, Prozesse, Wissen, CRM, Website, Suche, Dateien, Integrationen; no diagram and no AI label",
+  "confidence": "high"},
+ "loyjoy-september2025-release": {"kind": "canvas", "ai": true, "ai_visible": true,
+  "ai_note": "drawn step \"#3 GPT Prompt\"",
+  "note": "editor screenshot read at native resolution, agent title \"Mein Agent\": start circle -> \"#2 Questionnaire\" -> \"#3 GPT Prompt\" -> \"#4 Conversion\" -> \"#5 Simple message\" -> end circle, with a publishing dialog; the module palette beside it also lists \"GPT gateway\"",
+  "confidence": "high"}
+}

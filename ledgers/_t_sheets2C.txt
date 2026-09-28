@@ -1,0 +1,121 @@
+sheets: figs2_1022_1151.png, figs2_1152_1292.png, figs2_1301_1409.png
+cells: 116
+### figs2_1022_1151.png
+  1022.1  aiflag=0  alts=image1
+  1029.1  aiflag=0  alts=Getting Started with Camunda Platform 8’s GraphQL API
+  1030.1  aiflag=0  alts=user operations log
+  1033.1  aiflag=0  alts=Figure 1 - Sample decision table for Blitzen
+  1034.1  aiflag=0  alts=The Zeebe Story - Daniel Meyer
+  1038.1  aiflag=0  alts=External Tasks Log timestamps
+  1039.1  aiflag=0  alts=playground
+  1044.1  aiflag=0  alts=Group by Variable with Null Values
+  1046.1  aiflag=0  alts=Centralized Management Only
+  1051.1  aiflag=0  alts=CamundaCon 2019
+  1053.1  aiflag=0  alts=Camunda Automation Platform 7.18.0-alpha1 Released
+  1056.1  aiflag=0  alts=Deployment Tool
+  1058.1  aiflag=0  alts=CamundaCon 2019 Jakob Freund Business vs IT 1990s
+  1059.1  aiflag=0  alts=Job Executor Steps
+  1060.1  aiflag=0  alts=Customer Focused Innovation
+  1062.1  aiflag=0  alts=vicious cycle
+  1065.1  aiflag=0  alts=Camunda Modeler 3.5 Released
+  1067.1  aiflag=0  alts=Shows the report build inside the collection with the defined data source.
+  1068.1  aiflag=0  alts=Cawemo's new visual comparison features
+  1069.1  aiflag=0  alts=Mary Thengvall - Director of Developer Relations Camunda
+  1070.1  aiflag=0  alts=We help you to become a Digital Enterprise
+  1072.1  aiflag=0  alts=The filter is applied to the raw data table
+  1076.1  aiflag=0  alts=Camunda BPM 7.13.0-alpha1 Released
+  1079.1  aiflag=0  alts=Something Bold, Something New – introducing our freshly updated look!
+  1081.1  aiflag=0  alts=Supporting You Around the Globe
+  1082.1  aiflag=0  alts=Camunda BPM 7.13.0-alpha2 Released
+  1083.1  aiflag=0  alts=Camunda Modeler 3.7 Released
+  1087.1  aiflag=0  alts=CamundaConNYC
+  1091.1  aiflag=0  alts=CamundaCon Live – meet Cox Automotive
+  1092.1  aiflag=0  alts=Camundacon Berlin 2019
+  1095.1  aiflag=0  alts=XPDL-analog
+  1098.1  aiflag=0  alts=Camunda Optimize 3.9.0-alpha1 Released
+  1099.1  aiflag=0  alts=(none)
+  1104.1  aiflag=0  alts=Camunda Modeler 4.0.0-alpha.2 Released
+  1105.1  aiflag=0  alts=Date Variable Filter Applied
+  1107.1  aiflag=0  alts=CamundaCon Live – Meet Ontario Teachers’ Pension Plan
+  1109.1  aiflag=0  alts=CamundaCon Live – Tips and Tricks to Make Most of Your Experience
+  1110.1  aiflag=0  alts=Camunda’s COVID-19 Response: Helping tackle critical challenges in the pandemic
+  1113.1  aiflag=0  alts=Developer Relations at Camunda: Who, What, Where, Why, and How?
+  1116.1  aiflag=0  alts=Introducing the Camunda Cloud Early Access Program
+  1123.1  aiflag=0  alts=Camunda Best Practices: Monitoring & Orchestrating Your Microservices Landscape
+  1125.1  aiflag=0  alts=Enabling Error Reports
+  1132.1  aiflag=0  alts=CamundaCon Slack Channel
+  1139.1  aiflag=0  alts=Overhauled deployments UI
+  1140.1  aiflag=0  alts=Swager Editor
+  1142.1  aiflag=0  alts=Getting Involved in Community Events This Summer
+  1148.1  aiflag=0  alts=Q&A: The One Where a JSON Request is Sent While Calling an External REST
+  1151.1  aiflag=0  alts=Twitter feedback
+### figs2_1152_1292.png
+  1152.1  aiflag=0  alts=The Power of Partners: How Camunda’s Partners are Making an Impact
+  1154.1  aiflag=0  alts=How Open is Camunda Platform 8?
+  1158.1  aiflag=0  alts=Improved Support After Our Artifactory Migration
+  1159.1  aiflag=0  alts=Community Conversations: Jean Robert Alves, Agi
+  1165.1  aiflag=0  alts=(none)
+  1166.1  aiflag=0  alts=How to Achieve Geo-redundancy with Zeebe
+  1174.1  aiflag=0  alts=Camunda Automation Platform 7.18.0-alpha4 Released
+  1175.1  aiflag=0  alts=Camunda Optimize 3.9.0 alpha3 Released
+  1178.1  aiflag=0  alts=3 ways to involve your community to improve your programs
+  1181.1  aiflag=0  alts=The CAM project in JIRA is moving to GitHub
+  1186.1  aiflag=0  alts=Camunda BPM Release Cadence Update
+  1187.1  aiflag=0  alts=Are you the next Camunda Champion?
+  1188.1  aiflag=0  alts=Increase your resilience with new regions in Camunda Platform 8 SaaS
+  1190.1  aiflag=0  alts=(none)
+  1192.1  aiflag=0  alts=Zbchaos — A new fault injection tool for Zeebe
+  1193.1  aiflag=0  alts=Raw Prometheus metrics in a Spring Boot application
+  1196.1  aiflag=0  alts=Using FEEL with Camunda 8
+  1198.1  aiflag=0  alts=Feature image
+  1200.1  aiflag=0  alts=navigation of high batch operation volumes
+  1201.1  aiflag=0  alts=CamundaCon 2022: Q&A with Bernd and Daniel
+  1203.1  aiflag=0  alts=Camunda Wins Three PeerSpot 2022 Peer Awards
+  1205.1  aiflag=0  alts=(none)
+  1207.1  aiflag=0  alts=Join user experience research and share your feedback with us!
+  1215.1  aiflag=0  alts=Camunda Platform 8 Connectors - Amazon SNS
+  1216.1  aiflag=0  alts=(none)
+  1217.1  aiflag=0  alts=Camunda Modeler Enriched Validation
+  1220.1  aiflag=0  alts=How do you create and grow a Center of Excellence?
+  1221.1  aiflag=0  alts=Contributing to Camunda’s Connector ecosystem
+  1222.1  aiflag=0  alts=Bulletproofing Zeebe against concurrency bugs
+  1225.1  aiflag=0  alts=Dashboard focused navigation
+  1230.1  aiflag=0  alts=How Atlassian uses Camunda within their hyperautomation tech stack
+  1232.1  aiflag=0  alts=Top Advantages and Disadvantages of Microservices: Biggest Benefits of Microservices and K
+  1234.1  aiflag=0  alts=Optimize text reports-1
+  1241.1  aiflag=0  alts=The instant preview template of Camunda Optimize
+  1242.1  aiflag=0  alts=A prompt in Camunda Cockpit giving you the option to keep or set a job due date.
+  1246.1  aiflag=0  alts=(none)
+  1247.1  aiflag=0  alts=Camunda’s Vision for Low-Code
+  1251.1  aiflag=0  alts=Arranging components in Forms into multiple columns.
+  1255.1  aiflag=0  alts=From Project to Program: Scaling Camunda Adoption in Your Company
+  1259.1  aiflag=0  alts=Webhookgen
+  1262.1  aiflag=0  alts=Adding a "finance team" checkbox option to an approval form, viewed in a side-by-side prev
+  1264.1  aiflag=0  alts=A certification badge from AICPA for SOC compliance.
+  1267.1  aiflag=0  alts=Configuring Secret in GitHub repo
+  1269.1  aiflag=0  alts=REST vs GraphQL vs gRPC: Which API is Right for Your Project?
+  1270.1  aiflag=0  alts=Scaling Camunda Adoption in Your Company – Phases of Adoption
+  1277.1  aiflag=0  alts=Descriptions-reports-dashboards-camunda-optimize-edit
+  1286.1  aiflag=0  alts=How we automatically keep our Documentation Screenshots up to date
+  1292.1  aiflag=0  alts=A screenshot of a computerDescription automatically generated with medium confidence
+### figs2_1301_1409.png
+  1301.1  aiflag=0  alts=(none)
+  1303.1  aiflag=0  alts=Microservices-based-platform-plus-api
+  1304.1  aiflag=0  alts=Cockpit Dashboard
+  1305.1  aiflag=0  alts=Enable Usage Statistics option in Privacy Preferences
+  1306.1  aiflag=0  alts=Using-connector-template-camunda
+  1316.1  aiflag=0  alts=Camunda Community Podcast Recap: Inbound and Outbound Connectors: “Woah, it’s so easy!”
+  1331.1  aiflag=0  alts=(none)
+  1332.1  aiflag=0  alts=Zeebe-partitions-3
+  1334.1  aiflag=0  alts=From Project to Program: Establishing a Center of Excellence
+  1336.1  aiflag=0  alts=Camunda-salesforce-connector
+  1341.1  aiflag=0  alts=Modeler-feedback-form
+  1343.1  aiflag=0  alts=Image8
+  1345.1  aiflag=0  alts=Camunda-homepage-2020
+  1353.1  aiflag=0  alts=Camunda Hacktoberfest swag
+  1355.1  aiflag=0  alts=Software Engineering
+  1357.1  aiflag=0  alts=From Project to Program: Building your Rockstar project team.
+  1363.1  aiflag=0  alts=A comparison of ISO 20022 and MT formats, showing the benefits of ISO 20022 including grea
+  1371.1  aiflag=0  alts=Short-term Gain, Long-term Pain: RPA’s Rising Popularity
+  1388.1  aiflag=0  alts=Camundacon-2023-networking
+  1409.1  aiflag=0  alts=Camunda version to Helm chart version mapping table

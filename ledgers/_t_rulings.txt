@@ -1,0 +1,241 @@
+=== POST 9   RECORD 003_how-artificial-intelligence-can-enhance-business-process.md
+url: https://camunda.com/blog/2024/02/how-artificial-intelligence-can-enhance-business-process/
+title: How Artificial Intelligence can Enhance Your Business Process | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  In the simple BPMN example below, you can see a service task that accesses an AI engine to read a customer request
+needs_visual_check: True
+question: null
+note for the ledger: the page names a service task that accesses an AI engine and shows the BPMN model it refers to; the OpenAI Connector is also named in the same section
+capture: figure 2 (bpmn cell, alt 'Connectors-ai')
+
+=== POST 18   RECORD 004_insights-to-action-camunda-optimize-effective-development.md
+url: https://camunda.com/blog/2024/02/insights-to-action-camunda-optimize-effective-development/
+title: From Insights to Action: Harnessing Camunda Optimize for Effective Development | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  the heatmap can display the average time each trivia game spends at a specific task, in this case getting a hint from OpenAI
+needs_visual_check: True
+question: null
+note for the ledger: the BPMN model shown in Optimize contains a task that calls OpenAI, named in the page text; the diagram's own labels are not legible in the thumbnail
+capture: figure 1 (bpmn cell, alt 'Trivia-task-analysis-optimize')
+
+=== POST 98   RECORD 005_predictive-models-in-customer-onboarding-risk.md
+url: https://camunda.com/blog/2024/06/predictive-models-in-customer-onboarding-risk/
+title: Predictive Models in Customer Onboarding Risk | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  a machine learning model runs using our Hugging Face Connector that will take the following inputs:
+needs_visual_check: True
+question: null
+note for the ledger: the BPMN model shown calls a Hugging Face model (roberta-base-go_emotions) and branches on its confidence score; the figures have no alt text at all
+capture: figure 1 (bpmn cell, 1024x333, no alt)
+
+=== POST 110   RECORD 006_bpmn-ai-process-patterns-to-orchestrate-your-ai-services-in-business-processes.md
+url: https://camunda.com/blog/2020/11/bpmn-ai-process-patterns-to-orchestrate-your-ai-services-in-business-processes/
+title: bpmn.ai: Orchestrate AI Services in Business Processes | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  An example: In input management an AI classifies incoming business documents and forwards them to the responsible processes.
+needs_visual_check: True
+question: null
+note for the ledger: the page is a pattern catalogue for orchestrating AI services in BPMN and says an AI component is called before a human decision, with an XOR gateway controlling the automation level
+capture: figure 2 (bpmn cell, alt 'Process Choice')
+
+=== POST 130   RECORD 007_automate-customer-inquiry-routing-with-camunda-process-blueprints.md
+url: https://camunda.com/blog/2024/08/automate-customer-inquiry-routing-with-camunda-process-blueprints/
+title: Automate Customer Inquiry Routing with Camunda’s Process Blueprint and Azure OpenAI | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  In Modeler, you see that the first human task is providing a customer inquiry that will be routed using the results of the OpenAI Connector.
+needs_visual_check: True
+question: null
+note for the ledger: an Azure OpenAI Connector task sits inside the blueprint's BPMN process; the page prints the prompt expression and the temperature used
+capture: the figure whose alt is 'A BPMN workflow diagram for determining correct route for customer inquiry'
+
+=== POST 131   RECORD 008_ai-agents-what-you-need-to-know.md
+url: https://camunda.com/blog/2024/08/ai-agents-what-you-need-to-know/
+title: Artificial Intelligence (AI) Agents: What You Need to Know | Camunda
+verdict: UNCERTAIN
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  An AI agent is a software program that autonomously gathers data and carries out tasks using this information
+needs_visual_check: True
+question: Does either BPMN figure on this page contain an AI/LLM element? The page is about AI agents but never binds one to a process element.
+note for the ledger: the page is an AI-agent explainer with two BPMN figures (alt 'Kyc-bpmn-camunda', 'Intelligent-routing-ai-camunda') whose labels are not legible, and nothing in the text binds an AI element to a process element
+capture: figure 2 (bpmn cell)
+
+=== POST 152   RECORD 009_beer-suggestions-dmn-ai.md
+url: https://camunda.com/blog/2024/09/beer-suggestions-dmn-ai/
+title: Beer Suggestions with DMN and AI | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  If the DMN table did manage to find a beer for you, I use the OpenAI Connector to ask ChatGPT to suggest places to find
+needs_visual_check: True
+question: null
+note for the ledger: an OpenAI connector task sits in the BPMN model next to the DMN decision
+capture: the figure whose alt is 'Bpmn-beer-recommendations-camunda'
+
+=== POST 182   RECORD 010_transforming-telecom-unleashing-the-power-of-ai.md
+url: https://camunda.com/blog/2024/11/transforming-telecom-unleashing-the-power-of-ai/
+title: Transforming Telecom: Unleashing the Power of Process Orchestration and AI | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  The filing process can invoke AI agents that can take the rate and line changes as input to locate all the affected tariffs
+needs_visual_check: True
+question: null
+note for the ledger: the page shows a process model annotated with the places AI integrates and names the agent's input and its assistive use
+capture: figure 2 (bpmn cell, alt 'Process model showing opportunities for AI integration')
+
+=== POST 227   RECORD 011_why-ai-agents-needs-orchestration.md
+url: https://camunda.com/blog/2025/02/why-ai-agents-needs-orchestration/
+title: Why AI Agents Need Orchestration | Camunda
+verdict: UNCERTAIN
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  BPMN has a construct called an ad-hoc subprocess in which a small part of the process decision-making can be handed over to a human
+needs_visual_check: True
+question: Do the BPMN screenshots on this page contain an AI element (an AI agent or ad-hoc sub-process step), or only ordinary tasks? The text argues the case without binding an element.
+note for the ledger: the page argues for AI agents inside BPMN and shows model screenshots, but the AI binding is conceptual; the cells are not legible, so whether a given element is AI-bound is not visible
+capture: figure 2 (bpmn cell, alt 'Screenshot')
+
+=== POST 248   RECORD 012_building-ai-agent-camunda.md
+url: https://camunda.com/blog/2025/02/building-ai-agent-camunda/
+title: Building Your First AI Agent in Camunda | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  An OpenAI bot checks the data provided for any indication of fraud. The AI bot will determine which tasks, from a list of tasks, to perform
+needs_visual_check: True
+question: null
+note for the ledger: the guide's own figure is 'A BPMN model of an AI agent in an ad-hob sub-process using Camunda.' - an OpenAI-bound agent inside a fraud-detection process
+capture: figure 1 (bpmn cell, gif, alt 'A BPMN model of an AI agent in an ad-hob sub-process using Camunda.')
+
+=== POST 270   RECORD 013_camunda-87-agentic-orchestration-for-enterprise.md
+url: https://camunda.com/blog/2025/04/camunda-87-agentic-orchestration-for-enterprise/
+title: Camunda Releases Agentic Orchestration for the Enterprise | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  We’re excited to announce the general availability of new agentic process orchestration capabilities to model, deploy and manage AI agents
+needs_visual_check: True
+question: null
+note for the ledger: the release shows an 'Ai-agent-ad-hoc-sub-process-camunda' model: AI agents are modelled as BPMN ad-hoc sub-processes inside the process
+capture: figure 2 (bpmn cell, alt 'Ai-agent-ad-hoc-sub-process-camunda')
+
+=== POST 288   RECORD 014_ai-agent-design-patterns-in-camunda.md
+url: https://camunda.com/blog/2025/05/ai-agent-design-patterns-in-camunda/
+title: Building Trustworthy AI Agents: How Camunda Aligns with Industry Best Practices | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  Each agent’s task is represented as a discrete service task with well-defined inputs and expected outputs.
+needs_visual_check: True
+question: null
+note for the ledger: the page states that AI agents are BPMN service tasks and shows the diagrams ('AI agent inserted into BPMN diagram for process visibility')
+capture: figure 1 (bpmn cell, alt 'AI agent inserted into BPMN diagram for process visibility')
+
+=== POST 292   RECORD 015_step-by-step-guide-ai-task-agents-camunda.md
+url: https://camunda.com/blog/2025/05/step-by-step-guide-ai-task-agents-camunda/
+title: Intelligent by Design: A Step-by-Step Guide to AI Task Agents in Camunda | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  At the core of this approach is our use of the BPMN ad-hoc sub-process construct, which allows for tasks to be executed in any order
+needs_visual_check: True
+question: null
+note for the ledger: the step-by-step guide builds an AI Task Agent as a BPMN ad-hoc sub-process and shows the sub-process figures
+capture: figure 2 (bpmn cell, alt 'Sub-process')
+
+=== POST 1263   RECORD 016_human-workflow-orchestration-generative-ai-openai.md
+url: https://camunda.com/blog/2023/05/human-workflow-orchestration-generative-ai-openai/
+title: Facilitating Human Workflow Orchestration with Generative AI | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  The Connector is an easy way to start experimenting with ways to use ChatGPT and OpenAI’s Moderation API in your process flows
+needs_visual_check: True
+question: null
+note for the ledger: an OpenAI connector task sits in the Community Market evaluation process the page documents with its own BPMN diagram
+capture: figure 1 (bpmn cell, alt 'A BPMN diagram showing the evaluation process for the Community Market.')
+
+=== POST 1340   RECORD 017_claims-processing-automation-insurance-complete-guide.md
+url: https://camunda.com/blog/2023/10/claims-processing-automation-insurance-complete-guide/
+title: Claims Processing Automation in Insurance: A Complete Guide | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  Camunda provides an out-of-the-box OpenAI Connector which is used to compose an email to the claimant
+needs_visual_check: True
+question: null
+note for the ledger: the claims process diagram is annotated by the page as using the OpenAI Connector inside the adjuster subprocess
+capture: figure 1 (bpmn cell, alt 'Auto-claim-adjuster-tasks-bpmn-camunda')
+
+=== POST 1376   RECORD 018_creating-engaging-trivia-experiences-developers-perspective.md
+url: https://camunda.com/blog/2024/01/creating-engaging-trivia-experiences-developers-perspective/
+title: Creating Engaging Trivia Experiences: A Developer's Perspective | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  I used the OpenAI connector and added the prompt:
+needs_visual_check: True
+question: null
+note for the ledger: the trivia process uses an OpenAI connector task and a second call for hints; the page's own figure 'Basic-trivia-bpmn-model-plus-openai' is the model with the connector in it
+capture: the figure whose alt is 'Basic-trivia-bpmn-model-plus-openai'
+
+=== POST 1390   RECORD 019_key-principles-in-designing-agents-for-production-part-1.md
+url: https://camunda.com/blog/2026/05/key-principles-in-designing-agents-for-production-part-1/
+title: Key Principles in Designing Agents for Production – Part I | Camunda
+verdict: UNCERTAIN
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  A workflow engine calling an agent framework calling an LLM.
+needs_visual_check: True
+question: Does the process figure in this post show an AI element (agent / ad-hoc sub-process) or only deterministic tasks? The alt text says agentic and deterministic orchestration are combined, but nothing in the text binds an element.
+note for the ledger: the figures are the agentic-orchestration models ('Fig 3 – Agentic and deterministic orchestration combined in a single end-to-end process') but no page line binds an AI element to a process element, and the cells are not legible
+capture: figure 1 (bpmn cell, alt 'Fig 3 …')
+
+=== POST 1399   RECORD 020_can-ai-design-an-enterprise-process-as-well-as-a-human.md
+url: https://camunda.com/blog/2026/08/can-ai-design-an-enterprise-process-as-well-as-a-human/
+title: Can AI Design an Enterprise Process as Well as a Human? | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  Both are built on the same principle: the agent reasons inside an ad-hoc sub-process, while everything around it stays deterministic and controlled
+needs_visual_check: True
+question: null
+note for the ledger: the page describes the agent living in a BPMN ad-hoc sub-process with a boundary event for high-risk escalation, and shows the resulting process; the same page also used Claude to design the model, which the E2 code would dismiss on its own
+capture: the figure whose alt is 'Resulted BPMN by AI' or 'BPMN diagram generated by AI'
+
+=== POST 1405   RECORD 021_where-ai-really-creates-value-and-where-it-doesnt.md
+url: https://camunda.com/blog/2026/09/where-ai-really-creates-value-and-where-it-doesnt/
+title: Where AI Really Creates Value and Where It Doesn't | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  Its job is to pick the best-fitting mechanism for each step of a process: DMN, API, Connector, User Task, or AI Agent.
+needs_visual_check: True
+question: null
+note for the ledger: the page shows a process that uses several mechanisms per step and names AI Agent as one of the steps it chooses between
+capture: figure 1 (bpmn cell, alt 'Process using multiple mechanisms')
+
+=== POST 1410   RECORD 022_why-bolting-langchain-onto-a-workflow-engine-backfires-at-scale.md
+url: https://camunda.com/blog/2026/07/why-bolting-langchain-onto-a-workflow-engine-backfires-at-scale/
+title: Why Bolting LangChain onto a Workflow Engine Backfires at Scale | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  A loan support agent in Camunda Modeler. The ad-hoc subprocess (purple star) is the agent's reasoning space.
+needs_visual_check: True
+question: null
+note for the ledger: the figure's own alt text describes the agent's reasoning space as a BPMN ad-hoc sub-process whose boxes are tools the LLM invokes
+capture: figure 1 (bpmn cell, alt 'Inner and outer orchestration in a loan origination process …')
+
+=== POST 1413   RECORD 023_from-weeks-to-days-what-camundas-ai-skills-actually-saved-me.md
+url: https://camunda.com/blog/2026/08/from-weeks-to-days-what-camundas-ai-skills-actually-saved-me/
+title: From Weeks to Days: What Camunda's AI Skills Actually Saved Me | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  I needed to build an end-to-end full Policy Change for automobile insurance process with AI agents.
+needs_visual_check: True
+question: null
+note for the ledger: the resulting policy change process contains AI agents; the page shows its AI Agent Tool Optimize dashboard with the tool calls made by agents
+capture: figure 2 (bpmn cell, alt 'The resulting policy change process')
+
+=== POST 1434   RECORD 024_three-ways-camunda-speaks-mcp-and-why-the-direction-matters.md
+url: https://camunda.com/blog/2026/08/three-ways-camunda-speaks-mcp-and-why-the-direction-matters/
+title: Three Ways Camunda Speaks MCP (And Why the Direction Matters) | Camunda
+verdict: INCLUDE
+the page line the AI judgement rests on (verbatim; use it as ai_evidence_quote):
+  This pattern is Camunda as an MCP client . It lives inside the AI Agent connector's ad-hoc sub-process model.
+needs_visual_check: True
+question: null
+note for the ledger: the MCP client pattern is placed inside the AI Agent connector's ad-hoc sub-process, i.e. an AI element inside the process model
+capture: the bpmn figure of the post

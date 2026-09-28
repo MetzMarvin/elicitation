@@ -1,0 +1,745 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>New in Enterprise Edition for 26.1 - Flowquest</title>
+<meta name="description" content="Release highlights for Flows for APEX Enterprise Edition 26.1.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Flowquest">
+<meta property="og:title" content="New in Enterprise Edition for 26.1">
+<meta property="og:url" content="https://flowquest.net/Flows4APEX261Features/">
+
+
+  <meta property="og:description" content="Release highlights for Flows for APEX Enterprise Edition 26.1.">
+
+
+
+  <meta property="og:image" content="https://flowquest.net/assets/images/ahsp-261-manual-def.png">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://flowquest.net/Flows4APEX261Features/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Flowquest Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://flowquest.net/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://flowquest.net/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://flowquest.net/assets/images/favicon-16x16.png">
+<link rel="manifest" href="https://flowquest.net/assets/images/site.webmanifest">
+<link rel="mask-icon" href="https://flowquest.net/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#d85d5d">
+<style type="text/css">
+   /*Custom style for ressources page*/
+   .video-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   
+   .video-card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:32%;
+     min-width: 320px;
+     display: inline-block;
+     margin-bottom: 15px;
+     margin-right: 15px;
+   }
+   
+   .video-card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+   
+   /*Custom style for team page*/
+   .team-members {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   } 
+
+   .member-picture-container {
+      width: 200px;
+      height: 200px;
+      margin: 1rem auto 1rem auto;
+      border-radius: 50%;
+      background: #007bb6;
+      padding: 3px;
+   }
+
+   .member-picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: #ffffff 2px solid;
+   }
+
+   .member-name,
+   .member-bio,
+   .member-links
+    {
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+
+   .member-name {
+      font-weight: bold;
+   }
+
+   .member-bio {
+      font-size: smaller;
+      text-align: justify;
+      margin-bottom: 15px;
+   }
+
+   .member-links {
+      margin-top: auto;
+      margin-bottom: 10px;
+      border-top: solid 1px gray;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .member-link {
+      margin-right: 10px;
+   }
+
+   .member-card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:30%;
+     min-width: 300px;
+     margin-bottom: 7.5px;
+     margin-right: 7.5px;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .member-link > a {
+      text-decoration: none;
+      font-size: smaller;
+   }
+
+   .member-card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+
+   /*Cutom style for notice latest doc version*/
+   .notice-icon {
+      margin-right: .2rem;
+      font-size: large;
+   }
+
+   .doc-not-latest{
+      margin: 0px!important;
+   }
+
+   /*Custom style for feature row icon*/
+   .feature__wrapper.feature__wrapper__icon img {
+      width: 64px;
+      height: auto;
+   }
+   /* custom style for footer */
+   .footer-container {
+      padding-top: 5px;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+   .footer-container > div {
+      width: 33%;
+      margin: 10px;
+      margin-bottom: 2px;
+      padding: 5px;
+
+   }
+   .footer-address-text {
+      line-height: 1.2;
+   }
+   .footer-x-small {
+      font-size: 12px;
+   }  
+   .footer-logo {
+      width: 120px;
+      height: auto;
+      padding-top: 30px;
+   }
+   /* custom style for pricing */
+   .pricing-container {
+      padding-top: 5px;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+   }
+   .pricing-container > div {
+      width: 50%;
+      margin: 10 em;
+      margin-bottom: 2px;
+      padding: 10%;
+   }
+   .pricing ul {
+      list-style: none;
+      padding-left: 0;
+   }
+   .pricing li {
+      position: relative;
+      padding-left: 1.5em; /*preserve space for tick*/
+   }
+   .pricing li::before {
+      color: #066d5b;
+      content: "✔ ";
+      position: absolute;
+      left: 0;
+      width: 1em;
+      height: 1em;
+   }
+   @media (max-width: 500px) {
+      #pricing .footer-container > .edition {
+         width: 100%;
+      }
+      #footer .footer-container {
+         flex-direction:column;
+      }
+      #footer .footer-container div:not(.footer-logo) {
+         width: 100%;
+      }
+   }
+
+   @media (min-width: 501px) and (max-width: 1024px) {
+      #pricing .footer-container > .edition {
+         width: 50%;
+      }
+   }
+   
+</style>
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--splash">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/flowquest-logo-color-bg.svg" alt="Flowquest"></a>
+        
+        <a class="site-title" href="/">
+          Flowquest
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Flows for APEX Enterprise Edition</a>
+            </li><li class="masthead__menu-item">
+              <a href="/flows4apex" >Flows for APEX</a>
+            </li><li class="masthead__menu-item">
+              <a href="/news" >News</a>
+            </li><li class="masthead__menu-item">
+              <a href="/releases" >Releases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/documentation" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://blog.flowquest.net" target="_blank">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources" >Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/customer-portal" >Customer Portal</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.youtube.com/flowsforapex" target="_blank"><i class="fab fa-youtube" aria-hidden"true" style="padding-right: 5px;"></i>Youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/install-doc-ee-251" >Installation</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+  
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #000; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/ahsp-261-manual-def.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          New in Enterprise Edition for 26.1
+
+        
+      </h1>
+      
+        <p class="page__lead">Release highlights for Flows for APEX Enterprise Edition 26.1.
+</p>
+      
+      
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="New in Enterprise Edition for 26.1">
+    <meta itemprop="description" content="Release highlights for Flows for APEX Enterprise Edition 26.1.">
+    
+    
+
+    <section class="page__content" itemprop="text">
+      
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item--center">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body middle-image">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>This page summarizes the 26.1 wave for Flows for APEX Enterprise Edition, including new runtime flexibility, AI-driven orchestration, async execution support, and developer tooling improvements.</p>
+
+            </div>
+          
+
+          
+
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item--center">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">New in Enterprise Edition for 26.1</h2>
+          
+
+          
+
+          
+
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser middle-image">
+            <img src="/assets/images/ahsp-261-manual-def.png" alt="Adhoc Sub Processes" />
+            
+          </div>
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">Adhoc Sub Processes</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Give knowledge workers controlled flexibility by letting them choose the next relevant action at runtime while BPMN still defines the guardrails and completion rules.</p>
+
+            </div>
+          
+
+          
+            
+              <a href="/adhoc-subprocesses-basics/" class="btn  btn--primary">Learn more</a>
+            
+          
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser middle-image">
+            <img src="/assets/images/ahsp-261-autonomous-def.png" alt="AI-Driven BPMN Agents" />
+            
+          </div>
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">AI-Driven BPMN Agents</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Move from recommendations to hybrid or fully autonomous BPMN-defined agents while keeping workflow behavior auditable and governed.</p>
+
+            </div>
+          
+
+          
+            
+              <a href="/adhoc-subprocesses-ai-agents/" class="btn  btn--primary">Learn more</a>
+            
+          
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser middle-image">
+            <img src="/assets/images/async-task-261.png" alt="Async Workflow Execution" />
+            
+          </div>
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">Async Workflow Execution</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Push selected long-running work into background async execution for better resilience, improved user experience, and safer orchestration of external services or AI calls.</p>
+
+            </div>
+          
+
+          
+            
+              <a href="https://flowsforapex.org/latest/async-tasks-and-background-execution/" target="_blank" class="btn  btn--primary">Learn more</a>
+            
+          
+
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser middle-image">
+            <img src="/assets/images/261-ai-dev-bundle.png" alt="AI Development Support Toolkit" />
+            
+          </div>
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">AI-Powered Development Support Toolkit</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>This release includes XSD definition of Flows for APEX BPMN extensions, read-only MCP schema scripts, and Flows for APEX skill definitions to accelerate consistent AI-powered workflow development across teams.</p>
+
+            </div>
+          
+
+          
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser middle-image">
+            <img src="/assets/images/261-dev-features.png" alt="Subjects, Task Parameters and JSONPath" />
+            
+          </div>
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">Developer Improvements</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Use declarative task subjects, task parameters and JSONPath variable expressions to define cleaner task contracts, simpler data mapping, and more maintainable process applications.</p>
+
+            </div>
+          
+
+          
+            
+              <a href="https://flowsforapex.org/latest/task-parameters/" target="_blank" class="btn  btn--primary">Learn more</a>
+            
+          
+
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item--center">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body middle-image">
+          
+            <h2 class="archive__item-title">Enterprise Edition</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Flows for APEX Enterprise Edition builds on the open-source Community Edition with additional advanced functionality, including Adhoc Sub Process and AI orchestration features, plus product support from Flowquest.</p>
+
+            </div>
+          
+
+          
+            
+              <a href="mailto:info@flowquest.net" target="_blank" class="btn  btn--info">Contact us</a>
+            
+              <a href="https://cal.com/rallen2010/15min" target="_blank" class="btn  btn--info">Arrange Introductory Zoom Call</a>
+            
+          
+
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+    </section>
+  </article>
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <footer>
+    <div class="footer-container">
+        <div >
+            <div class="footer-logo">
+                <a href="https://www.flowquest.net"><img src="https://flowquest.net/assets/images/flowquest-logo-color-bg.svg" alt="Flowquest"/></a>
+            </div>
+        
+        </div>
+        <div class="footer-address-text">
+            <p><b>Flowquest Limited</b><br>
+                Kemp House<br>
+                160 City Road<br>
+                LONDON<br>
+                EC1V 2NX</p>
+            <p><b>Flowquest Pte Ltd</b><br>
+                10 Anson Road<br>
+                #33-10 Suite C International Plaza<br>
+                SINGAPORE<br>
+                079903</p>
+        </div>
+            <div >
+                <p><b>Follow Us</b></p>
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/company/flowquest-limited" target="_blank"><span
+                            class="fab fa-linkedin"></span> LinkedIn</a></li>
+                    <li><a href="https://bsky.app/profile/rallen2010.bsky.social" target="_blank"><span
+                            class="fab fa-bluesky"></span> BlueSky</a></li>
+                </ul>
+                <p><b>Contact Us</b></p>
+                <ul class="social-icons">
+                    <li><a href="mailto:info@flowquest.net" style="color:#696a79;"><span class="fas fa-envelope"></span> info@flowquest.net</a></li>
+                    <li><a href="https://cal.com/rallen2010/15min" target="_blank" rel="noopener noreferrer" style="color:#696a79;"><span class="fas fa-video"></span> Introductory 15 min Zoom call</a></li>
+                </ul>
+            </div>
+    </div>
+</footer>
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://flowquest.net">Flowquest</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLSTC8TR6K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLSTC8TR6K', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

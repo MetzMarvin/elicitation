@@ -1,0 +1,4 @@
+visual pass: 1091 posts classified, 35 with any ai_visible=yes
+self-audit: 17 of 44 hand rulings flip the mechanical call
+Counter({('EXCLUDE', 'E0-no-artefact'): 956, ('EXCLUDE', 'E2-no-ai-element'): 233, ('EXCLUDE', 'E1-not-bpmn'): 126, ('UNCERTAIN', ''): 71, ('INCLUDE', ''): 49, 'BLOCKED': 4})
+appended 1439

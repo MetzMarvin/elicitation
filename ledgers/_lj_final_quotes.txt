@@ -1,0 +1,19 @@
+=== 85 central_ai
+  * main content On this page Centralized AI Handling LoyJoy allows you to use one central AI agent that handles the generative AI for several or all your agents in LoyJoy. This means you can manage and update the agent in one place,
+  * ted agents will use the AI configuration from the central AI agent. 1. Create a Central AI Agent ​ The central AI agent has to be configured differently than a regular agent: First, simply add the AI modules such as AI Gateway , A
+  * module to the start that can be jumped to. 2. Configure Other Agents to use the Central AI Agent ​ In all agents that should use the central agent settings, add a Message start module as usual, but instead of adding the AI modules
+  * o the central AI agent. This way, the agent will use the configuration from the central AI agent and return to the original agent after processing the message. 1. Create a Central AI Agent 2. Configure Other Agents to use the Cent
+=== 83 building AI prose
+=== 102 de blog
+  * d verbessern. So funktioniert es → Einloggen Demo buchen BPMN 🚀 Unser neues Release macht BPMN-Prozessautomatisierung zum Vergnügen • 29. September 2022 Hinweis zum Alter dieses Beitrags: Die Entwicklung bei KI im Allgemeinen und bei der LoyJ
+  * -Posts sind möglicherweise nicht mehr auf dem neuesten Stand. 🚀 Unser neues Release macht BPMN-Prozessautomatisierung zum Vergnügen Unsere Top 5 Highlights auf einen Blick ✅ Modelliere und pflege komplexere Geschäftsprozesse mit Gateways. 💡 B
+=== 314 de platform orchestrate
+  * de (Anthropic EU) oder Ihr eigenes LLM. Prozess-Orchestrierung (Orchestrieren) Eine no-code BPMN-Engine modelliert Dialoge und Prozesse mit Regeln, Routing, Experimenten und Analytics. Integrations-Layer (Verbinden) Jeder
+  * ia Konnektoren, MCP-Tools oder REST. 2. Orchestrieren Dialog- und Business-Flow modellieren, per Drag-and-Drop im Manager oder im Dialog mit dem KI-Assistenten. Regeln, Freigaben und Leitplanken definieren. 3. Lös
+=== 737 en bpmn
+  * how it works → Sign in Book a demo Conversational Platform BPMN 2.0 Process Automation How LoyJoy uses BPMN 2.0 to visually model and automatically execute business processes – no code required, intuitive to use, and
+  * Empower Your Ideas Without Code LoyJoy seamlessly connects BPMN 2.0 process automation with agentic AI. This unique combination of secure, scalable process execution and autonomously acting AI agents is unparalleled i
+  * ational AI market. BPMN 2.0-Standard LoyJoy is based on the BPMN 2.0 modeling standard and utilizes the Business Process Model And Notation (BPMN) 2.0 standard to model and execute processes. BPMN is a standardized way
+=== 75 de features
+=== 117 de reworking
+  * en. Möchtest du ein Beispiel? ‍ Die neuen Möglichkeiten des Editors am Beispiel einer Versicherungsgesellschaft Betrachte zum Beispiel eine Versicherungsgesellschaft, die Hausratversicherungen anbietet. Ein Chatbot a

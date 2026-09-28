@@ -1,0 +1,149 @@
+sheets: figs2_0012_0305.png, figs2_0312_0554.png, figs2_0556_0642.png
+cells: 144
+### figs2_0012_0305.png
+  12.1  aiflag=0  alts=Kickstarting digital transformation
+  15.1  aiflag=0  alts=Simpler-modeling-canvas-modifyexample1
+  28.1  aiflag=0  alts=Diverse-endpoints
+  29.1  aiflag=0  alts=Three hidden threats of RPA technical debt you might have overlooked
+  30.1  aiflag=0  alts=Camunda-optimize-report
+  31.1  aiflag=0  alts=Rest-connector-details-camunda
+  36.1  aiflag=0  alts=A black and white poster with textDescription automatically generated
+  37.1  aiflag=0  alts=Camunda-migration-methodology
+  40.1  aiflag=0  alts=Camunda BPM Runtime 7.14.0 Released
+  41.1  aiflag=0  alts=Licensing Update for Camunda 8 Self-Managed
+  42.1  aiflag=0  alts=(none)
+  70.1  aiflag=0  alts=Cawemo Enterprise 1.4 Released
+  74.1  aiflag=0  alts=Black and green badge reads Camunda Certified Professional Developer
+  78.1  aiflag=0  alts=Camunda BPM Telemetry: Community FAQ
+  80.1  aiflag=0  alts=Screenshot of node-grpc-client authors
+  86.1  aiflag=0  alts=Automation Reinvented
+  88.1  aiflag=0  alts=Vandebron’s Journey From Automation Challenges to Success with Camunda
+  91.1  aiflag=0  alts=Camunda BPM Runtime 7.15.0-alpha1 Released
+  104.1  aiflag=0  alts=A person standing on a stageDescription automatically generated
+  115.1  aiflag=0  alts=(none)
+  129.1  aiflag=0  alts=add variable filter screenshot
+  132.1  aiflag=0  alts=(none)
+  134.1  aiflag=0  alts=AXA UI with Camunda
+  137.1  aiflag=0  alts=Desktop-modeler-variable-overview
+  142.1  aiflag=0  alts=Camunda BPM Runtime 7.15.0-alpha2 Released
+  146.1  aiflag=0  alts=Screenshot of a presentation for CamundaCon 2024 Berlin with Deloitte
+  147.1  aiflag=0  alts=An image link to the video of the presentation by Georg, showing the title slide of his pr
+  158.1  aiflag=0  alts=Meet Mary Thengvall, Director of Developer Relations at Camunda
+  159.1  aiflag=0  alts=Screenshot of CamundaCon 2024 presentation with Oliver Webersberger for Deutsche Telekom
+  162.1  aiflag=0  alts=Screenshot of Angle Finance's CamundaCon 2024 presentation in Berlin
+  163.1  aiflag=0  alts=Hacktoberfest Retro
+  167.1  aiflag=0  alts=Unveiling the Mysteries of Europa: NASA’s Europa Clipper Mission
+  170.1  aiflag=0  alts=Should data be embedded in business processes? It depends!
+  176.1  aiflag=0  alts=RPA-Webinar
+  178.1  aiflag=0  alts=Harnessing Data-Driven Insights: The UK General Register Office’s Road to Enhanced SLAs
+  187.1  aiflag=0  alts=Screenshot of CamundaCon 2024 NYC presentation with Andrey Belik
+  197.1  aiflag=0  alts=Feature image
+  210.1  aiflag=0  alts=Screenshot showing the same test case repeated with different disk sizes
+  223.1  aiflag=0  alts=Screenshot
+  249.1  aiflag=0  alts=(none)
+  251.1  aiflag=0  alts=(none)
+  271.1  aiflag=0  alts=Demo of the tooltip plugin
+  275.1  aiflag=0  alts=Feature image
+  283.1  aiflag=0  alts=uipath template
+  285.1  aiflag=0  alts=Camunda Modeler 4.5 Released
+  301.1  aiflag=0  alts=Feature image
+  304.1  aiflag=0  alts=Feature image
+  305.1  aiflag=0  alts=Rpa-connector-camunda
+### figs2_0312_0554.png
+  312.1  aiflag=0  alts=Wesley-hattingh
+  326.1  aiflag=0  alts=Lena Schönburg
+  327.1  aiflag=0  alts=Testing DMN Tables Automatically
+  349.1  aiflag=0  alts=dashboard filter for assignees
+  351.1  aiflag=0  alts=Feature image
+  353.1  aiflag=0  alts=Community Questions: Camunda Web Apps
+  354.1  aiflag=0  alts=Camunda at NASA: Perseverance prepares to land on Mars
+  355.1  aiflag=0  alts=Be careful with console.log when using React.StrictMode
+  356.1  aiflag=0  alts=Announcing the Camunda Certified Associate
+  369.1  aiflag=0  alts=Camunda Promises a Partner-friendly Business Strategy
+  372.1  aiflag=0  alts=Introducing the Camunda Community Hub
+  377.1  aiflag=0  alts=Remote-setup
+  403.1  aiflag=0  alts=Zeebe Horizontal Scalability Testing
+  404.1  aiflag=0  alts=Zeebe Horizontal Scalability Testing
+  408.1  aiflag=0  alts=Zeebe Output Mapping Behavior, Before and After
+  415.1  aiflag=0  alts=Visibility into cross-microservice processes is a top challenge in microservices architect
+  434.1  aiflag=0  alts=Incidents grouped by error message at the Operate home screen
+  442.1  aiflag=0  alts=Operate dashboard updates
+  449.1  aiflag=0  alts=Workers subscribe
+  451.1  aiflag=0  alts=Message Properties
+  452.1  aiflag=0  alts=Test Setup
+  457.1  aiflag=0  alts=Announcing Camunda Cloud
+  459.1  aiflag=0  alts=Mauricio Salatino
+  464.1  aiflag=0  alts=Cornelius Suermann
+  467.1  aiflag=0  alts=Example Zeebe in Kubernetes
+  483.1  aiflag=0  alts=structured JSON log output
+  487.1  aiflag=0  alts=Operate 0.24: Instances list with unnamed activites
+  488.1  aiflag=0  alts=Helm Secret Management Changes in Camunda 8.9
+  494.1  aiflag=0  alts=Version 3
+  501.1  aiflag=0  alts=post notification
+  502.1  aiflag=0  alts=Operate 0.26: Form validation feedback for invalid date input
+  513.1  aiflag=0  alts=Image1
+  515.1  aiflag=0  alts=(none)
+  516.1  aiflag=0  alts=(none)
+  520.1  aiflag=0  alts=Feature image
+  522.1  aiflag=0  alts=Swagger API access with Camunda Platform
+  532.1  aiflag=0  alts=screenshot of first alpha release of Tasklist
+  535.1  aiflag=0  alts=Running a Camunda Meetup Group: Vienna
+  540.1  aiflag=0  alts=Six Tips for building a global Meetup Organizers Program
+  542.1  aiflag=0  alts=Countdown to the Camunda Community Summit
+  543.1  aiflag=0  alts=Camunda Platform Runtime 7.15.0 Released
+  545.1  aiflag=0  alts=Camunda Modeler 4.7 Released
+  546.1  aiflag=0  alts=Cawemo Enterprise (On-Premises) 1.6 Released
+  548.1  aiflag=0  alts=Optimize multi-metric report
+  550.1  aiflag=0  alts=Register for CamundaCon Live 2021
+  551.1  aiflag=0  alts=Camunda Cloud Console Go Client Library
+  553.1  aiflag=0  alts=A Can’t-Miss Opportunity for Camunda Developers
+  554.1  aiflag=0  alts=Calling All Camunda Champions
+### figs2_0556_0642.png
+  556.1  aiflag=0  alts=Camunda Platform Runtime 7.16.0-alpha1 Released
+  557.1  aiflag=0  alts=Feature image
+  560.1  aiflag=0  alts=Camunda Cloud: Podcast Edition
+  561.1  aiflag=0  alts=Why You’re Struggling with Your BPM Suite
+  562.1  aiflag=0  alts=What You Should Know About Using Camunda Platform Run in Production
+  563.1  aiflag=0  alts=Camunda Cloud Zeebe K8s Operator
+  567.1  aiflag=0  alts=Design for the future: Improving the Camunda Optimize Report builder experience
+  568.1  aiflag=0  alts=Modeling with Camunda: The Podcast
+  569.1  aiflag=0  alts=Camunda Platform Runtime 7.16.0-alpha2 Released
+  572.1  aiflag=0  alts=Camunda Cloud 1.1.0-alpha1 Released
+  573.1  aiflag=0  alts=Welcome, Camunda Champions
+  574.1  aiflag=0  alts=Your Camunda Cloud Questions Answered
+  577.1  aiflag=0  alts=Jyske Bank: From Emails to Automation
+  580.1  aiflag=0  alts=deploy and run your processes directly from within the editor
+  581.1  aiflag=0  alts=Camunda Platform Runtime 7.16.0-alpha3 Released
+  587.1  aiflag=0  alts=Feature image
+  589.1  aiflag=0  alts=total economic impact study
+  591.1  aiflag=0  alts=Camunda Platform Runtime 7.16.0-alpha4 Released
+  592.1  aiflag=0  alts=Camunda Cloud Console Screenshot
+  593.1  aiflag=0  alts=Camunda Optimize 3.6.0-alpha1 Released
+  594.1  aiflag=0  alts=Releasing Camunda Platform Community Helm Chart
+  595.1  aiflag=0  alts=Angie Jones
+  599.1  aiflag=0  alts=The Art of Gradual Digital Transformation
+  600.1  aiflag=0  alts=Join the Fun – Hacktoberfest 2021
+  601.1  aiflag=0  alts=Podcast: Meet the Camundi – Rin Oliver
+  602.1  aiflag=0  alts=(none)
+  603.1  aiflag=0  alts=Automation: A Recipe for Disruption
+  605.1  aiflag=0  alts=Camunda Cloud 1.2.0-alpha2 Released
+  607.1  aiflag=0  alts=pie chart
+  608.1  aiflag=0  alts=CamundaCon 2021: Know Before You Go
+  609.1  aiflag=0  alts=Animated GIF showing Cockpit's navigation to called processes
+  610.1  aiflag=0  alts=3 Reasons Why You Can’t Miss CamundaCon 2021
+  611.1  aiflag=0  alts=Nexus to Artifactory – An Infrastructural Digest
+  613.1  aiflag=0  alts=Q&A: The One with the Failing Delegate Class
+  615.1  aiflag=0  alts=Do You Need a Chief Automation Officer?
+  616.1  aiflag=0  alts=Digital Transformation: Evolution or Revolution?
+  619.1  aiflag=0  alts=Cawemo Enterprise (On-Premises) 1.8.0 Released
+  625.1  aiflag=0  alts=Migrating from Monolith to Microservices
+  627.1  aiflag=0  alts=Camunda Platform 7.16 Webinar Recap
+  629.1  aiflag=0  alts=Q&A: The One with the Non-existent Variable
+  632.1  aiflag=0  alts=Camunda Optimize 3.7.0-alpha1 Released
+  633.1  aiflag=0  alts=Camunda Cloud 1.3.0-alpha1 Released
+  634.1  aiflag=0  alts=(none)
+  636.1  aiflag=0  alts=Enable service accounts
+  639.1  aiflag=0  alts=(none)
+  640.1  aiflag=0  alts=The Camunda Holiday Reading List 2021
+  641.1  aiflag=0  alts=Camunda Automation Platform 7.17.0-alpha2 Released
+  642.1  aiflag=0  alts=(none)

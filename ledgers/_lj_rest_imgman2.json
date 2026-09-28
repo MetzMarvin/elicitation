@@ -1,0 +1,944 @@
+[
+ {
+  "page": 11,
+  "src": "https://docs.loyjoy.com/assets/images/inspect-58c40d4adbecf923d66caba7608b53b5.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/011__inspect-58c40d4adbecf923d66caba7608b53b5.png",
+  "bytes": 226637
+ },
+ {
+  "page": 11,
+  "src": "https://docs.loyjoy.com/assets/images/style-c41f38df790dfff9c5779820a4f3d74a.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/011__style-c41f38df790dfff9c5779820a4f3d74a.png",
+  "bytes": 116322
+ },
+ {
+  "page": 11,
+  "src": "https://docs.loyjoy.com/assets/images/branding-9ea5166be596b7074c15f2ceab3d72d2.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/011__branding-9ea5166be596b7074c15f2ceab3d72d2.png",
+  "bytes": 143630
+ },
+ {
+  "page": 13,
+  "src": "https://docs.loyjoy.com/assets/images/HomeView-2ef9a4e1651b0c3ba5f91820dcc7bc2a.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/013__HomeView-2ef9a4e1651b0c3ba5f91820dcc7bc2a.png",
+  "bytes": 23353
+ },
+ {
+  "page": 13,
+  "src": "https://docs.loyjoy.com/assets/images/module_homeview-eb91be1591990a99858acc5d4d230398.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/013__module_homeview-eb91be1591990a99858acc5d4d230398.gif",
+  "bytes": 546101
+ },
+ {
+  "page": 29,
+  "src": "https://docs.loyjoy.com/assets/images/inspect-58c40d4adbecf923d66caba7608b53b5.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/029__inspect-58c40d4adbecf923d66caba7608b53b5.png",
+  "bytes": 226637
+ },
+ {
+  "page": 29,
+  "src": "https://docs.loyjoy.com/assets/images/style-c41f38df790dfff9c5779820a4f3d74a.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/029__style-c41f38df790dfff9c5779820a4f3d74a.png",
+  "bytes": 116322
+ },
+ {
+  "page": 29,
+  "src": "https://docs.loyjoy.com/assets/images/branding-9ea5166be596b7074c15f2ceab3d72d2.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/029__branding-9ea5166be596b7074c15f2ceab3d72d2.png",
+  "bytes": 143630
+ },
+ {
+  "page": 30,
+  "src": "https://docs.loyjoy.com/assets/images/new_agent-e652627b0af13334a00ff121f2c9a451.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/030__new_agent-e652627b0af13334a00ff121f2c9a451.png",
+  "bytes": 126129
+ },
+ {
+  "page": 30,
+  "src": "https://docs.loyjoy.com/assets/images/choose_agent-6680fb34f8828bae4ad533cca4984fd4.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/030__choose_agent-6680fb34f8828bae4ad533cca4984fd4.png",
+  "bytes": 1295767
+ },
+ {
+  "page": 35,
+  "src": "https://docs.loyjoy.com/assets/images/dateFilter-d6d42060d792119441c595d63e8651f8.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/035__dateFilter-d6d42060d792119441c595d63e8651f8.png",
+  "bytes": 56520
+ },
+ {
+  "page": 35,
+  "src": "https://docs.loyjoy.com/assets/images/visualization2-64f78e5ca3b029440df90a7a3223f8e0.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/035__visualization2-64f78e5ca3b029440df90a7a3223f8e0.png",
+  "bytes": 82149
+ },
+ {
+  "page": 36,
+  "src": "https://docs.loyjoy.com/assets/images/overview-ae58cec137200b98fa8edd910bd106b1.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/036__overview-ae58cec137200b98fa8edd910bd106b1.png",
+  "bytes": 135028
+ },
+ {
+  "page": 36,
+  "src": "https://docs.loyjoy.com/assets/images/dateFilter-d6d42060d792119441c595d63e8651f8.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/036__dateFilter-d6d42060d792119441c595d63e8651f8.png",
+  "bytes": 56520
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-0-58b934007f49d3225f4485a3c79e8640.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-0-58b934007f49d3225f4485a3c79e8640.png",
+  "bytes": 44029
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-1-6af004f7358681fd439936c1363babd2.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-1-6af004f7358681fd439936c1363babd2.png",
+  "bytes": 144445
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-2-395839f0bea61610f6f29ea35d44fdfc.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-2-395839f0bea61610f6f29ea35d44fdfc.png",
+  "bytes": 201462
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-3-2937b67f6946643c3de92db49eb2693e.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-3-2937b67f6946643c3de92db49eb2693e.png",
+  "bytes": 107339
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-4-d161b1367193fdde8b596e006eb75647.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-4-d161b1367193fdde8b596e006eb75647.png",
+  "bytes": 99497
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-5-2ee90f5559c973dd48eac50ac04a104f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-5-2ee90f5559c973dd48eac50ac04a104f.png",
+  "bytes": 139528
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-6-c647befa895428785e3ff30f579c962f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-6-c647befa895428785e3ff30f579c962f.png",
+  "bytes": 103210
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-7-d882ab4e8383921eb7b7e458d89a5808.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-7-d882ab4e8383921eb7b7e458d89a5808.png",
+  "bytes": 94225
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-8-6c6144b26958e598feb60fbcc96318e2.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-8-6c6144b26958e598feb60fbcc96318e2.png",
+  "bytes": 87211
+ },
+ {
+  "page": 50,
+  "src": "https://docs.loyjoy.com/assets/images/step-9-4e623e1bd375df0891e041168f3ef02d.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/050__step-9-4e623e1bd375df0891e041168f3ef02d.png",
+  "bytes": 231864
+ },
+ {
+  "page": 52,
+  "src": "https://docs.loyjoy.com/assets/images/Knowledge-8671b40e209d288b047de1575ff28f07.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/052__Knowledge-8671b40e209d288b047de1575ff28f07.png",
+  "bytes": 97012
+ },
+ {
+  "page": 54,
+  "src": "https://docs.loyjoy.com/assets/images/Search-b245562444dd62e1e2be7dabef50fcd9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/054__Search-b245562444dd62e1e2be7dabef50fcd9.png",
+  "bytes": 158811
+ },
+ {
+  "page": 55,
+  "src": "https://docs.loyjoy.com/assets/images/magicfill-9749437b59327c8fd9cc2bfbcd8212ae.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/055__magicfill-9749437b59327c8fd9cc2bfbcd8212ae.gif",
+  "bytes": 87367
+ },
+ {
+  "page": 55,
+  "src": "https://docs.loyjoy.com/assets/images/useGPT-41bfbf1c15c03a8761594e367c91efeb.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/055__useGPT-41bfbf1c15c03a8761594e367c91efeb.png",
+  "bytes": 103376
+ },
+ {
+  "page": 55,
+  "src": "https://docs.loyjoy.com/assets/images/shortarticle-7136d95c5e1e134493d1743b5e9a1de9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/055__shortarticle-7136d95c5e1e134493d1743b5e9a1de9.png",
+  "bytes": 88011
+ },
+ {
+  "page": 56,
+  "src": "https://docs.loyjoy.com/assets/images/overview-21761eccdc2e75060019a7f2b5fd8a1b.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/056__overview-21761eccdc2e75060019a7f2b5fd8a1b.png",
+  "bytes": 64915
+ },
+ {
+  "page": 56,
+  "src": "https://docs.loyjoy.com/assets/images/prompt_detail-b2bded1a1a5dd0e725483f235a4bd8ab.webp",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/056__prompt_detail-b2bded1a1a5dd0e725483f235a4bd8ab.webp",
+  "bytes": 107152
+ },
+ {
+  "page": 56,
+  "src": "https://docs.loyjoy.com/assets/images/topics-126ebf7cd789508c8baad29728fbf44c.webp",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/056__topics-126ebf7cd789508c8baad29728fbf44c.webp",
+  "bytes": 123770
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_input_pdf-e042613b0ed96843de1d898c94532543.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_input_pdf-e042613b0ed96843de1d898c94532543.png",
+  "bytes": 29931
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_input_csv-4b7ea96736b98a0352dfff35fcab908e.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_input_csv-4b7ea96736b98a0352dfff35fcab908e.png",
+  "bytes": 28842
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_bulk_upload-e7692a009e542dec51d6235f8556d1eb.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_bulk_upload-e7692a009e542dec51d6235f8556d1eb.png",
+  "bytes": 35054
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_sitemap-c1a4431c6e836e1a254c05400f558592.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_sitemap-c1a4431c6e836e1a254c05400f558592.png",
+  "bytes": 53780
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_no_sitemap-7d47bb7dba87c4c2b8c3c4641011367b.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_no_sitemap-7d47bb7dba87c4c2b8c3c4641011367b.png",
+  "bytes": 88273
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_expert_settings-7acdfac1d9ba77d19b7993a8a22f935d.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_expert_settings-7acdfac1d9ba77d19b7993a8a22f935d.png",
+  "bytes": 197045
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_css_selectors-bc4a485e46c3b56ebc996dee2c7dc85b.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_css_selectors-bc4a485e46c3b56ebc996dee2c7dc85b.png",
+  "bytes": 32850
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_exclusions_rules-7b798be4d565c0cc58d0187ef9f23491.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_exclusions_rules-7b798be4d565c0cc58d0187ef9f23491.png",
+  "bytes": 114907
+ },
+ {
+  "page": 62,
+  "src": "https://docs.loyjoy.com/assets/images/ai_sources_crawling_errors-85e95c93f417229565189a270bcf4646.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/062__ai_sources_crawling_errors-85e95c93f417229565189a270bcf4646.png",
+  "bytes": 52721
+ },
+ {
+  "page": 64,
+  "src": "https://docs.loyjoy.com/assets/images/live_template-f4bc282d4a1f3cae8bada94ca8ff0650.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/064__live_template-f4bc282d4a1f3cae8bada94ca8ff0650.png",
+  "bytes": 241869
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/agent_profile-f7cd78fd5018e259fc3dec697ad97667.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__agent_profile-f7cd78fd5018e259fc3dec697ad97667.png",
+  "bytes": 50612
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/agent_profile_settings-d8319d38b14fc088d571622f4b5356e1.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__agent_profile_settings-d8319d38b14fc088d571622f4b5356e1.png",
+  "bytes": 86393
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/overview-b958c5a88536e471ecd12fc759e9a899.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__overview-b958c5a88536e471ecd12fc759e9a899.png",
+  "bytes": 126558
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/live_settings_button-30ab896a1c6a834d4504b22b4b19547f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__live_settings_button-30ab896a1c6a834d4504b22b4b19547f.png",
+  "bytes": 26333
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/additional_tenants-7442e9be848c3c171e682be47c83cff7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__additional_tenants-7442e9be848c3c171e682be47c83cff7.png",
+  "bytes": 75609
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/assign-85b77ed069ec10e93202a8b03f1fa53f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__assign-85b77ed069ec10e93202a8b03f1fa53f.png",
+  "bytes": 89311
+ },
+ {
+  "page": 65,
+  "src": "https://docs.loyjoy.com/assets/images/live_agent_switcher-32c6750436926e682a45c6f4fc7d2345.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/065__live_agent_switcher-32c6750436926e682a45c6f4fc7d2345.png",
+  "bytes": 145203
+ },
+ {
+  "page": 66,
+  "src": "https://docs.loyjoy.com/assets/images/live_archive-7bf0749301a9da3f13dede3727e01261.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/066__live_archive-7bf0749301a9da3f13dede3727e01261.png",
+  "bytes": 42391
+ },
+ {
+  "page": 67,
+  "src": "https://docs.loyjoy.com/assets/images/products_list-91734656468f0fe674a25f459c165939.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/067__products_list-91734656468f0fe674a25f459c165939.png",
+  "bytes": 33123
+ },
+ {
+  "page": 72,
+  "src": "https://docs.loyjoy.com/assets/images/sign_in-8255558b02105b98d40cc880384bc1e7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/072__sign_in-8255558b02105b98d40cc880384bc1e7.png",
+  "bytes": 300117
+ },
+ {
+  "page": 73,
+  "src": "https://docs.loyjoy.com/assets/images/manage-f85e6aee4398b3032e0b01ba605c1856.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/073__manage-f85e6aee4398b3032e0b01ba605c1856.png",
+  "bytes": 11875
+ },
+ {
+  "page": 73,
+  "src": "https://docs.loyjoy.com/assets/images/manage_tenant-fbdee3e1480d6298ed0bd1aec2062ead.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/073__manage_tenant-fbdee3e1480d6298ed0bd1aec2062ead.png",
+  "bytes": 30131
+ },
+ {
+  "page": 73,
+  "src": "https://docs.loyjoy.com/assets/images/tenant_security-8d8c762ea914d94c05ab0bf3de25dac0.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/073__tenant_security-8d8c762ea914d94c05ab0bf3de25dac0.png",
+  "bytes": 50865
+ },
+ {
+  "page": 75,
+  "src": "https://docs.loyjoy.com/assets/images/click_icon-16360fbbc4177bdeb5962f23faf5c0a7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/075__click_icon-16360fbbc4177bdeb5962f23faf5c0a7.png",
+  "bytes": 11527
+ },
+ {
+  "page": 75,
+  "src": "https://docs.loyjoy.com/assets/images/account-3f2baaed3b99af49d2ef19e1d570d2d7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/075__account-3f2baaed3b99af49d2ef19e1d570d2d7.png",
+  "bytes": 48794
+ },
+ {
+  "page": 75,
+  "src": "https://docs.loyjoy.com/assets/images/security_keys-350a1e6eb4fc0e43d9a2d592827bb441.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/075__security_keys-350a1e6eb4fc0e43d9a2d592827bb441.png",
+  "bytes": 45566
+ },
+ {
+  "page": 75,
+  "src": "https://docs.loyjoy.com/assets/images/security_keys2-099a44a923bb046d60d6b69b300a099d.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/075__security_keys2-099a44a923bb046d60d6b69b300a099d.png",
+  "bytes": 46772
+ },
+ {
+  "page": 76,
+  "src": "https://docs.loyjoy.com/assets/images/ValueProposition-8f7cf5113c8a78c1801255ad3a629e76.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/076__ValueProposition-8f7cf5113c8a78c1801255ad3a629e76.png",
+  "bytes": 345601
+ },
+ {
+  "page": 76,
+  "src": "https://docs.loyjoy.com/assets/images/shortButtons-c61bd3ff1dcc0ef0e15e2cf31585803c.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/076__shortButtons-c61bd3ff1dcc0ef0e15e2cf31585803c.png",
+  "bytes": 233359
+ },
+ {
+  "page": 78,
+  "src": "https://docs.loyjoy.com/assets/images/manage_alt_text-b9cecd3f30f505163c66fe8b037d2003.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/078__manage_alt_text-b9cecd3f30f505163c66fe8b037d2003.png",
+  "bytes": 455266
+ },
+ {
+  "page": 79,
+  "src": "https://docs.loyjoy.com/assets/images/magicfill-9749437b59327c8fd9cc2bfbcd8212ae.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/079__magicfill-9749437b59327c8fd9cc2bfbcd8212ae.gif",
+  "bytes": 87367
+ },
+ {
+  "page": 79,
+  "src": "https://docs.loyjoy.com/assets/images/useGPT-41bfbf1c15c03a8761594e367c91efeb.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/079__useGPT-41bfbf1c15c03a8761594e367c91efeb.png",
+  "bytes": 103376
+ },
+ {
+  "page": 79,
+  "src": "https://docs.loyjoy.com/assets/images/shortarticle-7136d95c5e1e134493d1743b5e9a1de9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/079__shortarticle-7136d95c5e1e134493d1743b5e9a1de9.png",
+  "bytes": 88011
+ },
+ {
+  "page": 80,
+  "src": "https://docs.loyjoy.com/assets/images/create_azure_ai-6a09a5e980bc1d86f900116cd21af4c9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/080__create_azure_ai-6a09a5e980bc1d86f900116cd21af4c9.png",
+  "bytes": 290874
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/create_azure_openai_basics-fdf067dbe83fa3d1d3a6415a0be3cb48.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__create_azure_openai_basics-fdf067dbe83fa3d1d3a6415a0be3cb48.png",
+  "bytes": 213018
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/create_azure_openai_submit-a5904f86dc1eeb4d202438903d79bde6.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__create_azure_openai_submit-a5904f86dc1eeb4d202438903d79bde6.png",
+  "bytes": 248067
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/create_azure_openai_deployment-00106e7a1cd8396a49836fb1668fdb8a.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__create_azure_openai_deployment-00106e7a1cd8396a49836fb1668fdb8a.png",
+  "bytes": 192653
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/azure_ai_foundry_deploy_models-4d7551843f099cd48f4676c4bbf6f314.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__azure_ai_foundry_deploy_models-4d7551843f099cd48f4676c4bbf6f314.png",
+  "bytes": 501787
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/azure_ai_foundry_create_content_filter-08947112a1145a0ba63f545b9151c30a.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__azure_ai_foundry_create_content_filter-08947112a1145a0ba63f545b9151c30a.png",
+  "bytes": 527074
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/azure_ai_foundry_input_filter-7c8418dbf2ec46a23766fef2e6df3191.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__azure_ai_foundry_input_filter-7c8418dbf2ec46a23766fef2e6df3191.png",
+  "bytes": 763314
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/azure_ai_foundry_output_filter-3ac74291e89c940b8ca297518b4b9488.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__azure_ai_foundry_output_filter-3ac74291e89c940b8ca297518b4b9488.png",
+  "bytes": 759334
+ },
+ {
+  "page": 81,
+  "src": "https://docs.loyjoy.com/assets/images/loyjoy_azure_settings-f011d21fa7b7dde1fa5bbe9fb4920184.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/081__loyjoy_azure_settings-f011d21fa7b7dde1fa5bbe9fb4920184.png",
+  "bytes": 163202
+ },
+ {
+  "page": 82,
+  "src": "https://docs.loyjoy.com/assets/images/facts-f48a9b8265f4ee65497e344ad0b50f60.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/082__facts-f48a9b8265f4ee65497e344ad0b50f60.png",
+  "bytes": 352997
+ },
+ {
+  "page": 82,
+  "src": "https://docs.loyjoy.com/assets/images/dimensions-ebd300040bebf1971ad7c2926b4a0378.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/082__dimensions-ebd300040bebf1971ad7c2926b4a0378.png",
+  "bytes": 373224
+ },
+ {
+  "page": 84,
+  "src": "https://docs.loyjoy.com/assets/images/Search-b245562444dd62e1e2be7dabef50fcd9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/084__Search-b245562444dd62e1e2be7dabef50fcd9.png",
+  "bytes": 158811
+ },
+ {
+  "page": 89,
+  "src": "https://docs.loyjoy.com/assets/images/csv_to_excel_tabs-15792cd87a1a26a827486d68da3abfad.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/089__csv_to_excel_tabs-15792cd87a1a26a827486d68da3abfad.png",
+  "bytes": 70423
+ },
+ {
+  "page": 89,
+  "src": "https://docs.loyjoy.com/assets/images/csv_to_excel-e8e2145b619473af355807ea710c96bb.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/089__csv_to_excel-e8e2145b619473af355807ea710c96bb.gif",
+  "bytes": 1455333
+ },
+ {
+  "page": 89,
+  "src": "https://docs.loyjoy.com/assets/images/csv_excel_1-8bafb25a4904f2a75ac490b36c40cea1.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/089__csv_excel_1-8bafb25a4904f2a75ac490b36c40cea1.png",
+  "bytes": 123326
+ },
+ {
+  "page": 89,
+  "src": "https://docs.loyjoy.com/assets/images/csv_excel_2-6cb87266c3e743462a589c9ab4f72060.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/089__csv_excel_2-6cb87266c3e743462a589c9ab4f72060.png",
+  "bytes": 141380
+ },
+ {
+  "page": 89,
+  "src": "https://docs.loyjoy.com/assets/images/csv_excel_3-2b293b7afd461656f62e694a611d09c1.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/089__csv_excel_3-2b293b7afd461656f62e694a611d09c1.png",
+  "bytes": 100732
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image3-6c219cde7ffeb70ed7124b6ca86f6bc5.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image3-6c219cde7ffeb70ed7124b6ca86f6bc5.png",
+  "bytes": 363797
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image9-9d98e2a966d70eac70534939e71d02c9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image9-9d98e2a966d70eac70534939e71d02c9.png",
+  "bytes": 241096
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image5-c35f2d7248bba59522fe13b9088e28f1.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image5-c35f2d7248bba59522fe13b9088e28f1.png",
+  "bytes": 277420
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image4-c429f844ea02fb3eb9fd7b5c686d44e5.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image4-c429f844ea02fb3eb9fd7b5c686d44e5.png",
+  "bytes": 470014
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image10-d5a5b2a4e0ee125a06e28638fe64943e.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image10-d5a5b2a4e0ee125a06e28638fe64943e.png",
+  "bytes": 471198
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image6-281f218443a59d495bac9da289e137d0.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image6-281f218443a59d495bac9da289e137d0.png",
+  "bytes": 350553
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image17-9d11fc19d9c48f29535cc0c18f1e81e5.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image17-9d11fc19d9c48f29535cc0c18f1e81e5.png",
+  "bytes": 393904
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image11-162d37521b132fe6bfc97e4a393b8d61.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image11-162d37521b132fe6bfc97e4a393b8d61.png",
+  "bytes": 342586
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image7-fcf4d82923a4b1024150cf7b9baa53cd.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image7-fcf4d82923a4b1024150cf7b9baa53cd.png",
+  "bytes": 427587
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image18-3221221dbc52824f5d342755d7712635.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image18-3221221dbc52824f5d342755d7712635.png",
+  "bytes": 347507
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image12-305d215fbde722d1bd132719bdaa0ee0.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image12-305d215fbde722d1bd132719bdaa0ee0.png",
+  "bytes": 108079
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image13-6eb58cac1c520d1aaea0f0ef36d350cf.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image13-6eb58cac1c520d1aaea0f0ef36d350cf.png",
+  "bytes": 174174
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image2-0764d7ca4341f5a0e4f7b8d49716f117.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image2-0764d7ca4341f5a0e4f7b8d49716f117.png",
+  "bytes": 408981
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image16-98ad1683d6bb1e5daa7d289b1a74e3ab.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image16-98ad1683d6bb1e5daa7d289b1a74e3ab.png",
+  "bytes": 178304
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image1-476b0e8a2799809a1a1dfa7654ba8b59.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image1-476b0e8a2799809a1a1dfa7654ba8b59.png",
+  "bytes": 135476
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image15-643c1bc0ed04eb3375a098b26f0a930f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image15-643c1bc0ed04eb3375a098b26f0a930f.png",
+  "bytes": 376596
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image14-a19cfbe91fb5e9f50f87f51070c734e0.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image14-a19cfbe91fb5e9f50f87f51070c734e0.png",
+  "bytes": 337756
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image8-383e8e2ae22c3cf87abfe8f3b70fa598.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image8-383e8e2ae22c3cf87abfe8f3b70fa598.png",
+  "bytes": 527558
+ },
+ {
+  "page": 92,
+  "src": "https://docs.loyjoy.com/assets/images/image19-ebabce9769669448a065022c11d88589.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/092__image19-ebabce9769669448a065022c11d88589.png",
+  "bytes": 515362
+ },
+ {
+  "page": 96,
+  "src": "https://docs.loyjoy.com/assets/images/location_param-767507ce2a8672437d8b60c13546f951.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/096__location_param-767507ce2a8672437d8b60c13546f951.png",
+  "bytes": 50621
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Homeviews-601e07f92ad8dc5090fdb3a43133b4fe.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Homeviews-601e07f92ad8dc5090fdb3a43133b4fe.png",
+  "bytes": 213656
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/body_one-913996e37189b5a296b7a77dc56be789.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__body_one-913996e37189b5a296b7a77dc56be789.png",
+  "bytes": 613798
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/body_two-4a41de21691a2e3834d6a578e01b6d90.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__body_two-4a41de21691a2e3834d6a578e01b6d90.png",
+  "bytes": 309622
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Add_widget-2a21e84bd9f6a1b896dccd505b2507ed.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Add_widget-2a21e84bd9f6a1b896dccd505b2507ed.gif",
+  "bytes": 33252
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Switch_widget-b06634f08fed66f82036b1ab1976be94.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Switch_widget-b06634f08fed66f82036b1ab1976be94.gif",
+  "bytes": 119869
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Hero_chat-14439d0ead978551849844c07e04b8b7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Hero_chat-14439d0ead978551849844c07e04b8b7.png",
+  "bytes": 652160
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Hero_widget-68ed1e02b3a20f44d9744277e6158432.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Hero_widget-68ed1e02b3a20f44d9744277e6158432.png",
+  "bytes": 602365
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/storieswid-6a2c6cdc7d13605b05109a23da339350.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__storieswid-6a2c6cdc7d13605b05109a23da339350.png",
+  "bytes": 106383
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Story-a2f4a4bdeab6f38e6f1e8aca85fd7504.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Story-a2f4a4bdeab6f38e6f1e8aca85fd7504.gif",
+  "bytes": 29079
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Story_settings-16068616e958e91d921f7525e2bc52d7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Story_settings-16068616e958e91d921f7525e2bc52d7.png",
+  "bytes": 56777
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Tags_story-67fe4c81d823086f6a7f99fe26aaea1e.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Tags_story-67fe4c81d823086f6a7f99fe26aaea1e.gif",
+  "bytes": 35105
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Story_tags-19dcbdab5f606c19b18cdfcc52f57420.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Story_tags-19dcbdab5f606c19b18cdfcc52f57420.png",
+  "bytes": 33443
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/groupswid-e34d53ec3110de5341af2b72c0dbbcc0.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__groupswid-e34d53ec3110de5341af2b72c0dbbcc0.png",
+  "bytes": 58537
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Groupsettings-8f34e0fc4f71882cc9bcc42b10ba4395.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Groupsettings-8f34e0fc4f71882cc9bcc42b10ba4395.png",
+  "bytes": 169870
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/groupset-6d66416ecc6a1999b6ece171357352b9.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__groupset-6d66416ecc6a1999b6ece171357352b9.png",
+  "bytes": 125588
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/card_yes-ad2641cad647b4384e245dea24fda0fd.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__card_yes-ad2641cad647b4384e245dea24fda0fd.png",
+  "bytes": 706732
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/card_no-b2324bdb43a9d5180c4b21234e7b3849.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__card_no-b2324bdb43a9d5180c4b21234e7b3849.png",
+  "bytes": 758534
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Add_Group-305b99c18c6374ab2fc84b6764c302d4.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Add_Group-305b99c18c6374ab2fc84b6764c302d4.png",
+  "bytes": 439802
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Group_Widget-5c8829172b18c0b69ef045ca23046126.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Group_Widget-5c8829172b18c0b69ef045ca23046126.png",
+  "bytes": 38978
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Grouptwo-dd22ce5f7d5a244ee8504898e14d8738.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Grouptwo-dd22ce5f7d5a244ee8504898e14d8738.png",
+  "bytes": 161626
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Groups-bc529f4c02f35844bc0b999723573931.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Groups-bc529f4c02f35844bc0b999723573931.png",
+  "bytes": 438755
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/notwid-e3a04fe18917697324367e498ec1acb3.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__notwid-e3a04fe18917697324367e498ec1acb3.png",
+  "bytes": 67810
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Roster-65b41f247d6c074368fa80e67aef8f25.gif",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Roster-65b41f247d6c074368fa80e67aef8f25.gif",
+  "bytes": 26829
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Search_Chat-5e20f7bded2f2542c9dffefca3eff720.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Search_Chat-5e20f7bded2f2542c9dffefca3eff720.png",
+  "bytes": 50064
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Search_Widget-b39df66e2393de8b80830f762f8990f3.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Search_Widget-b39df66e2393de8b80830f762f8990f3.png",
+  "bytes": 82129
+ },
+ {
+  "page": 99,
+  "src": "https://docs.loyjoy.com/assets/images/Web_component-334714a427035ea385edbfa51e47ba8c.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/099__Web_component-334714a427035ea385edbfa51e47ba8c.png",
+  "bytes": 72011
+ },
+ {
+  "page": 100,
+  "src": "https://docs.loyjoy.com/assets/images/download_step1-2bf82864a2cde3b68de6a0da1b58c96b.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/100__download_step1-2bf82864a2cde3b68de6a0da1b58c96b.png",
+  "bytes": 89683
+ },
+ {
+  "page": 100,
+  "src": "https://docs.loyjoy.com/assets/images/download_step2-648b30f8e6ac03cb40340ecced8a3aff.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/100__download_step2-648b30f8e6ac03cb40340ecced8a3aff.png",
+  "bytes": 481593
+ },
+ {
+  "page": 100,
+  "src": "https://docs.loyjoy.com/assets/images/download_step3-b49a4dfdc196fea4d2081a36ce1a3090.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/100__download_step3-b49a4dfdc196fea4d2081a36ce1a3090.png",
+  "bytes": 573143
+ },
+ {
+  "page": 100,
+  "src": "https://docs.loyjoy.com/assets/images/download_step4-865fe09323c1ea19e258d1fe67f99c88.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/100__download_step4-865fe09323c1ea19e258d1fe67f99c88.png",
+  "bytes": 366970
+ },
+ {
+  "page": 103,
+  "src": "https://docs.loyjoy.com/assets/images/claude-cowork-add-connector-a417a66cd5a53140abb34d512c3a2ae9.webp",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/103__claude-cowork-add-connector-a417a66cd5a53140abb34d512c3a2ae9.webp",
+  "bytes": 239798
+ },
+ {
+  "page": 103,
+  "src": "https://docs.loyjoy.com/assets/images/claude-cowork-after-login-9429bc24622ba5c9f22b2503486cdaa7.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/103__claude-cowork-after-login-9429bc24622ba5c9f22b2503486cdaa7.png",
+  "bytes": 73147
+ },
+ {
+  "page": 103,
+  "src": "https://docs.loyjoy.com/assets/images/edit-with-claude-433f306efb5724b539a9f54bdd18f577.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/103__edit-with-claude-433f306efb5724b539a9f54bdd18f577.png",
+  "bytes": 55201
+ },
+ {
+  "page": 104,
+  "src": "https://docs.loyjoy.com/assets/images/sharepoint_embed-5ab605c778399497f25551d677c5e22d.jpg",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/104__sharepoint_embed-5ab605c778399497f25551d677c5e22d.jpg",
+  "bytes": 76039
+ },
+ {
+  "page": 105,
+  "src": "https://docs.loyjoy.com/assets/images/acc1-8427b4566d4fa43c9d14ef94751d18b4.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/105__acc1-8427b4566d4fa43c9d14ef94751d18b4.png",
+  "bytes": 11532
+ },
+ {
+  "page": 105,
+  "src": "https://docs.loyjoy.com/assets/images/security_keys3-b0866fc69c72da4ac68bb5bdce42547b.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/105__security_keys3-b0866fc69c72da4ac68bb5bdce42547b.png",
+  "bytes": 33196
+ },
+ {
+  "page": 105,
+  "src": "https://docs.loyjoy.com/assets/images/security_keys4-4029a8930935ec4dd025368b7ca3da12.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/105__security_keys4-4029a8930935ec4dd025368b7ca3da12.png",
+  "bytes": 87739
+ },
+ {
+  "page": 105,
+  "src": "https://docs.loyjoy.com/assets/images/security_keys5-34b16cbba543a975573427a6103e9817.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/105__security_keys5-34b16cbba543a975573427a6103e9817.png",
+  "bytes": 295124
+ },
+ {
+  "page": 107,
+  "src": "https://docs.loyjoy.com/assets/images/pause-93601f9aba69a8f7baba7180ec78335f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/107__pause-93601f9aba69a8f7baba7180ec78335f.png",
+  "bytes": 51886
+ },
+ {
+  "page": 107,
+  "src": "https://docs.loyjoy.com/assets/images/paused-ded084a1c7681c17d239396d78a7c2f8.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/107__paused-ded084a1c7681c17d239396d78a7c2f8.png",
+  "bytes": 21215
+ },
+ {
+  "page": 108,
+  "src": "https://docs.loyjoy.com/assets/images/voice_intro-26294708cd11b400b1b7cad9a4916fa6.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/108__voice_intro-26294708cd11b400b1b7cad9a4916fa6.png",
+  "bytes": 55512
+ },
+ {
+  "page": 108,
+  "src": "https://docs.loyjoy.com/assets/images/browser_test-5742150f7ac91803c92b2b3e0ae13b29.webp",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/108__browser_test-5742150f7ac91803c92b2b3e0ae13b29.webp",
+  "bytes": 192670
+ },
+ {
+  "page": 109,
+  "src": "https://docs.loyjoy.com/assets/images/rag_loyjoy-dbc4628859edae2fc2b994396f278599.jpg",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/109__rag_loyjoy-dbc4628859edae2fc2b994396f278599.jpg",
+  "bytes": 72749
+ },
+ {
+  "page": 109,
+  "src": "https://docs.loyjoy.com/assets/images/knowledge_loyjoy_screenshot-d9ed79a2fe9496eedad841d1a95b95d8.jpg",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/109__knowledge_loyjoy_screenshot-d9ed79a2fe9496eedad841d1a95b95d8.jpg",
+  "bytes": 95233
+ },
+ {
+  "page": 110,
+  "src": "https://docs.loyjoy.com/assets/images/add_secret-461cb5b93011afedfcaabe4bb94aa795.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/110__add_secret-461cb5b93011afedfcaabe4bb94aa795.png",
+  "bytes": 40732
+ },
+ {
+  "page": 110,
+  "src": "https://docs.loyjoy.com/assets/images/paste_secret-701c6178d2c63cde3661179a62713cd3.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/110__paste_secret-701c6178d2c63cde3661179a62713cd3.png",
+  "bytes": 141952
+ },
+ {
+  "page": 111,
+  "src": "https://docs.loyjoy.com/assets/images/connect_identity_provider-470ff5ff00ece0d7cc4471fc1f17fefd.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/111__connect_identity_provider-470ff5ff00ece0d7cc4471fc1f17fefd.png",
+  "bytes": 99303
+ },
+ {
+  "page": 112,
+  "src": "https://docs.loyjoy.com/assets/images/email_icon-1a1f5649ad05c12b2f5ceb0da0b6dbdf.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/112__email_icon-1a1f5649ad05c12b2f5ceb0da0b6dbdf.png",
+  "bytes": 29071
+ },
+ {
+  "page": 113,
+  "src": "https://docs.loyjoy.com/assets/images/manage-2281d9cf516cbc37f4d14e9a1c7602d3.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/113__manage-2281d9cf516cbc37f4d14e9a1c7602d3.png",
+  "bytes": 10457
+ },
+ {
+  "page": 113,
+  "src": "https://docs.loyjoy.com/assets/images/LoyJoy_Plan-f852308889c41c9fb86c828579e0db92.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/113__LoyJoy_Plan-f852308889c41c9fb86c828579e0db92.png",
+  "bytes": 39191
+ },
+ {
+  "page": 113,
+  "src": "https://docs.loyjoy.com/assets/images/book_plan-a0dd0159b938ca399d1f3505ca9efe9a.jpeg",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/113__book_plan-a0dd0159b938ca399d1f3505ca9efe9a.jpeg",
+  "bytes": 95327
+ },
+ {
+  "page": 113,
+  "src": "https://docs.loyjoy.com/assets/images/stripe-107422a1fe7bff4f6f35e1a264e3b5d2.jpeg",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/113__stripe-107422a1fe7bff4f6f35e1a264e3b5d2.jpeg",
+  "bytes": 75216
+ },
+ {
+  "page": 117,
+  "src": "https://docs.loyjoy.com/assets/images/did_agent_id_setting-37097a0d96f6383c672219ddba3212c3.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/117__did_agent_id_setting-37097a0d96f6383c672219ddba3212c3.png",
+  "bytes": 105316
+ },
+ {
+  "page": 119,
+  "src": "https://docs.loyjoy.com/assets/images/get_template-08162fb0199a84be87ac6117be4fbd9f.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/119__get_template-08162fb0199a84be87ac6117be4fbd9f.png",
+  "bytes": 144738
+ },
+ {
+  "page": 119,
+  "src": "https://docs.loyjoy.com/assets/images/see_template-1cf3f8e51987e9b9802ce48e18208d4a.png",
+  "file": "ledgers/loyjoy.raw/rest_imgs2/119__see_template-1cf3f8e51987e9b9802ce48e18208d4a.png",
+  "bytes": 826300
+ }
+]

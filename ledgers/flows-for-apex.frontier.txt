@@ -1,0 +1,369 @@
+# frontier: flows-for-apex  (surfaces: flowsforapex.org docs, GitHub repo, flowquest.net, blog.flowquest.net)
+# surface A - flowsforapex.org/latest/*  (88)
+https://flowsforapex.org/latest/getting-started/
+https://flowsforapex.org/latest/boundary-events/
+https://flowsforapex.org/latest/myTestFile/
+https://flowsforapex.org/latest/installation/
+https://flowsforapex.org/latest/installation_261/
+https://flowsforapex.org/latest/migration/
+https://flowsforapex.org/latest/deinstallation/
+https://flowsforapex.org/latest/application-step-key-migration/
+https://flowsforapex.org/latest/apex-upgrade/
+https://flowsforapex.org/latest/getting-started2/
+https://flowsforapex.org/latest/getting-started-flows-app/
+https://flowsforapex.org/latest/first-workflow/
+https://flowsforapex.org/latest/starter-workshop/
+https://flowsforapex.org/latest/starter-workshop-code/
+https://flowsforapex.org/latest/bpmn/
+https://flowsforapex.org/latest/bpmn-activities/
+https://flowsforapex.org/latest/tasks/
+https://flowsforapex.org/latest/apex-page-task/
+https://flowsforapex.org/latest/apex-human-task/
+https://flowsforapex.org/latest/apex-simple-form/
+https://flowsforapex.org/latest/task-reservation/
+https://flowsforapex.org/latest/script-task/
+https://flowsforapex.org/latest/ai-service-task/
+https://flowsforapex.org/latest/subprocesses/
+https://flowsforapex.org/latest/adhoc-subprocesses/
+https://flowsforapex.org/latest/callActivities/
+https://flowsforapex.org/latest/iteration-loop-intro/
+https://flowsforapex.org/latest/gateways/
+https://flowsforapex.org/latest/bpmn-events/
+https://flowsforapex.org/latest/start-and-stop-events/
+https://flowsforapex.org/latest/none-events/
+https://flowsforapex.org/latest/timer-events/
+https://flowsforapex.org/latest/error-events/
+https://flowsforapex.org/latest/escalation-events/
+https://flowsforapex.org/latest/message-events/
+https://flowsforapex.org/latest/terminate-events/
+https://flowsforapex.org/latest/link-events/
+https://flowsforapex.org/latest/collaborations-processes-lanes/
+https://flowsforapex.org/latest/config-participant-and-process/
+https://flowsforapex.org/latest/config-lanes/
+https://flowsforapex.org/latest/supported-bpmn/
+https://flowsforapex.org/latest/apex-extensions-guide/
+https://flowsforapex.org/latest/bpmn-tutorials/
+https://flowsforapex.org/latest/apex-extensions-catalog/
+https://flowsforapex.org/latest/bpmn-tutorials-upgraders/
+https://flowsforapex.org/latest/concepts-and-features/
+https://flowsforapex.org/latest/about-subflows/
+https://flowsforapex.org/latest/logging-philosophy-and-lifecycle/
+https://flowsforapex.org/latest/transaction-model/
+https://flowsforapex.org/latest/process-variable/
+https://flowsforapex.org/latest/variable-expression/
+https://flowsforapex.org/latest/task-parameters/
+https://flowsforapex.org/latest/variable-scoping/
+https://flowsforapex.org/latest/input-parameter-layout-guide/
+https://flowsforapex.org/latest/messageflow-intro/
+https://flowsforapex.org/latest/about-messageflow/
+https://flowsforapex.org/latest/async-tasks-and-background-execution/
+https://flowsforapex.org/latest/iteration-loop-concepts/
+https://flowsforapex.org/latest/model-versioning/
+https://flowsforapex.org/latest/adhoc-subprocess-concepts/
+https://flowsforapex.org/latest/ai-driven-adhoc-subprocesses/
+https://flowsforapex.org/latest/timestamps-and-timezones/
+https://flowsforapex.org/latest/how-tos/
+https://flowsforapex.org/latest/apex-task-list/
+https://flowsforapex.org/latest/get-component-group/
+https://flowsforapex.org/latest/add-process-viewer/
+https://flowsforapex.org/latest/first-step/
+https://flowsforapex.org/latest/using-ce-messageflow/
+https://flowsforapex.org/latest/messageflow-messages/
+https://flowsforapex.org/latest/complex-approvals/
+https://flowsforapex.org/latest/using-lanes-for-assignment/
+https://flowsforapex.org/latest/using-manual-adhoc-subprocesses/
+https://flowsforapex.org/latest/admin-guide/
+https://flowsforapex.org/latest/event-logging-and-auditing/
+https://flowsforapex.org/latest/managing-instance-logging/
+https://flowsforapex.org/latest/about-timer-execution/
+https://flowsforapex.org/latest/configuration/
+https://flowsforapex.org/latest/suspend-resume/
+https://flowsforapex.org/latest/rewind/
+https://flowsforapex.org/latest/instance-archiving-purging/
+https://flowsforapex.org/latest/apis/
+https://flowsforapex.org/latest/api/
+https://flowsforapex.org/latest/admin-api/
+https://flowsforapex.org/latest/procvar-api/
+https://flowsforapex.org/latest/flow-globals-api/
+https://flowsforapex.org/latest/rest-api/
+https://flowsforapex.org/latest/apex-plugins/
+https://flowsforapex.org/latest/faq/
+# surface B - flowsforapex.org archived (v5.1.2..v25.1) whose path is ABSENT from latest  (24)
+https://flowsforapex.org/v21.1/tutorials/
+https://flowsforapex.org/v21.1/pool-and-lanes/
+https://flowsforapex.org/v21.1/plugins/
+https://flowsforapex.org/v22.1/tutorials/
+https://flowsforapex.org/v22.1/timer-syntax/
+https://flowsforapex.org/v22.1/pool-and-lanes/
+https://flowsforapex.org/v22.1/plugins/
+https://flowsforapex.org/v22.2/tutorials/
+https://flowsforapex.org/v22.2/timer-syntax/
+https://flowsforapex.org/v22.2/pool-and-lanes/
+https://flowsforapex.org/v22.2/plugins/
+https://flowsforapex.org/v23.1/tutorials/
+https://flowsforapex.org/v23.1/timer-syntax/
+https://flowsforapex.org/v23.1/pool-and-lanes/
+https://flowsforapex.org/v23.1/usertask-settings/
+https://flowsforapex.org/v23.1/tasklists/
+https://flowsforapex.org/v23.1/plugins/
+https://flowsforapex.org/v24.1/tutorials/
+https://flowsforapex.org/v24.1/timer-syntax/
+https://flowsforapex.org/v24.1/pool-and-lanes/
+https://flowsforapex.org/v24.1/usertask-settings/
+https://flowsforapex.org/v24.1/plugins/
+https://flowsforapex.org/v25.1/installation_251/
+https://flowsforapex.org/v5.1.2/tutorials/
+# surface C - flowsforapex.org top-level incl. posts/* and Flows4APEX*Features  (25)
+https://flowsforapex.org/posts/release21.1/
+https://flowsforapex.org/posts/release22.2/
+https://flowsforapex.org/posts/release23.1/
+https://flowsforapex.org/posts/release24.1/
+https://flowsforapex.org/posts/release24.1ee/
+https://flowsforapex.org/posts/release25.1/
+https://flowsforapex.org/Flows4APEX231Features/
+https://flowsforapex.org/Flows4APEX241Features/
+https://flowsforapex.org/Flows4APEX251Features/
+https://flowsforapex.org/Flows4APEX261Features/
+https://flowsforapex.org/Flows4APEXFeatures/
+https://flowsforapex.org/blog/
+https://flowsforapex.org/bpmn-modeling-foundation/
+https://flowsforapex.org/categories/
+https://flowsforapex.org/deployment-global-support/
+https://flowsforapex.org/documentation/
+https://flowsforapex.org/flow-designer-modeling/
+https://flowsforapex.org/flow-monitor-execution/
+https://flowsforapex.org/
+https://flowsforapex.org/integration-api-connectivity/
+https://flowsforapex.org/monitoring-audit-operations/
+https://flowsforapex.org/resources/
+https://flowsforapex.org/tags/
+https://flowsforapex.org/team/
+https://flowsforapex.org/posts/
+# surface D - github.com/flowsforapex/apex-flowsforapex .bpmn files on default branch 'development'  (174)
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/DevelopmentFlow.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/Holidays.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/IncidentManagement.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/OrderFulfillmentAndProcurement.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/ShipmentProcess.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/SubflowsSmoketest.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/ThePizzaCollaboration.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_examples/xml/TimerExample.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 1  - Getting Started_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 2a - Basic Navigation with Gateways_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 2b - Parallel Gateways_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 2c - Inclusive Gateways_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 2d - Making your process pause_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 3a - Setting Process Variables from your Model_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 3b - Substitution and Bind Syntax_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 4a - Tasks Get Your Work Done!_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 4b - Reminders and Timeouts_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 4c - Task Priority and Due Dates_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 4d - Using an AI Service Task_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 5a - Structure your Process with Sub Processes and Calls_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 5b - Introducing Sub Processes_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 5c - Handling Sub Process Error and Escalation Events_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 5d - Using CallActivities to call another diagram_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 5e - ship Goods (Called by Tutorial 5d)_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 5f - Making a Diagram Callable_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 6a - Collaborations, Lanes and Reservations_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 6b - Lanes and More Lanes_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 6c - User Assignment - Putting it all together_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 7a - MessageFlow Basics_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 7b - Process Collaboration and MessageFlow Example (EE)_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 7e - Introduction to Iterations and Tasks_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 7f - Iterations and Looped Sub Processes_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 7g - Iterations and Looped Nested Sub Processes_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 8a - The Full Monty (the top half!)_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/bpmn_tutorials/xml/Tutorial 8c - Background Session Configuration_25.1.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/doc/bug-861.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testErrorSubProcBoundaryEventsTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testIntEscallationSubProcBoundaryEventsTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testIntTimerBoundaryEventTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testIntTimerSubProcessBoundaryEventTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testNonIntEscallationSubProcBoundaryEventsTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testNonIntTimerBoundaryEventTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/boundaryEvents/models/testNonIntTimerSubProcBoundaryEventTxErrors.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/endEvents/models/testEndEventErrorsAndTransactions.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/expressions/models/TestPrePostTaskTriggers.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/expressions/models/TestSubProcAndEndEventExprTriggers.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/expressions/models/testErrorHandlingAndRestartInStepPhases.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/expressions/models/testExpressionTypesAndDataTypes.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/expressions/models/testFlowGlobalsinVarExps.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/expressions/models/testVarExpressionsSettersInsertThenUpdate.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/link-events/models/testLinkEvents.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/tasks/models/testScriptTaskErrorAndStopEngineModel.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/timers/testScriptISO8601formatTimerTests.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/timers/testScriptRepeatingOracleTimerTests.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/legacy/timers/testScriptVarsSetByVarExps.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A01 - Basic Model_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A020a - Diagram Startability - Static_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A020b - Diagram Startability - SQLSingle_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A020c - Diagram Startability - SQLMulti_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A020d - Diagram Startability - Expression_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A020e- Diagram Startability - FuncBody_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02a - Exclusive Gateway No Route_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02b - Exclusive Gateway Default Route_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02c - Exclusive Gateway Routing_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02d - Inclusive Gateway No Route_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02e - Inclusive Gateway Default Route_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02f - Inclusive Gateway Routing_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02g - Parallel Gateway_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02h - Event Based Gateway_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02i - Inc GW Merge and Resplit_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02j - Par GW Merge and Resplit_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A02k - Inc GW Merge and Resplit - GRExps_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03a - Model with No Start Event_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03b - Model with multiple Start Events_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03c - Model with one good Start Event_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03d - Model with one start event of bad type_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03e - Model with one start event with good timer_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03f - Model with one start event with bad timer definition_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03g - Model with one start event with bad on-event var exp_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A03h - Model with one start event with bad before-event var exp_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A04a - Basic Model_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A05a - Engine - Terminations_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A05b - Engine - Bad Links_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A05c - Engine - ICE Types_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A05d - Engine - Repeating Timer BE_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A06a - Lanes and Assignment - Child Lanesets_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A06b - Lanes and Assignment - Roles from Lanes_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A06c - Lanes and Assignment - Lanes with SubProcs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A06d - Lanes and Assignment - No Lanes_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A06e - Lanes and Assignment - No Lanes calls Laned Dgrm_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A06f - Lanes and Assignment - Lanes calling Dgrm_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A07a - Process Variable API - Main_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A07b - Process Variable API - Called Diagram_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08a - SubProc - No Start_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08b - SubProc - Two Starts_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08c - SubProc - Two Int Timer BEs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08d - SubProc - Two Int Error BEs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08e - SubProc - Two Int Esc BEs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08f - SubProc - Int plus Non Int Esc BEs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A08g - SubProc - Int Timer with nested SubProc_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09p - Recursive Chain PQP Top_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09q - Recursive Chain PQP Bottom_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09r - Recursive Chain RSTR Top_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09s - Recursive Chain RSTR Middle_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09t - Recursive Chain RSTR Bottom_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09u - Calling non-callable diagram_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09v - Called Non-Callable Model_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A09w - Self Calling_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A10 - Variable Expressions Types_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A11a - Variable Exp Types with CallActivity_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A11b - Variable Exp Types with CallActivity_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A12a - Boundary Events with Call Activities_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A12b - Called Activity with 10 Second Delay_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A12c - Called Activity with 2 Second Delay_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A13a - Escalation BEs with Call Activities_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A13b - Called Activity with Escalation End_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A13c - Called Activity with Escalation ITE_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A14a - Error BEs with Call Activities_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A14b - Called Activity with Error End_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A14c - Called Activity with Normal End_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A14d - Called Activity with Terminate End_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A15a - Single Diagram Lanes with SubProcs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A15b - Single Diagram with No Lanes_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A15c - Calling Diagram noLanes calls Diagram with Lanes_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A15d - Calling Diagram with Lanes_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A16a - Inc Gateway Tx Boundaries_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A17a - Exc GW Errors and Restarts_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18a - GW Routing Exps - basic exprs_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18b - GW Routing Exps - basic func bodies_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18c - Inclusive GW AB C is Def no Condition_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18d - Inclusive GW AB C is Def has Condition_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18e - Inclusive GW AB C no Condition no def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18f - Inclusive GW ABC Condition no Def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18g - Inclusive GW ABC No Conds No Def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18h - Exclusive GW AB Cond C no Cond no def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18i - Exclusive GW AB C def has cond_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18j - Exclusive GW AB C no cond no def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18k - Exclusive GW ABC Conds No def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A18l - Exclusive GW ABC No Conds No Def_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19a - Priority and Due Dates_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19b - Priority and Due Dates - Scheduler_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19c - Priority and Due Dates - Interval_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19d - Priority and Due Dates - Proc Var_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19e - Priority and Due Dates - SQL_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19f - Priority and Due Dates - Expressions_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A19g - Priority and Due Dates - Func Bodies_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A20a - Diagram Startability - Static_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A20b - Diagram Startability - SQLSingle_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A20c - Diagram Startability - SQLMulti_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A20d - Diagram Startability - Expression_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A20e - Diagram Startability - FuncBody_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21a - Messageflow - basics_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21b - Messageflow - basics - no payload_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21c - Messageflow - bad endpoint_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21d - Messageflow - basics - Collaboration_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21e - MessageFlow basics - Subscription Cancellation_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21f - Basic Messageflow - EBG_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A21g - Basic Messageflow - Timer BE on ReceiveTask_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A22a - UserTask - Settings Substitution_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A22b - Other Task Types_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A23a - Custom Extensions_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A23b - Custom Extensions - In Lanesets_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A24a - Approval Component - Basic Operation_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A24b - Approval Task - Task Cancelation_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A24c - APEX Human Task Ownership and Cancellation_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A24d - APEX Human Task - Cancellation - New Plugin_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A25a - Script Task Proc Var Binding and Substitution_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A25b - Script Task Exception handling_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A25c - Script Task Parameters API Coverage_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A26a - Association to SequenceFlow_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A27a - Variable Expression Errors_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A90a - Basic AI Model_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A90b - Basic AI Model with Variables_0.bpmn
+https://raw.githubusercontent.com/flowsforapex/apex-flowsforapex/development/test/models/bpmn/A90c - AI Gateway Routing Model_0.bpmn
+# surface E - flowquest.net  (38)
+https://flowquest.net/posts/release21.1/
+https://flowquest.net/posts/release22.2/
+https://flowquest.net/posts/release23.1/
+https://flowquest.net/posts/release24.1/
+https://flowquest.net/posts/F4Afutures/
+https://flowquest.net/posts/genai-helps-bpmn/
+https://flowquest.net/posts/release25.1/
+https://flowquest.net/posts/release26.1/
+https://flowquest.net/Flows4APEX231Features/
+https://flowquest.net/Flows4APEX241Features/
+https://flowquest.net/Flows4APEX251Features/
+https://flowquest.net/Flows4APEX261Features-old/
+https://flowquest.net/Flows4APEX261Features/
+https://flowquest.net/flows4apex/
+https://flowquest.net/about
+https://flowquest.net/about-adhoc-subprocesses/
+https://flowquest.net/adhoc-subprocesses-ai-agents/
+https://flowquest.net/adhoc-subprocesses-basics/
+https://flowquest.net/blog/
+https://flowquest.net/bpmn-modeling-foundation/
+https://flowquest.net/categories/
+https://flowquest.net/customer-portal/
+https://flowquest.net/documentation/
+https://flowquest.net/
+https://flowquest.net/human-tasks-user-experience/
+https://flowquest.net/install-doc-ee-241/
+https://flowquest.net/install-doc-ee-251/
+https://flowquest.net/install-doc-ee-261/
+https://flowquest.net/integration-api-connectivity/
+https://flowquest.net/monitoring-audit-operations/
+https://flowquest.net/news
+https://flowquest.net/old-enterprise-edition
+https://flowquest.net/releases
+https://flowquest.net/resources/
+https://flowquest.net/runtime-execution-control/
+https://flowquest.net/tags/
+https://flowquest.net/team/
+https://flowquest.net/posts/
+# surface F - blog.flowquest.net  (13)
+https://blog.flowquest.net
+https://blog.flowquest.net/schema-annotations-with-database-19c
+https://blog.flowquest.net/announcing-flows-for-apex-v26-1
+https://blog.flowquest.net/flows-for-apex-v251-working-even-better-with-apex-human-tasks
+https://blog.flowquest.net/flows-for-apex-statement-of-direction-june-2025
+https://blog.flowquest.net/flows-for-apex-setting-process-variables-from-a-plsql-script-task
+https://blog.flowquest.net/genai-can-help-you-with-bpmn
+https://blog.flowquest.net/the-future-of-flows-for-apex
+https://blog.flowquest.net/flows-for-apex-v241-release-announcement
+https://blog.flowquest.net/series/about-261
+https://blog.flowquest.net/series/database
+https://blog.flowquest.net/archive
+https://blog.flowquest.net/recommendations
