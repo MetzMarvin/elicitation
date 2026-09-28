@@ -1,461 +1,621 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="385673f" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="3e2c2cfc-8109-4414-8bee-9a99d44dc13a">
-  <bpmn:process id="Process_songRequest" name="Song Request" isExecutable="true">
-    <bpmn:extensionElements>
-      <zeebe:userTaskForm id="userTaskForm_10je4nr">{
-  "components": [
-    {
-      "label": "Artist",
-      "type": "textfield",
-      "id": "Field_17dwxcl",
-      "key": "field_artist",
-      "disabled": true
-    },
-    {
-      "label": "Song Title",
-      "type": "textfield",
-      "id": "Field_1iecv4m",
-      "key": "field_songTitle",
-      "disabled": true
-    },
-    {
-      "label": "Song Lyrics",
-      "type": "textarea",
-      "id": "Field_0donx7e",
-      "key": "field_songLyrics",
-      "disabled": true
-    },
-    {
-      "values": [
-        {
-          "label": "Yes, this song would be great!",
-          "value": "YES"
-        },
-        {
-          "label": "No, this song isn't appropriate",
-          "value": "NO"
-        }
-      ],
-      "label": "Approve Song?",
-      "type": "select",
-      "id": "Field_1ba0saf",
-      "key": "field_approveSong",
-      "description": "What do you think? Would this song be good for this event?",
-      "defaultValue": "approve"
-    }
-  ],
-  "schemaVersion": 7,
-  "exporter": {
-    "name": "Camunda Web Modeler",
-    "version": "47aa12c"
-  },
-  "type": "default",
-  "id": "Form_9a55c233-d636-4df1-babf-1b6da92af9c1",
-  "executionPlatform": "Camunda Cloud",
-  "executionPlatformVersion": "8.2.0"
-}</zeebe:userTaskForm>
-    </bpmn:extensionElements>
-    <bpmn:sequenceFlow id="Flow_1fptfsv" sourceRef="StartEvent_1" targetRef="Activity_1efnhia" />
-    <bpmn:serviceTask id="Activity_1efnhia" name="Ask for Song Request via Email" zeebe:modelerTemplate="io.camunda.connectors.SendGrid.v2" zeebe:modelerTemplateIcon="data:image/svg+xml;utf8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%2015.6846L5.43837%2015.6844V15.7143H0.285706V15.6846ZM0.285706%2010.5619H5.43837V15.6844L0.285706%2015.6846V10.5619Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%200.285706H10.5611V5.40847H5.43837V0.285706ZM10.5616%205.43837H15.7143V10.5611H10.5616V5.43837Z%22%20fill%3D%22%2300B3E3%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V5.40847H5.43837V10.5611Z%22%20fill%3D%22%23009DD9%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%200.285706H15.7143V5.40847H10.5611V0.285706Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%205.40847H15.7143V5.43837H10.5616L10.5611%205.40847Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3C%2Fsvg%3E">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="io.camunda:sendgrid:1" />
-        <zeebe:ioMapping>
-          <zeebe:input source="secrets.SENDGRID_API_KEY" target="apiKey" />
-          <zeebe:input source="David Paroulek" target="from.name" />
-          <zeebe:input source="david.paroulek@camunda.com" target="from.email" />
-          <zeebe:input source="=person.name" target="to.name" />
-          <zeebe:input source="= person.email" target="to.email" />
-          <zeebe:input source="byTemplate" target="unMappedFieldNotUseInModel.mailType" />
-          <zeebe:input source="d-647678a0f9a8493695b54d8e04341750" target="template.id" />
-          <zeebe:input source="={&#10;  &#34;message&#34;: &#34;Hi, &#34; + person.name + &#34;! I&#39;m collecting song requests for the upcoming &#34; + eventType + &#34;. Want to make a song request? If so, click below and fill out the form, thanks!&#34;,&#10;  &#34;name&#34;: person.name,&#10;  &#34;formUrl&#34;: if is defined(google.form.url) then google.form.url else &#34;https://docs.google.com/forms/d/e/1FAIpQLSdA11QjZGguCtKnaEpssxt7lsgGv42D_Z22qEQ3jqInQ58PHw/viewform?usp=pp_url&#38;entry.1440689558=&#34;+person.email&#10;}" target="template.data" />
-        </zeebe:ioMapping>
-        <zeebe:taskHeaders />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1fptfsv</bpmn:incoming>
-      <bpmn:incoming>Flow_02wvxue</bpmn:incoming>
-      <bpmn:outgoing>Flow_1oxifje</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_18q1yaj" sourceRef="Event_0t5u3bb" targetRef="Activity_analyzeSongRequest" />
-    <bpmn:intermediateCatchEvent id="Event_0t5u3bb" name="Form Submitted">
-      <bpmn:extensionElements>
-        <zeebe:ioMapping>
-          <zeebe:output source="=(formData.itemResponses[title = &#34;Artist&#34;])[1].answer" target="song.artist" />
-          <zeebe:output source="=(formData.itemResponses[title = &#34;Song Title&#34;])[1].answer" target="song.title" />
-        </zeebe:ioMapping>
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1ebaflo</bpmn:incoming>
-      <bpmn:outgoing>Flow_18q1yaj</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_0rg82gl" messageRef="Message_0hujtgf" />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:intermediateCatchEvent id="Event_0xc3wbw" name="Wait to send reminder">
-      <bpmn:incoming>Flow_00xidjq</bpmn:incoming>
-      <bpmn:outgoing>Flow_02wvxue</bpmn:outgoing>
-      <bpmn:timerEventDefinition id="TimerEventDefinition_1nl8jig">
-        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">P3D</bpmn:timeDuration>
-      </bpmn:timerEventDefinition>
-    </bpmn:intermediateCatchEvent>
-    <bpmn:sequenceFlow id="Flow_02wvxue" sourceRef="Event_0xc3wbw" targetRef="Activity_1efnhia" />
-    <bpmn:endEvent id="Event_04rxyr5">
-      <bpmn:incoming>Flow_1srmgez</bpmn:incoming>
-      <bpmn:incoming>Flow_0wbvocd</bpmn:incoming>
-    </bpmn:endEvent>
-    <bpmn:startEvent id="StartEvent_1" name="Create Instance">
-      <bpmn:extensionElements>
-        <zeebe:ioMapping>
-          <zeebe:output source="=if is defined(person.name) &#10;then person.name &#10;else &#34;Dave&#34;" target="person.name" />
-          <zeebe:output source="=if is defined(person.email) &#10;then person.email &#10;else &#34;david.paroulek@camunda.com&#34;" target="person.email" />
-          <zeebe:output source="=&#34;wedding&#34;" target="eventType" />
-        </zeebe:ioMapping>
-      </bpmn:extensionElements>
-      <bpmn:outgoing>Flow_1fptfsv</bpmn:outgoing>
-    </bpmn:startEvent>
-    <bpmn:eventBasedGateway id="Gateway_1sqtjfv">
-      <bpmn:incoming>Flow_1oxifje</bpmn:incoming>
-      <bpmn:outgoing>Flow_00xidjq</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1ebaflo</bpmn:outgoing>
-    </bpmn:eventBasedGateway>
-    <bpmn:sequenceFlow id="Flow_00xidjq" sourceRef="Gateway_1sqtjfv" targetRef="Event_0xc3wbw" />
-    <bpmn:sequenceFlow id="Flow_1oxifje" sourceRef="Activity_1efnhia" targetRef="Gateway_1sqtjfv" />
-    <bpmn:sequenceFlow id="Flow_1ebaflo" sourceRef="Gateway_1sqtjfv" targetRef="Event_0t5u3bb" />
-    <bpmn:sequenceFlow id="Flow_08o2aet" sourceRef="Activity_analyzeSongRequest" targetRef="Gateway_1voduht" />
-    <bpmn:exclusiveGateway id="Gateway_1voduht" name="Is this song appropriate?" default="Flow_0w1px0x">
-      <bpmn:incoming>Flow_0ji8kku</bpmn:incoming>
-      <bpmn:incoming>Flow_08o2aet</bpmn:incoming>
-      <bpmn:outgoing>Flow_0k3qziv</bpmn:outgoing>
-      <bpmn:outgoing>Flow_12xluzz</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0w1px0x</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_0k3qziv" name="Yes" sourceRef="Gateway_1voduht" targetRef="Activity_0x5mude">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=appropriate = "YES"</bpmn:conditionExpression>
-    </bpmn:sequenceFlow>
-    <bpmn:sequenceFlow id="Flow_1srmgez" sourceRef="Activity_0x5mude" targetRef="Event_04rxyr5" />
-    <bpmn:serviceTask id="Activity_0x5mude" name="Notify Song Request Accepted!" zeebe:modelerTemplate="io.camunda.connectors.SendGrid.v2" zeebe:modelerTemplateIcon="data:image/svg+xml;utf8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%2015.6846L5.43837%2015.6844V15.7143H0.285706V15.6846ZM0.285706%2010.5619H5.43837V15.6844L0.285706%2015.6846V10.5619Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%200.285706H10.5611V5.40847H5.43837V0.285706ZM10.5616%205.43837H15.7143V10.5611H10.5616V5.43837Z%22%20fill%3D%22%2300B3E3%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V5.40847H5.43837V10.5611Z%22%20fill%3D%22%23009DD9%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%200.285706H15.7143V5.40847H10.5611V0.285706Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%205.40847H15.7143V5.43837H10.5616L10.5611%205.40847Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3C%2Fsvg%3E">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="io.camunda:sendgrid:1" />
-        <zeebe:ioMapping>
-          <zeebe:input source="secrets.SENDGRID_API_KEY" target="apiKey" />
-          <zeebe:input source="David Paroulek" target="from.name" />
-          <zeebe:input source="david.paroulek@camunda.com" target="from.email" />
-          <zeebe:input source="=person.name" target="to.name" />
-          <zeebe:input source="= person.email" target="to.email" />
-          <zeebe:input source="byTemplate" target="unMappedFieldNotUseInModel.mailType" />
-          <zeebe:input source="d-06289bdd22614780ae2813a124051242" target="template.id" />
-          <zeebe:input source="={&#10;  &#34;message&#34;: &#34;Hi, &#34; + person.name + &#34;, good news, your song request was accepted! I&#39;m looking forward to rocking out to &#39;&#34;+song.title+&#34;&#39; by &#34;+song.artist+&#34;! Here&#39;s more details: &#34; + result,&#10;  &#34;name&#34;: person.name&#10;}" target="template.data" />
-        </zeebe:ioMapping>
-        <zeebe:taskHeaders />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_0k3qziv</bpmn:incoming>
-      <bpmn:outgoing>Flow_1srmgez</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_12xluzz" name="No" sourceRef="Gateway_1voduht" targetRef="Activity_0xlgndj">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=appropriate = "NO"</bpmn:conditionExpression>
-    </bpmn:sequenceFlow>
-    <bpmn:serviceTask id="Activity_0xlgndj" name="Notify Song Request Rejected" zeebe:modelerTemplate="io.camunda.connectors.SendGrid.v2" zeebe:modelerTemplateIcon="data:image/svg+xml;utf8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%2015.6846L5.43837%2015.6844V15.7143H0.285706V15.6846ZM0.285706%2010.5619H5.43837V15.6844L0.285706%2015.6846V10.5619Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%200.285706H10.5611V5.40847H5.43837V0.285706ZM10.5616%205.43837H15.7143V10.5611H10.5616V5.43837Z%22%20fill%3D%22%2300B3E3%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V5.40847H5.43837V10.5611Z%22%20fill%3D%22%23009DD9%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%200.285706H15.7143V5.40847H10.5611V0.285706Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%205.40847H15.7143V5.43837H10.5616L10.5611%205.40847Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3C%2Fsvg%3E">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="io.camunda:sendgrid:1" />
-        <zeebe:ioMapping>
-          <zeebe:input source="secrets.SENDGRID_API_KEY" target="apiKey" />
-          <zeebe:input source="David Paroulek" target="from.name" />
-          <zeebe:input source="david.paroulek@camunda.com" target="from.email" />
-          <zeebe:input source="=person.name" target="to.name" />
-          <zeebe:input source="= person.email" target="to.email" />
-          <zeebe:input source="byTemplate" target="unMappedFieldNotUseInModel.mailType" />
-          <zeebe:input source="d-06289bdd22614780ae2813a124051242" target="template.id" />
-          <zeebe:input source="={&#10;  &#34;message&#34;: &#34;Hi, &#34; + person.name + &#34;, sorry, but your song request of &#39;&#34;+song.title+&#34;&#39; by &#34;+song.artist+&#34; is not appropritate for this event. Here&#39;s why: &#34; + result,&#10;  &#34;name&#34;: person.name&#10;}" target="template.data" />
-        </zeebe:ioMapping>
-        <zeebe:taskHeaders />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_12xluzz</bpmn:incoming>
-      <bpmn:outgoing>Flow_0wbvocd</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_0wbvocd" sourceRef="Activity_0xlgndj" targetRef="Event_04rxyr5" />
-    <bpmn:sequenceFlow id="Flow_0w1px0x" name="Maybe" sourceRef="Gateway_1voduht" targetRef="Activity_03rrb3p" />
-    <bpmn:userTask id="Activity_1snrbr5" name="Review Song Request">
-      <bpmn:extensionElements>
-        <zeebe:ioMapping>
-          <zeebe:input source="=song.title" target="field_songTitle" />
-          <zeebe:input source="=song.artist" target="field_artist" />
-          <zeebe:input source="=song.lyrics" target="field_songLyrics" />
-          <zeebe:output source="=field_approveSong" target="appropriate" />
-        </zeebe:ioMapping>
-        <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_10je4nr" />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_0yy68t2</bpmn:incoming>
-      <bpmn:outgoing>Flow_0ji8kku</bpmn:outgoing>
-    </bpmn:userTask>
-    <bpmn:sequenceFlow id="Flow_1jdcjas" sourceRef="Activity_03rrb3p" targetRef="Activity_getSongLyrics" />
-    <bpmn:serviceTask id="Activity_03rrb3p" name="Notify Song Request Under Review" zeebe:modelerTemplate="io.camunda.connectors.SendGrid.v2" zeebe:modelerTemplateIcon="data:image/svg+xml;utf8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%2015.6846L5.43837%2015.6844V15.7143H0.285706V15.6846ZM0.285706%2010.5619H5.43837V15.6844L0.285706%2015.6846V10.5619Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%200.285706H10.5611V5.40847H5.43837V0.285706ZM10.5616%205.43837H15.7143V10.5611H10.5616V5.43837Z%22%20fill%3D%22%2300B3E3%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V5.40847H5.43837V10.5611Z%22%20fill%3D%22%23009DD9%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%200.285706H15.7143V5.40847H10.5611V0.285706Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%205.40847H15.7143V5.43837H10.5616L10.5611%205.40847Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3C%2Fsvg%3E">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="io.camunda:sendgrid:1" />
-        <zeebe:ioMapping>
-          <zeebe:input source="secrets.SENDGRID_API_KEY" target="apiKey" />
-          <zeebe:input source="David Paroulek" target="from.name" />
-          <zeebe:input source="david.paroulek@camunda.com" target="from.email" />
-          <zeebe:input source="=person.name" target="to.name" />
-          <zeebe:input source="= person.email" target="to.email" />
-          <zeebe:input source="byTemplate" target="unMappedFieldNotUseInModel.mailType" />
-          <zeebe:input source="d-06289bdd22614780ae2813a124051242" target="template.id" />
-          <zeebe:input source="={&#10;  &#34;message&#34;: &#34;Hi, &#34; + person.name + &#34;, thanks, your song request, &#39;&#34;+song.title+&#34;&#39; by &#34;+song.artist+&#34;, is under review :-). Here&#39;s why: &#34; + result,&#10;  &#34;name&#34;: person.name&#10;}" target="template.data" />
-        </zeebe:ioMapping>
-        <zeebe:taskHeaders />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_0w1px0x</bpmn:incoming>
-      <bpmn:outgoing>Flow_1jdcjas</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_0ji8kku" sourceRef="Activity_1snrbr5" targetRef="Gateway_1voduht" />
-    <bpmn:sequenceFlow id="Flow_0yy68t2" sourceRef="Activity_getSongLyrics" targetRef="Activity_1snrbr5" />
-    <bpmn:serviceTask id="Activity_analyzeSongRequest" name="Analyze Song Request" zeebe:modelerTemplate="io.camunda.connectors.OpenAI.v1" zeebe:modelerTemplateIcon="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjYwcHgiIHZpZXdCb3g9IjAgMCAyNTYgMjYwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDx0aXRsZT5PcGVuQUk8L3RpdGxlPgogICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTIzOS4xODM5MTQsMTA2LjIwMjc4MyBDMjQ1LjA1NDMwNCw4OC41MjQyMDk2IDI0My4wMjIyOCw2OS4xNzMzODA1IDIzMy42MDc1OTksNTMuMDk5ODg2NCBDMjE5LjQ1MTY3OCwyOC40NTg4MDIxIDE5MC45OTk3MDMsMTUuNzgzNjEyOSAxNjMuMjEzMDA3LDIxLjczOTUwNSBDMTQ3LjU1NDA3Nyw0LjMyMTQ1ODgzIDEyMy43OTQ5MDksLTMuNDIzOTg1NTQgMTAwLjg3OTAxLDEuNDE4NzM4OTggQzc3Ljk2MzExMDUsNi4yNjE0NjM0OSA1OS4zNjkwMDkzLDIyLjk1NzI1MzYgNTIuMDk1OTYyMSw0NS4yMjE0MjE5IEMzMy44NDM2NDk0LDQ4Ljk2NDQ4NjcgMTguMDkwMTcyMSw2MC4zOTI3NDkgOC44NjY3MjUxMyw3Ni41ODE4MDMzIEMtNS40NDM0OTEsMTAxLjE4Mjk2MiAtMi4xOTU0NDQzMSwxMzIuMjE1MjU1IDE2Ljg5ODY2NjIsMTUzLjMyMDA5NCBDMTEuMDA2MDg2NSwxNzAuOTkwNjU2IDEzLjAxOTcyODMsMTkwLjM0Mzk5MSAyMi40MjM4MjMxLDIwNi40MjI5OTEgQzM2LjU5NzU1NTMsMjMxLjA3MjM0NCA2NS4wNjgwMzQyLDI0My43NDY1NjYgOTIuODY5NTczOCwyMzcuNzgzMzcyIEMxMDUuMjM1NjM5LDI1MS43MDgyNDkgMTIzLjAwMTExMywyNTkuNjMwOTQyIDE0MS42MjM5NjgsMjU5LjUyNjkyIEMxNzAuMTA1MzU5LDI1OS41NTIxNjkgMTk1LjMzNzYxMSwyNDEuMTY1NzE4IDIwNC4wMzc3NzcsMjE0LjA0NTY2MSBDMjIyLjI4NzM0LDIxMC4yOTYzNTYgMjM4LjAzODQ4OSwxOTguODY5NzgzIDI0Ny4yNjcwMTQsMTgyLjY4NTI4IEMyNjEuNDA0NDUzLDE1OC4xMjc1MTUgMjU4LjE0MjQ5NCwxMjcuMjYyNzc1IDIzOS4xODM5MTQsMTA2LjIwMjc4MyBMMjM5LjE4MzkxNCwxMDYuMjAyNzgzIFogTTE0MS42MjM5NjgsMjQyLjU0MTIwNyBDMTMwLjI1NTY4MiwyNDIuNTU5MTc3IDExOS4yNDM4NzYsMjM4LjU3NDY0MiAxMTAuNTE5MzgxLDIzMS4yODYxOTcgTDExMi4wNTQxNDYsMjMwLjQxNjQ5NiBMMTYzLjcyNDU5NSwyMDAuNTkwODgxIEMxNjYuMzQwNjQ4LDE5OS4wNTY0NDQgMTY3Ljk1NDMyMSwxOTYuMjU2ODE4IDE2Ny45NzA3ODEsMTkzLjIyNDAwNSBMMTY3Ljk3MDc4MSwxMjAuMzczNzg4IEwxODkuODE1NjE0LDEzMy4wMTAwMjYgQzE5MC4wMzQxMzIsMTMzLjEyMTQyMyAxOTAuMTg2MjM1LDEzMy4zMzA1NjQgMTkwLjIyNDg4NSwxMzMuNTcyNzc0IEwxOTAuMjI0ODg1LDE5My45NDAyMjkgQzE5MC4xNjg2MDMsMjIwLjc1ODQyNyAxNjguNDQyMTY2LDI0Mi40ODQ4NjQgMTQxLjYyMzk2OCwyNDIuNTQxMjA3IFogTTM3LjE1NzU3NDksMTk3LjkzMDYyIEMzMS40NTY0OTgsMTg4LjA4NjM1OSAyOS40MDk0ODE4LDE3Ni41NDY5ODQgMzEuMzc2NjIzNywxNjUuMzQyNDI2IEwzMi45MTEzODk1LDE2Ni4yNjMyODUgTDg0LjYzMjk5NzMsMTk2LjA4ODkwMSBDODcuMjM4OTM0OSwxOTcuNjE4MjA3IDkwLjQ2ODI3MTcsMTk3LjYxODIwNyA5My4wNzQyMDkzLDE5Ni4wODg5MDEgTDE1Ni4yNTU0MDIsMTU5LjY2Mzc5MyBMMTU2LjI1NTQwMiwxODQuODg1MTExIEMxNTYuMjQzNTU3LDE4NS4xNDk3NzEgMTU2LjExMTcyNSwxODUuMzk0NjAyIDE1NS44OTcyOSwxODUuNTUwMTc2IEwxMDMuNTYxNzc2LDIxNS43MzM5MDMgQzgwLjMwNTQ5NTMsMjI5LjEzMTYzMiA1MC41OTI0OTU0LDIyMS4xNjU0MzUgMzcuMTU3NTc0OSwxOTcuOTMwNjIgWiBNMjMuNTQ5MzE4MSw4NS4zODExMjczIEMyOS4yODk5ODYxLDc1LjQ3MzMwOTcgMzguMzUxMTkxMSw2Ny45MTYyNjQ4IDQ5LjEyODc0ODIsNjQuMDQ3ODgyNSBMNDkuMTI4NzQ4MiwxMjUuNDM4NTE1IEM0OS4wODkxNDkyLDEyOC40NTk0MjUgNTAuNjk2NTM4NiwxMzEuMjYyNTU2IDUzLjMyMzc3NDgsMTMyLjc1NDIzMiBMMTE2LjE5ODAxNCwxNjkuMDI1ODY0IEw5NC4zNTMxODA4LDE4MS42NjIxMDIgQzk0LjExMzIzMjUsMTgxLjc4OTQzNCA5My44MjU3NDYxLDE4MS43ODk0MzQgOTMuNTg1Nzk3OSwxODEuNjYyMTAyIEw0MS4zNTI2MDE1LDE1MS41Mjk1MzQgQzE4LjE0MTk0MjYsMTM4LjA3NjA5OCAxMC4xODE3NjgxLDEwOC4zODU1NjIgMjMuNTQ5MzE4MSw4NS4xMjUzMzMgTDIzLjU0OTMxODEsODUuMzgxMTI3MyBaIE0yMDMuMDE0NiwxMjcuMDc1NTk4IEwxMzkuOTM1NzI1LDkwLjQ0NTg1NDUgTDE2MS43Mjk0LDc3Ljg2MDc3NDggQzE2MS45NjkzNDgsNzcuNzMzNDQzNCAxNjIuMjU2ODM0LDc3LjczMzQ0MzQgMTYyLjQ5Njc4Myw3Ny44NjA3NzQ4IEwyMTQuNzI5OTc5LDEwOC4wNDQ1MDIgQzIzMS4wMzIzMjksMTE3LjQ1MTc0NyAyNDAuNDM3Mjk0LDEzNS40MjYxMDkgMjM4Ljg3MTUwNCwxNTQuMTgyNzM5IEMyMzcuMzA1NzE0LDE3Mi45MzkzNjggMjI1LjA1MDcxOSwxODkuMTA1NTcyIDIwNy40MTQyNjIsMTk1LjY3OTYzIEwyMDcuNDE0MjYyLDEzNC4yODg5OTggQzIwNy4zMjI1MjEsMTMxLjI3Njg2NyAyMDUuNjUwNjk3LDEyOC41MzU4NTMgMjAzLjAxNDYsMTI3LjA3NTU5OCBaIE0yMjQuNzU3MTE2LDk0LjM4NTA4NjcgTDIyMy4yMjIzNSw5My40NjQyMjcyIEwxNzEuNjAzMDYsNjMuMzgyODE3MyBDMTY4Ljk4MTI5Myw2MS44NDQzNzUxIDE2NS43MzI0NTYsNjEuODQ0Mzc1MSAxNjMuMTEwNjg5LDYzLjM4MjgxNzMgTDk5Ljk4MDY1NTQsOTkuODA3OTI1OSBMOTkuOTgwNjU1NCw3NC41ODY2MDc3IEM5OS45NTMzMDA0LDc0LjMyNTQwODggMTAwLjA3MTA5NSw3NC4wNzAxODY5IDEwMC4yODc2MDksNzMuOTIxNTQyNiBMMTUyLjUyMDgwNSw0My43ODg5NzM4IEMxNjguODYzMDk4LDM0LjM3NDM1MTggMTg5LjE3NDI1NiwzNS4yNTI5MDQzIDIwNC42NDI1NzksNDYuMDQzNDg0MSBDMjIwLjExMDkwMyw1Ni44MzQwNjM4IDIyNy45NDkyNjksNzUuNTkyMzk1OSAyMjQuNzU3MTE2LDk0LjE4MDQ1MTMgTDIyNC43NTcxMTYsOTQuMzg1MDg2NyBaIE04OC4wNjA2NDA5LDEzOS4wOTc5MzEgTDY2LjIxNTgwNzYsMTI2LjUxMjg1MSBDNjUuOTk1MDM5OSwxMjYuMzc5MDkxIDY1Ljg0NTA5NjUsMTI2LjE1NDE3NiA2NS44MDY1MzY3LDEyNS44OTg5NDUgTDY1LjgwNjUzNjcsNjUuNjg0OTY2IEM2NS44MzE0NDk1LDQ2LjgyODUzNjcgNzYuNzUwMDYwNSwyOS42ODQ2MDMyIDkzLjgyNzA4NTIsMjEuNjg4MzA1NSBDMTEwLjkwNDExLDEzLjY5MjAwNzkgMTMxLjA2MzgzMywxNi4yODM1NDYyIDE0NS41NjMyLDI4LjMzODk5OCBMMTQ0LjAyODQzNCwyOS4yMDg2OTg2IEw5Mi4zNTc5ODUyLDU5LjAzNDMxNDIgQzg5Ljc0MTkzMjcsNjAuNTY4NzUxMyA4OC4xMjgyNTk3LDYzLjM2ODM3NjcgODguMTExNzk5OCw2Ni40MDExOTAxIEw4OC4wNjA2NDA5LDEzOS4wOTc5MzEgWiBNOTkuOTI5NDk2NSwxMTMuNTE4NSBMMTI4LjA2Njg3LDk3LjMwMTE0MTcgTDE1Ni4yNTU0MDIsMTEzLjUxODUgTDE1Ni4yNTU0MDIsMTQ1Ljk1MzIxOCBMMTI4LjE2OTE4NywxNjIuMTcwNTc3IEw5OS45ODA2NTU0LDE0NS45NTMyMTggTDk5LjkyOTQ5NjUsMTEzLjUxODUgWiIgZmlsbD0iIzAwMDAwMCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4K">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="io.camunda:http-json:1" />
-        <zeebe:ioMapping>
-          <zeebe:input source="bearer" target="authentication.type" />
-          <zeebe:input source="secrets.OPENAI_API_KEY" target="authentication.token" />
-          <zeebe:input source="=if is defined(internal_organization) and internal_organization != null then {&#34;Content-Type&#34;:&#34;application/json&#34;, &#34;OpenAI-Organization&#34;:internal_organization} else {&#34;Content-Type&#34;:&#34;application/json&#34;}" target="headers" />
-          <zeebe:input source="chat" target="operation" />
-          <zeebe:input source="post" target="method" />
-          <zeebe:input source="https://api.openai.com/v1/chat/completions" target="url" />
-          <zeebe:input source="gpt-3.5-turbo" target="internal_model" />
-          <zeebe:input source="Begin answer with Yes or No, followed by a comma, followed by an explanation of why" target="internal_systemMessage" />
-          <zeebe:input source="=&#34;Is \&#34;&#34;+song.title+&#34;\&#34; by \&#34;&#34;+song.artist+&#34;\&#34; appropriate for a &#34;eventType&#34;?" target="internal_prompt" />
-          <zeebe:input source="1" target="internal_choices" />
-          <zeebe:input source="=append(concatenate(if is defined(internal_systemMessage) then [{&#34;role&#34;: &#34;system&#34;, &#34;content&#34;: internal_systemMessage}] else [], if is defined(internal_chatHistory) then internal_chatHistory else []), {&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: internal_prompt})" target="internal_messages" />
-          <zeebe:input source="={&#34;model&#34;: internal_model, &#34;messages&#34;: internal_messages, &#34;n&#34;: number(internal_choices)}" target="body" />
-          <zeebe:input source="30" target="connectionTimeoutInSeconds" />
-        </zeebe:ioMapping>
-        <zeebe:taskHeaders>
-          <zeebe:header key="resultVariable" value="openaiResponse1" />
-          <zeebe:header key="resultExpression" value="={&#10;  &#34;result&#34;: body.choices[1].message.content,&#10;  &#34;appropriate&#34;: upper case(split(result, &#34;,\s&#34;)[1])&#10;}" />
-        </zeebe:taskHeaders>
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_18q1yaj</bpmn:incoming>
-      <bpmn:outgoing>Flow_08o2aet</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:serviceTask id="Activity_getSongLyrics" name="Get Song Lyrics" zeebe:modelerTemplate="io.camunda.connectors.OpenAI.v1" zeebe:modelerTemplateIcon="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjYwcHgiIHZpZXdCb3g9IjAgMCAyNTYgMjYwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDx0aXRsZT5PcGVuQUk8L3RpdGxlPgogICAgPGc+CiAgICAgICAgPHBhdGggZD0iTTIzOS4xODM5MTQsMTA2LjIwMjc4MyBDMjQ1LjA1NDMwNCw4OC41MjQyMDk2IDI0My4wMjIyOCw2OS4xNzMzODA1IDIzMy42MDc1OTksNTMuMDk5ODg2NCBDMjE5LjQ1MTY3OCwyOC40NTg4MDIxIDE5MC45OTk3MDMsMTUuNzgzNjEyOSAxNjMuMjEzMDA3LDIxLjczOTUwNSBDMTQ3LjU1NDA3Nyw0LjMyMTQ1ODgzIDEyMy43OTQ5MDksLTMuNDIzOTg1NTQgMTAwLjg3OTAxLDEuNDE4NzM4OTggQzc3Ljk2MzExMDUsNi4yNjE0NjM0OSA1OS4zNjkwMDkzLDIyLjk1NzI1MzYgNTIuMDk1OTYyMSw0NS4yMjE0MjE5IEMzMy44NDM2NDk0LDQ4Ljk2NDQ4NjcgMTguMDkwMTcyMSw2MC4zOTI3NDkgOC44NjY3MjUxMyw3Ni41ODE4MDMzIEMtNS40NDM0OTEsMTAxLjE4Mjk2MiAtMi4xOTU0NDQzMSwxMzIuMjE1MjU1IDE2Ljg5ODY2NjIsMTUzLjMyMDA5NCBDMTEuMDA2MDg2NSwxNzAuOTkwNjU2IDEzLjAxOTcyODMsMTkwLjM0Mzk5MSAyMi40MjM4MjMxLDIwNi40MjI5OTEgQzM2LjU5NzU1NTMsMjMxLjA3MjM0NCA2NS4wNjgwMzQyLDI0My43NDY1NjYgOTIuODY5NTczOCwyMzcuNzgzMzcyIEMxMDUuMjM1NjM5LDI1MS43MDgyNDkgMTIzLjAwMTExMywyNTkuNjMwOTQyIDE0MS42MjM5NjgsMjU5LjUyNjkyIEMxNzAuMTA1MzU5LDI1OS41NTIxNjkgMTk1LjMzNzYxMSwyNDEuMTY1NzE4IDIwNC4wMzc3NzcsMjE0LjA0NTY2MSBDMjIyLjI4NzM0LDIxMC4yOTYzNTYgMjM4LjAzODQ4OSwxOTguODY5NzgzIDI0Ny4yNjcwMTQsMTgyLjY4NTI4IEMyNjEuNDA0NDUzLDE1OC4xMjc1MTUgMjU4LjE0MjQ5NCwxMjcuMjYyNzc1IDIzOS4xODM5MTQsMTA2LjIwMjc4MyBMMjM5LjE4MzkxNCwxMDYuMjAyNzgzIFogTTE0MS42MjM5NjgsMjQyLjU0MTIwNyBDMTMwLjI1NTY4MiwyNDIuNTU5MTc3IDExOS4yNDM4NzYsMjM4LjU3NDY0MiAxMTAuNTE5MzgxLDIzMS4yODYxOTcgTDExMi4wNTQxNDYsMjMwLjQxNjQ5NiBMMTYzLjcyNDU5NSwyMDAuNTkwODgxIEMxNjYuMzQwNjQ4LDE5OS4wNTY0NDQgMTY3Ljk1NDMyMSwxOTYuMjU2ODE4IDE2Ny45NzA3ODEsMTkzLjIyNDAwNSBMMTY3Ljk3MDc4MSwxMjAuMzczNzg4IEwxODkuODE1NjE0LDEzMy4wMTAwMjYgQzE5MC4wMzQxMzIsMTMzLjEyMTQyMyAxOTAuMTg2MjM1LDEzMy4zMzA1NjQgMTkwLjIyNDg4NSwxMzMuNTcyNzc0IEwxOTAuMjI0ODg1LDE5My45NDAyMjkgQzE5MC4xNjg2MDMsMjIwLjc1ODQyNyAxNjguNDQyMTY2LDI0Mi40ODQ4NjQgMTQxLjYyMzk2OCwyNDIuNTQxMjA3IFogTTM3LjE1NzU3NDksMTk3LjkzMDYyIEMzMS40NTY0OTgsMTg4LjA4NjM1OSAyOS40MDk0ODE4LDE3Ni41NDY5ODQgMzEuMzc2NjIzNywxNjUuMzQyNDI2IEwzMi45MTEzODk1LDE2Ni4yNjMyODUgTDg0LjYzMjk5NzMsMTk2LjA4ODkwMSBDODcuMjM4OTM0OSwxOTcuNjE4MjA3IDkwLjQ2ODI3MTcsMTk3LjYxODIwNyA5My4wNzQyMDkzLDE5Ni4wODg5MDEgTDE1Ni4yNTU0MDIsMTU5LjY2Mzc5MyBMMTU2LjI1NTQwMiwxODQuODg1MTExIEMxNTYuMjQzNTU3LDE4NS4xNDk3NzEgMTU2LjExMTcyNSwxODUuMzk0NjAyIDE1NS44OTcyOSwxODUuNTUwMTc2IEwxMDMuNTYxNzc2LDIxNS43MzM5MDMgQzgwLjMwNTQ5NTMsMjI5LjEzMTYzMiA1MC41OTI0OTU0LDIyMS4xNjU0MzUgMzcuMTU3NTc0OSwxOTcuOTMwNjIgWiBNMjMuNTQ5MzE4MSw4NS4zODExMjczIEMyOS4yODk5ODYxLDc1LjQ3MzMwOTcgMzguMzUxMTkxMSw2Ny45MTYyNjQ4IDQ5LjEyODc0ODIsNjQuMDQ3ODgyNSBMNDkuMTI4NzQ4MiwxMjUuNDM4NTE1IEM0OS4wODkxNDkyLDEyOC40NTk0MjUgNTAuNjk2NTM4NiwxMzEuMjYyNTU2IDUzLjMyMzc3NDgsMTMyLjc1NDIzMiBMMTE2LjE5ODAxNCwxNjkuMDI1ODY0IEw5NC4zNTMxODA4LDE4MS42NjIxMDIgQzk0LjExMzIzMjUsMTgxLjc4OTQzNCA5My44MjU3NDYxLDE4MS43ODk0MzQgOTMuNTg1Nzk3OSwxODEuNjYyMTAyIEw0MS4zNTI2MDE1LDE1MS41Mjk1MzQgQzE4LjE0MTk0MjYsMTM4LjA3NjA5OCAxMC4xODE3NjgxLDEwOC4zODU1NjIgMjMuNTQ5MzE4MSw4NS4xMjUzMzMgTDIzLjU0OTMxODEsODUuMzgxMTI3MyBaIE0yMDMuMDE0NiwxMjcuMDc1NTk4IEwxMzkuOTM1NzI1LDkwLjQ0NTg1NDUgTDE2MS43Mjk0LDc3Ljg2MDc3NDggQzE2MS45NjkzNDgsNzcuNzMzNDQzNCAxNjIuMjU2ODM0LDc3LjczMzQ0MzQgMTYyLjQ5Njc4Myw3Ny44NjA3NzQ4IEwyMTQuNzI5OTc5LDEwOC4wNDQ1MDIgQzIzMS4wMzIzMjksMTE3LjQ1MTc0NyAyNDAuNDM3Mjk0LDEzNS40MjYxMDkgMjM4Ljg3MTUwNCwxNTQuMTgyNzM5IEMyMzcuMzA1NzE0LDE3Mi45MzkzNjggMjI1LjA1MDcxOSwxODkuMTA1NTcyIDIwNy40MTQyNjIsMTk1LjY3OTYzIEwyMDcuNDE0MjYyLDEzNC4yODg5OTggQzIwNy4zMjI1MjEsMTMxLjI3Njg2NyAyMDUuNjUwNjk3LDEyOC41MzU4NTMgMjAzLjAxNDYsMTI3LjA3NTU5OCBaIE0yMjQuNzU3MTE2LDk0LjM4NTA4NjcgTDIyMy4yMjIzNSw5My40NjQyMjcyIEwxNzEuNjAzMDYsNjMuMzgyODE3MyBDMTY4Ljk4MTI5Myw2MS44NDQzNzUxIDE2NS43MzI0NTYsNjEuODQ0Mzc1MSAxNjMuMTEwNjg5LDYzLjM4MjgxNzMgTDk5Ljk4MDY1NTQsOTkuODA3OTI1OSBMOTkuOTgwNjU1NCw3NC41ODY2MDc3IEM5OS45NTMzMDA0LDc0LjMyNTQwODggMTAwLjA3MTA5NSw3NC4wNzAxODY5IDEwMC4yODc2MDksNzMuOTIxNTQyNiBMMTUyLjUyMDgwNSw0My43ODg5NzM4IEMxNjguODYzMDk4LDM0LjM3NDM1MTggMTg5LjE3NDI1NiwzNS4yNTI5MDQzIDIwNC42NDI1NzksNDYuMDQzNDg0MSBDMjIwLjExMDkwMyw1Ni44MzQwNjM4IDIyNy45NDkyNjksNzUuNTkyMzk1OSAyMjQuNzU3MTE2LDk0LjE4MDQ1MTMgTDIyNC43NTcxMTYsOTQuMzg1MDg2NyBaIE04OC4wNjA2NDA5LDEzOS4wOTc5MzEgTDY2LjIxNTgwNzYsMTI2LjUxMjg1MSBDNjUuOTk1MDM5OSwxMjYuMzc5MDkxIDY1Ljg0NTA5NjUsMTI2LjE1NDE3NiA2NS44MDY1MzY3LDEyNS44OTg5NDUgTDY1LjgwNjUzNjcsNjUuNjg0OTY2IEM2NS44MzE0NDk1LDQ2LjgyODUzNjcgNzYuNzUwMDYwNSwyOS42ODQ2MDMyIDkzLjgyNzA4NTIsMjEuNjg4MzA1NSBDMTEwLjkwNDExLDEzLjY5MjAwNzkgMTMxLjA2MzgzMywxNi4yODM1NDYyIDE0NS41NjMyLDI4LjMzODk5OCBMMTQ0LjAyODQzNCwyOS4yMDg2OTg2IEw5Mi4zNTc5ODUyLDU5LjAzNDMxNDIgQzg5Ljc0MTkzMjcsNjAuNTY4NzUxMyA4OC4xMjgyNTk3LDYzLjM2ODM3NjcgODguMTExNzk5OCw2Ni40MDExOTAxIEw4OC4wNjA2NDA5LDEzOS4wOTc5MzEgWiBNOTkuOTI5NDk2NSwxMTMuNTE4NSBMMTI4LjA2Njg3LDk3LjMwMTE0MTcgTDE1Ni4yNTU0MDIsMTEzLjUxODUgTDE1Ni4yNTU0MDIsMTQ1Ljk1MzIxOCBMMTI4LjE2OTE4NywxNjIuMTcwNTc3IEw5OS45ODA2NTU0LDE0NS45NTMyMTggTDk5LjkyOTQ5NjUsMTEzLjUxODUgWiIgZmlsbD0iIzAwMDAwMCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4K">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="io.camunda:http-json:1" />
-        <zeebe:ioMapping>
-          <zeebe:input source="bearer" target="authentication.type" />
-          <zeebe:input source="secrets.OPENAI_API_KEY" target="authentication.token" />
-          <zeebe:input source="=if is defined(internal_organization) and internal_organization != null then {&#34;Content-Type&#34;:&#34;application/json&#34;, &#34;OpenAI-Organization&#34;:internal_organization} else {&#34;Content-Type&#34;:&#34;application/json&#34;}" target="headers" />
-          <zeebe:input source="chat" target="operation" />
-          <zeebe:input source="post" target="method" />
-          <zeebe:input source="https://api.openai.com/v1/chat/completions" target="url" />
-          <zeebe:input source="gpt-3.5-turbo" target="internal_model" />
-          <zeebe:input source="You are a helpful assistant" target="internal_systemMessage" />
-          <zeebe:input source="=&#34;What are the lyrics of \&#34;&#34;+song.title+&#34;\&#34; by \&#34;&#34;+song.artist+&#34;\&#34;&#34;" target="internal_prompt" />
-          <zeebe:input source="1" target="internal_choices" />
-          <zeebe:input source="=append(concatenate(if is defined(internal_systemMessage) then [{&#34;role&#34;: &#34;system&#34;, &#34;content&#34;: internal_systemMessage}] else [], if is defined(internal_chatHistory) then internal_chatHistory else []), {&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: internal_prompt})" target="internal_messages" />
-          <zeebe:input source="={&#34;model&#34;: internal_model, &#34;messages&#34;: internal_messages, &#34;n&#34;: number(internal_choices)}" target="body" />
-          <zeebe:input source="30" target="connectionTimeoutInSeconds" />
-        </zeebe:ioMapping>
-        <zeebe:taskHeaders>
-          <zeebe:header key="resultVariable" value="openaiResponse2" />
-          <zeebe:header key="resultExpression" value="={&#10;  &#34;song&#34;: {&#10;    &#34;lyrics&#34;: body.choices[1].message.content,&#10;    &#34;title&#34;: song.title,&#10;    &#34;artist&#34;: song.artist&#10;  }&#10;}" />
-        </zeebe:taskHeaders>
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1jdcjas</bpmn:incoming>
-      <bpmn:outgoing>Flow_0yy68t2</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:textAnnotation id="TextAnnotation_0krxina">
-      <bpmn:text>Email the person a link to a google form. When the form is submitted, it calls a Google Cloud Function and a row will be entered into a google sheet.</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0qf1gkf" sourceRef="Activity_1efnhia" targetRef="TextAnnotation_0krxina" />
-    <bpmn:textAnnotation id="TextAnnotation_1458xg3">
-      <bpmn:text>When the Google Form is submitted, it calls a Google Cloud function which uses the Zeebe GRPC API to publish a message to allow the process to continue</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0k04mfi" sourceRef="Event_0t5u3bb" targetRef="TextAnnotation_1458xg3" />
-    <bpmn:textAnnotation id="TextAnnotation_0mx75ie">
-      <bpmn:text>Ask OpenAI whether this song is appropriate for the type of event</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0g55kw6" sourceRef="Activity_analyzeSongRequest" targetRef="TextAnnotation_0mx75ie" />
-    <bpmn:textAnnotation id="TextAnnotation_05lge6g">
-      <bpmn:text>Start an instance with a payload containing `person.name`, `person.email`, and `eventType`</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0ns9trk" sourceRef="StartEvent_1" targetRef="TextAnnotation_05lge6g" />
-    <bpmn:textAnnotation id="TextAnnotation_1atka0c">
-      <bpmn:text>If OpenAI is unsure whether the song is appropriate, use Camunda Forms to display the Song Lyrics and decide to approve or reject</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0w8oy0p" sourceRef="Activity_1snrbr5" targetRef="TextAnnotation_1atka0c" />
-  </bpmn:process>
-  <bpmn:message id="Message_0hujtgf" name="Message_formSubmitted">
-    <bpmn:extensionElements>
-      <zeebe:subscription correlationKey="=person.email" />
-    </bpmn:extensionElements>
-  </bpmn:message>
-  <bpmn:message id="Message_1uqdi99" name="Message_createInstance" />
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_songRequest">
-      <bpmndi:BPMNShape id="Activity_1na0nq0_di" bpmnElement="Activity_1efnhia" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
-        <dc:Bounds x="400" y="238" width="100" height="80" />
-        <bpmndi:BPMNLabel />
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_f3k5QJ1lED-aZNtnb5di7g" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Activity_1snrbr5_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="Message_formSubmittedType" structureRef=""/>
+  <bpmn2:itemDefinition id="_D2EF6C39-9449-4DA7-B7B6-FF5308F03B22" structureRef=""/>
+  <bpmn2:itemDefinition id="_65711B5F-F576-46E8-80DA-03C8672C504F" structureRef=""/>
+  <bpmn2:message id="_f3mucJ1lED-aZNtnb5di7g" itemRef="Message_formSubmittedType" name="Message_formSubmitted"/>
+  <bpmn2:collaboration id="_A92400BF-2A40-4444-ACC0-C89C083517A8" name="Default Collaboration">
+    <bpmn2:participant id="_1037CF69-A156-4ACC-8242-52CFD8496D3C" name="Pool Participant" processRef="_001_song_requests"/>
+  </bpmn2:collaboration>
+  <bpmn2:process id="_001_song_requests" drools:packageName="com.example" drools:version="1.0" drools:adHoc="false" name="001_song-requests" isExecutable="true" processType="Public">
+    <bpmn2:sequenceFlow id="Flow_02wvxue" sourceRef="Event_0xc3wbw" targetRef="Activity_1efnhia"/>
+    <bpmn2:sequenceFlow id="Flow_1fptfsv" sourceRef="StartEvent_1" targetRef="Activity_1efnhia"/>
+    <bpmn2:sequenceFlow id="Flow_1ebaflo" sourceRef="Gateway_1sqtjfv" targetRef="Event_0t5u3bb"/>
+    <bpmn2:sequenceFlow id="Flow_00xidjq" sourceRef="Gateway_1sqtjfv" targetRef="Event_0xc3wbw"/>
+    <bpmn2:sequenceFlow id="Flow_1oxifje" sourceRef="Activity_1efnhia" targetRef="Gateway_1sqtjfv"/>
+    <bpmn2:sequenceFlow id="Flow_1srmgez" sourceRef="Activity_0x5mude" targetRef="Event_04rxyr5"/>
+    <bpmn2:sequenceFlow id="Flow_0k3qziv" name="Yes" sourceRef="Gateway_1voduht" targetRef="Activity_0x5mude">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Yes]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[=appropriate = "YES"]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0wbvocd" sourceRef="Activity_0xlgndj" targetRef="Event_04rxyr5"/>
+    <bpmn2:sequenceFlow id="Flow_12xluzz" name="No" sourceRef="Gateway_1voduht" targetRef="Activity_0xlgndj">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[No]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[=appropriate = "NO"]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_0ji8kku" sourceRef="Activity_1snrbr5" targetRef="Gateway_1voduht"/>
+    <bpmn2:sequenceFlow id="Flow_0w1px0x" name="Maybe" sourceRef="Gateway_1voduht" targetRef="Activity_03rrb3p">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Maybe]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="Flow_08o2aet" sourceRef="Activity_analyzeSongRequest" targetRef="Gateway_1voduht"/>
+    <bpmn2:sequenceFlow id="Flow_18q1yaj" sourceRef="Event_0t5u3bb" targetRef="Activity_analyzeSongRequest"/>
+    <bpmn2:sequenceFlow id="Flow_0yy68t2" sourceRef="Activity_getSongLyrics" targetRef="Activity_1snrbr5"/>
+    <bpmn2:sequenceFlow id="Flow_1jdcjas" sourceRef="Activity_03rrb3p" targetRef="Activity_getSongLyrics"/>
+    <bpmn2:task id="Activity_1efnhia" drools:taskName="" name="Ask for Song Request via Email">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Ask for Song Request via Email]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_1fptfsv</bpmn2:incoming>
+      <bpmn2:incoming>Flow_02wvxue</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1oxifje</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_1efnhia_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_1efnhia_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_1efnhia_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_1efnhia_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:intermediateCatchEvent id="Event_0t5u3bb" name="Form Submitted">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Form Submitted]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_1ebaflo</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_18q1yaj</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition drools:msgref="Message_formSubmitted" messageRef="_f3mucJ1lED-aZNtnb5di7g"/>
+    </bpmn2:intermediateCatchEvent>
+    <bpmn2:intermediateCatchEvent id="Event_0xc3wbw" name="Wait to send reminder">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Wait to send reminder]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_00xidjq</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_02wvxue</bpmn2:outgoing>
+      <bpmn2:timerEventDefinition>
+        <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression">P3D</bpmn2:timeDuration>
+      </bpmn2:timerEventDefinition>
+    </bpmn2:intermediateCatchEvent>
+    <bpmn2:endEvent id="Event_04rxyr5">
+      <bpmn2:incoming>Flow_0wbvocd</bpmn2:incoming>
+      <bpmn2:incoming>Flow_1srmgez</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:startEvent id="StartEvent_1" name="Create Instance">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Create Instance]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:outgoing>Flow_1fptfsv</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:eventBasedGateway id="Gateway_1sqtjfv" gatewayDirection="Diverging">
+      <bpmn2:incoming>Flow_1oxifje</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_00xidjq</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_1ebaflo</bpmn2:outgoing>
+    </bpmn2:eventBasedGateway>
+    <bpmn2:exclusiveGateway id="Gateway_1voduht" name="Is this song appropriate?">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Is this song appropriate?]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_08o2aet</bpmn2:incoming>
+      <bpmn2:incoming>Flow_0ji8kku</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0w1px0x</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_12xluzz</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_0k3qziv</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:task id="Activity_0x5mude" drools:taskName="" name="Notify Song Request Accepted!">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Notify Song Request Accepted!]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_0k3qziv</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1srmgez</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_0x5mude_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_0x5mude_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_0x5mude_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_0x5mude_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="Activity_0xlgndj" drools:taskName="" name="Notify Song Request Rejected">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Notify Song Request Rejected]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_12xluzz</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0wbvocd</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_0xlgndj_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_0xlgndj_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_0xlgndj_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_0xlgndj_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:userTask id="Activity_1snrbr5" name="Review Song Request">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Review Song Request]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_0yy68t2</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0ji8kku</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_1snrbr5_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_Activity_1snrbr5_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="Activity_1snrbr5_SkippableInputX" drools:dtype="Object" itemSubjectRef="_Activity_1snrbr5_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_1snrbr5_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>Activity_1snrbr5_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_1snrbr5_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_1snrbr5_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_1snrbr5_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_1snrbr5_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:task id="Activity_03rrb3p" drools:taskName="" name="Notify Song Request Under Review">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Notify Song Request Under Review]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_0w1px0x</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1jdcjas</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_03rrb3p_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_03rrb3p_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_03rrb3p_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_03rrb3p_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="Activity_analyzeSongRequest" drools:taskName="" name="Analyze Song Request">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Analyze Song Request]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_18q1yaj</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_08o2aet</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_analyzeSongRequest_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_analyzeSongRequest_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_analyzeSongRequest_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_analyzeSongRequest_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:task id="Activity_getSongLyrics" drools:taskName="" name="Get Song Lyrics">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Get Song Lyrics]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>Flow_1jdcjas</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0yy68t2</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Activity_getSongLyrics_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Activity_getSongLyrics_TaskNameInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Activity_getSongLyrics_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Activity_getSongLyrics_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:textAnnotation id="TextAnnotation_0krxina" name="Email the person a link to a google form. When the form is submitted, it calls a Google Cloud Function and a row will be entered into a google sheet.">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Email the person a link to a google form. When the form is submitted, it calls a Google Cloud Function and a row will be entered into a google sheet.]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:text>Email the person a link to a google form. When the form is submitted, it calls a Google Cloud Function and a row will be entered into a google sheet.</bpmn2:text>
+    </bpmn2:textAnnotation>
+    <bpmn2:textAnnotation id="TextAnnotation_1458xg3" name="When the Google Form is submitted, it calls a Google Cloud function which uses the Zeebe GRPC API to publish a message to allow the process to continue">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[When the Google Form is submitted, it calls a Google Cloud function which uses the Zeebe GRPC API to publish a message to allow the process to continue]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:text>When the Google Form is submitted, it calls a Google Cloud function which uses the Zeebe GRPC API to publish a message to allow the process to continue</bpmn2:text>
+    </bpmn2:textAnnotation>
+    <bpmn2:textAnnotation id="TextAnnotation_0mx75ie" name="Ask OpenAI whether this song is appropriate for the type of event">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Ask OpenAI whether this song is appropriate for the type of event]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:text>Ask OpenAI whether this song is appropriate for the type of event</bpmn2:text>
+    </bpmn2:textAnnotation>
+    <bpmn2:textAnnotation id="TextAnnotation_05lge6g" name="Start an instance with a payload containing `person.name`, `person.email`, and `eventType`">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Start an instance with a payload containing `person.name`, `person.email`, and `eventType`]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:text>Start an instance with a payload containing `person.name`, `person.email`, and `eventType`</bpmn2:text>
+    </bpmn2:textAnnotation>
+    <bpmn2:textAnnotation id="TextAnnotation_1atka0c" name="If OpenAI is unsure whether the song is appropriate, use Camunda Forms to display the Song Lyrics and decide to approve or reject">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[If OpenAI is unsure whether the song is appropriate, use Camunda Forms to display the Song Lyrics and decide to approve or reject]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:text>If OpenAI is unsure whether the song is appropriate, use Camunda Forms to display the Song Lyrics and decide to approve or reject</bpmn2:text>
+    </bpmn2:textAnnotation>
+    <bpmn2:association id="Association_0w8oy0p" sourceRef="Activity_1snrbr5" targetRef="TextAnnotation_1atka0c"/>
+    <bpmn2:association id="Association_0ns9trk" sourceRef="StartEvent_1" targetRef="TextAnnotation_05lge6g"/>
+    <bpmn2:association id="Association_0g55kw6" sourceRef="Activity_analyzeSongRequest" targetRef="TextAnnotation_0mx75ie"/>
+    <bpmn2:association id="Association_0k04mfi" sourceRef="Event_0t5u3bb" targetRef="TextAnnotation_1458xg3"/>
+    <bpmn2:association id="Association_0qf1gkf" sourceRef="Activity_1efnhia" targetRef="TextAnnotation_0krxina"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="_001_song_requests">
+      <bpmndi:BPMNShape id="shape_TextAnnotation_1atka0c" bpmnElement="TextAnnotation_1atka0c">
+        <dc:Bounds height="84" width="165" x="757" y="375"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0zcioxj_di" bpmnElement="Event_0t5u3bb">
-        <dc:Bounds x="692" y="260" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="671" y="303" width="79" height="14" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="shape_TextAnnotation_05lge6g" bpmnElement="TextAnnotation_05lge6g">
+        <dc:Bounds height="84" width="139" x="160" y="120"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1jjj38w_di" bpmnElement="Event_0xc3wbw">
-        <dc:Bounds x="502" y="372" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="492" y="415" width="61" height="27" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="shape_TextAnnotation_0mx75ie" bpmnElement="TextAnnotation_0mx75ie">
+        <dc:Bounds height="49" width="198" x="860" y="120"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1shp747_di" bpmnElement="Event_04rxyr5">
-        <dc:Bounds x="1302" y="212" width="36" height="36" />
+      <bpmndi:BPMNShape id="shape_TextAnnotation_1458xg3" bpmnElement="TextAnnotation_1458xg3">
+        <dc:Bounds height="84" width="200" x="590" y="120"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_17x2x2y_di" bpmnElement="StartEvent_1">
-        <dc:Bounds x="232" y="260" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="211" y="303" width="78" height="14" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="shape_TextAnnotation_0krxina" bpmnElement="TextAnnotation_0krxina">
+        <dc:Bounds height="84" width="188" x="350" y="120"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_05p7m0s_di" bpmnElement="Gateway_1sqtjfv">
-        <dc:Bounds x="555" y="253" width="50" height="50" />
+      <bpmndi:BPMNShape id="shape_Activity_getSongLyrics" bpmnElement="Activity_getSongLyrics">
+        <dc:Bounds height="80" width="100" x="1120" y="450"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_1voduht_di" bpmnElement="Gateway_1voduht" isMarkerVisible="true">
-        <dc:Bounds x="985" y="253" width="50" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="939" y="236" width="62" height="27" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="shape_Activity_analyzeSongRequest" bpmnElement="Activity_analyzeSongRequest">
+        <dc:Bounds height="80" width="100" x="790" y="238"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_01is50u_di" bpmnElement="Activity_0x5mude" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
-        <dc:Bounds x="1120" y="140" width="100" height="80" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Activity_03rrb3p" bpmnElement="Activity_03rrb3p">
+        <dc:Bounds height="78" width="148" x="1120" y="340"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1big0x0_di" bpmnElement="Activity_0xlgndj" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
-        <dc:Bounds x="1120" y="238" width="100" height="80" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Activity_1snrbr5" bpmnElement="Activity_1snrbr5">
+        <dc:Bounds height="80" width="100" x="950" y="450"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_065siqv_di" bpmnElement="Activity_1snrbr5">
-        <dc:Bounds x="950" y="450" width="100" height="80" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Activity_0xlgndj" bpmnElement="Activity_0xlgndj">
+        <dc:Bounds height="84" width="124" x="1120" y="238"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_144et18_di" bpmnElement="Activity_03rrb3p" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
-        <dc:Bounds x="1120" y="340" width="100" height="80" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Activity_0x5mude" bpmnElement="Activity_0x5mude">
+        <dc:Bounds height="76" width="125" x="1120" y="140"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_02llzd5_di" bpmnElement="Activity_analyzeSongRequest" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
-        <dc:Bounds x="790" y="238" width="100" height="80" />
+      <bpmndi:BPMNShape id="shape_Gateway_1voduht" bpmnElement="Gateway_1voduht">
+        <dc:Bounds height="56" width="56" x="985" y="253"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1pnwuf5_di" bpmnElement="Activity_getSongLyrics" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
-        <dc:Bounds x="1120" y="450" width="100" height="80" />
+      <bpmndi:BPMNShape id="shape_Gateway_1sqtjfv" bpmnElement="Gateway_1sqtjfv">
+        <dc:Bounds height="56" width="56" x="555" y="253"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_0krxina_di" bpmnElement="TextAnnotation_0krxina">
-        <dc:Bounds x="350" y="120" width="188" height="84" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_StartEvent_1" bpmnElement="StartEvent_1">
+        <dc:Bounds height="56" width="56" x="232" y="260"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_1458xg3_di" bpmnElement="TextAnnotation_1458xg3">
-        <dc:Bounds x="590" y="120" width="200" height="84" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Event_04rxyr5" bpmnElement="Event_04rxyr5">
+        <dc:Bounds height="56" width="56" x="1302" y="212"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_0mx75ie_di" bpmnElement="TextAnnotation_0mx75ie">
-        <dc:Bounds x="860" y="120" width="198" height="49" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Event_0xc3wbw" bpmnElement="Event_0xc3wbw">
+        <dc:Bounds height="56" width="56" x="502" y="372"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_05lge6g_di" bpmnElement="TextAnnotation_05lge6g">
-        <dc:Bounds x="160" y="120" width="139" height="84" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Event_0t5u3bb" bpmnElement="Event_0t5u3bb">
+        <dc:Bounds height="56" width="56" x="692" y="260"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_1atka0c_di" bpmnElement="TextAnnotation_1atka0c">
-        <dc:Bounds x="757" y="375" width="165" height="84" />
-        <bpmndi:BPMNLabel />
+      <bpmndi:BPMNShape id="shape_Activity_1efnhia" bpmnElement="Activity_1efnhia">
+        <dc:Bounds height="80" width="100" x="400" y="238"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Flow_1fptfsv_di" bpmnElement="Flow_1fptfsv">
-        <di:waypoint x="268" y="278" />
-        <di:waypoint x="400" y="278" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_1snrbr5_to_shape_TextAnnotation_1atka0c" bpmnElement="Association_0w8oy0p">
+        <di:waypoint x="950" y="464"/>
+        <di:waypoint x="922" y="450"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_18q1yaj_di" bpmnElement="Flow_18q1yaj">
-        <di:waypoint x="728" y="278" />
-        <di:waypoint x="790" y="278" />
+      <bpmndi:BPMNEdge id="edge_shape_StartEvent_1_to_shape_TextAnnotation_05lge6g" bpmnElement="Association_0ns9trk">
+        <di:waypoint x="245" y="261"/>
+        <di:waypoint x="229" y="204"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_02wvxue_di" bpmnElement="Flow_02wvxue">
-        <di:waypoint x="502" y="390" />
-        <di:waypoint x="450" y="390" />
-        <di:waypoint x="450" y="318" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_analyzeSongRequest_to_shape_TextAnnotation_0mx75ie" bpmnElement="Association_0g55kw6">
+        <di:waypoint x="860" y="238"/>
+        <di:waypoint x="893" y="169"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_00xidjq_di" bpmnElement="Flow_00xidjq">
-        <di:waypoint x="580" y="303" />
-        <di:waypoint x="580" y="390" />
-        <di:waypoint x="538" y="390" />
+      <bpmndi:BPMNEdge id="edge_shape_Event_0t5u3bb_to_shape_TextAnnotation_1458xg3" bpmnElement="Association_0k04mfi">
+        <di:waypoint x="702" y="262"/>
+        <di:waypoint x="674" y="204"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1oxifje_di" bpmnElement="Flow_1oxifje">
-        <di:waypoint x="500" y="278" />
-        <di:waypoint x="555" y="278" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_1efnhia_to_shape_TextAnnotation_0krxina" bpmnElement="Association_0qf1gkf">
+        <di:waypoint x="436" y="238"/>
+        <di:waypoint x="424" y="204"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1ebaflo_di" bpmnElement="Flow_1ebaflo">
-        <di:waypoint x="605" y="278" />
-        <di:waypoint x="692" y="278" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_03rrb3p_to_shape_Activity_getSongLyrics" bpmnElement="Flow_1jdcjas">
+        <di:waypoint x="1194" y="418"/>
+        <di:waypoint x="1170" y="450"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_08o2aet_di" bpmnElement="Flow_08o2aet">
-        <di:waypoint x="890" y="278" />
-        <di:waypoint x="985" y="278" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_getSongLyrics_to_shape_Activity_1snrbr5" bpmnElement="Flow_0yy68t2">
+        <di:waypoint x="1120" y="490"/>
+        <di:waypoint x="1050" y="490"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0k3qziv_di" bpmnElement="Flow_0k3qziv">
-        <di:waypoint x="1010" y="253" />
-        <di:waypoint x="1010" y="180" />
-        <di:waypoint x="1120" y="180" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1071" y="162" width="18" height="14" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNEdge id="edge_shape_Event_0t5u3bb_to_shape_Activity_analyzeSongRequest" bpmnElement="Flow_18q1yaj">
+        <di:waypoint x="728" y="278"/>
+        <di:waypoint x="790" y="278"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1srmgez_di" bpmnElement="Flow_1srmgez">
-        <di:waypoint x="1220" y="180" />
-        <di:waypoint x="1320" y="180" />
-        <di:waypoint x="1320" y="212" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_analyzeSongRequest_to_shape_Gateway_1voduht" bpmnElement="Flow_08o2aet">
+        <di:waypoint x="890" y="278"/>
+        <di:waypoint x="985" y="278"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_12xluzz_di" bpmnElement="Flow_12xluzz">
-        <di:waypoint x="1035" y="278" />
-        <di:waypoint x="1120" y="278" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1072" y="263" width="15" height="14" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNEdge id="edge_shape_Gateway_1voduht_to_shape_Activity_03rrb3p" bpmnElement="Flow_0w1px0x">
+        <di:waypoint x="1020" y="293"/>
+        <di:waypoint x="1020" y="380"/>
+        <di:waypoint x="1120" y="379"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0wbvocd_di" bpmnElement="Flow_0wbvocd">
-        <di:waypoint x="1220" y="278" />
-        <di:waypoint x="1320" y="278" />
-        <di:waypoint x="1320" y="248" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_1snrbr5_to_shape_Gateway_1voduht" bpmnElement="Flow_0ji8kku">
+        <di:waypoint x="1000" y="450"/>
+        <di:waypoint x="1000" y="293"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0w1px0x_di" bpmnElement="Flow_0w1px0x">
-        <di:waypoint x="1020" y="293" />
-        <di:waypoint x="1020" y="380" />
-        <di:waypoint x="1120" y="380" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1063" y="353" width="34" height="14" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNEdge id="edge_shape_Gateway_1voduht_to_shape_Activity_0xlgndj" bpmnElement="Flow_12xluzz">
+        <di:waypoint x="1035" y="278"/>
+        <di:waypoint x="1120" y="280"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1jdcjas_di" bpmnElement="Flow_1jdcjas">
-        <di:waypoint x="1170" y="420" />
-        <di:waypoint x="1170" y="450" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_0xlgndj_to_shape_Event_04rxyr5" bpmnElement="Flow_0wbvocd">
+        <di:waypoint x="1244" y="280"/>
+        <di:waypoint x="1320" y="278"/>
+        <di:waypoint x="1320" y="248"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0ji8kku_di" bpmnElement="Flow_0ji8kku">
-        <di:waypoint x="1000" y="450" />
-        <di:waypoint x="1000" y="293" />
+      <bpmndi:BPMNEdge id="edge_shape_Gateway_1voduht_to_shape_Activity_0x5mude" bpmnElement="Flow_0k3qziv">
+        <di:waypoint x="1010" y="253"/>
+        <di:waypoint x="1010" y="180"/>
+        <di:waypoint x="1120" y="178"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0yy68t2_di" bpmnElement="Flow_0yy68t2">
-        <di:waypoint x="1120" y="490" />
-        <di:waypoint x="1050" y="490" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_0x5mude_to_shape_Event_04rxyr5" bpmnElement="Flow_1srmgez">
+        <di:waypoint x="1245" y="178"/>
+        <di:waypoint x="1320" y="180"/>
+        <di:waypoint x="1320" y="212"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0qf1gkf_di" bpmnElement="Association_0qf1gkf">
-        <di:waypoint x="436" y="238" />
-        <di:waypoint x="424" y="204" />
+      <bpmndi:BPMNEdge id="edge_shape_Activity_1efnhia_to_shape_Gateway_1sqtjfv" bpmnElement="Flow_1oxifje">
+        <di:waypoint x="500" y="278"/>
+        <di:waypoint x="555" y="278"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0k04mfi_di" bpmnElement="Association_0k04mfi">
-        <di:waypoint x="702" y="262" />
-        <di:waypoint x="674" y="204" />
+      <bpmndi:BPMNEdge id="edge_shape_Gateway_1sqtjfv_to_shape_Event_0xc3wbw" bpmnElement="Flow_00xidjq">
+        <di:waypoint x="580" y="303"/>
+        <di:waypoint x="580" y="390"/>
+        <di:waypoint x="538" y="390"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0g55kw6_di" bpmnElement="Association_0g55kw6">
-        <di:waypoint x="860" y="238" />
-        <di:waypoint x="893" y="169" />
+      <bpmndi:BPMNEdge id="edge_shape_Gateway_1sqtjfv_to_shape_Event_0t5u3bb" bpmnElement="Flow_1ebaflo">
+        <di:waypoint x="605" y="278"/>
+        <di:waypoint x="692" y="278"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0ns9trk_di" bpmnElement="Association_0ns9trk">
-        <di:waypoint x="245" y="261" />
-        <di:waypoint x="229" y="204" />
+      <bpmndi:BPMNEdge id="edge_shape_StartEvent_1_to_shape_Activity_1efnhia" bpmnElement="Flow_1fptfsv">
+        <di:waypoint x="268" y="278"/>
+        <di:waypoint x="400" y="278"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0w8oy0p_di" bpmnElement="Association_0w8oy0p">
-        <di:waypoint x="950" y="464" />
-        <di:waypoint x="922" y="450" />
+      <bpmndi:BPMNEdge id="edge_shape_Event_0xc3wbw_to_shape_Activity_1efnhia" bpmnElement="Flow_02wvxue">
+        <di:waypoint x="502" y="390"/>
+        <di:waypoint x="450" y="390"/>
+        <di:waypoint x="450" y="318"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-</bpmn:definitions>
+  <bpmn2:relationship type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters/>
+          <bpsim:ElementParameters elementRef="Activity_getSongLyrics">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Activity_analyzeSongRequest">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Activity_03rrb3p">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Activity_1snrbr5">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Activity_0xlgndj">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Activity_0x5mude">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="StartEvent_1">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Activity_1efnhia">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_f3k5QJ1lED-aZNtnb5di7g</bpmn2:source>
+    <bpmn2:target>_f3k5QJ1lED-aZNtnb5di7g</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>
