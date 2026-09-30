@@ -1,0 +1,32 @@
+artefact: camunda-docs-blog/007
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "customer inquiry routing: a customer enters an inquiry, an AI task determines the department (other / sales / technical / legal), a gateway routes it to the matching team's work task; the team can resolve, send it back through the AI with feedback, or reroute to a different team"
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: insider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "AI task bound to the Azure OpenAI connector; prompt is team feedback if defined, else the customer inquiry. Default flow 'other' to a default team. No service calls before the human work tasks."
+open_questions: []

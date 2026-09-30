@@ -1,0 +1,5 @@
+artefact: camunda-docs-blog/006
+annotated: 2026-09-30
+annotatable: false
+open_questions:
+  - "Researcher ruling: not annotatable. Abstract pre-LLM (2020) 'Process Choice' pattern figure: 'Entity Extraction' and 'Process classifier' feed a gateway that routes to two collapsed placeholder sub-processes ('Process Y' / 'Process X'); no concrete inputs, data, sinks or effects are shown, so there is too little to annotate."

@@ -9,14 +9,14 @@ Tick an item when its YAML file is final. 90 workflows.
 - [x] `bizagi/002` ai-worker-task-type-expenses
 - [x] `bonitasoft/012` kyc-bpmn-diagram
 - [x] `bonitasoft/013` bonita-studio-ai-assistant-illu
-- [ ] `camunda-docs-blog/001` song-requests
-- [ ] `camunda-docs-blog/002` ai-task-agent-visibility
-- [ ] `camunda-docs-blog/003` how-artificial-intelligence-can-enhance-business-process
-- [ ] `camunda-docs-blog/006` bpmn-ai-process-patterns-to-orchestrate-your-ai-services-in-business-processes
-- [ ] `camunda-docs-blog/007` automate-customer-inquiry-routing-with-camunda-process-blueprints
-- [ ] `camunda-docs-blog/008` ai-agents-what-you-need-to-know
-- [ ] `camunda-docs-blog/009` beer-suggestions-dmn-ai
-- [ ] `camunda-docs-blog/012` building-ai-agent-camunda
+- [x] `camunda-docs-blog/001` song-requests
+- [x] `camunda-docs-blog/002` ai-task-agent-visibility
+- [x] `camunda-docs-blog/003` how-artificial-intelligence-can-enhance-business-process
+- [x] `camunda-docs-blog/006` bpmn-ai-process-patterns-to-orchestrate-your-ai-services-in-business-processes
+- [x] `camunda-docs-blog/007` automate-customer-inquiry-routing-with-camunda-process-blueprints
+- [x] `camunda-docs-blog/008` ai-agents-what-you-need-to-know
+- [x] `camunda-docs-blog/009` beer-suggestions-dmn-ai
+- [x] `camunda-docs-blog/012` building-ai-agent-camunda
 - [ ] `camunda-docs-blog/013` camunda-87-agentic-orchestration-for-enterprise
 - [ ] `camunda-docs-blog/016` human-workflow-orchestration-generative-ai-openai
 - [ ] `camunda-docs-blog/017` claims-processing-automation-insurance-complete-guide

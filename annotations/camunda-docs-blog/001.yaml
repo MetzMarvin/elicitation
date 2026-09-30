@@ -1,0 +1,36 @@
+artefact: camunda-docs-blog/001
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "song requests for an event: an invited person submits a song via a web form; an AI task judges whether it fits the event type (yes / no / maybe) and the gateway routes to an acceptance or rejection notification, or on 'maybe' to a lyrics lookup and human review"
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: inferred
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "outsider -> system -> AI -> gateway -> system"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: external-recipient
+          path: "outsider -> system -> AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 2
+      mutates: none
+    guards: [human-review, error-path-to-human]
+    notes: "AI task marked by the OpenAI icon; 'Get Song Lyrics' (also OpenAI icon) treated as a data lookup, not an AI element. XML is a jBPM re-export without connector bindings; gateway tests appropriate = YES / NO, the unconditioned 'Maybe' flow leads to human review. Ungated calls: one notification on yes/no; notification plus lyrics lookup on maybe."
+open_questions: []

@@ -1,0 +1,48 @@
+artefact: camunda-docs-blog/012
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: agent-loop
+    function:
+      description: "tax-submission fraud check: an AI task rates fraud likelihood, a script task turns that into the tasks to run, and an ad-hoc sub-process runs the selected ones (AI-generated email inquiry then send email, a human 'call on external advisor' task with a fraud-detected gateway, a throw-fraud path); a second AI task re-rates fraud likelihood and a 'decision made?' gateway either ends the process or loops back to the first AI task; a fraud escalation ends the process separately"
+      operations: [classify, decide, generate, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+      - writer: system-generated
+        evidence: image
+      - writer: insider-writable
+        evidence: inferred
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> system -> (system | human | end)"
+          human_gate: false
+          evidence: record
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> AI -> system -> external"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-human
+          path: "outsider -> AI -> system -> human"
+          human_gate: false
+          evidence: inferred
+        - audience: control-flow
+          path: "system -> AI -> gateway -> (end | AI)"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "OpenAI icon on both 'decide on likelihood' tasks and 'generate email inquiry'. 'Decide tasks to do' is a script task (not AI). Ungated call: send-email connector, 1. The user task in the ad-hoc sub-process is agent-selectable, not a guard. 'Decision made?' No loops back to the first AI task."
+open_questions: []

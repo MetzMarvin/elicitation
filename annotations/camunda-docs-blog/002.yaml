@@ -1,0 +1,43 @@
+artefact: camunda-docs-blog/002
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "message delivery agent: a script task builds the prompt, an AI agent task decides whether tools are needed and the ad-hoc tool sub-process runs its choice (Slack message, email, or a human 'get more info' task), looping back to the agent until no more tools are needed"
+      operations: [generate, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+      - writer: insider-writable
+        evidence: inferred
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "system -> AI -> gateway -> (system | human | end)"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "system -> AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-human
+          path: "system -> AI -> gateway -> system -> human"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 2
+      mutates: none
+    guards: []
+    notes: "AI task 'AI Task Agent' carries the AI agent connector icon; 'Create Prompt' is a script task (not AI). Ad-hoc sub-process holds two connector tasks (Slack icon, email-service icon) and one user task 'Get More Info'; only the two connectors count as ungated calls. The loop back through the first gateway lets the agent call tools repeatedly. The grey play / pause overlays are modeller simulation markers, not process elements. No data objects, prompts or connector config visible."
+open_questions: []
+ 

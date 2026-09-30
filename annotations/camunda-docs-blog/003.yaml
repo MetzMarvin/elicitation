@@ -1,0 +1,32 @@
+artefact: camunda-docs-blog/003
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "claim adjuster flow: an AI task drafts a short email to the adjuster from policyholder details, which an email service task then sends; a Slack notification runs in parallel"
+      operations: [generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: system-generated
+        evidence: image
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: image
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-human
+          path: "system -> AI -> system -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "AI task bound to the OpenAI connector (Chat, GPT-3.5-turbo); prompt concatenates policyholder name, phone and email variables. Document and Slack tasks are non-AI connectors. Ungated call: the email notification. Cut-off user task after the join comes after sending, so not a guard."
+open_questions: []
