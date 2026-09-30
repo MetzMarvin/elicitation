@@ -1,0 +1,42 @@
+artefact: camunda-marketplace/023
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 6
+    structure: agent-loop
+    function:
+      description: "Logistics order from inbound email: three agents in sequence extract and check order data, plan the shipment with the customer, then book it with the carrier and update the ERP."
+      operations: [extract, generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> AI -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> tool"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 11
+      mutates: external-systems
+    guards: []
+    notes: "AI: three agent sub-processes plus three ABBYY IDP extraction tools. No human anywhere; 11 distinct tools counted (incl. ABBYY and draft-email scripts). EDI transmission and carrier-API replies act on and read outside systems."
+open_questions: []

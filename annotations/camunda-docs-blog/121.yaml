@@ -1,0 +1,42 @@
+artefact: camunda-docs-blog/121
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: agent-loop
+    function:
+      description: "Travel upsell: on a customer booking, an AI task enriches context, then an AI agent analyses the trip, checks risk, generates an offer that is sent after a rule check and activated on acceptance."
+      operations: [extract, generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: image
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> rule -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> AI -> escalation -> human"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> AI -> system -> external -> system"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 7
+      mutates: external-systems
+    guards: []
+    notes: "AI: Enrich Context and the AI Travel Agent ad-hoc sub-process (purple AI markers). Ungated: 5 agent tools + Send Offer + Activate Travel Pack = 7; the customer's acceptance is no internal gate. High-risk escalation is AI-raised, not a guard."
+open_questions: []

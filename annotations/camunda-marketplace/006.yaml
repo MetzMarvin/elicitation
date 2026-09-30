@@ -1,0 +1,52 @@
+artefact: camunda-marketplace/006
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: agent-loop
+    function:
+      description: "Customer-support email: an AI agent with past conversations emails the customer, queries the knowledge base or hands to a specialist; an AI judge then routes to auto-reply or human handling."
+      operations: [generate, classify, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: knowledge-base
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> AI -> gateway -> (system | human)"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> AI -> gateway -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 4
+      mutates: internal-records
+    guards: []
+    notes: "AI: agent sub-process and 'Agent as a Judge' (star glyphs); vector-DB tasks are lookups/writes, not AI. Ungated: ask-customer email, knowledge-base query, save long-term memory, final answer = 4; save-to-knowledge-base follows the specialist. AI judge's routing to human review is not a guard."
+open_questions: []

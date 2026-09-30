@@ -1,0 +1,36 @@
+artefact: camunda-marketplace/188
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 7
+    structure: agent-loop
+    function:
+      description: "Security incident triage: LLM calls generate a simulated alert, plan which investigation tools an ad-hoc sub-process runs, classify the threat and GDPR relevance, and write report texts for human review."
+      operations: [generate, classify, summarise, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: inferred
+      - writer: system-generated
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: bpmn-xml
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> (tool | system)"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-human
+          path: "outsider -> AI -> system -> human"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 3
+      mutates: none
+    guards: [human-review]
+    notes: "Seven Bedrock connector tasks; the planner's tool list sets the ad-hoc sub-process's active elements. Ungated: external threat-intel lookup, asset-lookup script, GDPR AI task = 3. Ticket POSTs follow the human review and carry no AI text."
+open_questions: []

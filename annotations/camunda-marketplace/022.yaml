@@ -1,0 +1,38 @@
+artefact: camunda-marketplace/022
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Meeting scheduling: after a client email arrives and upcoming meetings are listed, an AI agent task picks the best time, and a Zoom meeting is created automatically."
+      operations: [decide]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> external"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 1
+      mutates: external-systems
+    guards: []
+    notes: "AI identified only by the AI-agent element-template glyph on the third task; no tools visible, so coded single-call. Ungated: the Zoom create-meeting call, 1."
+open_questions: []

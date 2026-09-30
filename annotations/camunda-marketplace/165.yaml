@@ -1,0 +1,34 @@
+artefact: camunda-marketplace/165
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "multi-channel customer messaging: an agent detects the customer's intent, forwards the message to business agents and replies to the customer on a chosen channel"
+      operations: [classify, generate, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: bpmn-xml
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> external"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 3
+      mutates: none
+    guards: []
+    notes: "Intake and agent processes share the message and customer context, so one chain. Tools counted: two forward send tasks and the reply call activity. The modelled AI firewall is a mock script returning true, so not a guard."
+open_questions: []

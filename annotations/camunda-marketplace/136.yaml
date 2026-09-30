@@ -1,0 +1,42 @@
+artefact: camunda-marketplace/136
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Motor claim fast-track: an AI-enhanced validation scores the claim; confidence >= 0.85 auto-approves it and it flows on to settlement, payment and customer notification."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+      - writer: system-generated
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: bpmn-xml
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> system"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-system
+          path: "outsider -> AI -> gateway -> system -> system"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-human
+          path: "outsider -> AI -> gateway -> human"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 3
+      mutates: external-systems
+    guards: []
+    notes: "AI identified only by task headers (validationType ai-enhanced, confidenceThreshold 0.85); fraud sub-process has only gear and DMN tasks. Ungated: auto-approve, payment, customer notification when the settlement DMN requires no manager approval; the low-confidence human review is not a guard."
+open_questions: []

@@ -1,0 +1,40 @@
+artefact: camunda-marketplace/252
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "Leave request: an AI agent checks the time-off balance or requests a doctor's note, then either approves automatically or escalates to supervisor and manager review."
+      operations: [decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: insider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "insider -> AI -> gateway -> (tool | system | human)"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "insider -> AI -> gateway -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "insider -> AI -> gateway -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "Ungated: time-off check tool and the automated 'approve' service task = 2; the doctor's-note user task is a human tool and not counted. Escalation to supervisor is chosen by the AI, so not a guard; PII is employee health data."
+open_questions: []

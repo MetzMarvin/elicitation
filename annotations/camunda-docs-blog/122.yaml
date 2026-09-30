@@ -1,0 +1,42 @@
+artefact: camunda-docs-blog/122
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "KYC screening: an AI agent picks sanctions, identity, risk-score and n8n-MCP address/employment checks, may ask a human for more information, then submits a screening result or escalates."
+      operations: [decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> escalation -> human"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 5
+      mutates: internal-records
+    guards: [error-path-to-human]
+    notes: "Ad-hoc sub-process with agent marker is the one AI element. Ungated tools: three REST tasks, n8n MCP task, submit-result script = 5; the request-information user task and agent-chosen escalation are not guards."
+open_questions: []

@@ -43,8 +43,8 @@ chains:
           human_gate: false
           evidence: image
     authority:
-      invokes_without_gate: 4
+      invokes_without_gate: 5
       mutates: internal-records
     guards: []
-    notes: "AI elements: agent task 'Determine Upsell Options' and OpenAI-icon 'Generate email content'. Ungated tools: DMN recs, two email connectors, Google Drive 'Generate Policy', 4. Yellow knowledge-base tasks read as manual tasks, not counted."
+    notes: "AI elements: agent task 'Determine Upsell Options' and OpenAI-icon 'Generate email content'. Ungated tools: DMN recs, AI email generation, two email connectors, Google Drive 'Generate Policy', 5. Yellow knowledge-base tasks read as manual tasks, not counted."
 open_questions: []

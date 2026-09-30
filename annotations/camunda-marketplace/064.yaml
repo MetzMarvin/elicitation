@@ -1,0 +1,71 @@
+artefact: camunda-marketplace/064
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Procure-to-pay intake: an AI task classifies the submitted purchase request after tenant configuration is loaded, before the approval stage."
+      operations: [classify]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: insider-writable
+        evidence: inferred
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: closed-label
+      sinks:
+        - audience: internal-system
+          path: "insider -> AI -> sub-process -> human"
+          human_gate: unknown
+          evidence: image
+    authority:
+      invokes_without_gate: unknown
+      mutates: unknown
+    guards: []
+    notes: "AI marked by the agentic-AI template glyph; record names GPT-4o-mini. Approval-stage internals are not captured, so use of the label and downstream calls are not visible."
+  - id: C2
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "Supplier invoice processing: document extraction feeds ERP posting, then an AI three-way match whose result, via a tolerance rule, auto-approves, escalates, disputes or rejects."
+      operations: [extract, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+      - writer: system-generated
+        evidence: record
+    reads_sensitive:
+      - kind: business-records
+        evidence: record
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> AI -> rule -> gateway -> (system | human)"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> rule -> gateway -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> rule -> gateway -> system -> sub-process -> external"
+          human_gate: unknown
+          evidence: record
+    authority:
+      invokes_without_gate: 6
+      mutates: external-systems
+    guards: [error-path-to-human, validation]
+    notes: "Extraction counted as IDP (record: Textract + Claude Haiku). Ungated: validate, post, add line, log invoice, log auto-approval, post reconciliation = 6, lower bound; payment-stage calls not captured. Confidence gateway is not a guard."
+open_questions: []

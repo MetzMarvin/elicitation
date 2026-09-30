@@ -1,0 +1,48 @@
+artefact: camunda-marketplace/024
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 5
+    structure: agent-loop
+    function:
+      description: "Ticket support: an OpenAI task summarises a new ticket, then an AI agent picks tools to question engineers, search the knowledge base, summarise and post a solution comment."
+      operations: [summarise, generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+      - writer: insider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: knowledge-base
+        evidence: image
+      - kind: business-records
+        evidence: image
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> system -> human"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "AI -> gateway -> (tool | human)"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> gateway -> human -> system"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 6
+      mutates: internal-records
+    guards: []
+    notes: "AI: initial summary, agent, and three OpenAI tools (questions, pick ticket, summarise). Ungated tools: those three plus post question, knowledge-base check, post solution = 6; 'Read comment' follows the engineer. Engineer review comes after posting, so no guard."
+open_questions: []

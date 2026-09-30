@@ -1,0 +1,48 @@
+artefact: camunda-docs-blog/086
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 4
+    structure: agent-loop
+    function:
+      description: "Mortgage chat: a broker agent calls two remote A2A agents, rule-based risk scores, a conversation store and CRM lookups; a judge agent's confidence ends the chat or routes to a manual process."
+      operations: [generate, decide, plan-act]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: inferred
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> AI -> gateway -> (end | human)"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> remote AI"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> AI -> gateway -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 6
+      mutates: none
+    guards: []
+    notes: "AI: broker agent, underwriter and researcher (A2A tasks annotated as Gemini / self-hosted LLM agents), judge agent. Ungated tools: 2 A2A, 2 DMN, database lookup, CRM lookup = 6. Remote Gemini agent replies coded outsider-writable; judge-confidence routing to the manual process is not a guard."
+open_questions: []

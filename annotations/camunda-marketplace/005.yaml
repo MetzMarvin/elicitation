@@ -1,0 +1,42 @@
+artefact: camunda-marketplace/005
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 4
+    structure: agent-loop
+    function:
+      description: "Call-quality audit: an AI agent analyses a recorded call transcript and drives an ad-hoc sub-process of AI report and email drafting, a human review and an email notification to the agent."
+      operations: [classify, generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: internal-docs
+        evidence: image
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-human
+          path: "outsider -> AI -> AI -> system -> human"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> AI -> human -> AI -> system -> human"
+          human_gate: true
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> AI"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 3
+      mutates: none
+    guards: [human-review, error-path-to-human]
+    notes: "AI by OpenAI glyph: agent, report generation, two email drafts; 'Create List of Tasks' is a script task, not AI. Ungated: upper email draft, report generation, email notification = 3; lower draft follows the manual review."
+open_questions: []

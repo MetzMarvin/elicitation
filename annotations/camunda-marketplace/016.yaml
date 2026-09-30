@@ -1,0 +1,32 @@
+artefact: camunda-marketplace/016
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "customer inquiry routing: an OpenAI task classifies the inquiry (or team feedback on retry) into a department label that a gateway uses to pick the handling team"
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+      - writer: insider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: none
+        evidence: bpmn-xml
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> human"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "OpenAI connector (gpt-3.5-turbo); prompt is team feedback if defined, else the customer inquiry, plus fixed few-shot examples. Gateway uses regex matches on the raw reply; default flow 'other'. No service calls before the human tasks."
+open_questions: []

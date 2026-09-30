@@ -2,6 +2,7 @@
 /.mcp.json
 /README.md
 /SETUP.md
+annotations/SUBAGENT-BRIEF.md
 
 # --- raw crawl archives: multi-GB and re-downloadable. corpus/ records CITE these
 #     as archive locations, but the evidence itself is copied into corpus/. ---

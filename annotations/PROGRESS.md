@@ -28,26 +28,26 @@ Tick an item when its YAML file is final. 90 workflows.
 - [x] `camunda-docs-blog/067` responsible-ai-at-scale-camunda-governance-and-control
 - [x] `camunda-docs-blog/075` agentic-orchestration-in-action-how-camunda-and-aws-transform-customer
 - [x] `camunda-docs-blog/077` designing-ai-agents-in-camunda-ai-agent-task-connector-with-loop
-- [ ] `camunda-docs-blog/086` using-a2a-to-achieve-your-business-goals-pt-1
-- [ ] `camunda-docs-blog/119` key-principles-in-designing-agents-for-production-part-3
-- [ ] `camunda-docs-blog/121` optimizing-a-process-for-target-kpis-with-ai-a-job-analysts-used-to-do
-- [ ] `camunda-docs-blog/122` how-to-test-an-ai-agent-that-never-does-the-same-thing-twice
-- [ ] `camunda-marketplace/005` agentic-ai-quality-audit
-- [ ] `camunda-marketplace/006` ai-email-support-agent
-- [ ] `camunda-marketplace/008` retail-returns-management
-- [ ] `camunda-marketplace/016` intelligent-routing-with-ai
-- [ ] `camunda-marketplace/022` zoom-connector-ai-pick-best-time
-- [ ] `camunda-marketplace/023` agentic-logistics-services
-- [ ] `camunda-marketplace/024` ai-powered-ticket-supporting-system
-- [ ] `camunda-marketplace/064` ai-powered-procure-to-pay-system
-- [ ] `camunda-marketplace/067` intelligent-lot-conversion-in-pharmaceutical-cell-therapy
-- [ ] `camunda-marketplace/112` intelligent-routing-with-azure-openai
-- [ ] `camunda-marketplace/136` gcc-fnol-automation-connector
-- [ ] `camunda-marketplace/165` ai-communication-agent
-- [ ] `camunda-marketplace/188` intelligent-security-incident-processing
-- [ ] `camunda-marketplace/228` ai-agent-chat-with-mcp-tools
-- [ ] `camunda-marketplace/231` hospital-integration-blueprint
-- [ ] `camunda-marketplace/252` agentic-ai-orchestration-with-form-io
+- [x] `camunda-docs-blog/086` using-a2a-to-achieve-your-business-goals-pt-1
+- [x] `camunda-docs-blog/119` key-principles-in-designing-agents-for-production-part-3
+- [x] `camunda-docs-blog/121` optimizing-a-process-for-target-kpis-with-ai-a-job-analysts-used-to-do
+- [x] `camunda-docs-blog/122` how-to-test-an-ai-agent-that-never-does-the-same-thing-twice
+- [x] `camunda-marketplace/005` agentic-ai-quality-audit
+- [x] `camunda-marketplace/006` ai-email-support-agent
+- [x] `camunda-marketplace/008` retail-returns-management
+- [x] `camunda-marketplace/016` intelligent-routing-with-ai
+- [x] `camunda-marketplace/022` zoom-connector-ai-pick-best-time
+- [x] `camunda-marketplace/023` agentic-logistics-services
+- [x] `camunda-marketplace/024` ai-powered-ticket-supporting-system
+- [x] `camunda-marketplace/064` ai-powered-procure-to-pay-system
+- [x] `camunda-marketplace/067` intelligent-lot-conversion-in-pharmaceutical-cell-therapy
+- [x] `camunda-marketplace/112` intelligent-routing-with-azure-openai
+- [x] `camunda-marketplace/136` gcc-fnol-automation-connector
+- [x] `camunda-marketplace/165` ai-communication-agent
+- [x] `camunda-marketplace/188` intelligent-security-incident-processing
+- [x] `camunda-marketplace/228` ai-agent-chat-with-mcp-tools
+- [x] `camunda-marketplace/231` hospital-integration-blueprint
+- [x] `camunda-marketplace/252` agentic-ai-orchestration-with-form-io
 - [ ] `camunda-marketplace/255` fraud-detection-ai-agent-tutorial
 - [ ] `cib-seven/443` bpmn-ai-agent
 - [ ] `firestart/001` loesungen-rechnungsfreigabe

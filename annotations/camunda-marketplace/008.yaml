@@ -1,0 +1,46 @@
+artefact: camunda-marketplace/008
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: agent-loop
+    function:
+      description: "Retail return: AI fraud check gates eligibility, AI visual inspection results are pushed to systems, then an AI-driven ad-hoc sub-process picks exchange, refund, cleaning or refurbish fragments."
+      operations: [classify, extract, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: inferred
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> AI -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 6
+      mutates: external-systems
+    guards: [human-review, error-path-to-human]
+    notes: "AI = violet agent glyph on fraud check, visual inspection and the ad-hoc sub-process. Widest path: eligibility email, push AI results, then refund below threshold: two emails, two REST calls = 6; scripts not counted. Human approval only above a rule threshold."
+open_questions: []

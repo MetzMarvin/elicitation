@@ -1,0 +1,46 @@
+artefact: camunda-marketplace/067
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "Out-of-spec lot handling: AI parses a physician email, then decides the disposition that selects conversion, discard, recollection, logging or escalation activities and downstream system updates."
+      operations: [extract, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> AI -> ad-hoc selection -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> AI -> human"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> system -> external"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 8
+      mutates: internal-records
+    guards: []
+    notes: "Ungated count: validate step plus the seven service tasks of the conversion process (read as the expansion of the collapsed 'convert' activity) = 8. Validation has no visible human escalation; the selectable escalation task is not a guard."
+open_questions: []

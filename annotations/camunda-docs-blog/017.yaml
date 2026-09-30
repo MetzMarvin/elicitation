@@ -12,8 +12,8 @@ chains:
     reads_untrusted:
       - writer: system-generated
         evidence: image
-      - writer: outsider-writable
-        evidence: inferred
+      - writer: unknown
+        evidence: not-visible
     reads_sensitive:
       - kind: customer-pii
         evidence: inferred
