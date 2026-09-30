@@ -1,0 +1,30 @@
+artefact: aletyx/001
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "agent inside an ad-hoc sub-process for a loan investigation, choosing which assessment / verification step runs next and producing a recommendation"
+      operations: [classify, plan-act]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "system -> AI -> system -> gateway -> (human | end)"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: unknown
+    guards: [validation]
+    notes: "The agent's selectable steps are all human user tasks, not tool calls. The AI recommendation is compared with a rule-model (DMN) decision; on disagreement the case goes to human review, on agreement the rule-model decision is final. The AI task's built-in human-in-the-loop parameters (HumanRequired, PreHumanRequired, PostHumanRequired) are set to empty; MaxEvaluationLoops = 10."
+open_questions: []

@@ -1,0 +1,34 @@
+artefact: atamya/011
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "product release: on product creation, an automatic categorisation service task and a DeepL machine-translation service task run in parallel with a human marketing task; after a data-quality gateway the product is activated, a datasheet generated and the product synced to the online shop"
+      operations: [classify, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: insider-writable
+        evidence: inferred
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: inferred
+        - audience: public
+          path: "AI -> system -> system -> system -> public"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 3
+      mutates: external-systems
+    guards: [validation]
+    notes: "Both AI-bound tasks are service tasks (gear icon) between a parallel split and join; the only human task on the standard path (marketing) runs in parallel to them, not after them. After the join an exclusive gateway checks data-quality errors (> 0 loops back to the first gateway, 'Okay' continues); then three service tasks run with no human in between: activate (publishes, per atamya/010), create datasheet, sync to online shop. ai_elements counts the translation task and the categorisation task."
+open_questions: []

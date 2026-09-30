@@ -1,0 +1,40 @@
+artefact: bonitasoft/012
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "customer onboarding / identity check: an automated identity-verification task (AI per page prose: compares submitted identity documents against official databases) precedes a gateway that routes to standard or enhanced due diligence; background check and data integration follow automatically, with a human review loop and a human approval before account creation"
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: record
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> system -> AI -> gateway -> system"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-system
+          path: "AI -> system -> system -> system"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-human
+          path: "AI -> system -> system -> system -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 3
+      mutates: internal-records
+    guards: [human-review]
+    notes: "No AI marker in the diagram: every automated task carries the same service-task (gear) icon, and only two tasks are user tasks (review loop, final approval). The AI element is taken from the page prose, which places AI/ML document comparison inside the identity check. The unlabelled exclusive gateway right after the identity check selects standard vs enhanced due diligence. On any path, one due-diligence service task, the background-check service task and the data-integration service task run before the first human task, hence 3 ungated invocations. Account creation is a service task after the human approval, so it is gated and not counted."
+open_questions: []

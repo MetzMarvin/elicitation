@@ -1,0 +1,40 @@
+artefact: bizagi/002
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "expense reporting: an employee uploads receipt files, then an AI Worker bound to the employee's submit task extracts the details and pre-fills the form fields; the submitted report goes through a human analyst policy review and an optional manager approval before notification"
+      operations: [extract]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: insider-writable
+        evidence: record
+      - writer: system-generated
+        evidence: record
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: record
+        - audience: internal-system
+          path: "AI -> human -> system"
+          human_gate: true
+          evidence: inferred
+        - audience: control-flow
+          path: "AI -> human -> human -> gateway"
+          human_gate: true
+          evidence: inferred
+    authority:
+      invokes_without_gate: 0
+      mutates: internal-records
+    guards: [human-review]
+    notes: "AI Worker is a hidden task-type binding on the employee's submit task; only human review and approval tasks follow. Second image is the same model in the modeler."
+open_questions: []

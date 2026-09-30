@@ -1,0 +1,94 @@
+# Annotation progress
+
+Tick an item when its YAML file is final. 90 workflows.
+
+- [x] `aletyx/001` process-bpmn-adhoc-intelligence
+- [x] `atamya/010` en_blog_pim-wokflows
+- [x] `atamya/011` de_blog_bpmn-fuer-pim-manager
+- [x] `bizagi/001` ai-task-lane-ticket-management
+- [x] `bizagi/002` ai-worker-task-type-expenses
+- [x] `bonitasoft/012` kyc-bpmn-diagram
+- [x] `bonitasoft/013` bonita-studio-ai-assistant-illu
+- [ ] `camunda-docs-blog/001` song-requests
+- [ ] `camunda-docs-blog/002` ai-task-agent-visibility
+- [ ] `camunda-docs-blog/003` how-artificial-intelligence-can-enhance-business-process
+- [ ] `camunda-docs-blog/006` bpmn-ai-process-patterns-to-orchestrate-your-ai-services-in-business-processes
+- [ ] `camunda-docs-blog/007` automate-customer-inquiry-routing-with-camunda-process-blueprints
+- [ ] `camunda-docs-blog/008` ai-agents-what-you-need-to-know
+- [ ] `camunda-docs-blog/009` beer-suggestions-dmn-ai
+- [ ] `camunda-docs-blog/012` building-ai-agent-camunda
+- [ ] `camunda-docs-blog/013` camunda-87-agentic-orchestration-for-enterprise
+- [ ] `camunda-docs-blog/016` human-workflow-orchestration-generative-ai-openai
+- [ ] `camunda-docs-blog/017` claims-processing-automation-insurance-complete-guide
+- [ ] `camunda-docs-blog/019` key-principles-in-designing-agents-for-production-part-1
+- [ ] `camunda-docs-blog/021` where-ai-really-creates-value-and-where-it-doesnt
+- [ ] `camunda-docs-blog/024` three-ways-camunda-speaks-mcp-and-why-the-direction-matters
+- [ ] `camunda-docs-blog/035` your-customer-support-cs-transformation-ai-camunda
+- [ ] `camunda-docs-blog/047` how-decision-modeling-and-ai-help-with-risk-assessment
+- [ ] `camunda-docs-blog/067` responsible-ai-at-scale-camunda-governance-and-control
+- [ ] `camunda-docs-blog/075` agentic-orchestration-in-action-how-camunda-and-aws-transform-customer
+- [ ] `camunda-docs-blog/077` designing-ai-agents-in-camunda-ai-agent-task-connector-with-loop
+- [ ] `camunda-docs-blog/086` using-a2a-to-achieve-your-business-goals-pt-1
+- [ ] `camunda-docs-blog/119` key-principles-in-designing-agents-for-production-part-3
+- [ ] `camunda-docs-blog/121` optimizing-a-process-for-target-kpis-with-ai-a-job-analysts-used-to-do
+- [ ] `camunda-docs-blog/122` how-to-test-an-ai-agent-that-never-does-the-same-thing-twice
+- [ ] `camunda-marketplace/005` agentic-ai-quality-audit
+- [ ] `camunda-marketplace/006` ai-email-support-agent
+- [ ] `camunda-marketplace/008` retail-returns-management
+- [ ] `camunda-marketplace/016` intelligent-routing-with-ai
+- [ ] `camunda-marketplace/022` zoom-connector-ai-pick-best-time
+- [ ] `camunda-marketplace/023` agentic-logistics-services
+- [ ] `camunda-marketplace/024` ai-powered-ticket-supporting-system
+- [ ] `camunda-marketplace/064` ai-powered-procure-to-pay-system
+- [ ] `camunda-marketplace/067` intelligent-lot-conversion-in-pharmaceutical-cell-therapy
+- [ ] `camunda-marketplace/112` intelligent-routing-with-azure-openai
+- [ ] `camunda-marketplace/136` gcc-fnol-automation-connector
+- [ ] `camunda-marketplace/165` ai-communication-agent
+- [ ] `camunda-marketplace/188` intelligent-security-incident-processing
+- [ ] `camunda-marketplace/228` ai-agent-chat-with-mcp-tools
+- [ ] `camunda-marketplace/231` hospital-integration-blueprint
+- [ ] `camunda-marketplace/252` agentic-ai-orchestration-with-form-io
+- [ ] `camunda-marketplace/255` fraud-detection-ai-agent-tutorial
+- [ ] `cib-seven/443` bpmn-ai-agent
+- [ ] `firestart/001` loesungen-rechnungsfreigabe
+- [ ] `firestart/002` loesungen-bestellanforderung
+- [ ] `firestart/003` loesungen-spesenabrechnung
+- [ ] `firestart/006` loesungen-mandanten-onboarding
+- [ ] `firestart/007` loesungen-service-support
+- [ ] `firestart/008` loesungen-reklamationsmanagement
+- [ ] `firestart/009` loesungen-software-nutzung
+- [ ] `firestart/010` loesungen-fahrzeugbuchung
+- [ ] `firestart/011` loesungen-qualitaetsmanagement
+- [ ] `firestart/012` loesungen-angebotserstellung
+- [ ] `firestart/013` loesungen-event-anmeldung
+- [ ] `firestart/014` loesungen-vertragsfreigaben
+- [ ] `firestart/015` loesungen-dokumentenlenkung
+- [ ] `firestart/016` loesungen-schulungsmanagement
+- [ ] `firestart/017` loesungen-beschaffungsoptimierung
+- [ ] `flowable/001` email-handling-process-ai-service
+- [ ] `flowable/166` www-flowable-com-blog-business-flowable-ai-service
+- [ ] `flowable/169` able-com-blog-business-ai-assisted-process-and-case-modeling
+- [ ] `flows-for-apex/001` ai-service-task
+- [ ] `flows-for-apex/002` ahsp-261-autonomous-def
+- [ ] `flows-for-apex/003` adhoc-subprocesses-ai-agents
+- [ ] `flows-for-apex/004` tutorial-4d-ai-service-task
+- [ ] `flows-for-apex/007` a90a-basic-ai-model
+- [ ] `flows-for-apex/008` a90b-basic-ai-model-variables
+- [ ] `flows-for-apex/009` a90c-ai-gateway-routing
+- [ ] `frends-docs/001` agentic-ai-native-ai-task-in-a-bpmn-process
+- [ ] `frends-docs/002` intelligent-ai-connector-shape-in-a-bpmn-process
+- [ ] `frends-docs/004` semi-deterministic-ai-process
+- [ ] `frends-docs/010` activity-shapes
+- [ ] `ibm-bamoe/004` community-930-hiring-genai-task
+- [ ] `ibm-bamoe/005` community-931-insurance-claims-ai
+- [ ] `newgen/037` newgensoft-com-platform-process-automation
+- [ ] `quantumbpm/001` orchestrating-ai-agents-with-bpmn
+- [ ] `quantumbpm/002` how-bpmn-engines-work
+- [ ] `trisotech/001` suicide-prevention-with-modeling-tools
+- [ ] `trisotech/027` bpmn-user-tasks-for-humans-and-ai-agents-presentation
+- [ ] `uipath-maestro-docs/070` debugging
+- [ ] `uipath-maestro-docs/097` how-to-complex-process
+- [ ] `uipath-maestro-docs/133` markers-implementation
+- [ ] `uipath-maestro-docs/188` purchase-to-pay
+- [ ] `uipath-maestro-docs/191` receive-task
+- [ ] `uipath-maestro-docs/192` references-templates

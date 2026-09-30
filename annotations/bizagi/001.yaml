@@ -1,0 +1,42 @@
+artefact: bizagi/001
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 4
+    structure: fixed-sequence
+    function:
+      description: "ticket handling: after a support agent creates a ticket, AI tasks classify it, prioritise it and produce a preliminary analysis for a human analyst; after the analyst's analysis and resolution, an AI task updates the knowledge base"
+      operations: [classify, summarise, generate]
+      autonomy: acts
+    reads_untrusted:
+      - writer: insider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: inferred
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+      - kind: knowledge-base
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "human -> AI -> AI -> system"
+          human_gate: false
+          evidence: record
+        - audience: internal-human
+          path: "AI -> AI -> AI -> human"
+          human_gate: true
+          evidence: image
+        - audience: internal-system
+          path: "human -> AI -> system"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: internal-records
+    guards: [human-review]
+    notes: "Four AI tasks in an AI lane, no gateways. Classification and priority are closed-label; the preliminary analysis goes to a human analyst; the final KB update writes to the knowledge base with no human after it. Second image is the classify task's agent configuration (same workflow)."
+open_questions: []
