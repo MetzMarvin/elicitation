@@ -1,0 +1,44 @@
+artefact: camunda-docs-blog/019
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "Invoice dispute: after a rejected invoice and sender notification, an AI agent looks up account details, contacts a sales rep, cancels or recreates the invoice, and shows findings to a clerk."
+      operations: [summarise, generate, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: inferred
+      - writer: insider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> system -> human"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 4
+      mutates: internal-records
+    guards: []
+    notes: "AI element is the ad-hoc sub-process with the agent sparkle icon; the DMN categorisation task is not AI. Ungated tools: account lookup, sales-rep message, cancel and create invoice, 4; the clerk user task is not a guard."
+open_questions: []

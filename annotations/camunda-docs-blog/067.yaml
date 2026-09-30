@@ -1,0 +1,46 @@
+artefact: camunda-docs-blog/067
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "loan AI agent whose tools are emailing the customer and awaiting a reply, a rule check, asking a loan specialist, querying a knowledge base, and an RPA object/QR-code/email sequence"
+      operations: [generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: insider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: knowledge-base
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 6
+      mutates: internal-records
+    guards: []
+    notes: "AI element is the ad-hoc sub-process 'Tools available to AI agent'. Ungated calls: two email tasks, rule check, knowledge-base query, create object, QR code, 6; knowledge-base save follows the specialist, not counted. Customer replies feed back to the agent."
+open_questions: []

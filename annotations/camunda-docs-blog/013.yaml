@@ -1,0 +1,48 @@
+artefact: camunda-docs-blog/013
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "lost-baggage claim: a passenger report starts an AI agent (ad-hoc sub-process captioned 'leverages any LLM to decide the next best action') that picks among querying a baggage tracking database, messaging the last known airport, sending a care-products voucher, asking the passenger for more information, and organising baggage delivery then informing the passenger; afterwards a 'compensation claim?' gateway routes to a human 'process compensation' task or ends; 'low confidence' and a 48h timer on the agent route to a human 'manual processing' task"
+      operations: [generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> external"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> (human | end)"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-human
+          path: "outsider -> AI -> gateway -> human"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 6
+      mutates: external-systems
+    guards: [error-path-to-human]
+    notes: "AI element is the ad-hoc sub-process 'Baggage Loss Agent' itself (captioned 'AI-Agent'). Ungated tools: two gear service tasks and four send-message tasks, 6. Passenger and airport replies feed back into the agent. 'Low Confidence' boundary and 48h timer route to a human task; self-reported confidence not coded as a guard. 'Process compensation' comes after messages were sent, not a guard."
+open_questions: []

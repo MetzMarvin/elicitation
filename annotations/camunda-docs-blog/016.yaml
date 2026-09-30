@@ -1,0 +1,50 @@
+artefact: camunda-docs-blog/016
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: fixed-sequence
+    function:
+      description: "vendor application evaluation: AI extracts application data, a rule table screens products, humans review; AI writes a website description or a rejection email, sent automatically on rule-based rejection"
+      operations: [extract, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: record
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> system -> gateway -> (human | AI)"
+          human_gate: false
+          evidence: inferred
+        - audience: internal-human
+          path: "outsider -> AI -> system -> gateway -> human"
+          human_gate: true
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> gateway -> AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "outsider -> AI -> human -> AI -> human -> system -> external"
+          human_gate: true
+          evidence: image
+        - audience: public
+          path: "outsider -> AI -> human -> AI -> human -> public"
+          human_gate: true
+          evidence: record
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: [human-review]
+    notes: "Three OpenAI-icon tasks; the rule table and maps task are not AI. Ungated: the SendGrid notify on the automatic-rejection path (Slack timer path also 1), so 1. The timer escalation guards a human task, not the AI."
+open_questions: []

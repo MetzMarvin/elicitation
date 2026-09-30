@@ -1,0 +1,34 @@
+artefact: camunda-docs-blog/017
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "insurance claim adjuster flow: an AI task composes an email telling the adjuster a claimant awaits an estimate, sent automatically, before the adjuster's estimate task"
+      operations: [generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: system-generated
+        evidence: image
+      - writer: outsider-writable
+        evidence: inferred
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-human
+          path: "system -> AI -> system -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "AI task marked by the OpenAI icon; Google Drive, SendGrid and Slack connector tasks not counted as AI. Ungated call: the email send after the AI task, 1; the parallel Slack branch is not downstream of the AI."
+open_questions: []

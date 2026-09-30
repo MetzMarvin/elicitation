@@ -1,0 +1,50 @@
+artefact: camunda-docs-blog/077
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: agent-loop
+    function:
+      description: "insurance upsell: an AI agent task loops over a tool sub-process to consult an expert, call the policy holder, check rules, email recommendations, generate an umbrella offer email and trigger policy underwriting"
+      operations: [generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: system-generated
+        evidence: record
+      - writer: insider-writable
+        evidence: image
+      - writer: outsider-writable
+        evidence: inferred
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: record
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "AI -> AI -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "AI -> gateway -> (tools | end)"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 4
+      mutates: internal-records
+    guards: []
+    notes: "AI elements: agent task 'Determine Upsell Options' and OpenAI-icon 'Generate email content'. Ungated tools: DMN recs, two email connectors, Google Drive 'Generate Policy', 4. Yellow knowledge-base tasks read as manual tasks, not counted."
+open_questions: []

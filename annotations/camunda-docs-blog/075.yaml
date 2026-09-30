@@ -1,0 +1,48 @@
+artefact: camunda-docs-blog/075
+annotated: 2026-09-30
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "Customer-support email: an AI agent on past conversations picks tools to reply to the customer, query the knowledge base, calculate loan repayment or ask a human expert, then saves the conversation."
+      operations: [generate, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+      - kind: knowledge-base
+        evidence: image
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> system -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "outsider -> AI -> human -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> (tool | system)"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 4
+      mutates: internal-records
+    guards: []
+    notes: "Ungated: reply, knowledge-base query, repayment calculation, save-conversation = 4; save-to-knowledge-base follows the human expert, and the '...' tool slot is not counted. Customer replies feed back into the agent; the selectable human expert is not a guard."
+open_questions: []

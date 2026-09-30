@@ -1,0 +1,5 @@
+artefact: camunda-docs-blog/035
+annotated: 2026-09-30
+annotatable: false
+open_questions:
+  - "Researcher ruling: not annotatable. The AI element is itself a prompt guard (screens a customer message, returns allow / warn / block), not a business AI chain. Honorable mention in the thesis."

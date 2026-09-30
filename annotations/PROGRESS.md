@@ -17,17 +17,17 @@ Tick an item when its YAML file is final. 90 workflows.
 - [x] `camunda-docs-blog/008` ai-agents-what-you-need-to-know
 - [x] `camunda-docs-blog/009` beer-suggestions-dmn-ai
 - [x] `camunda-docs-blog/012` building-ai-agent-camunda
-- [ ] `camunda-docs-blog/013` camunda-87-agentic-orchestration-for-enterprise
-- [ ] `camunda-docs-blog/016` human-workflow-orchestration-generative-ai-openai
-- [ ] `camunda-docs-blog/017` claims-processing-automation-insurance-complete-guide
-- [ ] `camunda-docs-blog/019` key-principles-in-designing-agents-for-production-part-1
-- [ ] `camunda-docs-blog/021` where-ai-really-creates-value-and-where-it-doesnt
-- [ ] `camunda-docs-blog/024` three-ways-camunda-speaks-mcp-and-why-the-direction-matters
-- [ ] `camunda-docs-blog/035` your-customer-support-cs-transformation-ai-camunda
-- [ ] `camunda-docs-blog/047` how-decision-modeling-and-ai-help-with-risk-assessment
-- [ ] `camunda-docs-blog/067` responsible-ai-at-scale-camunda-governance-and-control
-- [ ] `camunda-docs-blog/075` agentic-orchestration-in-action-how-camunda-and-aws-transform-customer
-- [ ] `camunda-docs-blog/077` designing-ai-agents-in-camunda-ai-agent-task-connector-with-loop
+- [x] `camunda-docs-blog/013` camunda-87-agentic-orchestration-for-enterprise
+- [x] `camunda-docs-blog/016` human-workflow-orchestration-generative-ai-openai
+- [x] `camunda-docs-blog/017` claims-processing-automation-insurance-complete-guide
+- [x] `camunda-docs-blog/019` key-principles-in-designing-agents-for-production-part-1
+- [x] `camunda-docs-blog/021` where-ai-really-creates-value-and-where-it-doesnt
+- [x] `camunda-docs-blog/024` three-ways-camunda-speaks-mcp-and-why-the-direction-matters
+- [x] `camunda-docs-blog/035` your-customer-support-cs-transformation-ai-camunda
+- [x] `camunda-docs-blog/047` how-decision-modeling-and-ai-help-with-risk-assessment
+- [x] `camunda-docs-blog/067` responsible-ai-at-scale-camunda-governance-and-control
+- [x] `camunda-docs-blog/075` agentic-orchestration-in-action-how-camunda-and-aws-transform-customer
+- [x] `camunda-docs-blog/077` designing-ai-agents-in-camunda-ai-agent-task-connector-with-loop
 - [ ] `camunda-docs-blog/086` using-a2a-to-achieve-your-business-goals-pt-1
 - [ ] `camunda-docs-blog/119` key-principles-in-designing-agents-for-production-part-3
 - [ ] `camunda-docs-blog/121` optimizing-a-process-for-target-kpis-with-ai-a-job-analysts-used-to-do
