@@ -1,0 +1,38 @@
+artefact: frends-docs/001
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: fixed-sequence
+    function:
+      description: "Invoice exception handling: AI verifies the invoice and routes to auto-accept, reject or human review, then AI drafts a rejection or exception brief."
+      operations: [classify, decide, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> AI -> system -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "AI = three 'AI'-marked tasks (verification, rejection brief, exception brief). Ungated max 2 on each path (ERP post + audit log; ServiceNow post + script). Human-review branch is chosen by AI, so not a guard."
+open_questions: []

@@ -1,0 +1,59 @@
+artefact: quantumbpm/002
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "support triage: an AI task classifies the customer request and sets the route; on the simple path an AI task drafts the reply, which is sent automatically."
+      operations: [classify, decide, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> system -> external"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "Ungated call: send-response service task on the simple path. Human review branch is picked by the AI, so not a guard."
+  - id: C2
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "invoice pipeline: an AI task classifies the extracted, validated invoice as valid or invalid; valid ones are approved and recorded automatically."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "Separate diagram, no shared data flow with C1. Extract Data is a gear task without AI marker, so not AI. Ungated calls on valid path: approve + record."
+open_questions: []

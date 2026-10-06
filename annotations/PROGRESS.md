@@ -48,47 +48,47 @@ Tick an item when its YAML file is final. 90 workflows.
 - [x] `camunda-marketplace/228` ai-agent-chat-with-mcp-tools
 - [x] `camunda-marketplace/231` hospital-integration-blueprint
 - [x] `camunda-marketplace/252` agentic-ai-orchestration-with-form-io
-- [ ] `camunda-marketplace/255` fraud-detection-ai-agent-tutorial
-- [ ] `cib-seven/443` bpmn-ai-agent
-- [ ] `firestart/001` loesungen-rechnungsfreigabe
-- [ ] `firestart/002` loesungen-bestellanforderung
-- [ ] `firestart/003` loesungen-spesenabrechnung
-- [ ] `firestart/006` loesungen-mandanten-onboarding
-- [ ] `firestart/007` loesungen-service-support
-- [ ] `firestart/008` loesungen-reklamationsmanagement
-- [ ] `firestart/009` loesungen-software-nutzung
-- [ ] `firestart/010` loesungen-fahrzeugbuchung
-- [ ] `firestart/011` loesungen-qualitaetsmanagement
-- [ ] `firestart/012` loesungen-angebotserstellung
-- [ ] `firestart/013` loesungen-event-anmeldung
-- [ ] `firestart/014` loesungen-vertragsfreigaben
-- [ ] `firestart/015` loesungen-dokumentenlenkung
-- [ ] `firestart/016` loesungen-schulungsmanagement
-- [ ] `firestart/017` loesungen-beschaffungsoptimierung
-- [ ] `flowable/001` email-handling-process-ai-service
-- [ ] `flowable/166` www-flowable-com-blog-business-flowable-ai-service
-- [ ] `flowable/169` able-com-blog-business-ai-assisted-process-and-case-modeling
-- [ ] `flows-for-apex/001` ai-service-task
-- [ ] `flows-for-apex/002` ahsp-261-autonomous-def
-- [ ] `flows-for-apex/003` adhoc-subprocesses-ai-agents
-- [ ] `flows-for-apex/004` tutorial-4d-ai-service-task
-- [ ] `flows-for-apex/007` a90a-basic-ai-model
-- [ ] `flows-for-apex/008` a90b-basic-ai-model-variables
-- [ ] `flows-for-apex/009` a90c-ai-gateway-routing
-- [ ] `frends-docs/001` agentic-ai-native-ai-task-in-a-bpmn-process
-- [ ] `frends-docs/002` intelligent-ai-connector-shape-in-a-bpmn-process
-- [ ] `frends-docs/004` semi-deterministic-ai-process
-- [ ] `frends-docs/010` activity-shapes
-- [ ] `ibm-bamoe/004` community-930-hiring-genai-task
-- [ ] `ibm-bamoe/005` community-931-insurance-claims-ai
-- [ ] `newgen/037` newgensoft-com-platform-process-automation
-- [ ] `quantumbpm/001` orchestrating-ai-agents-with-bpmn
-- [ ] `quantumbpm/002` how-bpmn-engines-work
-- [ ] `trisotech/001` suicide-prevention-with-modeling-tools
-- [ ] `trisotech/027` bpmn-user-tasks-for-humans-and-ai-agents-presentation
-- [ ] `uipath-maestro-docs/070` debugging
-- [ ] `uipath-maestro-docs/097` how-to-complex-process
-- [ ] `uipath-maestro-docs/133` markers-implementation
-- [ ] `uipath-maestro-docs/188` purchase-to-pay
-- [ ] `uipath-maestro-docs/191` receive-task
-- [ ] `uipath-maestro-docs/192` references-templates
+- [x] `camunda-marketplace/255` fraud-detection-ai-agent-tutorial
+- [x] `cib-seven/443` bpmn-ai-agent
+- [x] `firestart/001` loesungen-rechnungsfreigabe
+- [x] `firestart/002` loesungen-bestellanforderung
+- [x] `firestart/003` loesungen-spesenabrechnung
+- [x] `firestart/006` loesungen-mandanten-onboarding
+- [x] `firestart/007` loesungen-service-support
+- [x] `firestart/008` loesungen-reklamationsmanagement
+- [x] `firestart/009` loesungen-software-nutzung
+- [x] `firestart/010` loesungen-fahrzeugbuchung
+- [x] `firestart/011` loesungen-qualitaetsmanagement
+- [x] `firestart/012` loesungen-angebotserstellung
+- [x] `firestart/013` loesungen-event-anmeldung
+- [x] `firestart/014` loesungen-vertragsfreigaben
+- [x] `firestart/015` loesungen-dokumentenlenkung
+- [x] `firestart/016` loesungen-schulungsmanagement
+- [x] `firestart/017` loesungen-beschaffungsoptimierung
+- [x] `flowable/001` email-handling-process-ai-service
+- [x] `flowable/166` www-flowable-com-blog-business-flowable-ai-service
+- [x] `flowable/169` able-com-blog-business-ai-assisted-process-and-case-modeling
+- [x] `flows-for-apex/001` ai-service-task
+- [x] `flows-for-apex/002` ahsp-261-autonomous-def
+- [x] `flows-for-apex/003` adhoc-subprocesses-ai-agents
+- [x] `flows-for-apex/004` tutorial-4d-ai-service-task
+- [x] `flows-for-apex/007` a90a-basic-ai-model
+- [x] `flows-for-apex/008` a90b-basic-ai-model-variables
+- [x] `flows-for-apex/009` a90c-ai-gateway-routing
+- [x] `frends-docs/001` agentic-ai-native-ai-task-in-a-bpmn-process
+- [x] `frends-docs/002` intelligent-ai-connector-shape-in-a-bpmn-process
+- [x] `frends-docs/004` semi-deterministic-ai-process
+- [x] `frends-docs/010` activity-shapes
+- [x] `ibm-bamoe/004` community-930-hiring-genai-task
+- [x] `ibm-bamoe/005` community-931-insurance-claims-ai
+- [x] `newgen/037` newgensoft-com-platform-process-automation
+- [x] `quantumbpm/001` orchestrating-ai-agents-with-bpmn
+- [x] `quantumbpm/002` how-bpmn-engines-work
+- [x] `trisotech/001` suicide-prevention-with-modeling-tools
+- [x] `trisotech/027` bpmn-user-tasks-for-humans-and-ai-agents-presentation
+- [x] `uipath-maestro-docs/070` debugging
+- [x] `uipath-maestro-docs/097` how-to-complex-process
+- [x] `uipath-maestro-docs/133` markers-implementation
+- [x] `uipath-maestro-docs/188` purchase-to-pay
+- [x] `uipath-maestro-docs/191` receive-task
+- [x] `uipath-maestro-docs/192` references-templates

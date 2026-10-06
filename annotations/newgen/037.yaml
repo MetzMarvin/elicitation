@@ -1,0 +1,30 @@
+artefact: newgen/037
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Credit card intake: an AI rule engine evaluates applications from web, mobile, chatbot and email channels and routes them to bot processing."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway -> system -> gateway -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: unknown
+    guards: []
+    notes: "AI = 'AI Rule Engine' task in the 'AI-assisted Data Processing' stage; its 'AI Decisioning' gateway leads to automated BOT Processing (RPA, not AI, counted ungated). Later human KYC/manager tasks act on the routing, not guards."
+open_questions: []

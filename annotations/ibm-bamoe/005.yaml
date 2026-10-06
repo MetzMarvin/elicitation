@@ -1,0 +1,55 @@
+artefact: ibm-bamoe/005
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Gen AI task summarises the submitted claim documents after data validation, ahead of a DMN complexity decision."
+      operations: [summarise]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "AI -> rule decision -> gateway"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "Sparkle-marked Gen AI task. Not visible whether the DMN reads the summary or only validated claim data, so suggests."
+  - id: C2
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "Langflow-backed agent task researches and investigates complex claims before settlement calculation."
+      operations: [generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "AI -> settlement task"
+          human_gate: unknown
+          evidence: image
+    authority:
+      invokes_without_gate: unknown
+      mutates: unknown
+    guards: []
+    notes: "Agent task with no visible tools; its Langflow agent's tools are hidden. Settlement task is untyped, gate unknown."
+open_questions: []

@@ -1,0 +1,34 @@
+artefact: trisotech/027
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An AI performer on a user task scores the quality of an input appraisal; the score routes to approval/rejection directly or via a decision table to human review."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> rule -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "Both slides are variants of one process (same AI task, same data); coded widest. Demo 5 gateway approves/rejects on the AI score with no human; Demo 4's conditional human review is absent there, so no guard coded."
+open_questions: []

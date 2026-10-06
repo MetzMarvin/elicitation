@@ -1,0 +1,34 @@
+artefact: camunda-marketplace/255
+annotated: 2026-10-02
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: agent-loop
+    function:
+      description: "Tax fraud check: an LLM picks which ad-hoc activities run (email inquiry, human advisor, fraud flag), an LLM drafts the inquiry email, and a second LLM check accepts the result or loops back."
+      operations: [classify, decide, generate, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: bpmn-xml
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> ad-hoc activation / gateway"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: external-recipient
+          path: "outsider -> AI -> AI -> system -> external"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 2
+      mutates: none
+    guards: []
+    notes: "Both .bpmn files byte-identical: one diagram. AI = 'Assess Fraud Risk' (label list drives ad-hoc activeElements), 'Generate Email Inquiry', 'Run Final Check' (OpenAI connector). Ungated: email generation + SendGrid send = 2; final check is an AI judge, not a guard."
+open_questions: []

@@ -1,0 +1,5 @@
+artefact: flows-for-apex/007
+annotated: 2026-10-05
+annotatable: false
+open_questions:
+  - "No AI element: linear plain bpmn:task A-D test scaffold; AI appears only in file name and process id."

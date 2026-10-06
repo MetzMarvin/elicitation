@@ -1,0 +1,34 @@
+artefact: firestart/008
+annotated: 2026-10-02
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "complaint intake: an AI task categorises, prioritises and extracts data from an emailed or form-submitted complaint before automated system processing and a notification."
+      operations: [classify, extract]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> system -> external"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "Ungated calls: gear service task (system processing) and send-message notification task. No human task anywhere in the flow."
+open_questions: []

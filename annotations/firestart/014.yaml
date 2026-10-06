@@ -1,0 +1,30 @@
+artefact: firestart/014
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "contract approval: an AI agent checks a submitted document before two reviewers and management sign digitally; then automated filing and audit log."
+      operations: [classify]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: [human-review]
+    notes: "Agent task has no visible tools, so single-call. Its output flows via a parallel gateway (no decision) to human signature tasks; filing and audit-log service tasks run only after human signatures."
+open_questions: []

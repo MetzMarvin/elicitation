@@ -1,0 +1,5 @@
+artefact: uipath-maestro-docs/191
+annotated: 2026-10-06
+annotatable: false
+open_questions:
+  - "Not annotatable: docs page for one element type (receive task); only a properties-panel Action list naming agent actions, no concrete process, inputs, sinks or effects. Named screenshot 191_maestro-service-task-properties-actions-588752-2a993.png missing from corpus/."

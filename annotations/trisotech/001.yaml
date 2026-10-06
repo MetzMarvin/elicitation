@@ -1,0 +1,32 @@
+artefact: trisotech/001
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "LLM scans a patient's journal entry against a high-risk word list for suicidal ideation; its detection feeds triage rules that route to self-help, specialist or ER."
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: image
+      - kind: knowledge-base
+        evidence: image
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> rules -> gateway"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "AI task marked with OpenAI glyph. Journal is patient-written health data (coded customer-pii). Detection is the only new input to the DMN triage, so decides. No service calls after AI; branches end in human tasks or end events."
+open_questions: []

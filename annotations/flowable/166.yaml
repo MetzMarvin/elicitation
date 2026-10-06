@@ -1,0 +1,34 @@
+artefact: flowable/166
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: fixed-sequence
+    function:
+      description: "Inbound customer email: AI recognises intent, scores sentiment and extracts intent-specific data; results route to automatic processing or human handling."
+      operations: [classify, extract, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: record
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "outsider -> AI -> automated processing"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: unknown
+    guards: []
+    notes: "AI = three rocket-marked tasks bound to the page's 'AI' service type. Ungated: the thick-bordered automatic-processing call activity (good sentiment path), contents hidden. Human review is picked by AI routing, so not a guard."
+open_questions: []

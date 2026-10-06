@@ -1,0 +1,30 @@
+artefact: ibm-bamoe/004
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Gen AI task drafts an offer letter from candidate, position, salary and bonus variables; the letter is later sent to the candidate after interviews."
+      operations: [generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: image
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "AI -> human -> system -> external"
+          human_gate: unknown
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: unknown
+    guards: []
+    notes: "Sparkle task with watsonx prompt panel is the only AI. Ungated count: interview timer boundaries bypass the humans to two script tasks (notification, denial). Effect of the denial task not visible."
+open_questions: []

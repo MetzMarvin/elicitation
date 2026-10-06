@@ -1,0 +1,34 @@
+artefact: firestart/007
+annotated: 2026-10-02
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "Inbound customer inquiry is classified and data points extracted by two AI agent tasks; a clerk checks the data before backend processing or a request to the customer."
+      operations: [classify, extract]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: image
+        - audience: internal-system
+          path: "AI -> human -> system"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: internal-records
+    guards: [human-review]
+    notes: "Both AI agent tasks show no tools, so counted as plain calls in sequence. Clerk review sits between AI output and the gear backend task; gateway is decided by the human."
+open_questions: []

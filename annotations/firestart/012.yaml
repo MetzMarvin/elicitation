@@ -1,0 +1,38 @@
+artefact: firestart/012
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "quote preparation: an AI agent classifies an emailed or web-form customer request and extracts requested items and quantities; humans confirm before the quote is generated and sent."
+      operations: [classify, extract]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> system -> human -> system -> external"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: [human-review]
+    notes: "Agent task has no visible tools, so single-call. Ungated call: sum calculation task before the human confirmation; document creation and sending follow the confirmation."
+open_questions: []

@@ -1,0 +1,38 @@
+artefact: uipath-maestro-docs/133
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Agent compares retrieved invoice against purchase order (2-way matching); full match updates financial systems automatically, discrepancies go to manual review."
+      operations: [extract, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: system-generated
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> gateway -> internal-system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> gateway -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: internal-records
+    guards: []
+    notes: "AI = service task with 'Start and wait for agent', no visible tools. Ungated: Data Service record write on full-match path; rejection email is after human. Manual review is chosen by AI routing, so not a guard."
+open_questions: []

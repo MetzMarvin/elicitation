@@ -1,0 +1,38 @@
+artefact: frends-docs/002
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 3
+    structure: fixed-sequence
+    function:
+      description: "invoice exception handling: an AI task verifies the case and sets the route; AI tasks write a rejection brief or an exception brief for human review."
+      operations: [classify, decide, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> system -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "AI elements: three AI-marked tasks. Ungated calls, widest path: ERP reject post + audit log write (exception path: ticket post + script also 2). Human review branch is picked by the AI, so not a guard."
+open_questions: []

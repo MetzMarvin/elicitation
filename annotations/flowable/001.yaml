@@ -1,0 +1,34 @@
+artefact: flowable/001
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 5
+    structure: fixed-sequence
+    function:
+      description: "AI detects the intents of an inbound customer email; an inclusive gateway routes each intent to an AI extraction of structured data into process variables."
+      operations: [classify, extract]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: record
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: record
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "Both images are versions of one process (linear, then gateway variant); coded the wider gateway variant. Rocket-icon tasks are AI per page prose (service type AI). No non-AI service calls; outputs end in process variables."
+open_questions: []

@@ -1,0 +1,38 @@
+artefact: uipath-maestro-docs/097
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "Agent resolves invoice-to-order mismatches; its resolved/rejected decision routes to human approval or to an automated rejection email to the supplier."
+      operations: [decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: image
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> external"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: [error-path-to-human, human-review]
+    notes: "Agent task with no visible tools, so single-call. Ungated: Outlook notification on the Rejected path = 1. Error boundary leads to a human resolution task; human review only on the Resolved path."
+open_questions: []

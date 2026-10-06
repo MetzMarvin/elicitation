@@ -1,0 +1,30 @@
+artefact: firestart/015
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "AI agent checks a submitted controlled document and extracts its data before human review and approval."
+      operations: [extract, classify]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: insider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: internal-docs
+        evidence: image
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: [human-review]
+    notes: "AI agent task has no visible tools, so single-call. Reviewer user task directly follows; all service/notify tasks come after two human approvals, so none are ungated."
+open_questions: []

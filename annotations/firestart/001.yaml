@@ -1,0 +1,38 @@
+artefact: firestart/001
+annotated: 2026-10-02
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "AI reads data from an inbound invoice; a rule-based 3-way match checks it, then a human approves before ERP posting and archiving."
+      operations: [extract]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "AI -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> system -> human"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system -> human -> system"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: none
+    guards: [validation, human-review]
+    notes: "AI task marked 'AI' (extraction). Ungated: match service task plus notification on the mismatch path = 2. ERP posting sits behind human approval. Gateway reads the rule match result, not the AI output directly."
+open_questions: []

@@ -1,0 +1,36 @@
+artefact: quantumbpm/001
+annotated: 2026-10-06
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: agent-loop
+    function:
+      description: "AI classifies an incoming support ticket; a rule table routes it to a human or to an agent that uses lookup, search and drafting tools before an automated reply is sent."
+      operations: [classify, decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: business-records
+        evidence: bpmn-xml
+      - kind: knowledge-base
+        evidence: bpmn-xml
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "AI -> rule table -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: external-recipient
+          path: "AI -> system -> external"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 5
+      mutates: internal-records
+    guards: []
+    notes: "Page prose names classify-ticket and agent-plan as the only LLM-backed tasks; DMN is not AI. Ungated: 3 agent tools + finalize + send reply. Confidence-based DMN routing to human is not a guard."
+open_questions: []

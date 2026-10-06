@@ -1,0 +1,38 @@
+artefact: flows-for-apex/001
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "LLM labels a case for fraud likelihood to drive an inclusive gateway; on the email label a second LLM drafts an information request sent automatically."
+      operations: [classify, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: record
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> AI -> external"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "Input is the submitter's declared data (mocked in Set up Data), coded as outsider content per prose. Ungated call: Send Email. Human Review is an AI-chosen branch, not a guard; inclusive gateway can fire email alongside it."
+open_questions: []

@@ -1,0 +1,38 @@
+artefact: flows-for-apex/004
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: fixed-sequence
+    function:
+      description: "Tax-fraud screening: AI labels taxpayer data to route an inclusive gateway; on the email branch a second AI drafts a clarification email sent to the taxpayer automatically."
+      operations: [classify, generate]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: inferred
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: bpmn-xml
+    output:
+      shape: free-text
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: external-recipient
+          path: "AI -> AI -> system -> external"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-human
+          path: "AI -> gateway -> human"
+          human_gate: true
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "Both tasks apex:type apexAIGeneration; gateway conditions read the AI result. Taxpayer data is hardcoded mock of a taxpayer declaration, coded outsider. Ungated: Send Email = 1; Human Review is an AI-chosen branch, not a guard."
+open_questions: []

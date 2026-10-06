@@ -1,0 +1,5 @@
+artefact: flows-for-apex/008
+annotated: 2026-10-05
+annotatable: false
+open_questions:
+  - "No AI element: four plain bpmn:task (A-D), no AI binding; AI appears only in file name and process id (no .bpmn file in corpus, record only)."

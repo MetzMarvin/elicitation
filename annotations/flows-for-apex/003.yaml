@@ -1,0 +1,36 @@
+artefact: flows-for-apex/003
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "Lost-baggage recovery: an LLM-controlled ad-hoc sub-process (Control Mode AI) locates the bag, rebooks it, arranges delivery, issues vouchers or declares it lost."
+      operations: [decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: image
+      - kind: business-records
+        evidence: image
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> activity selection / completion / escalation"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> system -> external"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 6
+      mutates: external-systems
+    guards: []
+    notes: "Ungated = 6 script-task tools (two lookups, voucher, rebook, delivery, request human assistance); untyped 'declare lost' and the customer user task not counted. Turn limits are not guards; escalation leads to a service task, not a human."
+open_questions: []

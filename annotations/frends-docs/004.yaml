@@ -1,0 +1,38 @@
+artefact: frends-docs/004
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "AI classifies an HTTP-submitted support ticket; a gateway routes on its category to raising an issue or request, notifying a lead, or alerting support."
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> gateway -> system"
+          human_gate: false
+          evidence: image
+        - audience: internal-human
+          path: "AI -> gateway -> system -> human"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 1
+      mutates: internal-records
+    guards: []
+    notes: "Only the 'AI'-marked task is AI. One automated task per branch, so max 1 ungated call. Low-confidence branch to a lead is AI self-reported confidence, not a guard."
+open_questions: []

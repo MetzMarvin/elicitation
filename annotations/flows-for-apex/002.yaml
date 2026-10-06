@@ -1,0 +1,36 @@
+artefact: flows-for-apex/002
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "Lost-luggage agent: an AI-driven ad-hoc sub-process selects lookup, voucher, rebooking and delivery tools, or escalates / declares the bag lost."
+      operations: [decide, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: image
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> tool -> external"
+          human_gate: false
+          evidence: image
+        - audience: control-flow
+          path: "outsider -> AI -> boundary escalation / error -> system"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 6
+      mutates: external-systems
+    guards: []
+    notes: "AI-ness of the ad-hoc sub-process from page prose ('AI-Driven BPMN Agents'). Ungated = 6 script-task tools; customer user task and untyped 'declare luggage lost' not counted. Escalation is agent-chosen and ends in a service task: no guard."
+open_questions: []

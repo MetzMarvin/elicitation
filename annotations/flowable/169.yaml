@@ -1,0 +1,5 @@
+artefact: flowable/169
+annotated: 2026-10-05
+annotatable: false
+open_questions:
+  - "No AI element: the only AI is the model generator (modelling assistant); the credit-check task binds an OpenAPI 'Credit Score Service', rocket glyph alone is not AI evidence. Screenshot missing from corpus."

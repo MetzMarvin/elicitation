@@ -1,0 +1,38 @@
+artefact: firestart/002
+annotated: 2026-10-02
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "AI agent extracts data from a received supplier quote; approval rules then route to automatic approval or human approval before the order is placed and sent to the ERP."
+      operations: [extract]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> system -> system -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> human -> system -> system"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 3
+      mutates: external-systems
+    guards: []
+    notes: "Agent task shows no tools, so single-call. Ungated count on auto-approval path: auto approval, place order, ERP transfer. Human approvals are only on rule-selected branches, so not coded as guards."
+open_questions: []

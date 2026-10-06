@@ -1,0 +1,5 @@
+artefact: flows-for-apex/009
+annotated: 2026-10-05
+annotatable: false
+open_questions:
+  - "No AI element: 'AI' only in file name / process id; routing_decision is a static variable ('APPROVE') set by a plain task, no AI binding in bpmn-xml."

@@ -1,0 +1,34 @@
+artefact: firestart/006
+annotated: 2026-10-02
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "client onboarding: an AI agent checks the client's entered data and rates risk before automated document creation, lawyer review, client signature and filing"
+      operations: [classify]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: image
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "AI -> system -> system"
+          human_gate: false
+          evidence: image
+        - audience: external-recipient
+          path: "AI -> system -> human -> external"
+          human_gate: true
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: [human-review]
+    notes: "AI Agent task with no visible tools, so single-call. Ungated: beneficial-owner service task and document-creation service task before the lawyer's review; filing comes after the human steps."
+open_questions: []

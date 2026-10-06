@@ -1,0 +1,34 @@
+artefact: firestart/013
+annotated: 2026-10-05
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "event registration: for an unknown company, an AI agent task checks the registrant's company data; valid data is created in the CRM and the participant registered automatically."
+      operations: [classify]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: closed-label
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: image
+        - audience: internal-system
+          path: "AI -> gateway -> system"
+          human_gate: false
+          evidence: image
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "Agent task shows no tools, so single-call. Ungated calls on the valid path: CRM create and participant registration service tasks. Human check only on the invalid branch, not a guard."
+open_questions: []
