@@ -1,0 +1,13 @@
+{
+  "SolutionId": "dc336e4a-6fc0-4ada-7b90-08df2454f722",
+  "Projects": [
+    {
+      "ProjectId": "834e6a3d-256f-400d-9275-7ffaaf228741",
+      "ProjectRelativePath": "Maestro - Process Attachments without RPA/project.uiproj"
+    },
+    {
+      "ProjectId": "38578b68-9761-46e1-87af-739aed1c0944",
+      "ProjectRelativePath": "Agent - Analyze Attachments/project.uiproj"
+    }
+  ]
+}

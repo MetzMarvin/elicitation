@@ -1,0 +1,230 @@
+{
+  "id": "0ce8edad-8a5a-4c69-b67a-584b51b50df1",
+  "version": "1.1.0",
+  "name": "Agent - Analyze Attachments",
+  "metadata": {
+    "storageVersion": "50.0.0",
+    "isConversational": false,
+    "targetRuntime": "pythonAgent",
+    "showProjectCreationExperience": false
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "## Role\nYou are a file description assistant. You receive one or more files and return a concise description of each file's contents.\n\n## Tool Rules\n- **Analyze Files**: Use this tool to inspect the contents of every input file. Pass all attachments and ask for a brief summary of each file.\n\n## Work Steps\n1. Receive the input files from the user prompt.\n2. Call **Analyze Files** with all attachments, requesting a brief content summary for each file.\n3. For each file, extract the filename from the attachment's FullName and write a short, concise description of its contents based on the analysis.\n4. Return the result as JSON matching the outputSchema exactly.\n\n## Output Rules\n- Return ONLY JSON that matches outputSchema exactly. No extra keys. No markdown. No extra text.\n- The output must be a JSON object with a single key `files` containing an array of objects.\n- Each object must have exactly two keys: `filename` (the original file name) and `description` (a brief summary of the file's contents).\n\n## Final Reminder\nAlways return strict JSON with a `files` array — one entry per input file, each with `filename` and `description`.",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "## Role\nYou are a file description assistant. You receive one or more files and return a concise description of each file's contents.\n\n## Tool Rules\n- **Analyze Files**: Use this tool to inspect the contents of every input file. Pass all attachments and ask for a brief summary of each file.\n\n## Work Steps\n1. Receive the input files from the user prompt.\n2. Call **Analyze Files** with all attachments, requesting a brief content summary for each file.\n3. For each file, extract the filename from the attachment's FullName and write a short, concise description of its contents based on the analysis.\n4. Return the result as JSON matching the outputSchema exactly.\n\n## Output Rules\n- Return ONLY JSON that matches outputSchema exactly. No extra keys. No markdown. No extra text.\n- The output must be a JSON object with a single key `files` containing an array of objects.\n- Each object must have exactly two keys: `filename` (the original file name) and `description` (a brief summary of the file's contents).\n\n## Final Reminder\nAlways return strict JSON with a `files` array — one entry per input file, each with `filename` and `description`."
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "Describe the following files using clipped, concise language.\n\nInput files:\n<files>{{input.files}}</files>\n\nSteps:\n1. Use the **Analyze Files** tool to inspect the contents of each file.\n2. For each file, note its filename and write a brief description of what it contains.\n3. Return the result as a JSON object with a `files` array.\n\nOutput rules:\n- Return ONLY valid JSON matching the outputSchema.\n- Each entry must have `filename` (from the attachment FullName) and `description` (a short summary).\n- No markdown, no extra text — just the JSON object.",
+      "contentTokens": [
+        {
+          "type": "simpleText",
+          "rawString": "Describe the following files using clipped, concise language.\n\nInput files:\n<files>"
+        },
+        {
+          "type": "variable",
+          "rawString": "input.files"
+        },
+        {
+          "type": "simpleText",
+          "rawString": "</files>\n\nSteps:\n1. Use the **Analyze Files** tool to inspect the contents of each file.\n2. For each file, note its filename and write a brief description of what it contains.\n3. Return the result as a JSON object with a `files` array.\n\nOutput rules:\n- Return ONLY valid JSON matching the outputSchema.\n- Each entry must have `filename` (from the attachment FullName) and `description` (a short summary).\n- No markdown, no extra text — just the JSON object."
+        }
+      ]
+    }
+  ],
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "files": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/job-attachment"
+        },
+        "definitions": {
+          "job-attachment": {
+            "type": "object",
+            "properties": {
+              "ID": {
+                "type": "string",
+                "description": "Orchestrator attachment key"
+              },
+              "FullName": {
+                "type": "string",
+                "description": "File name"
+              },
+              "MimeType": {
+                "type": "string",
+                "description": "The MIME type of the content, such as \"application/json\" or \"image/png\""
+              },
+              "Metadata": {
+                "type": "object",
+                "description": "Dictionary<string, string> of metadata",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "ID"
+            ],
+            "x-uipath-resource-kind": "JobAttachment"
+          }
+        }
+      }
+    },
+    "definitions": {
+      "job-attachment": {
+        "type": "object",
+        "required": [
+          "ID"
+        ],
+        "x-uipath-resource-kind": "JobAttachment",
+        "properties": {
+          "ID": {
+            "type": "string",
+            "description": "Orchestrator attachment key"
+          },
+          "FullName": {
+            "type": "string",
+            "description": "File name"
+          },
+          "MimeType": {
+            "type": "string",
+            "description": "The MIME type of the content, such as \"application/json\" or \"image/png\""
+          },
+          "Metadata": {
+            "type": "object",
+            "description": "Dictionary<string, string> of metadata",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "outputSchema": {
+    "type": "object",
+    "required": [
+      "file_Summaries"
+    ],
+    "properties": {
+      "file_Summaries": {
+        "type": "array",
+        "description": "Array of file summaries, one entry per input file.",
+        "items": {
+          "type": "object",
+          "required": [
+            "filename",
+            "description"
+          ],
+          "properties": {
+            "filename": {
+              "type": "string",
+              "description": "The original name of the file, taken from the input attachment's FullName."
+            },
+            "description": {
+              "type": "string",
+              "description": "A brief, concise description of the file's contents."
+            }
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "model": "gpt-4o-2024-11-20",
+    "maxTokens": 16384,
+    "temperature": 0,
+    "engine": "basic-v2",
+    "maxIterations": 25,
+    "mode": "standard"
+  },
+  "resources": [
+    {
+      "$resourceType": "tool",
+      "id": "d810b0a4-95ea-47b6-a4a6-38d8cd3b3fb4",
+      "name": "Analyze Files",
+      "description": "Analyze one or more files with an LLM to extract, synthesize, or answer queries about their content.",
+      "type": "internal",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "attachments": {
+            "type": "array",
+            "description": "Array of files, documents, images, or other attachments to process",
+            "items": {
+              "$ref": "#/definitions/job-attachment"
+            }
+          },
+          "analysisTask": {
+            "type": "string",
+            "description": "The task, question, or instruction for processing the files (e.g., 'summarize this document', 'extract key points', 'what is in this image')"
+          }
+        },
+        "required": [
+          "attachments",
+          "analysisTask"
+        ],
+        "definitions": {
+          "job-attachment": {
+            "type": "object",
+            "required": [
+              "ID"
+            ],
+            "x-uipath-resource-kind": "JobAttachment",
+            "properties": {
+              "ID": {
+                "type": "string",
+                "description": "Orchestrator attachment key"
+              },
+              "FullName": {
+                "type": "string",
+                "description": "File name"
+              },
+              "MimeType": {
+                "type": "string",
+                "description": "The MIME type of the content, such as \"application/json\" or \"image/png\""
+              },
+              "Metadata": {
+                "type": "object",
+                "description": "Dictionary<string, string> of metadata",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "settings": {},
+      "properties": {
+        "toolType": "analyze-attachments"
+      },
+      "guardrail": {
+        "policies": []
+      },
+      "isEnabled": true,
+      "argumentProperties": {},
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "analysis": {
+            "type": "string",
+            "description": "Analysis result of the attachments (analysis, summary, extracted information, etc.)"
+          }
+        },
+        "required": [
+          "analysis"
+        ]
+      }
+    }
+  ],
+  "features": []
+}

@@ -1,0 +1,113 @@
+artefact: uipath-marketplace/006
+annotated: 2026-10-11
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent validates the policy behind a reported loss; an inactive policy rejects the claim, an active one starts the parallel evaluations."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "Placeholder agent task, single-call. Input is the policyholder's loss notice, captured by an employee. Record creation and notifications follow only after the human adjuster assignment."
+  - id: C2
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent validates coverage of the reported loss; an excluded peril rejects the claim."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "Placeholder agent task, single-call; decides the 'Evaluation Outcome' gateway together with the fraud screening agent."
+  - id: C3
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent screens the loss notice for fraud; a suspicion routes the claim to an investigator, otherwise it goes to adjuster assignment."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-human
+          path: "outsider -> AI -> gateway -> human"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: []
+    notes: "Placeholder agent task, single-call. Investigator review and adjuster assignment act on the AI routing and are not guards."
+  - id: C4
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent enriches the loss intake data ahead of adjuster assignment and claim record creation."
+      operations: [extract, generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> human -> system"
+          human_gate: unknown
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: unknown
+    guards: []
+    notes: "Placeholder agent task, single-call. No mapping shows whether the enriched data reaches the claim record; the adjuster-assignment user task sits in between."
+open_questions: []

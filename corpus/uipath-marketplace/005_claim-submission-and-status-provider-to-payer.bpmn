@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="x-uipath-initial-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="f256f8a6">
+  <bpmn:process id="Process_1" name="ClaimSubmissionStatus" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:inputOutput id="vGe4trtmS" name="sampleOutput" type="string" elementId="taskValidateCoding" canonicalId="sampleOutput" custom="true" />
+        <uipath:inputOutput id="vKEPjajnv" name="sampleOutput" type="string" elementId="taskCheckCompleteness" canonicalId="sampleOutput2" custom="true" />
+        <uipath:inputOutput id="vO9duqOh0" name="sampleOutput" type="string" elementId="Activity_4097j4" canonicalId="sampleOutput3" custom="true" />
+        <uipath:inputOutput id="vD2daRGvz" name="scriptResponse" type="jsonSchema" elementId="taskRetrySubmission" canonicalId="scriptResponse" />
+        <uipath:inputOutput id="v4ZYKZsIr" name="Error" type="jsonSchema" elementId="taskRetrySubmission" canonicalId="error"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+      </uipath:variables>
+      <uipath:migrationVersion version="21" />
+      <uipath:intsvcActivityConfig version="v2" />
+    </bpmn:extensionElements>
+    <bpmn:parallelGateway id="parallelSplitValidations" name="Pre-Submission Validations">
+      <bpmn:incoming>seq-0</bpmn:incoming>
+      <bpmn:outgoing>seq-1</bpmn:outgoing>
+      <bpmn:outgoing>seq-9</bpmn:outgoing>
+      <bpmn:outgoing>seq-13</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:serviceTask id="taskValidateCoding" name="Validate Coding &#38; Modifiers Agent (ICD, CPT, DRG)">
+      <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartAgentJob" version="v1" />
+          <uipath:output name="sampleOutput" type="string" source="" var="vGe4trtmS" custom="true" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>seq-1</bpmn:incoming>
+      <bpmn:outgoing>seq-2</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="gatewayCodingValid" name="Coding Valid?">
+      <bpmn:incoming>seq-2</bpmn:incoming>
+      <bpmn:outgoing>seq-4</bpmn:outgoing>
+      <bpmn:outgoing>edge_QQSO4J</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="taskCoderCorrection" name="Coder Correction">
+      <bpmn:incoming>seq-4</bpmn:incoming>
+      <bpmn:outgoing>seq-5</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="gatewayCorrectionOutcome" name="Correction Outcome">
+      <bpmn:incoming>seq-5</bpmn:incoming>
+      <bpmn:outgoing>seq-7</bpmn:outgoing>
+      <bpmn:outgoing>edge_gatewayCorrectionOutcome-gatewayMergeValidationssPiRDa</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="endCodingError" name="Claim Rejected: Coding Error Unresolved">
+      <bpmn:incoming>seq-7</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="taskVerifyEligibility" name="Verify Eligibility (Coverage Active, Benefits Available)">
+      <bpmn:incoming>seq-9</bpmn:incoming>
+      <bpmn:outgoing>seq-10</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="gatewayEligibilityCheck" name="Eligibility Check Result">
+      <bpmn:incoming>seq-10</bpmn:incoming>
+      <bpmn:outgoing>seq-11</bpmn:outgoing>
+      <bpmn:outgoing>seq-12</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="endIneligible" name="Claim Rejected: Patient Ineligible">
+      <bpmn:incoming>seq-12</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="taskCheckCompleteness" name="Check Completeness Agent (attachments, clinical notes, required fields)">
+      <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartAgentJob" version="v1" />
+          <uipath:output name="sampleOutput" type="string" source="" var="vKEPjajnv" custom="true" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>seq-13</bpmn:incoming>
+      <bpmn:outgoing>seq-14</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:boundaryEvent id="boundaryMissingData" name="Missing Data" cancelActivity="false" attachedToRef="taskCheckCompleteness">
+      <bpmn:outgoing>seq-15</bpmn:outgoing>
+      <bpmn:errorEventDefinition />
+    </bpmn:boundaryEvent>
+    <bpmn:userTask id="taskStaffCorrection" name="Staff Correction">
+      <bpmn:incoming>seq-15</bpmn:incoming>
+      <bpmn:outgoing>seq-16</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="gatewayStaffCorrectionOutcome" name="Correction Outcome">
+      <bpmn:incoming>seq-16</bpmn:incoming>
+      <bpmn:outgoing>seq-17</bpmn:outgoing>
+      <bpmn:outgoing>seq-18</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="endMissingData" name="Claim Rejected: Missing Data Not Corrected">
+      <bpmn:incoming>seq-18</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:inclusiveGateway id="gatewayMergeValidations" name="All validations complete">
+      <bpmn:incoming>seq-11</bpmn:incoming>
+      <bpmn:incoming>seq-14</bpmn:incoming>
+      <bpmn:incoming>seq-17</bpmn:incoming>
+      <bpmn:incoming>edge_gatewayCorrectionOutcome-gatewayMergeValidationssPiRDa</bpmn:incoming>
+      <bpmn:incoming>edge_QQSO4J</bpmn:incoming>
+      <bpmn:outgoing>seq-19</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:serviceTask id="taskSubmitClaim" name="Submit Claim to Clearinghouse (837 EDI)">
+      <bpmn:incoming>seq-19</bpmn:incoming>
+      <bpmn:incoming>seq-22</bpmn:incoming>
+      <bpmn:outgoing>seq-24</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:boundaryEvent id="boundaryTransmissionError" name="Transmission Error" cancelActivity="false" attachedToRef="taskSubmitClaim">
+      <bpmn:outgoing>seq-20</bpmn:outgoing>
+      <bpmn:errorEventDefinition />
+    </bpmn:boundaryEvent>
+    <bpmn:scriptTask id="taskRetrySubmission" name="Increment Retry Counter (max 2 attempts)" scriptFormat="JavaScript">
+      <bpmn:extensionElements>
+        <uipath:mapping version="v1">
+          <uipath:type value="BPMN.Variables" version="v1" />
+          <uipath:context>
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"vars":{"type":"object"},"metadata":{"type":"object"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="args" type="json" target="bodyField"><![CDATA[{"vars":"=vars","metadata":"=metadata"}]]></uipath:input>
+          <uipath:output name="scriptResponse" type="jsonSchema" source="=result.response" var="vD2daRGvz" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="v4ZYKZsIr" />
+        </uipath:mapping>
+        <uipath:scriptVersion value="v3" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>seq-20</bpmn:incoming>
+      <bpmn:outgoing>seq-21</bpmn:outgoing>
+      <bpmn:script><![CDATA[return {};]]></bpmn:script>
+    </bpmn:scriptTask>
+    <bpmn:exclusiveGateway id="gatewayRetryOutcome" name="Max Retries Reached?">
+      <bpmn:incoming>seq-21</bpmn:incoming>
+      <bpmn:outgoing>seq-22</bpmn:outgoing>
+      <bpmn:outgoing>seq-23</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="endTransmissionFail" name="Claim Submission Failed: Transmission Error">
+      <bpmn:incoming>seq-23</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:eventBasedGateway id="gatewayClearinghouseResponse" name="Clearinghouse Response">
+      <bpmn:incoming>seq-24</bpmn:incoming>
+      <bpmn:outgoing>seq-25</bpmn:outgoing>
+      <bpmn:outgoing>seq-26</bpmn:outgoing>
+      <bpmn:outgoing>seq-27</bpmn:outgoing>
+    </bpmn:eventBasedGateway>
+    <bpmn:intermediateCatchEvent id="eventClearinghouseAccepted" name="Clearinghouse Accepted">
+      <bpmn:incoming>seq-25</bpmn:incoming>
+      <bpmn:outgoing>seq-28</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="eventClearinghouseRejected" name="Clearinghouse Rejected">
+      <bpmn:incoming>seq-26</bpmn:incoming>
+      <bpmn:outgoing>seq-29</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="eventClearinghouseTimeout" name="No Response from Clearinghouse">
+      <bpmn:incoming>seq-27</bpmn:incoming>
+      <bpmn:outgoing>seq-30</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent id="endClearinghouseRejected" name="Claim Rejected: Clearinghouse Validation Failed">
+      <bpmn:incoming>seq-29</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="endClearinghouseTimeout" name="Escalated: Clearinghouse Timeout">
+      <bpmn:incoming>seq-30</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="taskTransmitToPayer" name="Transmit Claim to Payer">
+      <bpmn:incoming>seq-28</bpmn:incoming>
+      <bpmn:outgoing>seq-31</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:eventBasedGateway id="gatewayPayerResponse" name="Payer Response">
+      <bpmn:incoming>seq-31</bpmn:incoming>
+      <bpmn:outgoing>seq-32</bpmn:outgoing>
+      <bpmn:outgoing>seq-33</bpmn:outgoing>
+      <bpmn:outgoing>seq-34</bpmn:outgoing>
+    </bpmn:eventBasedGateway>
+    <bpmn:intermediateCatchEvent id="eventPayerAccepted" name="Payer Accepted Claim (277CA)">
+      <bpmn:incoming>seq-32</bpmn:incoming>
+      <bpmn:outgoing>seq-35</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="eventPayerDenied" name="Payer Denied Claim">
+      <bpmn:incoming>seq-33</bpmn:incoming>
+      <bpmn:outgoing>edge_eventPayerDenied-Activity_4097j4</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="eventPayerTimeout" name="No Acknowledgment from Payer">
+      <bpmn:incoming>seq-34</bpmn:incoming>
+      <bpmn:outgoing>seq-37</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent id="endPayerAccepted" name="Claim Accepted by Payer">
+      <bpmn:incoming>seq-35</bpmn:incoming>
+      <bpmn:messageEventDefinition />
+    </bpmn:endEvent>
+    <bpmn:endEvent id="endPayerDenied" name="Claim Rejected: Payer Denial">
+      <bpmn:incoming>edge_oNRkXY</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="endPayerTimeout" name="Escalated: Payer Response Timeout">
+      <bpmn:incoming>seq-37</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:startEvent id="Event_start" name="Claim Ready for Submission">
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="0af2633c-08d6-49b8-807a-f777bff0df0f" />
+      </bpmn:extensionElements>
+      <bpmn:outgoing>seq-0</bpmn:outgoing>
+      <bpmn:messageEventDefinition />
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_4097j4" name="Rejection Reason Parsing &#38; Worklisting Agent">
+      <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartAgentJob" version="v1" />
+          <uipath:output name="sampleOutput" type="string" source="" var="vO9duqOh0" custom="true" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_eventPayerDenied-Activity_4097j4</bpmn:incoming>
+      <bpmn:outgoing>edge_oNRkXY</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="seq-0" sourceRef="Event_start" targetRef="parallelSplitValidations" />
+    <bpmn:sequenceFlow id="seq-1" sourceRef="parallelSplitValidations" targetRef="taskValidateCoding" />
+    <bpmn:sequenceFlow id="seq-2" sourceRef="taskValidateCoding" targetRef="gatewayCodingValid" />
+    <bpmn:sequenceFlow id="seq-4" name="Invalid" sourceRef="gatewayCodingValid" targetRef="taskCoderCorrection">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Invalid"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-5" sourceRef="taskCoderCorrection" targetRef="gatewayCorrectionOutcome" />
+    <bpmn:sequenceFlow id="seq-7" name="Not Corrected" sourceRef="gatewayCorrectionOutcome" targetRef="endCodingError">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Not Corrected"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-9" sourceRef="parallelSplitValidations" targetRef="taskVerifyEligibility" />
+    <bpmn:sequenceFlow id="seq-10" sourceRef="taskVerifyEligibility" targetRef="gatewayEligibilityCheck" />
+    <bpmn:sequenceFlow id="seq-11" name="Eligible" sourceRef="gatewayEligibilityCheck" targetRef="gatewayMergeValidations">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Eligible"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-12" name="Not Eligible" sourceRef="gatewayEligibilityCheck" targetRef="endIneligible">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Not Eligible"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-13" sourceRef="parallelSplitValidations" targetRef="taskCheckCompleteness" />
+    <bpmn:sequenceFlow id="seq-14" name="Checks Completed" sourceRef="taskCheckCompleteness" targetRef="gatewayMergeValidations" />
+    <bpmn:sequenceFlow id="seq-15" sourceRef="boundaryMissingData" targetRef="taskStaffCorrection" />
+    <bpmn:sequenceFlow id="seq-16" sourceRef="taskStaffCorrection" targetRef="gatewayStaffCorrectionOutcome" />
+    <bpmn:sequenceFlow id="seq-17" name="Fixed" sourceRef="gatewayStaffCorrectionOutcome" targetRef="gatewayMergeValidations">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Fixed"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-18" name="Unresolved" sourceRef="gatewayStaffCorrectionOutcome" targetRef="endMissingData">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Unresolved"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-19" sourceRef="gatewayMergeValidations" targetRef="taskSubmitClaim" />
+    <bpmn:sequenceFlow id="seq-20" sourceRef="boundaryTransmissionError" targetRef="taskRetrySubmission" />
+    <bpmn:sequenceFlow id="seq-21" sourceRef="taskRetrySubmission" targetRef="gatewayRetryOutcome" />
+    <bpmn:sequenceFlow id="seq-22" name="No" sourceRef="gatewayRetryOutcome" targetRef="taskSubmitClaim">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="No"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-23" name="Yes" sourceRef="gatewayRetryOutcome" targetRef="endTransmissionFail">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Yes"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="seq-24" sourceRef="taskSubmitClaim" targetRef="gatewayClearinghouseResponse" />
+    <bpmn:sequenceFlow id="seq-25" sourceRef="gatewayClearinghouseResponse" targetRef="eventClearinghouseAccepted" />
+    <bpmn:sequenceFlow id="seq-26" sourceRef="gatewayClearinghouseResponse" targetRef="eventClearinghouseRejected" />
+    <bpmn:sequenceFlow id="seq-27" sourceRef="gatewayClearinghouseResponse" targetRef="eventClearinghouseTimeout" />
+    <bpmn:sequenceFlow id="seq-28" sourceRef="eventClearinghouseAccepted" targetRef="taskTransmitToPayer" />
+    <bpmn:sequenceFlow id="seq-29" sourceRef="eventClearinghouseRejected" targetRef="endClearinghouseRejected" />
+    <bpmn:sequenceFlow id="seq-30" sourceRef="eventClearinghouseTimeout" targetRef="endClearinghouseTimeout" />
+    <bpmn:sequenceFlow id="seq-31" sourceRef="taskTransmitToPayer" targetRef="gatewayPayerResponse" />
+    <bpmn:sequenceFlow id="seq-32" sourceRef="gatewayPayerResponse" targetRef="eventPayerAccepted" />
+    <bpmn:sequenceFlow id="seq-33" sourceRef="gatewayPayerResponse" targetRef="eventPayerDenied" />
+    <bpmn:sequenceFlow id="seq-34" sourceRef="gatewayPayerResponse" targetRef="eventPayerTimeout" />
+    <bpmn:sequenceFlow id="seq-35" sourceRef="eventPayerAccepted" targetRef="endPayerAccepted" />
+    <bpmn:sequenceFlow id="seq-37" sourceRef="eventPayerTimeout" targetRef="endPayerTimeout" />
+    <bpmn:sequenceFlow id="edge_eventPayerDenied-Activity_4097j4" sourceRef="eventPayerDenied" targetRef="Activity_4097j4" />
+    <bpmn:sequenceFlow id="edge_oNRkXY" sourceRef="Activity_4097j4" targetRef="endPayerDenied" />
+    <bpmn:sequenceFlow id="edge_gatewayCorrectionOutcome-gatewayMergeValidationssPiRDa" name="Corrected" sourceRef="gatewayCorrectionOutcome" targetRef="gatewayMergeValidations">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Corrected"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="edge_QQSO4J" name="Valid" sourceRef="gatewayCodingValid" targetRef="gatewayMergeValidations">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">="Valid"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_parallelSplitValidations" bpmnElement="parallelSplitValidations">
+        <dc:Bounds x="403" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="403" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskValidateCoding" bpmnElement="taskValidateCoding">
+        <dc:Bounds x="528" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="528" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayCodingValid" bpmnElement="gatewayCodingValid">
+        <dc:Bounds x="703" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="703" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskCoderCorrection" bpmnElement="taskCoderCorrection">
+        <dc:Bounds x="828" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="828" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayCorrectionOutcome" bpmnElement="gatewayCorrectionOutcome">
+        <dc:Bounds x="1003" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1003" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endCodingError" bpmnElement="endCodingError">
+        <dc:Bounds x="1158.5259144599909" y="92.91869172391092" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1158.5259144599909" y="133.9186917239109" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskVerifyEligibility" bpmnElement="taskVerifyEligibility">
+        <dc:Bounds x="530.5304008354518" y="357.174674264511" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="530.5304008354518" y="442.174674264511" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayEligibilityCheck" bpmnElement="gatewayEligibilityCheck">
+        <dc:Bounds x="705.5304008354518" y="372.174674264511" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="705.5304008354518" y="427.174674264511" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endIneligible" bpmnElement="endIneligible">
+        <dc:Bounds x="860" y="290.52169692982096" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="860" y="331.52169692982096" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskCheckCompleteness" bpmnElement="taskCheckCompleteness">
+        <dc:Bounds x="530.5304008354518" y="497.174674264511" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="530.5304008354518" y="582.1746742645109" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_boundaryMissingData" bpmnElement="boundaryMissingData">
+        <dc:Bounds x="609.3428162913092" y="559.1746742645109" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="609.3428162913092" y="600.1746742645109" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskStaffCorrection" bpmnElement="taskStaffCorrection">
+        <dc:Bounds x="698.2432066836141" y="637.1746742645109" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="698.2432066836141" y="722.1746742645109" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayStaffCorrectionOutcome" bpmnElement="gatewayStaffCorrectionOutcome">
+        <dc:Bounds x="855.5304008354518" y="652.1746742645109" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="855.5304008354518" y="707.1746742645109" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endMissingData" bpmnElement="endMissingData">
+        <dc:Bounds x="1012.5304008354517" y="564.2846429350702" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1012.5304008354517" y="605.2846429350702" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayMergeValidations" bpmnElement="gatewayMergeValidations">
+        <dc:Bounds x="1303" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1303" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskSubmitClaim" bpmnElement="taskSubmitClaim">
+        <dc:Bounds x="1428" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1428" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_boundaryTransmissionError" bpmnElement="boundaryTransmissionError">
+        <dc:Bounds x="1504" y="240" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1504" y="281" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskRetrySubmission" bpmnElement="taskRetrySubmission">
+        <dc:Bounds x="1593" y="318" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1593" y="403" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayRetryOutcome" bpmnElement="gatewayRetryOutcome">
+        <dc:Bounds x="1618" y="440" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1618" y="495" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endTransmissionFail" bpmnElement="endTransmissionFail">
+        <dc:Bounds x="1721" y="447" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1721" y="488" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayClearinghouseResponse" bpmnElement="gatewayClearinghouseResponse">
+        <dc:Bounds x="1714" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1714" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_eventClearinghouseAccepted" bpmnElement="eventClearinghouseAccepted">
+        <dc:Bounds x="1871" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1871" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_eventClearinghouseRejected" bpmnElement="eventClearinghouseRejected">
+        <dc:Bounds x="1871" y="340" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1871" y="381" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_eventClearinghouseTimeout" bpmnElement="eventClearinghouseTimeout">
+        <dc:Bounds x="1871" y="480" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1871" y="521" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endClearinghouseRejected" bpmnElement="endClearinghouseRejected">
+        <dc:Bounds x="2021" y="340" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2021" y="381" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endClearinghouseTimeout" bpmnElement="endClearinghouseTimeout">
+        <dc:Bounds x="2021" y="480" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2021" y="521" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_taskTransmitToPayer" bpmnElement="taskTransmitToPayer">
+        <dc:Bounds x="1989" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1989" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gatewayPayerResponse" bpmnElement="gatewayPayerResponse">
+        <dc:Bounds x="2164" y="193" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2164" y="248" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_eventPayerAccepted" bpmnElement="eventPayerAccepted">
+        <dc:Bounds x="2321" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2321" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_eventPayerDenied" bpmnElement="eventPayerDenied">
+        <dc:Bounds x="2297.9231819643983" y="339.99999999999994" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2297.9231819643983" y="380.99999999999994" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_eventPayerTimeout" bpmnElement="eventPayerTimeout">
+        <dc:Bounds x="2468.469599164548" y="483.79560125317767" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2468.469599164548" y="524.7956012531777" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endPayerAccepted" bpmnElement="endPayerAccepted">
+        <dc:Bounds x="2471" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2471" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endPayerDenied" bpmnElement="endPayerDenied">
+        <dc:Bounds x="2621" y="340" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2621" y="381" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_endPayerTimeout" bpmnElement="endPayerTimeout">
+        <dc:Bounds x="2618.469599164548" y="483.79560125317767" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2618.469599164548" y="524.7956012531777" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Event_start" bpmnElement="Event_start">
+        <dc:Bounds x="260" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="260" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_4097j4" bpmnElement="Activity_4097j4">
+        <dc:Bounds x="2405.1390499816653" y="318" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2405.1390499816653" y="403" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-0" bpmnElement="seq-0">
+        <di:waypoint x="296" y="218" />
+        <di:waypoint x="403" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-1" bpmnElement="seq-1">
+        <di:waypoint x="453" y="218" />
+        <di:waypoint x="528" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-2" bpmnElement="seq-2">
+        <di:waypoint x="628" y="218" />
+        <di:waypoint x="703" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-4" bpmnElement="seq-4">
+        <di:waypoint x="753" y="218" />
+        <di:waypoint x="828" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-5" bpmnElement="seq-5">
+        <di:waypoint x="928" y="218" />
+        <di:waypoint x="1003" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-7" bpmnElement="seq-7">
+        <di:waypoint x="1028" y="193" />
+        <di:waypoint x="1028" y="112" />
+        <di:waypoint x="1159" y="112" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-9" bpmnElement="seq-9">
+        <di:waypoint x="453" y="218" />
+        <di:waypoint x="491" y="218" />
+        <di:waypoint x="491" y="397" />
+        <di:waypoint x="531" y="397" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-10" bpmnElement="seq-10">
+        <di:waypoint x="631" y="397" />
+        <di:waypoint x="706" y="397" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-11" bpmnElement="seq-11">
+        <di:waypoint x="755.5304008354518" y="397.174674264511" />
+        <di:waypoint x="1266" y="397" />
+        <di:waypoint x="1266" y="218" />
+        <di:waypoint x="1303" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-12" bpmnElement="seq-12">
+        <di:waypoint x="731" y="372" />
+        <di:waypoint x="731" y="309" />
+        <di:waypoint x="860" y="309" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-13" bpmnElement="seq-13">
+        <di:waypoint x="453" y="218" />
+        <di:waypoint x="491" y="218" />
+        <di:waypoint x="491" y="537" />
+        <di:waypoint x="531" y="537" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-14" bpmnElement="seq-14">
+        <di:waypoint x="630.5304008354518" y="537.1746742645109" />
+        <di:waypoint x="1266" y="537" />
+        <di:waypoint x="1266" y="218" />
+        <di:waypoint x="1303" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-15" bpmnElement="seq-15">
+        <di:waypoint x="645" y="577" />
+        <di:waypoint x="671" y="577" />
+        <di:waypoint x="671" y="677" />
+        <di:waypoint x="698" y="677" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-16" bpmnElement="seq-16">
+        <di:waypoint x="798" y="677" />
+        <di:waypoint x="856" y="677" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-17" bpmnElement="seq-17">
+        <di:waypoint x="905.5304008354518" y="677.1746742645109" />
+        <di:waypoint x="1266" y="677" />
+        <di:waypoint x="1266" y="218" />
+        <di:waypoint x="1303" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-18" bpmnElement="seq-18">
+        <di:waypoint x="881" y="652" />
+        <di:waypoint x="881" y="581" />
+        <di:waypoint x="1013" y="582" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-19" bpmnElement="seq-19">
+        <di:waypoint x="1353" y="218" />
+        <di:waypoint x="1428" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-20" bpmnElement="seq-20">
+        <di:waypoint x="1540" y="258" />
+        <di:waypoint x="1643" y="258" />
+        <di:waypoint x="1643" y="318" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-21" bpmnElement="seq-21">
+        <di:waypoint x="1643" y="398" />
+        <di:waypoint x="1643" y="440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-22" bpmnElement="seq-22">
+        <di:waypoint x="1618" y="465" />
+        <di:waypoint x="1478" y="465" />
+        <di:waypoint x="1478" y="258" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-23" bpmnElement="seq-23">
+        <di:waypoint x="1668" y="465" />
+        <di:waypoint x="1721" y="465" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-24" bpmnElement="seq-24">
+        <di:waypoint x="1528" y="218" />
+        <di:waypoint x="1713" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-25" bpmnElement="seq-25">
+        <di:waypoint x="1764" y="218" />
+        <di:waypoint x="1871" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-26" bpmnElement="seq-26">
+        <di:waypoint x="1764" y="218" />
+        <di:waypoint x="1818" y="218" />
+        <di:waypoint x="1818" y="358" />
+        <di:waypoint x="1871" y="358" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-27" bpmnElement="seq-27">
+        <di:waypoint x="1764" y="218" />
+        <di:waypoint x="1818" y="218" />
+        <di:waypoint x="1818" y="498" />
+        <di:waypoint x="1871" y="498" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-28" bpmnElement="seq-28">
+        <di:waypoint x="1907" y="218" />
+        <di:waypoint x="1989" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-29" bpmnElement="seq-29">
+        <di:waypoint x="1907" y="358" />
+        <di:waypoint x="2021" y="358" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-30" bpmnElement="seq-30">
+        <di:waypoint x="1907" y="498" />
+        <di:waypoint x="2021" y="498" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-31" bpmnElement="seq-31">
+        <di:waypoint x="2089" y="218" />
+        <di:waypoint x="2164" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-32" bpmnElement="seq-32">
+        <di:waypoint x="2214" y="218" />
+        <di:waypoint x="2321" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-33" bpmnElement="seq-33">
+        <di:waypoint x="2214" y="218" />
+        <di:waypoint x="2239" y="218" />
+        <di:waypoint x="2239" y="358" />
+        <di:waypoint x="2298" y="358" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-34" bpmnElement="seq-34">
+        <di:waypoint x="2214" y="218" />
+        <di:waypoint x="2238" y="218" />
+        <di:waypoint x="2238" y="502" />
+        <di:waypoint x="2468" y="502" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-35" bpmnElement="seq-35">
+        <di:waypoint x="2357" y="218" />
+        <di:waypoint x="2471" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_seq-37" bpmnElement="seq-37">
+        <di:waypoint x="2504" y="502" />
+        <di:waypoint x="2618" y="502" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_eventPayerDenied-Activity_4097j4" bpmnElement="edge_eventPayerDenied-Activity_4097j4">
+        <di:waypoint x="2334" y="358" />
+        <di:waypoint x="2405" y="358" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_oNRkXY" bpmnElement="edge_oNRkXY">
+        <di:waypoint x="2505" y="358" />
+        <di:waypoint x="2621" y="358" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_gatewayCorrectionOutcome-gatewayMergeValidationssPiRDa" bpmnElement="edge_gatewayCorrectionOutcome-gatewayMergeValidationssPiRDa">
+        <di:waypoint x="1053" y="218" />
+        <di:waypoint x="1303" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_QQSO4J" bpmnElement="edge_QQSO4J">
+        <di:waypoint x="753" y="218" />
+        <di:waypoint x="773" y="218" />
+        <di:waypoint x="773" y="53" />
+        <di:waypoint x="1328" y="53" />
+        <di:waypoint x="1328" y="193" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

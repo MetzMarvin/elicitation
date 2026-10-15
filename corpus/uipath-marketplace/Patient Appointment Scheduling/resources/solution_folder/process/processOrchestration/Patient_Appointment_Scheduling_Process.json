@@ -1,0 +1,44 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Patient Appointment Scheduling Process",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "73092eee-1bdf-470d-9925-9cba6a1e0109",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "Patient Appointment Scheduling Process",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "Patient Appointment Scheduling Process",
+      "package": {
+        "key": "9e33c069-ad87-4f29-abf8-319be3c75ab0"
+      },
+      "packageName": "Patient.Appointment.Scheduling.processOrchestration.Patient.Appointment.Scheduling.Process",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "87a5ff9d-b278-43cc-b6e1-35c9accc8d1f",
+    "files": []
+  }
+}

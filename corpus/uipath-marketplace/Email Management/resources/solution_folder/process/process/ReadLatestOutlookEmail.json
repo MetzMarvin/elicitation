@@ -1,0 +1,49 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "ReadLatestOutlookEmail",
+    "kind": "process",
+    "type": "process",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "e0c7e7b0-9fed-4af5-8f58-7ff0bd50c981",
+    "dependencies": [
+      {
+        "name": "ReadLatestOutlookEmail",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Process",
+      "name": "ReadLatestOutlookEmail",
+      "package": {
+        "key": "e3685069-c577-42e7-9883-8321534a5758"
+      },
+      "packageName": "Email.Management.Agent.process.ReadLatestOutlookEmail",
+      "inputArguments": "{}",
+      "jobPriority": "Medium",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "jobRecording": "Disabled",
+      "targetFrameworkValue": "Portable",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "07a38fe2-c426-4085-a027-3fcc4efabb63",
+    "files": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Email Management Agent",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "97b60f48-ffea-453b-a3c4-a5911cebf7dd",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Email Management Agent"
+    },
+    "locks": [],
+    "key": "e2f32571-fdeb-4acb-a4ae-6acc86c3aa38",
+    "files": []
+  }
+}

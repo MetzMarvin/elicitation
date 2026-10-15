@@ -1,0 +1,33 @@
+structure,autonomy,writer,shape,outward-ungated,mutates,human-review,workflows_lower,workflows_upper,sources,members
+agent,decides-or-acts,outsider,free-text,yes,some,no,9,9,camunda-marketplace:2 quantumbpm:1 camunda-docs-blog:6,camunda-docs-blog/013/C1 camunda-docs-blog/021/C1 camunda-docs-blog/067/C1 camunda-docs-blog/075/C1 camunda-docs-blog/077/C1 camunda-docs-blog/121/C1 camunda-marketplace/006/C1 camunda-marketplace/023/C1 quantumbpm/001/C1
+non-agent,decides-or-acts,outsider,not-free-text,no,none,no,7,10,camunda-marketplace:2 uipath-marketplace:2 camunda-docs-blog:1 flowable:1 trisotech:1,camunda-docs-blog/007/C1 camunda-marketplace/016/C1 camunda-marketplace/112/C1 flowable/001/C1 trisotech/001/C1 uipath-marketplace/006/C1 uipath-marketplace/006/C2 uipath-marketplace/006/C3 uipath-marketplace/007/C2
+non-agent,decides-or-acts,outsider,not-free-text,yes,some,no,5,5,camunda-marketplace:3 firestart:2,camunda-marketplace/022/C1 camunda-marketplace/064/C2 camunda-marketplace/067/C1 firestart/002/C1 firestart/008/C1
+agent,decides-or-acts,outsider,free-text,yes,none,no,4,5,camunda-docs-blog:2 camunda-marketplace:2,camunda-docs-blog/012/C1 camunda-docs-blog/086/C1 camunda-marketplace/165/C1 camunda-marketplace/255/C1
+non-agent,decides-or-acts,outsider,free-text,yes,none,no,3,3,quantumbpm:1 flows-for-apex:2,flows-for-apex/001/C1 flows-for-apex/004/C1 quantumbpm/002/C1
+non-agent,decides-or-acts,outsider,not-free-text,no,some,no,2,7,camunda-marketplace:1 firestart:1,camunda-marketplace/136/C1 firestart/013/C1
+non-agent,suggests,not-outsider,not-free-text,no,none,yes,2,4,firestart:2,firestart/003/C1 firestart/015/C1
+agent,decides-or-acts,outsider,free-text,no,some,no,2,3,uipath-marketplace:1 camunda-docs-blog:1,camunda-docs-blog/019/C1 uipath-marketplace/001/C1
+agent,decides-or-acts,outsider,not-free-text,no,some,no,2,3,camunda-docs-blog:1 flows-for-apex:1,camunda-docs-blog/122/C1 flows-for-apex/003/C1
+non-agent,suggests,outsider,not-free-text,no,some,no,2,3,firestart:1 uipath-marketplace:1,firestart/011/C1 uipath-marketplace/005/C3
+agent,decides-or-acts,outsider,free-text,no,none,yes,2,2,camunda-marketplace:2,camunda-marketplace/005/C1 camunda-marketplace/188/C1
+non-agent,suggests,outsider,not-free-text,no,some,yes,2,2,firestart:2,firestart/006/C1 firestart/007/C1
+non-agent,decides-or-acts,not-outsider,not-free-text,no,some,no,1,4,uipath-maestro-docs:1,uipath-maestro-docs/133/C1
+non-agent,suggests,outsider,not-free-text,no,none,yes,1,3,firestart:1,firestart/001/C1
+agent,decides-or-acts,not-outsider,not-free-text,no,some,no,1,2,camunda-marketplace:1,camunda-marketplace/252/C1
+non-agent,decides-or-acts,outsider,not-free-text,no,none,yes,1,2,firestart:1,firestart/012/C1
+non-agent,decides-or-acts,outsider,not-free-text,yes,none,yes,1,2,camunda-docs-blog:1,camunda-docs-blog/001/C1
+non-agent,suggests,not-outsider,free-text,no,some,no,1,2,uipath-marketplace:1,uipath-marketplace/003/C1
+non-agent,suggests,outsider,free-text,no,none,yes,1,2,camunda-docs-blog:1,camunda-docs-blog/047/C1
+non-agent,suggests,outsider,free-text,yes,some,no,1,2,uipath-marketplace:1,uipath-marketplace/007/C1
+agent,decides-or-acts,outsider,free-text,no,none,no,1,1,uipath-marketplace:1,uipath-marketplace/002/C1
+agent,decides-or-acts,outsider,free-text,yes,none,yes,1,1,camunda-docs-blog:1,camunda-docs-blog/024/C1
+agent,decides-or-acts,outsider,free-text,yes,some,yes,1,1,camunda-marketplace:1,camunda-marketplace/228/C1
+agent,decides-or-acts,outsider,not-free-text,yes,some,no,1,1,flows-for-apex:1,flows-for-apex/002/C1
+agent,decides-or-acts,outsider,not-free-text,yes,some,yes,1,1,camunda-marketplace:1,camunda-marketplace/008/C1
+non-agent,decides-or-acts,not-outsider,free-text,no,some,yes,1,1,bizagi:1,bizagi/001/C1
+non-agent,decides-or-acts,not-outsider,free-text,yes,some,no,1,1,atamya:1,atamya/011/C1
+non-agent,decides-or-acts,outsider,free-text,yes,none,yes,1,1,camunda-docs-blog:1,camunda-docs-blog/016/C1
+non-agent,decides-or-acts,outsider,free-text,yes,some,yes,1,1,camunda-docs-blog:1,camunda-docs-blog/008/C1
+non-agent,decides-or-acts,outsider,not-free-text,no,some,yes,1,1,bonitasoft:1,bonitasoft/012/C1
+non-agent,suggests,not-outsider,free-text,no,some,yes,1,1,atamya:1,atamya/010/C1
+non-agent,suggests,not-outsider,not-free-text,no,some,yes,1,1,bizagi:1,bizagi/002/C1

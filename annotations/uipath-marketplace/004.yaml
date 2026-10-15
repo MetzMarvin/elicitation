@@ -1,0 +1,113 @@
+artefact: uipath-marketplace/004
+annotated: 2026-10-11
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent validates a claim against policy terms and limits; its verdict denies the claim or sends it on to the assessments."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: [human-review]
+    notes: "Agent task with no agent bound and no tools, so single-call. The denial path ends without a human; officer review only on the valid path, before any payment."
+  - id: C2
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent scores fraud risk; high risk routes the claim to an investigator, low or medium goes straight to the officer review."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-human
+          path: "AI -> gateway -> human"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: [human-review]
+    notes: "Placeholder agent task, single-call. Both risk paths reach the officer's final decision before payment; the investigator task acts on the AI routing and is not counted as a guard."
+  - id: C3
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent estimates the claim payout for the officer's final decision."
+      operations: [generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: [human-review]
+    notes: "Placeholder agent task, single-call; the parallel join leads straight to the officer review user task."
+  - id: C4
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent checks whether reinsurance treaty thresholds apply, for the officer's final decision."
+      operations: [classify]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "AI -> human"
+          human_gate: true
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 0
+      mutates: none
+    guards: [human-review]
+    notes: "Placeholder agent task, single-call. Chains split because the template models no data mappings between the agents."
+open_questions: []

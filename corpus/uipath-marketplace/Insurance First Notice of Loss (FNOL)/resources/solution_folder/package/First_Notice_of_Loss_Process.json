@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "First Notice of Loss Process",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "8628b1d6-0920-4d52-a376-6f4a68ab28e5",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "First Notice of Loss Process"
+    },
+    "locks": [],
+    "key": "f9d249d2-a32c-4fe2-a078-36836354a0f2",
+    "files": []
+  }
+}

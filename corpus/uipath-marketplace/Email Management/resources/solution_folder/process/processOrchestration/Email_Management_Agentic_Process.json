@@ -1,0 +1,43 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Email Management Agentic Process",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "bb64d8d4-4adc-4a9e-a406-da39cef9fd91",
+    "dependencies": [
+      {
+        "name": "Email Management Agentic Process",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "Email Management Agentic Process",
+      "package": {
+        "key": "823050f8-4a15-4009-bc02-00870d71729e"
+      },
+      "packageName": "Email.Management.Agent.processOrchestration.Email.Management.Agentic.Process",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "35d9d194-1e35-4972-9bc0-f4cc180c3d8c",
+    "files": []
+  }
+}

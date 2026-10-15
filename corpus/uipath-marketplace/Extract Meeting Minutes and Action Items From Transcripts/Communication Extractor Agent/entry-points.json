@@ -1,0 +1,39 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "/content/agent.json",
+      "type": "agent",
+      "uniqueId": "7361f86d-a933-4d29-ae7d-cb4a98463256",
+      "input": {
+        "type": "object",
+        "required": [
+          "meeting_transcript"
+        ],
+        "properties": {
+          "meeting_transcript": {
+            "type": "string",
+            "description": "Raw transcript text from Teams, Zoom, or Google Meet."
+          }
+        }
+      },
+      "output": {
+        "type": "object",
+        "required": [
+          "agentRawOutput_Markdown",
+          "agentRawOutput"
+        ],
+        "properties": {
+          "agentRawOutput": {
+            "type": "string"
+          },
+          "agentRawOutput_Markdown": {
+            "type": "string"
+          }
+        },
+        "title": "Outputs"
+      }
+    }
+  ]
+}

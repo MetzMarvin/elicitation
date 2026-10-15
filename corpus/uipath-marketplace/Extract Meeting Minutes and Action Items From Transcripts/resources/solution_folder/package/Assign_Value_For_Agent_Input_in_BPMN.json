@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Assign Value For Agent Input in BPMN",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "cd6459f0-afbe-4a03-8e4c-43cc3c4b6360",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Assign Value For Agent Input in BPMN"
+    },
+    "locks": [],
+    "key": "814ad71e-c635-4e86-98f2-262f1b1c6234",
+    "files": []
+  }
+}

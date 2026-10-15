@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Patient Appointment Scheduling Process",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "73092eee-1bdf-470d-9925-9cba6a1e0109",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Patient Appointment Scheduling Process"
+    },
+    "locks": [],
+    "key": "9e33c069-ad87-4f29-abf8-319be3c75ab0",
+    "files": []
+  }
+}

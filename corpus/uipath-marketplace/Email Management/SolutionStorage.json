@@ -1,0 +1,21 @@
+{
+  "SolutionId": "9bf026a0-4f54-46fe-ff28-08df2454ddf6",
+  "Projects": [
+    {
+      "ProjectId": "d91ae777-f628-4720-8210-9626eee8f966",
+      "ProjectRelativePath": "ReadLatestOutlookEmail/project.uiproj"
+    },
+    {
+      "ProjectId": "4fa69a25-4b1c-43f6-8abc-6d8aed234f12",
+      "ProjectRelativePath": "Email Management Agent/project.uiproj"
+    },
+    {
+      "ProjectId": "251c5d5f-3e8b-4993-a2c1-d04e43cd5771",
+      "ProjectRelativePath": "Email Management Agentic Process/project.uiproj"
+    },
+    {
+      "ProjectId": "a9f1bca8-5667-4169-ad4c-499218903710",
+      "ProjectRelativePath": "MoveOutlookEmail/project.uiproj"
+    }
+  ]
+}

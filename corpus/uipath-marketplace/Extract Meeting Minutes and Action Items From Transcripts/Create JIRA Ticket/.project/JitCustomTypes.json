@@ -1,0 +1,58 @@
+{
+  "version": "3.0.0.0",
+  "bundleHash": "XvdmxZbzlb7m20jQ7WyQHVaTmvVtPjMQyb0N4UKy4HM",
+  "addedAssemblyNames": [],
+  "discardedAssemblyNames": [],
+  "discardedAssemblyReplacements": {},
+  "assembliesJitInfo": {
+    "CF9505FF7A1_curated_.6npTM2aDbAI1JXudDK7TTB3": {
+      "createdAt": "2025-11-19T09:42:56.1367836+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.IntegrationService.Activities.SWEntities.CF9505FF7A1_curated_create_issue_Create.Bundle",
+      "typeNames": [
+        "issuetype",
+        "fields",
+        "curated_create_issue_Create"
+      ]
+    },
+    "DeserializeJSON6cc2b.P5ZfE2zubyG1qyNA74RZQh91": {
+      "createdAt": "2025-11-19T12:32:01.9505233+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON6cc2b9.Bundle",
+      "typeNames": [
+        "DeserializeJSON6cc2b9",
+        "action_items"
+      ]
+    },
+    "C1F22639DC9_curated_.TaEV83DnJHJ1nnv6r3Wv1Wa2": {
+      "createdAt": "2025-11-19T12:37:26.0793479+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.IntegrationService.Activities.SWEntities.C1F22639DC9_curated_create_issue_Create.Bundle",
+      "typeNames": [
+        "issuetype",
+        "fields",
+        "curated_create_issue_Create"
+      ]
+    },
+    "CFE622E4580_curated_.vZATp2C1sQK1bGp7Z209UTH1": {
+      "createdAt": "2025-11-25T13:16:31.1746233+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.IntegrationService.Activities.SWEntities.CFE622E4580_curated_create_issue_Create.Bundle",
+      "typeNames": [
+        "issuetype",
+        "fields",
+        "curated_create_issue_Create"
+      ]
+    },
+    "C22A66503B6_curated_.4Lu6Q3xXGvP1BI23Q3oRxU2": {
+      "createdAt": "2025-11-25T13:29:54.3961387+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.IntegrationService.Activities.SWEntities.C22A66503B6_curated_create_issue_Create.Bundle",
+      "typeNames": [
+        "issuetype",
+        "fields",
+        "curated_create_issue_Create"
+      ]
+    }
+  }
+}

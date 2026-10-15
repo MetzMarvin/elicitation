@@ -1,0 +1,43 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Agentic Process",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "28e8c845-2571-4998-b758-647156a66481",
+    "dependencies": [
+      {
+        "name": "Agentic Process",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "Agentic Process",
+      "package": {
+        "key": "63415ca0-2b43-435e-bb93-2ecbabc55501"
+      },
+      "packageName": "Extract.Meeting.Minutes.and.Action.Items.From.agentic.Agentic.Process",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "6f759c29-0a0c-4a01-ac59-211dc6ca21e6",
+    "files": []
+  }
+}

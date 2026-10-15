@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="sample-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="a991b91a">
+  <bpmn:process id="Process_1" name="Email Management Process" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:input id="vHjunC1Dj" name="Testing" type="boolean" elementId="start_event" default="" />
+        <uipath:input id="vvWysatgI" name="Test_Email_Subject" type="string" elementId="start_event" default="" />
+        <uipath:input id="v6D98o9yN" name="Test_Email_Body" type="string" elementId="start_event" default="" />
+        <uipath:inputOutput id="testing" name="Testing" type="boolean" elementId="start_event" />
+        <uipath:inputOutput id="testEmailSubject" name="Test_Email_Subject" type="string" elementId="start_event" />
+        <uipath:inputOutput id="testEmailBody" name="Test_Email_Body" type="string" elementId="start_event" />
+        <uipath:inputOutput id="scriptResponse" name="scriptResponse" type="jsonSchema" elementId="task_prepare_output" />
+        <uipath:inputOutput id="error" name="Error" type="jsonSchema" elementId="task_prepare_output"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+      </uipath:variables>
+      <uipath:migrationVersion version="6" />
+    </bpmn:extensionElements>
+    <bpmn:startEvent id="start_event" name="Start">
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="60ec253e-4aeb-4009-8c8c-ce83fe4ee5ad" />
+        <uipath:mapping version="v1">
+          <uipath:type value="BPMN.Variables" version="v1" />
+          <uipath:output name="Testing" type="boolean" source="=vars.vHjunC1Dj" var="testing" />
+          <uipath:output name="Test_Email_Subject" type="string" source="=vars.vvWysatgI" var="testEmailSubject" />
+          <uipath:output name="Test_Email_Body" type="string" source="=vars.v6D98o9yN" var="testEmailBody" />
+        </uipath:mapping>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>flow_start_to_gateway</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="gateway_testing" name="Testing?">
+      <bpmn:incoming>flow_start_to_gateway</bpmn:incoming>
+      <bpmn:outgoing>flow_testing_true</bpmn:outgoing>
+      <bpmn:outgoing>plan_flow_read_email</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:scriptTask id="task_use_test_inputs" name="Use Test Inputs" scriptFormat="JavaScript">
+      <bpmn:incoming>flow_testing_true</bpmn:incoming>
+      <bpmn:outgoing>flow_test_to_merge</bpmn:outgoing>
+      <bpmn:script><![CDATA[return {};]]></bpmn:script>
+    </bpmn:scriptTask>
+    <bpmn:serviceTask id="task_read_email" name="Read Latest Outlook Email">
+      <bpmn:incoming>plan_flow_read_email</bpmn:incoming>
+      <bpmn:outgoing>flow_read_to_merge</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="gateway_merge_after_testing">
+      <bpmn:incoming>flow_test_to_merge</bpmn:incoming>
+      <bpmn:incoming>flow_read_to_merge</bpmn:incoming>
+      <bpmn:outgoing>flow_merge_to_analyze</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="task_analyze" name="Analyze &#38; Categorize">
+      <bpmn:incoming>flow_merge_to_analyze</bpmn:incoming>
+      <bpmn:outgoing>edge_Fj45m7</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="task_move_email" name="Move Outlook Email">
+      <bpmn:incoming>edge_Fj45m7</bpmn:incoming>
+      <bpmn:outgoing>flow_move_to_output</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:scriptTask id="task_prepare_output" name="Prepare Output" scriptFormat="JavaScript">
+      <bpmn:extensionElements>
+        <uipath:mapping version="v1">
+          <uipath:type value="BPMN.Variables" version="v1" />
+          <uipath:context>
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="args" type="json" target="bodyField"><![CDATA[{}]]></uipath:input>
+          <uipath:output name="scriptResponse" type="jsonSchema" source="=result.response" var="scriptResponse" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error" />
+        </uipath:mapping>
+      </bpmn:extensionElements>
+      <bpmn:incoming>flow_move_to_output</bpmn:incoming>
+      <bpmn:outgoing>flow_output_to_end</bpmn:outgoing>
+      <bpmn:script><![CDATA[return {};]]></bpmn:script>
+    </bpmn:scriptTask>
+    <bpmn:endEvent id="end_event" name="End">
+      <bpmn:incoming>flow_output_to_end</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow_start_to_gateway" sourceRef="start_event" targetRef="gateway_testing" />
+    <bpmn:sequenceFlow id="flow_testing_true" name="True" sourceRef="gateway_testing" targetRef="task_use_test_inputs">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=vars.testing == true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="plan_flow_read_email" name="False" sourceRef="gateway_testing" targetRef="task_read_email">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=vars.testing != true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="flow_test_to_merge" sourceRef="task_use_test_inputs" targetRef="gateway_merge_after_testing" />
+    <bpmn:sequenceFlow id="flow_read_to_merge" sourceRef="task_read_email" targetRef="gateway_merge_after_testing" />
+    <bpmn:sequenceFlow id="flow_merge_to_analyze" sourceRef="gateway_merge_after_testing" targetRef="task_analyze" />
+    <bpmn:sequenceFlow id="flow_move_to_output" sourceRef="task_move_email" targetRef="task_prepare_output" />
+    <bpmn:sequenceFlow id="flow_output_to_end" sourceRef="task_prepare_output" targetRef="end_event" />
+    <bpmn:sequenceFlow id="edge_Fj45m7" sourceRef="task_analyze" targetRef="task_move_email" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_start_event" bpmnElement="start_event">
+        <dc:Bounds x="150" y="242" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="150" y="283" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gateway_testing" bpmnElement="gateway_testing">
+        <dc:Bounds x="250" y="235" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="250" y="290" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_task_use_test_inputs" bpmnElement="task_use_test_inputs">
+        <dc:Bounds x="370" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="370" y="205" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_task_read_email" bpmnElement="task_read_email">
+        <dc:Bounds x="370" y="320" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="370" y="405" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_gateway_merge_after_testing" bpmnElement="gateway_merge_after_testing">
+        <dc:Bounds x="530" y="235" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="530" y="290" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_task_analyze" bpmnElement="task_analyze">
+        <dc:Bounds x="640" y="220" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="640" y="305" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_task_move_email" bpmnElement="task_move_email">
+        <dc:Bounds x="882.7666666666667" y="220" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="882.7666666666667" y="305" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_task_prepare_output" bpmnElement="task_prepare_output">
+        <dc:Bounds x="1070" y="220" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1070" y="305" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_end_event" bpmnElement="end_event">
+        <dc:Bounds x="1230" y="242" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1230" y="283" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_start_to_gateway" bpmnElement="flow_start_to_gateway">
+        <di:waypoint x="186" y="260" />
+        <di:waypoint x="250" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_testing_true" bpmnElement="flow_testing_true">
+        <di:waypoint x="275" y="235" />
+        <di:waypoint x="275" y="160" />
+        <di:waypoint x="370" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_plan_flow_read_email" bpmnElement="plan_flow_read_email">
+        <di:waypoint x="275" y="285" />
+        <di:waypoint x="275" y="360" />
+        <di:waypoint x="370" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_test_to_merge" bpmnElement="flow_test_to_merge">
+        <di:waypoint x="470" y="160" />
+        <di:waypoint x="555" y="160" />
+        <di:waypoint x="555" y="235" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_read_to_merge" bpmnElement="flow_read_to_merge">
+        <di:waypoint x="470" y="360" />
+        <di:waypoint x="555" y="360" />
+        <di:waypoint x="555" y="285" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_merge_to_analyze" bpmnElement="flow_merge_to_analyze">
+        <di:waypoint x="580" y="260" />
+        <di:waypoint x="640" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_move_to_output" bpmnElement="flow_move_to_output">
+        <di:waypoint x="983" y="260" />
+        <di:waypoint x="1070" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow_output_to_end" bpmnElement="flow_output_to_end">
+        <di:waypoint x="1170" y="260" />
+        <di:waypoint x="1230" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Fj45m7" bpmnElement="edge_Fj45m7">
+        <di:waypoint x="740" y="260" />
+        <di:waypoint x="883" y="260" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

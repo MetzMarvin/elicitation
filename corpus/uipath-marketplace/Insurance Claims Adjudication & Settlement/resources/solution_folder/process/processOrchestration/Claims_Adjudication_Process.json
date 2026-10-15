@@ -1,0 +1,44 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Claims Adjudication Process",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "badc186c-ba84-48cd-894e-b93b97674861",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "Claims Adjudication Process",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "Claims Adjudication Process",
+      "package": {
+        "key": "6dfd128b-c881-4f1c-90ad-20c6e012c61d"
+      },
+      "packageName": "Insurance.Claims.Adjudication._.Settlem.processOrchestration.Claims.Adjudication.Process",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "6ee2bed3-555f-4b4f-8b4c-c150a5b9b46d",
+    "files": []
+  }
+}

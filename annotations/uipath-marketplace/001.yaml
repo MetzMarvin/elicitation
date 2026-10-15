@@ -1,0 +1,30 @@
+artefact: uipath-marketplace/001
+annotated: 2026-10-11
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: agent-loop
+    function:
+      description: "An agent reads the latest inbox email, categorises it into a mail folder and moves it there."
+      operations: [classify, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: record
+    reads_sensitive:
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 2
+      mutates: internal-records
+    guards: []
+    notes: "AI is 'Analyze & Categorize', bound via the solution's agent project (agent.json). Ungated: agent tools read-email and move-email = 2; the BPMN 'Move Outlook Email' task repeats the move. Output adds free-text reasoning."
+open_questions: []

@@ -1,0 +1,7 @@
+https://cloud.uipath.com/masterthesismetz/studio_/templates#email-management	Email Management
+https://cloud.uipath.com/masterthesismetz/studio_/templates#summarize-outlook-email-attachments-with-ai	Summarize Outlook email attachments with AI
+https://cloud.uipath.com/masterthesismetz/studio_/templates#extract-meeting-minutes-and-action-items-from-transcripts	Extract Meeting Minutes and Action Items From Transcripts
+https://cloud.uipath.com/masterthesismetz/studio_/templates#insurance-claims-adjudication-and-settlement	Insurance Claims Adjudication & Settlement
+https://cloud.uipath.com/masterthesismetz/studio_/templates#claim-submission-and-status-provider-to-payer	Claim Submission & Status (Provider to Payer)
+https://cloud.uipath.com/masterthesismetz/studio_/templates#insurance-first-notice-of-loss-fnol	Insurance First Notice of Loss (FNOL)
+https://cloud.uipath.com/masterthesismetz/studio_/templates#patient-appointment-scheduling	Patient Appointment Scheduling

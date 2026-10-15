@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "ReadLatestOutlookEmail",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "e0c7e7b0-9fed-4af5-8f58-7ff0bd50c981",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "ReadLatestOutlookEmail"
+    },
+    "locks": [],
+    "key": "e3685069-c577-42e7-9883-8321534a5758",
+    "files": []
+  }
+}

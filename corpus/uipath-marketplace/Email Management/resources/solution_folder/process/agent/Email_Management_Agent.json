@@ -1,0 +1,44 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Email Management Agent",
+    "kind": "process",
+    "type": "agent",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "97b60f48-ffea-453b-a3c4-a5911cebf7dd",
+    "dependencies": [
+      {
+        "name": "Email Management Agent",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Agent",
+      "name": "Email Management Agent",
+      "package": {
+        "key": "e2f32571-fdeb-4acb-a4ae-6acc86c3aa38"
+      },
+      "packageName": "Email.Management.Agent.agent.Email.Management.Agent",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "agentMemory": false,
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "5d6bdd5f-8440-43fc-9434-4f098e3f7876",
+    "files": []
+  }
+}

@@ -1,0 +1,55 @@
+structure,operations,autonomy,writer,shape,sinks,mutates,guards,workflows_lower,workflows_upper,sources,members
+single-call,{classify},decides,outsider,closed-label,{control-flow/ungated},none,{},3,3,camunda-docs-blog:1 camunda-marketplace:2,camunda-docs-blog/007/C1 camunda-marketplace/016/C1 camunda-marketplace/112/C1
+agent-loop,"{decide, extract, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-system/ungated}",external-systems,{},2,2,camunda-marketplace:1 camunda-docs-blog:1,camunda-docs-blog/121/C1 camunda-marketplace/023/C1
+agent-loop,"{decide, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{},2,2,camunda-docs-blog:2,camunda-docs-blog/075/C1 camunda-docs-blog/077/C1
+fixed-sequence,"{classify, generate}",decides,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/gated}",none,{},2,2,flows-for-apex:2,flows-for-apex/001/C1 flows-for-apex/004/C1
+single-call,"{classify, decide}",decides,outsider,structured,{control-flow/ungated},none,{},2,2,uipath-marketplace:2,uipath-marketplace/006/C1 uipath-marketplace/006/C2 uipath-marketplace/007/C2
+single-call,{generate},suggests,outsider,free-text,{external-recipient/ungated},external-systems,{},1,2,uipath-marketplace:1,uipath-marketplace/007/C1
+agent-loop,"{classify, decide, extract, plan-act}",acts,outsider,structured,"{control-flow/ungated, external-recipient/ungated, internal-human/ungated, internal-system/ungated}",external-systems,"{error-path-to-human, human-review}",1,1,camunda-marketplace:1,camunda-marketplace/008/C1
+agent-loop,"{classify, decide, generate, plan-act, summarise}",acts,outsider,free-text,"{control-flow/ungated, internal-human/ungated}",none,{human-review},1,1,camunda-marketplace:1,camunda-marketplace/188/C1
+agent-loop,"{classify, decide, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/gated, internal-system/ungated}",internal-records,{},1,1,camunda-marketplace:1,camunda-marketplace/006/C1
+agent-loop,"{classify, decide, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/ungated}",none,{},1,1,camunda-docs-blog:1,camunda-docs-blog/012/C1
+agent-loop,"{classify, decide, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated}",none,{},1,1,camunda-marketplace:1,camunda-marketplace/255/C1
+agent-loop,"{classify, decide, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, internal-human/gated, internal-human/ungated}",none,"{error-path-to-human, human-review}",1,1,camunda-marketplace:1,camunda-marketplace/005/C1
+agent-loop,"{classify, decide, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated}",internal-records,{},1,1,quantumbpm:1,quantumbpm/001/C1
+agent-loop,"{classify, generate, plan-act}",acts,outsider,free-text,"{external-recipient/ungated, internal-system/ungated}",none,{},1,1,camunda-marketplace:1,camunda-marketplace/165/C1
+agent-loop,"{classify, plan-act}",acts,outsider,free-text,{internal-system/ungated},internal-records,{},1,1,uipath-marketplace:1,uipath-marketplace/001/C1
+agent-loop,"{decide, generate, plan-act, summarise}",acts,outsider,free-text,"{external-recipient/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{error-path-to-human},1,1,camunda-docs-blog:1,camunda-docs-blog/021/C1
+agent-loop,"{decide, generate, plan-act}",acts,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/ungated, internal-system/ungated}",external-systems,{error-path-to-human},1,1,camunda-docs-blog:1,camunda-docs-blog/013/C1
+agent-loop,"{decide, generate, plan-act}",acts,outsider,free-text,"{external-recipient/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{},1,1,camunda-docs-blog:1,camunda-docs-blog/067/C1
+agent-loop,"{decide, generate, plan-act}",decides,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/gated, internal-system/ungated}",none,{},1,1,camunda-docs-blog:1,camunda-docs-blog/086/C1
+agent-loop,"{decide, plan-act}",acts,insider,structured,"{control-flow/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{},1,1,camunda-marketplace:1,camunda-marketplace/252/C1
+agent-loop,"{decide, plan-act}",acts,outsider,structured,"{control-flow/ungated, external-recipient/ungated}",external-systems,{},1,1,flows-for-apex:1,flows-for-apex/002/C1
+agent-loop,"{decide, plan-act}",acts,outsider,structured,"{control-flow/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{error-path-to-human},1,1,camunda-docs-blog:1,camunda-docs-blog/122/C1
+agent-loop,"{decide, plan-act}",acts,outsider,structured,"{control-flow/ungated, internal-system/ungated}",external-systems,{},1,1,flows-for-apex:1,flows-for-apex/003/C1
+agent-loop,"{generate, plan-act, summarise}",acts,outsider,free-text,"{internal-human/ungated, internal-system/ungated}",internal-records,{},1,1,camunda-docs-blog:1,camunda-docs-blog/019/C1
+agent-loop,"{generate, plan-act}",acts,outsider,free-text,"{external-recipient/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{human-review},1,1,camunda-marketplace:1,camunda-marketplace/228/C1
+fixed-sequence,"{classify, decide, generate}",decides,outsider,free-text,"{control-flow/ungated, external-recipient/ungated}",none,{},1,1,quantumbpm:1,quantumbpm/002/C1
+fixed-sequence,"{classify, extract}",decides,outsider,structured,"{control-flow/ungated, internal-system/ungated}",none,{},1,1,flowable:1,flowable/001/C1
+fixed-sequence,"{classify, extract}",suggests,outsider,structured,"{internal-human/gated, internal-system/gated}",internal-records,{human-review},1,1,firestart:1,firestart/007/C1
+fixed-sequence,"{classify, generate, summarise}",acts,insider,free-text,"{internal-human/gated, internal-system/ungated}",internal-records,{human-review},1,1,bizagi:1,bizagi/001/C1
+fixed-sequence,"{classify, generate}",decides,insider,free-text,"{internal-system/ungated, public/ungated}",external-systems,{validation},1,1,atamya:1,atamya/011/C1
+fixed-sequence,"{classify, summarise}",decides,outsider,free-text,"{control-flow/ungated, external-recipient/ungated, internal-human/gated, internal-system/ungated}",internal-records,{human-review},1,1,camunda-docs-blog:1,camunda-docs-blog/008/C1
+fixed-sequence,"{decide, extract}",decides,outsider,structured,"{control-flow/ungated, external-recipient/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{},1,1,camunda-marketplace:1,camunda-marketplace/067/C1
+fixed-sequence,"{extract, generate, summarise}",suggests,insider,free-text,"{internal-system/ungated, public/gated}",internal-records,{human-review},1,1,atamya:1,atamya/010/C1
+fixed-sequence,"{extract, generate}",decides,outsider,free-text,"{control-flow/ungated, external-recipient/gated, external-recipient/ungated, internal-human/gated, public/gated}",none,{human-review},1,1,camunda-docs-blog:1,camunda-docs-blog/016/C1
+single-call,"{classify, decide}",decides,outsider,structured,"{control-flow/ungated, internal-human/ungated, internal-system/ungated}",external-systems,{},1,1,camunda-marketplace:1,camunda-marketplace/136/C1
+single-call,"{classify, decide}",decides,outsider,structured,"{control-flow/ungated, internal-human/ungated}",none,{},1,1,uipath-marketplace:1,uipath-marketplace/006/C3
+single-call,"{classify, extract}",acts,outsider,structured,"{external-recipient/ungated, internal-system/ungated}",internal-records,{},1,1,firestart:1,firestart/008/C1
+single-call,"{classify, extract}",decides,outsider,structured,"{control-flow/ungated, external-recipient/gated, internal-system/ungated}",none,{human-review},1,1,firestart:1,firestart/012/C1
+single-call,"{classify, extract}",suggests,insider,structured,{internal-human/gated},none,{human-review},1,1,firestart:1,firestart/015/C1
+single-call,"{classify, extract}",suggests,outsider,structured,{internal-human/ungated},internal-records,{},1,1,uipath-marketplace:1,uipath-marketplace/005/C3
+single-call,{classify},decides,outsider,closed-label,"{control-flow/ungated, external-recipient/ungated}",none,"{error-path-to-human, human-review}",1,1,camunda-docs-blog:1,camunda-docs-blog/001/C1
+single-call,{classify},decides,outsider,closed-label,"{control-flow/ungated, internal-system/ungated}",internal-records,{},1,1,firestart:1,firestart/013/C1
+single-call,{classify},decides,outsider,structured,"{control-flow/ungated, internal-human/gated, internal-system/ungated}",internal-records,{human-review},1,1,bonitasoft:1,bonitasoft/012/C1
+single-call,{classify},decides,outsider,structured,{control-flow/ungated},none,{},1,1,trisotech:1,trisotech/001/C1
+single-call,{classify},suggests,outsider,structured,"{external-recipient/gated, internal-system/ungated}",internal-records,{human-review},1,1,firestart:1,firestart/006/C1
+single-call,{classify},suggests,outsider,structured,"{internal-human/ungated, internal-system/ungated}",internal-records,{},1,1,firestart:1,firestart/011/C1
+single-call,"{decide, extract}",decides,system,structured,"{control-flow/ungated, internal-human/ungated, internal-system/ungated}",internal-records,{},1,1,uipath-maestro-docs:1,uipath-maestro-docs/133/C1
+single-call,{decide},acts,outsider,structured,"{external-recipient/ungated, internal-system/ungated}",external-systems,{},1,1,camunda-marketplace:1,camunda-marketplace/022/C1
+single-call,"{extract, generate, summarise}",suggests,insider,free-text,{internal-system/ungated},internal-records,{},1,1,uipath-marketplace:1,uipath-marketplace/003/C1
+single-call,{extract},decides,outsider,structured,"{control-flow/ungated, external-recipient/gated, external-recipient/ungated}",external-systems,{},1,1,firestart:1,firestart/002/C1
+single-call,{extract},suggests,insider,structured,"{control-flow/gated, internal-human/gated, internal-system/gated}",internal-records,{human-review},1,1,bizagi:1,bizagi/002/C1
+single-call,{extract},suggests,insider,structured,{internal-human/gated},none,{human-review},1,1,firestart:1,firestart/003/C1
+single-call,{extract},suggests,outsider,structured,"{internal-human/ungated, internal-system/gated, internal-system/ungated}",none,"{human-review, validation}",1,1,firestart:1,firestart/001/C1
+single-call,{summarise},suggests,outsider,free-text,{internal-human/gated},none,{human-review},1,1,camunda-docs-blog:1,camunda-docs-blog/047/C1

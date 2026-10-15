@@ -1,0 +1,49 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Create JIRA Ticket",
+    "kind": "process",
+    "type": "process",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "59829052-ec77-453a-ad69-b3457d8a05d7",
+    "dependencies": [
+      {
+        "name": "Create JIRA Ticket",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Process",
+      "name": "Create JIRA Ticket",
+      "package": {
+        "key": "961662eb-8a0c-4fe4-b962-548339f77bb7"
+      },
+      "packageName": "Extract.Meeting.Minutes.and.Action.Items.From.process.Create.JIRA.Ticket",
+      "inputArguments": "{}",
+      "jobPriority": "Medium",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "jobRecording": "Disabled",
+      "targetFrameworkValue": "Portable",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "a96fdded-c8a5-4780-8a95-7fb7e443f790",
+    "files": []
+  }
+}

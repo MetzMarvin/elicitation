@@ -1,0 +1,84 @@
+artefact: uipath-marketplace/005
+annotated: 2026-10-11
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent validates medical coding before submission; valid claims go automatically to the clearinghouse and the payer, invalid ones go to coder correction."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: bpmn-xml
+        - audience: internal-human
+          path: "AI -> gateway -> human"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 2
+      mutates: external-systems
+    guards: []
+    notes: "Placeholder agent task, single-call. Ungated on the valid path: clearinghouse submission and payer transmission = 2. Coder correction acts on the AI routing and is not a guard."
+  - id: C2
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent checks the claim's attachments, clinical notes and required fields; complete claims go on to automatic submission, missing data raises an error to staff."
+      operations: [extract, classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: unknown
+        evidence: not-visible
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: bpmn-xml
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 2
+      mutates: external-systems
+    guards: [error-path-to-human]
+    notes: "Placeholder agent task, single-call. Ungated after 'checks completed': clearinghouse submission and payer transmission = 2. The 'Missing Data' error boundary leads to a staff correction task."
+  - id: C3
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "After a payer denial, an agent parses the rejection reason and puts the claim on a staff worklist."
+      operations: [extract, classify]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: internal-human
+          path: "outsider -> AI -> human"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 0
+      mutates: internal-records
+    guards: []
+    notes: "Input is the payer's denial message (external party). Worklisting is inferred from the task label; the process ends after the agent."
+open_questions: []

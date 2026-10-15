@@ -1,0 +1,49 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "MoveOutlookEmail",
+    "kind": "process",
+    "type": "process",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "0c3cfdec-626b-4f2a-9448-a390eac2739e",
+    "dependencies": [
+      {
+        "name": "MoveOutlookEmail",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Process",
+      "name": "MoveOutlookEmail",
+      "package": {
+        "key": "3d161270-6ed2-40d2-91aa-d8271feb52f3"
+      },
+      "packageName": "Email.Management.Agent.process.MoveOutlookEmail",
+      "inputArguments": "{}",
+      "jobPriority": "Medium",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "jobRecording": "Disabled",
+      "targetFrameworkValue": "Portable",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "088f6224-de0c-490f-a48f-6eb7c3ba0370",
+    "files": []
+  }
+}

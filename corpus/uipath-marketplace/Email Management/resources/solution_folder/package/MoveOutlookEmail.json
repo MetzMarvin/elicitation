@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "MoveOutlookEmail",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "0c3cfdec-626b-4f2a-9448-a390eac2739e",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "MoveOutlookEmail"
+    },
+    "locks": [],
+    "key": "3d161270-6ed2-40d2-91aa-d8271feb52f3",
+    "files": []
+  }
+}

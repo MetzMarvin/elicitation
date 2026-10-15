@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Claims Adjudication Process",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "badc186c-ba84-48cd-894e-b93b97674861",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Claims Adjudication Process"
+    },
+    "locks": [],
+    "key": "6dfd128b-c881-4f1c-90ad-20c6e012c61d",
+    "files": []
+  }
+}

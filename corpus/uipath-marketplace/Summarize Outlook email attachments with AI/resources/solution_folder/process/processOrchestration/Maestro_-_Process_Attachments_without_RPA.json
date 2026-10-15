@@ -1,0 +1,44 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Maestro - Process Attachments without RPA",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "85c4cf47-656f-446e-8c36-7429f4cf9c91",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "Maestro - Process Attachments without RPA",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "Maestro - Process Attachments without RPA",
+      "package": {
+        "key": "57cfd131-0435-40c0-ba58-0decc2ce687d"
+      },
+      "packageName": "Processing.Attachments.2.agentic.Maestro.Process.Attachments.without.RPA",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "1a952157-e1a7-4425-b68c-00db48d02aa0",
+    "files": []
+  }
+}

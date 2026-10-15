@@ -1,0 +1,57 @@
+artefact: uipath-marketplace/007
+annotated: 2026-10-11
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "When no preferred slot is free, an agent offers the patient alternatives or adds them to a waitlist; an accepted alternative is booked and confirmed."
+      operations: [generate]
+      autonomy: suggests
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+      - kind: business-records
+        evidence: inferred
+    output:
+      shape: free-text
+      sinks:
+        - audience: external-recipient
+          path: "outsider -> AI -> external"
+          human_gate: false
+          evidence: inferred
+    authority:
+      invokes_without_gate: 3
+      mutates: external-systems
+    guards: []
+    notes: "Placeholder agent task, single-call. The offer reaching the patient is inferred from the 'Patient Accepts Alternative' message wait. Ungated after acceptance: slot reservation, confirmation generation and confirmation sending = 3."
+  - id: C2
+    ai_elements: 1
+    structure: single-call
+    function:
+      description: "An agent verifies insurance eligibility; ineligible requests are cancelled, eligible ones get an automatic confirmation."
+      operations: [classify, decide]
+      autonomy: decides
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: inferred
+    reads_sensitive:
+      - kind: customer-pii
+        evidence: inferred
+    output:
+      shape: structured
+      sinks:
+        - audience: control-flow
+          path: "outsider -> AI -> gateway -> system -> external"
+          human_gate: false
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 2
+      mutates: none
+    guards: []
+    notes: "Placeholder agent task, single-call. Ungated on the eligible path: confirmation generation and sending = 2. The SLA timer boundary leads to an escalation end event with no human task, so it is not counted as a guard."
+open_questions: []

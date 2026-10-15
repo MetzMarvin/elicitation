@@ -1,0 +1,28 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "8dc3bcbc-f4ed-42cd-8de1-08df24550c28",
+  "Projects": [
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Create JIRA Ticket/project.uiproj",
+      "Id": "59829052-ec77-453a-ad69-b3457d8a05d7"
+    },
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Agentic Process/project.uiproj",
+      "Id": "28e8c845-2571-4998-b758-647156a66481"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Assign Value For Agent Input in BPMN/project.uiproj",
+      "Id": "cd6459f0-afbe-4a03-8e4c-43cc3c4b6360"
+    },
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "Communication Extractor Agent/project.uiproj",
+      "Id": "25e210af-0633-4c02-858f-07112ee02d35"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

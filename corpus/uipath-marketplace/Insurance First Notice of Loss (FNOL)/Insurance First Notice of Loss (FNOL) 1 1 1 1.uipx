@@ -1,0 +1,13 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "ef7170a2-66df-43cd-ff35-08df2454ddf6",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "First Notice of Loss Process/project.uiproj",
+      "Id": "8628b1d6-0920-4d52-a376-6f4a68ab28e5"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

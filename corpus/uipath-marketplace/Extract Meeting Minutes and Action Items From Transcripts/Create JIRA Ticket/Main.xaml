@@ -1,0 +1,193 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib"
+ xmlns:this="clr-namespace:"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CFE622E4580_curated_create_issue_Create.Bundle;assembly=CFE622E4580_curated_.vZATp2C1sQK1bGp7Z209UTH1"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="JsonText" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Main.JsonText>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Main.JsonText>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Text.Json.Nodes</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CF9505FF7A1_curated_create_issue_Create.Bundle</x:String>
+      <x:String>UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON6cc2b9.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C1F22639DC9_curated_create_issue_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CFE622E4580_curated_create_issue_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C22A66503B6_curated_create_issue_Create.Bundle</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>C22A66503B6_curated_.4Lu6Q3xXGvP1BI23Q3oRxU2</AssemblyReference>
+      <AssemblyReference>CFE622E4580_curated_.vZATp2C1sQK1bGp7Z209UTH1</AssemblyReference>
+      <AssemblyReference>C1F22639DC9_curated_.TaEV83DnJHJ1nnv6r3Wv1Wa2</AssemblyReference>
+      <AssemblyReference>DeserializeJSON6cc2b.P5ZfE2zubyG1qyNA74RZQh91</AssemblyReference>
+      <AssemblyReference>CF9505FF7A1_curated_.6npTM2aDbAI1JXudDK7TTB3</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Text.Json</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="356,732" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="jsonInputString" />
+      <Variable x:TypeArguments="njl:JObject" Default="[new Newtonsoft.Json.Linq.JObject From {  }]" Name="jsonObject">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">DeserializeJson`1_4</x:String>
+            <x:String x:Key="SourcePropertyName">JsonObject</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="njl:JArray" Default="[new Newtonsoft.Json.Linq.JArray From {  }]" Name="JiraTicketsArray" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <ui:LogMessage DisplayName="JIRA Ticket Creation Tool Initiation" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Process initiated for Tickets Creation Process as per extracted Action Items.&quot;]" />
+    <Assign DisplayName="Assign Agent's Output to RPA" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[jsonInputString]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[string.Format("{0}", JsonText)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Agent's Output processing" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Agent's Output is received.&quot;]" />
+    <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_4" JsonObject="[jsonObject]" JsonString="[jsonInputString]" />
+    <ui:LogMessage DisplayName="JSON Deserialization process" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;JSON Deserialization Process initiated.&quot;]" />
+    <Assign DisplayName="Read Jira_Tickets sections" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="njl:JArray">[JiraTicketsArray]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="njl:JArray">[DirectCast(JSONobject.Item("action_items"), Newtonsoft.Json.Linq.JArray)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="JIRA Tickets Array Processing" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Jira ticketts are being processed&quot;]" />
+    <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" sap:WorkflowViewStateService.ViewState="{x:Null}" DisplayName="For Each currentJToken" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[JiraTicketsArray]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="njl:JToken">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="njl:JToken" Name="currentJToken" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Extracted JIRA Ticket | Summary: &quot; &amp; currentJToken.Item(&quot;task&quot;).ToString &amp; _&#xA;&quot; | Assignee: &quot; &amp; If(currentJToken.Item(&quot;owner&quot;) IsNot Nothing, currentJToken.Item(&quot;owner&quot;).ToString, &quot;Unassigned&quot;) &amp; _&#xA;&quot; | Due Date: &quot; &amp; If(currentJToken.Item(&quot;due_date&quot;) IsNot Nothing, currentJToken.Item(&quot;due_date&quot;).ToString, &quot;Not specified&quot;) &amp; _&#xA;&quot; | Summary: &quot; &amp; If(currentJToken.Item(&quot;summary&quot;) IsNot Nothing, currentJToken.Item(&quot;summary&quot;).ToString, &quot;Details not available&quot;)]" />
+            <isactr:ConnectorActivity Configuration="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" ConnectionId="7174dc97-2899-4c70-9c2e-b1fe622e4580" DisplayName="Create Issue" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="f90a75ba-d728-34b6-a84a-fb1f995b784b">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="fields_sub_project_sub_key" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">VE</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="fields_sub_issuetype_sub_id" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">10020</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="fields_sub_description" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">[currentJToken.Item("task").ToString]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="fields_sub_reporter_sub_id" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">712020:fb684292-eeb1-4b64-a60f-18400d09879a</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="fields_sub_summary" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">[currentJToken.Item("summary").ToString]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="fields_sub_assignee_sub_id" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">712020:fb684292-eeb1-4b64-a60f-18400d09879a</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="fields_sub_labels_array" Type="FieldArgument" />
+                <isactr:FieldObject Name="fields_sub_priority_sub_name" Type="FieldArgument" />
+                <isactr:FieldObject Name="update_sub_issuelinks_sub_outwardIssue_sub_key" Type="FieldArgument" />
+                <isactr:FieldObject Name="update_sub_issuelinks_sub_type_sub_name" Type="FieldArgument" />
+                <isactr:FieldObject Name="Jit_curated_create_issue" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:curated_create_issue_Create" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_id" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_key" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

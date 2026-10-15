@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Communication Extractor Agent",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "25e210af-0633-4c02-858f-07112ee02d35",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Communication Extractor Agent"
+    },
+    "locks": [],
+    "key": "6c60a8b4-50b2-4987-98de-d286f24a1bf7",
+    "files": []
+  }
+}

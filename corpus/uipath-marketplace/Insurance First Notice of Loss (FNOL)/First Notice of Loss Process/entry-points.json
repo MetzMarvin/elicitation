@@ -1,0 +1,20 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "/content/FirstNoticeOfLoss.bpmn#startEvent_fnol_msg",
+      "uniqueId": "3780731b-84fe-48cf-8d2e-9497a3e7667b",
+      "type": "ProcessOrchestration",
+      "input": {
+        "type": "object",
+        "properties": {}
+      },
+      "output": {
+        "type": "object",
+        "properties": {}
+      },
+      "displayName": "Claim Notification Received (FNOL)"
+    }
+  ]
+}

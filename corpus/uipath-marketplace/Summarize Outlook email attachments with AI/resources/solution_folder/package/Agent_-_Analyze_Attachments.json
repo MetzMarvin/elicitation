@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Agent - Analyze Attachments",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "ae34fc8c-28f1-4d4e-9ef1-c0d2dfe2ff83",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Agent - Analyze Attachments"
+    },
+    "locks": [],
+    "key": "f65690ae-b611-4e04-b60b-ad3f20097030",
+    "files": []
+  }
+}

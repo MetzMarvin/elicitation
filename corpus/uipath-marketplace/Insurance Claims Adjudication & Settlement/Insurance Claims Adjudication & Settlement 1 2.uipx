@@ -1,0 +1,13 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "2c0abe6d-7c87-4f5e-8dec-08df24550c28",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Claims Adjudication Process/project.uiproj",
+      "Id": "badc186c-ba84-48cd-894e-b93b97674861"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

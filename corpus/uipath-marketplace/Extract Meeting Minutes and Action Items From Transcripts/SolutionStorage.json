@@ -1,0 +1,21 @@
+{
+  "SolutionId": "8dc3bcbc-f4ed-42cd-8de1-08df24550c28",
+  "Projects": [
+    {
+      "ProjectId": "f3eae1cc-7dae-4a89-af02-72ca343fea89",
+      "ProjectRelativePath": "Create JIRA Ticket/project.uiproj"
+    },
+    {
+      "ProjectId": "176c089b-20f9-4e10-b7b7-85e4efb7e99b",
+      "ProjectRelativePath": "Agentic Process/project.uiproj"
+    },
+    {
+      "ProjectId": "a1d03aa0-1981-4b4b-8fd2-892def3b55dc",
+      "ProjectRelativePath": "Assign Value For Agent Input in BPMN/project.uiproj"
+    },
+    {
+      "ProjectId": "a127a409-b699-4b25-9a93-7bc122ca53b3",
+      "ProjectRelativePath": "Communication Extractor Agent/project.uiproj"
+    }
+  ]
+}

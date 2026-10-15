@@ -1,0 +1,44 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "First Notice of Loss Process",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "8628b1d6-0920-4d52-a376-6f4a68ab28e5",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "First Notice of Loss Process",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "First Notice of Loss Process",
+      "package": {
+        "key": "f9d249d2-a32c-4fe2-a078-36836354a0f2"
+      },
+      "packageName": "Insurance.First.Notice.of.Loss._FNOL_.processOrchestration.First.Notice.of.Loss.Process",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "d667b9d7-f559-4ef5-94d9-82516fbeacde",
+    "files": []
+  }
+}

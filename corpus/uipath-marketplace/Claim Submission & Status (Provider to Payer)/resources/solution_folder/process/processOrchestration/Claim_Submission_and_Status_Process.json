@@ -1,0 +1,44 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Claim Submission and Status Process",
+    "kind": "process",
+    "type": "processOrchestration",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "40b84989-af07-4e3c-b8d8-9773a0c512e9",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "Claim Submission and Status Process",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "ProcessOrchestration",
+      "name": "Claim Submission and Status Process",
+      "package": {
+        "key": "6a134b1c-76e2-4580-ba21-4333171de43b"
+      },
+      "packageName": "Claim.Submission._.Status._Provider.to.processOrchestration.Claim.Submission.and.Status.Process",
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "4f77e588-80e5-4cac-aa32-cf4ccd9502ed",
+    "files": []
+  }
+}

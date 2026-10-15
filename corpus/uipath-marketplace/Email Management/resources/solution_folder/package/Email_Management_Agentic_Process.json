@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Email Management Agentic Process",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "bb64d8d4-4adc-4a9e-a406-da39cef9fd91",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Email Management Agentic Process"
+    },
+    "locks": [],
+    "key": "823050f8-4a15-4009-bc02-00870d71729e",
+    "files": []
+  }
+}

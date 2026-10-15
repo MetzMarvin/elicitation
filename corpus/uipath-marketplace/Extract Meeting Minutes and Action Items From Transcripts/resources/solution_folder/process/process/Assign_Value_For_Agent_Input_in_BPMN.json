@@ -1,0 +1,49 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Assign Value For Agent Input in BPMN",
+    "kind": "process",
+    "type": "process",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "cd6459f0-afbe-4a03-8e4c-43cc3c4b6360",
+    "dependencies": [
+      {
+        "name": "Assign Value For Agent Input in BPMN",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Process",
+      "name": "Assign Value For Agent Input in BPMN",
+      "package": {
+        "key": "814ad71e-c635-4e86-98f2-262f1b1c6234"
+      },
+      "packageName": "Extract.Meeting.Minutes.and.Action.Items.From.process.Assign.Value.For.Agent.Input.in.BPMN",
+      "inputArguments": "{}",
+      "jobPriority": "Medium",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "jobRecording": "Disabled",
+      "targetFrameworkValue": "Portable",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": []
+    },
+    "locks": [],
+    "key": "5a8b7438-7690-4508-ba10-2e62e752b0e7",
+    "files": []
+  }
+}

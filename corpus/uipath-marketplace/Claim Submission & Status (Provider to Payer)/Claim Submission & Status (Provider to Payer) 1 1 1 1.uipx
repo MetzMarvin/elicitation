@@ -1,0 +1,13 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "97d391f7-1cb5-4e5d-ff32-08df2454ddf6",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Claim Submission and Status Process/project.uiproj",
+      "Id": "40b84989-af07-4e3c-b8d8-9773a0c512e9"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

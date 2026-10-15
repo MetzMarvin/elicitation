@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Process",
+  "Name": "Assign Value For Agent Input in BPMN",
+  "Description": null,
+  "MainFile": "Main.xaml"
+}

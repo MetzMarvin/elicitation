@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "process",
+      "key": "Agent - Analyze Attachments",
+      "id": "processAgent - Analyze Attachments",
+      "value": {
+        "folderPath": {
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "Agent - Analyze Attachments",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Agent - Analyze Attachments",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    },
+    {
+      "resource": "Connection",
+      "key": "8d23715b-5f01-4275-b3ee-791da1333411",
+      "id": "Connection8d23715b-5f01-4275-b3ee-791da1333411",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "a7c42192-4d8a-4a6a-824a-807fa9435236",
+          "isExpression": false,
+          "displayName": "uipath-microsoft-outlook365 connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Get Newest Email",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-microsoft-outlook365 connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-microsoft-outlook365"
+      }
+    }
+  ]
+}

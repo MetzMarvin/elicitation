@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="x-uipath-initial-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="b843c3d2">
+  <bpmn:process id="Process_1" name="Process" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:inputOutput id="error3" name="Error" type="jsonSchema" elementId="Activity_D7lSmW"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="fileSummaries" name="file_Summaries" type="jsonSchema" subType="object" elementId="Activity_D7lSmW"><![CDATA[{"type":"array","description":"Array of file summaries, one entry per input file.","items":{"type":"object","properties":{"filename":{"type":"string","description":"The original name of the file, taken from the input attachment's FullName."},"description":{"type":"string","description":"A brief, concise description of the file's contents."}}},"$schema":"http://json-schema.org/draft-07/schema#"}]]></uipath:inputOutput>
+        <uipath:inputOutput id="scriptResponse" name="scriptResponse" type="jsonSchema" elementId="Activity_qF9kCk"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"array","items":{"type":"object","properties":{"@odata.type":{"type":"string"},"@odata.mediaContentType":{"type":"string"},"id":{"type":"string"},"lastModifiedDateTime":{"type":"string","format":"date-time"},"name":{"type":"string"},"contentType":{"type":"string"},"size":{"type":"integer"},"isInline":{"type":"boolean"},"contentBytes":{"type":"string"}}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="error5" name="Error" type="jsonSchema" elementId="Activity_qF9kCk"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="error2" name="Error" type="jsonSchema" elementId="Activity_xA3QjT"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="code" name="code" type="string" elementId="Activity_xA3QjT" />
+        <uipath:inputOutput id="headers" name="headers" type="object" elementId="Activity_xA3QjT" />
+        <uipath:inputOutput id="body" name="body" type="string" elementId="Activity_xA3QjT" />
+        <uipath:inputOutput id="response2" name="response" type="jsonSchema" elementId="Activity_xA3QjT"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"code":{"title":"Response status code","type":"string","description":"Response status code"},"headers":{"title":"Headers","$ref":"#/definitions/headers"},"body":{"title":"Response body","type":"string","description":"Response body"}},"definitions":{"headers":{"type":"object","properties":{}}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="response4" name="response" type="jsonSchema" elementId="Activity_0ZF1Br"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"array","properties":{},"required":["ID"],"x-uipath-resource-kind":"JobAttachment","x-uipath-original-type":"object","x-uipath-original-response-type":"file","items":{"ID":{"type":"string","description":"Orchestrator attachment key"},"FullName":{"type":"string","description":"File name"},"MimeType":{"type":"string","description":"The MIME type of the content, such as application/json or image/png"},"Metadata":{"type":"object","description":"Dictionary<string, string> of metadata","additionalProperties":{"type":"string"}}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="error4" name="Error" type="jsonSchema" elementId="Activity_0ZF1Br"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="error" name="Error" type="jsonSchema" elementId="Activity_HhmdAd"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"},"element":{"type":"string"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="id" name="id" type="string" elementId="Activity_HhmdAd" />
+        <uipath:inputOutput id="response" name="response" type="jsonSchema" elementId="Activity_HhmdAd"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"lastModifiedDateTime":{"title":"Last modified date and time","type":"string","description":"The date and time when the email was last modified."},"body":{"title":"Body","$ref":"#/definitions/body"},"parentFolderId":{"title":"Parent folder ID","type":"string","description":"The unique identifier of the folder containing the email."},"subject":{"title":"Email subject","type":"string","description":"The subject line of the email message."},"importance":{"title":"Email importance level","type":"string","description":"The priority level of the email, such as high, normal, or low."},"webLink":{"title":"Web link to email","type":"string","description":"A URL link to view the email in a web browser."},"isRead":{"title":"Read status","type":"boolean","description":"Indicates whether the email has been read."},"isDraft":{"title":"Draft status","type":"boolean","description":"Indicates whether the email is a draft."},"createdDateTime":{"title":"Creation date and time","type":"string","description":"The date and time when the email was created."},"bodyPreview":{"title":"Email body preview","type":"string","description":"A short preview of the email's content."},"sender":{"title":"Sender","$ref":"#/definitions/sender"},"inferenceClassification":{"title":"Email classification","type":"string","description":"The classification of the email based on its content."},"from":{"title":"From","$ref":"#/definitions/from"},"internetMessageId":{"title":"Internet message ID","type":"string","description":"A unique identifier for the email message."},"toRecipients[*]":{"title":"To recipients","type":"array","items":{"$ref":"#/definitions/toRecipients[*]"}},"isReadReceiptRequested":{"title":"Read receipt requested","type":"boolean","description":"Indicates if a read receipt is requested."},"id":{"title":"Email ID","type":"string","description":"The unique identifier for the email."},"hasAttachments":{"title":"Email has attachments","type":"boolean","description":"Indicates if the email contains attachments."},"sentDateTime":{"title":"Sent date and time","type":"string","description":"The date and time when the email was sent."},"conversationIndex":{"title":"Conversation index","type":"string","description":"A unique identifier for the email's position in a thread."},"conversationId":{"title":"Conversation ID","type":"string","description":"A unique identifier for the email conversation thread."},"changeKey":{"title":"Change key","type":"string","description":"A unique identifier for the current version of the email."},"receivedDateTime":{"title":"Received date and time","type":"string","description":"The date and time when the email was received."},"isDeliveryReceiptRequested":{"title":"Delivery receipt requested","type":"boolean","description":"Indicates if a delivery receipt was requested for the email."},"flag":{"title":"Flag","$ref":"#/definitions/flag"}},"definitions":{"body":{"type":"object","properties":{"contentType":{"title":"Email body content type","type":"string","description":"The format type of the email body, such as HTML or plain text."},"content":{"title":"Email body content","type":"string","description":"The main content or message of the email."}}},"sender":{"type":"object","properties":{"emailAddress":{"title":"Email address","$ref":"#/definitions/senderEmailAddress"}}},"senderEmailAddress":{"type":"object","properties":{"name":{"title":"Sender's name","type":"string","description":"The name of the person who sent the email."},"address":{"title":"Sender's email address","type":"string","description":"The email address of the person who sent the email."}}},"from":{"type":"object","properties":{"emailAddress":{"title":"Email address","$ref":"#/definitions/fromEmailAddress"}}},"fromEmailAddress":{"type":"object","properties":{"name":{"title":"From name","type":"string","description":"The name of the person or entity the email is from."},"address":{"title":"Sender's email address","type":"string","description":"The email address of the person who sent the email."}}},"toRecipients[*]":{"type":"object","properties":{"emailAddress":{"title":"Email address","$ref":"#/definitions/toRecipients[*]EmailAddress"}}},"toRecipients[*]EmailAddress":{"type":"object","properties":{"name":{"title":"Recipient's name","type":"string","description":"The name of the email recipient."},"address":{"title":"Recipient's email address","type":"string","description":"The email address of the recipient."}}},"flag":{"type":"object","properties":{"flagStatus":{"title":"Flag status","type":"string","description":"The current status of the flag set on the email."}}}}}]]></uipath:inputOutput>
+      </uipath:variables>
+      <uipath:bindings version="v1">
+        <uipath:binding id="b1J7oJMUM" name="uipath-microsoft-outlook365 connection" type="string" default="73e156fd-386f-4955-b585-afed44a648c9" resource="Connection" resourceKey="8d23715b-5f01-4275-b3ee-791da1333411" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bdmUi4bpX" name="FolderKey" type="string" default="0f289078-f180-4566-ac1d-db667ab0e484" resource="Connection" resourceKey="8d23715b-5f01-4275-b3ee-791da1333411" propertyAttribute="folderKey" />
+        <uipath:binding id="bqLULGk2u" name="folderPath" type="string" resource="process" resourceSubType="Agent" resourceKey="Agent - Analyze Attachments" propertyAttribute="folderPath" />
+        <uipath:binding id="b1BuJvVSh" name="name" type="string" default="Agent - Analyze Attachments" resource="process" resourceSubType="Agent" resourceKey="Agent - Analyze Attachments" propertyAttribute="name" />
+        <uipath:binding id="bXAb3ETRm" name="uipath-microsoft-outlook365 connection" type="string" default="5b98d0e1-5b01-4106-bba1-2a190848350f" resource="Connection" resourceKey="5b98d0e1-5b01-4106-bba1-2a190848350f" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bJbudPnLp" name="FolderKey" type="string" default="93b37f12-a0e9-4b61-91f2-3093df79f676" resource="Connection" resourceKey="5b98d0e1-5b01-4106-bba1-2a190848350f" propertyAttribute="folderKey" />
+        <uipath:binding id="bibTXPASl" name="uipath-microsoft-outlook365 connection" type="string" default="a7c42192-4d8a-4a6a-824a-807fa9435236" resource="Connection" resourceKey="a7c42192-4d8a-4a6a-824a-807fa9435236" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bvJu9CGW0" name="FolderKey" type="string" default="5c06f1dc-4788-4080-9142-ab408e4c4a90" resource="Connection" resourceKey="a7c42192-4d8a-4a6a-824a-807fa9435236" propertyAttribute="folderKey" />
+        <uipath:binding id="b2cD40T3n" name="uipath-microsoft-outlook365 connection" type="string" default="a7c42192-4d8a-4a6a-824a-807fa9435236" resource="Connection" resourceKey="8d23715b-5f01-4275-b3ee-791da1333411" propertyAttribute="ConnectionId" />
+        <uipath:binding id="b6dBwxKYi" name="FolderKey" type="string" default="5c06f1dc-4788-4080-9142-ab408e4c4a90" resource="Connection" resourceKey="8d23715b-5f01-4275-b3ee-791da1333411" propertyAttribute="folderKey" />
+      </uipath:bindings>
+      <uipath:migrationVersion version="14" />
+    </bpmn:extensionElements>
+    <bpmn:startEvent id="Event_start" name="Start event">
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="96a7aa5c-5066-4219-9d25-84721e1527cc" />
+      </bpmn:extensionElements>
+      <bpmn:outgoing>edge_Event_start-Activity_HhmdAd</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sendTask id="Activity_HhmdAd" name="Get Newest Email">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Intsvc.ActivityExecution" version="v1" />
+          <uipath:context>
+            <uipath:input name="connectorKey" type="string" value="uipath-microsoft-outlook365" />
+            <uipath:input name="operation" type="string" value="GetNewestEmail" />
+            <uipath:input name="objectName" type="string" value="getNewestEmail" />
+            <uipath:input name="method" type="string" value="GET" />
+            <uipath:input name="path" type="string" value="/getNewestEmail" />
+            <uipath:input name="connection" type="string" value="=bindings.b2cD40T3n" />
+            <uipath:input name="folderKey" type="string" value="=bindings.b6dBwxKYi" />
+            <uipath:input name="resourceKey" type="string" value="8d23715b-5f01-4275-b3ee-791da1333411" />
+            <uipath:input name="metadata" type="json"><![CDATA[{"designTimeMetadata":{"connectorLogoUrl":"https://cloud.uipath.com/elements_/scaleunit_/a6827719-5651-4da8-a093-6b3e05f247c7/v3/element/elements/uipath-microsoft-outlook365/image","activityDesignerVersion":"2","activityDisplayName":"Get Newest Email","activityDescription":"Get Newest Email","activityHelpUrlTemplate":"https://docs.uipath.com/{0}/activities/other/latest/integration-service/uipath-microsoft-outlook365-Get-Newest-Email","activityConfig":{"isCurated":true,"operation":null},"designTimeLookups":{"parentFolderId":[{"id":"AQMkADc5NmZmAGM5Yi05M2U2LTRjMDgtYTE0My04MWFiMGRhZDdhZmEALgAAA4TyyvklxBZEhAi-50L2HBcBAHG1gygcV1tHgCvVDonwRq4AAAIBDAAAAA==","title":"Inbox"}]}},"metadataState":{"jsonSchema":{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"lastModifiedDateTime":{"title":"Last modified date and time","type":"string","description":"The date and time when the email was last modified."},"body":{"title":"Body","$ref":"#/definitions/body"},"parentFolderId":{"title":"Parent folder ID","type":"string","description":"The unique identifier of the folder containing the email."},"subject":{"title":"Email subject","type":"string","description":"The subject line of the email message."},"importance":{"title":"Email importance level","type":"string","description":"The priority level of the email, such as high, normal, or low."},"webLink":{"title":"Web link to email","type":"string","description":"A URL link to view the email in a web browser."},"isRead":{"title":"Read status","type":"boolean","description":"Indicates whether the email has been read."},"isDraft":{"title":"Draft status","type":"boolean","description":"Indicates whether the email is a draft."},"createdDateTime":{"title":"Creation date and time","type":"string","description":"The date and time when the email was created."},"bodyPreview":{"title":"Email body preview","type":"string","description":"A short preview of the email's content."},"sender":{"title":"Sender","$ref":"#/definitions/sender"},"inferenceClassification":{"title":"Email classification","type":"string","description":"The classification of the email based on its content."},"from":{"title":"From","$ref":"#/definitions/from"},"internetMessageId":{"title":"Internet message ID","type":"string","description":"A unique identifier for the email message."},"toRecipients[*]":{"title":"To recipients","type":"array","items":{"$ref":"#/definitions/toRecipients[*]"}},"isReadReceiptRequested":{"title":"Read receipt requested","type":"boolean","description":"Indicates if a read receipt is requested."},"id":{"title":"Email ID","type":"string","description":"The unique identifier for the email."},"hasAttachments":{"title":"Email has attachments","type":"boolean","description":"Indicates if the email contains attachments."},"sentDateTime":{"title":"Sent date and time","type":"string","description":"The date and time when the email was sent."},"conversationIndex":{"title":"Conversation index","type":"string","description":"A unique identifier for the email's position in a thread."},"conversationId":{"title":"Conversation ID","type":"string","description":"A unique identifier for the email conversation thread."},"changeKey":{"title":"Change key","type":"string","description":"A unique identifier for the current version of the email."},"receivedDateTime":{"title":"Received date and time","type":"string","description":"The date and time when the email was received."},"isDeliveryReceiptRequested":{"title":"Delivery receipt requested","type":"boolean","description":"Indicates if a delivery receipt was requested for the email."},"flag":{"title":"Flag","$ref":"#/definitions/flag"}},"definitions":{"body":{"type":"object","properties":{"contentType":{"title":"Email body content type","type":"string","description":"The format type of the email body, such as HTML or plain text."},"content":{"title":"Email body content","type":"string","description":"The main content or message of the email."}}},"sender":{"type":"object","properties":{"emailAddress":{"title":"Email address","$ref":"#/definitions/senderEmailAddress"}}},"senderEmailAddress":{"type":"object","properties":{"name":{"title":"Sender's name","type":"string","description":"The name of the person who sent the email."},"address":{"title":"Sender's email address","type":"string","description":"The email address of the person who sent the email."}}},"from":{"type":"object","properties":{"emailAddress":{"title":"Email address","$ref":"#/definitions/fromEmailAddress"}}},"fromEmailAddress":{"type":"object","properties":{"name":{"title":"From name","type":"string","description":"The name of the person or entity the email is from."},"address":{"title":"Sender's email address","type":"string","description":"The email address of the person who sent the email."}}},"toRecipients[*]":{"type":"object","properties":{"emailAddress":{"title":"Email address","$ref":"#/definitions/toRecipients[*]EmailAddress"}}},"toRecipients[*]EmailAddress":{"type":"object","properties":{"name":{"title":"Recipient's name","type":"string","description":"The name of the email recipient."},"address":{"title":"Recipient's email address","type":"string","description":"The email address of the recipient."}}},"flag":{"type":"object","properties":{"flagStatus":{"title":"Flag status","type":"string","description":"The current status of the flag set on the email."}}}}}},"telemetryData":{"operationType":"Retrieve","objectName":"getNewestEmail","objectDisplayName":"Get Newest Email","connectorKey":"uipath-microsoft-outlook365","connectorName":"Microsoft Outlook 365","primaryKeyName":"id"},"inputMetadata":{},"errorState":{"hasError":false},"bindings":[]}]]></uipath:input>
+          </uipath:context>
+          <uipath:input name="unReadOnly" type="string" value="false" target="query" />
+          <uipath:input name="withAttachmentsOnly" type="string" value="false" target="query" />
+          <uipath:input name="importance" type="string" value="any" target="query" />
+          <uipath:input name="markAsRead" type="string" value="false" target="query" />
+          <uipath:input name="orderBy" type="string" value="receivedDateTime desc" target="query" />
+          <uipath:input name="top" type="string" value="1" target="query" />
+          <uipath:input name="parentFolderId" type="string" value="AQMkADc5NmZmAGM5Yi05M2U2LTRjMDgtYTE0My04MWFiMGRhZDdhZmEALgAAA4TyyvklxBZEhAi-50L2HBcBAHG1gygcV1tHgCvVDonwRq4AAAIBDAAAAA==" target="query" />
+          <uipath:output name="id" type="string" source="=response.id" var="id" />
+          <uipath:output name="response" type="jsonSchema" source="=response" var="response" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Event_start-Activity_HhmdAd</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_HhmdAd-Activity_xA3QjTMcouKW</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:serviceTask id="Activity_D7lSmW" name="Agent - Analyze Attachments">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.b1BuJvVSh" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bqLULGk2u" />
+            <uipath:input name="_label" type="string" value="Agent - Analyze Attachments" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"files":{"type":"array"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"files":"=vars.response4"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error3" />
+          <uipath:output name="file_Summaries" type="jsonSchema" subType="object" source="=file_Summaries" var="fileSummaries" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_0ZF1Br-Activity_D7lSmWb6CvJZ</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_D7lSmW-Event_xC4oxa</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sendTask id="Activity_xA3QjT" name="Get Attachment List">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Intsvc.ActivityExecution" version="v1" />
+          <uipath:context>
+            <uipath:input name="connectorKey" type="string" value="uipath-microsoft-outlook365" />
+            <uipath:input name="operation" type="string" value="httpRequest" />
+            <uipath:input name="objectName" type="string" value="httpRequest" />
+            <uipath:input name="method" type="string" value="POST" />
+            <uipath:input name="path" type="string" value="/http-request" />
+            <uipath:input name="connection" type="string" value="=bindings.b2cD40T3n" />
+            <uipath:input name="folderKey" type="string" value="=bindings.b6dBwxKYi" />
+            <uipath:input name="resourceKey" type="string" value="8d23715b-5f01-4275-b3ee-791da1333411" />
+            <uipath:input name="metadata" type="json"><![CDATA[{"designTimeMetadata":{"connectorLogoUrl":"https://cloud.uipath.com/elements_/scaleunit_/a6827719-5651-4da8-a093-6b3e05f247c7/v3/element/elements/uipath-microsoft-outlook365/image","activityDesignerVersion":"2","activityDisplayName":"Microsoft Outlook 365 HTTP Request","activityDescription":"Perform HTTP requests to interact with Microsoft Outlook 365 using existing connector and connection configuration.","activityHelpUrlTemplate":"https://docs.uipath.com/{0}/activities/other/latest/integration-service/uipath-microsoft-outlook365-Microsoft-Outlook-365-HTTP-Request","activityConfig":{"isCurated":true,"operation":"Create"}},"metadataState":{"jsonSchema":{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"code":{"title":"Response status code","type":"string","description":"Response status code"},"headers":{"title":"Headers","$ref":"#/definitions/headers"},"body":{"title":"Response body","type":"string","description":"Response body"}},"definitions":{"headers":{"type":"object","properties":{}}}}},"telemetryData":{"primaryKeyName":""},"inputMetadata":{},"errorState":{"hasError":true},"bindings":[]}]]></uipath:input>
+          </uipath:context>
+          <uipath:input name="body" type="json" target="body"><![CDATA[{"method":"GET","url":"=js:\"/me/messages/\" + vars.response.id + \"/attachments\""}]]></uipath:input>
+          <uipath:output name="code" type="string" source="=response.code" var="code" />
+          <uipath:output name="headers" type="object" source="=response.headers" var="headers" />
+          <uipath:output name="body" type="string" source="=response.body" var="body" />
+          <uipath:output name="response" type="jsonSchema" source="=response" var="response2" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error2" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_HhmdAd-Activity_xA3QjTMcouKW</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_xA3QjT-Activity_qF9kCkTWyvfK</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:sendTask id="Activity_0ZF1Br" name="Download Email Attachments">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Intsvc.ActivityExecution" version="v1" />
+          <uipath:context>
+            <uipath:input name="connectorKey" type="string" value="uipath-microsoft-outlook365" />
+            <uipath:input name="operation" type="string" value="DownloadAttachment" />
+            <uipath:input name="objectName" type="string" value="DownloadAttachment" />
+            <uipath:input name="method" type="string" value="GETBYID" />
+            <uipath:input name="path" type="string" value="/DownloadAttachment" />
+            <uipath:input name="connection" type="string" value="=bindings.b2cD40T3n" />
+            <uipath:input name="folderKey" type="string" value="=bindings.b6dBwxKYi" />
+            <uipath:input name="resourceKey" type="string" value="8d23715b-5f01-4275-b3ee-791da1333411" />
+            <uipath:input name="metadata" type="json"><![CDATA[{"designTimeMetadata":{"connectorLogoUrl":"https://cloud.uipath.com/elements_/scaleunit_/a6827719-5651-4da8-a093-6b3e05f247c7/v3/element/elements/uipath-microsoft-outlook365/image","activityDesignerVersion":"2","activityDisplayName":"Download Email Attachment","activityDescription":"Downloads an attachment from an email message","activityHelpUrlTemplate":"https://docs.uipath.com/{0}/activities/other/latest/integration-service/uipath-microsoft-outlook365-Download-Email-Attachment","activityConfig":{"isCurated":true,"operation":null}},"metadataState":{"jsonSchema":{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"Response":{"title":"Response","$ref":"#/definitions/Response"}},"definitions":{"Response":{"type":"object","properties":{}}}}},"telemetryData":{"operationType":"Retrieve","objectName":"DownloadAttachment","objectDisplayName":"Download Attachment","connectorKey":"uipath-microsoft-outlook365","connectorName":"Microsoft Outlook 365","primaryKeyName":""},"inputMetadata":{},"errorState":{"hasError":false},"bindings":[]}]]></uipath:input>
+          </uipath:context>
+          <uipath:input name="excludeInlineAttachments" type="string" value="false" target="query" />
+          <uipath:input name="id" type="string" value="=vars.response.id" target="query" />
+          <uipath:input name="fileName" type="string" value="=iterator.item.name" target="query" />
+          <uipath:output name="response" type="file" source="=response" var="response4" target="=orchestrator.JobAttachments" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error4" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_qF9kCk-Activity_0ZF1BrE9CRYS</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_0ZF1Br-Activity_D7lSmWb6CvJZ</bpmn:outgoing>
+      <bpmn:multiInstanceLoopCharacteristics>
+        <bpmn:extensionElements>
+          <uipath:loopCharacteristics inputCollection="=vars.scriptResponse" version="v1" />
+        </bpmn:extensionElements>
+      </bpmn:multiInstanceLoopCharacteristics>
+    </bpmn:sendTask>
+    <bpmn:scriptTask id="Activity_qF9kCk" name="Get the Array of Attachments" scriptFormat="JavaScript">
+      <bpmn:extensionElements>
+        <uipath:mapping version="v1">
+          <uipath:type value="BPMN.Variables" version="v1" />
+          <uipath:context>
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"vars":{"type":"object"},"metadata":{"type":"object"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="args" type="json" target="bodyField"><![CDATA[{"vars":"=vars","metadata":"=metadata"}]]></uipath:input>
+          <uipath:output name="scriptResponse" type="jsonSchema" source="=result.response" var="scriptResponse" />
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error5" />
+        </uipath:mapping>
+        <uipath:scriptVersion value="v3" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_xA3QjT-Activity_qF9kCkTWyvfK</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_qF9kCk-Activity_0ZF1BrE9CRYS</bpmn:outgoing>
+      <bpmn:script><![CDATA[attachmentsArray = vars.body.value;
+
+return attachmentsArray;]]></bpmn:script>
+    </bpmn:scriptTask>
+    <bpmn:endEvent id="Event_xC4oxa">
+      <bpmn:incoming>edge_Activity_D7lSmW-Event_xC4oxa</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="edge_Event_start-Activity_HhmdAd" sourceRef="Event_start" targetRef="Activity_HhmdAd" />
+    <bpmn:sequenceFlow id="edge_Activity_HhmdAd-Activity_xA3QjTMcouKW" sourceRef="Activity_HhmdAd" targetRef="Activity_xA3QjT" />
+    <bpmn:sequenceFlow id="edge_Activity_0ZF1Br-Activity_D7lSmWb6CvJZ" sourceRef="Activity_0ZF1Br" targetRef="Activity_D7lSmW" />
+    <bpmn:sequenceFlow id="edge_Activity_xA3QjT-Activity_qF9kCkTWyvfK" sourceRef="Activity_xA3QjT" targetRef="Activity_qF9kCk" />
+    <bpmn:sequenceFlow id="edge_Activity_qF9kCk-Activity_0ZF1BrE9CRYS" sourceRef="Activity_qF9kCk" targetRef="Activity_0ZF1Br" />
+    <bpmn:association id="edge_Activity_qF9kCk-Text_daAkwf" sourceRef="Activity_qF9kCk" targetRef="Text_daAkwf" />
+    <bpmn:association id="edge_Activity_xA3QjT-Text_tg94wQ" sourceRef="Activity_xA3QjT" targetRef="Text_tg94wQ" />
+    <bpmn:sequenceFlow id="edge_Activity_D7lSmW-Event_xC4oxa" sourceRef="Activity_D7lSmW" targetRef="Event_xC4oxa" />
+    <bpmn:association id="edge_CEKRa9" sourceRef="Activity_HhmdAd" targetRef="Text_k06X04" />
+    <bpmn:textAnnotation id="Text_daAkwf">
+      <bpmn:text>Script Task - Extract Array from Attachments List for Subsequent Systems (requires JSON schema setting)</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="Text_tg94wQ">
+      <bpmn:text>HTTP Request - Get Attachments List</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="Text_k06X04">
+      <bpmn:text>Update the email folder and make sure the latest email has an attachement</bpmn:text>
+    </bpmn:textAnnotation>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_Event_start" bpmnElement="Event_start">
+        <dc:Bounds x="260" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="260" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_HhmdAd" bpmnElement="Activity_HhmdAd">
+        <dc:Bounds x="344" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="344" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_D7lSmW" bpmnElement="Activity_D7lSmW">
+        <dc:Bounds x="1068.1667673039724" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1068.1667673039724" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_xA3QjT" bpmnElement="Activity_xA3QjT">
+        <dc:Bounds x="519.2500085830686" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="519.2500085830686" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_0ZF1Br" bpmnElement="Activity_0ZF1Br">
+        <dc:Bounds x="899.2069510048302" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="899.2069510048302" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_qF9kCk" bpmnElement="Activity_qF9kCk">
+        <dc:Bounds x="734.2165345979913" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="734.2165345979913" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Text_daAkwf" bpmnElement="Text_daAkwf">
+        <dc:Bounds x="688.0082049972073" y="43.09000338235309" width="194" height="82" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="688.0082049972073" y="130.09000338235307" width="194" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Text_tg94wQ" bpmnElement="Text_tg94wQ">
+        <dc:Bounds x="518.7426070054725" y="42.40085649584398" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="518.7426070054725" y="127.40085649584398" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Event_xC4oxa" bpmnElement="Event_xC4oxa">
+        <dc:Bounds x="1216.1667673039724" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1216.1667673039724" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Text_k06X04" bpmnElement="Text_k06X04">
+        <dc:Bounds x="331.0985848579799" y="38.824716676554004" width="126" height="106" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="331.0985848579799" y="149.824716676554" width="126" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Event_start-Activity_HhmdAd" bpmnElement="edge_Event_start-Activity_HhmdAd">
+        <di:waypoint x="296" y="218" />
+        <di:waypoint x="344" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_HhmdAd-Activity_xA3QjTMcouKW" bpmnElement="edge_Activity_HhmdAd-Activity_xA3QjTMcouKW">
+        <di:waypoint x="444" y="218" />
+        <di:waypoint x="519.2500085830686" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_0ZF1Br-Activity_D7lSmWb6CvJZ" bpmnElement="edge_Activity_0ZF1Br-Activity_D7lSmWb6CvJZ">
+        <di:waypoint x="999.2069510048302" y="218" />
+        <di:waypoint x="1068.1667673039724" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_xA3QjT-Activity_qF9kCkTWyvfK" bpmnElement="edge_Activity_xA3QjT-Activity_qF9kCkTWyvfK">
+        <di:waypoint x="619.2500085830686" y="218" />
+        <di:waypoint x="734.2165345979913" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_qF9kCk-Activity_0ZF1BrE9CRYS" bpmnElement="edge_Activity_qF9kCk-Activity_0ZF1BrE9CRYS">
+        <di:waypoint x="834.2165345979913" y="218" />
+        <di:waypoint x="899.2069510048302" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_qF9kCk-Text_daAkwf" bpmnElement="edge_Activity_qF9kCk-Text_daAkwf">
+        <di:waypoint x="784.4530129548615" y="178" />
+        <di:waypoint x="784.7658146814152" y="125.09000338235309" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_xA3QjT-Text_tg94wQ" bpmnElement="edge_Activity_xA3QjT-Text_tg94wQ">
+        <di:waypoint x="569.1003316560663" y="178" />
+        <di:waypoint x="568.8922839324748" y="122.40085649584398" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_D7lSmW-Event_xC4oxa" bpmnElement="edge_Activity_D7lSmW-Event_xC4oxa">
+        <di:waypoint x="1168.1667673039724" y="218" />
+        <di:waypoint x="1216.1667673039724" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_CEKRa9" bpmnElement="edge_CEKRa9">
+        <di:waypoint x="394.0312533026701" y="178" />
+        <di:waypoint x="394.057174231942" y="144.824716676554" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

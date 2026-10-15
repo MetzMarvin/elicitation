@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Maestro - Process Attachments without RPA",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "85c4cf47-656f-446e-8c36-7429f4cf9c91",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Maestro - Process Attachments without RPA"
+    },
+    "locks": [],
+    "key": "57cfd131-0435-40c0-ba58-0decc2ce687d",
+    "files": []
+  }
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="x-uipath-initial-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="c741bb55">
+  <bpmn:process id="Process_1" name="Process" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:input id="vcefSUhkl" name="TranscriptRawText" type="string" elementId="Event_start" default="" />
+        <uipath:inputOutput id="agentsJsonOutput" name="AgentsJSONOutput" type="string" elementId="Process_1" default="" custom="true" />
+        <uipath:inputOutput id="error4" name="Error" type="jsonSchema" elementId="Activity_TFwYZI"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="agentRawOutput" name="agentRawOutput" type="string" elementId="Activity_TFwYZI" />
+        <uipath:inputOutput id="agentRawOutputMarkdown" name="agentRawOutput_Markdown" type="string" elementId="Activity_TFwYZI" />
+        <uipath:inputOutput id="error2" name="Error" type="jsonSchema" elementId="Activity_lE5DpU"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="transcriptRawText" name="TranscriptRawText" type="string" elementId="Event_start" />
+        <uipath:inputOutput id="error" name="Error" type="jsonSchema" elementId="Activity_vbHPRj"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="outActualText" name="out_ActualText" type="string" elementId="Activity_vbHPRj" />
+      </uipath:variables>
+      <uipath:bindings version="v1">
+        <uipath:binding id="bnDXQY41T" name="folderPath" type="string" resource="process" resourceKey="Create JIRA Ticket" propertyAttribute="folderPath" />
+        <uipath:binding id="bniCgANOB" name="name" type="string" default="Create JIRA Ticket" resource="process" resourceKey="Create JIRA Ticket" propertyAttribute="name" />
+        <uipath:binding id="bOANunXO5" name="folderPath" type="string" resource="process" resourceKey="Process Plain Text Transcript" propertyAttribute="folderPath" />
+        <uipath:binding id="bLi81pe3E" name="name" type="string" default="Process Plain Text Transcript" resource="process" resourceKey="Process Plain Text Transcript" propertyAttribute="name" />
+        <uipath:binding id="biQjsE90z" name="folderPath" type="string" resource="process" resourceKey="Read And Extract Transcript From File" propertyAttribute="folderPath" />
+        <uipath:binding id="bxAogCopB" name="name" type="string" default="Read And Extract Transcript From File" resource="process" resourceKey="Read And Extract Transcript From File" propertyAttribute="name" />
+        <uipath:binding id="b0w6SKHzd" name="folderPath" type="string" resource="process" resourceSubType="Agent" resourceKey="Communication Extractor Agent" propertyAttribute="folderPath" />
+        <uipath:binding id="bNGDHYRR2" name="name" type="string" default="Communication Extractor Agent" resource="process" resourceSubType="Agent" resourceKey="Communication Extractor Agent" propertyAttribute="name" />
+        <uipath:binding id="bxfqROq0N" name="folderPath" type="string" resource="process" resourceKey="Assign Value For Agent Input in BPMN" propertyAttribute="folderPath" />
+        <uipath:binding id="bEX4uQmH1" name="name" type="string" default="Assign Value For Agent Input in BPMN" resource="process" resourceKey="Assign Value For Agent Input in BPMN" propertyAttribute="name" />
+      </uipath:bindings>
+      <uipath:migrationVersion version="7" />
+    </bpmn:extensionElements>
+    <bpmn:startEvent id="Event_start" name="Start event">
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="7d9ad3f0-0397-4f58-861f-d0ad3011f57b" />
+        <uipath:mapping version="v1">
+          <uipath:type value="BPMN.Variables" version="v1" />
+          <uipath:output name="TranscriptRawText" type="string" source="=vars.vcefSUhkl" var="transcriptRawText" />
+        </uipath:mapping>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>edge_Event_start-Activity_vbHPRj10uWbI</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_fvvtEY">
+      <bpmn:incoming>edge_Activity_lE5DpU-Event_fvvtEYvmUu6x</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_TFwYZI" name="Communication Extractor Agent">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bNGDHYRR2" />
+            <uipath:input name="folderPath" type="string" value="=bindings.b0w6SKHzd" />
+            <uipath:input name="_label" type="string" value="Communication Extractor Agent" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"meeting_transcript":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"meeting_transcript":"=vars.outActualText"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error4" />
+          <uipath:output name="agentRawOutput" type="string" source="=agentRawOutput" var="agentRawOutput" />
+          <uipath:output name="agentRawOutput_Markdown" type="string" source="=agentRawOutput_Markdown" var="agentRawOutputMarkdown" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_vbHPRj-Activity_TFwYZIlMSkrT</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_TFwYZI-Activity_lE5DpUsAYn7y</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_lE5DpU" name="JIRA Tickets Creation">
+      <bpmn:documentation>Create Jira Tickets against Action Items</bpmn:documentation>
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bniCgANOB" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bnDXQY41T" />
+            <uipath:input name="_label" type="string" value="Create JIRA Ticket" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"JsonText":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"JsonText":"=vars.agentRawOutput"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error2" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Activity_TFwYZI-Activity_lE5DpUsAYn7y</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_lE5DpU-Event_fvvtEYvmUu6x</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_vbHPRj" name="Assign Value For Agent Input in BPMN">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.bEX4uQmH1" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bxfqROq0N" />
+            <uipath:input name="_label" type="string" value="Assign Value For Agent Input in BPMN" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"in_TextFromTranscript":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"in_TextFromTranscript":"=vars.transcriptRawText"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="error" />
+          <uipath:output name="out_ActualText" type="string" source="=out_ActualText" var="outActualText" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_Event_start-Activity_vbHPRj10uWbI</bpmn:incoming>
+      <bpmn:outgoing>edge_Activity_vbHPRj-Activity_TFwYZIlMSkrT</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="edge_Activity_TFwYZI-Activity_lE5DpUsAYn7y" sourceRef="Activity_TFwYZI" targetRef="Activity_lE5DpU" />
+    <bpmn:sequenceFlow id="edge_Activity_lE5DpU-Event_fvvtEYvmUu6x" sourceRef="Activity_lE5DpU" targetRef="Event_fvvtEY" />
+    <bpmn:sequenceFlow id="edge_Event_start-Activity_vbHPRj10uWbI" name="User Input" sourceRef="Event_start" targetRef="Activity_vbHPRj" />
+    <bpmn:sequenceFlow id="edge_Activity_vbHPRj-Activity_TFwYZIlMSkrT" sourceRef="Activity_vbHPRj" targetRef="Activity_TFwYZI" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_Event_start" bpmnElement="Event_start">
+        <dc:Bounds x="62.47803838896236" y="95.17498397827148" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="62.47803838896236" y="136.17498397827148" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Event_fvvtEY" bpmnElement="Event_fvvtEY">
+        <dc:Bounds x="771.6837945820278" y="95.17498397827148" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="771.6837945820278" y="136.17498397827148" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_TFwYZI" bpmnElement="Activity_TFwYZI">
+        <dc:Bounds x="417.59668696945295" y="73.17498397827148" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="417.59668696945295" y="158.17498397827148" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_lE5DpU" bpmnElement="Activity_lE5DpU">
+        <dc:Bounds x="583.2966686589061" y="73.17498397827148" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="583.2966686589061" y="158.17498397827148" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_vbHPRj" bpmnElement="Activity_vbHPRj">
+        <dc:Bounds x="249.4167169117561" y="73.17498397827148" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="249.4167169117561" y="158.17498397827148" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_TFwYZI-Activity_lE5DpUsAYn7y" bpmnElement="edge_Activity_TFwYZI-Activity_lE5DpUsAYn7y">
+        <di:waypoint x="518" y="113" />
+        <di:waypoint x="583" y="113" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_lE5DpU-Event_fvvtEYvmUu6x" bpmnElement="edge_Activity_lE5DpU-Event_fvvtEYvmUu6x">
+        <di:waypoint x="683" y="113" />
+        <di:waypoint x="772" y="113" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Event_start-Activity_vbHPRj10uWbI" bpmnElement="edge_Event_start-Activity_vbHPRj10uWbI">
+        <di:waypoint x="98" y="113" />
+        <di:waypoint x="249" y="113" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_Activity_vbHPRj-Activity_TFwYZIlMSkrT" bpmnElement="edge_Activity_vbHPRj-Activity_TFwYZIlMSkrT">
+        <di:waypoint x="349.4167169117561" y="113.10120293016993" />
+        <di:waypoint x="418" y="113" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

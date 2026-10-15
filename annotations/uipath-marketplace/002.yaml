@@ -1,0 +1,30 @@
+artefact: uipath-marketplace/002
+annotated: 2026-10-11
+annotatable: true
+chains:
+  - id: C1
+    ai_elements: 2
+    structure: agent-loop
+    function:
+      description: "An agent describes each attachment of the newest email in a mail folder, using an LLM file-analysis tool."
+      operations: [summarise, plan-act]
+      autonomy: acts
+    reads_untrusted:
+      - writer: outsider-writable
+        evidence: bpmn-xml
+    reads_sensitive:
+      - kind: unknown
+        evidence: not-visible
+    output:
+      shape: free-text
+      sinks:
+        - audience: internal-system
+          path: "outsider -> AI -> system"
+          human_gate: unknown
+          evidence: bpmn-xml
+    authority:
+      invokes_without_gate: 1
+      mutates: none
+    guards: []
+    notes: "AI: agent task plus its LLM tool 'Analyze Files' (2 elements); the tool is the 1 ungated invocation. Output is JSON but the per-file descriptions are prose. The agent flows straight to the end event, with no consumer modelled."
+open_questions: []

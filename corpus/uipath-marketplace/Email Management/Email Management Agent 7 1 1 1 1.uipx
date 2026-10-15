@@ -1,0 +1,28 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "9bf026a0-4f54-46fe-ff28-08df2454ddf6",
+  "Projects": [
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "ReadLatestOutlookEmail/project.uiproj",
+      "Id": "e0c7e7b0-9fed-4af5-8f58-7ff0bd50c981"
+    },
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "Email Management Agent/project.uiproj",
+      "Id": "97b60f48-ffea-453b-a3c4-a5911cebf7dd"
+    },
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Email Management Agentic Process/project.uiproj",
+      "Id": "bb64d8d4-4adc-4a9e-a406-da39cef9fd91"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "MoveOutlookEmail/project.uiproj",
+      "Id": "0c3cfdec-626b-4f2a-9448-a390eac2739e"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

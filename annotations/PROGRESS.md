@@ -1,6 +1,6 @@
 # Annotation progress
 
-Tick an item when its YAML file is final. 90 workflows.
+Tick an item when its YAML file is final. 97 workflows (7 uipath-marketplace added 2026-10-11).
 
 - [x] `aletyx/001` process-bpmn-adhoc-intelligence
 - [x] `atamya/010` en_blog_pim-wokflows
@@ -92,3 +92,10 @@ Tick an item when its YAML file is final. 90 workflows.
 - [x] `uipath-maestro-docs/188` purchase-to-pay
 - [x] `uipath-maestro-docs/191` receive-task
 - [x] `uipath-maestro-docs/192` references-templates
+- [x] `uipath-marketplace/001` email-management
+- [x] `uipath-marketplace/002` summarize-outlook-email-attachments-with-ai
+- [x] `uipath-marketplace/003` extract-meeting-minutes-and-action-items-from-transcripts
+- [x] `uipath-marketplace/004` insurance-claims-adjudication-and-settlement
+- [x] `uipath-marketplace/005` claim-submission-and-status-provider-to-payer
+- [x] `uipath-marketplace/006` insurance-first-notice-of-loss-fnol
+- [x] `uipath-marketplace/007` patient-appointment-scheduling

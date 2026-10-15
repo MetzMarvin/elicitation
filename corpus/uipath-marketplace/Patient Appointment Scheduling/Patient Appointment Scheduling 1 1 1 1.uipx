@@ -1,0 +1,13 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "c888ede4-a3b6-410a-fe74-08df2454ddf6",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Patient Appointment Scheduling Process/project.uiproj",
+      "Id": "73092eee-1bdf-470d-9925-9cba6a1e0109"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

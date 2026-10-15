@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Claim Submission and Status Process",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "40b84989-af07-4e3c-b8d8-9773a0c512e9",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Claim Submission and Status Process"
+    },
+    "locks": [],
+    "key": "6a134b1c-76e2-4580-ba21-4333171de43b",
+    "files": []
+  }
+}

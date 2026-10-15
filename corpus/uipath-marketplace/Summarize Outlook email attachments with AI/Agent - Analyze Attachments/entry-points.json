@@ -1,0 +1,112 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "/content/agent.json",
+      "type": "agent",
+      "uniqueId": "46888970-7c49-45f1-ae9e-a13370e98bbd",
+      "input": {
+        "type": "object",
+        "properties": {
+          "files": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/job-attachment"
+            },
+            "definitions": {
+              "job-attachment": {
+                "type": "object",
+                "properties": {
+                  "ID": {
+                    "type": "string",
+                    "description": "Orchestrator attachment key"
+                  },
+                  "FullName": {
+                    "type": "string",
+                    "description": "File name"
+                  },
+                  "MimeType": {
+                    "type": "string",
+                    "description": "The MIME type of the content, such as \"application/json\" or \"image/png\""
+                  },
+                  "Metadata": {
+                    "type": "object",
+                    "description": "Dictionary<string, string> of metadata",
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "ID"
+                ],
+                "x-uipath-resource-kind": "JobAttachment"
+              }
+            }
+          }
+        },
+        "definitions": {
+          "job-attachment": {
+            "type": "object",
+            "required": [
+              "ID"
+            ],
+            "x-uipath-resource-kind": "JobAttachment",
+            "properties": {
+              "ID": {
+                "type": "string",
+                "description": "Orchestrator attachment key"
+              },
+              "FullName": {
+                "type": "string",
+                "description": "File name"
+              },
+              "MimeType": {
+                "type": "string",
+                "description": "The MIME type of the content, such as \"application/json\" or \"image/png\""
+              },
+              "Metadata": {
+                "type": "object",
+                "description": "Dictionary<string, string> of metadata",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "file_Summaries": {
+            "type": "array",
+            "description": "Array of file summaries, one entry per input file.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "filename": {
+                  "type": "string",
+                  "description": "The original name of the file, taken from the input attachment's FullName."
+                },
+                "description": {
+                  "type": "string",
+                  "description": "A brief, concise description of the file's contents."
+                }
+              },
+              "required": [
+                "filename",
+                "description"
+              ]
+            }
+          }
+        },
+        "required": [
+          "file_Summaries"
+        ],
+        "title": "Outputs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "/content/PatientAppointmentScheduling.bpmn#Event_start",
+      "uniqueId": "7ba1de83-f93f-462c-bc2e-e5741061dd49",
+      "type": "ProcessOrchestration",
+      "input": {
+        "type": "object",
+        "properties": {}
+      },
+      "output": {
+        "type": "object",
+        "properties": {}
+      },
+      "displayName": "Patient Appointment Request Received"
+    }
+  ]
+}

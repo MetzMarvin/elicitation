@@ -1,0 +1,18 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "dc336e4a-6fc0-4ada-7b90-08df2454f722",
+  "Projects": [
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Maestro - Process Attachments without RPA/project.uiproj",
+      "Id": "85c4cf47-656f-446e-8c36-7429f4cf9c91"
+    },
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "Agent - Analyze Attachments/project.uiproj",
+      "Id": "ae34fc8c-28f1-4d4e-9ef1-c0d2dfe2ff83"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

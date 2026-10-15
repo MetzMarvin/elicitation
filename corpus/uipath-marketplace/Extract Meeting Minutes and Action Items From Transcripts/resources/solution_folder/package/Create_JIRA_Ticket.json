@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Create JIRA Ticket",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "59829052-ec77-453a-ad69-b3457d8a05d7",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "Create JIRA Ticket"
+    },
+    "locks": [],
+    "key": "961662eb-8a0c-4fe4-b962-548339f77bb7",
+    "files": []
+  }
+}

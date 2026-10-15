@@ -1,0 +1,20 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "/content/ClaimSubmissionStatus.bpmn#Event_start",
+      "uniqueId": "0af2633c-08d6-49b8-807a-f777bff0df0f",
+      "type": "ProcessOrchestration",
+      "input": {
+        "type": "object",
+        "properties": {}
+      },
+      "output": {
+        "type": "object",
+        "properties": {}
+      },
+      "displayName": "Claim Ready for Submission"
+    }
+  ]
+}
